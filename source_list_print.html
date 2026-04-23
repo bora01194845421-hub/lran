@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>이란전쟁 민생 에이전트 — 수집 소스 목록</title>
+<style>
+  @page {
+    size: A4;
+    margin: 18mm 15mm 18mm 15mm;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+    font-size: 9pt;
+    color: #1a1a2e;
+    background: white;
+  }
+
+  /* ── 헤더 */
+  .header {
+    border-top: 5px solid #c0392b;
+    padding: 12px 0 8px 0;
+    margin-bottom: 14px;
+  }
+  .header h1 {
+    font-size: 16pt;
+    font-weight: 900;
+    color: #0d1b2a;
+    letter-spacing: -0.5px;
+  }
+  .header .sub {
+    font-size: 9pt;
+    color: #666;
+    margin-top: 3px;
+  }
+  .header .meta {
+    float: right;
+    text-align: right;
+    font-size: 8pt;
+    color: #888;
+    margin-top: -30px;
+  }
+
+  /* ── 요약 박스 */
+  .summary-box {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 14px;
+  }
+  .summary-item {
+    flex: 1;
+    border: 1.5px solid #e0e0e0;
+    border-top: 3px solid #c0392b;
+    border-radius: 4px;
+    padding: 8px 10px;
+    text-align: center;
+  }
+  .summary-item .val {
+    font-size: 18pt;
+    font-weight: 900;
+    color: #c0392b;
+  }
+  .summary-item .lbl {
+    font-size: 7.5pt;
+    color: #666;
+    margin-top: 2px;
+  }
+
+  /* ── 섹션 제목 */
+  .section-title {
+    background: #0d1b2a;
+    color: white;
+    padding: 5px 10px;
+    font-size: 9.5pt;
+    font-weight: 700;
+    margin: 12px 0 6px 0;
+    border-radius: 3px;
+    page-break-after: avoid;
+  }
+  .section-title span {
+    background: #c0392b;
+    border-radius: 10px;
+    padding: 1px 7px;
+    font-size: 8pt;
+    margin-right: 6px;
+  }
+
+  /* ── 키워드 박스 */
+  .keyword-box {
+    background: #f8f9fa;
+    border-left: 3px solid #3498db;
+    padding: 6px 10px;
+    margin-bottom: 8px;
+    font-size: 8pt;
+    line-height: 1.6;
+    border-radius: 0 4px 4px 0;
+    page-break-inside: avoid;
+  }
+  .keyword-box strong { color: #0d1b2a; }
+  .kw-tag {
+    display: inline-block;
+    background: #e8f0fe;
+    color: #1a56db;
+    padding: 1px 5px;
+    border-radius: 3px;
+    margin: 1px 2px;
+    font-size: 7.5pt;
+  }
+  .kw-tag.ko { background: #fce4ec; color: #c0392b; }
+
+  /* ── 테이블 */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 8.5pt;
+    page-break-inside: auto;
+  }
+  thead tr {
+    background: #1b2a40;
+    color: white;
+  }
+  thead th {
+    padding: 5px 6px;
+    text-align: left;
+    font-weight: 700;
+    font-size: 8pt;
+  }
+  tbody tr { border-bottom: 1px solid #eee; }
+  tbody tr:nth-child(even) { background: #f9fafb; }
+  tbody td { padding: 4px 6px; vertical-align: middle; }
+  td.num { color: #888; font-size: 7.5pt; text-align: center; }
+  td.cred {
+    font-weight: 700;
+    text-align: center;
+    color: #0d1b2a;
+  }
+  td.cred.high { color: #c0392b; }
+  td.status { text-align: center; font-size: 9pt; }
+  td.source { font-weight: 600; }
+  td.focus { color: #555; font-size: 7.8pt; }
+  td.url { color: #3498db; font-size: 7pt; word-break: break-all; }
+
+  /* ── 상태 배지 */
+  .badge {
+    display: inline-block;
+    padding: 1px 6px;
+    border-radius: 10px;
+    font-size: 7.5pt;
+    font-weight: 600;
+  }
+  .badge.ok  { background: #d4edda; color: #155724; }
+  .badge.warn{ background: #fff3cd; color: #856404; }
+  .badge.err { background: #f8d7da; color: #721c24; }
+
+  /* ── 티어 배지 */
+  .tier {
+    display: inline-block;
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 7pt;
+    font-weight: 700;
+  }
+  .tier.t1 { background: #c0392b; color: white; }
+  .tier.t2 { background: #e67e22; color: white; }
+  .tier.t3 { background: #3498db; color: white; }
+  .tier.ko { background: #27ae60; color: white; }
+  .tier.geo{ background: #8e44ad; color: white; }
+  .tier.intl{ background: #1abc9c; color: white; }
+  .tier.kr  { background: #2c3e50; color: white; }
+  .tier.scrape{ background: #7f8c8d; color: white; }
+
+  /* ── 푸터 */
+  .footer {
+    margin-top: 16px;
+    border-top: 2px solid #e0e0e0;
+    padding-top: 8px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 7.5pt;
+    color: #888;
+  }
+
+  /* ── 인쇄 설정 */
+  @media print {
+    .no-print { display: none; }
+    .page-break { page-break-before: always; }
+    a { text-decoration: none; color: inherit; }
+  }
+
+  /* ── 화면 버튼 */
+  .print-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #c0392b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 11pt;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    z-index: 999;
+  }
+  .print-btn:hover { background: #a93226; }
+</style>
+</head>
+<body>
+
+<button class="print-btn no-print" onclick="window.print()">🖨️ 인쇄</button>
+
+<!-- ── 헤더 -->
+<div class="header">
+  <div class="meta">
+    수원시정연구원<br>
+    이란전쟁 민생 에이전트 v2<br>
+    작성일: 2026-04-17
+  </div>
+  <h1>🏛️ 이란전쟁 민생 에이전트 — 수집 소스 목록</h1>
+  <div class="sub">수원시정연구원 | 28개 RSS + 스크래핑 + 국제기구 통합 파이프라인</div>
+</div>
+
+<!-- ── 요약 카드 -->
+<div class="summary-box">
+  <div class="summary-item">
+    <div class="val">57</div>
+    <div class="lbl">전체 소스</div>
+  </div>
+  <div class="summary-item">
+    <div class="val">~40</div>
+    <div class="lbl">정상 수집</div>
+  </div>
+  <div class="summary-item">
+    <div class="val">230+</div>
+    <div class="lbl">일일 수집 기사</div>
+  </div>
+  <div class="summary-item">
+    <div class="val">600</div>
+    <div class="lbl">국제기구 일일 수집</div>
+  </div>
+  <div class="summary-item">
+    <div class="val">4</div>
+    <div class="lbl">수집 그룹</div>
+  </div>
+  <div class="summary-item">
+    <div class="val">9.8</div>
+    <div class="lbl">최고 공신력 (IEA·IMF)</div>
+  </div>
+</div>
+
+<!-- ── 적용 키워드 -->
+<div class="section-title"><span>키워드</span> 수집 필터 키워드 목록</div>
+<div class="keyword-box">
+  <strong>영문 (35개) —</strong>
+  <span class="kw-tag">iran war</span><span class="kw-tag">tehran</span><span class="kw-tag">irgc</span><span class="kw-tag">iranian</span><span class="kw-tag">hormuz</span><span class="kw-tag">strait of hormuz</span><span class="kw-tag">iran nuclear</span><span class="kw-tag">iran missile</span><span class="kw-tag">iran oil</span><span class="kw-tag">iran sanction</span><span class="kw-tag">iran attack</span><span class="kw-tag">iran deal</span><span class="kw-tag">middle east war</span><span class="kw-tag">persian gulf</span><span class="kw-tag">red sea</span><span class="kw-tag">houthi</span><span class="kw-tag">hezbollah</span><span class="kw-tag">israel iran</span><span class="kw-tag">israel strike</span><span class="kw-tag">israel war</span><span class="kw-tag">gaza war</span><span class="kw-tag">hamas</span><span class="kw-tag">oil price</span><span class="kw-tag">crude oil</span><span class="kw-tag">oil market</span><span class="kw-tag">energy crisis</span><span class="kw-tag">energy security</span><span class="kw-tag">lng price</span><span class="kw-tag">oil sanction</span><span class="kw-tag">shipping disruption</span><span class="kw-tag">suez canal</span><span class="kw-tag">tanker attack</span><span class="kw-tag">supply chain</span><span class="kw-tag">global inflation</span><span class="kw-tag">war economy</span>
+  <br><br>
+  <strong>한국어 (21개) —</strong>
+  <span class="kw-tag ko">이란 전쟁</span><span class="kw-tag ko">이란 미국</span><span class="kw-tag ko">호르무즈</span><span class="kw-tag ko">이란 핵</span><span class="kw-tag ko">이란 봉쇄</span><span class="kw-tag ko">테헤란</span><span class="kw-tag ko">이란 공격</span><span class="kw-tag ko">중동전쟁</span><span class="kw-tag ko">중동 분쟁</span><span class="kw-tag ko">페르시아만</span><span class="kw-tag ko">홍해</span><span class="kw-tag ko">후티</span><span class="kw-tag ko">헤즈볼라</span><span class="kw-tag ko">가자</span><span class="kw-tag ko">하마스</span><span class="kw-tag ko">유가</span><span class="kw-tag ko">원유</span><span class="kw-tag ko">에너지 위기</span><span class="kw-tag ko">유류비</span><span class="kw-tag ko">LNG 가격</span><span class="kw-tag ko">물가</span><span class="kw-tag ko">인플레</span><span class="kw-tag ko">공급망</span><span class="kw-tag ko">해운 운임</span>
+</div>
+
+<!-- ────────────────────────── 그룹 1 -->
+<div class="section-title"><span>그룹 1</span> 국제 언론 RSS — 32개 소스 (키워드 필터 적용)</div>
+<table>
+  <thead>
+    <tr>
+      <th style="width:28px">#</th>
+      <th style="width:160px">소스명</th>
+      <th style="width:42px">공신력</th>
+      <th style="width:80px">분류</th>
+      <th>RSS URL</th>
+      <th style="width:55px">상태</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td class="num">1</td><td class="source">AP World News</td><td class="cred high">9.5</td><td><span class="tier t1">1티어</span> 통신사</td><td class="url">https://feeds.apnews.com/rss/apf-worldnews</td><td class="status"><span class="badge warn">⚠ DNS오류</span></td></tr>
+    <tr><td class="num">2</td><td class="source">AP Top News</td><td class="cred high">9.5</td><td><span class="tier t1">1티어</span> 통신사</td><td class="url">https://feeds.apnews.com/rss/apf-topnews</td><td class="status"><span class="badge warn">⚠ DNS오류</span></td></tr>
+    <tr><td class="num">3</td><td class="source">Reuters World</td><td class="cred high">9.6</td><td><span class="tier t1">1티어</span> 통신사</td><td class="url">https://feeds.reuters.com/reuters/worldNews</td><td class="status"><span class="badge warn">⚠ DNS오류</span></td></tr>
+    <tr><td class="num">4</td><td class="source">Reuters Top</td><td class="cred high">9.6</td><td><span class="tier t1">1티어</span> 통신사</td><td class="url">https://feeds.reuters.com/reuters/topNews</td><td class="status"><span class="badge warn">⚠ DNS오류</span></td></tr>
+    <tr><td class="num">5</td><td class="source">BBC Middle East</td><td class="cred">9.0</td><td><span class="tier t2">2티어</span> 언론</td><td class="url">https://feeds.bbci.co.uk/news/world/middle_east/rss.xml</td><td class="status"><span class="badge ok">✔ 정상</span></td></tr>
+    <tr><td class="num">6</td><td class="source">BBC World</td><td class="cred">9.0</td><td><span class="tier t2">2티어</span> 언론</td><td class="url">https://feeds.bbci.co.uk/news/world/rss.xml</td><td class="status"><span class="badge ok">✔ 정상</span></td></tr>
+    <tr><td class="num">7</td><td class="source">Al Jazeera</td><td class="cred">8.0</td><td><span class="tier t2">2티어</span> 언론</td><td class="url">https://www.aljazeera.com/xml/rss/all.xml</td><td class="status"><span class="badge ok">✔ 정상</span></td></tr>
+    <tr><td class="num">8</td><td class="source">The Guardian (이란)</td><td class="cred">8.7</td><td><span class="tier t2">2티어</span> 언론</td><td class="url">https://www.theguardian.com/world/iran/rss</td><td class="status"><span class="badge ok">✔ 정상</span></td></tr>
+    <tr><td class="num">9</td><td class="source">The Guardian (국제)</td><td class="cred">8.7</td><td><span class="tier t2">2티어</span> 언론</td><td class="url">https://www.theguardian.com/world/rss</td><td class="status"><span class="badge ok">✔ 정상</span></td></tr>
+    <tr><td class="num">10</td><td class="source">NYT World</td><td class="cred">8.8</td><td><span class="tier t2">2티어</span> 언론</td><td class="url">https://rss.nytimes.com/services/xml/rss/nyt/World.xml</td><td class="status"><span class="badge ok">✔ 정상</span></td></tr>
+    <tr><td class="num">11</td><td class="source">Financial Times</td><td class="cred">9.1</td><td><span class="tier t2">2티어</span> 언론</td><td class="url">https://www.ft.com/world?format=rss</td><td class="status"><span class="badge ok">✔ 정상</span></td></tr>
+    <tr><td class="num">12</td><td class="source">Bloomberg</td><td class="cred">9.0</td><td><span class="tier t2">2티어</span> 언론</td><td class="url">https://feeds.bloomberg.com/markets/news.rss</td><td class="status"><span class="badge ok">✔ 정상</span></td></tr>
+    <tr><td class="num">13</td><td class="source">Defense One</td><td class="cred">8.0</td><td><span class="tier t3">3티어</span> 군사</td><td class="url">https://www.defenseone.com/rss/all/</td><td class="status"><span class="badge ok">✔ 정상</span></td></tr>
+    <tr><td class="num">14</td><td class="source">Breaking Defense</td><td class="cred">8.0</td><td><span class="tier t3">3티어</span> 군사</td><td class="url">https://breakingdefense.com/feed/</td><td class="status"><span class="badge ok">✔ 정상</span></td></tr>
+    <tr><td class="num">15</td><td class="source">Politico</td><td class="cred">8.1</td><td><span class="tier t3">3티어</span> 정치</td><td class="url">https://rss.politico.com/politics-news.xml</td><td class="status"><span class="badge ok">✔ 정상</span></td></tr>
+    <tr><td class="num">16</td><td class="source">Axios</td><td class="cred">7.8</td><td><span class="tier t3">3티어</span> 종합</td><td class="url">https://api.axios.com/feed/</td><td class="status"><span class="badge ok">✔ 정상</span></td></tr>
+    <tr><td class="num">17</td><td class="source">CSIS</td><td class="cred">8.8</td><td><span class="tier t3">3티어</span> 싱크탱크</td><td class="url">https://www.csis.org/rss.xml</td><td class="status"><span class="badge ok">✔ 정상</span></td></tr>
+    <tr><td class="num">18</td><td class="source">CFR</td><td class="cred">8.6</td><td><span class="tier t3">3티어</span> 싱크탱크</td><td class="url">https://www.cfr.org/rss.xml</td><td class="status"><span class="badge ok">✔ 정상</span></td></tr>
+    <tr><td class="num">19</td><td class="source">연합뉴스</td><td class="cred">8.5</td><td><span class="tier ko">한국어</span> 언론</td><td class="url">https://www.yna.co.kr/rss/international.xml</td><td class="status"><span class="badge ok">✔ 정상</span></td></tr>
+    <tr><td class="num">20</td><td class="source">조선일보</td><td class="cred">7.8</td><td><span class="tier ko">한국어</span> 언론</td><td class="url">https://www.chosun.com/arc/outboundfeeds/rss/</td><td class="status"><span class="badge ok">✔ 정상</span></td></tr>
+    <tr><td class="num">21</td><td class="source">한국경제</td><td class="cred">8.0</td><td><span class="tier ko">한국어</span> 언론</td><td class="url">https://feeds.hankyung.com/article/international.xml</td><td class="status"><span class="badge warn">⚠ DNS오류</span></td></tr>
+    <tr><td class="num">22</td><td class="source">War on the Rocks</td><td class="cred">8.5</td><td><span class="tier geo">지정학</span> 군사분석</td><td class="url">https://warontherocks.com/feed/</td><td class="status"><span class="badge ok">✔ 정상</span></td></tr>
+    <tr><td class="num">23</td><td class="source">Atlantic Council</td><td class="cred">8.4</td><td><span class="tier geo">지정학</span> 싱크탱크</td><td class="url">https://www.atlanticcouncil.org/feed/</td><td class="status"><span class="badge ok">✔ 정상</span></td></tr>
+    <tr><td class="num">24</td><td class="source">Al-Monitor</td><td class="cred">8.6</td><td><span class="tier geo">지정학</span> 중동전문</td><td class="url">https://www.al-monitor.com/rss</td><td class="status"><span class="badge ok">✔ 정상</span></td></tr>
+    <tr><td class="num">25</td><td class="source">Middle East Eye</td><td class="cred">7.8</td><td><span class="tier geo">지정학</span> 중동현장</td><td class="url">https://www.middleeasteye.net/rss</td><td class="status"><span class="badge ok">✔ 정상</span></td></tr>
+    <tr><td class="num">26</td><td class="source">Foreign Affairs</td><td class="cred">9.0</td><td><span class="tier geo">지정학</span> 국제관계</td><td class="url">https://www.foreignaffairs.com/rss.xml</td><td class="status"><span class="badge ok">✔ 정상</span></td></tr>
+    <tr><td class="num">27</td><td class="source">Foreign Policy</td><td class="cred">8.8</td><td><span class="tier geo">지정학</span> 외교정책</td><td class="url">https://foreignpolicy.com/feed/</td><td class="status"><span class="badge ok">✔ 정상</span></td></tr>
+    <tr><td class="num">28</td><td class="source">Asia Times</td><td class="cred">7.5</td><td><span class="tier geo">지정학</span> 아시아시각</td><td class="url">https://asiatimes.com/feed/</td><td class="status"><span class="badge ok">✔ 정상</span></td></tr>
+    <tr><td class="num">29</td><td class="source">SCMP (홍콩)</td><td class="cred">8.0</td><td><span class="tier geo">지정학</span> 중국시각</td><td class="url">https://www.scmp.com/rss/91/feed</td><td class="status"><span class="badge ok">✔ 정상</span></td></tr>
+    <tr><td class="num">30</td><td class="source">EurasiaNet</td><td class="cred">8.0</td><td><span class="tier geo">지정학</span> 중앙아·러시아</td><td class="url">https://eurasianet.org/rss.xml</td><td class="status"><span class="badge ok">✔ 정상</span></td></tr>
+    <tr><td class="num">31</td><td class="source">MEI 중동연구소</td><td class="cred">8.5</td><td><span class="tier geo">지정학</span> 중동연구</td><td class="url">https://www.mei.edu/rss.xml</td><td class="status"><span class="badge ok">✔ 정상</span></td></tr>
+    <tr><td class="num">32</td><td class="source">RUSI 英왕립국방연구소</td><td class="cred">8.7</td><td><span class="tier geo">지정학</span> 안보연구</td><td class="url">https://rusi.org/rss.xml</td><td class="status"><span class="badge ok">✔ 정상</span></td></tr>
+  </tbody>
+</table>
+
+<!-- ────────────────────────── 그룹 2 -->
+<div class="section-title"><span>그룹 2</span> 싱크탱크 스크래핑 — 7개 소스 (키워드 필터 적용)</div>
+<table>
+  <thead>
+    <tr>
+      <th style="width:28px">#</th>
+      <th style="width:180px">소스명</th>
+      <th style="width:42px">공신력</th>
+      <th>수집 URL</th>
+      <th style="width:120px">초점</th>
+      <th style="width:55px">상태</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td class="num">33</td><td class="source">CSIS 이란 전용</td><td class="cred">8.8</td><td class="url">https://www.csis.org/programs/latest-analysis-war-iran</td><td class="focus">이란 심층 분석</td><td class="status"><span class="badge ok">✔ 정상</span></td></tr>
+    <tr><td class="num">34</td><td class="source">CFR 이란 전용</td><td class="cred">8.6</td><td class="url">https://www.cfr.org/region/iran</td><td class="focus">이란 지역 분석</td><td class="status"><span class="badge ok">✔ 정상</span></td></tr>
+    <tr><td class="num">35</td><td class="source">Brookings 이란</td><td class="cred">8.7</td><td class="url">https://www.brookings.edu/topic/iran/</td><td class="focus">이란 정책연구</td><td class="status"><span class="badge warn">⚠ 0건</span></td></tr>
+    <tr><td class="num">36</td><td class="source">Britannica 이란전쟁</td><td class="cred">9.2</td><td class="url">https://www.britannica.com/event/2026-Iran-war</td><td class="focus">2026 이란전쟁 사전</td><td class="status"><span class="badge warn">⚠ 0건</span></td></tr>
+    <tr><td class="num">37</td><td class="source">USNI News</td><td class="cred">9.2</td><td class="url">https://news.usni.org/category/news</td><td class="focus">미 해군연구소 뉴스</td><td class="status"><span class="badge warn">⚠ 0건</span></td></tr>
+    <tr><td class="num">38</td><td class="source">Iran HR</td><td class="cred">8.0</td><td class="url">https://iranhr.net/en/articles/</td><td class="focus">이란 인권 보고서</td><td class="status"><span class="badge ok">✔ 정상</span></td></tr>
+    <tr><td class="num">39</td><td class="source">英 하원도서관</td><td class="cred">9.0</td><td class="url">https://commonslibrary.parliament.uk/research-briefings/cbp-10521/</td><td class="focus">영국 의회 이란 보고서</td><td class="status"><span class="badge ok">✔ 정상</span></td></tr>
+  </tbody>
+</table>
+
+<!-- ────────────────────────── 그룹 3 -->
+<div class="section-title page-break"><span>그룹 3</span> 국제기구 — 9개 소스 (필터 없음, 전량 수집)</div>
+<table>
+  <thead>
+    <tr>
+      <th style="width:28px">#</th>
+      <th style="width:180px">소스명</th>
+      <th style="width:42px">공신력</th>
+      <th style="width:80px">수집방식</th>
+      <th>초점</th>
+      <th style="width:60px">일일건수</th>
+      <th style="width:55px">상태</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td class="num">40</td><td class="source">IEA (국제에너지기구)</td><td class="cred high">9.8</td><td><span class="tier intl">Google RSS</span></td><td class="focus">에너지안보·유가·비축유</td><td style="text-align:center;font-weight:700">~100건</td><td class="status"><span class="badge ok">✔ 정상</span></td></tr>
+    <tr><td class="num">41</td><td class="source">IMF</td><td class="cred high">9.8</td><td><span class="tier intl">Google RSS</span></td><td class="focus">세계경제전망·물가·성장</td><td style="text-align:center;font-weight:700">~100건</td><td class="status"><span class="badge ok">✔ 정상</span></td></tr>
+    <tr><td class="num">42</td><td class="source">OECD</td><td class="cred high">9.7</td><td><span class="tier intl">Google RSS</span></td><td class="focus">선진국경제·인플레이션·정책</td><td style="text-align:center;font-weight:700">~100건</td><td class="status"><span class="badge ok">✔ 정상</span></td></tr>
+    <tr><td class="num">43</td><td class="source">World Bank</td><td class="cred high">9.7</td><td><span class="tier intl">Google RSS</span></td><td class="focus">개발경제·취약국·식량안보</td><td style="text-align:center;font-weight:700">~100건</td><td class="status"><span class="badge ok">✔ 정상</span></td></tr>
+    <tr><td class="num">44</td><td class="source">UNCTAD</td><td class="cred">9.5</td><td><span class="tier intl">Google RSS</span></td><td class="focus">무역·공급망·해운패러다임</td><td style="text-align:center;font-weight:700">~100건</td><td class="status"><span class="badge ok">✔ 정상</span></td></tr>
+    <tr><td class="num">45</td><td class="source">OPEC</td><td class="cred">9.5</td><td><span class="tier intl">Google RSS</span></td><td class="focus">산유량·유가·OPEC+ 결정</td><td style="text-align:center;font-weight:700">~100건</td><td class="status"><span class="badge ok">✔ 정상</span></td></tr>
+    <tr><td class="num">46</td><td class="source">IEA 보고서</td><td class="cred high">9.8</td><td><span class="tier scrape">스크래핑</span></td><td class="focus">Oil Market Report·에너지안보보고서</td><td style="text-align:center">가변</td><td class="status"><span class="badge ok">✔ 정상</span></td></tr>
+    <tr><td class="num">47</td><td class="source">IMF WEO</td><td class="cred high">9.8</td><td><span class="tier scrape">스크래핑</span></td><td class="focus">World Economic Outlook</td><td style="text-align:center">가변</td><td class="status"><span class="badge ok">✔ 정상</span></td></tr>
+    <tr><td class="num">48</td><td class="source">OPEC 월간보고서</td><td class="cred">9.5</td><td><span class="tier scrape">스크래핑</span></td><td class="focus">Monthly Oil Market Report</td><td style="text-align:center">가변</td><td class="status"><span class="badge ok">✔ 정상</span></td></tr>
+  </tbody>
+</table>
+
+<!-- ────────────────────────── 그룹 4 -->
+<div class="section-title"><span>그룹 4</span> 한국·국외 연구기관 — 9개 소스 (소스별 개별 키워드)</div>
+<table>
+  <thead>
+    <tr>
+      <th style="width:28px">#</th>
+      <th style="width:170px">소스명</th>
+      <th style="width:42px">공신력</th>
+      <th style="width:50px">국가</th>
+      <th style="width:60px">수집방식</th>
+      <th>초점 및 수원시 활용</th>
+      <th style="width:55px">상태</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td class="num">49</td><td class="source">KEEI 에너지경제연구원</td><td class="cred">9.0</td><td>🇰🇷 한국</td><td><span class="tier ko">RSS</span></td><td class="focus">에너지정책·유가 | 수원시 에너지비 분석·보고서 인용 핵심</td><td class="status"><span class="badge ok">✔ 정상</span></td></tr>
+    <tr><td class="num">50</td><td class="source">KEEI 보고서</td><td class="cred">9.0</td><td>🇰🇷 한국</td><td><span class="tier scrape">스크래핑</span></td><td class="focus">에너지 이슈 브리핑·보고서</td><td class="status"><span class="badge warn">⚠ 0건</span></td></tr>
+    <tr><td class="num">51</td><td class="source">KIEP 대외경제정책연구원</td><td class="cred">9.0</td><td>🇰🇷 한국</td><td><span class="tier ko">RSS</span></td><td class="focus">대외경제·공급망·무역 | 수원시 수출기업 영향 논거</td><td class="status"><span class="badge ok">✔ 정상</span></td></tr>
+    <tr><td class="num">52</td><td class="source">KIEP 보고서</td><td class="cred">9.0</td><td>🇰🇷 한국</td><td><span class="tier scrape">스크래핑</span></td><td class="focus">세계경제포커스·오늘의세계경제</td><td class="status"><span class="badge warn">⚠ 0건</span></td></tr>
+    <tr><td class="num">53</td><td class="source">KDI 한국개발연구원</td><td class="cred">9.0</td><td>🇰🇷 한국</td><td><span class="tier ko">RSS</span></td><td class="focus">거시경제·물가·고용 | 수원시 민생물가·고용 분석 기준</td><td class="status"><span class="badge err">✖ SSL오류</span></td></tr>
+    <tr><td class="num">54</td><td class="source">Chatham House</td><td class="cred">9.0</td><td>🇬🇧 영국</td><td><span class="tier ko">RSS</span></td><td class="focus">중동질서재편·에너지안보 장기시나리오 | 수원시 보고서 국제 논거</td><td class="status"><span class="badge ok">✔ 정상</span></td></tr>
+    <tr><td class="num">55</td><td class="source">EU 집행위원회</td><td class="cred">9.0</td><td>🇪🇺 EU</td><td><span class="tier ko">RSS</span></td><td class="focus">EU 에너지·민생 공동대응 | 에너지 가격 상한제·취약계층 바우처 벤치마킹</td><td class="status"><span class="badge ok">✔ 정상</span></td></tr>
+    <tr><td class="num">56</td><td class="source">METI 일본 경제산업성</td><td class="cred">9.0</td><td>🇯🇵 일본</td><td><span class="tier scrape">스크래핑</span></td><td class="focus">에너지보조금·LNG정책 | 에너지 가격 보조금·LNG 확보 전략 벤치마킹</td><td class="status"><span class="badge warn">⚠ 타임아웃</span></td></tr>
+    <tr><td class="num">57</td><td class="source">EU Energy Policy</td><td class="cred">9.0</td><td>🇪🇺 EU</td><td><span class="tier scrape">스크래핑</span></td><td class="focus">EU 에너지정책·취약계층 지원 | 에너지 바우처·가격상한제 수원시 벤치마킹</td><td class="status"><span class="badge ok">✔ 정상</span></td></tr>
+  </tbody>
+</table>
+
+<!-- ── 푸터 -->
+<div class="footer">
+  <div>수원시정연구원 | 이란전쟁 민생 에이전트 v2 | 파이프라인: collector → dedup → analyzer → paradigm_detector → country_response_tracker → minseang_analyzer → reporter</div>
+  <div>출력일: 2026-04-17 &nbsp;|&nbsp; 총 57개 소스</div>
+</div>
+
+</body>
+</html>
