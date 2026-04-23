@@ -1,7 +1,30 @@
+# API 키 — 절대 커밋 금지
 .env
+
+# 수집 원본 데이터 (용량 큼)
+data/raw/
+data/clean/
+data/intl/
+data/research/
+
+# DB · 로그
 *.db
-data/
 iran_agent.log
+
+# Python
 __pycache__/
 *.pyc
+*.pyo
+
+# OS
 .DS_Store
+Thumbs.db
+
+# 대시보드가 읽는 분석 데이터는 커밋 포함
+# data/analyzed/ → 포함
+# data/country_response/ → 포함
+# data/domestic/ → 포함
+# data/paradigm/ → 포함
+# data/policy/ → 포함
+# data/youtube/ → 포함
+# data/reports/ → 포함
