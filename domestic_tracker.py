@@ -25,32 +25,80 @@ HEADERS = {"User-Agent": USER_AGENT}
 
 
 def fetch_opinet_price() -> dict:
-    """오피넷 API - 수원시·전국 유가"""
+    """유가 수집 — OPINET API 우선, 실패 시 웹 스크래핑 대체"""
     result = {"source": "오피넷", "collected_at": datetime.utcnow().isoformat()}
+
+    # ── 1차: OPINET 공식 API (키 있을 때)
+    if OPINET_API_KEY:
+        try:
+            url = "https://www.opinet.or.kr/api/avgAllPrice.do"
+            params = {"code": OPINET_API_KEY, "out": "json"}
+            r = requests.get(url, params=params, headers=HEADERS, timeout=10)
+            data = r.json()
+            items = data.get("RESULT", {}).get("OIL", [])
+            for item in items:
+                if item.get("PRODCD") == "B027":
+                    result["gasoline_national"] = float(item.get("PRICE", 0))
+                elif item.get("PRODCD") == "D047":
+                    result["diesel_national"] = float(item.get("PRICE", 0))
+            url2 = "https://www.opinet.or.kr/api/avgSidoPrice.do"
+            r2 = requests.get(url2, params={**params, "sido": "06"}, headers=HEADERS, timeout=10)
+            items2 = r2.json().get("RESULT", {}).get("OIL", [])
+            for item in items2:
+                if item.get("PRODCD") == "B027":
+                    result["gasoline_gyeonggi"] = float(item.get("PRICE", 0))
+            logger.info(f"[오피넷 API] 휘발유 전국={result.get('gasoline_national')} 경기={result.get('gasoline_gyeonggi')}")
+            return result
+        except Exception as e:
+            logger.warning(f"[오피넷 API] 실패: {e}")
+
+    # ── 2차: 한국석유공사 오피넷 메인 페이지 스크래핑
     try:
-        # 전국 평균 유가
-        url = "https://www.opinet.or.kr/api/avgAllPrice.do"
-        params = {"code": OPINET_API_KEY or "F202209161", "out": "json"}
+        url = "https://www.opinet.or.kr/user/main/mainView.do"
+        r = requests.get(url, headers=HEADERS, timeout=12)
+        soup = BeautifulSoup(r.text, "html.parser")
+        # 전국 평균 휘발유 가격 파싱
+        price_el = soup.select_one(".oil_price_wrap .price, #gasolineAll, .gasoline_price")
+        if price_el:
+            price_text = price_el.get_text(strip=True).replace(",", "").replace("원", "")
+            try:
+                result["gasoline_national"] = float(price_text)
+                logger.info(f"[오피넷 스크래핑] 휘발유 전국={result['gasoline_national']}")
+            except ValueError:
+                pass
+    except Exception as e:
+        logger.warning(f"[오피넷 스크래핑] 실패: {e}")
+
+    # ── 3차: WTI 국제유가 (대체 지표)
+    try:
+        url = "https://query1.finance.yahoo.com/v8/finance/chart/CL=F"
+        r = requests.get(url, headers=HEADERS, timeout=10)
+        data = r.json()
+        wti = data["chart"]["result"][0]["meta"].get("regularMarketPrice")
+        if wti:
+            result["wti_usd"] = round(float(wti), 2)
+            logger.info(f"[Yahoo] WTI=${result['wti_usd']}")
+    except Exception as e:
+        logger.warning(f"[Yahoo WTI] 실패: {e}")
+
+    return result
+
+
+def fetch_exchange_rate() -> dict:
+    """환율 수집 — frankfurter.app 무료 API (키 불필요)"""
+    result = {"source": "frankfurter.app", "collected_at": datetime.utcnow().isoformat()}
+    try:
+        url = "https://api.frankfurter.app/latest"
+        params = {"from": "USD", "to": "KRW,EUR,JPY,CNY"}
         r = requests.get(url, params=params, headers=HEADERS, timeout=10)
         data = r.json()
-        items = data.get("RESULT", {}).get("OIL", [])
-        for item in items:
-            if item.get("PRODCD") == "B027":   # 휘발유
-                result["gasoline_national"] = item.get("PRICE")
-            elif item.get("PRODCD") == "D047":  # 경유
-                result["diesel_national"] = item.get("PRICE")
-        # 수원시 지역 유가 (경기도 코드: 06)
-        url2 = "https://www.opinet.or.kr/api/avgSidoPrice.do"
-        params2 = {**params, "sido": "06"}
-        r2 = requests.get(url2, params=params2, headers=HEADERS, timeout=10)
-        data2 = r2.json()
-        items2 = data2.get("RESULT", {}).get("OIL", [])
-        for item in items2:
-            if item.get("PRODCD") == "B027":
-                result["gasoline_gyeonggi"] = item.get("PRICE")
-        logger.info(f"[오피넷] 휘발유 전국={result.get('gasoline_national')} 경기={result.get('gasoline_gyeonggi')}")
+        rates = data.get("rates", {})
+        result["USD_KRW"] = rates.get("KRW")
+        result["EUR_KRW"] = round(rates.get("EUR", 0) and rates.get("KRW", 0) / rates.get("EUR", 1), 2) if rates.get("EUR") else None
+        result["date"]    = data.get("date")
+        logger.info(f"[환율] USD/KRW={result.get('USD_KRW')}")
     except Exception as e:
-        logger.warning(f"[오피넷] 실패: {e}")
+        logger.warning(f"[환율] 실패: {e}")
         result["error"] = str(e)
     return result
 
@@ -142,11 +190,12 @@ def run(target_date: str = None) -> Path:
     logger.info(f"=== DomesticTracker 시작: {target_date} ===")
 
     output = {
-        "date":          target_date,
-        "collected_at":  datetime.utcnow().isoformat(),
-        "oil_price":     fetch_opinet_price(),
-        "cpi":           fetch_kostat_cpi(),
-        "gas_price":     fetch_gas_price(),
+        "date":            target_date,
+        "collected_at":    datetime.utcnow().isoformat(),
+        "oil_price":       fetch_opinet_price(),
+        "exchange_rate":   fetch_exchange_rate(),
+        "cpi":             fetch_kostat_cpi(),
+        "gas_price":       fetch_gas_price(),
         "gyeonggi_policy": fetch_gyeonggi_press(),
     }
 

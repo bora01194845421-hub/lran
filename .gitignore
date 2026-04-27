@@ -9,7 +9,9 @@ data/research/
 
 # DB · 로그
 *.db
-iran_agent.log
+*.log
+*_log.txt
+*_err.txt
 
 # Python
 __pycache__/

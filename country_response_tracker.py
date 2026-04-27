@@ -202,7 +202,7 @@ def track_with_claude(articles: list, report_date: str) -> dict:
     try:
         resp = client.messages.create(
             model=CLAUDE_MODEL,
-            max_tokens=4096,
+            max_tokens=8096,
             system=SYSTEM_PROMPT,
             messages=[{"role": "user", "content": prompt}],
         )

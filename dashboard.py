@@ -587,16 +587,35 @@ with col_hero:
     st.markdown(hero_html, unsafe_allow_html=True)
 
 with col_wti:
-    price_display = f"{gas_nat:,}" if isinstance(gas_nat, (int,float)) else "--"
-    price_gyg     = f"{gas_ggy:,}" if isinstance(gas_ggy, (int,float)) else "--"
+    ex_rate   = domestic.get("exchange_rate", {})
+    wti_price = oil.get("wti_usd", None)
+    usd_krw   = ex_rate.get("USD_KRW", None)
+    usd_display = f"{usd_krw:,.1f}" if isinstance(usd_krw, (int,float)) else "--"
+
+    # 메인 지표: 국내 휘발유 우선, 없으면 WTI
+    if isinstance(gas_nat, (int,float)):
+        main_label   = "휘발유 (전국 평균)"
+        main_value   = f"{gas_nat:,}"
+        main_unit    = "원"
+        main_sub     = f"경기도 평균 {gas_ggy:,} 원" if isinstance(gas_ggy,(int,float)) else ""
+    elif isinstance(wti_price, (int,float)):
+        main_label   = "WTI 국제유가"
+        main_value   = f"{wti_price:,.2f}"
+        main_unit    = "USD/배럴"
+        main_sub     = "국내 유가: OPINET API 등록 후 표시"
+    else:
+        main_label   = "유가 정보"
+        main_value   = "--"
+        main_unit    = ""
+        main_sub     = "데이터 수집 중"
 
     st.markdown(f"""
     <div class="wti-card" style="height: 100%; min-height: 260px;">
-      <div class="wti-label">휘발유 (전국 평균)</div>
-      <div class="wti-price">{price_display}<span style="font-size:1rem;color:#64748B"> 원</span></div>
-      <div class="wti-change wti-up">실시간 유가 정보</div>
+      <div class="wti-label">{main_label}</div>
+      <div class="wti-price">{main_value}<span style="font-size:1rem;color:#64748B"> {main_unit}</span></div>
+      <div class="wti-change wti-up" style="font-size:0.72rem">{main_sub}</div>
       <hr class="wti-divider">
-      <div class="wti-sub-row"><span>경기도 평균</span><span class="wti-sub-val">{price_gyg} 원</span></div>
+      <div class="wti-sub-row"><span>USD/KRW 환율</span><span class="wti-sub-val">{usd_display} 원</span></div>
       <div class="wti-sub-row"><span>수집 기사</span><span class="wti-sub-val">{len(analyzed)} 건</span></div>
       <div class="wti-sub-row"><span>패러다임 신호</span><span class="wti-sub-val">{paradigm.get('total_signals',0)} 개</span></div>
       <div class="wti-sub-row"><span>발굴 이슈</span><span class="wti-sub-val">{len(issues)} 건</span></div>

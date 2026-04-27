@@ -141,7 +141,7 @@ def run(target_date: str = None) -> Path:
 
     try:
         resp = client.messages.create(
-            model=CLAUDE_MODEL, max_tokens=2500,
+            model=CLAUDE_MODEL, max_tokens=8096,
             system=SYSTEM,
             messages=[{"role": "user", "content": prompt}],
         )
