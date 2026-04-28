@@ -46,6 +46,13 @@ st.markdown("""
 [data-testid="stToolbar"] { background: transparent !important; }
 .block-container { padding: 0 !important; max-width: 100% !important; }
 
+/* ── 중앙 정렬 래퍼 — A4 출력 최적화 ── */
+.center-wrap {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
 /* 사이드바 */
 [data-testid="stSidebar"] { background: #1C2B40 !important; }
 [data-testid="stSidebar"] * { color: #CBD5E1 !important; }
@@ -56,9 +63,13 @@ st.markdown("""
 
 /* ── 헤더 — 다크 네이비, 스크린샷 참고 ── */
 .intel-header {
-  display: flex; align-items: flex-end; justify-content: space-between;
-  padding: 20px 32px 16px 32px;
   background: #1C2B40;
+  padding: 0;
+}
+.intel-header-inner {
+  display: flex; align-items: flex-end; justify-content: space-between;
+  max-width: 960px; margin: 0 auto;
+  padding: 20px 24px 16px 24px;
 }
 .header-brand { display: flex; flex-direction: column; gap: 4px; }
 .header-org {
@@ -82,10 +93,13 @@ st.markdown("""
 @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.3} }
 
 /* ── 지표 띠 — 연회색 배경, 수치 나열 ── */
-.metrics-strip {
+.metrics-strip-outer {
   background: #F3F4F6;
   border-bottom: 1px solid #E5E7EB;
-  padding: 10px 32px;
+}
+.metrics-strip {
+  max-width: 960px; margin: 0 auto;
+  padding: 10px 24px;
   display: flex; gap: 0; align-items: stretch;
 }
 .ms-item {
@@ -102,7 +116,11 @@ st.markdown("""
 .ms-sub { font-size: 0.62rem; color: #9CA3AF; margin-top: 1px; }
 
 /* ── 레이아웃 래퍼 ── */
-.page-wrap { padding: 20px 32px; }
+.page-wrap {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px 24px;
+}
 
 /* ── 섹션 공통 — 카드 없이 흰 배경 + 얇은 테두리 ── */
 .section-card {
@@ -407,11 +425,19 @@ st.markdown("""
 }
 .footer-stamp { font-size: 0.6rem; font-weight: 600; letter-spacing: 1px; color: #D1D5DB; text-transform: uppercase; }
 
-/* 인쇄 */
+/* ── 인쇄 — A4 최적화 ── */
 @media print {
-  .stApp { background: white !important; }
-  [data-testid="stSidebar"] { display: none !important; }
-  .no-print { display: none !important; }
+  @page { size: A4; margin: 15mm 18mm; }
+  .stApp, [data-testid="stAppViewContainer"] { background: white !important; }
+  [data-testid="stSidebar"], .no-print { display: none !important; }
+  .intel-header { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .metrics-strip-outer { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .section-card, .hero-card, .panel-card,
+  .impact-card, .action-card, .bench-card, .yt-card {
+    break-inside: avoid; box-shadow: none !important;
+  }
+  .page-wrap { max-width: 100%; padding: 0; }
+  .intel-header-inner, .metrics-strip { max-width: 100%; }
 }
 </style>
 """, unsafe_allow_html=True)
@@ -538,19 +564,21 @@ day_d    = (selected_date - date(2026,4,1)).days  # D-day 기준 (예시)
 
 st.markdown(f"""
 <div class="intel-header">
-  <div class="header-brand">
-    <div class="header-org">수원시정연구원</div>
-    <div class="header-main">중동전쟁에 따른 민생경제 대응 모니터링</div>
-    <div class="header-date-line">{date_ko}</div>
-  </div>
-  <div class="header-right">
-    <div class="urgency-badge urg-{urgency}">
-      <div class="urg-dot"></div>
-      대응단계 {urg_label}
+  <div class="intel-header-inner">
+    <div class="header-brand">
+      <div class="header-org">수원시정연구원</div>
+      <div class="header-main">중동전쟁에 따른 민생경제 대응 모니터링</div>
+      <div class="header-date-line">{date_ko}</div>
+    </div>
+    <div class="header-right">
+      <div class="urgency-badge urg-{urgency}">
+        <div class="urg-dot"></div>
+        대응단계 {urg_label}
+      </div>
     </div>
   </div>
 </div>
-<div class="metrics-strip">
+<div class="metrics-strip-outer"><div class="metrics-strip">
   <div class="ms-item">
     <div class="ms-label">브렌트유</div>
     <div class="ms-value up">{wti_str}</div>
@@ -586,7 +614,7 @@ st.markdown(f"""
     <div class="ms-value">D+{day_d}</div>
     <div class="ms-sub">3.30 출범</div>
   </div>
-</div>
+</div></div>
 """, unsafe_allow_html=True)
 
 
