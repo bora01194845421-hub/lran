@@ -21,7 +21,7 @@ CLEAN_DIR            = DATA_DIR / "clean"
 # 페이지 설정
 # ─────────────────────────────────────────────
 st.set_page_config(
-    page_title="수원시 전략 브리핑 | 이란전쟁 민생",
+    page_title="중동전쟁에 따른 민생경제 대응 모니터링 | 수원시정연구원",
     page_icon="🏛️",
     layout="wide",
     initial_sidebar_state="collapsed",
@@ -540,7 +540,7 @@ st.markdown(f"""
 <div class="intel-header">
   <div class="header-brand">
     <div class="header-org">수원시정연구원</div>
-    <div class="header-main">중동 비상경제 브리핑</div>
+    <div class="header-main">중동전쟁에 따른 민생경제 대응 모니터링</div>
     <div class="header-date-line">{date_ko}</div>
   </div>
   <div class="header-right">
@@ -632,7 +632,7 @@ else:
 gas_ggy_str = f"{gas_ggy:,} 원" if isinstance(gas_ggy,(int,float)) else "N/A"
 
 st.markdown(f"""
-<div class="hero-card">
+<div class="hero-card" style="grid-template-columns: 1fr;">
   <div class="hero-left">
     <div class="hero-label">🔴 Global Crisis Update — {fmt_ko(selected_date)}</div>
     <div class="hero-headline">{hl}</div>
@@ -641,31 +641,8 @@ st.markdown(f"""
       <span>📡 패러다임 신호: {paradigm.get('total_signals',0)}개</span>
       <span>🌍 추적 국가: {len(cr_responses)}개국</span>
     </div>
-    <div class="scout-label">▸ SCOUT SUMMARY — 긴급 전황 요약</div>
+    <div class="scout-label">▸ 이번주 핵심 동향</div>
     {scout_html}
-  </div>
-  <div class="metrics-panel">
-    <div class="metric-item">
-      <div class="metric-label">{price_label}</div>
-      <div class="metric-value">{price_value}<span class="metric-unit">{price_unit}</span></div>
-    </div>
-    <div class="metric-item">
-      <div class="metric-label">경기도 평균</div>
-      <div class="metric-value" style="font-size:1.1rem">{gas_ggy_str}</div>
-    </div>
-    <hr class="metric-divider">
-    <div class="metric-row">
-      <span class="mr-label">USD/KRW</span>
-      <span class="mr-value">{usd_display} ₩</span>
-    </div>
-    <div class="metric-row">
-      <span class="mr-label">발굴 이슈</span>
-      <span class="mr-value">{len(issues)} 건</span>
-    </div>
-    <div class="metric-row">
-      <span class="mr-label">긴급도</span>
-      <span class="mr-value" style="color:#F87171">{urgency}</span>
-    </div>
   </div>
 </div>
 """, unsafe_allow_html=True)
