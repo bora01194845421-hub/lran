@@ -10,6 +10,7 @@ youtube-transcript-api로 자막 추출 → Claude API 한국어 요약
 
 import json
 import logging
+import re
 import time
 from datetime import date, datetime
 from pathlib import Path
@@ -25,9 +26,11 @@ from config import (
 logger = logging.getLogger(__name__)
 
 try:
-    from youtube_transcript_api import YouTubeTranscriptApi, NoTranscriptFound
+    from youtube_transcript_api import YouTubeTranscriptApi
+    _yt_api = YouTubeTranscriptApi()   # v1.2.4+ 인스턴스 방식
     YT_AVAILABLE = True
 except ImportError:
+    _yt_api = None
     YT_AVAILABLE = False
     logger.warning("youtube-transcript-api 미설치. pip install youtube-transcript-api")
 
@@ -74,13 +77,22 @@ def is_iran_related(text: str) -> bool:
 
 
 def extract_transcript(video_id: str, lang: str = "en") -> str:
-    """자막 추출"""
-    if not YT_AVAILABLE:
+    """자막 추출 (youtube-transcript-api v1.2.4+ 호환)"""
+    if not YT_AVAILABLE or _yt_api is None:
         return ""
     try:
         lang_codes = ["ko", "en"] if lang == "ko" else ["en", "ko"]
-        transcript_list = YouTubeTranscriptApi.get_transcript(video_id, languages=lang_codes)
-        text = " ".join(t["text"] for t in transcript_list)
+        # v1.2.4+: 인스턴스 fetch() 사용, 언어 순서대로 시도
+        transcript = None
+        for lc in lang_codes:
+            try:
+                transcript = _yt_api.fetch(video_id, languages=[lc])
+                break
+            except Exception:
+                continue
+        if transcript is None:
+            transcript = _yt_api.fetch(video_id)  # 언어 무관 시도
+        text = " ".join(snippet.text for snippet in transcript)
         return text[:6000]  # 토큰 절약
     except Exception as e:
         logger.warning(f"[자막] {video_id} 실패: {e}")
@@ -92,32 +104,39 @@ def summarize_with_claude(title: str, transcript: str, channel_name: str, lang: 
     if not transcript:
         return {"summary_ko": "", "key_points": [], "iran_relevance": "낮음"}
 
-    prompt = f"""다음 유튜브 영상의 자막을 분석해서 JSON으로 반환하세요.
+    # 자막 내 특수문자 정리 (JSON 파싱 오류 방지)
+    safe_transcript = transcript.replace("\\", " ").replace('"', "'")[:4000]
+    safe_title = title.replace("\\", " ").replace('"', "'")
 
+    prompt = f"""아래 YouTube 영상 자막을 분석해 JSON을 반환하세요.
 채널: {channel_name}
-영상 제목: {title}
-자막 내용:
-{transcript}
+제목: {safe_title}
+자막: {safe_transcript}
 
-반환 형식:
-{{
-  "summary_ko": "한국어 요약 3줄 (각 줄 • 시작, \\n 구분)",
-  "key_points": ["핵심 포인트 1", "핵심 포인트 2", "핵심 포인트 3"],
-  "iran_relevance": "높음|중간|낮음",
-  "suwon_connection": "수원시 민생과의 연결점 (1줄, 없으면 빈 문자열)"
-}}
+반환 형식(JSON만, 코드블록 없이):
+{{"summary_ko":"• 요약1\\n• 요약2\\n• 요약3","key_points":["포인트1","포인트2","포인트3"],"iran_relevance":"높음","suwon_connection":"수원시 민생 연결점"}}
 
-이란전쟁·에너지·민생 관련 내용이 없으면 iran_relevance를 낮음으로 설정."""
+iran_relevance는 높음/중간/낮음 중 하나."""
 
     try:
         resp = client.messages.create(
             model=CLAUDE_MODEL,
-            max_tokens=600,
-            system="당신은 이란전쟁 전문 분석가입니다. JSON만 반환하세요.",
+            max_tokens=800,
+            system="이란전쟁 전문 분석가. 반드시 유효한 JSON 한 줄만 반환.",
             messages=[{"role": "user", "content": prompt}],
         )
-        raw = resp.content[0].text.strip().replace("```json", "").replace("```", "").strip()
-        return json.loads(raw)
+        raw = resp.content[0].text.strip()
+        # 코드블록 제거
+        raw = re.sub(r"```(?:json)?", "", raw).replace("```", "").strip()
+        # JSON 파싱 시도
+        try:
+            return json.loads(raw)
+        except json.JSONDecodeError:
+            # JSON 부분만 추출 재시도
+            m = re.search(r'\{.*\}', raw, re.DOTALL)
+            if m:
+                return json.loads(m.group())
+            raise
     except Exception as e:
         logger.warning(f"[Claude 요약] 실패: {e}")
         return {"summary_ko": f"요약 실패: {title}", "key_points": [], "iran_relevance": "중간"}

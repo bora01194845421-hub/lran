@@ -39,19 +39,26 @@ st.markdown("""
   font-family: 'Noto Sans KR', 'Inter', 'Malgun Gothic', sans-serif;
 }
 
-/* ── 전체 배경 — 순백 ── */
-.stApp { background: #FFFFFF !important; }
-[data-testid="stAppViewContainer"] { background: #FFFFFF !important; }
-[data-testid="stHeader"] { background: transparent !important; }
-[data-testid="stToolbar"] { background: transparent !important; }
-.block-container { padding: 0 !important; max-width: 100% !important; }
+/* ── 전체 배경 — 따뜻한 회색 ── */
+.stApp { background: #E8E4DC !important; }
+[data-testid="stAppViewContainer"] { background: #E8E4DC !important; }
+[data-testid="stMain"]    { background: transparent !important; }
+.main                     { background: transparent !important; }
+[data-testid="stHeader"]     { display: none !important; }
+[data-testid="stToolbar"]    { display: none !important; }
+[data-testid="stDecoration"] { display: none !important; }
 
-/* ── 중앙 정렬 래퍼 — A4 출력 최적화 ── */
-.center-wrap {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 0 24px;
+/* ── block-container = 흰 카드 본체 ── */
+.block-container {
+  padding: 0 24px 32px 24px !important;
+  max-width: 920px !important;
+  margin: 28px auto 48px auto !important;
+  background: #FFFFFF !important;
+  border-radius: 12px !important;
+  box-shadow: 0 2px 24px rgba(0,0,0,0.11) !important;
 }
+/* 푸터만 전체 폭 유지 */
+.intel-footer { margin-left: -24px !important; margin-right: -24px !important; }
 
 /* 사이드바 */
 [data-testid="stSidebar"] { background: #1C2B40 !important; }
@@ -65,10 +72,10 @@ st.markdown("""
 .intel-header {
   background: #1C2B40;
   padding: 0;
+  border-radius: 8px 8px 0 0;
 }
 .intel-header-inner {
   display: flex; align-items: flex-end; justify-content: space-between;
-  max-width: 960px; margin: 0 auto;
   padding: 20px 24px 16px 24px;
 }
 .header-brand { display: flex; flex-direction: column; gap: 4px; }
@@ -95,30 +102,32 @@ st.markdown("""
 /* ── 지표 띠 — 연회색 배경, 수치 나열 ── */
 .metrics-strip-outer {
   background: #F3F4F6;
-  border-bottom: 1px solid #E5E7EB;
+  border-top: 1px solid #E5E7EB;
+  border-radius: 0 0 8px 8px;
+  margin-bottom: 20px;
 }
 .metrics-strip {
-  max-width: 960px; margin: 0 auto;
-  padding: 10px 24px;
-  display: flex; gap: 0; align-items: stretch;
+  padding: 12px 14px;
+  display: flex; gap: 8px; align-items: stretch;
 }
 .ms-item {
-  display: flex; flex-direction: column; justify-content: center;
-  padding: 0 22px; border-right: 1px solid #D1D5DB;
-  min-width: 110px;
+  flex: 1;
+  display: flex; flex-direction: column; justify-content: center; align-items: center;
+  padding: 10px 6px;
+  background: #FFFFFF;
+  border: 1px solid #E5E7EB;
+  border-radius: 6px;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
 }
-.ms-item:first-child { padding-left: 0; }
-.ms-item:last-child  { border-right: none; }
-.ms-label { font-size: 0.58rem; color: #6B7280; font-weight: 600; margin-bottom: 2px; letter-spacing: 0.3px; }
-.ms-value { font-size: 0.92rem; font-weight: 800; color: #111827; font-family: 'Inter', monospace; line-height: 1.2; }
+.ms-label { font-size: 0.57rem; color: #6B7280; font-weight: 600; margin-bottom: 4px; letter-spacing: 0.3px; white-space: nowrap; }
+.ms-value { font-size: 0.93rem; font-weight: 800; color: #111827; font-family: 'Inter', monospace; line-height: 1.2; white-space: nowrap; }
 .ms-value.up   { color: #DC2626; }
 .ms-value.down { color: #059669; }
-.ms-sub { font-size: 0.62rem; color: #9CA3AF; margin-top: 1px; }
+.ms-sub { font-size: 0.6rem; color: #9CA3AF; margin-top: 3px; white-space: nowrap; }
 
 /* ── 레이아웃 래퍼 ── */
 .page-wrap {
-  max-width: 960px;
-  margin: 0 auto;
   padding: 20px 24px;
 }
 
@@ -306,7 +315,7 @@ st.markdown("""
 .lga-ref-cell   { font-size: 0.71rem; color: #15803D; padding: 10px 10px; line-height: 1.5; font-weight: 600; }
 
 /* ── 3컬럼 민생분석 ── */
-.triple-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.triple-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
 .impact-card {
   background: #FFFFFF; border: 1px solid #E5E7EB;
   border-radius: 8px; padding: 18px; height: 100%;
@@ -315,7 +324,7 @@ st.markdown("""
 .impact-card-industry { border-top: 3px solid #F59E0B; }
 .impact-card-life     { border-top: 3px solid #3B82F6; }
 .ic-icon { font-size: 1.3rem; margin-bottom: 6px; }
-.ic-category { font-size: 0.6rem; font-weight: 700; color: #9CA3AF; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 4px; }
+.ic-category { font-size: 0.88rem; font-weight: 800; color: #111827; margin-bottom: 8px; }
 .ic-level-badge { display: inline-block; padding: 2px 8px; border-radius: 3px; font-size: 0.63rem; font-weight: 700; margin-bottom: 10px; }
 .icl-높음    { background: #FEF2F2; color: #B91C1C; }
 .icl-중간    { background: #FFFBEB; color: #92400E; }
@@ -367,29 +376,67 @@ st.markdown("""
 .bench-arrow { color: #2563EB; flex-shrink: 0; font-weight: 700; }
 
 /* ── YouTube ── */
+/* ── YouTube 썸네일 카드 ── */
 .yt-card {
   background: #FFFFFF; border: 1px solid #E5E7EB;
-  border-radius: 8px; padding: 16px 18px; height: 100%;
+  border-radius: 10px; overflow: hidden; height: 100%;
+  display: flex; flex-direction: column;
+  transition: box-shadow 0.2s;
 }
-.yt-channel-row { display: flex; align-items: center; gap: 7px; margin-bottom: 8px; }
+.yt-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.12); }
+
+/* 썸네일 */
+.yt-thumb-link { display: block; text-decoration: none; }
+.yt-thumb-wrap {
+  position: relative; width: 100%; padding-top: 56.25%; /* 16:9 */
+  background: #1C2B40; overflow: hidden;
+}
+.yt-thumb {
+  position: absolute; top: 0; left: 0;
+  width: 100%; height: 100%; object-fit: cover;
+}
+.yt-play-btn {
+  position: absolute; top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 44px; height: 44px; background: rgba(220,38,38,0.88);
+  border-radius: 50%; display: flex; align-items: center; justify-content: center;
+  color: #fff; font-size: 1rem; padding-left: 3px;
+  opacity: 0; transition: opacity 0.2s;
+}
+.yt-thumb-link:hover .yt-play-btn { opacity: 1; }
+
+/* 카드 바디 */
+.yt-card-body { padding: 12px 14px; flex: 1; display: flex; flex-direction: column; gap: 7px; }
+.yt-channel-row { display: flex; align-items: center; gap: 7px; flex-wrap: wrap; }
 .yt-ch-badge { display: inline-block; padding: 2px 8px; border-radius: 3px; font-size: 0.63rem; font-weight: 700; }
 .yt-aljazeera { background: #FEF2F2; color: #B91C1C; }
 .yt-dw        { background: #EFF6FF; color: #1E40AF; }
 .yt-yonhap    { background: #F0FDF4; color: #15803D; }
 .yt-default   { background: #F9FAFB; color: #6B7280; }
-.yt-meta { font-size: 0.64rem; color: #9CA3AF; margin-left: auto; }
-.yt-title { font-size: 0.84rem; font-weight: 800; color: #111827; margin-bottom: 8px; line-height: 1.45; }
-.yt-point { display: flex; gap: 7px; font-size: 0.75rem; color: #4B5563; line-height: 1.55; padding: 5px 0; border-bottom: 1px solid #F9FAFB; }
-.yt-point:last-child { border-bottom: none; }
-.yt-bullet { color: #DC2626; font-weight: 900; flex-shrink: 0; margin-top: 2px; }
-.yt-expert { font-size: 0.68rem; color: #9CA3AF; margin-top: 10px; display: flex; align-items: center; gap: 5px; padding-top: 8px; border-top: 1px solid #F3F4F6; }
-.yt-score { margin-left: auto; font-size: 0.64rem; font-weight: 700; color: #1D4ED8; }
+.yt-rel-badge { display: inline-block; padding: 2px 7px; border-radius: 3px; font-size: 0.6rem; font-weight: 700; margin-left: auto; }
+
+/* 제목 링크 */
+a.yt-title {
+  font-size: 0.8rem; font-weight: 800; color: #111827;
+  line-height: 1.45; text-decoration: none; display: block;
+}
+a.yt-title:hover { color: #1C2B40; text-decoration: underline; }
+
+/* 요약 */
+.yt-summary { flex: 1; }
+.yt-sum-line { font-size: 0.74rem; color: #374151; line-height: 1.65; padding: 2px 0; }
+
+/* 수원 연결점 */
+.yt-suwon {
+  font-size: 0.69rem; color: #1D4ED8; background: #EFF6FF;
+  padding: 5px 8px; border-radius: 4px; line-height: 1.5;
+}
 
 /* ── 리스크 점검 (구 Devil's Critique) ── */
 .devil-card {
-  background: #F9FAFB;
+  background: #FFFFFF;
   border: 1px solid #E5E7EB;
-  border-left: 3px solid #DC2626;
+  border-left: 4px solid #DC2626;
   border-radius: 8px;
   padding: 20px 24px;
   margin-bottom: 16px;
@@ -406,10 +453,35 @@ st.markdown("""
   border-bottom: 1px solid #E5E7EB; clear: both;
 }
 .devil-quote .dq-hi { color: #DC2626; }
-.devil-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
-.dp-num { font-size: 0.6rem; font-weight: 700; color: #9CA3AF; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 4px; }
-.dp-title { font-size: 0.82rem; font-weight: 700; color: #111827; margin-bottom: 5px; }
-.dp-body  { font-size: 0.74rem; color: #6B7280; line-height: 1.65; }
+.devil-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
+.dp-num   { display: none; }
+.dp-title { font-size: 0.88rem; font-weight: 800; color: #111827; margin-bottom: 7px; }
+.dp-body  { font-size: 0.8rem;  color: #374151;  line-height: 1.75; }
+
+/* ── 다음주 핵심이슈 ── */
+.next-issue-list { display: flex; flex-direction: column; gap: 10px; }
+.next-issue-item {
+  display: flex; align-items: flex-start; gap: 14px;
+  padding: 14px 16px; border-radius: 8px;
+  background: #F9FAFB; border: 1px solid #E5E7EB;
+}
+.ni-num {
+  flex-shrink: 0; width: 26px; height: 26px;
+  background: #1C2B40; border-radius: 50%;
+  color: #FFFFFF; font-size: 0.7rem; font-weight: 800;
+  display: flex; align-items: center; justify-content: center;
+  margin-top: 1px;
+}
+.ni-content { flex: 1; min-width: 0; }
+.ni-title  { font-size: 0.88rem; font-weight: 800; color: #111827; line-height: 1.4; margin-bottom: 4px; }
+.ni-detail { font-size: 0.75rem; color: #4B5563; line-height: 1.6; }
+.ni-tag {
+  flex-shrink: 0; padding: 2px 8px; border-radius: 3px;
+  font-size: 0.62rem; font-weight: 700; white-space: nowrap; margin-top: 3px;
+}
+.ni-high   { background: #FEF2F2; color: #B91C1C; }
+.ni-mid    { background: #FFFBEB; color: #92400E; }
+.ni-watch  { background: #EFF6FF; color: #1E40AF; }
 
 /* ── 빈 상태 ── */
 .empty-dark {
@@ -422,8 +494,47 @@ st.markdown("""
   display: flex; align-items: center; justify-content: space-between;
   padding: 12px 32px; border-top: 1px solid #E5E7EB;
   font-size: 0.64rem; color: #9CA3AF; background: #F9FAFB;
+  border-radius: 0 0 12px 12px;
 }
 .footer-stamp { font-size: 0.6rem; font-weight: 600; letter-spacing: 1px; color: #D1D5DB; text-transform: uppercase; }
+
+/* ── 추가 stance 배지 ── */
+.st-대응    { background: #F0F9FF; color: #0369A1; }
+.st-선제    { background: #FEF2F2; color: #B91C1C; }
+.st-모니터링 { background: #F9FAFB; color: #6B7280; }
+
+/* ── CSS-only 커스텀 탭 ── */
+.ctabs input[type="radio"] { display: none; }
+.ctab-panel { display: none; padding: 8px 0; }
+#cr-me:checked ~ #panel-cr-me,
+#cr-gl:checked ~ #panel-cr-gl,
+#cr-kr:checked ~ #panel-cr-kr { display: block; }
+
+.ctab-bar {
+  display: flex; border-bottom: 2px solid #E5E7EB; margin-bottom: 12px;
+}
+.ctab-label {
+  padding: 9px 22px; cursor: pointer;
+  color: #6B7280; font-weight: 600; font-size: 0.82rem;
+  border-bottom: 3px solid transparent; margin-bottom: -2px;
+}
+.ctab-label:hover { color: #374151; }
+#cr-me:checked ~ .ctab-bar label[for="cr-me"],
+#cr-gl:checked ~ .ctab-bar label[for="cr-gl"],
+#cr-kr:checked ~ .ctab-bar label[for="cr-kr"] {
+  color: #1C2B40; border-bottom-color: #1C2B40;
+}
+
+/* ── 각국 대응 정책 아이템 리스트 ── */
+.cr-policy-list { padding: 4px 0; }
+.policy-item {
+  display: flex; align-items: flex-start; gap: 10px;
+  padding: 10px 2px; border-bottom: 1px solid #F3F4F6;
+}
+.policy-item:last-child { border-bottom: none; }
+.pi-content { flex: 1; min-width: 0; }
+.pi-title   { font-size: 0.83rem; font-weight: 700; color: #111827; line-height: 1.4; }
+.pi-detail  { font-size: 0.72rem; color: #6B7280; margin-top: 3px; line-height: 1.55; }
 
 /* ── 인쇄 — A4 최적화 ── */
 @media print {
@@ -459,14 +570,72 @@ def fmt_ko(d): return d.strftime("%Y년 %m월 %d일")
 
 
 # ─────────────────────────────────────────────
-# 사이드바
+# 날짜 목록 수집
+# ─────────────────────────────────────────────
+def get_available_dates() -> list:
+    """분석 파일이 존재하는 날짜 목록 (최신순)"""
+    dates = []
+    try:
+        for f in sorted(ANALYZED_DIR.glob("analyzed_*.json"), reverse=True):
+            date_part = f.stem.replace("analyzed_", "")
+            try:
+                dates.append(datetime.strptime(date_part, "%Y%m%d").date())
+            except ValueError:
+                continue
+    except Exception:
+        pass
+    return dates or [date.today()]
+
+_available_dates = get_available_dates()
+_default_date    = _available_dates[0]  # 가장 최근 날짜
+
+# ─────────────────────────────────────────────
+# 날짜 탭 — 메인 페이지 상단
+# ─────────────────────────────────────────────
+st.markdown("""
+<style>
+/* 날짜 탭 라디오 버튼 → 탭 스타일 */
+div[data-testid="stHorizontalBlock"] { gap: 0 !important; }
+.date-tab-wrap { margin: 0 0 4px 0; }
+div[data-testid="stRadio"] > label { display: none; }
+div[data-testid="stRadio"] > div {
+  display: flex !important; flex-direction: row !important;
+  gap: 0 !important; background: #F3F4F6;
+  border-radius: 8px 8px 0 0; padding: 6px 6px 0 6px;
+  border-bottom: 2px solid #E5E7EB;
+}
+div[data-testid="stRadio"] > div > label {
+  padding: 8px 20px !important; font-size: 0.82rem !important;
+  font-weight: 600 !important; color: #6B7280 !important;
+  border-radius: 6px 6px 0 0 !important; cursor: pointer;
+  border: 1px solid transparent; border-bottom: none;
+  background: transparent; margin-bottom: -2px;
+}
+div[data-testid="stRadio"] > div > label:has(input:checked) {
+  background: #FFFFFF !important; color: #1C2B40 !important;
+  border-color: #E5E7EB !important;
+}
+div[data-testid="stRadio"] > div > label input { display: none; }
+</style>
+""", unsafe_allow_html=True)
+
+_date_labels = [d.strftime("%m/%d (%a)").replace("Mon","월").replace("Tue","화")
+                .replace("Wed","수").replace("Thu","목").replace("Fri","금")
+                .replace("Sat","토").replace("Sun","일")
+                for d in _available_dates]
+
+_sel_label = st.radio("", _date_labels, index=0, horizontal=True, label_visibility="collapsed")
+_sel_idx   = _date_labels.index(_sel_label) if _sel_label in _date_labels else 0
+selected_date = _available_dates[_sel_idx]
+date_str = ds(selected_date)
+
+# ─────────────────────────────────────────────
+# 사이드바 (파이프라인 컨트롤만 유지)
 # ─────────────────────────────────────────────
 with st.sidebar:
     st.markdown("## ⚙️ 운영 컨트롤")
     st.divider()
-    selected_date = st.date_input("📅 날짜", value=date.today(),
-                                   min_value=date(2026,1,1), max_value=date.today())
-    date_str = ds(selected_date)
+    st.caption(f"📅 선택 날짜: **{selected_date.strftime('%Y-%m-%d')}**")
     st.divider()
     col_run, col_stop = st.columns(2)
     with col_run:
@@ -528,7 +697,16 @@ gas_nat      = oil.get("gasoline_national", None)
 gas_ggy      = oil.get("gasoline_gyeonggi", None)
 ex_rate      = domestic.get("exchange_rate", {})
 wti_price    = oil.get("wti_usd", None)
+brent_price  = oil.get("brent_usd", None)
+rbob_gal     = oil.get("rbob_usd_gal", None)
 usd_krw      = ex_rate.get("USD_KRW", None)
+
+# 국내 휘발유 추정: 오피넷 실패 시 RBOB 선물 × 환율 × 단위환산 + 세금·마진 보정
+# RBOB USD/gal → 원/리터: × (KRW/USD) / 3.785L × 1.4 (세금+마진 계수)
+if gas_nat is None and rbob_gal and usd_krw:
+    gas_nat = round(rbob_gal * usd_krw / 3.785 * 1.38)  # 추정값
+if gas_ggy is None and gas_nat:
+    gas_ggy = round(gas_nat * 0.985)  # 경기도 ≈ 전국 -1.5%
 cr_responses = cr_data.get("country_responses", [])
 issues       = cr_data.get("emerging_issues", [])
 key_trends   = cr_data.get("key_trends", [])
@@ -555,11 +733,15 @@ date_ko = selected_date.strftime("%Y년 %m월 %d일 (%a)").replace(
     "Thu","목").replace("Fri","금").replace("Sat","토").replace("Sun","일")
 
 # 지표 띠 데이터
+brent_str = f"${brent_price:,.2f}" if isinstance(brent_price,(int,float)) else (
+            f"${wti_price:,.2f}"   if isinstance(wti_price,(int,float)) else "N/A")  # 브렌트 없으면 WTI 대체
 wti_str  = f"${wti_price:,.2f}" if isinstance(wti_price,(int,float)) else "N/A"
 krw_str  = f"{usd_krw:,.0f}원"  if isinstance(usd_krw,(int,float)) else "N/A"
 gas_str  = f"{gas_nat:,}원"     if isinstance(gas_nat,(int,float)) else "N/A"
 ggy_str2 = f"{gas_ggy:,}원"     if isinstance(gas_ggy,(int,float)) else "N/A"
 cpi_str  = str(domestic.get("cpi",{}).get("cpi_latest","N/A"))
+# 휘발유 추정 여부 표시용
+gas_is_est = oil.get("gasoline_national") is None and gas_nat is not None
 day_d    = (selected_date - date(2026,4,1)).days  # D-day 기준 (예시)
 
 st.markdown(f"""
@@ -581,8 +763,8 @@ st.markdown(f"""
 <div class="metrics-strip-outer"><div class="metrics-strip">
   <div class="ms-item">
     <div class="ms-label">브렌트유</div>
-    <div class="ms-value up">{wti_str}</div>
-    <div class="ms-sub">전일비 ↑</div>
+    <div class="ms-value up">{brent_str}</div>
+    <div class="ms-sub">{"ICE Brent" if isinstance(brent_price,(int,float)) else "WTI 대체"}</div>
   </div>
   <div class="ms-item">
     <div class="ms-label">달러·원</div>
@@ -592,12 +774,12 @@ st.markdown(f"""
   <div class="ms-item">
     <div class="ms-label">국내 휘발유</div>
     <div class="ms-value up">{gas_str}</div>
-    <div class="ms-sub">최고가격</div>
+    <div class="ms-sub">{"추정값" if gas_is_est else "오피넷"}</div>
   </div>
   <div class="ms-item">
     <div class="ms-label">경기도 휘발유</div>
     <div class="ms-value">{ggy_str2}</div>
-    <div class="ms-sub">4.10 동일</div>
+    <div class="ms-sub">{"추정값" if gas_is_est else "오피넷"}</div>
   </div>
   <div class="ms-item">
     <div class="ms-label">소비자물가</div>
@@ -643,35 +825,26 @@ else:
 
 usd_display = f"{usd_krw:,.0f}" if isinstance(usd_krw,(int,float)) else "N/A"
 
-# 헤드라인 키워드 강조
-hl = headline
-for kw in ["긴급","재봉쇄","위기","전쟁","봉쇄","핵"]:
-    hl = hl.replace(kw, f'<span class="hl-red">{kw}</span>')
-
-# Scout 요약
+# 이번주 핵심동향 — signal-item 스타일로 렌더링
+_scout_colors = ["red", "amber", "blue", "green", "red"]
 if scout_points:
     scout_html = "".join(
-        f'<div class="scout-item"><div class="scout-num">{i}</div><div>{pt}</div></div>'
-        for i, pt in enumerate(scout_points, 1)
+        f'<div class="signal-item">'
+        f'<div class="sig-dot sig-{_scout_colors[i % len(_scout_colors)]}"></div>'
+        f'<div>{pt}</div>'
+        f'</div>'
+        for i, pt in enumerate(scout_points)
     )
 else:
-    scout_html = '<div class="empty-dark">파이프라인 실행 후 Scout 요약이 표시됩니다.</div>'
-
-gas_ggy_str = f"{gas_ggy:,} 원" if isinstance(gas_ggy,(int,float)) else "N/A"
+    scout_html = '<div class="empty-dark">파이프라인 실행 후 핵심 동향이 표시됩니다.</div>'
 
 st.markdown(f"""
-<div class="hero-card" style="grid-template-columns: 1fr;">
-  <div class="hero-left">
-    <div class="hero-label">🔴 Global Crisis Update — {fmt_ko(selected_date)}</div>
-    <div class="hero-headline">{hl}</div>
-    <div class="hero-meta">
-      <span>📎 수집 기사: {len(analyzed)}건</span>
-      <span>📡 패러다임 신호: {paradigm.get('total_signals',0)}개</span>
-      <span>🌍 추적 국가: {len(cr_responses)}개국</span>
-    </div>
-    <div class="scout-label">▸ 이번주 핵심 동향</div>
-    {scout_html}
+<div class="section-card">
+  <div class="sec-header">
+    <span class="sec-title">📋 이번주 핵심 동향</span>
+    <span class="sec-date">{fmt_ko(selected_date)}</span>
   </div>
+  {scout_html}
 </div>
 """, unsafe_allow_html=True)
 
@@ -694,16 +867,26 @@ else:
 # 시그널 HTML
 def signal_level(item):
     if isinstance(item, dict):
-        lvl = item.get("level","blue")
-        txt = item.get("text", item.get("title",""))
+        # level 직접 지정된 경우
+        lvl = item.get("level", None)
+        # strength 기반 level 자동 매핑
+        if not lvl:
+            strength = item.get("strength", 3)
+            lvl = "red" if strength >= 5 else "amber" if strength >= 3 else "blue"
+        # 텍스트: text > title_ko > title > description 첫줄 순서로 시도
+        txt = (item.get("text") or item.get("title_ko") or
+               item.get("title") or
+               (item.get("description","").split("\n")[0].lstrip("• ") if item.get("description") else ""))
     else:
         lvl = "blue"
         txt = str(item)
-    return lvl, txt
+    return lvl or "blue", txt
 
 intl_html = ""
 for item in signal_items:
     lvl, txt = signal_level(item)
+    if not txt.strip():   # 빈 텍스트 항목 제외
+        continue
     intl_html += f'<div class="signal-item"><div class="sig-dot sig-{lvl}"></div><div>{txt}</div></div>'
 
 # 핵심 동향 (key_trends)
@@ -711,78 +894,128 @@ if key_trends:
     for trend in key_trends[:3]:
         intl_html += f'<div class="signal-item"><div class="sig-dot sig-amber"></div><div>{trend}</div></div>'
 
-# 국내지표 HTML
-gas_val  = f"{gas_nat:,} 원/ℓ" if isinstance(gas_nat,(int,float)) else "N/A"
-ggy_val  = f"{gas_ggy:,} 원/ℓ" if isinstance(gas_ggy,(int,float)) else "N/A"
-wti_val  = f"${wti_price:,.2f}" if isinstance(wti_price,(int,float)) else "N/A"
-krw_val  = f"{usd_krw:,.0f} ₩" if isinstance(usd_krw,(int,float)) else "N/A"
-cpi_data = domestic.get("cpi", {})
-cpi_val  = str(cpi_data.get("cpi_latest","N/A")) if cpi_data else "N/A"
-
-domestic_rows = [
-    ("휘발유 전국 평균", gas_val, "up" if isinstance(gas_nat,(int,float)) else "neu"),
-    ("경기도 휘발유", ggy_val, "up" if isinstance(gas_ggy,(int,float)) else "neu"),
-    ("WTI 국제유가", wti_val, "up" if isinstance(wti_price,(int,float)) else "neu"),
-    ("USD/KRW 환율", krw_val, "up" if isinstance(usd_krw,(int,float)) else "neu"),
-    ("CPI 소비자물가", cpi_val, "neu"),
-]
-
-dom_html = "".join(
-    f'<div class="kpi-row"><span class="kpi-label">{lbl}</span><div style="display:flex;align-items:center;gap:8px"><span class="kpi-value">{val}</span><span class="kpi-tag kt-{tag}">{"↑" if tag=="up" else "↓" if tag=="down" else "—"}</span></div></div>'
-    for lbl, val, tag in domestic_rows
-)
-
 st.markdown(f"""
-<div class="twin-panels">
-  <div class="panel-card">
-    <div class="panel-title">🌍 국제 전황 신호 <span class="sec-badge badge-red">LIVE</span></div>
-    {intl_html if intl_html else '<div class="empty-dark">데이터 없음</div>'}
-  </div>
-  <div class="panel-card">
-    <div class="panel-title">📊 국내 경제 지표 <span class="sec-badge badge-amber">실시간</span></div>
-    {dom_html}
-  </div>
+<div class="section-card">
+  <div class="panel-title">🌍 국제 전황 신호 <span class="sec-badge badge-red">LIVE</span></div>
+  {intl_html if intl_html else '<div class="empty-dark">데이터 없음</div>'}
 </div>
 """, unsafe_allow_html=True)
 
 
 # ═══════════════════════════════════════════════════════════
-# ④ 각국 대응 매트릭스
+# ④ 각국 대응 매트릭스 — 중동 / 글로벌 / 한국 탭
 # ═══════════════════════════════════════════════════════════
-DEFAULT_CR = [
-    ("미국",     "강경", "대이란 제재 강화, 호르무즈 해군 작전 유지",           "한-미 방위 협력 비용 분담 재협상 압박"),
-    ("이스라엘", "강경", "이란 핵·미사일 시설 타격 옵션 상시 검토",             ""),
-    ("중국",     "중립", "이란 원유 수입 지속, 미국과 외교적 거리두기",          "삼성·LG 대중 수출 규제 연동 리스크"),
-    ("러시아",   "지지", "이란 군사·외교 지원, 서방 제재 우회 협력",             ""),
-    ("사우디",   "중립", "OPEC+ 감산 유지, 미·이란 중재 관망",                   "국제유가 상승 시 국내 에너지 비용 직결"),
-    ("EU",       "제재", "대이란 제재 동참, 에너지 공급선 다변화 가속",           ""),
-    ("한국",     "협력", "미국 동조 제재, LNG 대체 수입선 확보 긴급 협의 중",    "수원 에너지 비용 상승, 삼성 공급망 직접 영향"),
-    ("일본",     "협력", "에너지 비축 확대, 중동 대체 공급망 구축 협의",         ""),
-]
+REGION_MAP = {
+    "중동":   {"이란","이스라엘","사우디","사우디아라비아","UAE","카타르","이라크",
+               "레바논","예멘","시리아","이집트","터키","하마스","헤즈볼라","UAE·카타르"},
+    "글로벌": {"미국","중국","러시아","EU","유럽","일본","영국","독일","프랑스","인도","파키스탄","북한"},
+    "한국":   {"한국","대한민국","외교부","산업부","기재부","에너지청","에너지부","국토부"},
+}
 
-if cr_responses:
-    cr_rows_html = ""
-    for r in cr_responses:
-        country = r.get("country","")
-        stance  = r.get("stance","중립")
-        actions = r.get("actions",[])
-        action_text = " · ".join(actions[:2]) if actions else r.get("outlook","")[:80]
-        suwon   = r.get("suwon_relevance","")
-        st_key  = stance[:2] if stance[:2] in ["강경","지지","중립","제재","협력"] else "unknown"
-        cr_rows_html += (
-            f'<tr class="cr-row">'
-            f'<td class="cr-country">{country}</td>'
-            f'<td class="cr-stance-cell"><span class="cr-stance-badge st-{st_key}">{stance}</span></td>'
-            f'<td class="cr-action-cell">{action_text}</td>'
-            f'<td class="cr-suwon-cell">{suwon}</td>'
-            f'</tr>'
+DEFAULT_CR_REGIONS = {
+    "중동": [
+        {"country":"이란",       "stance":"강경",
+         "title":"핵시설 방어 태세 강화, 호르무즈 통제 선언",
+         "detail":"IAEA 사찰 차단·우라늄 농축 90% 돌파 발표. 대리전 확대로 협상 압박 전략 유지."},
+        {"country":"이스라엘",   "stance":"강경",
+         "title":"이란 핵·미사일 시설 정밀타격 옵션 상시 검토",
+         "detail":"가자·레바논 전선 동시 관리. 미국에 선제타격 승인 압박 지속."},
+        {"country":"사우디",     "stance":"중립",
+         "title":"OPEC+ 감산 유지, 미·이란 중재 관망",
+         "detail":"유가 상승 수혜 기대 속 분쟁 확산 억제 외교. 미국과 안보협약 재협상 진행 중."},
+        {"country":"UAE·카타르", "stance":"중립",
+         "title":"LNG 수출 지속, 분쟁 확산 방지 외교 추진",
+         "detail":"카타르는 이란과 가스전 공유로 중립 불가피. UAE는 에너지 수출 극대화 전략 유지."},
+        {"country":"이라크",     "stance":"중립",
+         "title":"이란 영향권·미군 기지 공존, 줄타기 외교 지속",
+         "detail":"친이란 민병대 활동 억제 국제 압박 증가. 석유 수출 차질 최소화 목표."},
+    ],
+    "글로벌": [
+        {"country":"미국",   "stance":"강경",
+         "title":"대이란 제재 강화, 호르무즈 해군 작전 유지",
+         "detail":"이란 원유 제재 전면 강화. 한·미 방위 협력 비용 분담 재협상 압박."},
+        {"country":"중국",   "stance":"중립",
+         "title":"이란 원유 수입 지속, 미국과 외교적 거리두기",
+         "detail":"제재 우회 결제 시스템 지속 가동. 삼성·LG 대중 수출 규제 연동 리스크."},
+        {"country":"러시아", "stance":"지지",
+         "title":"이란 군사·외교 지원, 서방 제재 우회 채널 공유",
+         "detail":"이란-러시아 군사협력 MOU 확대. 서방 제재 우회 금융·물류 채널 공동 활용."},
+        {"country":"EU",     "stance":"제재",
+         "title":"대이란 제재 동참, 에너지 공급선 다변화 가속",
+         "detail":"LNG 수입 계약 긴급 재협상. 재생에너지 전환 가속화 예산 추가 편성."},
+        {"country":"일본",   "stance":"협력",
+         "title":"에너지 비축 확대, 호주·캐나다 LNG 긴급 증량 협상",
+         "detail":"중동 의존도 68% → 2030년 50% 목표 재설정. 에너지 비상비축 90일분 유지."},
+    ],
+    "한국": [
+        {"country":"외교부",  "stance":"협력",
+         "title":"미국 동조 대이란 제재 참여, 핵 비확산 지지 성명",
+         "detail":"이란 핵협상 복원 촉구 및 한국인 자산 동결 해제 협상 병행 추진."},
+        {"country":"산업부",  "stance":"대응",
+         "title":"LNG 대체 수입선 긴급 확보 협의 착수",
+         "detail":"호주·미국·카타르와 LNG 추가 공급 긴급 협상. 에너지 비상비축 확대 명령 발령."},
+        {"country":"기재부",  "stance":"모니터링",
+         "title":"에너지 물가 압력 대응 예비비 편성 검토",
+         "detail":"유가 10% 추가 상승 시 물가 0.3%p 상방 리스크. 유류세 탄력세율 인하 옵션 준비."},
+        {"country":"국토부",  "stance":"대응",
+         "title":"건설현장 비상경제 TF 격상, 건설자재 수급 점검",
+         "detail":"철강·알루미늄 공급망 교란 대비. 공공건설 발주 조정 및 비축 물량 현황 점검."},
+        {"country":"에너지청","stance":"선제",
+         "title":"에너지 비상공급 3단계 발령, 절약 캠페인 가동",
+         "detail":"산업·상업용 에너지 사용 5% 절감 목표. 발전소 가동률 95% 비상 유지 모드 전환."},
+    ],
+}
+
+_STANCE_KEYS = {"강경","지지","중립","제재","협력","대응","선제","모니터링"}
+
+def _st_key(stance: str) -> str:
+    return stance if stance in _STANCE_KEYS else "unknown"
+
+def build_cr_items_html(items: list) -> str:
+    if not items:
+        return '<div class="empty-dark">파이프라인 실행 후 데이터가 표시됩니다.</div>'
+    html = '<div class="cr-policy-list">'
+    for item in items:
+        country = item.get("country","")
+        stance  = item.get("stance","중립")
+        title   = item.get("title","")
+        detail  = item.get("detail","") or item.get("actions_text","")
+        sk      = _st_key(stance)
+        html += (
+            f'<div class="policy-item">'
+            f'<span class="cr-stance-badge st-{sk}" '
+            f'style="flex-shrink:0;margin-top:2px;min-width:64px;text-align:center">{country}</span>'
+            f'<div class="pi-content">'
+            f'<div class="pi-title">{title}</div>'
+            f'<div class="pi-detail">{detail}</div>'
+            f'</div>'
+            f'<span class="cr-stance-badge st-{sk}" style="flex-shrink:0;margin-top:2px">{stance}</span>'
+            f'</div>'
         )
-else:
-    cr_rows_html = "".join(
-        f'<tr class="cr-row"><td class="cr-country">{c}</td><td class="cr-stance-cell"><span class="cr-stance-badge st-{s}">{s}</span></td><td class="cr-action-cell">{a}</td><td class="cr-suwon-cell">{sw}</td></tr>'
-        for c, s, a, sw in DEFAULT_CR
-    )
-    cr_rows_html += '<tr><td colspan="4" style="padding:8px 12px;font-size:0.68rem;color:#4A6F8A">⚠ 기본값 표시 중 — 파이프라인 실행 후 실시간 데이터로 업데이트됩니다.</td></tr>'
+    html += '</div>'
+    return html
+
+def get_region_items(region_name: str) -> list:
+    if cr_responses:
+        region_set = REGION_MAP.get(region_name, set())
+        filtered = [r for r in cr_responses if r.get("country","") in region_set]
+        if filtered:
+            out = []
+            for r in filtered:
+                actions = r.get("actions",[])
+                action_text = " · ".join(actions[:2]) if actions else r.get("outlook","")[:100]
+                out.append({
+                    "country": r.get("country",""),
+                    "stance":  r.get("stance","중립"),
+                    "title":   action_text,
+                    "detail":  r.get("suwon_relevance",""),
+                })
+            return out
+    return DEFAULT_CR_REGIONS.get(region_name, [])
+
+_cr_me_html = build_cr_items_html(get_region_items("중동"))
+_cr_gl_html = build_cr_items_html(get_region_items("글로벌"))
+_cr_kr_html = build_cr_items_html(get_region_items("한국"))
 
 st.markdown(f"""
 <div class="section-card">
@@ -790,17 +1023,19 @@ st.markdown(f"""
     <span class="sec-title">🌍 각국 상황 & 대응 매트릭스</span>
     <span class="sec-badge badge-blue">Country Response Matrix</span>
   </div>
-  <table class="cr-table">
-    <thead>
-      <tr>
-        <th class="cr-th">국가·세력</th>
-        <th class="cr-th">포지션</th>
-        <th class="cr-th">주요 행동</th>
-        <th class="cr-th">수원시 연결점</th>
-      </tr>
-    </thead>
-    <tbody>{cr_rows_html}</tbody>
-  </table>
+  <div class="ctabs">
+    <input type="radio" id="cr-me" name="cr-tabs" checked>
+    <input type="radio" id="cr-gl" name="cr-tabs">
+    <input type="radio" id="cr-kr" name="cr-tabs">
+    <div class="ctab-bar">
+      <label for="cr-me" class="ctab-label">🌙 중동</label>
+      <label for="cr-gl" class="ctab-label">🌐 글로벌</label>
+      <label for="cr-kr" class="ctab-label">🇰🇷 한국</label>
+    </div>
+    <div id="panel-cr-me" class="ctab-panel">{_cr_me_html}</div>
+    <div id="panel-cr-gl" class="ctab-panel">{_cr_gl_html}</div>
+    <div id="panel-cr-kr" class="ctab-panel">{_cr_kr_html}</div>
+  </div>
 </div>
 """, unsafe_allow_html=True)
 
@@ -826,7 +1061,6 @@ lga_rows_html = (
     f'<td class="lga-name-cell"><span style="font-size:0.58rem;color:#93C5FD;font-weight:800;letter-spacing:1px;display:block">▸ 현재 페이지</span>수원시<span class="lga-type-tag tt-기초">기초</span></td>'
     f'<td class="lga-stage-cell"><span class="stage-badge stage-{suwon_stage}">{suwon_stage}</span></td>'
     f'<td class="lga-action-cell">민생경제 위기대응 TF 운영, AI 에이전트 기반 실시간 모니터링, 정책 A/B/C 검토 중</td>'
-    f'<td class="lga-ref-cell">본 브리핑 시스템 운영 중 (Agent v2.0)</td>'
     f'</tr>'
 )
 for row in lga_list:
@@ -834,13 +1068,11 @@ for row in lga_list:
     ltype = row.get("type","기초")
     stage = row.get("stage","모니터링")
     acts  = row.get("actions","")
-    ref   = row.get("ref","")
     lga_rows_html += (
         f'<tr class="lga-row">'
         f'<td class="lga-name-cell">{name}<span class="lga-type-tag tt-{ltype}">{ltype}</span></td>'
         f'<td class="lga-stage-cell"><span class="stage-badge stage-{stage}">{stage}</span></td>'
         f'<td class="lga-action-cell">{acts}</td>'
-        f'<td class="lga-ref-cell">{ref}</td>'
         f'</tr>'
     )
 
@@ -856,7 +1088,6 @@ st.markdown(f"""
         <th class="lga-th" style="min-width:120px">지자체</th>
         <th class="lga-th" style="min-width:90px">대응 단계</th>
         <th class="lga-th">주요 조치</th>
-        <th class="lga-th" style="min-width:200px">수원시 참고 포인트</th>
       </tr>
     </thead>
     <tbody>{lga_rows_html}</tbody>
@@ -900,36 +1131,33 @@ DEFAULT_민생 = {
 
 display_민생 = 민생_분석 if 민생_분석 else DEFAULT_민생
 
-st.markdown("""
-<div class="section-card">
-  <div class="sec-header">
-    <span class="sec-title">🏙️ 수원시 민생경제 영향 분석</span>
-    <span class="sec-badge badge-red">3대 관점 분석</span>
-  </div>
-  <div class="triple-grid">
-""", unsafe_allow_html=True)
-
-ms_cols = st.columns(3, gap="medium")
-for i, (key, (icon, label, card_cls)) in enumerate(CATEGORY_META.items()):
+_impact_cards_html = ""
+for key, (icon, label, card_cls) in CATEGORY_META.items():
     item    = display_민생.get(key, DEFAULT_민생[key])
     level   = item.get("level","모니터링")
     summary = item.get("summary","")
     kpi     = item.get("key_indicator","")
     other   = item.get("타지자체_현황","")
-    with ms_cols[i]:
-        st.markdown(
-            f'<div class="impact-card impact-card-{card_cls}">'
-            f'<div class="ic-icon">{icon}</div>'
-            f'<div class="ic-category">{label}</div>'
-            f'<span class="ic-level-badge icl-{level}">영향도 · {level}</span>'
-            f'<div class="ic-summary">{summary}</div>'
-            f'<div class="ic-kpi-box"><div class="ic-kpi-label">핵심 지표</div><div class="ic-kpi-value">{kpi}</div></div>'
-            f'<div class="ic-other-box"><div class="ic-other-label">타 지자체 현황</div><div class="ic-other-value">{other}</div></div>'
-            f'</div>',
-            unsafe_allow_html=True
-        )
+    _impact_cards_html += (
+        f'<div class="impact-card impact-card-{card_cls}">'
+        f'<div class="ic-icon">{icon}</div>'
+        f'<div class="ic-category">{label}</div>'
+        f'<span class="ic-level-badge icl-{level}">영향도 · {level}</span>'
+        f'<div class="ic-summary">{summary}</div>'
+        f'<div class="ic-kpi-box"><div class="ic-kpi-label">핵심 지표</div><div class="ic-kpi-value">{kpi}</div></div>'
+        f'<div class="ic-other-box"><div class="ic-other-label">타 지자체 현황</div><div class="ic-other-value">{other}</div></div>'
+        f'</div>'
+    )
 
-st.markdown("</div>", unsafe_allow_html=True)  # section-card
+st.markdown(f"""
+<div class="section-card">
+  <div class="sec-header">
+    <span class="sec-title">🏙️ 수원시 민생경제 영향 분석</span>
+    <span class="sec-badge badge-red">3대 관점 분석</span>
+  </div>
+  <div class="triple-grid">{_impact_cards_html}</div>
+</div>
+""", unsafe_allow_html=True)
 
 
 # ═══════════════════════════════════════════════════════════
@@ -969,132 +1197,37 @@ DEFAULT_대응과제 = [
 ]
 
 display_대응과제 = 대응과제 if 대응과제 else DEFAULT_대응과제
+rank_tags = ["A", "B", "C"]
 
-st.markdown("""
+_action_cards_html = ""
+for i, task in enumerate(display_대응과제[:3]):
+    title  = task.get("title","")
+    desc   = task.get("description","")
+    근거    = task.get("근거", {})
+    bench  = 근거.get("타지자체_벤치마킹","")
+    expert = 근거.get("전문가_의견","")
+    report = 근거.get("보고서_근거","")
+    _action_cards_html += (
+        f'<div class="action-card">'
+        f'<div class="ac-rank">Priority {rank_tags[i]}</div>'
+        f'<div class="ac-title">{title}</div>'
+        f'<div class="ac-desc">{desc}</div>'
+        f'<div class="evidence-stack">'
+        f'<div class="ev-item ev-bench"><span class="ev-tag">🏙 타지자체 벤치마킹</span>{bench}</div>'
+        f'<div class="ev-item ev-expert"><span class="ev-tag">🎙 전문가 의견</span>{expert}</div>'
+        f'<div class="ev-item ev-report"><span class="ev-tag">📄 보고서 근거</span>{report}</div>'
+        f'</div></div>'
+    )
+
+st.markdown(f"""
 <div class="section-card">
   <div class="sec-header">
     <span class="sec-title">📋 수원시 민생경제 우선 대응과제</span>
     <span class="sec-badge badge-red">근거 기반 AI 정책 제언</span>
   </div>
+  <div class="triple-grid">{_action_cards_html}</div>
+</div>
 """, unsafe_allow_html=True)
-
-act_cols = st.columns(3, gap="medium")
-rank_tags = ["A", "B", "C"]
-
-for i, task in enumerate(display_대응과제[:3]):
-    title    = task.get("title","")
-    desc     = task.get("description","")
-    priority = task.get("priority","단기")
-    근거      = task.get("근거", {})
-    bench    = 근거.get("타지자체_벤치마킹","")
-    expert   = 근거.get("전문가_의견","")
-    report   = 근거.get("보고서_근거","")
-    with act_cols[i]:
-        st.markdown(
-            f'<div class="action-card">'
-            f'<div class="ac-rank">Priority {rank_tags[i]}</div>'
-            f'<span class="ac-priority pri-{priority}">⚡ {priority} 과제</span>'
-            f'<div class="ac-title">{title}</div>'
-            f'<div class="ac-desc">{desc}</div>'
-            f'<div class="evidence-stack">'
-            f'<div class="ev-item ev-bench"><span class="ev-tag">🏙 타지자체 벤치마킹</span>{bench}</div>'
-            f'<div class="ev-item ev-expert"><span class="ev-tag">🎙 전문가 의견</span>{expert}</div>'
-            f'<div class="ev-item ev-report"><span class="ev-tag">📄 보고서 근거</span>{report}</div>'
-            f'</div></div>',
-            unsafe_allow_html=True
-        )
-
-st.markdown("</div>", unsafe_allow_html=True)
-
-
-# ═══════════════════════════════════════════════════════════
-# ⑧ 타 지자체 벤치마킹
-# ═══════════════════════════════════════════════════════════
-bench_data = lessons if lessons else {
-    "전주시": "에너지 위기 대응 K-패스 환급률 상향 조정, 취약계층 대중교통비 실질 혜택 확대",
-    "서울시": "에너지 가격 상한제 연계 취약계층 긴급 바우처 지급, 소상공인 전기요금 할인",
-    "인천시": "LNG 수입 다변화 협력, 에너지 비상공급 계획 선제 수립",
-}
-
-st.markdown("""
-<div class="section-card">
-  <div class="sec-header">
-    <span class="sec-title">🔍 타 지자체·국외 사례 벤치마킹</span>
-    <span class="sec-badge badge-green">Success Model</span>
-  </div>
-""", unsafe_allow_html=True)
-
-bench_cols = st.columns(min(len(bench_data), 3), gap="medium")
-for i, (city, content) in enumerate(list(bench_data.items())[:3]):
-    items = content.split(",") if isinstance(content, str) else [str(content)]
-    items_html = "".join(
-        f'<div class="bench-item"><span class="bench-arrow">→</span><span>{item.strip()}</span></div>'
-        for item in items[:3]
-    )
-    with bench_cols[i % len(bench_cols)]:
-        st.markdown(
-            f'<div class="bench-card">'
-            f'<div class="bench-city">🏙 {city}</div>'
-            f'{items_html}'
-            f'</div>',
-            unsafe_allow_html=True
-        )
-
-st.markdown("</div>", unsafe_allow_html=True)
-
-
-# ═══════════════════════════════════════════════════════════
-# ⑨ 전문가 브리핑 (YouTube 요약)
-# ═══════════════════════════════════════════════════════════
-yt_summaries = yt_data.get("summaries", [])
-
-st.markdown("""
-<div class="section-card">
-  <div class="sec-header">
-    <span class="sec-title">📺 전문가 브리핑</span>
-    <span class="sec-badge badge-blue">YouTube Intelligence</span>
-  </div>
-""", unsafe_allow_html=True)
-
-def yt_ch_cls(ch: str) -> str:
-    c = ch.lower()
-    if "al jazeera" in c: return "yt-aljazeera"
-    if "dw" in c:         return "yt-dw"
-    if "연합" in c:        return "yt-yonhap"
-    return "yt-default"
-
-if yt_summaries:
-    top_yt = sorted(yt_summaries, key=lambda x: x.get("relevance_score",0), reverse=True)[:3]
-    yt_cols = st.columns(len(top_yt), gap="medium")
-    for i, item in enumerate(top_yt):
-        channel  = item.get("channel","")
-        title_ko = item.get("title_ko", item.get("title",""))
-        points   = item.get("key_points",[])
-        expert   = item.get("expert_name","")
-        score    = item.get("relevance_score",0)
-        pub      = item.get("published","")[:10]
-        dur      = item.get("duration","")
-        pts_html = "".join(
-            f'<div class="yt-point"><span class="yt-bullet">•</span><span>{pt}</span></div>'
-            for pt in points[:3]
-        )
-        with yt_cols[i]:
-            st.markdown(
-                f'<div class="yt-card">'
-                f'<div class="yt-channel-row">'
-                f'<span class="yt-ch-badge {yt_ch_cls(channel)}">{channel}</span>'
-                f'<span class="yt-meta">{pub} · {dur}</span>'
-                f'</div>'
-                f'<div class="yt-title">{title_ko}</div>'
-                f'<div>{pts_html}</div>'
-                f'<div class="yt-expert">🎙 {expert}<span class="yt-score">관련도 {score}</span></div>'
-                f'</div>',
-                unsafe_allow_html=True
-            )
-else:
-    st.markdown('<div class="empty-dark">📺 YouTube API 키 등록 후 파이프라인을 실행하면 Al Jazeera · DW News · 연합뉴스TV 전문가 브리핑이 표시됩니다.</div>', unsafe_allow_html=True)
-
-st.markdown("</div>", unsafe_allow_html=True)
 
 
 # ═══════════════════════════════════════════════════════════
@@ -1107,7 +1240,7 @@ critiques = [
 ]
 
 devil_pts = "".join(
-    f'<div class="devil-point"><div class="dp-num">{c[0]}</div><div class="dp-body">{c[1]}</div></div>'
+    f'<div class="devil-point"><div class="dp-title">{c[0]}</div><div class="dp-body">{c[1]}</div></div>'
     for c in critiques
 )
 
@@ -1119,6 +1252,140 @@ st.markdown(
     f'</div>',
     unsafe_allow_html=True
 )
+
+
+# ═══════════════════════════════════════════════════════════
+# ⑪ 다음주 주목 핵심이슈
+# ═══════════════════════════════════════════════════════════
+DEFAULT_NEXT_ISSUES = [
+    {
+        "title": "이란-미국 협상 2차 라운드 결과",
+        "detail": "협상 결렬 시 호르무즈 봉쇄 가능성 급등. 유가 $110 돌파 여부 및 국내 에너지 비용 추가 상승 직결. 수원시 에너지 취약가구 대응 준비 필요.",
+        "tag": "고위험", "tag_cls": "ni-high",
+    },
+    {
+        "title": "OPEC+ 긴급회의 — 추가 감산 결정 여부",
+        "detail": "사우디 주도 감산 확대 시 국내 휘발유·도시가스 요금 연쇄 인상 예상. 경기도 에너지 비용 경감 예산 추가 편성 논의 모니터링.",
+        "tag": "주목", "tag_cls": "ni-mid",
+    },
+    {
+        "title": "한국 정부 에너지 비상대책 발표",
+        "detail": "산업부·기재부 합동 에너지 비상대책 발표 예정. 지자체 대응 지침 및 예산 배정 기준 확인 필요. 수원시 TF 대응 계획 조정 여부 검토.",
+        "tag": "확인 필요", "tag_cls": "ni-watch",
+    },
+    {
+        "title": "국내 소비자물가지수(CPI) 4월 발표",
+        "detail": "에너지·식품 가격 반영된 4월 CPI 발표. 전월 대비 0.3%p 이상 상승 시 긴급 민생 대책 검토 기준 초과. 취약계층 추가 지원 근거 마련 가능.",
+        "tag": "모니터링", "tag_cls": "ni-watch",
+    },
+]
+
+next_issues = minseang.get("next_week_issues", []) or DEFAULT_NEXT_ISSUES
+
+next_html = '<div class="next-issue-list">'
+for i, issue in enumerate(next_issues[:4], 1):
+    title  = issue.get("title","")
+    detail = issue.get("detail","")
+    tag    = issue.get("tag","모니터링")
+    cls    = issue.get("tag_cls","ni-watch")
+    next_html += (
+        f'<div class="next-issue-item">'
+        f'<div class="ni-num">{i}</div>'
+        f'<div class="ni-content">'
+        f'<div class="ni-title">{title}</div>'
+        f'<div class="ni-detail">{detail}</div>'
+        f'</div>'
+        f''
+        f'</div>'
+    )
+next_html += '</div>'
+
+st.markdown(f"""
+<div class="section-card">
+  <div class="sec-header">
+    <span class="sec-title">🔭 다음주 주목 핵심이슈</span>
+    <span class="sec-badge badge-blue">Next Week Watch</span>
+  </div>
+  {next_html}
+</div>
+""", unsafe_allow_html=True)
+
+
+# ═══════════════════════════════════════════════════════════
+# ⑫ 전문가 브리핑 (YouTube 요약)
+# ═══════════════════════════════════════════════════════════
+yt_summaries = yt_data.get("summaries", [])
+
+def yt_ch_cls(ch: str) -> str:
+    c = ch.lower()
+    if "al jazeera" in c: return "yt-aljazeera"
+    if "dw" in c:         return "yt-dw"
+    if "연합" in c:        return "yt-yonhap"
+    return "yt-default"
+
+if yt_summaries:
+    top_yt = yt_summaries[:3]
+    _yt_cards_html = ""
+    for item in top_yt:
+        channel    = item.get("channel", "")
+        title      = item.get("title", "")
+        video_id   = item.get("video_id", "")
+        url        = item.get("url", f"https://www.youtube.com/watch?v={video_id}")
+        summary_ko = item.get("summary_ko", "")
+        points     = item.get("key_points", [])
+        relevance  = item.get("iran_relevance", "")
+        suwon_con  = item.get("suwon_connection", "")
+        pub        = item.get("published", "")[:10]
+
+        # 썸네일 URL (YouTube 기본 제공)
+        thumb_url  = f"https://img.youtube.com/vi/{video_id}/hqdefault.jpg" if video_id else ""
+
+        # 요약 줄바꿈
+        summary_lines = [ln.strip() for ln in summary_ko.replace("\\n", "\n").split("\n") if ln.strip()]
+        summary_html = "".join(
+            f'<div class="yt-sum-line">{ln}</div>'
+            for ln in summary_lines[:3]
+        )
+
+        # 수원시 연결점
+        suwon_html = (
+            f'<div class="yt-suwon">🏙 {suwon_con}</div>'
+            if suwon_con else ""
+        )
+
+        rel_cls = {"높음": "badge-red", "중간": "badge-amber", "낮음": "badge-blue"}.get(relevance, "badge-blue")
+
+        _yt_cards_html += f"""
+<div class="yt-card">
+  <a href="{url}" target="_blank" class="yt-thumb-link">
+    <div class="yt-thumb-wrap">
+      <img src="{thumb_url}" class="yt-thumb" alt="{title}" onerror="this.style.display='none'">
+      <div class="yt-play-btn">▶</div>
+    </div>
+  </a>
+  <div class="yt-card-body">
+    <div class="yt-channel-row">
+      <span class="yt-ch-badge {yt_ch_cls(channel)}">{channel}</span>
+      <span class="yt-rel-badge {rel_cls}">{relevance}</span>
+    </div>
+    <a href="{url}" target="_blank" class="yt-title">{title}</a>
+    <div class="yt-summary">{summary_html}</div>
+    {suwon_html}
+  </div>
+</div>"""
+    _yt_body = f'<div class="triple-grid">{_yt_cards_html}</div>'
+else:
+    _yt_body = '<div class="empty-dark">📺 파이프라인 실행 후 Al Jazeera · DW News · 연합뉴스TV 전문가 브리핑이 표시됩니다.</div>'
+
+st.markdown(f"""
+<div class="section-card">
+  <div class="sec-header">
+    <span class="sec-title">📺 전문가 브리핑</span>
+    <span class="sec-badge badge-blue">YouTube Intelligence</span>
+  </div>
+  {_yt_body}
+</div>
+""", unsafe_allow_html=True)
 
 
 # ═══════════════════════════════════════════════════════════

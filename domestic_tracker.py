@@ -69,17 +69,36 @@ def fetch_opinet_price() -> dict:
     except Exception as e:
         logger.warning(f"[오피넷 스크래핑] 실패: {e}")
 
-    # ── 3차: WTI 국제유가 (대체 지표)
-    try:
-        url = "https://query1.finance.yahoo.com/v8/finance/chart/CL=F"
+    # ── 3차: Yahoo Finance — WTI·브렌트·RBOB 휘발유
+    def _yahoo(ticker: str):
+        url = f"https://query1.finance.yahoo.com/v8/finance/chart/{ticker}"
         r = requests.get(url, headers=HEADERS, timeout=10)
-        data = r.json()
-        wti = data["chart"]["result"][0]["meta"].get("regularMarketPrice")
+        return r.json()["chart"]["result"][0]["meta"].get("regularMarketPrice")
+
+    try:
+        wti = _yahoo("CL=F")
         if wti:
             result["wti_usd"] = round(float(wti), 2)
             logger.info(f"[Yahoo] WTI=${result['wti_usd']}")
     except Exception as e:
         logger.warning(f"[Yahoo WTI] 실패: {e}")
+
+    try:
+        brent = _yahoo("BZ=F")
+        if brent:
+            result["brent_usd"] = round(float(brent), 2)
+            logger.info(f"[Yahoo] 브렌트=${result['brent_usd']}")
+    except Exception as e:
+        logger.warning(f"[Yahoo Brent] 실패: {e}")
+
+    # RBOB 휘발유 선물 (USD/갤런) → 참고값 저장
+    try:
+        rbob = _yahoo("RB=F")
+        if rbob:
+            result["rbob_usd_gal"] = round(float(rbob), 4)
+            logger.info(f"[Yahoo] RBOB=${result['rbob_usd_gal']}/gal")
+    except Exception as e:
+        logger.warning(f"[Yahoo RBOB] 실패: {e}")
 
     return result
 
