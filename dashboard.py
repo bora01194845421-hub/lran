@@ -1381,6 +1381,10 @@ st.markdown(f"""
 <div class="intel-footer">
   <div class="footer-grid">
     <div class="footer-col">
+      <span class="footer-label">🏛️ 발행처</span>
+      <div class="footer-val" style="font-weight:700;color:#1C2B40">수원시정연구원</div>
+      <div class="footer-val">Suwon Research Institute</div>
+      <div style="margin-top:6px"></div>
       <span class="footer-label">📡 발행 주기</span>
       <div class="footer-val">매주 월·목 오후 (주 2회)</div>
       <div class="footer-val">분석 기준: {fmt(selected_date)} · 기사 {len(analyzed)}건</div>
@@ -1393,12 +1397,17 @@ st.markdown(f"""
       <span class="footer-label">🤖 AI 활용</span>
       <div class="footer-val" style="margin-bottom:6px">Anthropic Claude API 기반 자동 분석 · 기사 분류·요약·정책 제언 자동 생성</div>
       <span class="footer-label">📂 데이터 출처</span>
-      <div class="footer-val" style="margin-bottom:6px">Reuters · Al Jazeera · Guardian · BBC · IEA · IMF · WorldBank · NewsAPI · Yahoo Finance · Opinet</div>
+      <div class="footer-val" style="margin-bottom:6px">Reuters · Al Jazeera · Guardian · BBC · IEA · IMF · WorldBank · NewsAPI · Yahoo Finance · GlobalPetrolPrices · Opinet</div>
       <span class="footer-label">📱 권장 환경</span>
       <div class="footer-val">PC 또는 태블릿 가로 보기 권장 (모바일 세로 보기 시 일부 내용 잘림)</div>
     </div>
     <div class="footer-col" style="text-align:right">
       <div class="footer-stamp">CONFIDENTIAL<br>FOR OFFICIAL USE ONLY<br>Suwon City Intelligence Office</div>
+      <div style="margin-top:10px;font-size:0.6rem;color:#6B7280;line-height:1.7;text-align:right">
+        © 2026 수원시정연구원<br>
+        본 보고서의 무단 전재·배포를 금합니다.<br>
+        문의: 수원시정연구원 정책연구실
+      </div>
     </div>
   </div>
 </div>

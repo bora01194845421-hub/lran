@@ -74,7 +74,6 @@ def fetch_opinet_price() -> dict:
             url = "https://www.opinet.or.kr/user/main/mainView.do"
             r = requests.get(url, headers=HEADERS, timeout=12)
             soup = BeautifulSoup(r.text, "html.parser")
-            # 다양한 셀렉터 시도
             selectors = [
                 ".oil_price_wrap .price", "#gasolineAll", ".gasoline_price",
                 "td.price", ".avgPrice", "#avgPrice_b027",
@@ -86,7 +85,7 @@ def fetch_opinet_price() -> dict:
                     txt = el.get_text(strip=True).replace(",", "").replace("원", "").strip()
                     try:
                         val = float(txt)
-                        if 1000 < val < 3000:   # 합리적 휘발유 가격 범위
+                        if 1000 < val < 3000:
                             result["gasoline_national"] = val
                             logger.info(f"[오피넷 스크래핑:{sel}] 휘발유={val}")
                             break
@@ -94,6 +93,33 @@ def fetch_opinet_price() -> dict:
                         continue
         except Exception as e:
             logger.warning(f"[오피넷 스크래핑] 실패: {e}")
+
+    # ── 4차: GlobalPetrolPrices — 오피넷 접근 불가 시 대체
+    if not result.get("gasoline_national"):
+        try:
+            gpp_url = "https://www.globalpetrolprices.com/South-Korea/gasoline_prices/"
+            r_gpp = requests.get(gpp_url, headers=HEADERS, timeout=12)
+            soup_gpp = BeautifulSoup(r_gpp.text, "html.parser")
+            for table in soup_gpp.select("table"):
+                rows = table.select("tr")
+                for row in rows:
+                    cells = [td.get_text(strip=True) for td in row.select("td,th")]
+                    # "Current price" 행의 KRW 가격 파싱
+                    if len(cells) >= 2 and "Current price" in cells[0]:
+                        price_str = cells[1].replace(",", "").strip()
+                        try:
+                            val = float(price_str)
+                            if 1000 < val < 4000:   # KRW/Liter 범위
+                                result["gasoline_national"] = val
+                                result["gasoline_source"] = "GlobalPetrolPrices"
+                                logger.info(f"[GlobalPetrolPrices] 한국 휘발유={val}원/L")
+                                break
+                        except ValueError:
+                            continue
+                if result.get("gasoline_national"):
+                    break
+        except Exception as e:
+            logger.warning(f"[GlobalPetrolPrices] 실패: {e}")
 
     # ── 3차: Yahoo Finance — WTI·브렌트·RBOB 휘발유
     def _yahoo(ticker: str):
