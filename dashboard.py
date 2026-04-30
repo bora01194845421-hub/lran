@@ -807,12 +807,7 @@ st.markdown(f"""
       <div class="header-main">중동전쟁에 따른 민생경제 대응 모니터링</div>
       <div class="header-date-line">{date_ko}</div>
     </div>
-    <div class="header-right">
-      <div class="urgency-badge urg-{urgency}">
-        <div class="urg-dot"></div>
-        대응단계 {urg_label}
-      </div>
-    </div>
+    <div class="header-right"></div>
   </div>
 </div>
 <div class="metrics-strip-outer"><div class="metrics-strip">
