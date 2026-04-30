@@ -147,13 +147,20 @@ st.markdown("""
 .sec-header {
   display: flex; align-items: center; justify-content: space-between;
   margin-bottom: 14px; padding-bottom: 10px;
-  border-bottom: 1px solid #F3F4F6;
+  border-bottom: 2.5px solid #1C2B40;
 }
 .sec-title {
   font-size: 0.88rem; font-weight: 800; color: #111827;
-  display: flex; align-items: center; gap: 6px;
+  display: flex; align-items: center; gap: 8px;
 }
-.sec-title::before { content: "●"; color: #1C2B40; font-size: 0.55rem; }
+/* 섹션 번호 배지 */
+.sec-num {
+  font-size: 0.7rem; font-weight: 900;
+  color: #FFFFFF; background: #1C2B40;
+  border-radius: 3px; padding: 1px 6px;
+  letter-spacing: 0.5px; font-family: 'Inter', monospace;
+  flex-shrink: 0;
+}
 .sec-date { font-size: 0.68rem; color: #9CA3AF; }
 .sec-badge {
   font-size: 0.6rem; font-weight: 700; padding: 2px 8px;
@@ -329,16 +336,6 @@ st.markdown("""
 .impact-card-industry { border-top: 3px solid #F59E0B; }
 .impact-card-life     { border-top: 3px solid #3B82F6; }
 .ic-icon { font-size: 1.3rem; margin-bottom: 6px; }
-/* 카드 번호 헤더 (01/02/03) */
-.ic-num-row { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
-.ic-num {
-  font-size: 1.55rem; font-weight: 900; line-height: 1;
-  font-family: 'Inter', 'Helvetica Neue', sans-serif;
-  letter-spacing: -1px;
-}
-.impact-card-energy   .ic-num { color: #EF4444; }
-.impact-card-industry .ic-num { color: #F59E0B; }
-.impact-card-life     .ic-num { color: #3B82F6; }
 .ic-category { font-size: 0.88rem; font-weight: 800; color: #111827; margin-bottom: 8px; }
 .ic-level-badge { display: inline-block; padding: 2px 8px; border-radius: 3px; font-size: 0.63rem; font-weight: 700; margin-bottom: 10px; }
 .icl-높음    { background: #FEF2F2; color: #B91C1C; }
@@ -889,7 +886,7 @@ else:
 st.markdown(f"""
 <div class="section-card">
   <div class="sec-header">
-    <span class="sec-title">📋 이번주 핵심 동향</span>
+    <span class="sec-title"><span class="sec-num">01</span> 이번주 핵심 동향</span>
     <span class="sec-date">{fmt_ko(selected_date)}</span>
   </div>
   {scout_html}
@@ -930,19 +927,16 @@ DEFAULT_민생 = {
 display_민생 = 민생_분석 if 민생_분석 else DEFAULT_민생
 
 _impact_cards_html = ""
-for _card_idx, (key, (icon, label, card_cls)) in enumerate(CATEGORY_META.items(), 1):
+for key, (icon, label, card_cls) in CATEGORY_META.items():
     item    = display_민생.get(key, DEFAULT_민생[key])
     level   = item.get("level","모니터링")
     summary = item.get("summary","")
     kpi     = item.get("key_indicator","")
     other   = item.get("타지자체_현황","")
-    _num_str = f"{_card_idx:02d}"
     _impact_cards_html += (
         f'<div class="impact-card impact-card-{card_cls}">'
-        f'<div class="ic-num-row">'
-        f'<span class="ic-num">{_num_str}</span>'
+        f'<div class="ic-icon">{icon}</div>'
         f'<div class="ic-category">{label}</div>'
-        f'</div>'
         f'<span class="ic-level-badge icl-{level}">영향도 · {level}</span>'
         f'<div class="ic-summary">{summary}</div>'
         f'<div class="ic-kpi-box"><div class="ic-kpi-label">핵심 지표</div><div class="ic-kpi-value">{kpi}</div></div>'
@@ -953,7 +947,7 @@ for _card_idx, (key, (icon, label, card_cls)) in enumerate(CATEGORY_META.items()
 st.markdown(f"""
 <div class="section-card sec-gray">
   <div class="sec-header">
-    <span class="sec-title">🏙️ 수원시 민생경제 영향 분석</span>
+    <span class="sec-title"><span class="sec-num">02</span> 수원시 민생경제 영향 분석</span>
     <span class="sec-badge badge-red">3대 관점 분석</span>
   </div>
   <div class="triple-grid">{_impact_cards_html}</div>
@@ -1023,7 +1017,7 @@ for i, task in enumerate(display_대응과제[:3]):
 st.markdown(f"""
 <div class="section-card">
   <div class="sec-header">
-    <span class="sec-title">📋 수원시 민생경제 우선 대응과제</span>
+    <span class="sec-title"><span class="sec-num">03</span> 수원시 민생경제 우선 대응과제</span>
     <span class="sec-badge badge-red">근거 기반 AI 정책 제언</span>
   </div>
   <div class="triple-grid">{_action_cards_html}</div>
@@ -1158,7 +1152,7 @@ _cr_kr_html = build_cr_items_html(get_region_items("한국"))
 st.markdown(f"""
 <div class="section-card sec-gray">
   <div class="sec-header">
-    <span class="sec-title">🌍 글로벌 상황 및 중앙정부 대응</span>
+    <span class="sec-title"><span class="sec-num">04</span> 글로벌 상황 및 중앙정부 대응</span>
     <span class="sec-badge badge-blue">Country Response Matrix</span>
   </div>
   <div class="ctabs">
@@ -1217,7 +1211,7 @@ for row in lga_list:
 st.markdown(f"""
 <div class="section-card">
   <div class="sec-header">
-    <span class="sec-title">🇰🇷 지자체 대응</span>
+    <span class="sec-title"><span class="sec-num">05</span> 지자체 대응</span>
     <span class="sec-badge badge-green">Local Gov Response Matrix</span>
   </div>
   <table class="lga-table">
@@ -1313,7 +1307,7 @@ next_html += '</div>'
 st.markdown(f"""
 <div class="section-card sec-gray">
   <div class="sec-header">
-    <span class="sec-title">🔭 다음번 주목 이슈</span>
+    <span class="sec-title"><span class="sec-num">06</span> 다음번 주목 이슈</span>
     <span class="sec-badge badge-blue">Next Issue Watch</span>
   </div>
   {next_html}
@@ -1390,7 +1384,7 @@ else:
 st.markdown(f"""
 <div class="section-card">
   <div class="sec-header">
-    <span class="sec-title">📺 전문가 브리핑</span>
+    <span class="sec-title"><span class="sec-num">07</span> 전문가 브리핑</span>
     <span class="sec-badge badge-blue">YouTube Intelligence</span>
   </div>
   {_yt_body}
