@@ -52,22 +52,48 @@ def fetch_opinet_price() -> dict:
         except Exception as e:
             logger.warning(f"[오피넷 API] 실패: {e}")
 
-    # ── 2차: 한국석유공사 오피넷 메인 페이지 스크래핑
+    # ── 2차: 오피넷 공개 JSON API (데모키)
     try:
-        url = "https://www.opinet.or.kr/user/main/mainView.do"
-        r = requests.get(url, headers=HEADERS, timeout=12)
-        soup = BeautifulSoup(r.text, "html.parser")
-        # 전국 평균 휘발유 가격 파싱
-        price_el = soup.select_one(".oil_price_wrap .price, #gasolineAll, .gasoline_price")
-        if price_el:
-            price_text = price_el.get_text(strip=True).replace(",", "").replace("원", "")
-            try:
-                result["gasoline_national"] = float(price_text)
-                logger.info(f"[오피넷 스크래핑] 휘발유 전국={result['gasoline_national']}")
-            except ValueError:
-                pass
+        demo_url = "https://www.opinet.or.kr/api/avgAllPrice.do"
+        demo_params = {"code": "F186170631", "out": "json"}
+        r2 = requests.get(demo_url, params=demo_params, headers=HEADERS, timeout=10)
+        items2 = r2.json().get("RESULT", {}).get("OIL", [])
+        for item in items2:
+            if item.get("PRODCD") == "B027":
+                result["gasoline_national"] = float(item.get("PRICE", 0))
+            elif item.get("PRODCD") == "D047":
+                result["diesel_national"] = float(item.get("PRICE", 0))
+        if result.get("gasoline_national"):
+            logger.info(f"[오피넷 데모키] 휘발유 전국={result['gasoline_national']}")
     except Exception as e:
-        logger.warning(f"[오피넷 스크래핑] 실패: {e}")
+        logger.warning(f"[오피넷 데모키] 실패: {e}")
+
+    # ── 3차: 오피넷 메인 페이지 스크래핑 (다중 셀렉터)
+    if not result.get("gasoline_national"):
+        try:
+            url = "https://www.opinet.or.kr/user/main/mainView.do"
+            r = requests.get(url, headers=HEADERS, timeout=12)
+            soup = BeautifulSoup(r.text, "html.parser")
+            # 다양한 셀렉터 시도
+            selectors = [
+                ".oil_price_wrap .price", "#gasolineAll", ".gasoline_price",
+                "td.price", ".avgPrice", "#avgPrice_b027",
+                "span.num", ".oil-num",
+            ]
+            for sel in selectors:
+                el = soup.select_one(sel)
+                if el:
+                    txt = el.get_text(strip=True).replace(",", "").replace("원", "").strip()
+                    try:
+                        val = float(txt)
+                        if 1000 < val < 3000:   # 합리적 휘발유 가격 범위
+                            result["gasoline_national"] = val
+                            logger.info(f"[오피넷 스크래핑:{sel}] 휘발유={val}")
+                            break
+                    except ValueError:
+                        continue
+        except Exception as e:
+            logger.warning(f"[오피넷 스크래핑] 실패: {e}")
 
     # ── 3차: Yahoo Finance — WTI·브렌트·RBOB 휘발유
     def _yahoo(ticker: str):

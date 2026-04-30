@@ -756,12 +756,7 @@ dubai_note   = oil.get("dubai_note", "")
 rbob_gal     = oil.get("rbob_usd_gal", None)
 usd_krw      = ex_rate.get("USD_KRW", None)
 
-# 국내 휘발유 추정: 오피넷 실패 시 RBOB 선물 × 환율 × 단위환산 + 세금·마진 보정
-# RBOB USD/gal → 원/리터: × (KRW/USD) / 3.785L × 1.4 (세금+마진 계수)
-if gas_nat is None and rbob_gal and usd_krw:
-    gas_nat = round(rbob_gal * usd_krw / 3.785 * 1.38)  # 추정값
-if gas_ggy is None and gas_nat:
-    gas_ggy = round(gas_nat * 0.985)  # 경기도 ≈ 전국 -1.5%
+# 오피넷 실데이터만 사용 — 추정값 사용 안 함
 cr_responses = cr_data.get("country_responses", [])
 issues       = cr_data.get("emerging_issues", [])
 key_trends   = cr_data.get("key_trends", [])
@@ -797,7 +792,7 @@ dubai_str = f"${_oil_ref_price:,.2f}" if isinstance(_oil_ref_price,(int,float)) 
 brent_str = dubai_str  # 하위 호환 유지
 wti_str  = f"${wti_price:,.2f}" if isinstance(wti_price,(int,float)) else "N/A"
 krw_str  = f"{usd_krw:,.0f}원"  if isinstance(usd_krw,(int,float)) else "N/A"
-gas_str  = f"{gas_nat:,}원"     if isinstance(gas_nat,(int,float)) else "N/A"
+gas_str  = f"{gas_nat:,}원"     if isinstance(gas_nat,(int,float)) else "N/A (오피넷 미수집)"
 ggy_str2 = f"{gas_ggy:,}원"     if isinstance(gas_ggy,(int,float)) else "N/A"
 cpi_str  = str(domestic.get("cpi",{}).get("cpi_latest","N/A"))
 # 휘발유 추정 여부 표시용
@@ -834,7 +829,7 @@ st.markdown(f"""
   <div class="ms-item">
     <div class="ms-label">전국 휘발유</div>
     <div class="ms-value up">{gas_str}</div>
-    <div class="ms-sub">{"추정값" if gas_is_est else "오피넷"}</div>
+    <div class="ms-sub">{"오피넷" if isinstance(gas_nat,(int,float)) else "수집 필요"}</div>
   </div>
   <div class="ms-item">
     <div class="ms-label">소비자물가</div>
@@ -1024,6 +1019,26 @@ st.markdown(f"""
 </div>
 """, unsafe_allow_html=True)
 
+# ═══════════════════════════════════════════════════════════
+# 사전 검증 포인트 (03 우선대응과제 ~ 04 글로벌 상황 사이)
+# ═══════════════════════════════════════════════════════════
+critiques = [
+    ("1. 예산 실현 가능성", "예산 긴급 지원 확대는 시 재정자립도(40%) 한계와 충돌 가능. 경기도 매칭 사업 연계 없이는 즉시 집행 불가. 보조금 규모 현실화 필수."),
+    ("2. 공급망 파악 한계", "수원시 에너지 수급 대부분은 중앙정부·한국가스공사 관할. 시 단독 대응 효과 제한적. 광역 연계 대응 전략 병행 필요."),
+    ("3. 장기화 대비 부재", "현 대응안은 단기(3개월) 중심. 분쟁 6개월~1년 지속 시 예산·행정 여력 고갈 우려. 시나리오 기반 중장기 플랜 수립 시급."),
+]
+devil_pts = "".join(
+    f'<div class="devil-point"><div class="dp-title">{c[0]}</div><div class="dp-body">{c[1]}</div></div>'
+    for c in critiques
+)
+st.markdown(
+    f'<div class="devil-card sec-gray-card">'
+    f'<div class="devil-stamp">리스크 점검</div>'
+    f'<div class="devil-quote">사전 검증 포인트 — <span class="dq-hi">실행 전 반드시 확인해야 할 사항</span></div>'
+    f'<div class="devil-grid">{devil_pts}</div>'
+    f'</div>',
+    unsafe_allow_html=True
+)
 
 # ═══════════════════════════════════════════════════════════
 # ④ 각국 대응 매트릭스 — 중동 / 글로벌 / 한국 탭
@@ -1188,13 +1203,7 @@ DEFAULT_LGA = [
 lga_list = lga_data_raw if lga_data_raw else DEFAULT_LGA
 suwon_stage = urgency if urgency in ["선제","적극","검토","모니터링"] else "모니터링"
 
-lga_rows_html = (
-    f'<tr class="lga-row lga-suwon-row">'
-    f'<td class="lga-name-cell"><span style="font-size:0.58rem;color:#93C5FD;font-weight:800;letter-spacing:1px;display:block">▸ 현재 페이지</span>수원시<span class="lga-type-tag tt-기초">기초</span></td>'
-    f'<td class="lga-stage-cell"><span class="stage-badge stage-{suwon_stage}">{suwon_stage}</span></td>'
-    f'<td class="lga-action-cell">민생경제 위기대응 TF 운영, AI 에이전트 기반 실시간 모니터링, 정책 A/B/C 검토 중</td>'
-    f'</tr>'
-)
+lga_rows_html = ""
 for row in lga_list:
     name  = row.get("name","")
     ltype = row.get("type","기초")
@@ -1232,30 +1241,6 @@ st.markdown(f"""
 
 
 # (⑥⑦ 민생경제·대응과제는 ③④ 위치로 이동됨)
-
-
-# ═══════════════════════════════════════════════════════════
-# ⑩ 리스크 점검
-# ═══════════════════════════════════════════════════════════
-critiques = [
-    ("1. 예산 실현 가능성", "예산 긴급 지원 확대는 시 재정자립도(40%) 한계와 충돌 가능. 경기도 매칭 사업 연계 없이는 즉시 집행 불가. 보조금 규모 현실화 필수."),
-    ("2. 공급망 파악 한계", "수원시 에너지 수급 대부분은 중앙정부·한국가스공사 관할. 시 단독 대응 효과 제한적. 광역 연계 대응 전략 병행 필요."),
-    ("3. 장기화 대비 부재", "현 대응안은 단기(3개월) 중심. 분쟁 6개월~1년 지속 시 예산·행정 여력 고갈 우려. 시나리오 기반 중장기 플랜 수립 시급."),
-]
-
-devil_pts = "".join(
-    f'<div class="devil-point"><div class="dp-title">{c[0]}</div><div class="dp-body">{c[1]}</div></div>'
-    for c in critiques
-)
-
-st.markdown(
-    f'<div class="devil-card sec-gray-card">'
-    f'<div class="devil-stamp">리스크 점검</div>'
-    f'<div class="devil-quote">사전 검증 포인트 — <span class="dq-hi">실행 전 반드시 확인해야 할 사항</span></div>'
-    f'<div class="devil-grid">{devil_pts}</div>'
-    f'</div>',
-    unsafe_allow_html=True
-)
 
 
 # ═══════════════════════════════════════════════════════════
