@@ -1403,10 +1403,11 @@ st.markdown(f"""
     </div>
     <div class="footer-col" style="text-align:right">
       <div class="footer-stamp">CONFIDENTIAL<br>FOR OFFICIAL USE ONLY<br>Suwon City Intelligence Office</div>
-      <div style="margin-top:10px;font-size:0.6rem;color:#6B7280;line-height:1.7;text-align:right">
+      <div style="margin-top:10px;font-size:0.6rem;color:#6B7280;line-height:1.9;text-align:right">
         © 2026 수원시정연구원<br>
         본 보고서의 무단 전재·배포를 금합니다.<br>
-        문의: 수원시정연구원 정책연구실
+        <span style="color:#4B5563;font-weight:700">문의</span> 박진우 연구위원 (031-220-8072)<br>
+        <span style="color:#4B5563;font-weight:700">제작</span> 정보라 위촉연구원 · 기획조정실
       </div>
     </div>
   </div>
