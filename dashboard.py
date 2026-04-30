@@ -1407,7 +1407,7 @@ st.markdown(f"""
         © 2026 수원시정연구원<br>
         본 보고서의 무단 전재·배포를 금합니다.<br>
         <span style="color:#4B5563;font-weight:700">문의</span> 박진우 연구위원 (031-220-8072)<br>
-        <span style="color:#4B5563;font-weight:700">제작</span> 정보라 위촉연구원 · 기획조정실
+        <span style="color:#4B5563;font-weight:700">제작</span> 박진우 연구위원 · 정다래 연구위원 · 장정식 위촉연구원 · 정보라 위촉연구원
       </div>
     </div>
   </div>
