@@ -91,6 +91,51 @@ def fetch_opinet_price() -> dict:
     except Exception as e:
         logger.warning(f"[Yahoo Brent] 실패: {e}")
 
+    # ── 두바이유 (한국 중동 수입 기준가) — EIA 무료 API → KNOC 스크래핑 순으로 시도
+    try:
+        # EIA v2 API (DEMO_KEY, 두바이 현물가 RDUBC)
+        eia_url = (
+            "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+            "?api_key=DEMO_KEY&frequency=daily"
+            "&data[0]=value&facets[series][]=RDUBC"
+            "&sort[0][column]=period&sort[0][direction]=desc&length=3"
+        )
+        eia_r = requests.get(eia_url, headers=HEADERS, timeout=12)
+        eia_data = eia_r.json()
+        eia_rows = eia_data.get("response", {}).get("data", [])
+        if eia_rows and eia_rows[0].get("value"):
+            result["dubai_usd"] = round(float(eia_rows[0]["value"]), 2)
+            result["dubai_date"] = eia_rows[0].get("period", "")
+            logger.info(f"[EIA] 두바이유=${result['dubai_usd']} ({result['dubai_date']})")
+    except Exception as e:
+        logger.warning(f"[EIA 두바이유] 실패: {e}")
+
+    # EIA 실패 시 KNOC 홈페이지 스크래핑
+    if not result.get("dubai_usd"):
+        try:
+            knoc_url = "https://www.knoc.co.kr/sub02/sub02_1_2.jsp"
+            kr = requests.get(knoc_url, headers=HEADERS, timeout=12)
+            ksoup = BeautifulSoup(kr.text, "html.parser")
+            # 두바이 원유 가격 셀 파싱
+            for td in ksoup.select("td"):
+                txt = td.get_text(strip=True).replace(",", "")
+                try:
+                    val = float(txt)
+                    if 50 < val < 200:   # 합리적 유가 범위
+                        result["dubai_usd"] = round(val, 2)
+                        logger.info(f"[KNOC] 두바이유=${result['dubai_usd']}")
+                        break
+                except ValueError:
+                    continue
+        except Exception as e:
+            logger.warning(f"[KNOC 두바이유] 실패: {e}")
+
+    # 두 소스 모두 실패 시 Brent 기준 추산 (두바이는 통상 Brent -1~2$/bbl)
+    if not result.get("dubai_usd") and result.get("brent_usd"):
+        result["dubai_usd"] = round(result["brent_usd"] - 1.5, 2)
+        result["dubai_note"] = "Brent 기반 추산 (-$1.5/bbl)"
+        logger.info(f"[추산] 두바이유=${result['dubai_usd']} (Brent 기반)")
+
     # RBOB 휘발유 선물 (USD/갤런) → 참고값 저장
     try:
         rbob = _yahoo("RB=F")

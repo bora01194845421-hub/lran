@@ -329,6 +329,16 @@ st.markdown("""
 .impact-card-industry { border-top: 3px solid #F59E0B; }
 .impact-card-life     { border-top: 3px solid #3B82F6; }
 .ic-icon { font-size: 1.3rem; margin-bottom: 6px; }
+/* 카드 번호 헤더 (01/02/03) */
+.ic-num-row { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+.ic-num {
+  font-size: 1.55rem; font-weight: 900; line-height: 1;
+  font-family: 'Inter', 'Helvetica Neue', sans-serif;
+  letter-spacing: -1px;
+}
+.impact-card-energy   .ic-num { color: #EF4444; }
+.impact-card-industry .ic-num { color: #F59E0B; }
+.impact-card-life     .ic-num { color: #3B82F6; }
 .ic-category { font-size: 0.88rem; font-weight: 800; color: #111827; margin-bottom: 8px; }
 .ic-level-badge { display: inline-block; padding: 2px 8px; border-radius: 3px; font-size: 0.63rem; font-weight: 700; margin-bottom: 10px; }
 .icl-높음    { background: #FEF2F2; color: #B91C1C; }
@@ -744,6 +754,8 @@ gas_ggy      = oil.get("gasoline_gyeonggi", None)
 ex_rate      = domestic.get("exchange_rate", {})
 wti_price    = oil.get("wti_usd", None)
 brent_price  = oil.get("brent_usd", None)
+dubai_price  = oil.get("dubai_usd", None)
+dubai_note   = oil.get("dubai_note", "")
 rbob_gal     = oil.get("rbob_usd_gal", None)
 usd_krw      = ex_rate.get("USD_KRW", None)
 
@@ -778,9 +790,14 @@ date_ko = selected_date.strftime("%Y년 %m월 %d일 (%a)").replace(
     "Mon","월").replace("Tue","화").replace("Wed","수").replace(
     "Thu","목").replace("Fri","금").replace("Sat","토").replace("Sun","일")
 
-# 지표 띠 데이터
-brent_str = f"${brent_price:,.2f}" if isinstance(brent_price,(int,float)) else (
-            f"${wti_price:,.2f}"   if isinstance(wti_price,(int,float)) else "N/A")  # 브렌트 없으면 WTI 대체
+# 지표 띠 데이터 — 두바이유 우선, 없으면 Brent → WTI 순으로 대체
+_oil_ref_price = dubai_price if isinstance(dubai_price,(int,float)) else (
+                 brent_price if isinstance(brent_price,(int,float)) else wti_price)
+_oil_ref_label = ("EIA Dubai" if isinstance(dubai_price,(int,float)) and not dubai_note else
+                  ("두바이 추산" if dubai_note else
+                   ("ICE Brent" if isinstance(brent_price,(int,float)) else "WTI")))
+dubai_str = f"${_oil_ref_price:,.2f}" if isinstance(_oil_ref_price,(int,float)) else "N/A"
+brent_str = dubai_str  # 하위 호환 유지
 wti_str  = f"${wti_price:,.2f}" if isinstance(wti_price,(int,float)) else "N/A"
 krw_str  = f"{usd_krw:,.0f}원"  if isinstance(usd_krw,(int,float)) else "N/A"
 gas_str  = f"{gas_nat:,}원"     if isinstance(gas_nat,(int,float)) else "N/A"
@@ -808,9 +825,9 @@ st.markdown(f"""
 </div>
 <div class="metrics-strip-outer"><div class="metrics-strip">
   <div class="ms-item">
-    <div class="ms-label">브렌트유</div>
-    <div class="ms-value up">{brent_str}</div>
-    <div class="ms-sub">{"ICE Brent" if isinstance(brent_price,(int,float)) else "WTI 대체"}</div>
+    <div class="ms-label">두바이유</div>
+    <div class="ms-value up">{dubai_str}</div>
+    <div class="ms-sub">{_oil_ref_label}</div>
   </div>
   <div class="ms-item">
     <div class="ms-label">달러·원</div>
@@ -913,16 +930,19 @@ DEFAULT_민생 = {
 display_민생 = 민생_분석 if 민생_분석 else DEFAULT_민생
 
 _impact_cards_html = ""
-for key, (icon, label, card_cls) in CATEGORY_META.items():
+for _card_idx, (key, (icon, label, card_cls)) in enumerate(CATEGORY_META.items(), 1):
     item    = display_민생.get(key, DEFAULT_민생[key])
     level   = item.get("level","모니터링")
     summary = item.get("summary","")
     kpi     = item.get("key_indicator","")
     other   = item.get("타지자체_현황","")
+    _num_str = f"{_card_idx:02d}"
     _impact_cards_html += (
         f'<div class="impact-card impact-card-{card_cls}">'
-        f'<div class="ic-icon">{icon}</div>'
+        f'<div class="ic-num-row">'
+        f'<span class="ic-num">{_num_str}</span>'
         f'<div class="ic-category">{label}</div>'
+        f'</div>'
         f'<span class="ic-level-badge icl-{level}">영향도 · {level}</span>'
         f'<div class="ic-summary">{summary}</div>'
         f'<div class="ic-kpi-box"><div class="ic-kpi-label">핵심 지표</div><div class="ic-kpi-value">{kpi}</div></div>'
