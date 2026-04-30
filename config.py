@@ -127,7 +127,7 @@ YOUTUBE_CHANNELS = {
         "lang": "ko", "credibility": 8.0,
     },
 }
-YOUTUBE_SCHEDULE_DAYS = [0, 2, 4]
+YOUTUBE_SCHEDULE_DAYS = [0, 3]   # 월요일(0), 목요일(3) — 주 2회 발행
 
 CLAUDE_MODEL        = "claude-sonnet-4-5-20250929"
 ANALYZER_BATCH_SIZE = 10

@@ -139,6 +139,11 @@ st.markdown("""
   padding: 20px 24px;
   margin-bottom: 16px;
 }
+/* 교차 배경 — 회색 섹션 */
+.section-card.sec-gray {
+  background: #F8F9FA;
+  border-color: #E5E7EB;
+}
 .sec-header {
   display: flex; align-items: center; justify-content: space-between;
   margin-bottom: 14px; padding-bottom: 10px;
@@ -491,12 +496,23 @@ a.yt-title:hover { color: #1C2B40; text-decoration: underline; }
 
 /* ── 푸터 ── */
 .intel-footer {
-  display: flex; align-items: center; justify-content: space-between;
-  padding: 12px 32px; border-top: 1px solid #E5E7EB;
-  font-size: 0.64rem; color: #9CA3AF; background: #F9FAFB;
+  padding: 16px 32px 18px 32px;
+  border-top: 1px solid #E5E7EB;
+  font-size: 0.64rem; color: #4B5563;
+  background: #F3F4F6;
   border-radius: 0 0 12px 12px;
 }
-.footer-stamp { font-size: 0.6rem; font-weight: 600; letter-spacing: 1px; color: #D1D5DB; text-transform: uppercase; }
+.footer-grid {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 0 28px;
+  align-items: start;
+}
+.footer-col { display: flex; flex-direction: column; gap: 5px; }
+.footer-label { font-size: 0.68rem; font-weight: 800; color: #1C2B40; }
+.footer-val   { font-size: 0.65rem; color: #4B5563; line-height: 1.55; }
+.footer-divider { width: 1px; background: #D1D5DB; align-self: stretch; margin: 0; }
+.footer-stamp { font-size: 0.58rem; font-weight: 600; letter-spacing: 0.8px; color: #9CA3AF; text-transform: uppercase; line-height: 1.6; }
 
 /* ── 추가 stance 배지 ── */
 .st-대응    { background: #F0F9FF; color: #0369A1; }
@@ -535,6 +551,20 @@ a.yt-title:hover { color: #1C2B40; text-decoration: underline; }
 .pi-content { flex: 1; min-width: 0; }
 .pi-title   { font-size: 0.83rem; font-weight: 700; color: #111827; line-height: 1.4; }
 .pi-detail  { font-size: 0.72rem; color: #6B7280; margin-top: 3px; line-height: 1.55; }
+/* 오른쪽 입장 설명 칼럼 — 고정 폭, 파란 계열 */
+.cr-stance-desc {
+  flex-shrink: 0;
+  width: 230px;
+  min-width: 230px;
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: #1E40AF;
+  background: #EFF6FF;
+  border-radius: 6px;
+  padding: 6px 10px;
+  line-height: 1.55;
+  word-break: keep-all;
+}
 
 /* ── 인쇄 — A4 최적화 ── */
 @media print {
@@ -586,8 +616,12 @@ def get_available_dates() -> list:
         pass
     return dates or [date.today()]
 
-_available_dates = get_available_dates()
-_default_date    = _available_dates[0]  # 가장 최근 날짜
+# 2026-04-28 이후 데이터만 탭에 표시
+_START_DATE = date(2026, 4, 28)
+_available_dates = [d for d in get_available_dates() if d >= _START_DATE]
+if not _available_dates:
+    _available_dates = [_START_DATE]
+_default_date = _available_dates[0]  # 가장 최근 날짜
 
 # ─────────────────────────────────────────────
 # 날짜 탭 — 메인 페이지 상단
@@ -624,7 +658,19 @@ _date_labels = [d.strftime("%m/%d (%a)").replace("Mon","월").replace("Tue","화
                 .replace("Sat","토").replace("Sun","일")
                 for d in _available_dates]
 
-_sel_label = st.radio("", _date_labels, index=0, horizontal=True, label_visibility="collapsed")
+# 날짜탭 + 권장환경 안내 한 줄에 배치
+_tab_col, _info_col = st.columns([3, 1])
+with _tab_col:
+    _sel_label = st.radio("", _date_labels, index=0, horizontal=True, label_visibility="collapsed")
+with _info_col:
+    st.markdown(
+        '<div style="padding:10px 4px 0 4px;font-size:0.67rem;color:#6B7280;line-height:1.5;">'
+        '<div style="display:flex;gap:4px;align-items:flex-start;">'
+        '<span>📱</span>'
+        '<span><b>PC·태블릿 가로 보기</b> 권장<br>모바일 세로 시 일부 잘림</span>'
+        '</div></div>',
+        unsafe_allow_html=True
+    )
 _sel_idx   = _date_labels.index(_sel_label) if _sel_label in _date_labels else 0
 selected_date = _available_dates[_sel_idx]
 date_str = ds(selected_date)
@@ -772,29 +818,14 @@ st.markdown(f"""
     <div class="ms-sub">{domestic.get("exchange_rate",{}).get("date","--")} 기준</div>
   </div>
   <div class="ms-item">
-    <div class="ms-label">국내 휘발유</div>
+    <div class="ms-label">전국 휘발유</div>
     <div class="ms-value up">{gas_str}</div>
-    <div class="ms-sub">{"추정값" if gas_is_est else "오피넷"}</div>
-  </div>
-  <div class="ms-item">
-    <div class="ms-label">경기도 휘발유</div>
-    <div class="ms-value">{ggy_str2}</div>
     <div class="ms-sub">{"추정값" if gas_is_est else "오피넷"}</div>
   </div>
   <div class="ms-item">
     <div class="ms-label">소비자물가</div>
     <div class="ms-value up">+{cpi_str if cpi_str!="N/A" else "2.2%"}</div>
     <div class="ms-sub">3월 전년비</div>
-  </div>
-  <div class="ms-item">
-    <div class="ms-label">경보단계</div>
-    <div class="ms-value">{urg_label}</div>
-    <div class="ms-sub">자원안보 3단계</div>
-  </div>
-  <div class="ms-item">
-    <div class="ms-label">TF 가동</div>
-    <div class="ms-value">D+{day_d}</div>
-    <div class="ms-sub">3.30 출범</div>
   </div>
 </div></div>
 """, unsafe_allow_html=True)
@@ -850,54 +881,132 @@ st.markdown(f"""
 
 
 # ═══════════════════════════════════════════════════════════
-# ③ 국제전황 + 국내지표 (2컬럼)
+# ③ 수원시 민생경제 영향 분석 (최상단 배치)
 # ═══════════════════════════════════════════════════════════
-# 국제전황 시그널
-if signals:
-    signal_items = signals[:5]
-else:
-    signal_items = [
-        {"text": "호르무즈 해협 긴장 고조 — 미 해군 작전 지속", "level": "red"},
-        {"text": "이란 미사일 방어체계 가동 — IAEA 사찰 차단", "level": "red"},
-        {"text": "중국·러시아 이란 지지 성명 발표", "level": "amber"},
-        {"text": "EU 에너지 비상계획 가동 검토 중", "level": "blue"},
-        {"text": "한국 LNG 대체 수입선 확보 긴급 협의", "level": "blue"},
-    ]
+CATEGORY_META = {
+    "지역산업":       ("🏭", "지역산업 · 제조 수출", "energy"),
+    "소상공인_자영업": ("🛒", "소상공인 · 자영업",   "industry"),
+    "시민생활":       ("🏠", "시민생활 · 에너지·물가","life"),
+}
 
-# 시그널 HTML
-def signal_level(item):
-    if isinstance(item, dict):
-        # level 직접 지정된 경우
-        lvl = item.get("level", None)
-        # strength 기반 level 자동 매핑
-        if not lvl:
-            strength = item.get("strength", 3)
-            lvl = "red" if strength >= 5 else "amber" if strength >= 3 else "blue"
-        # 텍스트: text > title_ko > title > description 첫줄 순서로 시도
-        txt = (item.get("text") or item.get("title_ko") or
-               item.get("title") or
-               (item.get("description","").split("\n")[0].lstrip("• ") if item.get("description") else ""))
-    else:
-        lvl = "blue"
-        txt = str(item)
-    return lvl or "blue", txt
+DEFAULT_민생 = {
+    "지역산업": {
+        "level": "모니터링",
+        "summary": "삼성전자 협력사 등 수원 제조업·수출기업 영향 분석 중. 호르무즈 봉쇄 시나리오 대비 공급망 점검 필요.",
+        "key_indicator": "데이터 수집 후 업데이트",
+        "타지자체_현황": "API 분석 실행 후 표시됩니다.",
+    },
+    "소상공인_자영업": {
+        "level": "모니터링",
+        "summary": "유류비·에너지비 상승에 따른 배달·운수·음식업 운영비용 증가 모니터링 중.",
+        "key_indicator": "데이터 수집 후 업데이트",
+        "타지자체_현황": "API 분석 실행 후 표시됩니다.",
+    },
+    "시민생활": {
+        "level": "모니터링",
+        "summary": "도시가스·전기요금 인상 가능성 및 취약계층 에너지 부담 모니터링 중.",
+        "key_indicator": "데이터 수집 후 업데이트",
+        "타지자체_현황": "API 분석 실행 후 표시됩니다.",
+    },
+}
 
-intl_html = ""
-for item in signal_items:
-    lvl, txt = signal_level(item)
-    if not txt.strip():   # 빈 텍스트 항목 제외
-        continue
-    intl_html += f'<div class="signal-item"><div class="sig-dot sig-{lvl}"></div><div>{txt}</div></div>'
+display_민생 = 민생_분석 if 민생_분석 else DEFAULT_민생
 
-# 핵심 동향 (key_trends)
-if key_trends:
-    for trend in key_trends[:3]:
-        intl_html += f'<div class="signal-item"><div class="sig-dot sig-amber"></div><div>{trend}</div></div>'
+_impact_cards_html = ""
+for key, (icon, label, card_cls) in CATEGORY_META.items():
+    item    = display_민생.get(key, DEFAULT_민생[key])
+    level   = item.get("level","모니터링")
+    summary = item.get("summary","")
+    kpi     = item.get("key_indicator","")
+    other   = item.get("타지자체_현황","")
+    _impact_cards_html += (
+        f'<div class="impact-card impact-card-{card_cls}">'
+        f'<div class="ic-icon">{icon}</div>'
+        f'<div class="ic-category">{label}</div>'
+        f'<span class="ic-level-badge icl-{level}">영향도 · {level}</span>'
+        f'<div class="ic-summary">{summary}</div>'
+        f'<div class="ic-kpi-box"><div class="ic-kpi-label">핵심 지표</div><div class="ic-kpi-value">{kpi}</div></div>'
+        f'<div class="ic-other-box"><div class="ic-other-label">타 지자체 현황</div><div class="ic-other-value">{other}</div></div>'
+        f'</div>'
+    )
+
+st.markdown(f"""
+<div class="section-card sec-gray">
+  <div class="sec-header">
+    <span class="sec-title">🏙️ 수원시 민생경제 영향 분석</span>
+    <span class="sec-badge badge-red">3대 관점 분석</span>
+  </div>
+  <div class="triple-grid">{_impact_cards_html}</div>
+</div>
+""", unsafe_allow_html=True)
+
+
+# ─────────────────────────────────────────────
+# ④ 수원시 우선 대응과제 (최상단 배치)
+# ─────────────────────────────────────────────
+DEFAULT_대응과제 = [
+    {
+        "순위": 1, "title": "에너지 취약가구 긴급 바우처 지원",
+        "description": "기초수급·차상위 취약가구 대상 도시가스·전기요금 바우처 조기 집행. 경기도 매칭 사업 연계를 통해 시비 부담 최소화, 수혜 기준 완화.",
+        "priority": "즉시",
+        "근거": {
+            "타지자체_벤치마킹": "서울시 에너지 취약가구 전기·가스 30% 상한 지원 모델",
+            "전문가_의견": "에너지 취약계층 직접 지원이 물가 상승기 가장 효과적 대응",
+            "보고서_근거": "KDI — 바우처 직접 지급이 감면 방식 대비 수혜율 2.3배 높음",
+        },
+    },
+    {
+        "순위": 2, "title": "소상공인 에너지 비용 긴급 지원",
+        "description": "배달·운수·음식업 대상 유류비 보조금 및 전기·가스요금 특별 감면. 단일 창구 신청으로 간소화, 경기도 긴급 융자 연계 홍보 강화.",
+        "priority": "즉시",
+        "근거": {
+            "타지자체_벤치마킹": "전주시 소상공인 에너지 특별지원금 50만 원 지급 사례",
+            "전문가_의견": "소상공인 에너지비 부담이 폐업률에 직결 — 직접 보조가 즉효",
+            "보고서_근거": "KEEI — 자영업 에너지비 비중 매출 대비 평균 8.4%로 임계치 초과",
+        },
+    },
+    {
+        "순위": 3, "title": "에너지 비상대응 TF · 시나리오 수립",
+        "description": "호르무즈 봉쇄 장기화(3·6·12개월) 시나리오별 에너지·물가 충격 시뮬레이션 및 단계별 대응 매뉴얼 수립. 경기도 LNG 비상비축 MOU 연계.",
+        "priority": "단기",
+        "근거": {
+            "타지자체_벤치마킹": "일본 METI 에너지 비상계획 3단계 시나리오 모델",
+            "전문가_의견": "호르무즈 봉쇄 가능성 40%↑ — 지자체 단위 사전 비상계획 필수",
+            "보고서_근거": "KIEP — 봉쇄 6개월 지속 시 국내 에너지 비용 추가 23% 상승 전망",
+        },
+    },
+]
+
+display_대응과제 = 대응과제 if 대응과제 else DEFAULT_대응과제
+rank_tags = ["A", "B", "C"]
+
+_action_cards_html = ""
+for i, task in enumerate(display_대응과제[:3]):
+    title_t = task.get("title","")
+    desc    = task.get("description","")
+    근거     = task.get("근거", {})
+    bench   = 근거.get("타지자체_벤치마킹","")
+    expert  = 근거.get("전문가_의견","")
+    report  = 근거.get("보고서_근거","")
+    _action_cards_html += (
+        f'<div class="action-card">'
+        f'<div class="ac-rank">Priority {rank_tags[i]}</div>'
+        f'<div class="ac-title">{title_t}</div>'
+        f'<div class="ac-desc">{desc}</div>'
+        f'<div class="evidence-stack">'
+        f'<div class="ev-item ev-bench"><span class="ev-tag">🏙 타지자체 벤치마킹</span>{bench}</div>'
+        f'<div class="ev-item ev-expert"><span class="ev-tag">🎙 전문가 의견</span>{expert}</div>'
+        f'<div class="ev-item ev-report"><span class="ev-tag">📄 보고서 근거</span>{report}</div>'
+        f'</div></div>'
+    )
 
 st.markdown(f"""
 <div class="section-card">
-  <div class="panel-title">🌍 국제 전황 신호 <span class="sec-badge badge-red">LIVE</span></div>
-  {intl_html if intl_html else '<div class="empty-dark">데이터 없음</div>'}
+  <div class="sec-header">
+    <span class="sec-title">📋 수원시 민생경제 우선 대응과제</span>
+    <span class="sec-badge badge-red">근거 기반 AI 정책 제언</span>
+  </div>
+  <div class="triple-grid">{_action_cards_html}</div>
 </div>
 """, unsafe_allow_html=True)
 
@@ -981,15 +1090,24 @@ def build_cr_items_html(items: list) -> str:
         title   = item.get("title","")
         detail  = item.get("detail","") or item.get("actions_text","")
         sk      = _st_key(stance)
+        # 오른쪽 칼럼: 짧은 단어(강경/중립 등)는 배지, 긴 문장은 파란 설명 박스
+        is_long_stance = len(stance) > 10
+        if is_long_stance:
+            right_html = f'<div class="cr-stance-desc">{stance}</div>'
+        else:
+            right_html = (
+                f'<span class="cr-stance-badge st-{sk}" '
+                f'style="flex-shrink:0;margin-top:2px;min-width:52px;text-align:center">{stance}</span>'
+            )
         html += (
             f'<div class="policy-item">'
             f'<span class="cr-stance-badge st-{sk}" '
-            f'style="flex-shrink:0;margin-top:2px;min-width:64px;text-align:center">{country}</span>'
+            f'style="flex-shrink:0;flex-basis:96px;width:96px;min-width:96px;text-align:center;white-space:normal;word-break:keep-all;line-height:1.4">{country}</span>'
             f'<div class="pi-content">'
             f'<div class="pi-title">{title}</div>'
             f'<div class="pi-detail">{detail}</div>'
             f'</div>'
-            f'<span class="cr-stance-badge st-{sk}" style="flex-shrink:0;margin-top:2px">{stance}</span>'
+            f'{right_html}'
             f'</div>'
         )
     html += '</div>'
@@ -1018,9 +1136,9 @@ _cr_gl_html = build_cr_items_html(get_region_items("글로벌"))
 _cr_kr_html = build_cr_items_html(get_region_items("한국"))
 
 st.markdown(f"""
-<div class="section-card">
+<div class="section-card sec-gray">
   <div class="sec-header">
-    <span class="sec-title">🌍 각국 상황 & 대응 매트릭스</span>
+    <span class="sec-title">🌍 글로벌 상황 및 중앙정부 대응</span>
     <span class="sec-badge badge-blue">Country Response Matrix</span>
   </div>
   <div class="ctabs">
@@ -1079,7 +1197,7 @@ for row in lga_list:
 st.markdown(f"""
 <div class="section-card">
   <div class="sec-header">
-    <span class="sec-title">🇰🇷 한국 지자체 상황 & 대응 현황</span>
+    <span class="sec-title">🇰🇷 지자체 대응</span>
     <span class="sec-badge badge-green">Local Gov Response Matrix</span>
   </div>
   <table class="lga-table">
@@ -1099,135 +1217,7 @@ st.markdown(f"""
 """, unsafe_allow_html=True)
 
 
-# ═══════════════════════════════════════════════════════════
-# ⑥ 수원시 민생경제 분석 (3컬럼)
-# ═══════════════════════════════════════════════════════════
-CATEGORY_META = {
-    "지역산업":       ("🏭", "지역산업 · 제조 수출", "energy"),
-    "소상공인_자영업": ("🛒", "소상공인 · 자영업",   "industry"),
-    "시민생활":       ("🏠", "시민생활 · 에너지·물가","life"),
-}
-
-DEFAULT_민생 = {
-    "지역산업": {
-        "level": "모니터링",
-        "summary": "삼성전자 협력사 등 수원 제조업·수출기업 영향 분석 중. 호르무즈 봉쇄 시나리오 대비 공급망 점검 필요.",
-        "key_indicator": "데이터 수집 후 업데이트",
-        "타지자체_현황": "API 분석 실행 후 표시됩니다.",
-    },
-    "소상공인_자영업": {
-        "level": "모니터링",
-        "summary": "유류비·에너지비 상승에 따른 배달·운수·음식업 운영비용 증가 모니터링 중.",
-        "key_indicator": "데이터 수집 후 업데이트",
-        "타지자체_현황": "API 분석 실행 후 표시됩니다.",
-    },
-    "시민생활": {
-        "level": "모니터링",
-        "summary": "도시가스·전기요금 인상 가능성 및 취약계층 에너지 부담 모니터링 중.",
-        "key_indicator": "데이터 수집 후 업데이트",
-        "타지자체_현황": "API 분석 실행 후 표시됩니다.",
-    },
-}
-
-display_민생 = 민생_분석 if 민생_분석 else DEFAULT_민생
-
-_impact_cards_html = ""
-for key, (icon, label, card_cls) in CATEGORY_META.items():
-    item    = display_민생.get(key, DEFAULT_민생[key])
-    level   = item.get("level","모니터링")
-    summary = item.get("summary","")
-    kpi     = item.get("key_indicator","")
-    other   = item.get("타지자체_현황","")
-    _impact_cards_html += (
-        f'<div class="impact-card impact-card-{card_cls}">'
-        f'<div class="ic-icon">{icon}</div>'
-        f'<div class="ic-category">{label}</div>'
-        f'<span class="ic-level-badge icl-{level}">영향도 · {level}</span>'
-        f'<div class="ic-summary">{summary}</div>'
-        f'<div class="ic-kpi-box"><div class="ic-kpi-label">핵심 지표</div><div class="ic-kpi-value">{kpi}</div></div>'
-        f'<div class="ic-other-box"><div class="ic-other-label">타 지자체 현황</div><div class="ic-other-value">{other}</div></div>'
-        f'</div>'
-    )
-
-st.markdown(f"""
-<div class="section-card">
-  <div class="sec-header">
-    <span class="sec-title">🏙️ 수원시 민생경제 영향 분석</span>
-    <span class="sec-badge badge-red">3대 관점 분석</span>
-  </div>
-  <div class="triple-grid">{_impact_cards_html}</div>
-</div>
-""", unsafe_allow_html=True)
-
-
-# ═══════════════════════════════════════════════════════════
-# ⑦ 우선 대응과제 (3컬럼)
-# ═══════════════════════════════════════════════════════════
-DEFAULT_대응과제 = [
-    {
-        "순위": 1, "title": "에너지 취약가구 긴급 바우처 지원",
-        "description": "기초수급·차상위 취약가구 대상 도시가스·전기요금 바우처 조기 집행. 경기도 매칭 사업 연계를 통해 시비 부담 최소화, 수혜 기준 완화.",
-        "priority": "즉시",
-        "근거": {
-            "타지자체_벤치마킹": "서울시 에너지 취약가구 전기·가스 30% 상한 지원 모델",
-            "전문가_의견": "에너지 취약계층 직접 지원이 물가 상승기 가장 효과적 대응",
-            "보고서_근거": "KDI — 바우처 직접 지급이 감면 방식 대비 수혜율 2.3배 높음",
-        },
-    },
-    {
-        "순위": 2, "title": "소상공인 에너지 비용 긴급 지원",
-        "description": "배달·운수·음식업 대상 유류비 보조금 및 전기·가스요금 특별 감면. 단일 창구 신청으로 간소화, 경기도 긴급 융자 연계 홍보 강화.",
-        "priority": "즉시",
-        "근거": {
-            "타지자체_벤치마킹": "전주시 소상공인 에너지 특별지원금 50만 원 지급 사례",
-            "전문가_의견": "소상공인 에너지비 부담이 폐업률에 직결 — 직접 보조가 즉효",
-            "보고서_근거": "KEEI — 자영업 에너지비 비중 매출 대비 평균 8.4%로 임계치 초과",
-        },
-    },
-    {
-        "순위": 3, "title": "에너지 비상대응 TF · 시나리오 수립",
-        "description": "호르무즈 봉쇄 장기화(3·6·12개월) 시나리오별 에너지·물가 충격 시뮬레이션 및 단계별 대응 매뉴얼 수립. 경기도 LNG 비상비축 MOU 연계.",
-        "priority": "단기",
-        "근거": {
-            "타지자체_벤치마킹": "일본 METI 에너지 비상계획 3단계 시나리오 모델",
-            "전문가_의견": "호르무즈 봉쇄 가능성 40%↑ — 지자체 단위 사전 비상계획 필수",
-            "보고서_근거": "KIEP — 봉쇄 6개월 지속 시 국내 에너지 비용 추가 23% 상승 전망",
-        },
-    },
-]
-
-display_대응과제 = 대응과제 if 대응과제 else DEFAULT_대응과제
-rank_tags = ["A", "B", "C"]
-
-_action_cards_html = ""
-for i, task in enumerate(display_대응과제[:3]):
-    title  = task.get("title","")
-    desc   = task.get("description","")
-    근거    = task.get("근거", {})
-    bench  = 근거.get("타지자체_벤치마킹","")
-    expert = 근거.get("전문가_의견","")
-    report = 근거.get("보고서_근거","")
-    _action_cards_html += (
-        f'<div class="action-card">'
-        f'<div class="ac-rank">Priority {rank_tags[i]}</div>'
-        f'<div class="ac-title">{title}</div>'
-        f'<div class="ac-desc">{desc}</div>'
-        f'<div class="evidence-stack">'
-        f'<div class="ev-item ev-bench"><span class="ev-tag">🏙 타지자체 벤치마킹</span>{bench}</div>'
-        f'<div class="ev-item ev-expert"><span class="ev-tag">🎙 전문가 의견</span>{expert}</div>'
-        f'<div class="ev-item ev-report"><span class="ev-tag">📄 보고서 근거</span>{report}</div>'
-        f'</div></div>'
-    )
-
-st.markdown(f"""
-<div class="section-card">
-  <div class="sec-header">
-    <span class="sec-title">📋 수원시 민생경제 우선 대응과제</span>
-    <span class="sec-badge badge-red">근거 기반 AI 정책 제언</span>
-  </div>
-  <div class="triple-grid">{_action_cards_html}</div>
-</div>
-""", unsafe_allow_html=True)
+# (⑥⑦ 민생경제·대응과제는 ③④ 위치로 이동됨)
 
 
 # ═══════════════════════════════════════════════════════════
@@ -1245,7 +1235,7 @@ devil_pts = "".join(
 )
 
 st.markdown(
-    f'<div class="devil-card">'
+    f'<div class="devil-card sec-gray-card">'
     f'<div class="devil-stamp">리스크 점검</div>'
     f'<div class="devil-quote">사전 검증 포인트 — <span class="dq-hi">실행 전 반드시 확인해야 할 사항</span></div>'
     f'<div class="devil-grid">{devil_pts}</div>'
@@ -1301,10 +1291,10 @@ for i, issue in enumerate(next_issues[:4], 1):
 next_html += '</div>'
 
 st.markdown(f"""
-<div class="section-card">
+<div class="section-card sec-gray">
   <div class="sec-header">
-    <span class="sec-title">🔭 다음주 주목 핵심이슈</span>
-    <span class="sec-badge badge-blue">Next Week Watch</span>
+    <span class="sec-title">🔭 다음번 주목 이슈</span>
+    <span class="sec-badge badge-blue">Next Issue Watch</span>
   </div>
   {next_html}
 </div>
@@ -1395,12 +1385,27 @@ st.markdown("</div>", unsafe_allow_html=True)  # page-wrap
 
 st.markdown(f"""
 <div class="intel-footer">
-  <div>AI-Powered Strategic Analysis · Suwon City Strategic Intelligence Office · {len(analyzed)} articles · {fmt(selected_date)}</div>
-  <div class="footer-stamp">CONFIDENTIAL — FOR OFFICIAL USE ONLY</div>
-  <button class="no-print" onclick="window.print()"
-    style="background:rgba(29,78,216,0.2);border:1px solid #1D4ED8;color:#93C5FD;
-           padding:6px 16px;border-radius:4px;font-size:0.7rem;font-weight:700;cursor:pointer;letter-spacing:1px">
-    🖨 PRINT
-  </button>
+  <div class="footer-grid">
+    <div class="footer-col">
+      <span class="footer-label">📡 발행 주기</span>
+      <div class="footer-val">매주 월·목 오후 (주 2회)</div>
+      <div class="footer-val">분석 기준: {fmt(selected_date)} · 기사 {len(analyzed)}건</div>
+      <button class="no-print" onclick="window.print()"
+        style="margin-top:8px;background:#1C2B40;border:none;color:#FFFFFF;
+               padding:5px 14px;border-radius:4px;font-size:0.68rem;font-weight:700;
+               cursor:pointer;letter-spacing:0.5px;width:fit-content">🖨 PRINT</button>
+    </div>
+    <div class="footer-col">
+      <span class="footer-label">🤖 AI 활용</span>
+      <div class="footer-val" style="margin-bottom:6px">Anthropic Claude API 기반 자동 분석 · 기사 분류·요약·정책 제언 자동 생성</div>
+      <span class="footer-label">📂 데이터 출처</span>
+      <div class="footer-val" style="margin-bottom:6px">Reuters · Al Jazeera · Guardian · BBC · IEA · IMF · WorldBank · NewsAPI · Yahoo Finance · Opinet</div>
+      <span class="footer-label">📱 권장 환경</span>
+      <div class="footer-val">PC 또는 태블릿 가로 보기 권장 (모바일 세로 보기 시 일부 내용 잘림)</div>
+    </div>
+    <div class="footer-col" style="text-align:right">
+      <div class="footer-stamp">CONFIDENTIAL<br>FOR OFFICIAL USE ONLY<br>Suwon City Intelligence Office</div>
+    </div>
+  </div>
 </div>
 """, unsafe_allow_html=True)
