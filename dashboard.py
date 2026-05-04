@@ -1115,13 +1115,23 @@ def _st_key(stance: str) -> str:
 def build_cr_items_html(items: list) -> str:
     if not items:
         return '<div class="empty-dark">파이프라인 실행 후 데이터가 표시됩니다.</div>'
+    # 템플릿 항목(is_real=False) 포함 여부 확인 → 안내 문구
+    has_template = any(not item.get("is_real", True) for item in items)
     html = '<div class="cr-policy-list">'
+    if has_template:
+        html += ('<div style="font-size:0.65rem;color:#9CA3AF;margin-bottom:6px;padding:4px 8px;'
+                 'background:#F9FAFB;border-radius:4px;border-left:3px solid #D1D5DB">'
+                 '⚠️ 국내 뉴스 미수집 항목은 기준 템플릿으로 표시됩니다. '
+                 '다음 파이프라인 실행 시 실수집 데이터로 교체됩니다.</div>')
     for item in items:
-        country = item.get("country","")
-        stance  = item.get("stance","중립")
-        title   = item.get("title","")
-        detail  = item.get("detail","") or item.get("actions_text","")
-        sk      = _st_key(stance)
+        country   = item.get("country","")
+        stance    = item.get("stance","중립")
+        title     = item.get("title","")
+        detail    = item.get("detail","") or item.get("actions_text","")
+        sk        = _st_key(stance)
+        is_real   = item.get("is_real", True)
+        # 템플릿 항목은 흐리게 표시
+        item_style = "" if is_real else "opacity:0.65;"
         # 오른쪽 칼럼: 짧은 단어(강경/중립 등)는 배지, 긴 문장은 파란 설명 박스
         is_long_stance = len(stance) > 10
         if is_long_stance:
@@ -1132,7 +1142,7 @@ def build_cr_items_html(items: list) -> str:
                 f'style="flex-shrink:0;margin-top:2px;min-width:52px;text-align:center">{stance}</span>'
             )
         html += (
-            f'<div class="policy-item">'
+            f'<div class="policy-item" style="{item_style}">'
             f'<span class="cr-stance-badge st-{sk}" '
             f'style="flex-shrink:0;flex-basis:96px;width:96px;min-width:96px;text-align:center;white-space:normal;word-break:keep-all;line-height:1.4">{country}</span>'
             f'<div class="pi-content">'
@@ -1158,13 +1168,13 @@ def get_region_items(region_name: str) -> list:
                     "stance":  r.get("stance", "모니터링"),
                     "title":   action_text,
                     "detail":  r.get("suwon_relevance", ""),
+                    "is_real": True,
                 })
-            # ② country_responses에서 "한국" 국가 단위 항목도 추가
+            # ② country_responses에서 "한국" 국가 단위 항목도 병합
             region_set = REGION_MAP.get("한국", set())
+            existing = {item["country"] for item in out}
             for r in cr_responses:
-                if r.get("country", "") in region_set and r.get("country") not in {
-                    item["country"] for item in out
-                }:
+                if r.get("country", "") in region_set and r.get("country") not in existing:
                     actions = r.get("actions", [])
                     action_text = " · ".join(actions[:2]) if actions else r.get("outlook", "")[:100]
                     out.append({
@@ -1172,16 +1182,18 @@ def get_region_items(region_name: str) -> list:
                         "stance":  r.get("stance", "모니터링"),
                         "title":   action_text,
                         "detail":  r.get("suwon_relevance", ""),
+                        "is_real": True,
                     })
             if out:
                 return out
-        # ③ 부처 데이터 없을 때 country_responses에서 한국 관련 항목만
-        elif cr_responses:
+
+        # ③ 부처별 데이터 없으면 DEFAULT 부처 목록 표시 (기준 템플릿)
+        #    + country_responses의 "한국" 동향을 맨 앞에 추가
+        out = []
+        if cr_responses:
             region_set = REGION_MAP.get("한국", set())
-            filtered = [r for r in cr_responses if r.get("country", "") in region_set]
-            if filtered:
-                out = []
-                for r in filtered:
+            for r in cr_responses:
+                if r.get("country", "") in region_set:
                     actions = r.get("actions", [])
                     action_text = " · ".join(actions[:2]) if actions else r.get("outlook", "")[:100]
                     out.append({
@@ -1189,9 +1201,14 @@ def get_region_items(region_name: str) -> list:
                         "stance":  r.get("stance", "모니터링"),
                         "title":   action_text,
                         "detail":  r.get("suwon_relevance", ""),
+                        "is_real": True,
                     })
-                return out
-        return DEFAULT_CR_REGIONS.get("한국", [])
+        # DEFAULT 부처 항목 뒤에 추가 (중복 제외)
+        existing = {item["country"] for item in out}
+        for item in DEFAULT_CR_REGIONS.get("한국", []):
+            if item.get("country") not in existing:
+                out.append({**item, "is_real": False})
+        return out if out else DEFAULT_CR_REGIONS.get("한국", [])
 
     # 한국 외 일반 처리
     if cr_responses:
