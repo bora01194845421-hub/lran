@@ -6,7 +6,7 @@
 - 분석 실행:  python manual_input.py --file 파일.xlsx
 
 실행:
-  streamlit run dashboard_v2.py --server.address 0.0.0.0 --server.port 8503
+  python -m streamlit run dashboard_v2.py --server.address 0.0.0.0 --server.port 8503
 """
 
 import os
@@ -15,7 +15,10 @@ import os
 os.environ["IRAN_DATA_DIR"]     = "data_v2"
 os.environ["IRAN_DASH_VERSION"] = "V2"
 
-# dashboard.py 코드를 그대로 실행 (별도 프로세스이므로 모듈 캐시 충돌 없음)
+import runpy
 from pathlib import Path
-_code = (Path(__file__).parent / "dashboard.py").read_text(encoding="utf-8")
-exec(compile(_code, str(Path(__file__).parent / "dashboard.py"), "exec"))
+
+runpy.run_path(
+    str(Path(__file__).parent / "dashboard.py"),
+    run_name="__main__",
+)

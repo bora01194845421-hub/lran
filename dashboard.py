@@ -679,7 +679,7 @@ _date_labels = [d.strftime("%m/%d (%a)").replace("Mon","월").replace("Tue","화
 # 날짜탭 + 권장환경 안내 한 줄에 배치
 _tab_col, _info_col = st.columns([3, 1])
 with _tab_col:
-    _sel_label = st.radio("", _date_labels, index=0, horizontal=True, label_visibility="collapsed")
+    _sel_label = st.radio("날짜 선택", _date_labels, index=0, horizontal=True, label_visibility="collapsed")
 with _info_col:
     st.markdown(
         '<div style="padding:10px 4px 0 4px;font-size:0.67rem;color:#6B7280;line-height:1.5;">'
