@@ -1,216 +1,146 @@
 {
   "date": "2026-05-04",
-  "total_signals": 10,
-  "structural_signals": 10,
+  "total_signals": 5,
+  "structural_signals": 4,
   "signals": [
     {
       "signal_id": "sig_002",
-      "category": "무역공급망재편",
-      "title_ko": "핵심광물 수출규제 급증",
-      "description": "• 전략 핵심광물에 대한 수출 제한 조치가 글로벌 차원에서 급증\n• 안보 논리로 자원 민족주의 강화, 공급망 분절화 가속\n• 가격 기반 무역에서 신뢰·동맹 기반 무역으로 글로벌 자원 거래 구조 근본 변화",
+      "category": "정책패러다임전환",
+      "title_ko": "OPEC 생산협력체제 장기화",
+      "description": "• Declaration of Cooperation 체제 지속 강화 중\n• 월간 석유시장 보고서 정례화로 시장 개입 신호 체계화\n• 비OPEC 협력국 포함한 생산조정 구조 제도화 진행",
       "evidence_titles": [
-        "Critical raw materials face rising export restrictions, increasing risks to global supply chains"
+        "Declaration of Cooperation",
+        "Monthly Oil Market Report",
+        "61st Edition of OPEC's Annual Statistical Bulletin (ASB-2026) launched"
       ],
       "evidence_sources": [
-        "OECD"
+        "OPEC",
+        "OPEC",
+        "OPEC"
       ],
-      "strength": 5,
-      "trend": "신규",
-      "suwon_implication": "수원시 제조기업(특히 전자·반도체 협력업체)의 원자재 조달 비용 상승 및 공급 불안정 심화\n지역 산업 지원 정책에서 공급망 다변화·재고 관리 지원이 필수 요소로 전환",
+      "strength": 4,
+      "trend": "강화",
+      "suwon_implication": "국제 유가의 변동성이 과거와 다른 패턴으로 전환. 수원시 에너지 비용 예측 모델에 OPEC+ 정책 변수 필수 반영 필요.",
       "is_structural": true,
-      "detected_date": "2026-05-04",
-      "first_detected": "2026-05-04"
+      "detected_date": "2026-05-04"
     },
     {
-      "signal_id": "sig_006",
-      "category": "무역공급망재편",
-      "title_ko": "안보경제 패러다임 공식화",
-      "description": "• OECD가 'The Security Economy' 보고서로 안보와 경제의 융합 패러다임 공식화\n• 경제 정책 수립의 최우선 기준이 효율성에서 안보·탄력성으로 전환\n• 글로벌 공급망·무역·투자 의사결정의 근본 논리 변화",
+      "signal_id": "sig_003",
+      "category": "에너지안보재편",
+      "title_ko": "사우디 에너지 정책 중심성 강화",
+      "description": "• OPEC 내 사우디아라비아 관련 독립 섹션 신설\n• 2045 세계 석유 전망에서 중동 생산국 역할 재강조\n• 장기 에너지 파트너십 기준이 가격→안정성·신뢰로 이동",
       "evidence_titles": [
-        "The Security Economy"
+        "Saudi Arabia - Organization of the Petroleum Exporting Countries",
+        "World Oil Outlook 2045",
+        "Annual Statistical Bulletin 2026"
       ],
       "evidence_sources": [
-        "OECD"
+        "OPEC",
+        "OPEC",
+        "OPEC"
       ],
-      "strength": 5,
+      "strength": 4,
       "trend": "신규",
-      "suwon_implication": "수원시 기업 지원 정책에서 공급망 안정성·비상 대응력을 핵심 평가 기준으로 추가\n외국인 투자 유치 전략을 가격 경쟁력에서 공급망 신뢰성 중심으로 전환",
+      "suwon_implication": "한국의 중동 의존도 심화 예상. 수원시 제조기업 에너지 공급 안정성 모니터링 체계 필요. 중장기 에너지 비용 상승 대비 필요.",
       "is_structural": true,
       "detected_date": "2026-05-04",
       "first_detected": "2026-05-04"
     },
     {
       "signal_id": "sig_001",
-      "category": "정책패러다임전환",
-      "title_ko": "OECD 정부 R&D 예산 국방 전환",
-      "description": "• OECD 회원국 정부 R&D 예산이 감소하면서 국방 분야로 재편\n• 전쟁 리스크 대응 위해 민생·산업 R&D에서 안보·국방 R&D로 우선순위 전환\n• 장기 경제성장 동력보다 단기 안보 확보가 정책 우선순위로 자리잡는 구조적 변화",
+      "category": "에너지안보재편",
+      "title_ko": "OPEC 화석연료 재정의 움직임",
+      "description": "• OPEC이 'fossil fuel' 용어 자체에 대한 재검토 필요성 제기\n• 재생에너지 실제 비용 공개 요구 강화 - 숨겨진 보조금·망 비용 포함\n• 석유의 장기 역할 재평가 작업 진행 중 (2045 전망 발표)",
       "evidence_titles": [
-        "OECD overall R&D growth stable; government R&D budgets decline and reorient towards defence"
+        "Does the 'fossil fuel' label require a rethink?",
+        "The true cost of renewables",
+        "World Oil Outlook 2045"
       ],
       "evidence_sources": [
-        "OECD"
+        "OPEC",
+        "OPEC",
+        "OPEC"
       ],
-      "strength": 4,
+      "strength": 3,
       "trend": "신규",
-      "suwon_implication": "수원시 산학협력·기업 R&D 지원 정책 설계 시 중앙정부 R&D 예산 축소 전제 필요\n민간 주도 혁신 생태계 조성이 지역 산업경쟁력 유지의 핵심 과제로 부상",
-      "is_structural": true,
-      "detected_date": "2026-05-04",
-      "first_detected": "2026-05-04"
-    },
-    {
-      "signal_id": "sig_003",
-      "category": "정책패러다임전환",
-      "title_ko": "글로벌 경제 정책불확실성 지배",
-      "description": "• OECD가 정책 불확실성을 경제 전망 약화의 핵심 요인으로 공식 진단\n• 전쟁·지정학 리스크로 인해 예측 가능한 정책 환경 자체가 소멸\n• 정책 입안의 전제가 안정성에서 적응성·탄력성으로 근본 전환",
-      "evidence_titles": [
-        "Global economic outlook weakens as policy uncertainty weighs on demand"
-      ],
-      "evidence_sources": [
-        "OECD"
-      ],
-      "strength": 4,
-      "trend": "신규",
-      "suwon_implication": "수원시 중장기 정책 수립 시 시나리오 기반 탄력적 정책 설계 필수\n민생안정 예산 편성에서 긴급 대응 예비비 비중 확대 필요",
-      "is_structural": true,
-      "detected_date": "2026-05-04",
-      "first_detected": "2026-05-04"
-    },
-    {
-      "signal_id": "sig_005",
-      "category": "정책패러다임전환",
-      "title_ko": "녹색성장 정책 경쟁력 프레임 전환",
-      "description": "• OECD가 녹색성장을 환경 보호가 아닌 경제 경쟁력 유지 수단으로 재정의\n• 전쟁·자원 불안 시대에 에너지 효율성이 국가·지역 경쟁력의 핵심 요소로 부상\n• 친환경 정책의 정당성이 윤리에서 생존 전략으로 전환",
-      "evidence_titles": [
-        "Economic policies to foster green growth"
-      ],
-      "evidence_sources": [
-        "OECD"
-      ],
-      "strength": 4,
-      "trend": "신규",
-      "suwon_implication": "수원시 친환경 정책을 민생 부담이 아닌 장기 에너지 비용 절감 수단으로 재포지셔닝 필요\n건물 에너지 효율화 사업이 복지 정책이 아닌 경제 정책으로 전환",
-      "is_structural": true,
-      "detected_date": "2026-05-04",
-      "first_detected": "2026-05-04"
-    },
-    {
-      "signal_id": "sig_007",
-      "category": "정책패러다임전환",
-      "title_ko": "장기 경제 시나리오 불확실성 확대",
-      "description": "• OECD가 2025 글로벌 장기 경제 시나리오 업데이트에서 불확실성 급증 반영\n• 전통적 성장 모델의 예측력 소멸, 시나리오 다변화 자체가 정책 기조로 자리잡음\n• 단일 경로 정책 수립이 불가능한 시대 진입 공식 선언",
-      "evidence_titles": [
-        "OECD global long-run economic scenarios: 2025 update"
-      ],
-      "evidence_sources": [
-        "OECD"
-      ],
-      "strength": 4,
-      "trend": "강화",
-      "suwon_implication": "수원시 장기 발전계획 수립 시 복수 시나리오 기반 정책 포트폴리오 구성 필수\n단일 예측 의존 정책은 집행 리스크가 구조적으로 증가",
-      "is_structural": true,
-      "detected_date": "2026-05-04"
-    },
-    {
-      "signal_id": "sig_009",
-      "category": "무역공급망재편",
-      "title_ko": "FDI 평가 기준 경제성→안보 전환",
-      "description": "• OECD가 라틴아메리카 FDI 평가에서 사회경제적 영향(안정성·탄력성) 중심 분석\n• 외국인 투자 유치의 평가 기준이 일자리 창출에서 공급망 안정 기여로 전환\n• 글로벌 투자 흐름의 의사결정 논리 근본 변화",
-      "evidence_titles": [
-        "Assessing the Socio‑economic Impact of Foreign Direct Investment in Latin America and the Caribbean"
-      ],
-      "evidence_sources": [
-        "OECD"
-      ],
-      "strength": 4,
-      "trend": "신규",
-      "suwon_implication": "수원시 외국인 투자 유치 전략을 단기 고용 효과에서 장기 공급망 기여도 중심으로 재설계\n투자 인센티브 설계에 공급망 안정성·위기 대응력 평가 지표 추가",
+      "suwon_implication": "에너지 전환 정책 설계 시 재생에너지 실제 비용 재평가 필요. 수원시 탄소중립 로드맵의 비용 추정 보수적 재검토 요구됨.",
       "is_structural": true,
       "detected_date": "2026-05-04",
       "first_detected": "2026-05-04"
     },
     {
       "signal_id": "sig_004",
-      "category": "민생충격패턴",
-      "title_ko": "비전염병 대응 경제효과 재조명",
-      "description": "• OECD가 전쟁·경제위기 상황에서 비전염병(만성질환) 예방의 경제적 효과 강조\n• 의료비 부담이 가계 경제 붕괴 요인으로 작용하는 패턴 확인\n• 민생안정의 핵심 축이 일자리에서 의료비 부담 완화로 확대",
+      "category": "무역공급망재편",
+      "title_ko": "OPEC 통계체계 정밀화",
+      "description": "• 연간 통계 보고서 61회 발간 지속 - 데이터 기반 시장 관리 강화\n• 월간 석유시장 보고서의 예측력 제고 노력\n• 회원국 생산·수출 데이터 투명성 제고 작업",
       "evidence_titles": [
-        "The Health and Economic Benefits of Tackling Non‑Communicable Diseases"
+        "61st Edition of OPEC's Annual Statistical Bulletin (ASB-2026) launched",
+        "Monthly Oil Market Report",
+        "Annual Statistical Bulletin 2026"
       ],
       "evidence_sources": [
-        "OECD"
-      ],
-      "strength": 3,
-      "trend": "신규",
-      "suwon_implication": "수원시 취약계층 의료비 지원 정책의 경제 안정화 효과 재평가 필요\n예방적 건강 프로그램이 민생안정 정책의 핵심 도구로 부상",
-      "is_structural": true,
-      "detected_date": "2026-05-04",
-      "first_detected": "2026-05-04"
-    },
-    {
-      "signal_id": "sig_008",
-      "category": "민생충격패턴",
-      "title_ko": "아동학대 경제적 결정요인 부각",
-      "description": "• OECD가 전쟁·경제위기 시 가계 경제 악화가 아동학대 급증으로 연결되는 구조 분석\n• 민생 불안이 사회 안전망 붕괴와 돌봄 위기로 연쇄 확산되는 패턴 확인\n• 경제 정책과 사회 안전망의 통합 설계 필요성 부각",
-      "evidence_titles": [
-        "Economic Determinants and Consequences of Child Maltreatment"
-      ],
-      "evidence_sources": [
-        "OECD"
-      ],
-      "strength": 3,
-      "trend": "신규",
-      "suwon_implication": "수원시 취약계층 경제 지원과 아동 보호 체계의 통합 운영 필요성 증가\n민생 충격 조기 경보 시스템에 돌봄 위기 지표 통합 검토",
-      "is_structural": true,
-      "detected_date": "2026-05-04",
-      "first_detected": "2026-05-04"
-    },
-    {
-      "signal_id": "sig_010",
-      "category": "정책패러다임전환",
-      "title_ko": "디지털세 글로벌 합의 구조화",
-      "description": "• OECD 주도 디지털 과세 2-Pillar 솔루션이 글로벌 조세 질서의 새 표준으로 확립\n• 국경 없는 디지털 경제에 대한 과세권 배분 방식의 근본 변화\n• 지방정부 세수 구조에 중장기 영향 예고",
-      "evidence_titles": [
-        "Statement on a Two-Pillar Solution to Address the Tax Challenges Arising from the Digitalisation of the Economy – 8 October 20"
-      ],
-      "evidence_sources": [
-        "OECD"
+        "OPEC",
+        "OPEC",
+        "OPEC"
       ],
       "strength": 3,
       "trend": "강화",
-      "suwon_implication": "수원시 디지털 플랫폼 기업 유치 전략 재검토 필요 (조세 배분 구조 변화 반영)\n지방세 수입 구조의 중장기 변화 가능성 모니터링 강화",
+      "suwon_implication": "에너지 시장 예측 가능성 증가. 수원시 기업 지원 정책에서 OPEC 공식 통계 활용한 선제적 에너지 비용 컨설팅 가능.",
       "is_structural": true,
       "detected_date": "2026-05-04"
+    },
+    {
+      "signal_id": "sig_005",
+      "category": "정책패러다임전환",
+      "title_ko": "석유산업 장기 고용전략 전환",
+      "description": "• OPEC 공식 채용 페이지 별도 운영 - 인력 양성 장기화 신호\n• 석유산업의 지속가능성 담론 강화 중\n• 화석연료→에너지 전환 기업으로 정체성 재구축 시도",
+      "evidence_titles": [
+        "Employment - Organization of the Petroleum Exporting Countries",
+        "Does the 'fossil fuel' label require a rethink?",
+        "Feature article"
+      ],
+      "evidence_sources": [
+        "OPEC",
+        "OPEC",
+        "OPEC"
+      ],
+      "strength": 2,
+      "trend": "신규",
+      "suwon_implication": "글로벌 에너지 기업의 인력 전략 변화 모니터링 필요. 수원시 에너지 관련 재교육 프로그램 설계 시 산업 트렌드 반영 요구됨.",
+      "is_structural": false,
+      "detected_date": "2026-05-04",
+      "first_detected": "2026-05-04"
     }
   ],
   "by_category": {
-    "정책패러다임전환": 5,
-    "무역공급망재편": 3,
-    "민생충격패턴": 2
+    "에너지안보재편": 2,
+    "정책패러다임전환": 2,
+    "무역공급망재편": 1
   },
-  "summary_ko": "• OECD가 '안보경제(Security Economy)' 패러다임을 공식화하며 경제 정책의 최우선 기준이 효율성에서 안보·탄력성으로 전환\n• 정부 R&D 예산이 민생·산업에서 국방으로 재편되고, 핵심광물 수출규제 급증으로 자원 거래가 가격 기반에서 동맹 기반으로 구조 변화\n• 정책 불확실성이 경제 전망 약화의 핵심 요인으로 진단되며, 단일 예측 의존 정책 수립 자체가 불가능한 시대 진입\n• FDI 평가 기준이 일자리 창출에서 공급망 안정 기여로 전환되고, 녹색성장이 환경 보호가 아닌 경제 경쟁력 수단으로 재정의\n• 민생 불안이 의료비 부담·돌봄 위기로 연쇄 확산되는 패턴 확인되며, 경제 정책과 사회 안전망의 통합 설계 필요성 부각",
-  "top_signal": "안보경제 패러다임 공식화",
-  "suwon_action": "• 중앙정부 R&D 예산 축소 전제한 민간 주도 혁신 생태계 조성 시급 (기업 공급망 안정성·비상 대응력 지원 체계 긴급 구축)\n• 시나리오 기반 탄력적 정책 설계로 전환하고, 취약계층 경제 지원과 의료비·돌봄 안전망 통합 운영 즉시 착수",
+  "summary_ko": "• OPEC이 '화석연료' 개념 재정의 시도 중 - 재생에너지 실제 비용 공개 요구 강화\n• OPEC+ 생산협력 체제 제도화로 국제 유가 변동성 패턴 근본 변화\n• 사우디 중심 중동 생산국 역할 재강조 - 에너지 파트너십 기준이 가격→안정성 이동\n• OPEC 통계체계 정밀화로 에너지 시장 예측 가능성 증가\n• 석유산업의 장기 생존 전략 - 화석연료 기업→에너지 전환 기업 정체성 재구축",
+  "top_signal": "OPEC 생산협력체제 장기화",
+  "suwon_action": "수원시 탄소중립 로드맵의 에너지 비용 추정 재검토 필요 - OPEC+ 정책변수 반영한 보수적 시나리오 필수\n제조기업 대상 중동 의존도 심화 대응 에너지 안정성 모니터링 체계 즉시 구축 요망",
   "weekly_trend": {
     "정책패러다임전환": {
-      "count": 17,
+      "count": 16,
       "max_strength": 5
     },
     "무역공급망재편": {
       "count": 11,
       "max_strength": 5
     },
-    "민생충격패턴": {
-      "count": 8,
-      "max_strength": 4
-    },
     "에너지안보재편": {
-      "count": 5,
+      "count": 7,
       "max_strength": 5
+    },
+    "민생충격패턴": {
+      "count": 7,
+      "max_strength": 4
     },
     "지역질서재편": {
       "count": 1,
       "max_strength": 4
     }
   },
-  "generated_at": "2026-05-04T02:04:20.938962"
+  "generated_at": "2026-05-04T05:57:08.497668"
 }
