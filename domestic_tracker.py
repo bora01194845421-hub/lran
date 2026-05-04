@@ -143,48 +143,107 @@ def fetch_opinet_price() -> dict:
     except Exception as e:
         logger.warning(f"[Yahoo Brent] 실패: {e}")
 
-    # ── 두바이유 (한국 중동 수입 기준가) — EIA 무료 API → KNOC 스크래핑 순으로 시도
-    try:
-        # EIA v2 API (DEMO_KEY, 두바이 현물가 RDUBC)
-        eia_url = (
-            "https://api.eia.gov/v2/petroleum/pri/spt/data/"
-            "?api_key=DEMO_KEY&frequency=daily"
-            "&data[0]=value&facets[series][]=RDUBC"
-            "&sort[0][column]=period&sort[0][direction]=desc&length=3"
-        )
-        eia_r = requests.get(eia_url, headers=HEADERS, timeout=12)
-        eia_data = eia_r.json()
-        eia_rows = eia_data.get("response", {}).get("data", [])
-        if eia_rows and eia_rows[0].get("value"):
-            result["dubai_usd"] = round(float(eia_rows[0]["value"]), 2)
-            result["dubai_date"] = eia_rows[0].get("period", "")
-            logger.info(f"[EIA] 두바이유=${result['dubai_usd']} ({result['dubai_date']})")
-    except Exception as e:
-        logger.warning(f"[EIA 두바이유] 실패: {e}")
+    # ── 두바이유: 1순위 오피넷 → 2순위 EIA → 3순위 KNOC → 4순위 Brent 추산
 
-    # EIA 실패 시 KNOC 홈페이지 스크래핑
+    # 1순위: 오피넷 국제유가 페이지 스크래핑
+    try:
+        opinet_intl_url = "https://www.opinet.or.kr/user/oilprice/oilPriceList.do"
+        r_op = requests.get(opinet_intl_url, headers=HEADERS, timeout=12)
+        r_op.encoding = "utf-8"
+        osoup = BeautifulSoup(r_op.text, "html.parser")
+
+        # 방법 1: "두바이" 텍스트 포함 행에서 가격 추출
+        dubai_val = None
+        for row in osoup.select("tr"):
+            cells = row.select("td, th")
+            row_text = " ".join(c.get_text(strip=True) for c in cells)
+            if "두바이" in row_text:
+                for cell in cells:
+                    txt = cell.get_text(strip=True).replace(",", "")
+                    try:
+                        val = float(txt)
+                        if 50 < val < 250:
+                            dubai_val = round(val, 2)
+                            break
+                    except ValueError:
+                        continue
+            if dubai_val:
+                break
+
+        # 방법 2: class 기반 셀렉터 (오피넷 구조 대응)
+        if not dubai_val:
+            for tag in osoup.find_all(string=lambda t: t and "두바이" in t):
+                parent_row = tag.find_parent("tr")
+                if parent_row:
+                    for cell in parent_row.select("td"):
+                        txt = cell.get_text(strip=True).replace(",", "")
+                        try:
+                            val = float(txt)
+                            if 50 < val < 250:
+                                dubai_val = round(val, 2)
+                                break
+                        except ValueError:
+                            continue
+                if dubai_val:
+                    break
+
+        if dubai_val:
+            result["dubai_usd"] = dubai_val
+            result["dubai_source"] = "오피넷"
+            logger.info(f"[오피넷] 두바이유=${result['dubai_usd']}")
+    except Exception as e:
+        logger.warning(f"[오피넷 두바이유] 실패: {e}")
+
+    # 2순위: EIA v2 API (DEMO_KEY)
+    if not result.get("dubai_usd"):
+        try:
+            eia_url = (
+                "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+                "?api_key=DEMO_KEY&frequency=daily"
+                "&data[0]=value&facets[series][]=RDUBC"
+                "&sort[0][column]=period&sort[0][direction]=desc&length=3"
+            )
+            eia_r = requests.get(eia_url, headers=HEADERS, timeout=12)
+            eia_data = eia_r.json()
+            eia_rows = eia_data.get("response", {}).get("data", [])
+            if eia_rows and eia_rows[0].get("value"):
+                result["dubai_usd"] = round(float(eia_rows[0]["value"]), 2)
+                result["dubai_date"] = eia_rows[0].get("period", "")
+                result["dubai_source"] = "EIA"
+                logger.info(f"[EIA] 두바이유=${result['dubai_usd']} ({result['dubai_date']})")
+        except Exception as e:
+            logger.warning(f"[EIA 두바이유] 실패: {e}")
+
+    # 3순위: KNOC 홈페이지 스크래핑
     if not result.get("dubai_usd"):
         try:
             knoc_url = "https://www.knoc.co.kr/sub02/sub02_1_2.jsp"
             kr = requests.get(knoc_url, headers=HEADERS, timeout=12)
+            kr.encoding = "utf-8"
             ksoup = BeautifulSoup(kr.text, "html.parser")
-            # 두바이 원유 가격 셀 파싱
-            for td in ksoup.select("td"):
-                txt = td.get_text(strip=True).replace(",", "")
-                try:
-                    val = float(txt)
-                    if 50 < val < 200:   # 합리적 유가 범위
-                        result["dubai_usd"] = round(val, 2)
-                        logger.info(f"[KNOC] 두바이유=${result['dubai_usd']}")
-                        break
-                except ValueError:
-                    continue
+            for row in ksoup.select("tr"):
+                row_text = row.get_text()
+                if "두바이" in row_text:
+                    for cell in row.select("td"):
+                        txt = cell.get_text(strip=True).replace(",", "")
+                        try:
+                            val = float(txt)
+                            if 50 < val < 250:
+                                result["dubai_usd"] = round(val, 2)
+                                result["dubai_source"] = "KNOC"
+                                logger.info(f"[KNOC] 두바이유=${result['dubai_usd']}")
+                                break
+                        except ValueError:
+                            continue
+                if result.get("dubai_usd"):
+                    break
         except Exception as e:
             logger.warning(f"[KNOC 두바이유] 실패: {e}")
 
-    # 두 소스 모두 실패 시 Brent 기준 추산 (두바이는 통상 Brent -1~2$/bbl)
+    # 4순위: Brent 기준 추산 (두바이는 통상 Brent -1~2$/bbl)
     if not result.get("dubai_usd") and result.get("brent_usd"):
         result["dubai_usd"] = round(result["brent_usd"] - 1.5, 2)
+        result["dubai_source"] = "추산"
         result["dubai_note"] = "Brent 기반 추산 (-$1.5/bbl)"
         logger.info(f"[추산] 두바이유=${result['dubai_usd']} (Brent 기반)")
 
@@ -220,32 +279,84 @@ def fetch_exchange_rate() -> dict:
 
 
 def fetch_kostat_cpi() -> dict:
-    """통계청 소비자물가지수 (최신 발표)"""
+    """통계청 소비자물가지수 — 전년동월비(YoY %) 기준
+    - 1순위: KOSIS OpenAPI (kosis.kr/openapi 에서 무료 발급 후 config.py KOSIS_API_KEY 설정)
+    - 2순위: 통계청 e-나라지표 웹 스크래핑
+    - 전년동월비: (당월 CPI - 전년동월 CPI) / 전년동월 CPI × 100
+    """
+    from dateutil.relativedelta import relativedelta
     result = {"source": "통계청", "collected_at": datetime.utcnow().isoformat()}
+
+    today = date.today()
+    # 통계청 CPI는 전달 데이터가 익월 중순 공표 → 1개월 전이 최신 확정치
+    cur_month  = (today - relativedelta(months=1))
+    prev_month = (today - relativedelta(months=13))  # 전년도 같은 달
+    cur_str    = cur_month.strftime("%Y%m")
+    prev_str   = prev_month.strftime("%Y%m")
+
+    # ── 1순위: KOSIS API (키 있을 때만 시도)
+    kosis_key = getattr(__import__("config"), "KOSIS_API_KEY", None)
+    if kosis_key and kosis_key != "":
+        try:
+            url = "https://kosis.kr/openapi/statisticsData.do"
+            def _kosis_fetch(period: str):
+                params = {
+                    "method": "getList", "apiKey": kosis_key,
+                    "orgId": "101", "tblId": "DT_1J22003",
+                    "objL1": "T", "format": "json", "jsonVD": "Y",
+                    "prdSe": "M", "startPrdDe": period, "endPrdDe": period,
+                }
+                r = requests.get(url, params=params, headers=HEADERS, timeout=12)
+                data = r.json()
+                if isinstance(data, list) and data:
+                    return float(data[0].get("DT", 0))
+                return None
+
+            cur_val  = _kosis_fetch(cur_str)
+            prev_val = _kosis_fetch(prev_str)
+            if cur_val and prev_val:
+                yoy = round((cur_val - prev_val) / prev_val * 100, 1)
+                result.update({
+                    "cpi_current": cur_val,
+                    "cpi_prev_year": prev_val,
+                    "cpi_yoy_pct": yoy,
+                    "period_current": cur_str,
+                    "period_prev": prev_str,
+                    "note": f"전년동월비 +{yoy}%" if yoy >= 0 else f"전년동월비 {yoy}%",
+                })
+                logger.info(f"[통계청KOSIS] CPI 전년동월비={yoy}% ({prev_str}→{cur_str})")
+                return result
+        except Exception as e:
+            logger.warning(f"[통계청KOSIS] 실패: {e}")
+
+    # ── 2순위: e-나라지표 소비자물가 스크래핑
     try:
-        # 통계청 KOSIS API (무료)
-        url = "https://kosis.kr/openapi/statisticsData.do"
-        params = {
-            "method":     "getList",
-            "apiKey":     "free",  # 실제 사용 시 발급 키 입력
-            "orgId":      "101",   # 통계청
-            "tblId":      "DT_1J22003",  # 소비자물가지수
-            "objL1":      "ALL",
-            "format":     "json",
-            "jsonVD":     "Y",
-            "prdSe":      "M",
-            "startPrdDe": date.today().strftime("%Y%m"),
-            "endPrdDe":   date.today().strftime("%Y%m"),
-        }
-        r = requests.get(url, params=params, headers=HEADERS, timeout=12)
-        data = r.json()
-        if isinstance(data, list) and data:
-            result["cpi_latest"] = data[0].get("DT")
-            result["period"] = data[0].get("PRD_DE")
-        logger.info(f"[통계청] CPI={result.get('cpi_latest')}")
+        enara_url = "https://www.index.go.kr/unify/idx-info.do?idxCd=F0031"
+        r = requests.get(enara_url, headers=HEADERS, timeout=12)
+        r.encoding = "utf-8"
+        soup = BeautifulSoup(r.text, "html.parser")
+        # 테이블에서 최신 전년동월비 수치 추출
+        for td in soup.select("td"):
+            txt = td.get_text(strip=True).replace("%", "").replace(",", "")
+            try:
+                val = float(txt)
+                if -5 < val < 20:   # CPI YoY 합리적 범위
+                    result.update({
+                        "cpi_yoy_pct": val,
+                        "note": f"전년동월비 +{val}%" if val >= 0 else f"전년동월비 {val}%",
+                        "source": "e-나라지표",
+                    })
+                    logger.info(f"[e-나라지표] CPI 전년동월비={val}%")
+                    return result
+            except ValueError:
+                continue
     except Exception as e:
-        logger.warning(f"[통계청] 실패 (API키 필요): {e}")
-        result["note"] = "KOSIS API 키 발급 후 사용 (kosis.kr/openapi)"
+        logger.warning(f"[e-나라지표 CPI] 실패: {e}")
+
+    # ── 수집 실패 시 안내
+    result["note"] = f"CPI 수집 실패 — KOSIS API 키 필요 (kosis.kr/openapi 무료 발급)"
+    result["period_target"] = f"{prev_str} → {cur_str} 전년동월비"
+    logger.info(f"[통계청] CPI=None (API키 없음)")
     return result
 
 

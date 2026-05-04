@@ -39,7 +39,7 @@ from config import (
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(name)s: %(message)s",
-    handlers=[logging.StreamHandler(sys.stdout)],
+    handlers=[logging.StreamHandler(open(sys.stdout.fileno(), mode='w', encoding='utf-8', closefd=False))],
 )
 logger = logging.getLogger("manual_input_v2")
 
@@ -146,6 +146,39 @@ def excel_to_raw(file_path: str, target_date: str, fetch_body_flag: bool = False
 
 
 # ─────────────────────────────────────────────
+# Analyzer용 기사 선별 (Rate Limit 방지)
+# ─────────────────────────────────────────────
+
+_IRAN_KW = [
+    "iran","hormuz","irgc","tehran","middle east","persian gulf",
+    "이란","호르무즈","중동","유가","원유","에너지","봉쇄","전쟁","핵",
+    "oil","crude","sanctions","nuclear","war","conflict","opec",
+    "이스라엘","사우디","미국","houthi","후티","hezbollah","헤즈볼라",
+]
+
+def _trim_for_analyzer(clean_path: Path, max_items: int = 60) -> Path:
+    """clean JSON에서 이란·중동 관련 상위 max_items건 선별 후 별도 파일로 저장"""
+    with open(clean_path, encoding="utf-8") as f:
+        articles = json.load(f)
+
+    def _score(a):
+        text = (a.get("title","") + " " + a.get("summary","")).lower()
+        kw_hits = sum(1 for kw in _IRAN_KW if kw in text)
+        cred    = a.get("credibility", 7.0)
+        return kw_hits * 2 + cred
+
+    scored = sorted(articles, key=_score, reverse=True)
+    top    = scored[:max_items]
+
+    out_path = clean_path.parent / clean_path.name.replace("clean_", "clean_top_")
+    with open(out_path, "w", encoding="utf-8") as f:
+        json.dump(top, f, ensure_ascii=False, indent=2)
+
+    logger.info(f"  선별: {len(articles)}건 → 상위 {len(top)}건 ({out_path.name})")
+    return out_path
+
+
+# ─────────────────────────────────────────────
 # 파이프라인 실행
 # ─────────────────────────────────────────────
 
@@ -161,7 +194,7 @@ def safe(name, fn, *args):
 
 def run_pipeline(target_date: str, raw_path: Path):
     logger.info("=" * 55)
-    logger.info(f"  [V2] 수동 입력 분석 파이프라인 — {target_date}")
+    logger.info(f"  [V2] 수동 입력 분석 파이프라인 - {target_date}")
     logger.info(f"  데이터 루트: {DATA_DIR}")
     logger.info("=" * 55)
 
@@ -173,10 +206,19 @@ def run_pipeline(target_date: str, raw_path: Path):
         logger.error("정제 실패. 중단.")
         return
 
-    # Layer 3: Claude API 분석
-    logger.info("[Layer 3] Claude API 분석...")
+    # Layer 3: Claude API 분석 (상위 60건만 — Rate Limit 방지)
+    logger.info("[Layer 3] Claude API 분석 (상위 60건)...")
+    trim_path = _trim_for_analyzer(clean_path, max_items=60)
     import analyzer
-    analyzed_path = safe("analyzer", analyzer.run, clean_path)
+    analyzed_path = safe("analyzer", analyzer.run, trim_path)
+    # 후속 모듈이 표준 파일명(analyzed_YYYYMMDD.json)을 기대하므로 복사
+    if analyzed_path and analyzed_path.exists():
+        import shutil
+        date_str = target_date.replace("-", "")
+        std_path = ANALYZED_DIR / f"analyzed_{date_str}.json"
+        shutil.copy2(analyzed_path, std_path)
+        logger.info(f"  표준 파일명으로 복사: {std_path.name}")
+        analyzed_path = std_path
 
     import paradigm_detector
     safe("paradigm_detector", paradigm_detector.run, target_date)

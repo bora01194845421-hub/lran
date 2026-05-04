@@ -15,10 +15,10 @@ import streamlit as st
 
 from config import DATA_DIR, ANALYZED_DIR, PARADIGM_DIR, POLICY_DIR, DOMESTIC_DIR
 
-# V1(자동수집) / V2(수동입력) 버전 구분
+# V1 / V2 버전 구분
 _DASH_VER   = os.getenv("IRAN_DASH_VERSION", "V1")
 _IS_V2      = _DASH_VER == "V2"
-_VER_LABEL  = "V2 · 수동입력" if _IS_V2 else "V1 · 자동수집"
+_VER_LABEL  = "V2" if _IS_V2 else "V1"
 
 COUNTRY_RESPONSE_DIR = DATA_DIR / "country_response"
 CLEAN_DIR            = DATA_DIR / "clean"
@@ -27,7 +27,7 @@ CLEAN_DIR            = DATA_DIR / "clean"
 # 페이지 설정
 # ─────────────────────────────────────────────
 _PAGE_TITLE = (
-    "중동전쟁 민생경제 모니터링 [V2 수동입력] | 수원시정연구원"
+    "중동전쟁 민생경제 모니터링 [V2] | 수원시정연구원"
     if _IS_V2 else
     "중동전쟁에 따른 민생경제 대응 모니터링 | 수원시정연구원"
 )
@@ -697,13 +697,13 @@ date_str = ds(selected_date)
 # 사이드바 (파이프라인 컨트롤만 유지)
 # ─────────────────────────────────────────────
 with st.sidebar:
-    st.markdown(f"## ⚙️ {'V2 수동입력' if _IS_V2 else '운영 컨트롤'}")
+    st.markdown(f"## ⚙️ {'V2' if _IS_V2 else '운영 컨트롤'}")
     st.divider()
     st.caption(f"📅 선택 날짜: **{selected_date.strftime('%Y-%m-%d')}**")
     st.divider()
 
     if not _IS_V2:
-        # ── V1: 자동수집 파이프라인 실행 버튼
+        # ── V1 파이프라인 실행 버튼
         col_run, col_stop = st.columns(2)
         with col_run:
             if st.button("🚀 파이프라인 시작", type="primary", use_container_width=True):
@@ -1300,7 +1300,7 @@ st.markdown(f"""
 # ═══════════════════════════════════════════════════════════
 # ⑤ 한국 지자체 대응 현황
 # ═══════════════════════════════════════════════════════════
-lga_data_raw = domestic.get("lga_responses", [])
+lga_data_raw = domestic.get("lga_responses", []) or minseang.get("lga_responses", [])
 
 DEFAULT_LGA = [
     {"name":"경기도",   "type":"도",   "stage":"적극",     "actions":"에너지 취약계층 긴급 지원 예산 편성 검토, 도내 지자체 공동 대응 지침 준비, 중소기업 에너지비용 경감 조기 집행", "ref":"수원시 → 도비 매칭사업 연계 필요"},

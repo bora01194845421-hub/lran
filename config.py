@@ -36,6 +36,7 @@ GUARDIAN_API_KEY  = os.getenv("GUARDIAN_API_KEY", "")
 NYT_API_KEY       = os.getenv("NYT_API_KEY", "")
 BRAVE_API_KEY     = os.getenv("BRAVE_API_KEY", "")
 OPINET_API_KEY    = os.getenv("OPINET_API_KEY", "")
+KOSIS_API_KEY     = os.getenv("KOSIS_API_KEY", "")   # kosis.kr/openapi 무료 발급
 YT_API_KEY        = os.getenv("YOUTUBE_API_KEY", "")
 
 KEYWORDS_EN = [
