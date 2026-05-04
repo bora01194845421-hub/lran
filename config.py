@@ -9,7 +9,8 @@ from dotenv import load_dotenv
 
 BASE_DIR     = Path(__file__).parent
 load_dotenv(dotenv_path=BASE_DIR / ".env", override=True)
-DATA_DIR     = BASE_DIR / "data"
+# IRAN_DATA_DIR 환경변수로 데이터 루트 전환 가능 (V2=data_v2)
+DATA_DIR     = BASE_DIR / os.getenv("IRAN_DATA_DIR", "data")
 RAW_DIR      = DATA_DIR / "raw"
 CLEAN_DIR    = DATA_DIR / "clean"
 ANALYZED_DIR = DATA_DIR / "analyzed"

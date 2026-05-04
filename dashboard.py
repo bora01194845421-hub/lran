@@ -6,6 +6,7 @@
 """
 
 import json
+import os
 import subprocess
 from datetime import date, datetime
 from pathlib import Path
@@ -14,14 +15,24 @@ import streamlit as st
 
 from config import DATA_DIR, ANALYZED_DIR, PARADIGM_DIR, POLICY_DIR, DOMESTIC_DIR
 
+# V1(자동수집) / V2(수동입력) 버전 구분
+_DASH_VER   = os.getenv("IRAN_DASH_VERSION", "V1")
+_IS_V2      = _DASH_VER == "V2"
+_VER_LABEL  = "V2 · 수동입력" if _IS_V2 else "V1 · 자동수집"
+
 COUNTRY_RESPONSE_DIR = DATA_DIR / "country_response"
 CLEAN_DIR            = DATA_DIR / "clean"
 
 # ─────────────────────────────────────────────
 # 페이지 설정
 # ─────────────────────────────────────────────
+_PAGE_TITLE = (
+    "중동전쟁 민생경제 모니터링 [V2 수동입력] | 수원시정연구원"
+    if _IS_V2 else
+    "중동전쟁에 따른 민생경제 대응 모니터링 | 수원시정연구원"
+)
 st.set_page_config(
-    page_title="중동전쟁에 따른 민생경제 대응 모니터링 | 수원시정연구원",
+    page_title=_PAGE_TITLE,
     page_icon="🏛️",
     layout="wide",
     initial_sidebar_state="collapsed",
@@ -686,36 +697,64 @@ date_str = ds(selected_date)
 # 사이드바 (파이프라인 컨트롤만 유지)
 # ─────────────────────────────────────────────
 with st.sidebar:
-    st.markdown("## ⚙️ 운영 컨트롤")
+    st.markdown(f"## ⚙️ {'V2 수동입력' if _IS_V2 else '운영 컨트롤'}")
     st.divider()
     st.caption(f"📅 선택 날짜: **{selected_date.strftime('%Y-%m-%d')}**")
     st.divider()
-    col_run, col_stop = st.columns(2)
-    with col_run:
-        if st.button("🚀 파이프라인 시작", type="primary", use_container_width=True):
-            try:
-                proc = subprocess.Popen(
-                    ["python", "orchestrator.py", "--date", fmt(selected_date)],
-                    cwd=str(Path(__file__).parent),
-                    creationflags=subprocess.CREATE_NEW_CONSOLE,  # 별도 창
-                )
-                st.session_state["pipeline_pid"] = proc.pid
-                st.success(f"✅ 백그라운드 실행 중 (PID {proc.pid})\n새 창에서 진행 상황을 확인하세요.")
-            except Exception as e:
-                st.error(f"실행 오류: {e}")
-    with col_stop:
-        if st.button("⏹ 중단", use_container_width=True):
-            pid = st.session_state.get("pipeline_pid")
-            if pid:
+
+    if not _IS_V2:
+        # ── V1: 자동수집 파이프라인 실행 버튼
+        col_run, col_stop = st.columns(2)
+        with col_run:
+            if st.button("🚀 파이프라인 시작", type="primary", use_container_width=True):
                 try:
-                    import signal as _sig, os as _os
-                    _os.kill(pid, _sig.SIGTERM)
-                    st.warning(f"PID {pid} 중단 요청")
-                    st.session_state.pop("pipeline_pid", None)
+                    proc = subprocess.Popen(
+                        ["python", "orchestrator.py", "--date", fmt(selected_date)],
+                        cwd=str(Path(__file__).parent),
+                        creationflags=subprocess.CREATE_NEW_CONSOLE,
+                    )
+                    st.session_state["pipeline_pid"] = proc.pid
+                    st.success(f"✅ 백그라운드 실행 중 (PID {proc.pid})\n새 창에서 진행 상황을 확인하세요.")
                 except Exception as e:
-                    st.error(f"중단 오류: {e}")
-            else:
-                st.info("실행 중인 파이프라인 없음")
+                    st.error(f"실행 오류: {e}")
+        with col_stop:
+            if st.button("⏹ 중단", use_container_width=True):
+                pid = st.session_state.get("pipeline_pid")
+                if pid:
+                    try:
+                        import signal as _sig, os as _os
+                        _os.kill(pid, _sig.SIGTERM)
+                        st.warning(f"PID {pid} 중단 요청")
+                        st.session_state.pop("pipeline_pid", None)
+                    except Exception as e:
+                        st.error(f"중단 오류: {e}")
+                else:
+                    st.info("실행 중인 파이프라인 없음")
+    else:
+        # ── V2: 엑셀 업로드 + 분석 실행
+        st.caption("형식: 언어|분류|언론사|날짜|제목|링크")
+        uploaded = st.file_uploader("엑셀 파일 (.xlsx)", type=["xlsx"],
+                                    label_visibility="collapsed")
+        if uploaded:
+            manual_dt = st.date_input("분석 날짜", value=selected_date, key="v2_date")
+            fetch_chk = st.checkbox("기사 본문 자동 수집 (느림)", value=False)
+            if st.button("🔍 분석 시작", type="primary", use_container_width=True):
+                import tempfile
+                with tempfile.NamedTemporaryFile(delete=False, suffix=".xlsx") as tmp:
+                    tmp.write(uploaded.read())
+                    tmp_path = tmp.name
+                cmd = ["python", "manual_input.py", "--file", tmp_path,
+                       "--date", manual_dt.strftime("%Y-%m-%d")]
+                if fetch_chk:
+                    cmd.append("--fetch-body")
+                try:
+                    proc_v2 = subprocess.Popen(
+                        cmd, cwd=str(Path(__file__).parent),
+                        creationflags=subprocess.CREATE_NEW_CONSOLE,
+                    )
+                    st.success(f"✅ 분석 실행 중 (PID {proc_v2.pid})\n완료 후 새로고침하세요.")
+                except Exception as e:
+                    st.error(f"실행 오류: {e}")
     st.divider()
     st.caption("📂 파일 현황")
     for lbl, path in {
@@ -804,7 +843,10 @@ st.markdown(f"""
 <div class="intel-header">
   <div class="intel-header-inner">
     <div class="header-brand">
-      <div class="header-org">수원시정연구원</div>
+      <div class="header-org">수원시정연구원
+        <span style="font-size:0.65rem;font-weight:700;background:{'#7C3AED' if _IS_V2 else '#1E40AF'};color:#fff;
+          border-radius:4px;padding:1px 7px;margin-left:8px;letter-spacing:0.5px">{_VER_LABEL}</span>
+      </div>
       <div class="header-main">중동전쟁에 따른 민생경제 대응 모니터링</div>
       <div class="header-date-line">{date_ko}</div>
     </div>
