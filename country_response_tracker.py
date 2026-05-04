@@ -159,17 +159,33 @@ TRACKER_PROMPT = """다음은 오늘({date}) 수집된 이란-미국 전쟁 관�
 # ─────────────────────────────────────────────
 
 def load_articles(date_str: str, max_items: int = 60) -> list:
-    """3개 소스에서 기사 로드, 중요도 순 정렬"""
+    """3개 소스에서 기사 로드, 중요도 순 정렬.
+    한국 부처 관련 기사(korea 카테고리 또는 related_country에 한국 포함)는
+    중요도와 무관하게 최대 15건 우선 포함 보장."""
     all_items = []
+    kr_ministry_kw = ["외교부", "산업부", "산업통상자원부", "기재부", "기획재정부",
+                      "국토부", "국토교통부", "식약처", "식품의약품안전처",
+                      "농림부", "농림축산식품부", "에너지청"]
 
     # 1. 일반 뉴스 (중요도 3 이상)
     analyzed_path = ANALYZED_DIR / f"analyzed_{date_str}.json"
     if analyzed_path.exists():
         with open(analyzed_path, encoding="utf-8") as f:
             data = json.load(f)
-        filtered = [a for a in data if a.get("importance", 0) >= 3]
+        # 1-a. 한국 부처 기사 — 중요도 무관 우선 확보 (최대 15건)
+        kr_ministry_items = [
+            a for a in data
+            if (a.get("category") == "korea" or "한국" in a.get("related_country", []))
+            and any(kw in (a.get("title", "") + a.get("summary_ko", ""))
+                    for kw in kr_ministry_kw)
+        ][:15]
+        # 1-b. 나머지 중요도 3 이상 기사
+        kr_ids = {a.get("id") for a in kr_ministry_items}
+        filtered = [a for a in data
+                    if a.get("importance", 0) >= 3 and a.get("id") not in kr_ids]
+        all_items.extend(kr_ministry_items)
         all_items.extend(filtered)
-        logger.info(f"일반 뉴스: {len(filtered)}건 로드")
+        logger.info(f"일반 뉴스: {len(filtered)}건 + 한국부처: {len(kr_ministry_items)}건 로드")
 
     # 2. 국제기구 발표
     intl_path = INTL_DIR / f"intl_{date_str}.json"
