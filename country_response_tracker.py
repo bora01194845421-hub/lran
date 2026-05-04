@@ -53,7 +53,7 @@ import anthropic
 from config import (
     ANTHROPIC_API_KEY, CLAUDE_MODEL,
     ANALYZED_DIR, COUNTRY_RESPONSE_DIR,
-    DATA_DIR, TREND_COUNTRIES, SUWON_CONTEXT,
+    DATA_DIR, TREND_COUNTRIES, KR_MINISTRIES, SUWON_CONTEXT,
 )
 
 logger = logging.getLogger(__name__)
@@ -79,7 +79,7 @@ TRACKER_PROMPT = """다음은 오늘({date}) 수집된 이란-미국 전쟁 관�
 기사 데이터:
 {articles_json}
 
-아래 3가지를 분석해서 JSON으로 반환하세요.
+아래 4가지를 분석해서 JSON으로 반환하세요.
 
 ━━ 분석 과제 ━━
 
@@ -94,7 +94,20 @@ TRACKER_PROMPT = """다음은 오늘({date}) 수집된 이란-미국 전쟁 관�
    · outlook: 향후 1~2주 전망 한 줄
    · suwon_relevance: 수원시 민생·경제와의 연결점 (없으면 빈 문자열)
 
-2. emerging_issues — 이슈 발굴
+2. kr_ministry_responses — 한국 중앙정부 부처별 대응 매트릭스
+   분석 대상: {ministries}
+   조건:
+   · 뉴스에서 해당 부처의 실제 발표·조치·입장이 확인된 경우에만 포함
+   · 추측이나 일반적 역할 서술 금지 — 반드시 기사 근거 있는 내용만 작성
+   · 근거 없는 부처는 포함하지 않음
+   필드:
+   · ministry: 부처명 (예: "외교부", "산업부", "기재부", "국토부", "에너지청", "식약처", "농림부")
+   · stance: 현재 입장·대응 방향 한 줄 요약
+   · actions: 구체적 발표·조치 (최대 3개, 실제 기사 기반)
+   · policy_direction: 정책 방향성 한 줄
+   · suwon_relevance: 수원시 민생·경제와의 연결점 (없으면 빈 문자열)
+
+3. emerging_issues — 이슈 발굴
    기준: 아직 헤드라인은 아니지만 향후 중요해질 이슈
    필드:
    · issue: 이슈 제목 (20자 이내)
@@ -103,7 +116,7 @@ TRACKER_PROMPT = """다음은 오늘({date}) 수집된 이란-미국 전쟁 관�
    · timeline: "단기(1주)" / "중기(1개월)" / "장기(3개월+)" 중 하나
    · suwon_relevance: 수원시 민생·정책 연결점 (없으면 빈 문자열)
 
-3. key_trends — 오늘 각국 대응 흐름에서 포착된 핵심 동향 (3~5개, 한 문장씩)
+4. key_trends — 오늘 각국 대응 흐름에서 포착된 핵심 동향 (3~5개, 한 문장씩)
 
 ━━ 반환 형식 ━━
 {{
@@ -115,6 +128,15 @@ TRACKER_PROMPT = """다음은 오늘({date}) 수집된 이란-미국 전쟁 관�
       "actions": ["행동1", "행동2"],
       "policy_direction": "정책 방향성",
       "outlook": "향후 전망",
+      "suwon_relevance": "수원시 연결점"
+    }}
+  ],
+  "kr_ministry_responses": [
+    {{
+      "ministry": "부처명",
+      "stance": "입장·대응 방향 한 줄",
+      "actions": ["조치1", "조치2"],
+      "policy_direction": "정책 방향성",
       "suwon_relevance": "수원시 연결점"
     }}
   ],
@@ -197,6 +219,7 @@ def track_with_claude(articles: list, report_date: str) -> dict:
         total=len(articles),
         articles_json=build_prompt_articles(articles),
         countries=", ".join(TREND_COUNTRIES),
+        ministries=", ".join(KR_MINISTRIES),
     )
 
     try:

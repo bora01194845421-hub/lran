@@ -757,9 +757,10 @@ rbob_gal     = oil.get("rbob_usd_gal", None)
 usd_krw      = ex_rate.get("USD_KRW", None)
 
 # 오피넷 실데이터만 사용 — 추정값 사용 안 함
-cr_responses = cr_data.get("country_responses", [])
-issues       = cr_data.get("emerging_issues", [])
-key_trends   = cr_data.get("key_trends", [])
+cr_responses      = cr_data.get("country_responses", [])
+kr_min_responses  = cr_data.get("kr_ministry_responses", [])  # 한국 부처별 대응
+issues            = cr_data.get("emerging_issues", [])
+key_trends        = cr_data.get("key_trends", [])
 민생_분석    = minseang.get("민생경제_분석", {})
 대응과제     = minseang.get("우선_대응과제", [])
 signals      = paradigm.get("signals", [])
@@ -1042,7 +1043,8 @@ REGION_MAP = {
     "중동":   {"이란","이스라엘","사우디","사우디아라비아","UAE","카타르","이라크",
                "레바논","예멘","시리아","이집트","터키","하마스","헤즈볼라","UAE·카타르"},
     "글로벌": {"미국","중국","러시아","EU","유럽","일본","영국","독일","프랑스","인도","파키스탄","북한"},
-    "한국":   {"한국","대한민국","외교부","산업부","기재부","에너지청","에너지부","국토부"},
+    "한국":   {"한국","대한민국","외교부","산업부","기재부","에너지청","에너지부","국토부","식약처","농림부",
+               "산업통상자원부","기획재정부","국토교통부","식품의약품안전처","농림축산식품부"},
 }
 
 DEFAULT_CR_REGIONS = {
@@ -1096,6 +1098,12 @@ DEFAULT_CR_REGIONS = {
         {"country":"에너지청","stance":"선제",
          "title":"에너지 비상공급 3단계 발령, 절약 캠페인 가동",
          "detail":"산업·상업용 에너지 사용 5% 절감 목표. 발전소 가동률 95% 비상 유지 모드 전환."},
+        {"country":"식약처","stance":"모니터링",
+         "title":"이란산 의약품 원료·식품첨가물 수급 현황 긴급 점검",
+         "detail":"이란·중동 의존도 높은 의약품 원료(API) 및 식품첨가물 재고 현황 파악. 대체 수입선 확보 계획 수립 중."},
+        {"country":"농림부","stance":"대응",
+         "title":"국제 곡물·식품 가격 급등 대응 비축물량 점검",
+         "detail":"호르무즈 봉쇄로 인한 중동·아프리카발 식량 공급망 교란 모니터링. 국내 밀·옥수수 비축량 현황 파악 및 수입 다변화 대책 검토."},
     ],
 }
 
@@ -1138,6 +1146,54 @@ def build_cr_items_html(items: list) -> str:
     return html
 
 def get_region_items(region_name: str) -> list:
+    if region_name == "한국":
+        # ① 부처별 전용 데이터(kr_ministry_responses) 우선 사용
+        if kr_min_responses:
+            out = []
+            for r in kr_min_responses:
+                actions = r.get("actions", [])
+                action_text = " · ".join(actions[:2]) if actions else ""
+                out.append({
+                    "country": r.get("ministry", ""),
+                    "stance":  r.get("stance", "모니터링"),
+                    "title":   action_text,
+                    "detail":  r.get("suwon_relevance", ""),
+                })
+            # ② country_responses에서 "한국" 국가 단위 항목도 추가
+            region_set = REGION_MAP.get("한국", set())
+            for r in cr_responses:
+                if r.get("country", "") in region_set and r.get("country") not in {
+                    item["country"] for item in out
+                }:
+                    actions = r.get("actions", [])
+                    action_text = " · ".join(actions[:2]) if actions else r.get("outlook", "")[:100]
+                    out.append({
+                        "country": r.get("country", ""),
+                        "stance":  r.get("stance", "모니터링"),
+                        "title":   action_text,
+                        "detail":  r.get("suwon_relevance", ""),
+                    })
+            if out:
+                return out
+        # ③ 부처 데이터 없을 때 country_responses에서 한국 관련 항목만
+        elif cr_responses:
+            region_set = REGION_MAP.get("한국", set())
+            filtered = [r for r in cr_responses if r.get("country", "") in region_set]
+            if filtered:
+                out = []
+                for r in filtered:
+                    actions = r.get("actions", [])
+                    action_text = " · ".join(actions[:2]) if actions else r.get("outlook", "")[:100]
+                    out.append({
+                        "country": r.get("country", ""),
+                        "stance":  r.get("stance", "모니터링"),
+                        "title":   action_text,
+                        "detail":  r.get("suwon_relevance", ""),
+                    })
+                return out
+        return DEFAULT_CR_REGIONS.get("한국", [])
+
+    # 한국 외 일반 처리
     if cr_responses:
         region_set = REGION_MAP.get(region_name, set())
         filtered = [r for r in cr_responses if r.get("country","") in region_set]
