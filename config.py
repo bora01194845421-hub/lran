@@ -145,7 +145,8 @@ YOUTUBE_CHANNELS = {
 YOUTUBE_SCHEDULE_DAYS = [0, 3]   # 월요일(0), 목요일(3) — 주 2회 발행
 
 CLAUDE_MODEL        = "claude-sonnet-4-5-20250929"
-ANALYZER_BATCH_SIZE = 10
+ANALYZER_MODEL      = "claude-haiku-4-5"          # Analyzer 전용 (비용 절감)
+ANALYZER_BATCH_SIZE = 20                            # 배치 크기 10→20 (API 호출 횟수 절반)
 REQUEST_DELAY       = 2.0
 SCHEDULE_TIMES      = ["07:00", "19:00"]
 USER_AGENT = (

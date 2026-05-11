@@ -17,7 +17,7 @@ import anthropic
 
 from config import (
     ANTHROPIC_API_KEY, CLEAN_DIR, ANALYZED_DIR,
-    CLAUDE_MODEL, ANALYZER_BATCH_SIZE, ISSUE_CATEGORIES,
+    CLAUDE_MODEL, ANALYZER_MODEL, ANALYZER_BATCH_SIZE, ISSUE_CATEGORIES,
 )
 
 logger = logging.getLogger(__name__)
@@ -77,8 +77,8 @@ def analyze_batch(batch: list[dict]) -> list[dict]:
 
     try:
         resp = client.messages.create(
-            model=CLAUDE_MODEL,
-            max_tokens=4000,
+            model=ANALYZER_MODEL,
+            max_tokens=8000,
             system=SYSTEM_PROMPT,
             messages=[{"role": "user", "content": prompt}],
         )
@@ -97,19 +97,38 @@ def analyze_batch(batch: list[dict]) -> list[dict]:
         return []
 
 
+FILTER_KEYWORDS = [
+    "iran","hormuz","irgc","tehran","sanction","missile","nuclear",
+    "houthi","hezbollah","israel","persian gulf","oil price","crude",
+    "energy crisis","lng","middle east","war","blockade","strait",
+    "이란","호르무즈","중동","유가","에너지","봉쇄","핵","미사일",
+    "후티","헤즈볼라","이스라엘","전쟁","원유","도시가스","물가",
+]
+
+def is_relevant(article: dict) -> bool:
+    """이란·중동 관련 기사 여부 키워드 기반 필터링"""
+    text = (article.get("title", "") + " " + article.get("summary", "")).lower()
+    return any(kw in text for kw in FILTER_KEYWORDS)
+
+
 def run(clean_path: Path) -> Path:
     logger.info(f"=== Analyzer 시작: {clean_path.name} ===")
 
     with open(clean_path, encoding="utf-8") as f:
         articles = json.load(f)
 
-    logger.info(f"분석 대상: {len(articles)}건")
+    logger.info(f"전체 기사: {len(articles)}건")
+
+    # ── 사전 필터링: 이란·중동 관련 기사만 분석
+    relevant   = [a for a in articles if is_relevant(a)]
+    irrelevant = [a for a in articles if not is_relevant(a)]
+    logger.info(f"키워드 필터 후 분석 대상: {len(relevant)}건 (제외: {len(irrelevant)}건)")
 
     # 분석 결과 매핑 (id → 분석 결과)
     analysis_map: dict[str, dict] = {}
 
-    # 배치 처리
-    batches = [articles[i:i+ANALYZER_BATCH_SIZE] for i in range(0, len(articles), ANALYZER_BATCH_SIZE)]
+    # 배치 처리 (관련 기사만)
+    batches = [relevant[i:i+ANALYZER_BATCH_SIZE] for i in range(0, len(relevant), ANALYZER_BATCH_SIZE)]
     for idx, batch in enumerate(batches):
         logger.info(f"배치 {idx+1}/{len(batches)} 분석 중 ({len(batch)}건)...")
         results = analyze_batch(batch)
@@ -118,16 +137,17 @@ def run(clean_path: Path) -> Path:
                 analysis_map[r["id"]] = r
         time.sleep(1)  # API 레이트 리밋 방지
 
-    # 원본 기사에 분석 결과 병합
+    # 원본 기사에 분석 결과 병합 (필터 제외 기사는 category=filtered, importance=0)
     analyzed = []
     for article in articles:
         analysis = analysis_map.get(article["id"], {})
+        is_filtered = not is_relevant(article)
         merged = {
             **article,
-            "category":        analysis.get("category", "unknown"),
+            "category":        "filtered" if is_filtered else analysis.get("category", "unknown"),
             "summary_ko":      analysis.get("summary_ko", ""),
             "keywords":        analysis.get("keywords", []),
-            "importance":      analysis.get("importance", 3),
+            "importance":      0 if is_filtered else analysis.get("importance", 3),
             "reason":          analysis.get("reason", ""),
             "related_country": analysis.get("related_country", []),
         }
