@@ -405,8 +405,9 @@ def save_to_db(analyzed: list, report_date: str):
     conn.commit(); conn.close()
 
 
-def run(analyzed_path: Path = None) -> Path:
-    target_date = date.today().strftime("%Y-%m-%d")
+def run(analyzed_path: Path = None, target_date: str = None) -> Path:
+    if target_date is None:
+        target_date = date.today().strftime("%Y-%m-%d")
     date_str = target_date.replace("-","")
     if analyzed_path is None:
         analyzed_path = ANALYZED_DIR / f"analyzed_{date_str}.json"

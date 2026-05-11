@@ -145,47 +145,37 @@ def fetch_opinet_price() -> dict:
 
     # ── 두바이유: 1순위 오피넷 → 2순위 EIA → 3순위 KNOC → 4순위 Brent 추산
 
-    # 1순위: 오피넷 국제유가 페이지 스크래핑
+    # 1순위: 오피넷(opinet.co.kr) 국제유가 페이지 — Dubai/Brent/WTI 테이블
     try:
-        opinet_intl_url = "https://www.opinet.or.kr/user/oilprice/oilPriceList.do"
-        r_op = requests.get(opinet_intl_url, headers=HEADERS, timeout=12)
+        opinet_url = "https://www.opinet.co.kr/gloptotSelect.do"
+        r_op = requests.get(opinet_url, headers=HEADERS, timeout=12)
         r_op.encoding = "utf-8"
         osoup = BeautifulSoup(r_op.text, "html.parser")
 
-        # 방법 1: "두바이" 텍스트 포함 행에서 가격 추출
         dubai_val = None
-        for row in osoup.select("tr"):
-            cells = row.select("td, th")
-            row_text = " ".join(c.get_text(strip=True) for c in cells)
-            if "두바이" in row_text:
-                for cell in cells:
-                    txt = cell.get_text(strip=True).replace(",", "")
-                    try:
-                        val = float(txt)
-                        if 50 < val < 250:
-                            dubai_val = round(val, 2)
-                            break
-                    except ValueError:
-                        continue
+        for table in osoup.find_all("table"):
+            headers = [th.get_text(strip=True) for th in table.find_all("th")]
+            # Dubai 컬럼 있는 테이블 찾기
+            if not any("Dubai" in h or "두바이" in h for h in headers):
+                continue
+            dubai_col = next((i for i, h in enumerate(headers) if "Dubai" in h or "두바이" in h), None)
+            if dubai_col is None:
+                continue
+            # 데이터 행 순회 — USD 범위(50~250) 값 우선
+            for row in table.find_all("tr")[1:]:
+                cells = row.find_all("td")
+                if len(cells) <= dubai_col:
+                    continue
+                txt = cells[dubai_col].get_text(strip=True).replace(",", "")
+                try:
+                    val = float(txt)
+                    if 50 < val < 250:   # USD/bbl 범위
+                        dubai_val = round(val, 2)
+                        break
+                except ValueError:
+                    continue
             if dubai_val:
                 break
-
-        # 방법 2: class 기반 셀렉터 (오피넷 구조 대응)
-        if not dubai_val:
-            for tag in osoup.find_all(string=lambda t: t and "두바이" in t):
-                parent_row = tag.find_parent("tr")
-                if parent_row:
-                    for cell in parent_row.select("td"):
-                        txt = cell.get_text(strip=True).replace(",", "")
-                        try:
-                            val = float(txt)
-                            if 50 < val < 250:
-                                dubai_val = round(val, 2)
-                                break
-                        except ValueError:
-                            continue
-                if dubai_val:
-                    break
 
         if dubai_val:
             result["dubai_usd"] = dubai_val
