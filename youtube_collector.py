@@ -100,9 +100,10 @@ def extract_transcript(video_id: str, lang: str = "en") -> str:
 
 
 def summarize_with_claude(title: str, transcript: str, channel_name: str, lang: str) -> dict:
-    """Claude API로 자막 요약"""
+    """Claude API로 자막 요약 (자막 없을 경우 제목만으로 요약)"""
     if not transcript:
-        return {"summary_ko": "", "key_points": [], "iran_relevance": "낮음"}
+        # 자막 없어도 제목 기반으로 간단 요약 생성
+        transcript = f"[자막 없음 — 제목 기반 분석] {title}"
 
     # 자막 내 특수문자 정리 (JSON 파싱 오류 방지)
     safe_transcript = transcript.replace("\\", " ").replace('"', "'")[:4000]

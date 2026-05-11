@@ -127,7 +127,7 @@ SUWON_CONTEXT = """
 
 YOUTUBE_CHANNELS = {
     "AlJazeera_EN": {
-        "channel_id": "UCNye-wNBqNL5ZzHSJdde38g",
+        "channel_id": "UCNye-wNBqNL5ZzHSJj3l8Bg",
         "name": "Al Jazeera English",
         "lang": "en", "credibility": 8.0,
     },
@@ -137,7 +137,7 @@ YOUTUBE_CHANNELS = {
         "lang": "en", "credibility": 8.5,
     },
     "Yonhap_TV": {
-        "channel_id": "UCdMwBVUiS5QKVzJIbimlUeQ",
+        "channel_id": "UCTHCOPwqNfZ0uiKOvFyhGwg",
         "name": "연합뉴스TV",
         "lang": "ko", "credibility": 8.0,
     },
