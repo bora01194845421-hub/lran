@@ -1,0 +1,47 @@
+{
+  "date": "2026-05-14",
+  "total": 2,
+  "summaries": [
+    {
+      "channel": "DW News",
+      "channel_key": "DW_News",
+      "credibility": 8.5,
+      "video_id": "U3ztYEpbbGg",
+      "title": "Imprisoned Iranian Nobel Peace laureate Narges Mohammadi reportedly in critical condition | DW News",
+      "url": "https://www.youtube.com/watch?v=U3ztYEpbbGg",
+      "published": "2026-05-13T23:00:26+00:00",
+      "summary_ko": "• 2023년 노벨평화상 수상자 나르게스 모하마디가 심장마비 후 위독한 상태로 테헤란 병원에 이송\n• 3월 24일 심장마비 발생 후 수주간 전문 의료 치료를 거부당하다가 5월 10일 보석으로 1개월 형 집행정지\n• 113명의 노벨상 수상자들이 공동성명으로 그녀의 무조건적 석방과 모든 혐의 철회 요구",
+      "key_points": [
+        "나르게스 모하마디는 54세로 생애 10년 이상을 감옥에서 보냈으며 현재 18년형이 남아있음",
+        "국가안보 및 간첩혐의로 유죄판결을 받았으나 실제로는 이란 여성 억압에 맞서 싸운 인권운동가",
+        "의료진은 최소 8개월간의 치료와 완전한 스트레스 없는 환경이 필요하다고 진단했으나 1개월 형 집행정지만 승인",
+        "국제앰네스티는 보석이나 조건부가 아닌 무조건적 석방을 요구하며 그녀는 애초에 수감되지 말았어야 할 인물이라고 강조"
+      ],
+      "iran_relevance": "높음",
+      "suwon_connection": "수원시도 국제인권도시 선언 도시로서 양심수 석방 촉구 연대 성명 참여 및 시민사회 인권교육 강화 가능",
+      "collected_at": "2026-05-14T00:24:43.378255",
+      "data_type": "youtube"
+    },
+    {
+      "channel": "DW News",
+      "channel_key": "DW_News",
+      "credibility": 8.5,
+      "video_id": "y7Niza5uFxw",
+      "title": "Could Trump compromise support for Taipeh in return for China's help with the Iran war? | DW News",
+      "url": "https://www.youtube.com/watch?v=y7Niza5uFxw",
+      "published": "2026-05-13T19:01:02+00:00",
+      "summary_ko": "• 트럼프 대통령이 중국 방문 중 이란 전쟁 문제로 대만 지지를 약화시킬 가능성에 대한 우려 증가\n• 중국은 이란의 핵심 동맹국이자 중재자로서 호르무즈 해협 봉쇄로 경제적 타격을 받고 있음\n• 미중 양국 모두 이란 전쟁의 경제적 여파에 직면하고 있으며, 중국은 1.2조 달러 무역흑자로 협상력 강화",
+      "key_points": [
+        "트럼프가 중동 평화협정을 위해 중국의 이란 중재 역할 활용 시도, 대만 지지 약화 우려",
+        "중국은 중동 에너지에 크게 의존하며 호르무즈 해협 봉쇄로 경제 타격 중",
+        "이란 외무장관 아라치가 최근 베이징 방문해 중국 외교부와 협의",
+        "중국은 파키스탄과 함께 미국-이란 평화회담 중재 역할 수행 중",
+        "미중 무역 불균형 지속되나 중국의 대미 수출이 여전히 우세한 상황"
+      ],
+      "iran_relevance": "높음",
+      "suwon_connection": "호르무즈 해협 봉쇄로 인한 에너지 가격 불안정은 수원시 제조업체들의 원자재 비용 증가와 물류비 상승으로 이어져 지역 경제에 직접적 영향을 미치고 있으며, 미중 갈등 심화 시 글로벌 공급망 교란으로 수원 소재 반도체·전자 협력업체들의 부품 수급에 차질 우려",
+      "collected_at": "2026-05-14T00:24:59.825617",
+      "data_type": "youtube"
+    }
+  ]
+}
