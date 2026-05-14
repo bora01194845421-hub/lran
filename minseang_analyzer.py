@@ -26,7 +26,7 @@ SYSTEM = f"""당신은 수원시정연구원의 민생정책 전문 분석가입
 
 PROMPT = """오늘 수집된 다음 데이터를 종합해서 수원시 민생경제 분석과 우선 대응과제를 JSON으로 작성하세요.
 
-[국제 전황 요약]
+[국제 전황 요약 — 오늘 수집 핵심 기사]
 {war_summary}
 
 [국내 물가·에너지 지표]
@@ -37,6 +37,15 @@ PROMPT = """오늘 수집된 다음 데이터를 종합해서 수원시 민생�
 
 [유튜브·전문가 브리핑 요약]
 {yt_summary}
+
+[지난주 분석 결과 — 중복 지양, 변화·심화·신규 이슈 중심으로 작성]
+{prev_summary}
+
+⚠️ 작성 지침:
+1. 지난주와 동일한 제목·내용 반복 금지 — 반드시 이번주 새로운 데이터·사건·수치를 근거로 작성
+2. 이번주 핵심 신규 사항(호르무즈 선박 억류 구체화, IEA 비축유 방출, 6월 도시가스 인상 임박, IMF 패러다임 전환 선언 등)을 반드시 반영
+3. 전문가_의견은 유튜브 브리핑 실제 내용을 구체적으로 인용할 것
+4. 수치·지표는 오늘 날짜 기준 최신값 사용
 
 반환 형식:
 {{
@@ -175,13 +184,32 @@ def load_summary(path: Path, max_items: int = 5) -> str:
         with open(path, encoding="utf-8") as f:
             data = json.load(f)
         if isinstance(data, list):
+            # 중요도 높은 기사 우선 정렬
+            if data and "importance" in data[0]:
+                data = sorted(data, key=lambda x: x.get("importance", 0), reverse=True)
             items = data[:max_items]
-            return "\n".join(f"- [{a.get('source','')}] {a.get('title','')} | {a.get('summary_ko','')[:100]}" for a in items)
+            return "\n".join(f"- [{a.get('source','')}] {a.get('title','')} | {a.get('summary_ko','')[:120]}" for a in items)
         elif isinstance(data, dict):
-            return json.dumps(data, ensure_ascii=False)[:1500]
+            return json.dumps(data, ensure_ascii=False)[:2000]
     except Exception:
         return "로드 실패"
     return ""
+
+
+def load_prev_summary(policy_dir: Path, current_date_str: str) -> str:
+    """지난주 minseang 데이터 로드 (가장 최근 이전 파일)"""
+    files = sorted(policy_dir.glob("minseang_*.json"), reverse=True)
+    for f in files:
+        if f.stem.replace("minseang_", "") < current_date_str:
+            try:
+                data = json.load(open(f, encoding="utf-8"))
+                headline = data.get("today_headline", "")
+                tasks = data.get("우선_대응과제", [])
+                task_titles = [f'{t["순위"]}. {t["title"]}' for t in tasks]
+                return f"날짜: {data.get('date','')}\n헤드라인: {headline}\n우선과제: {chr(10).join(task_titles)}"
+            except Exception:
+                continue
+    return "이전 데이터 없음"
 
 
 def run(target_date: str = None) -> Path:
@@ -196,10 +224,11 @@ def run(target_date: str = None) -> Path:
     yt_path       = YT_DIR / f"yt_summary_{date_str}.json"
 
     prompt = PROMPT.format(
-        war_summary     = load_summary(analyzed_path),
+        war_summary     = load_summary(analyzed_path, max_items=20),  # 상위 20건
         domestic_summary= load_summary(domestic_path),
         paradigm_summary= load_summary(paradigm_path),
         yt_summary      = load_summary(yt_path),
+        prev_summary    = load_prev_summary(POLICY_DIR, date_str),
     )
 
     try:
