@@ -946,7 +946,14 @@ wti_str  = f"${wti_price:,.2f}" if isinstance(wti_price,(int,float)) else "N/A"
 krw_str  = f"{usd_krw:,.0f}원"  if isinstance(usd_krw,(int,float)) else "N/A"
 gas_str  = f"{gas_nat:,}원"     if isinstance(gas_nat,(int,float)) else "N/A (오피넷 미수집)"
 ggy_str2 = f"{gas_ggy:,}원"     if isinstance(gas_ggy,(int,float)) else "N/A"
-cpi_str  = str(domestic.get("cpi",{}).get("cpi_latest","N/A"))
+_cpi_obj    = domestic.get("cpi", {})
+_cpi_val    = _cpi_obj.get("cpi_yoy_pct") or _cpi_obj.get("cpi_latest")
+cpi_str     = f"{_cpi_val:.1f}" if isinstance(_cpi_val, (int, float)) else "N/A"
+_cpi_period = str(_cpi_obj.get("period_current", ""))  # e.g. "202604"
+if len(_cpi_period) == 6:
+    _cpi_sub = f"{int(_cpi_period[4:6])}월 전년비"
+else:
+    _cpi_sub = "전년비"
 # 휘발유 추정 여부 표시용
 gas_is_est = oil.get("gasoline_national") is None and gas_nat is not None
 day_d    = (selected_date - date(2026,4,1)).days  # D-day 기준 (예시)
@@ -983,8 +990,8 @@ st.markdown(f"""
   </div>
   <div class="ms-item">
     <div class="ms-label">소비자물가</div>
-    <div class="ms-value up">+{cpi_str if cpi_str!="N/A" else "2.2%"}</div>
-    <div class="ms-sub">3월 전년비</div>
+    <div class="ms-value up">{f"+{cpi_str}%" if cpi_str!="N/A" else "N/A"}</div>
+    <div class="ms-sub">{_cpi_sub}</div>
   </div>
 </div></div>
 """, unsafe_allow_html=True)
