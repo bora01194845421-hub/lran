@@ -654,10 +654,10 @@ div[data-testid="stRadio"] [role="radiogroup"] {
 }
 div[data-testid="stRadio"] [role="radiogroup"] label {
   background: #F9FAFB !important;
-  border: 1.5px solid #D1D5DB !important;
-  border-radius: 8px !important;
-  padding: 6px 14px !important;
-  font-size: 0.82rem !important;
+  border: 1px solid #D1D5DB !important;
+  border-radius: 6px !important;
+  padding: 3px 10px !important;
+  font-size: 0.72rem !important;
   font-weight: 600 !important;
   color: #374151 !important;
   cursor: pointer !important;
