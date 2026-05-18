@@ -96,14 +96,17 @@ TRACKER_PROMPT = """다음은 오늘({date}) 수집된 이란-미국 전쟁 관�
 
 2. kr_ministry_responses — 한국 중앙정부 부처별 대응 매트릭스
    분석 대상: {ministries}
-   조건:
-   · 뉴스에서 해당 부처의 실제 발표·조치·입장이 확인된 경우에만 포함
-   · 추측이나 일반적 역할 서술 금지 — 반드시 기사 근거 있는 내용만 작성
-   · 근거 없는 부처는 포함하지 않음
+   작성 기준 (2단계):
+   · [확인] 오늘 뉴스에서 해당 부처의 실제 발표·조치·입장이 확인된 경우
+   · [예상] 뉴스 근거 없어도 전쟁 상황·부처 소관 업무상 당연히 취해야 할 조치
+     → 예: 산업부=LNG 수급, 기재부=유류세·물가, 농림부=곡물비축, 식약처=의약품원료
+   · 반드시 {ministries} 전체 부처를 포함할 것 (하나도 빠뜨리지 말 것)
+   · confirmed 필드로 뉴스 확인 여부를 구분
    필드:
    · ministry: 부처명 (예: "외교부", "산업부", "기재부", "국토부", "에너지청", "식약처", "농림부")
+   · confirmed: true(뉴스 확인) / false(상황 기반 예상)
    · stance: 현재 입장·대응 방향 한 줄 요약
-   · actions: 구체적 발표·조치 (최대 3개, 실제 기사 기반)
+   · actions: 구체적 발표·조치 또는 예상 조치 (최대 3개)
    · policy_direction: 정책 방향성 한 줄
    · suwon_relevance: 수원시 민생·경제와의 연결점 (없으면 빈 문자열)
 
@@ -134,12 +137,14 @@ TRACKER_PROMPT = """다음은 오늘({date}) 수집된 이란-미국 전쟁 관�
   "kr_ministry_responses": [
     {{
       "ministry": "부처명",
+      "confirmed": true,
       "stance": "입장·대응 방향 한 줄",
-      "actions": ["조치1", "조치2"],
+      "actions": ["조치1", "조치2", "조치3"],
       "policy_direction": "정책 방향성",
       "suwon_relevance": "수원시 연결점"
     }}
   ],
+  "⚠️주의": "kr_ministry_responses에는 {ministries}의 모든 부처가 반드시 포함되어야 합니다.",
   "emerging_issues": [
     {{
       "issue": "이슈 제목",

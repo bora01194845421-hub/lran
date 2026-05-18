@@ -198,6 +198,13 @@ def run(target_date: str = None) -> Path:
             })
             time.sleep(2)
 
+    # 관련성 높은 순으로 정렬 (높음 → 중간 → 낮음, 같으면 채널 신뢰도 순)
+    _rel_order = {"높음": 0, "중간": 1, "낮음": 2}
+    all_summaries.sort(key=lambda x: (
+        _rel_order.get(x.get("iran_relevance", "중간"), 1),
+        -x.get("credibility", 3),
+    ))
+
     date_str = target_date.replace("-", "")
     out_path = YT_DIR / f"yt_summary_{date_str}.json"
     output = {

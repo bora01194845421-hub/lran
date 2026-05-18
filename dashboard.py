@@ -1399,19 +1399,29 @@ def build_kr_ministry_html(items: list) -> str:
         suwon_rel  = item.get("suwon_relevance", "")
         stance_raw = item.get("stance", "모니터링")
         is_real    = item.get("is_real", True)
+        # confirmed: 뉴스 직접 확인 여부 (True=확인, False=상황 기반 예상)
+        confirmed  = item.get("confirmed", True if is_real else False)
 
         # stance: 짧은 단어만 배지로, 긴 문장은 policy_dir에 병합
         if len(stance_raw) <= 8:
             stance_badge = stance_raw
-            if not policy_dir:
-                policy_dir = ""
         else:
             stance_badge = "대응"
             policy_dir = stance_raw if not policy_dir else policy_dir
 
-        icon   = MINISTRY_ICON.get(ministry, "🏛️")
-        sk     = STANCE_CLS.get(stance_badge, "st-모니터링")
-        opacity = "" if is_real else "opacity:0.7;"
+        icon = MINISTRY_ICON.get(ministry, "🏛️")
+        sk   = STANCE_CLS.get(stance_badge, "st-모니터링")
+        # 미확인(예상) 항목: 약간 흐리게 + 왼쪽 보더 색 연하게
+        card_style = "" if confirmed else "opacity:0.82;border-left-color:#9CA3AF;"
+
+        # 확인 여부 뱃지
+        source_badge = (
+            '<span style="font-size:0.58rem;font-weight:700;padding:1px 6px;'
+            'border-radius:3px;background:#DCFCE7;color:#15803D;margin-left:6px">뉴스 확인</span>'
+            if confirmed else
+            '<span style="font-size:0.58rem;font-weight:700;padding:1px 6px;'
+            'border-radius:3px;background:#F3F4F6;color:#9CA3AF;margin-left:6px">상황 기반 예상</span>'
+        )
 
         # actions 불릿 HTML
         if isinstance(actions, list) and actions:
@@ -1432,10 +1442,11 @@ def build_kr_ministry_html(items: list) -> str:
                        f'</div>') if policy_dir else ""
 
         html += (
-            f'<div class="kr-ministry-card" style="{opacity}">'
+            f'<div class="kr-ministry-card" style="{card_style}">'
             f'<div class="kr-ministry-header">'
             f'  <span class="kr-ministry-icon">{icon}</span>'
             f'  <span class="kr-ministry-name">{ministry}</span>'
+            f'  {source_badge}'
             f'  <span class="cr-stance-badge {sk}" style="margin-left:auto;flex-shrink:0">{stance_badge}</span>'
             f'</div>'
             f'{actions_html}'
