@@ -634,64 +634,144 @@ def get_available_dates() -> list:
         pass
     return dates or [date.today()]
 
-# 2026-04-28 이후 데이터만 탭에 표시
-_START_DATE = date(2026, 4, 28)
+# 2026-04-01 이후 데이터만 표시
+_START_DATE = date(2026, 4, 1)
 _available_dates = [d for d in get_available_dates() if d >= _START_DATE]
 if not _available_dates:
-    _available_dates = [_START_DATE]
-_default_date = _available_dates[0]  # 가장 최근 날짜
+    _available_dates = [date.today()]
 
 # ─────────────────────────────────────────────
-# 날짜 탭 — 메인 페이지 상단
+# 날짜 선택기 — 월 → 주 → 일자 3단계
 # ─────────────────────────────────────────────
+
+def _week_of_month(d):
+    """해당 날짜의 월내 주차 (1~5)"""
+    return (d.day - 1) // 7 + 1
+
+def _week_range_label(year, month, week):
+    """주차 날짜 범위 레이블 ex) 5/12~5/18"""
+    start_day = (week - 1) * 7 + 1
+    end_day   = min(week * 7, [31,28,31,30,31,30,31,31,30,31,30,31][month-1])
+    return f"{month}/{start_day}~{month}/{end_day}"
+
+# 날짜를 월별로 그룹화
+from collections import defaultdict
+_by_month = defaultdict(list)
+for d in _available_dates:
+    _by_month[(d.year, d.month)].append(d)
+_months = sorted(_by_month.keys(), reverse=True)  # 최신 월 우선
+
+# 오늘 기준 기본 선택값
+_today = date.today()
+_default_month = (_today.year, _today.month) if (_today.year, _today.month) in _by_month else _months[0]
+_default_week  = _week_of_month(_available_dates[0])
+
+# 세션 상태 초기화
+if "sel_month" not in st.session_state:
+    st.session_state.sel_month = _default_month
+if "sel_week" not in st.session_state:
+    st.session_state.sel_week = _default_week
+if "sel_date" not in st.session_state:
+    st.session_state.sel_date = _available_dates[0]
+
+# CSS
 st.markdown("""
 <style>
-/* 날짜 탭 라디오 버튼 → 탭 스타일 */
-div[data-testid="stHorizontalBlock"] { gap: 0 !important; }
-.date-tab-wrap { margin: 0 0 4px 0; }
-div[data-testid="stRadio"] > label { display: none; }
-div[data-testid="stRadio"] > div {
-  display: flex !important; flex-direction: row !important;
-  gap: 0 !important; background: #F3F4F6;
-  border-radius: 8px 8px 0 0; padding: 6px 6px 0 6px;
-  border-bottom: 2px solid #E5E7EB;
-}
-div[data-testid="stRadio"] > div > label {
-  padding: 8px 20px !important; font-size: 0.82rem !important;
-  font-weight: 600 !important; color: #6B7280 !important;
-  border-radius: 6px 6px 0 0 !important; cursor: pointer;
-  border: 1px solid transparent; border-bottom: none;
-  background: transparent; margin-bottom: -2px;
-}
-div[data-testid="stRadio"] > div > label:has(input:checked) {
-  background: #FFFFFF !important; color: #1C2B40 !important;
-  border-color: #E5E7EB !important;
-}
-div[data-testid="stRadio"] > div > label input { display: none; }
+.datepicker-wrap { background:#F8F9FB; border-radius:12px; padding:12px 16px 10px; margin-bottom:8px; border:1px solid #E5E7EB; }
+.dp-row { display:flex; align-items:center; gap:8px; flex-wrap:wrap; margin-bottom:6px; }
+.dp-label { font-size:0.72rem; font-weight:700; color:#9CA3AF; letter-spacing:.06em; min-width:32px; }
+.dp-month-btn { padding:5px 16px; border-radius:20px; font-size:0.82rem; font-weight:600; cursor:pointer;
+  border:1.5px solid #D1D5DB; background:#fff; color:#4B5563; transition:all .15s; }
+.dp-month-btn.active { background:#1C2B40; color:#fff; border-color:#1C2B40; }
+.dp-week-btn { padding:4px 12px; border-radius:16px; font-size:0.75rem; font-weight:600; cursor:pointer;
+  border:1.5px solid #D1D5DB; background:#fff; color:#6B7280; white-space:nowrap; }
+.dp-week-btn.active { background:#2563EB; color:#fff; border-color:#2563EB; }
+.dp-date-btn { padding:5px 13px; border-radius:10px; font-size:0.8rem; font-weight:700; cursor:pointer;
+  border:1.5px solid #E5E7EB; background:#fff; color:#374151; text-align:center; line-height:1.3; }
+.dp-date-btn .dp-day { font-size:0.65rem; font-weight:500; color:#9CA3AF; display:block; }
+.dp-date-btn.active { background:#1C2B40; color:#fff; border-color:#1C2B40; }
+.dp-date-btn.active .dp-day { color:#93C5FD; }
+.dp-date-btn.today { border-color:#F59E0B; }
 </style>
 """, unsafe_allow_html=True)
 
-_date_labels = [d.strftime("%m/%d (%a)").replace("Mon","월").replace("Tue","화")
-                .replace("Wed","수").replace("Thu","목").replace("Fri","금")
-                .replace("Sat","토").replace("Sun","일")
-                for d in _available_dates]
+# ── 월 선택
+_month_labels = {(y,m): f"{m}월" for y,m in _months}
+_sel_month_cols = st.columns([2, 8])
+with _sel_month_cols[0]:
+    st.markdown('<div class="dp-label">월 선택</div>', unsafe_allow_html=True)
 
-# 날짜탭 + 권장환경 안내 한 줄에 배치
-_tab_col, _info_col = st.columns([3, 1])
-with _tab_col:
-    _sel_label = st.radio("날짜 선택", _date_labels, index=0, horizontal=True, label_visibility="collapsed")
-with _info_col:
-    st.markdown(
-        '<div style="padding:10px 4px 0 4px;font-size:0.67rem;color:#6B7280;line-height:1.5;">'
-        '<div style="display:flex;gap:4px;align-items:flex-start;">'
-        '<span>📱</span>'
-        '<span><b>PC·태블릿 가로 보기</b> 권장<br>모바일 세로 시 일부 잘림</span>'
-        '</div></div>',
-        unsafe_allow_html=True
-    )
-_sel_idx   = _date_labels.index(_sel_label) if _sel_label in _date_labels else 0
-selected_date = _available_dates[_sel_idx]
+_month_cols = st.columns(len(_months) + 4)
+for i, ym in enumerate(_months):
+    with _month_cols[i]:
+        _is_active = (st.session_state.sel_month == ym)
+        _btn_style = "dp-month-btn active" if _is_active else "dp-month-btn"
+        if st.button(f"{ym[1]}월", key=f"month_{ym[0]}_{ym[1]}",
+                     type="primary" if _is_active else "secondary",
+                     use_container_width=False):
+            st.session_state.sel_month = ym
+            # 해당 월의 최신 날짜로 자동이동
+            _month_dates = sorted(_by_month[ym], reverse=True)
+            st.session_state.sel_week = _week_of_month(_month_dates[0])
+            st.session_state.sel_date = _month_dates[0]
+            st.rerun()
+
+# ── 주차 선택 (선택된 월 기준)
+_sel_month_dates = sorted(_by_month[st.session_state.sel_month], reverse=True)
+_weeks_in_month  = sorted(set(_week_of_month(d) for d in _sel_month_dates), reverse=True)
+
+st.markdown('<div style="height:4px"></div>', unsafe_allow_html=True)
+_week_cols = st.columns(len(_weeks_in_month) + 6)
+for i, wk in enumerate(_weeks_in_month):
+    _wr = _week_range_label(st.session_state.sel_month[0], st.session_state.sel_month[1], wk)
+    _is_active = (st.session_state.sel_week == wk and
+                  st.session_state.sel_month == st.session_state.sel_month)
+    with _week_cols[i]:
+        if st.button(f"{wk}주  {_wr}", key=f"week_{st.session_state.sel_month[0]}_{st.session_state.sel_month[1]}_{wk}",
+                     type="primary" if _is_active else "secondary"):
+            st.session_state.sel_week = wk
+            # 해당 주의 최신 날짜로 자동이동
+            _wk_dates = sorted([d for d in _sel_month_dates if _week_of_month(d)==wk], reverse=True)
+            if _wk_dates:
+                st.session_state.sel_date = _wk_dates[0]
+            st.rerun()
+
+# ── 일자 선택 (선택된 주 기준)
+_DAY_KO = ["월","화","수","목","금","토","일"]
+_sel_week_dates = sorted(
+    [d for d in _sel_month_dates if _week_of_month(d) == st.session_state.sel_week],
+    reverse=True)
+
+st.markdown('<div style="height:4px"></div>', unsafe_allow_html=True)
+if _sel_week_dates:
+    _date_cols = st.columns(len(_sel_week_dates) + 8)
+    for i, d in enumerate(_sel_week_dates):
+        _is_active = (st.session_state.sel_date == d)
+        _day_name  = _DAY_KO[d.weekday()]
+        _is_today  = (d == _today)
+        with _date_cols[i]:
+            _label = f"{'★ ' if _is_today else ''}{d.month}/{d.day}\n({_day_name})"
+            if st.button(_label, key=f"date_{d.strftime('%Y%m%d')}",
+                         type="primary" if _is_active else "secondary"):
+                st.session_state.sel_date = d
+                st.rerun()
+
+# 최종 선택 날짜
+selected_date = st.session_state.sel_date
+# 선택된 날짜가 현재 월/주와 맞지 않으면 세션 동기화
+if selected_date not in _available_dates:
+    selected_date = _available_dates[0]
 date_str = ds(selected_date)
+
+# 선택 정보 표시
+_m, _w = st.session_state.sel_month[1], st.session_state.sel_week
+st.markdown(
+    f'<div style="font-size:0.72rem;color:#6B7280;margin:2px 0 8px;padding-left:2px;">'
+    f'📅 {_m}월 {_w}주차 — <b style="color:#1C2B40">'
+    f'{selected_date.strftime("%Y년 %m월 %d일")} ({_DAY_KO[selected_date.weekday()]})</b>'
+    f'&nbsp;&nbsp;📱 PC·태블릿 가로 보기 권장</div>',
+    unsafe_allow_html=True
+)
 
 # ─────────────────────────────────────────────
 # 사이드바 (파이프라인 컨트롤만 유지)
