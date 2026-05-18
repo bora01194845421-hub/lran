@@ -480,7 +480,8 @@ st.markdown("""
 .yt-dw        { background: #EFF6FF; color: #1E40AF; }
 .yt-yonhap    { background: #F0FDF4; color: #15803D; }
 .yt-default   { background: #F9FAFB; color: #6B7280; }
-.yt-rel-badge { display: inline-block; padding: 2px 7px; border-radius: 3px; font-size: 0.6rem; font-weight: 700; margin-left: auto; }
+.yt-rel-badge  { display: inline-block; padding: 2px 7px; border-radius: 3px; font-size: 0.6rem; font-weight: 700; margin-left: auto; }
+.yt-type-badge { display: inline-block; padding: 2px 7px; border-radius: 3px; font-size: 0.6rem; font-weight: 600; background: #F3F4F6; color: #4B5563; }
 
 /* 제목 링크 */
 a.yt-title {
@@ -1624,10 +1625,17 @@ if not yt_summaries:
 
 def yt_ch_cls(ch: str) -> str:
     c = ch.lower()
-    if "al jazeera" in c: return "yt-aljazeera"
-    if "dw" in c:         return "yt-dw"
-    if "연합" in c:        return "yt-yonhap"
+    if "al jazeera" in c:  return "yt-aljazeera"
+    if "dw" in c:           return "yt-dw"
+    if "연합" in c:         return "yt-yonhap"
+    if "bbc" in c:          return "yt-aljazeera"
+    if "reuters" in c:      return "yt-dw"
+    if "cnn" in c:          return "yt-aljazeera"
     return "yt-default"
+
+def yt_type_label(ct: str) -> str:
+    return {"전문가분석": "🎓 전문가분석", "브리핑": "📋 브리핑",
+            "뉴스": "📰 뉴스", "기타": "▶ 영상"}.get(ct, "▶ 영상")
 
 if yt_summaries:
     top_yt = yt_summaries[:3]
@@ -1639,9 +1647,10 @@ if yt_summaries:
         url        = item.get("url", f"https://www.youtube.com/watch?v={video_id}")
         summary_ko = item.get("summary_ko", "")
         points     = item.get("key_points", [])
-        relevance  = item.get("iran_relevance", "")
-        suwon_con  = item.get("suwon_connection", "")
-        pub        = item.get("published", "")[:10]
+        relevance    = item.get("iran_relevance", "")
+        content_type = item.get("content_type", "")
+        suwon_con    = item.get("suwon_connection", "")
+        pub          = item.get("published", "")[:10]
 
         # 썸네일 URL (YouTube 기본 제공)
         thumb_url  = f"https://img.youtube.com/vi/{video_id}/hqdefault.jpg" if video_id else ""
@@ -1671,8 +1680,9 @@ if yt_summaries:
   </a>
   <div class="yt-card-body">
     <div class="yt-channel-row">
-      <span class="yt-ch-badge {yt_ch_cls(channel)}">{channel}</span>
+      <span class="yt-ch-badge {yt_ch_cls(channel)}">{channel[:22]}</span>
       <span class="yt-rel-badge {rel_cls}">{relevance}</span>
+      {f'<span class="yt-type-badge">{yt_type_label(content_type)}</span>' if content_type else ""}
     </div>
     <a href="{url}" target="_blank" class="yt-title">{title}</a>
     <div class="yt-summary">{summary_html}</div>
