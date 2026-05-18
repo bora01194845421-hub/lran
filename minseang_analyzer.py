@@ -46,6 +46,8 @@ PROMPT = """오늘 수집된 다음 데이터를 종합해서 수원시 민생�
 2. 이번주 핵심 신규 사항(호르무즈 선박 억류 구체화, IEA 비축유 방출, 6월 도시가스 인상 임박, IMF 패러다임 전환 선언 등)을 반드시 반영
 3. 전문가_의견은 유튜브 브리핑 실제 내용을 구체적으로 인용할 것
 4. 수치·지표는 오늘 날짜 기준 최신값 사용
+5. 지난주 우선과제 제목이 이번주에 그대로 반복되면 안 됨 — 제목부터 완전히 새로운 표현 사용
+6. 지난주 다음주 주목이슈에 예고된 사건들(6월 도시가스 인상, 삼성 실적 등)의 실제 진행 상황과 수원시 영향을 이번주 내용에 구체적으로 반영
 
 반환 형식:
 {{
@@ -197,16 +199,43 @@ def load_summary(path: Path, max_items: int = 5) -> str:
 
 
 def load_prev_summary(policy_dir: Path, current_date_str: str) -> str:
-    """지난주 minseang 데이터 로드 (가장 최근 이전 파일)"""
+    """지난주 minseang 데이터 로드 — 차별화를 위해 상세 컨텍스트 전달"""
     files = sorted(policy_dir.glob("minseang_*.json"), reverse=True)
     for f in files:
         if f.stem.replace("minseang_", "") < current_date_str:
             try:
                 data = json.load(open(f, encoding="utf-8"))
-                headline = data.get("today_headline", "")
-                tasks = data.get("우선_대응과제", [])
-                task_titles = [f'{t["순위"]}. {t["title"]}' for t in tasks]
-                return f"날짜: {data.get('date','')}\n헤드라인: {headline}\n우선과제: {chr(10).join(task_titles)}"
+                headline   = data.get("today_headline", "")
+                urgency    = data.get("urgency", "")
+                tasks      = data.get("우선_대응과제", [])
+                ni_issues  = data.get("next_week_issues", [])
+                eco        = data.get("민생경제_분석", {})
+                lga        = data.get("lga_responses", [])
+
+                task_lines = [
+                    f'  {t["순위"]}. [{t.get("priority","")}] {t["title"]} — {t.get("description","")[:60]}'
+                    for t in tasks
+                ]
+                ni_lines = [f'  - {n["title"]}' for n in ni_issues]
+                eco_lines = []
+                for k, v in eco.items():
+                    if isinstance(v, dict):
+                        eco_lines.append(f'  {k}: {v.get("key_indicator","")}')
+                lga_lines = [f'  {l["name"]}({l.get("stage","")}): {l.get("actions","")[:50]}' for l in lga]
+
+                parts = [
+                    f"[지난주 날짜] {data.get('date','')} | 긴급도: {urgency}",
+                    f"[지난주 헤드라인] {headline}",
+                    f"[지난주 우선과제 — 이번주 반드시 다른 제목·내용으로 작성]",
+                ] + task_lines + [
+                    f"[지난주 다음주 주목이슈 — 이번주 이 이슈들의 후속·변화·심화를 다룰 것]",
+                ] + ni_lines + [
+                    f"[지난주 핵심 지표]",
+                ] + eco_lines + [
+                    f"[지난주 지자체 대응 단계 — 이번주 진전·변화 중심으로]",
+                ] + lga_lines
+
+                return "\n".join(parts)
             except Exception:
                 continue
     return "이전 데이터 없음"
