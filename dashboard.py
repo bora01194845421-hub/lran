@@ -641,116 +641,67 @@ if not _available_dates:
     _available_dates = [date.today()]
 
 # ─────────────────────────────────────────────
-# 날짜 선택기 — 최신 2주 칩 + 이전 달력(date_input)
+# 날짜 선택기 — 한 줄 가로 칩
 # ─────────────────────────────────────────────
-import calendar as _cal
-from collections import defaultdict
-from datetime import timedelta
-
 _today  = date.today()
 _DAY_KO = ["월","화","수","목","금","토","일"]
 
-_cutoff       = _today - timedelta(days=14)
-_recent_dates = sorted([d for d in _available_dates if d >= _cutoff], reverse=True)
-_older_dates  = sorted([d for d in _available_dates if d <  _cutoff], reverse=True)
-
-# ── 세션 상태 초기화
-if "dp_sel" not in st.session_state:
-    st.session_state.dp_sel = _available_dates[0]
-if "dp_from_old" not in st.session_state:
-    st.session_state.dp_from_old = False
-
-# ── 스타일
 st.markdown("""
 <style>
-div[data-testid="stRadio"] > label p {
-  font-size: 0.68rem !important; font-weight: 700 !important;
-  color: #9CA3AF !important; letter-spacing: 0.06em; margin-bottom: 2px !important;
+/* 날짜 칩 radio */
+div[data-testid="stRadio"] [role="radiogroup"] {
+  gap: 6px !important; flex-wrap: wrap; padding: 2px 0;
 }
-div[data-testid="stRadio"] [role="radiogroup"] { gap: 6px !important; flex-wrap: wrap; }
 div[data-testid="stRadio"] [role="radiogroup"] label {
-  background: #fff !important; border: 1.5px solid #D1D5DB !important;
-  border-radius: 20px !important; padding: 5px 16px !important;
-  font-size: 0.82rem !important; font-weight: 600 !important;
-  color: #4B5563 !important; cursor: pointer; white-space: nowrap;
+  background: #F9FAFB !important;
+  border: 1.5px solid #D1D5DB !important;
+  border-radius: 8px !important;
+  padding: 6px 14px !important;
+  font-size: 0.82rem !important;
+  font-weight: 600 !important;
+  color: #374151 !important;
+  cursor: pointer !important;
+  white-space: nowrap !important;
+  transition: all .12s !important;
+  line-height: 1.3 !important;
+}
+div[data-testid="stRadio"] [role="radiogroup"] label:hover {
+  border-color: #1C2B40 !important;
+  color: #1C2B40 !important;
 }
 div[data-testid="stRadio"] [role="radiogroup"] label:has(input:checked) {
-  background: #1C2B40 !important; border-color: #1C2B40 !important; color: #fff !important;
+  background: #1C2B40 !important;
+  border-color: #1C2B40 !important;
+  color: #FFFFFF !important;
+  box-shadow: 0 2px 6px rgba(28,43,64,0.25) !important;
 }
-div[data-testid="stRadio"] [role="radiogroup"] input[type="radio"] { display: none !important; }
+div[data-testid="stRadio"] [role="radiogroup"] input[type="radio"] {
+  display: none !important;
+}
+/* 라벨 텍스트 숨김 */
+div[data-testid="stRadio"] > label { display: none !important; }
 </style>
 """, unsafe_allow_html=True)
 
-# ── 1행: 최신 2주 날짜 칩
-if _recent_dates:
-    _r_idx = (
-        _recent_dates.index(st.session_state.dp_sel)
-        if (st.session_state.dp_sel in _recent_dates and not st.session_state.dp_from_old)
-        else 0
-    )
-    _r_val = st.radio(
-        "📅 최신 브리핑",
-        options=_recent_dates,
-        format_func=lambda d: f"{'★ ' if d == _today else ''}{d.month}/{d.day}({_DAY_KO[d.weekday()]})",
-        horizontal=True,
-        index=_r_idx,
-        key="dp_rec_r",
-        label_visibility="collapsed",
-    )
-    # 칩 클릭 감지 → 세션 업데이트
-    if _r_val != st.session_state.dp_sel or st.session_state.dp_from_old:
-        if not st.session_state.dp_from_old:  # old에서 온 게 아니면 업데이트
-            st.session_state.dp_sel = _r_val
-            st.session_state.dp_from_old = False
+def _fmt_chip(d):
+    prefix = "★ " if d == _today else ""
+    return f"{prefix}{d.month}/{d.day}  {_DAY_KO[d.weekday()]}"
 
-# ── 2행: 이전 날짜 달력 (펼치기)
-if _older_dates:
-    _old_expanded = st.session_state.dp_from_old
-    with st.expander(
-        f"📁 이전 날짜  {'— ' + st.session_state.dp_sel.strftime('%Y년 %m/%d') if _old_expanded else ''}",
-        expanded=_old_expanded,
-    ):
-        _cal_val = st.date_input(
-            "날짜 선택 (달력)",
-            value=st.session_state.dp_sel if _old_expanded else _older_dates[0],
-            min_value=_older_dates[-1],
-            max_value=_older_dates[0],
-            key="dp_old_cal",
-            label_visibility="collapsed",
-        )
-        # 가장 가까운 실제 데이터 날짜로 스냅
-        _snap = min(_older_dates, key=lambda d: abs((d - _cal_val).days))
-        _has_data = _snap == _cal_val
-        _btn_label = (
-            f"📂 {_snap.month}/{_snap.day}({_DAY_KO[_snap.weekday()]}) 브리핑 보기"
-            if _has_data
-            else f"📂 가장 가까운 날짜: {_snap.month}/{_snap.day}({_DAY_KO[_snap.weekday()]}) 보기"
-        )
-        if st.button(_btn_label, key="dp_old_go", type="primary"):
-            st.session_state.dp_sel  = _snap
-            st.session_state.dp_from_old = True
-            st.rerun()
-        if not _has_data:
-            st.caption(f"⚠️ {_cal_val.month}/{_cal_val.day} 데이터 없음 → 가장 가까운 {_snap.month}/{_snap.day} 표시")
-
-# ── 최종 날짜 결정
-# 최신 칩이 변경됐고 old 모드가 아닐 때 recent radio 값 사용
-if not st.session_state.dp_from_old and _recent_dates:
-    st.session_state.dp_sel = _r_val
-
-selected_date = st.session_state.dp_sel
-# 혹시 available_dates에 없으면 최신으로 fallback
-if selected_date not in _available_dates:
-    selected_date = _available_dates[0]
-    st.session_state.dp_sel = selected_date
+selected_date = st.radio(
+    "날짜",
+    options=_available_dates,
+    format_func=_fmt_chip,
+    horizontal=True,
+    index=0,
+    key="dp_chip",
+)
 
 date_str = ds(selected_date)
-
 st.markdown(
-    f'<div style="font-size:0.72rem;color:#6B7280;margin:2px 0 10px;padding-left:2px;">'
-    f'📅 <b style="color:#1C2B40">'
-    f'{selected_date.strftime("%Y년 %m월 %d일")} ({_DAY_KO[selected_date.weekday()]})</b>'
-    f'&nbsp;&nbsp;·&nbsp;&nbsp;📱 PC·태블릿 가로 보기 권장</div>',
+    f'<div style="font-size:0.72rem;color:#9CA3AF;margin:-4px 0 10px;padding-left:2px;">'
+    f'<b style="color:#1C2B40">{selected_date.strftime("%Y년 %m월 %d일")}</b>'
+    f' ({_DAY_KO[selected_date.weekday()]})&nbsp;&nbsp;·&nbsp;&nbsp;PC·태블릿 가로 보기 권장'
+    f'</div>',
     unsafe_allow_html=True
 )
 
