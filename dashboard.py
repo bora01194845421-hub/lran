@@ -306,9 +306,53 @@ st.markdown("""
 .st-중립   { background: #EFF6FF; color: #1E40AF; }
 .st-제재   { background: #F5F3FF; color: #5B21B6; }
 .st-협력   { background: #F0FDF4; color: #15803D; }
-.st-unknown { background: #F9FAFB; color: #6B7280; }
+.st-unknown    { background: #F9FAFB; color: #6B7280; }
+.st-대응        { background: #EFF6FF; color: #1E40AF; }
+.st-선제        { background: #FEF2F2; color: #B91C1C; }
+.st-모니터링    { background: #F9FAFB; color: #6B7280; }
+.st-검토        { background: #F5F3FF; color: #5B21B6; }
 .cr-action-cell { font-size: 0.75rem; color: #4B5563; padding: 10px 10px; line-height: 1.5; max-width: 300px; }
 .cr-suwon-cell  { font-size: 0.71rem; color: #15803D; padding: 10px 10px; line-height: 1.5; font-weight: 600; }
+
+/* ── 한국 정부 부처 브리핑 카드 ── */
+.kr-ministry-list { display: flex; flex-direction: column; gap: 10px; padding: 4px 0; }
+.kr-ministry-card {
+  background: #FFFFFF; border: 1px solid #E5E7EB;
+  border-left: 4px solid #1C2B40;
+  border-radius: 6px; padding: 12px 14px;
+}
+.kr-ministry-header {
+  display: flex; align-items: center; gap: 8px; margin-bottom: 8px;
+}
+.kr-ministry-icon { font-size: 1.1rem; }
+.kr-ministry-name {
+  font-size: 0.9rem; font-weight: 800; color: #111827;
+}
+.kr-actions-list {
+  margin: 0 0 8px 0; padding-left: 18px; list-style: disc;
+}
+.kr-actions-list li {
+  font-size: 0.76rem; color: #374151; line-height: 1.6;
+}
+.kr-action-plain { font-size: 0.76rem; color: #374151; line-height: 1.6; margin-bottom: 8px; }
+.kr-policy-dir {
+  font-size: 0.72rem; color: #6B7280; line-height: 1.5; margin-bottom: 6px;
+}
+.kr-pd-label {
+  display: inline-block; font-size: 0.6rem; font-weight: 700;
+  background: #F3F4F6; color: #6B7280;
+  padding: 1px 6px; border-radius: 3px; margin-right: 4px;
+}
+.kr-suwon-box {
+  background: #F0FDF4; border-left: 3px solid #15803D;
+  border-radius: 0 4px 4px 0; padding: 5px 10px;
+  display: flex; gap: 6px; align-items: flex-start;
+}
+.kr-suwon-label {
+  font-size: 0.6rem; font-weight: 700; color: #15803D;
+  white-space: nowrap; margin-top: 1px;
+}
+.kr-suwon-text { font-size: 0.72rem; color: #166534; line-height: 1.5; }
 
 /* ── 지자체 테이블 ── */
 .lga-table { width: 100%; border-collapse: collapse; }
@@ -1266,60 +1310,6 @@ def build_cr_items_html(items: list) -> str:
     return html
 
 def get_region_items(region_name: str) -> list:
-    if region_name == "한국":
-        # ① 부처별 전용 데이터(kr_ministry_responses) 우선 사용
-        if kr_min_responses:
-            out = []
-            for r in kr_min_responses:
-                actions = r.get("actions", [])
-                action_text = " · ".join(actions[:2]) if actions else ""
-                out.append({
-                    "country": r.get("ministry", ""),
-                    "stance":  r.get("stance", "모니터링"),
-                    "title":   action_text,
-                    "detail":  r.get("suwon_relevance", ""),
-                    "is_real": True,
-                })
-            # ② country_responses에서 "한국" 국가 단위 항목도 병합
-            region_set = REGION_MAP.get("한국", set())
-            existing = {item["country"] for item in out}
-            for r in cr_responses:
-                if r.get("country", "") in region_set and r.get("country") not in existing:
-                    actions = r.get("actions", [])
-                    action_text = " · ".join(actions[:2]) if actions else r.get("outlook", "")[:100]
-                    out.append({
-                        "country": r.get("country", ""),
-                        "stance":  r.get("stance", "모니터링"),
-                        "title":   action_text,
-                        "detail":  r.get("suwon_relevance", ""),
-                        "is_real": True,
-                    })
-            if out:
-                return out
-
-        # ③ 부처별 데이터 없으면 DEFAULT 부처 목록 표시 (기준 템플릿)
-        #    + country_responses의 "한국" 동향을 맨 앞에 추가
-        out = []
-        if cr_responses:
-            region_set = REGION_MAP.get("한국", set())
-            for r in cr_responses:
-                if r.get("country", "") in region_set:
-                    actions = r.get("actions", [])
-                    action_text = " · ".join(actions[:2]) if actions else r.get("outlook", "")[:100]
-                    out.append({
-                        "country": r.get("country", ""),
-                        "stance":  r.get("stance", "모니터링"),
-                        "title":   action_text,
-                        "detail":  r.get("suwon_relevance", ""),
-                        "is_real": True,
-                    })
-        # DEFAULT 부처 항목 뒤에 추가 (중복 제외)
-        existing = {item["country"] for item in out}
-        for item in DEFAULT_CR_REGIONS.get("한국", []):
-            if item.get("country") not in existing:
-                out.append({**item, "is_real": False})
-        return out if out else DEFAULT_CR_REGIONS.get("한국", [])
-
     # 한국 외 일반 처리
     if cr_responses:
         region_set = REGION_MAP.get(region_name, set())
@@ -1338,9 +1328,121 @@ def get_region_items(region_name: str) -> list:
             return out
     return DEFAULT_CR_REGIONS.get(region_name, [])
 
-_cr_me_html = build_cr_items_html(get_region_items("중동"))
-_cr_gl_html = build_cr_items_html(get_region_items("글로벌"))
-_cr_kr_html = build_cr_items_html(get_region_items("한국"))
+
+# ── 한국 정부 부처 데이터 별도 추출 ──
+def get_kr_ministry_items() -> list:
+    """kr_ministry_responses → 부처 브리핑 리스트 반환"""
+    if kr_min_responses:
+        return kr_min_responses
+
+    # 부처 데이터 없으면 country_responses의 '한국' 항목으로 임시 구성
+    out = []
+    region_set = REGION_MAP.get("한국", set())
+    for r in cr_responses:
+        if r.get("country","") in region_set:
+            out.append({
+                "ministry":         r.get("country","한국"),
+                "stance":           r.get("stance","모니터링"),
+                "actions":          r.get("actions", []),
+                "policy_direction": r.get("outlook",""),
+                "suwon_relevance":  r.get("suwon_relevance",""),
+                "is_real": True,
+            })
+    if out:
+        return out
+
+    # 최종 fallback: DEFAULT 부처 목록
+    return [
+        {"ministry":"외교부",  "stance":"협력",     "actions":["미국 동조 대이란 제재 참여","핵 비확산 지지 성명"], "policy_direction":"이란 핵협상 복원 촉구 및 한국인 자산 동결 해제 협상 병행","suwon_relevance":"외교부의 대미 제재 동참은 이란산 수입 중단 가능성을 높여 수원 소재 중소 제조업체 원자재 조달에 영향", "is_real": False},
+        {"ministry":"산업통상자원부","stance":"대응","actions":["LNG 대체 수입선 긴급 확보","에너지 비상비축 확대 명령"],"policy_direction":"호주·미국·카타르와 LNG 추가 공급 긴급 협상","suwon_relevance":"산업부 에너지 비상비축 확대 조치는 도시가스 요금 안정화 여부와 직결되어 수원시 가정·소상공인 에너지비 영향", "is_real": False},
+        {"ministry":"기획재정부","stance":"모니터링","actions":["에너지 물가 압력 대응 예비비 편성 검토","유류세 탄력세율 인하 옵션 준비"],"policy_direction":"유가 10% 추가 상승 시 물가 0.3%p 상방 리스크 대응","suwon_relevance":"기재부 유류세 인하 결정은 수원 소상공인·배달업 유류비 부담 완화에 직접 영향", "is_real": False},
+        {"ministry":"국토교통부","stance":"대응","actions":["건설현장 비상경제 TF 격상","건설자재 수급 점검"],"policy_direction":"철강·알루미늄 공급망 교란 대비","suwon_relevance":"광교·영통 재개발 사업 건설자재 조달 일정 영향 가능성 점검 필요", "is_real": False},
+        {"ministry":"농림축산식품부","stance":"대응","actions":["국제 곡물가격 급등 대응 비축물량 점검","수입 다변화 검토"],"policy_direction":"중동·아프리카발 식량 공급망 교란 모니터링","suwon_relevance":"밀·식용유 등 식품 원자재 가격 상승은 수원 음식점·제빵업 원가 상승으로 직결", "is_real": False},
+    ]
+
+
+def build_kr_ministry_html(items: list) -> str:
+    """한국 정부 부처 브리핑 전용 렌더러"""
+    if not items:
+        return '<div class="empty-dark">파이프라인 실행 후 부처별 데이터가 표시됩니다.</div>'
+
+    MINISTRY_ICON = {
+        "외교부":"🌐","산업통상자원부":"⚙️","산업부":"⚙️","기획재정부":"💰","기재부":"💰",
+        "국토교통부":"🏗️","국토부":"🏗️","농림축산식품부":"🌾","농림부":"🌾",
+        "식품의약품안전처":"💊","식약처":"💊","에너지청":"⚡","에너지부":"⚡","한국":"🇰🇷",
+        "대한민국":"🇰🇷",
+    }
+    STANCE_CLS = {
+        "선제":"st-선제","적극":"st-협력","대응":"st-대응","모니터링":"st-모니터링",
+        "협력":"st-협력","강경":"st-강경","검토":"st-검토",
+    }
+
+    has_template = any(not item.get("is_real", True) for item in items)
+    html = '<div class="kr-ministry-list">'
+    if has_template:
+        html += ('<div style="font-size:0.65rem;color:#9CA3AF;margin-bottom:8px;padding:4px 8px;'
+                 'background:#F9FAFB;border-radius:4px;border-left:3px solid #D1D5DB">'
+                 '⚠️ 부처 데이터 미수집 — 기준 템플릿으로 표시됩니다. '
+                 '파이프라인 실행 시 실수집 데이터로 교체됩니다.</div>')
+
+    for item in items:
+        ministry   = item.get("ministry", "")
+        actions    = item.get("actions", [])
+        policy_dir = item.get("policy_direction", "") or item.get("outlook", "")
+        suwon_rel  = item.get("suwon_relevance", "")
+        stance_raw = item.get("stance", "모니터링")
+        is_real    = item.get("is_real", True)
+
+        # stance: 짧은 단어만 배지로, 긴 문장은 policy_dir에 병합
+        if len(stance_raw) <= 8:
+            stance_badge = stance_raw
+            if not policy_dir:
+                policy_dir = ""
+        else:
+            stance_badge = "대응"
+            policy_dir = stance_raw if not policy_dir else policy_dir
+
+        icon   = MINISTRY_ICON.get(ministry, "🏛️")
+        sk     = STANCE_CLS.get(stance_badge, "st-모니터링")
+        opacity = "" if is_real else "opacity:0.7;"
+
+        # actions 불릿 HTML
+        if isinstance(actions, list) and actions:
+            bullets = "".join(f'<li>{a}</li>' for a in actions)
+            actions_html = f'<ul class="kr-actions-list">{bullets}</ul>'
+        elif isinstance(actions, str) and actions:
+            actions_html = f'<div class="kr-action-plain">{actions}</div>'
+        else:
+            actions_html = ""
+
+        suwon_html = (f'<div class="kr-suwon-box">'
+                      f'<span class="kr-suwon-label">📍 수원시 연관</span>'
+                      f'<span class="kr-suwon-text">{suwon_rel}</span>'
+                      f'</div>') if suwon_rel else ""
+
+        policy_html = (f'<div class="kr-policy-dir">'
+                       f'<span class="kr-pd-label">정책 방향</span> {policy_dir}'
+                       f'</div>') if policy_dir else ""
+
+        html += (
+            f'<div class="kr-ministry-card" style="{opacity}">'
+            f'<div class="kr-ministry-header">'
+            f'  <span class="kr-ministry-icon">{icon}</span>'
+            f'  <span class="kr-ministry-name">{ministry}</span>'
+            f'  <span class="cr-stance-badge {sk}" style="margin-left:auto;flex-shrink:0">{stance_badge}</span>'
+            f'</div>'
+            f'{actions_html}'
+            f'{policy_html}'
+            f'{suwon_html}'
+            f'</div>'
+        )
+    html += '</div>'
+    return html
+
+
+_cr_me_html  = build_cr_items_html(get_region_items("중동"))
+_cr_gl_html  = build_cr_items_html(get_region_items("글로벌"))
+_cr_kr_html  = build_kr_ministry_html(get_kr_ministry_items())
 
 st.markdown(f"""
 <div class="section-card sec-gray">
