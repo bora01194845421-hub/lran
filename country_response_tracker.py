@@ -103,7 +103,7 @@ TRACKER_PROMPT = """다음은 오늘({date}) 수집된 이란-미국 전쟁 관�
    · 반드시 {ministries} 전체 부처를 포함할 것 (하나도 빠뜨리지 말 것)
    · confirmed 필드로 뉴스 확인 여부를 구분
    필드:
-   · ministry: 부처명 (예: "외교부", "산업부", "기재부", "국토부", "에너지청", "식약처", "농림부")
+   · ministry: 부처명 (예: "외교부", "산업부", "기재부", "국토부", "기후에너지부", "식약처", "농림부")
    · confirmed: true(뉴스 확인) / false(상황 기반 예상)
    · stance: 현재 입장·대응 방향 한 줄 요약
    · actions: 구체적 발표·조치 또는 예상 조치 (최대 3개)
@@ -170,7 +170,7 @@ def load_articles(date_str: str, max_items: int = 60) -> list:
     all_items = []
     kr_ministry_kw = ["외교부", "산업부", "산업통상자원부", "기재부", "기획재정부",
                       "국토부", "국토교통부", "식약처", "식품의약품안전처",
-                      "농림부", "농림축산식품부", "에너지청"]
+                      "농림부", "농림축산식품부", "기후에너지부"]
 
     # 1. 일반 뉴스 (중요도 3 이상)
     analyzed_path = ANALYZED_DIR / f"analyzed_{date_str}.json"

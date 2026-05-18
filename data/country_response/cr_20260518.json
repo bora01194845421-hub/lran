@@ -1,4 +1,4 @@
-{
+﻿{
   "date": "2026-05-18",
   "country_responses": [
     {
@@ -172,7 +172,7 @@
       "suwon_relevance": "물류비 급등은 수원시 소상공인·제조업체 원자재·완제품 운송비 증가로 직결, 물가 상승 압력"
     },
     {
-      "ministry": "에너지청",
+      "ministry": "기후에너지부",
       "confirmed": false,
       "stance": "석유·가스 비축 확대 및 에너지 절감 캠페인 강화",
       "actions": [
