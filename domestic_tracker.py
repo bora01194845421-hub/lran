@@ -31,7 +31,7 @@ def fetch_opinet_price() -> dict:
     # ── 1차: OPINET 공식 API (키 있을 때)
     if OPINET_API_KEY:
         try:
-            url = "https://www.opinet.or.kr/api/avgAllPrice.do"
+            url = "https://www.opinet.co.kr/api/avgAllPrice.do"
             params = {"code": OPINET_API_KEY, "out": "json"}
             r = requests.get(url, params=params, headers=HEADERS, timeout=10)
             data = r.json()
@@ -41,7 +41,7 @@ def fetch_opinet_price() -> dict:
                     result["gasoline_national"] = float(item.get("PRICE", 0))
                 elif item.get("PRODCD") == "D047":
                     result["diesel_national"] = float(item.get("PRICE", 0))
-            url2 = "https://www.opinet.or.kr/api/avgSidoPrice.do"
+            url2 = "https://www.opinet.co.kr/api/avgSidoPrice.do"
             r2 = requests.get(url2, params={**params, "sido": "06"}, headers=HEADERS, timeout=10)
             items2 = r2.json().get("RESULT", {}).get("OIL", [])
             for item in items2:
@@ -54,7 +54,7 @@ def fetch_opinet_price() -> dict:
 
     # ── 2차: 오피넷 공개 JSON API (데모키)
     try:
-        demo_url = "https://www.opinet.or.kr/api/avgAllPrice.do"
+        demo_url = "https://www.opinet.co.kr/api/avgAllPrice.do"
         demo_params = {"code": "F186170631", "out": "json"}
         r2 = requests.get(demo_url, params=demo_params, headers=HEADERS, timeout=10)
         items2 = r2.json().get("RESULT", {}).get("OIL", [])
@@ -71,7 +71,7 @@ def fetch_opinet_price() -> dict:
     # ── 3차: 오피넷 메인 페이지 스크래핑 (다중 셀렉터)
     if not result.get("gasoline_national"):
         try:
-            url = "https://www.opinet.or.kr/user/main/mainView.do"
+            url = "https://www.opinet.co.kr/user/main/mainView.do"
             r = requests.get(url, headers=HEADERS, timeout=12)
             soup = BeautifulSoup(r.text, "html.parser")
             selectors = [
@@ -343,15 +343,15 @@ def fetch_kostat_cpi() -> dict:
     except Exception as e:
         logger.warning(f"[e-나라지표 CPI] 실패: {e}")
 
-    # ── 3순위: 최신 확정치 하드코딩 fallback (통계청 2025년 4월 공표 기준)
-    fallback_val = 2.1   # 2025년 4월 소비자물가 전년동월비 +2.1% (통계청 공표)
+    # ── 3순위: 최신 확정치 하드코딩 fallback (통계청 2026년 4월 공표 기준)
+    fallback_val = 2.1   # 2026년 4월 소비자물가 전년동월비 +2.1% (통계청 공표)
     result.update({
         "cpi_yoy_pct": fallback_val,
-        "note": f"전년동월비 +{fallback_val}% (통계청 2025.04 공표, 자동수집 실패 시 적용)",
+        "note": f"전년동월비 +{fallback_val}% (통계청 2026.04 공표, 자동수집 실패 시 적용)",
         "source": "통계청(fallback)",
         "period_current": cur_str,
     })
-    logger.info(f"[통계청 fallback] CPI 전년동월비={fallback_val}% (2025년 4월 확정치)")
+    logger.info(f"[통계청 fallback] CPI 전년동월비={fallback_val}% (2026년 4월 확정치)")
     return result
 
 
