@@ -641,68 +641,120 @@ if not _available_dates:
     _available_dates = [date.today()]
 
 # ─────────────────────────────────────────────
-# 날짜 선택기 — 한 줄 가로 칩
+# 날짜 선택기 — 월 버튼 + 날짜 칩 (한 줄)
 # ─────────────────────────────────────────────
+from collections import defaultdict
+
 _today  = date.today()
 _DAY_KO = ["월","화","수","목","금","토","일"]
 
+_by_month = defaultdict(list)
+for _d in _available_dates:
+    _by_month[(_d.year, _d.month)].append(_d)
+_months_list = sorted(_by_month.keys(), reverse=True)   # [(2026,5),(2026,4),...]
+
+if "dp_month" not in st.session_state:
+    st.session_state.dp_month = _months_list[0]
+# 월이 available_months에 없으면 최신으로 초기화
+if st.session_state.dp_month not in _months_list:
+    st.session_state.dp_month = _months_list[0]
+
 st.markdown("""
 <style>
-/* 날짜 칩 radio */
+/* ── 월 버튼 — pill */
+.dp-month-pill button {
+  border-radius: 20px !important;
+  padding: 2px 12px !important;
+  font-size: 0.72rem !important;
+  font-weight: 700 !important;
+  min-height: 0 !important;
+  height: auto !important;
+  line-height: 1.6 !important;
+}
+/* ── 날짜 칩 radio */
 div[data-testid="stRadio"] [role="radiogroup"] {
-  gap: 6px !important; flex-wrap: wrap; padding: 2px 0;
+  gap: 5px !important; flex-wrap: wrap; align-items: center;
 }
 div[data-testid="stRadio"] [role="radiogroup"] label {
-  background: #F9FAFB !important;
-  border: 1px solid #D1D5DB !important;
-  border-radius: 6px !important;
-  padding: 3px 10px !important;
+  background: #F3F4F6 !important;
+  border: 1px solid #E5E7EB !important;
+  border-radius: 20px !important;
+  padding: 3px 11px !important;
   font-size: 0.72rem !important;
   font-weight: 600 !important;
   color: #374151 !important;
   cursor: pointer !important;
   white-space: nowrap !important;
   transition: all .12s !important;
-  line-height: 1.3 !important;
+  line-height: 1.5 !important;
 }
 div[data-testid="stRadio"] [role="radiogroup"] label:hover {
-  border-color: #1C2B40 !important;
-  color: #1C2B40 !important;
+  background: #E5E7EB !important;
+  border-color: #9CA3AF !important;
 }
+/* 선택된 칩 — 라이트 네이비 + 흰 글씨 (자식 포함) */
 div[data-testid="stRadio"] [role="radiogroup"] label:has(input:checked) {
   background: #1C2B40 !important;
   border-color: #1C2B40 !important;
+}
+div[data-testid="stRadio"] [role="radiogroup"] label:has(input:checked) p,
+div[data-testid="stRadio"] [role="radiogroup"] label:has(input:checked) span,
+div[data-testid="stRadio"] [role="radiogroup"] label:has(input:checked) div {
   color: #FFFFFF !important;
-  box-shadow: 0 2px 6px rgba(28,43,64,0.25) !important;
 }
-div[data-testid="stRadio"] [role="radiogroup"] input[type="radio"] {
-  display: none !important;
-}
-/* 라벨 텍스트 숨김 */
+div[data-testid="stRadio"] [role="radiogroup"] input[type="radio"] { display: none !important; }
 div[data-testid="stRadio"] > label { display: none !important; }
 </style>
 """, unsafe_allow_html=True)
 
-def _fmt_chip(d):
-    prefix = "★ " if d == _today else ""
-    return f"{prefix}{d.month}/{d.day}  {_DAY_KO[d.weekday()]}"
+# ── 한 줄: [월 버튼들] | [날짜 칩들]
+_n_m = len(_months_list)
+_sel_dates = sorted(_by_month[st.session_state.dp_month], reverse=True)
 
-selected_date = st.radio(
-    "날짜",
-    options=_available_dates,
-    format_func=_fmt_chip,
-    horizontal=True,
-    index=0,
-    key="dp_chip",
-)
+_col_widths = [0.9] * _n_m + [0.15] + [10]
+_row_cols = st.columns(_col_widths)
+
+# 월 버튼
+for i, ym in enumerate(_months_list):
+    with _row_cols[i]:
+        st.markdown('<div class="dp-month-pill">', unsafe_allow_html=True)
+        _active = (ym == st.session_state.dp_month)
+        if st.button(
+            f"{ym[1]}월",
+            key=f"dp_m_{ym[0]}_{ym[1]}",
+            type="primary" if _active else "secondary",
+            use_container_width=True,
+        ):
+            st.session_state.dp_month = ym
+            st.rerun()
+        st.markdown('</div>', unsafe_allow_html=True)
+
+# 구분선
+with _row_cols[_n_m]:
+    st.markdown(
+        '<div style="text-align:center;color:#D1D5DB;font-size:1rem;'
+        'margin-top:2px;user-select:none;">│</div>',
+        unsafe_allow_html=True,
+    )
+
+# 날짜 칩
+with _row_cols[_n_m + 1]:
+    selected_date = st.radio(
+        "날짜",
+        options=_sel_dates,
+        format_func=lambda d: f"{'★ ' if d == _today else ''}{d.month}/{d.day} {_DAY_KO[d.weekday()]}",
+        horizontal=True,
+        index=0,
+        key=f"dp_d_{st.session_state.dp_month[0]}_{st.session_state.dp_month[1]}",
+    )
 
 date_str = ds(selected_date)
 st.markdown(
-    f'<div style="font-size:0.72rem;color:#9CA3AF;margin:-4px 0 10px;padding-left:2px;">'
+    f'<div style="font-size:0.7rem;color:#9CA3AF;margin:-6px 0 10px 2px;">'
     f'<b style="color:#1C2B40">{selected_date.strftime("%Y년 %m월 %d일")}</b>'
-    f' ({_DAY_KO[selected_date.weekday()]})&nbsp;&nbsp;·&nbsp;&nbsp;PC·태블릿 가로 보기 권장'
-    f'</div>',
-    unsafe_allow_html=True
+    f' ({_DAY_KO[selected_date.weekday()]})'
+    f'&nbsp;·&nbsp;PC·태블릿 가로 보기 권장</div>',
+    unsafe_allow_html=True,
 )
 
 # ─────────────────────────────────────────────
