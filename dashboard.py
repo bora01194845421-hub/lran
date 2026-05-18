@@ -661,12 +661,6 @@ if st.session_state.dp_month not in _months_list:
 
 st.markdown("""
 <style>
-/* ── 컬럼 수직 중앙 정렬 */
-[data-testid="stHorizontalBlock"] > div {
-  display: flex !important;
-  align-items: center !important;
-}
-
 /* ── 월 버튼 — pill, 네이비 계열 */
 .dp-month-pill button {
   border-radius: 20px !important;
@@ -674,8 +668,9 @@ st.markdown("""
   font-size: 0.72rem !important;
   font-weight: 700 !important;
   min-height: 0 !important;
-  height: auto !important;
-  line-height: 1.6 !important;
+  height: 28px !important;
+  line-height: 1.4 !important;
+  margin-top: 4px !important;
 }
 /* primary(활성) 버튼 → 네이비 */
 .dp-month-pill button[kind="primary"],
