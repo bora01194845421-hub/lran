@@ -43,8 +43,45 @@ def should_run_today() -> bool:
     return datetime.today().weekday() in YOUTUBE_SCHEDULE_DAYS
 
 
-def get_channel_videos(channel_id: str, max_videos: int = 5) -> list:
-    """채널 RSS로 최신 영상 목록 가져오기"""
+def get_channel_videos(channel_id: str, max_videos: int = 12) -> list:
+    """채널 영상 목록 가져오기 — YouTube Data API 우선, 실패 시 RSS 폴백"""
+    from config import YT_API_KEY
+
+    # ── 1순위: YouTube Data API (안정적) ──
+    if YT_API_KEY:
+        try:
+            api_url = "https://www.googleapis.com/youtube/v3/search"
+            params = {
+                "key":        YT_API_KEY,
+                "channelId":  channel_id,
+                "part":       "snippet",
+                "order":      "date",
+                "maxResults": max_videos,
+                "type":       "video",
+            }
+            r = requests.get(api_url, params=params, timeout=10)
+            if r.status_code == 200:
+                items = r.json().get("items", [])
+                videos = []
+                for item in items:
+                    vid  = item.get("id", {}).get("videoId", "")
+                    snip = item.get("snippet", {})
+                    if vid:
+                        videos.append({
+                            "video_id":  vid,
+                            "title":     snip.get("title", ""),
+                            "published": snip.get("publishedAt", ""),
+                            "url":       f"https://www.youtube.com/watch?v={vid}",
+                        })
+                if videos:
+                    logger.info(f"  [API] {channel_id}: {len(videos)}개 영상")
+                    return videos
+            else:
+                logger.warning(f"[YT API] {channel_id} HTTP {r.status_code}: {r.text[:100]}")
+        except Exception as e:
+            logger.warning(f"[YT API] {channel_id} 실패: {e}")
+
+    # ── 2순위: RSS 폴백 ──
     videos = []
     try:
         rss_url = f"https://www.youtube.com/feeds/videos.xml?channel_id={channel_id}"
@@ -63,6 +100,8 @@ def get_channel_videos(channel_id: str, max_videos: int = 5) -> list:
                     "published": entry.get("published", ""),
                     "url":       f"https://www.youtube.com/watch?v={video_id}",
                 })
+        if videos:
+            logger.info(f"  [RSS] {channel_id}: {len(videos)}개 영상")
     except Exception as e:
         logger.warning(f"[YT RSS] {channel_id} 실패: {e}")
     return videos
@@ -143,19 +182,33 @@ iran_relevance는 높음/중간/낮음 중 하나."""
         return {"summary_ko": f"요약 실패: {title}", "key_points": [], "iran_relevance": "중간"}
 
 
+def load_existing(out_path: Path) -> list:
+    """기존 파일에서 summaries 로드 (없으면 빈 리스트)"""
+    if out_path.exists():
+        try:
+            with open(out_path, encoding="utf-8") as f:
+                data = json.load(f)
+            return data.get("summaries", [])
+        except Exception:
+            pass
+    return []
+
+
 def run(target_date: str = None) -> Path:
     if target_date is None:
         target_date = date.today().strftime("%Y-%m-%d")
 
+    date_str = target_date.replace("-", "")
+    out_path = YT_DIR / f"yt_summary_{date_str}.json"
+
     logger.info(f"=== YouTubeCollector 시작: {target_date} ===")
 
+    # 수집 스케줄 아닌 날: 기존 파일 유지 (빈 파일로 덮어쓰지 않음)
     if not should_run_today():
-        logger.info("오늘은 유튜브 수집 스케줄 아님 (월·수·금만 실행)")
-        # 빈 파일 생성 후 반환
-        date_str = target_date.replace("-", "")
-        out_path = YT_DIR / f"yt_summary_{date_str}.json"
-        with open(out_path, "w", encoding="utf-8") as f:
-            json.dump({"date": target_date, "summaries": [], "note": "비수집일"}, f, ensure_ascii=False)
+        logger.info("오늘은 유튜브 수집 스케줄 아님 (월·수·금만 실행) — 기존 파일 유지")
+        if not out_path.exists():
+            with open(out_path, "w", encoding="utf-8") as f:
+                json.dump({"date": target_date, "summaries": [], "note": "비수집일"}, f, ensure_ascii=False)
         return out_path
 
     all_summaries = []
@@ -164,8 +217,13 @@ def run(target_date: str = None) -> Path:
         logger.info(f"[YT] {ch_cfg['name']} 처리 중...")
         videos = get_channel_videos(ch_cfg["channel_id"], max_videos=12)
 
+        # RSS가 빈 경우 3초 후 1회 재시도
+        if not videos:
+            logger.warning(f"  RSS 빈 응답 — 3초 후 재시도")
+            time.sleep(3)
+            videos = get_channel_videos(ch_cfg["channel_id"], max_videos=12)
+
         for video in videos:
-            # 이란 관련 영상만 처리
             if not is_iran_related(video["title"]):
                 continue
 
@@ -182,31 +240,42 @@ def run(target_date: str = None) -> Path:
                 continue
 
             all_summaries.append({
-                "channel":        ch_cfg["name"],
-                "channel_key":    ch_key,
-                "credibility":    ch_cfg["credibility"],
-                "video_id":       video["video_id"],
-                "title":          video["title"],
-                "url":            video["url"],
-                "published":      video["published"],
-                "summary_ko":     analysis.get("summary_ko", ""),
-                "key_points":     analysis.get("key_points", []),
-                "iran_relevance": analysis.get("iran_relevance", "중간"),
+                "channel":          ch_cfg["name"],
+                "channel_key":      ch_key,
+                "credibility":      ch_cfg["credibility"],
+                "video_id":         video["video_id"],
+                "title":            video["title"],
+                "url":              video["url"],
+                "published":        video["published"],
+                "summary_ko":       analysis.get("summary_ko", ""),
+                "key_points":       analysis.get("key_points", []),
+                "iran_relevance":   analysis.get("iran_relevance", "중간"),
                 "suwon_connection": analysis.get("suwon_connection", ""),
-                "collected_at":   datetime.utcnow().isoformat(),
-                "data_type":      "youtube",
+                "collected_at":     datetime.utcnow().isoformat(),
+                "data_type":        "youtube",
             })
             time.sleep(2)
 
-    # 관련성 높은 순으로 정렬 (높음 → 중간 → 낮음, 같으면 채널 신뢰도 순)
+    # ── 0건이면 기존 데이터 유지 (RSS 일시 차단 대비) ──
+    if not all_summaries:
+        existing = load_existing(out_path)
+        if existing:
+            logger.warning(f"신규 수집 0건 — 기존 {len(existing)}건 데이터 유지 (RSS 일시 차단 추정)")
+            return out_path
+        else:
+            logger.warning("신규 수집 0건 + 기존 데이터 없음 — 빈 파일 저장")
+            with open(out_path, "w", encoding="utf-8") as f:
+                json.dump({"date": target_date, "total": 0, "summaries": [],
+                           "note": "RSS 수집 실패"}, f, ensure_ascii=False)
+            return out_path
+
+    # 관련성 높은 순 정렬 (높음→중간→낮음, 동점 시 채널 신뢰도 높은 순)
     _rel_order = {"높음": 0, "중간": 1, "낮음": 2}
     all_summaries.sort(key=lambda x: (
         _rel_order.get(x.get("iran_relevance", "중간"), 1),
         -x.get("credibility", 3),
     ))
 
-    date_str = target_date.replace("-", "")
-    out_path = YT_DIR / f"yt_summary_{date_str}.json"
     output = {
         "date":      target_date,
         "total":     len(all_summaries),
