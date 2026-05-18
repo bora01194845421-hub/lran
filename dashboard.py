@@ -1602,6 +1602,25 @@ st.markdown(f"""
 # ⑫ 전문가 브리핑 (YouTube 요약)
 # ═══════════════════════════════════════════════════════════
 yt_summaries = yt_data.get("summaries", [])
+_yt_fallback_note = ""
+
+# 현재 날짜 데이터 없으면 → 최근 유효 날짜 파일로 폴백
+if not yt_summaries:
+    _yt_files = sorted(
+        (DATA_DIR / "youtube").glob("yt_summary_*.json"),
+        reverse=True
+    )
+    for _yf in _yt_files:
+        try:
+            _yd = load_json(_yf) or {}
+            _ys = _yd.get("summaries", [])
+            if _ys:
+                yt_summaries = _ys
+                _yt_date = _yf.stem.replace("yt_summary_", "")
+                _yt_fallback_note = f"{_yt_date[:4]}-{_yt_date[4:6]}-{_yt_date[6:]} 기준"
+                break
+        except Exception:
+            continue
 
 def yt_ch_cls(ch: str) -> str:
     c = ch.lower()
@@ -1660,7 +1679,12 @@ if yt_summaries:
     {suwon_html}
   </div>
 </div>"""
-    _yt_body = f'<div class="triple-grid">{_yt_cards_html}</div>'
+    _yt_fallback_html = (
+        f'<div style="font-size:0.63rem;color:#9CA3AF;margin-bottom:8px">'
+        f'📅 {_yt_fallback_note} 데이터 표시 중 (선택 날짜 수집분 없음)'
+        f'</div>'
+    ) if _yt_fallback_note else ""
+    _yt_body = f'{_yt_fallback_html}<div class="triple-grid">{_yt_cards_html}</div>'
 else:
     _yt_body = '<div class="empty-dark">📺 파이프라인 실행 후 Al Jazeera · DW News · 연합뉴스TV 전문가 브리핑이 표시됩니다.</div>'
 

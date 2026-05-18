@@ -1,5 +1,105 @@
 {
   "date": "2026-05-18",
-  "total": 0,
-  "summaries": []
+  "total": 5,
+  "summaries": [
+    {
+      "channel": "Al Jazeera English",
+      "channel_key": "AlJazeera_EN",
+      "credibility": 8.0,
+      "video_id": "DwHABNEIybQ",
+      "title": "US-Iran tensions escalate as analysts warn of possible renewed conflict",
+      "url": "https://www.youtube.com/watch?v=DwHABNEIybQ",
+      "published": "2026-05-18T01:01:00Z",
+      "summary_ko": "• 트럼프 행정부가 이란에 대한 추가 군사행동을 심각하게 고려 중이며, 이전 전쟁과 봉쇄정책 모두 실패했음을 인정\n• 미국과 이란 양측 모두 한 차례 더 전투를 통해 향후 협상에서 우위를 점하려는 시각이 지배적\n• 이스라엘 네타냐후 총리와 UAE가 전쟁 재개를 선호하는 반면, 카타르와 오만은 조속한 종전을 원하며 걸프협력회의(GCC) 내부 분열 발생",
+      "key_points": [
+        "트럼프의 '폭풍 전 고요' 경고는 대이란 추가 군사행동 검토의 신호",
+        "미국은 협상에서 이란이 굴복한 것처럼 보이길 원하며 양측 모두 승리 서사를 원해 교착상태 지속",
+        "이스라엘과 UAE는 전쟁 재개 선호, 카타르·오만은 반대하며 중동 동맹국 간 입장 분열",
+        "이전 대이란 봉쇄(blockade) 정책이 실패로 판명되어 군사적 옵션이 재검토되는 상황"
+      ],
+      "iran_relevance": "높음",
+      "suwon_connection": "수원시민의 에너지 안보와 물가에 직접 영향을 미치는 중동 정세 불안정성이 고조되고 있으며, 미-이란 군사충돌 재발 시 국제 유가 급등으로 수원 지역 중소기업 운영비용과 서민 생활비 부담이 가중될 수 있어 시정 차원의 에너지 비축 및 물가 안정 대책 점검 필요",
+      "collected_at": "2026-05-18T06:22:42.228551",
+      "data_type": "youtube"
+    },
+    {
+      "channel": "Al Jazeera English",
+      "channel_key": "AlJazeera_EN",
+      "credibility": 8.0,
+      "video_id": "r3_jHC7_2eM",
+      "title": "Trump warns Iran, ‘time is of the essence’ as tensions escalate",
+      "url": "https://www.youtube.com/watch?v=r3_jHC7_2eM",
+      "published": "2026-05-18T00:08:05Z",
+      "summary_ko": "• 트럼프, 이란에 '시간이 촉박하다'며 협상 시한 압박 경고\n• 이란, 미국 위협에 '새로운 공격적 시나리오'로 대응 천명\n• 사우디·UAE, 이라크 접경 드론 공격 받아 방어권 행사 선언\n• UAE 바라카 원전 인근 드론 공격으로 발전기 화재 발생",
+      "key_points": [
+        "트럼프 대통령이 '시간이 촉박하다'며 이란에 협상 압박, 이란 군 대변인은 '미국 기지 공격' 등 강경 대응 예고",
+        "사우디, 이라크에서 날아온 드론 3대 요격, '적절한 시기·장소에서 대응할 권리' 경고",
+        "UAE 바라카 원전(아랍권 유일 원전, 전력 25% 공급) 인근 드론 공격으로 발전기 화재, 방사능 수치는 정상",
+        "이란-미국 외교 창구 좁아지며 양측 수사 격화, 파키스탄·이라크 등 주변국은 자국 영토의 미국 공격 기지화 거부"
+      ],
+      "iran_relevance": "높음",
+      "suwon_connection": "중동 긴장 고조 시 유가 급등 → 수원시민 유류비·물가 부담 증가, 원전 안보 이슈는 국내 에너지 정책 논의 촉발 가능",
+      "collected_at": "2026-05-18T06:22:59.267149",
+      "data_type": "youtube"
+    },
+    {
+      "channel": "Al Jazeera English",
+      "channel_key": "AlJazeera_EN",
+      "credibility": 8.0,
+      "video_id": "sycgw7RxOhM",
+      "title": "Pakistan interior minister holds talks with Iranian president in Tehran",
+      "url": "https://www.youtube.com/watch?v=sycgw7RxOhM",
+      "published": "2026-05-17T23:24:05Z",
+      "summary_ko": "• 파키스탄 내무장관이 테헤란에서 이란 대통령과 회담 개최\n• 양국 간 외교 협력 강화 및 국경 안보 문제 논의로 추정\n• 지역 안정과 상호 관심사에 대한 고위급 대화 진행",
+      "key_points": [
+        "파키스탄-이란 고위급 외교 회담",
+        "테헤란에서 양자 협력 논의",
+        "국경 안보 및 지역 안정 의제"
+      ],
+      "iran_relevance": "높음",
+      "suwon_connection": "수원시는 국제교류협력 정책의 일환으로 중동 지역과의 교류 확대 시 이란-파키스탄 관계 안정이 한국 기업의 중동 진출 환경 개선에 기여할 수 있으며, 수원 소재 글로벌 기업들의 중동 시장 접근성 향상에 간접 영향 가능",
+      "collected_at": "2026-05-18T06:23:13.130098",
+      "data_type": "youtube"
+    },
+    {
+      "channel": "연합뉴스TV",
+      "channel_key": "Yonhap_TV",
+      "credibility": 8.0,
+      "video_id": "yFoYF1OI8NE",
+      "title": "&quot;2차 고유가지원금 신청하세요&quot;…국민 70% 대상 / 연합뉴스TV (YonhapnewsTV)",
+      "url": "https://www.youtube.com/watch?v=yFoYF1OI8NE",
+      "published": "2026-05-18T05:39:11Z",
+      "summary_ko": "• 고유가 피해지원금 2차 지급이 시작되어 소득 하위 70% 국민 3,600만 명이 대상\n• 수도권 10만 원, 비수도권 15만 원, 인구감소지역 최대 25만 원 지급\n• 7월 3일까지 주민센터 또는 카드사 앱으로 신청 가능하며 8월 31일까지 사용",
+      "key_points": [
+        "소득 하위 70% 국민 3,600만 명 대상, 건강보험료 본인부담금 기준으로 선정",
+        "수도권 10만 원, 비수도권 15만 원, 인구감소지역 최대 25만 원 차등 지급",
+        "주민센터 방문 또는 카드사 앱 신청, 첫 주는 출생연도 끝자리 요일제 적용"
+      ],
+      "iran_relevance": "높음",
+      "suwon_connection": "수원시는 수도권 지역으로 1인당 10만 원 지급 대상이며, 관할 주민센터에서 신청 접수 중",
+      "collected_at": "2026-05-18T06:23:26.611493",
+      "data_type": "youtube"
+    },
+    {
+      "channel": "Al Jazeera English",
+      "channel_key": "AlJazeera_EN",
+      "credibility": 8.0,
+      "video_id": "bVh7759ucBE",
+      "title": "Israel extends controversial death penalty law to Palestinians in occupied West Bank",
+      "url": "https://www.youtube.com/watch?v=bVh7759ucBE",
+      "published": "2026-05-18T05:51:51Z",
+      "summary_ko": "• 이스라엘이 팔레스타인인에게만 적용되는 사형법을 시행, 이스라엘 시민은 제외\n• 군사법원에서 테러로 분류된 범죄에 유죄 판결 시 사형이 기본 처벌로 설정\n• 팔레스타인 측은 이미 자행되는 초법적 살인을 법제화하는 것이라 비판하며 인권 침해 우려 제기",
+      "key_points": [
+        "이스라엘 크네세트가 3월 통과시킨 사형법이 발효되어 팔레스타인인 테러 범죄자에게 사형을 기본 처벌로 지정",
+        "이스라엘 시민은 테러 범죄로 유죄 판결을 받아도 이 법 적용 대상에서 제외되는 차별적 구조",
+        "팔레스타인 기자는 이미 존재하는 초법적 살인, 의료 방치, 교도소 내 고문 등을 법제화하는 것이라 지적",
+        "이스라엘 정치인들이 팔레스타인 강경 정책으로 유권자 지지를 얻기 위한 정치적 목적도 내포",
+        "점령지 팔레스타인 가족들은 이스라엘의 처벌 수위가 더욱 높아질 것을 우려"
+      ],
+      "iran_relevance": "중간",
+      "suwon_connection": "수원시는 인권도시를 표방하는 만큼, 국제사회의 차별적 사법제도와 인권 침해 사례를 모니터링하고, 시민 인권교육 자료로 활용하여 보편적 인권 가치 확산에 기여할 수 있음",
+      "collected_at": "2026-05-18T06:22:23.630586",
+      "data_type": "youtube"
+    }
+  ]
 }
