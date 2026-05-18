@@ -661,49 +661,82 @@ if st.session_state.dp_month not in _months_list:
 
 st.markdown("""
 <style>
-/* ── 월 버튼 — pill */
+/* ── 컬럼 수직 중앙 정렬 */
+[data-testid="stHorizontalBlock"] > div {
+  display: flex !important;
+  align-items: center !important;
+}
+
+/* ── 월 버튼 — pill, 네이비 계열 */
 .dp-month-pill button {
   border-radius: 20px !important;
-  padding: 2px 12px !important;
+  padding: 3px 14px !important;
   font-size: 0.72rem !important;
   font-weight: 700 !important;
   min-height: 0 !important;
   height: auto !important;
   line-height: 1.6 !important;
 }
-/* ── 날짜 칩 radio */
-div[data-testid="stRadio"] [role="radiogroup"] {
-  gap: 5px !important; flex-wrap: wrap; align-items: center;
+/* primary(활성) 버튼 → 네이비 */
+.dp-month-pill button[kind="primary"],
+.dp-month-pill button[data-testid="baseButton-primary"] {
+  background-color: #1C2B40 !important;
+  border-color: #1C2B40 !important;
+  color: #FFFFFF !important;
 }
+
+/* ── 날짜 칩 radio 전체 wrapper */
+div[data-testid="stRadio"] [role="radiogroup"] {
+  gap: 5px !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+}
+
+/* 각 날짜 칩 */
 div[data-testid="stRadio"] [role="radiogroup"] label {
+  display: inline-flex !important;
+  align-items: center !important;
   background: #F3F4F6 !important;
   border: 1px solid #E5E7EB !important;
   border-radius: 20px !important;
-  padding: 3px 11px !important;
+  padding: 3px 12px !important;
   font-size: 0.72rem !important;
   font-weight: 600 !important;
   color: #374151 !important;
   cursor: pointer !important;
   white-space: nowrap !important;
   transition: all .12s !important;
-  line-height: 1.5 !important;
+  line-height: 1.4 !important;
+  gap: 0 !important;
 }
 div[data-testid="stRadio"] [role="radiogroup"] label:hover {
   background: #E5E7EB !important;
   border-color: #9CA3AF !important;
 }
-/* 선택된 칩 — 라이트 네이비 + 흰 글씨 (자식 포함) */
+
+/* 선택된 칩 */
 div[data-testid="stRadio"] [role="radiogroup"] label:has(input:checked) {
   background: #1C2B40 !important;
   border-color: #1C2B40 !important;
 }
+div[data-testid="stRadio"] [role="radiogroup"] label:has(input:checked),
 div[data-testid="stRadio"] [role="radiogroup"] label:has(input:checked) p,
 div[data-testid="stRadio"] [role="radiogroup"] label:has(input:checked) span,
 div[data-testid="stRadio"] [role="radiogroup"] label:has(input:checked) div {
   color: #FFFFFF !important;
 }
-div[data-testid="stRadio"] [role="radiogroup"] input[type="radio"] { display: none !important; }
+
+/* 라디오 동그라미(circle) 완전 숨김 */
+div[data-testid="stRadio"] [role="radiogroup"] label > div:first-child {
+  display: none !important;
+}
+div[data-testid="stRadio"] [role="radiogroup"] input[type="radio"] {
+  display: none !important;
+}
+
+/* radio 전체 레이블 숨김 */
 div[data-testid="stRadio"] > label { display: none !important; }
+div[data-testid="stRadio"] > div[class*="st-"] > label { display: none !important; }
 </style>
 """, unsafe_allow_html=True)
 
