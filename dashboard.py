@@ -653,7 +653,7 @@ a.yt-title:hover { color: #1C2B40; text-decoration: underline; }
 def load_json(path):
     p = Path(path)
     if p.exists():
-        with open(p, encoding="utf-8") as f:
+        with open(p, encoding="utf-8-sig") as f:
             return json.load(f)
     return None
 
