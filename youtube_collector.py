@@ -162,7 +162,7 @@ def run(target_date: str = None) -> Path:
 
     for ch_key, ch_cfg in YOUTUBE_CHANNELS.items():
         logger.info(f"[YT] {ch_cfg['name']} 처리 중...")
-        videos = get_channel_videos(ch_cfg["channel_id"], max_videos=5)
+        videos = get_channel_videos(ch_cfg["channel_id"], max_videos=12)
 
         for video in videos:
             # 이란 관련 영상만 처리

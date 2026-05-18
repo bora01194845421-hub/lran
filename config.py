@@ -40,7 +40,8 @@ KOSIS_API_KEY     = os.getenv("KOSIS_API_KEY", "")   # kosis.kr/openapi 무료 �
 YT_API_KEY        = os.getenv("YOUTUBE_API_KEY", "")
 
 KEYWORDS_EN = [
-    # ── 이란 직접
+    # ── 이란 직접 (단독 포함)
+    "iran",
     "iran war", "iran us war", "hormuz", "hormuz blockade",
     "tehran", "irgc", "iranian", "iran ceasefire",
     "iran nuclear", "iran missile", "hezbollah iran",
@@ -62,12 +63,16 @@ KEYWORDS_EN = [
     "global inflation", "war economy",
 ]
 KEYWORDS_KO = [
-    # ── 이란 직접
+    # ── 이란 직접 (단독 포함 — 제목에 "이란"만 있어도 수집)
+    "이란",
     "이란 전쟁", "이란 미국", "호르무즈", "이란 핵",
     "이란 봉쇄", "테헤란", "이란 휴전", "이란전", "이란 공격",
-    # ── 중동 지역
+    # ── 중동 지역 (단독 포함)
+    "중동", "걸프",
     "중동전쟁", "중동 분쟁", "페르시아만", "홍해", "후티",
     "헤즈볼라", "이스라엘 이란", "가자", "하마스",
+    # ── 원전·에너지 시설
+    "원전 폭격", "원전 공격", "부셰르", "바라카",
     # ── 에너지·유가
     "유가", "원유", "에너지 위기", "에너지 안보",
     "유류비", "난방비", "도시가스", "LNG 가격",
