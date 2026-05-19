@@ -1,7 +1,10 @@
 name: 이란전쟁 파이프라인 자동 실행
 
 on:
-  workflow_dispatch:         # 수동 실행만
+  workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   run-pipeline:
@@ -12,6 +15,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
 
       - name: Python 세팅
         uses: actions/setup-python@v5
@@ -22,9 +26,10 @@ jobs:
       - name: 패키지 설치
         run: pip install -r requirements.txt
 
-      - name: .env 생성 (Secrets에서)
+      - name: .env 생성
+        shell: bash
         run: |
-          cat << EOF > .env
+          cat > .env << EOF
           ANTHROPIC_API_KEY=${{ secrets.ANTHROPIC_API_KEY }}
           NEWSAPI_KEY=${{ secrets.NEWSAPI_KEY }}
           GUARDIAN_API_KEY=${{ secrets.GUARDIAN_API_KEY }}
@@ -38,10 +43,12 @@ jobs:
       - name: 파이프라인 실행
         run: python orchestrator.py
 
-      - name: 결과 데이터 자동 커밋 & push
+      - name: 변경사항 커밋 및 푸시
+        shell: bash
         run: |
           git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/
-          git diff --staged --quiet || git commit -m "auto: 파이프라인 결과 $(date '+%Y-%m-%d %H:%M KST')"
-          git push
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/ || true
+          git add .env || true
+          git diff --staged --quiet || git commit -m "auto: 파이프라인 결과"
+          git push origin HEAD:${{ github.ref_name }}
