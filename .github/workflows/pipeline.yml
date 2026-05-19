@@ -43,12 +43,11 @@ jobs:
       - name: 파이프라인 실행
         run: python orchestrator.py
 
-      - name: 변경사항 커밋 및 푸시
+      - name: 결과 데이터 자동 커밋 & push
         shell: bash
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/ || true
-          git add .env || true
-          git diff --staged --quiet || git commit -m "auto: 파이프라인 결과"
+          git add data/
+          git diff --staged --quiet || git commit -m "auto: 파이프라인 결과 $(date '+%Y-%m-%d %H:%M KST')"
           git push origin HEAD:${{ github.ref_name }}
