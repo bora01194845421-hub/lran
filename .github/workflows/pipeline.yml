@@ -51,3 +51,18 @@ jobs:
           git add data/
           git diff --staged --quiet || git commit -m "auto: 파이프라인 결과 $(date '+%Y-%m-%d %H:%M KST')"
           git push origin HEAD:${{ github.ref_name }}
+
+          name: pipeline
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  run-pipeline:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
