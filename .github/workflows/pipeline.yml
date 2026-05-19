@@ -20,8 +20,8 @@ jobs:
       - name: Python 세팅
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
-          cache: 'pip'
+          python-version: "3.11"
+          cache: "pip"
 
       - name: 패키지 설치
         run: pip install -r requirements.txt
@@ -51,18 +51,3 @@ jobs:
           git add data/
           git diff --staged --quiet || git commit -m "auto: 파이프라인 결과 $(date '+%Y-%m-%d %H:%M KST')"
           git push origin HEAD:${{ github.ref_name }}
-
-          name: pipeline
-
-on:
-  workflow_dispatch:
-
-permissions:
-  contents: write
-
-jobs:
-  run-pipeline:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
