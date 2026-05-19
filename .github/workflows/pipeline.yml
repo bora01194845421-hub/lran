@@ -1,10 +1,7 @@
 name: 이란전쟁 파이프라인 자동 실행
 
 on:
-  schedule:
-    - cron: '0 22 * * *'   # 매일 07:00 KST
-    - cron: '0 10 * * *'   # 매일 19:00 KST
-  workflow_dispatch:         # 수동 실행 버튼
+  workflow_dispatch:         # 수동 실행만
 
 jobs:
   run-pipeline:
