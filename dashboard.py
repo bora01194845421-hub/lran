@@ -20,6 +20,9 @@ _DASH_VER   = os.getenv("IRAN_DASH_VERSION", "V1")
 _IS_V2      = _DASH_VER == "V2"
 _VER_LABEL  = "V2" if _IS_V2 else "V1"
 
+# 모바일 뷰 토글
+_mobile_view = st.query_params.get("view", "") == "mobile"
+
 COUNTRY_RESPONSE_DIR = DATA_DIR / "country_response"
 CLEAN_DIR            = DATA_DIR / "clean"
 
@@ -643,6 +646,82 @@ a.yt-title:hover { color: #1C2B40; text-decoration: underline; }
   .page-wrap { max-width: 100%; padding: 0; }
   .intel-header-inner, .metrics-strip { max-width: 100%; }
 }
+
+/* ══════════════════════════════════════
+   📱 모바일 뷰 CSS
+   ══════════════════════════════════════ */
+.mobile-mode .block-container {
+  max-width: 100% !important;
+  padding: 0 8px 24px 8px !important;
+  margin: 8px auto 24px auto !important;
+  border-radius: 8px !important;
+}
+.mobile-mode .hero-card {
+  grid-template-columns: 1fr !important;
+}
+.mobile-mode .triple-grid {
+  grid-template-columns: 1fr !important;
+}
+.mobile-mode .metrics-strip {
+  overflow-x: auto !important;
+  flex-wrap: nowrap !important;
+  -webkit-overflow-scrolling: touch !important;
+  padding-bottom: 8px !important;
+}
+.mobile-mode .ms-item {
+  min-width: 80px !important;
+  flex: 0 0 auto !important;
+}
+.mobile-mode .panel-card {
+  grid-template-columns: 1fr !important;
+}
+.mobile-mode .bench-grid {
+  grid-template-columns: 1fr !important;
+}
+.mobile-mode .intel-header-inner {
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  gap: 10px !important;
+}
+.mobile-mode .header-main {
+  font-size: 1.1rem !important;
+}
+.mobile-mode .section-card {
+  padding: 14px 12px !important;
+}
+.mobile-mode .page-wrap {
+  padding: 12px 4px !important;
+}
+.mobile-mode .footer-grid {
+  grid-template-columns: 1fr !important;
+}
+/* 모바일 토글 버튼 */
+.mobile-toggle-btn {
+  display: inline-flex; align-items: center; gap: 5px;
+  padding: 5px 12px; border-radius: 20px;
+  font-size: 0.72rem; font-weight: 700;
+  text-decoration: none; cursor: pointer;
+  border: 1.5px solid rgba(255,255,255,0.3);
+  color: #FFFFFF; background: rgba(255,255,255,0.12);
+  transition: background 0.2s;
+}
+.mobile-toggle-btn:hover { background: rgba(255,255,255,0.22); }
+.mobile-toggle-btn.active { background: #1A56DB; border-color: #1A56DB; }
+
+@media (max-width: 600px) {
+  .block-container {
+    max-width: 100% !important;
+    padding: 0 6px 20px 6px !important;
+  }
+  .triple-grid { grid-template-columns: 1fr !important; }
+  .hero-card   { grid-template-columns: 1fr !important; }
+  .panel-card  { grid-template-columns: 1fr !important; }
+  .bench-grid  { grid-template-columns: 1fr !important; }
+  .metrics-strip { overflow-x: auto; flex-wrap: nowrap; -webkit-overflow-scrolling: touch; }
+  .ms-item { min-width: 80px; flex: 0 0 auto; }
+  .header-main { font-size: 1.1rem !important; }
+}
+
 </style>
 """, unsafe_allow_html=True)
 
@@ -970,7 +1049,9 @@ st.markdown(f"""
       <div class="header-main">중동전쟁에 따른 민생경제 대응 모니터링</div>
       <div class="header-date-line">{date_ko}</div>
     </div>
-    <div class="header-right"></div>
+    <div class="header-right">
+      {'<a href="?view=desktop" class="mobile-toggle-btn active">🖥 PC 뷰</a>' if _mobile_view else '<a href="?view=mobile" class="mobile-toggle-btn">📱 모바일 뷰</a>'}
+    </div>
   </div>
 </div>
 <div class="metrics-strip-outer"><div class="metrics-strip">
@@ -1001,7 +1082,7 @@ st.markdown(f"""
 # ═══════════════════════════════════════════════════════════
 # 메인 컨텐츠 래퍼
 # ═══════════════════════════════════════════════════════════
-st.markdown('<div class="page-wrap">', unsafe_allow_html=True)
+st.markdown(f'<div class="page-wrap{"  mobile-mode" if _mobile_view else ""}">', unsafe_allow_html=True)
 
 
 # ═══════════════════════════════════════════════════════════
