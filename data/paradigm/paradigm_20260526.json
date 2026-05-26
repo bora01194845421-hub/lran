@@ -1,0 +1,87 @@
+{
+  "date": "2026-05-26",
+  "total_signals": 3,
+  "structural_signals": 3,
+  "signals": [
+    {
+      "signal_id": "sig_002",
+      "category": "정책패러다임전환",
+      "title_ko": "석유 공급체계 재구조화",
+      "description": "• 세계 석유 공급(World oil supply) 모니터링 체계가 월간 단위로 세분화\n• 탱커 시장(Tanker market) 별도 추적 시스템 가동 - 해상 운송 병목 관리 강화\n• 유가 하이라이트(Oil market highlights) 실시간 공개로 시장 투명성 제고 전략",
+      "evidence_titles": [
+        "World oil supply - OPEC: Publications",
+        "Tanker market - OPEC: Publications",
+        "Oil market highlights - OPEC: Publications"
+      ],
+      "evidence_sources": [
+        "OPEC_News",
+        "OPEC_News",
+        "OPEC_News"
+      ],
+      "strength": 4,
+      "trend": "신규",
+      "suwon_implication": "수원시 제조기업 원자재 조달 비용 변동성 증가 예상. 시 차원의 에너지 비용 모니터링 시스템 구축 및 중소기업 지원 정책 재설계 필요",
+      "is_structural": true,
+      "detected_date": "2026-05-26",
+      "first_detected": "2026-05-26"
+    },
+    {
+      "signal_id": "sig_001",
+      "category": "에너지안보재편",
+      "title_ko": "OPEC 통계체계 강화 신호",
+      "description": "• OPEC이 61판 연례 통계보고서(ASB-2026)를 2026년 4월 29일 발간하며 데이터 투명성 강화\n• 월간 석유시장 보고서 발간 시스템 디지털화 및 접근성 제고 중\n• 전쟁 국면에서 시장 예측가능성 확보를 위한 정보 인프라 재편 징후",
+      "evidence_titles": [
+        "61st Edition of OPEC's Annual Statistical Bulletin (ASB-2026) launched on 29 April 2026",
+        "OPEC Digital Publications - Monthly Oil Market Report",
+        "Monthly Oil Market Report - Organization of the Petroleum Exporting Countries"
+      ],
+      "evidence_sources": [
+        "OPEC_News",
+        "OPEC_News",
+        "OPEC_News"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "에너지 가격 변동성 대응을 위한 수원시 데이터 기반 정책 수립 필요. 중장기 에너지 비용 예측 모델 구축 시 OPEC 통계체계 변화 반영 필수",
+      "is_structural": true,
+      "detected_date": "2026-05-26",
+      "first_detected": "2026-05-26"
+    },
+    {
+      "signal_id": "sig_003",
+      "category": "정책패러다임전환",
+      "title_ko": "화석연료 개념 재정의 움직임",
+      "description": "• OPEC이 '화석연료(fossil fuel)' 용어 자체에 대한 재고(rethink) 필요성 제기\n• 탄소중립 담론 속에서 석유산업의 정당성 재구축 시도\n• 에너지 전환 시대 산유국 생존 전략의 담론 전환 신호",
+      "evidence_titles": [
+        "Does the 'fossil fuel' label require a rethink?"
+      ],
+      "evidence_sources": [
+        "OPEC_News"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "수원시 탄소중립 정책 수립 시 국제 에너지 담론 변화 모니터링 필요. 재생에너지 전환 속도 조정 및 과도기 에너지 믹스 전략 재검토 계기",
+      "is_structural": true,
+      "detected_date": "2026-05-26",
+      "first_detected": "2026-05-26"
+    }
+  ],
+  "by_category": {
+    "에너지안보재편": 1,
+    "정책패러다임전환": 2
+  },
+  "summary_ko": "• OPEC이 이란-미국 전쟁 국면에서 석유시장 정보 인프라를 전면 재편하며 데이터 투명성·예측가능성 확보 전략 가동\n• 세계 석유 공급 모니터링을 월간 단위로 세분화하고 탱커 시장 추적 시스템을 별도 구축, 해상 운송 병목 관리 강화\n• OPEC이 '화석연료' 용어 재정의를 제기하며 탄소중립 시대 석유산업 정당성 재구축 시도 - 에너지 전환 담론 지형 변화 신호\n• 전쟁발 에너지 가격 변동성이 수원시 제조기업 원자재 조달 비용에 직접 영향, 중소기업 경영 압박 가중 예상\n• 국제 에너지 체계 구조 변화가 수원시 탄소중립 정책·에너지 믹스 전략 전면 재검토 계기로 작용",
+  "top_signal": "석유 공급체계 재구조화",
+  "suwon_action": "• 수원시 제조기업 대상 에너지 비용 긴급 모니터링 체계 즉시 가동, 중소기업 원자재 조달 비용 지원 방안 마련\n• OPEC 월간 석유시장 보고서 분석 루틴 구축, 중장기 에너지 비용 예측 모델에 국제 석유 공급체계 재편 변수 반영",
+  "weekly_trend": {
+    "정책패러다임전환": {
+      "count": 2,
+      "max_strength": 4
+    },
+    "에너지안보재편": {
+      "count": 1,
+      "max_strength": 3
+    }
+  },
+  "generated_at": "2026-05-26T00:10:23.551761"
+}

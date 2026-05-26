@@ -12,6 +12,8 @@ from datetime import datetime, date
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
+from datetime import timedelta
+
 import feedparser
 import requests
 from bs4 import BeautifulSoup
@@ -113,11 +115,13 @@ def collect_newsapi() -> list[dict]:
     articles = []
     try:
         url = "https://newsapi.org/v2/everything"
+        _from_date = (date.today() - timedelta(days=5)).strftime("%Y-%m-%d")  # 주말 포함 5일치
         params = {
             "q":         " OR ".join(KEYWORDS_EN[:6]),
             "language":  "en",
             "sortBy":    "publishedAt",
             "pageSize":  100,
+            "from":      _from_date,
             "apiKey":    NEWSAPI_KEY,
         }
         resp = requests.get(url, params=params, timeout=15)
@@ -232,7 +236,7 @@ def collect_brave_api() -> list[dict]:
             "Accept": "application/json",
             "X-Subscription-Token": BRAVE_API_KEY,
         }
-        params = {"q": "iran war hormuz blockade", "count": 20, "freshness": "pd"}
+        params = {"q": "iran war hormuz blockade oil energy", "count": 30, "freshness": "pw"}
         resp = requests.get(url, headers=headers, params=params, timeout=15)
         data = resp.json()
 

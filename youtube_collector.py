@@ -55,10 +55,10 @@ SEARCH_QUERIES = [
 ]
 
 # 검색 결과 최대 건수 (쿼리당) — API 쿼터 절약
-MAX_PER_QUERY = 5
+MAX_PER_QUERY = 7
 # 최종 처리할 고유 영상 최대 수
-MAX_VIDEOS_TO_PROCESS = 10
-# 수집 기준: 최근 N일 이내 영상만
+MAX_VIDEOS_TO_PROCESS = 15
+# 수집 기준: 최근 N일 이내 영상만 (주말 포함 7일)
 PUBLISHED_WITHIN_DAYS = 7
 
 
