@@ -7,9 +7,15 @@
 
 import json
 import os
+import sys
 import subprocess
 from datetime import date, datetime
 from pathlib import Path
+
+# Streamlit Cloud에서 로컬 config.py가 우선 로드되도록 sys.path 보장
+_APP_DIR = Path(__file__).parent
+if str(_APP_DIR) not in sys.path:
+    sys.path.insert(0, str(_APP_DIR))
 
 import streamlit as st
 
