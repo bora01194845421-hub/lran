@@ -1,0 +1,202 @@
+{
+  "date": "2026-06-01",
+  "total_signals": 9,
+  "structural_signals": 8,
+  "signals": [
+    {
+      "signal_id": "sig_002",
+      "category": "정책패러다임전환",
+      "title_ko": "글로벌 법인세 최저세율 체제 정착",
+      "description": "• OECD가 디지털경제 과세(BEPS) 관련 Global Anti-Base Erosion Model Rules 통합 해설서(2026) 발간\n• Pillar 2(글로벌 최저한세 15%) 시행 가이드라인 구체화, 다국적기업 조세회피 구조적 차단 본격화\n• 국제 법인세 질서 재편 → 국내 기업 세무환경 변화, 지방세수 구조 간접 영향 가능",
+      "evidence_titles": [
+        "Tax Challenges Arising from the Digitalisation of the Economy – Consolidated Commentary to the Global Anti-Base Erosion Model",
+        "Tax Challenges Arising from the Digitalisation of the Economy – Consolidated Commentary to the Global Anti‑Base Erosion Model Rules (2026)",
+        "Statement on a Two-Pillar Solution to Address the Tax Challenges Arising from the Digitalisation of the Economy – 8 October 20"
+      ],
+      "evidence_sources": [
+        "OECD_News",
+        "OECD_News",
+        "OECD_News"
+      ],
+      "strength": 4,
+      "trend": "강화",
+      "suwon_implication": "수원시 소재 중견·중소 수출기업의 국제 세무 리스크 증가. 시 차원 국제조세 컨설팅 지원 프로그램 필요성 대두.",
+      "is_structural": true,
+      "detected_date": "2026-06-01"
+    },
+    {
+      "signal_id": "sig_003",
+      "category": "무역공급망재편",
+      "description": "• OECD 2026년 1분기 국제무역 통계, 중동 분쟁 영향으로 무역 둔화·공급망 변동성 확대 확인\n• 글로벌 정책 불확실성(policy uncertainty)이 수요 억제 주요 요인으로 지목, 단순 경기순환 아닌 구조적 위축 신호\n• 무역 패턴 변화 → 수원시 수출 중소기업 납품 일정·물류비 구조적 부담 증가",
+      "evidence_titles": [
+        "International trade statistics: trends in first quarter 2026 - OECD",
+        "Global economic outlook weakens as policy uncertainty weighs on demand - OECD"
+      ],
+      "evidence_sources": [
+        "OECD_News",
+        "OECD_News"
+      ],
+      "strength": 4,
+      "trend": "신규",
+      "suwon_implication": "수원시 제조업·물류업체 경영애로 증가 전망. 공급망 다변화 컨설팅 및 긴급 금융지원 체계 선제 구축 필요.",
+      "is_structural": true,
+      "title_ko": "무역둔화·공급망변동성 구조화",
+      "detected_date": "2026-06-01",
+      "first_detected": "2026-06-01"
+    },
+    {
+      "signal_id": "sig_001",
+      "category": "정책패러다임전환",
+      "title_ko": "OECD 재정 재건 패러다임 전환",
+      "description": "• OECD가 공공재정 재건(Restoring Public Finances) 보고서 발간, 코로나 이후 확대된 공공부채 구조조정 정책 방향 제시\n• 단순 긴축 아닌 '성장친화적 재정재건' 강조, 중장기 재정건전성과 단기 민생안정 균형 모색\n• OECD 회원국 재정정책 기조 변화 → 한국 중앙·지방정부 재정운용 가이드라인 영향 예상",
+      "evidence_titles": [
+        "Restoring Public Finances - OECD"
+      ],
+      "evidence_sources": [
+        "OECD_News"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "수원시 중기재정계획 수립 시 OECD 재정재건 프레임워크 반영 필요. 민생안정 예산과 재정건전성 균형점 재설정 시급.",
+      "is_structural": true,
+      "detected_date": "2026-06-01",
+      "first_detected": "2026-06-01"
+    },
+    {
+      "signal_id": "sig_004",
+      "category": "민생충격패턴",
+      "title_ko": "중동분쟁의 농산물 시장 충격",
+      "description": "• OECD 보고서, 중동 분쟁이 글로벌 농산물 시장(agricultural markets)에 미치는 충격 분석\n• 곡물·식용유 등 주요 품목 가격 변동성 증가, 해운루트 변경으로 운송비 상승 구조화\n• 식품 물가 압력 지속 → 수원시 취약계층 식생활비 부담 가중 우려",
+      "evidence_titles": [
+        "The impact of the conflict in the Middle East on agricultural markets - OECD"
+      ],
+      "evidence_sources": [
+        "OECD_News"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "수원시 급식지원·식품바우처 예산 증액 검토 필요. 지역 농산물 직거래 확대로 가격 안정화 대안 모색.",
+      "is_structural": true,
+      "detected_date": "2026-06-01",
+      "first_detected": "2026-06-01"
+    },
+    {
+      "signal_id": "sig_005",
+      "category": "정책패러다임전환",
+      "title_ko": "사회적경제 육성 체제 전환",
+      "description": "• OECD, 사회적경제(social economy) 성장을 위한 프레임워크 조건 보고서 발표\n• 민간·공공 협력 모델, 지역 주도 개발(locally led development) 강조 → 중앙집권적 정책에서 지방 자율성 중시로 전환\n• 사회적기업·협동조합 육성이 민생안정·일자리 창출 핵심 수단으로 재평가",
+      "evidence_titles": [
+        "Finding the right framework conditions for the social economy to thrive - OECD",
+        "Practical Guidelines for Supporting Locally Led Development - OECD"
+      ],
+      "evidence_sources": [
+        "OECD_News",
+        "OECD_News"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "수원시 사회적경제 지원조례·예산 확대 근거 확보. 지역 주도형 개발 모델 벤치마킹으로 청년일자리·취약계층 고용 연계.",
+      "is_structural": true,
+      "detected_date": "2026-06-01",
+      "first_detected": "2026-06-01"
+    },
+    {
+      "signal_id": "sig_007",
+      "category": "정책패러다임전환",
+      "title_ko": "인구구조 대응 개혁 시급성 증가",
+      "description": "• OECD Economic Surveys: Austria 2026, 인구문제(demographic challenges) 대응 위한 과감한 개혁 촉구\n• 고령화·저출산 대응을 재정정책·노동시장·이민정책 통합 접근으로 전환 권고\n• 인구정책 패러다임 '출산장려' → '사회시스템 재설계' 전환 신호",
+      "evidence_titles": [
+        "Addressing demographic challenges requires a bold set of reforms: OECD Economic Surveys: Austria 2026 - OECD"
+      ],
+      "evidence_sources": [
+        "OECD_News"
+      ],
+      "strength": 3,
+      "trend": "강화",
+      "suwon_implication": "수원시 저출산 대책, 단순 출산지원금 아닌 보육·주거·일자리 통합 패키지로 전면 재설계 필요. OECD 권고안 벤치마킹 시급.",
+      "is_structural": true,
+      "detected_date": "2026-06-01"
+    },
+    {
+      "signal_id": "sig_006",
+      "category": "민생충격패턴",
+      "title_ko": "고용안정성 유지 vs 잠재 리스크",
+      "description": "• OECD, 2026년 3월 대부분 회원국 실업률 안정적 유지 발표, 그러나 무역둔화·정책불확실성 배경 존재\n• 표면적 안정 이면에 고용 질 악화(비정규직 증가, 근로시간 감소) 가능성 경고\n• 양적 고용지표 vs 질적 고용안정성 괴리 → 수원시 고용정책 방향 재점검 필요",
+      "evidence_titles": [
+        "Unemployment rates remained stable in most OECD countries in March 2026 - OECD"
+      ],
+      "evidence_sources": [
+        "OECD_News"
+      ],
+      "strength": 2,
+      "trend": "신규",
+      "suwon_implication": "수원시 일자리센터, 실업률 수치만 아닌 고용 질(근로조건·임금) 모니터링 강화 필요. 취약계층 근로환경 실태조사 우선 추진.",
+      "is_structural": false,
+      "detected_date": "2026-06-01",
+      "first_detected": "2026-06-01"
+    },
+    {
+      "signal_id": "sig_008",
+      "category": "정책패러다임전환",
+      "title_ko": "아동학대 경제적 접근 강화",
+      "description": "• OECD, 아동학대(child maltreatment)의 경제적 결정요인과 결과 분석 보고서 발표\n• 아동학대를 사회문제가 아닌 경제비용·생산성 손실 관점에서 재정의 → 예방투자 ROI 근거 마련\n• 복지정책 설계 시 '비용-효과' 분석틀 도입 추세 강화",
+      "evidence_titles": [
+        "Economic Determinants and Consequences of Child Maltreatment - OECD"
+      ],
+      "evidence_sources": [
+        "OECD_News"
+      ],
+      "strength": 2,
+      "trend": "신규",
+      "suwon_implication": "수원시 아동보호 예산 증액 근거 확보. 아동학대 예방 프로그램의 경제적 효과 분석 후 중장기 투자계획 수립 필요.",
+      "is_structural": true,
+      "detected_date": "2026-06-01",
+      "first_detected": "2026-06-01"
+    },
+    {
+      "signal_id": "sig_009",
+      "category": "정책패러다임전환",
+      "title_ko": "보건의료 경쟁·규제 체제 재검토",
+      "description": "• OECD, 보건의료 부문(healthcare sector) 경쟁과 규제 관계 재정립 보고서 발간\n• 공공성 vs 효율성 균형 모색, 의료 독점·과잉규제 폐해 지적 → 시장원리 부분 도입 검토 신호\n• 의료정책 패러다임 '전면 공공화' vs '공공성 기반 효율화' 갈림길",
+      "evidence_titles": [
+        "Competition and regulation in the healthcare sector - OECD"
+      ],
+      "evidence_sources": [
+        "OECD_News"
+      ],
+      "strength": 2,
+      "trend": "신규",
+      "suwon_implication": "수원시 공공의료 확충 정책 추진 시, OECD 효율성 가이드라인 참고하여 재정부담 최소화 전략 병행 필요.",
+      "is_structural": true,
+      "detected_date": "2026-06-01",
+      "first_detected": "2026-06-01"
+    }
+  ],
+  "by_category": {
+    "정책패러다임전환": 6,
+    "무역공급망재편": 1,
+    "민생충격패턴": 2
+  },
+  "summary_ko": "• OECD가 2026년 6월 1일 기준 9건의 구조적 정책 전환 신호 발표, 재정재건·국제조세·무역공급망 3대 축 재편 본격화\n• 중동분쟁 영향이 단순 지정학 리스크 넘어 무역둔화·농산물가격 구조화로 확산, 민생 직접타격 패턴 가시화\n• 인구문제·사회적경제·의료경쟁 등 전통 정책영역에서 '통합접근·효율성·지방주도' 패러다임 전환 가속\n• 글로벌 최저법인세 정착으로 기업 세무환경 구조 변화, 지방세수·기업지원 정책 전면 재검토 국면\n• OECD 권고 핵심: 중앙집권→지방자율, 단순지원→ROI분석, 단기처방→시스템재설계 전환",
+  "top_signal": "글로벌 법인세 최저세율 체제 정착",
+  "suwon_action": "• 긴급: 중기재정계획 OECD 재정재건 프레임워크 반영 + 수출기업 국제조세 컨설팅 체계 즉시 구축\n• 중장기: 저출산·사회적경제·아동보호 예산을 '지원금→시스템재설계' 방식으로 전면 개편 착수",
+  "weekly_trend": {
+    "정책패러다임전환": {
+      "count": 8,
+      "max_strength": 4
+    },
+    "민생충격패턴": {
+      "count": 2,
+      "max_strength": 3
+    },
+    "에너지안보재편": {
+      "count": 1,
+      "max_strength": 3
+    },
+    "무역공급망재편": {
+      "count": 1,
+      "max_strength": 4
+    }
+  },
+  "generated_at": "2026-06-01T00:32:26.055277"
+}
