@@ -247,26 +247,40 @@ def load_analyzed_summary(path: Path, max_items: int = 15) -> str:
         top_items = [a for a in sorted_data if a.get("importance", 0) >= 1][:max_items]
         seen_urls = {a.get("url", "") for a in top_items}
 
-        # 한국 지자체·국내 정책 기사 별도 추가 (lang=ko 또는 한국 언론 소스)
-        KO_SOURCES = {"Yonhap", "Yonhap_Economy", "Yonhap_Politics", "Chosun", "News1",
-                      "Newsis", "HeraldEco", "Seoul_Mediahub", "Hankyung"}
-        KO_CATS = {"country_response", "korea", "economy"}
-        KO_TITLE_KW = ["서울", "경기", "지자체", "소상공인", "중소기업", "자영업", "유류비",
-                       "에너지", "지원", "대응", "물가", "수원", "전주", "화성", "인천"]
+        # ── 한국 지자체·국내 민생 정책 기사 별도 추가 (타지자체 벤치마킹 전용) ──
+        # 슬롯 A: 국내 정책·지원 키워드가 제목에 있는 기사 (서울시 골목상권, 소상공인 지원 등)
+        DOMESTIC_POLICY_KW = [
+            "서울시", "경기도", "지자체", "소상공인", "골목상권", "골목형", "상점가",
+            "자영업", "단체보험", "지원사업", "유류비 지원", "에너지 바우처",
+            "에너지 지원", "긴급 지원", "수원시", "전주시", "화성시", "인천시",
+        ]
+        DOMESTIC_SOURCES = {"Seoul_Mediahub", "Newsis", "News1", "HeraldEco", "Hankyung"}
 
-        ko_policy_items = [
+        domestic_policy_items = [
+            a for a in sorted_data
+            if a.get("url", "") not in seen_urls
+            and a.get("importance", 0) >= 1
+            and (
+                a.get("source", "") in DOMESTIC_SOURCES
+                or any(kw in a.get("title", "") for kw in DOMESTIC_POLICY_KW)
+            )
+        ][:3]  # 지자체 정책 기사 최대 3건
+
+        seen_urls.update(a.get("url", "") for a in domestic_policy_items)
+
+        # 슬롯 B: 한국 언론 일반 기사 (전황·외교·경제 보도)
+        KO_SOURCES = {"Yonhap", "Yonhap_Economy", "Yonhap_Politics", "Chosun"}
+        KO_CATS = {"country_response", "korea", "economy"}
+
+        ko_general_items = [
             a for a in sorted_data
             if a.get("url", "") not in seen_urls
             and a.get("importance", 0) >= 1
             and a.get("category") in KO_CATS
-            and (
-                a.get("source", "") in KO_SOURCES
-                or a.get("lang", "") == "ko"
-                or any(kw in a.get("title", "") for kw in KO_TITLE_KW)
-            )
-        ][:5]
+            and a.get("source", "") in KO_SOURCES
+        ][:3]  # 한국 언론 일반 기사 최대 3건
 
-        items = top_items + ko_policy_items
+        items = top_items + domestic_policy_items + ko_general_items
         lines = [f"- [{a.get('source','')}] {a.get('title','')} | {a.get('summary_ko','')[:120]}"
                  for a in items]
         return "\n".join(lines)
