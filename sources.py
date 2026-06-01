@@ -57,4 +57,14 @@ SCRAPE_SOURCES = {
         "credibility": 9.0,
         "schedule":  "weekly",
     },
+    # 서울시 공식 미디어허브 — 지자체 민생 대응 (소상공인·에너지·물가) 사례 수집
+    "Seoul_Mediahub": {
+        "url":       "https://mediahub.seoul.go.kr",
+        "title_sel": "h3 a",
+        "date_sel":  "p.date span.num",
+        "base_url":  "https://mediahub.seoul.go.kr",
+        "credibility": 8.2,
+        "schedule":  "daily",
+        "lang":      "ko",
+    },
 }

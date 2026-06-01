@@ -226,6 +226,54 @@ def load_summary(path: Path, max_items: int = 5) -> str:
     return ""
 
 
+def load_analyzed_summary(path: Path, max_items: int = 15) -> str:
+    """analyzed JSON 전용 로드:
+    - 상위 max_items건 (importance 내림차순, 전황·외교·군사 중심) +
+    - 한국어 지자체 대응 기사 최대 5건 별도 추가
+      (importance 낮아도 타지자체 벤치마킹에 필수: 서울시·경기도·전주·화성 등)
+    """
+    if not path or not path.exists():
+        return "데이터 없음"
+    try:
+        with open(path, encoding="utf-8") as f:
+            data = json.load(f)
+        if not isinstance(data, list):
+            return json.dumps(data, ensure_ascii=False)[:2000]
+
+        # 중요도 내림차순 정렬
+        sorted_data = sorted(data, key=lambda x: x.get("importance", 0), reverse=True)
+
+        # 상위 N건 (주로 전황·외교·군사 기사)
+        top_items = [a for a in sorted_data if a.get("importance", 0) >= 1][:max_items]
+        seen_urls = {a.get("url", "") for a in top_items}
+
+        # 한국 지자체·국내 정책 기사 별도 추가 (lang=ko 또는 한국 언론 소스)
+        KO_SOURCES = {"Yonhap", "Yonhap_Economy", "Yonhap_Politics", "Chosun", "News1",
+                      "Newsis", "HeraldEco", "Seoul_Mediahub", "Hankyung"}
+        KO_CATS = {"country_response", "korea", "economy"}
+        KO_TITLE_KW = ["서울", "경기", "지자체", "소상공인", "중소기업", "자영업", "유류비",
+                       "에너지", "지원", "대응", "물가", "수원", "전주", "화성", "인천"]
+
+        ko_policy_items = [
+            a for a in sorted_data
+            if a.get("url", "") not in seen_urls
+            and a.get("importance", 0) >= 1
+            and a.get("category") in KO_CATS
+            and (
+                a.get("source", "") in KO_SOURCES
+                or a.get("lang", "") == "ko"
+                or any(kw in a.get("title", "") for kw in KO_TITLE_KW)
+            )
+        ][:5]
+
+        items = top_items + ko_policy_items
+        lines = [f"- [{a.get('source','')}] {a.get('title','')} | {a.get('summary_ko','')[:120]}"
+                 for a in items]
+        return "\n".join(lines)
+    except Exception:
+        return "로드 실패"
+
+
 def load_prev_summary(policy_dir: Path, current_date_str: str) -> str:
     """지난주 minseang 데이터 로드 — 차별화를 위해 상세 컨텍스트 전달"""
     files = sorted(policy_dir.glob("minseang_*.json"), reverse=True)
@@ -281,7 +329,7 @@ def run(target_date: str = None) -> Path:
     yt_path       = YT_DIR / f"yt_summary_{date_str}.json"
 
     prompt = PROMPT.format(
-        war_summary     = load_summary(analyzed_path, max_items=20),  # 상위 20건
+        war_summary     = load_analyzed_summary(analyzed_path, max_items=15),  # 전황 상위 15건 + country_response/korea 5건
         domestic_summary= load_summary(domestic_path),
         paradigm_summary= load_summary(paradigm_path),
         yt_summary      = load_summary(yt_path),
