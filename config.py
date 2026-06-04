@@ -68,6 +68,12 @@ KEYWORDS_EN = [
 
     # ══ 신규 추가 키워드 ══
 
+    # ── 한국 지자체 실제 대응 (벤치마킹 사실 기반 수집용)
+    "Suwon city energy policy", "Gyeonggi energy support",
+    "Korea local government oil price support",
+    "Seoul small business energy subsidy",
+    "Korea municipality Iran war response",
+
     # ── 교통·물류·해운
     "cape of good hope rerouting", "war risk insurance marine",
     "container freight surge", "freight rate Iran",
@@ -156,6 +162,14 @@ KEYWORDS_KO = [
     "중동 사태 대응", "에너지 대응", "정부 긴급 대책",
 
     # ══ 신규 추가 키워드 ══
+
+    # ── 한국 지자체 실제 대응 (벤치마킹 사실 기반 수집용)
+    "수원시 에너지", "수원시 소상공인", "수원시 지원",
+    "경기도 에너지 지원", "경기도 소상공인",
+    "서울시 에너지 바우처", "서울시 유류비",
+    "지자체 유가 대응", "지자체 에너지 긴급",
+    "소상공인 유류비 지원 지자체",
+    "에너지 바우처 지자체", "난방비 지원 지자체",
 
     # ── 교통·물류·해운
     "희망봉 우회", "컨테이너 운임 급등", "해운 전쟁할증료",

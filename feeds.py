@@ -41,9 +41,10 @@ FEEDS_KO = {
 # ── 한국 정책·부처 대응 전용 피드
 # 목적: 외교부·산업부·기재부·국토부·식약처·농림부 실제 대응 기사 수집
 FEEDS_KO_POLICY = {
-    # 연합뉴스 — 정치(부처 발표 빠름) + 경제(에너지·물가 정책)
+    # 연합뉴스 — 정치(부처 발표 빠름) + 경제(에너지·물가 정책) + 사회
     "Yonhap_Politics": "https://www.yna.co.kr/rss/politics.xml",
     "Yonhap_Economy":  "https://www.yna.co.kr/rss/economy.xml",
+    "Yonhap_Society":  "https://www.yna.co.kr/rss/society.xml",
     # 뉴시스 — 정부 부처 발표 전문 보도
     "Newsis":          "https://newsis.com/rss/",
     # 뉴스1 — 부처 정책·긴급 발표 빠른 보도
@@ -52,6 +53,17 @@ FEEDS_KO_POLICY = {
     "PolicyBriefing":  "https://www.korea.kr/rss/news.do",
     # 헤럴드경제 — 경제부처·에너지 정책 보도
     "HeraldEco":       "https://biz.heraldkorea.com/rss/rssView.php?cat=all",
+}
+
+# ── 경기·수원 지역 언론 (지자체 실제 대응 수집용)
+# 목적: 타지자체 벤치마킹에 사실 기반 제공 (할루시네이션 방지)
+FEEDS_LOCAL_KR = {
+    # 수원일보 — 수원시 직접 관련 정책·사업 보도
+    "Suwon_Ilbo":   "https://www.suwonilbo.kr/rss/allArticle.xml",
+    # 중부일보 — 수원·경기 지역 경제·에너지 정책
+    "Jungbu_Ilbo":  "https://www.joongboo.com/rss/allArticle.xml",
+    # 인천일보 — 인천 항만·물류·에너지 정책 (수원 연계 벤치마킹)
+    "Incheon_Ilbo": "https://www.incheonilbo.com/rss/allArticle.xml",
 }
 
 # ── 지정학·각국 대응 동향 피드 (각국 대응 방안 + 이슈 발굴용)
@@ -114,6 +126,7 @@ ALL_FEEDS = {
     **FEEDS_TIER1, **FEEDS_TIER2, **FEEDS_TIER3,
     **FEEDS_KO, **FEEDS_KO_POLICY,
     **FEEDS_GEOPOLITICS, **FEEDS_SPECIALIZED,
+    **FEEDS_LOCAL_KR,
 }
 
 # ── 공신력 점수 매핑 (정확성 기준)
@@ -165,4 +178,9 @@ CREDIBILITY = {
     "EETimes":       8.0,   # 반도체·IT
     "Grist_Energy":  7.5,   # 환경·에너지전환
     "CrisisGroup":   9.0,   # 외교·분쟁
+    # 경기·수원 지역 언론
+    "Suwon_Ilbo":   7.5,
+    "Jungbu_Ilbo":  7.5,
+    "Incheon_Ilbo": 7.5,
+    "Yonhap_Society": 8.5,
 }
