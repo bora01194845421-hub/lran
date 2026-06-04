@@ -40,25 +40,40 @@ def titles_similar(t1: str, t2: str, threshold: float = 0.75) -> bool:
     return len(intersection) / len(union) >= threshold
 
 
-def is_recent(published: str, days: int = 2) -> bool:
-    """발행일이 최근 N일 이내인지 확인. 날짜 파싱 실패 시 True(포함) 처리"""
+def is_recent(published: str, days: int = 5) -> bool:
+    """발행일이 최근 N일 이내인지 확인.
+    날짜 파싱 성공 → 정확히 판단 / 파싱 실패 → False (오래된 것으로 간주, 제외)
+    """
     if not published:
-        return True
+        return False  # 날짜 없으면 제외 (오래된 보고서 차단)
+
     cutoff = datetime.utcnow() - timedelta(days=days)
+
+    # 전체 문자열 대상으로 여러 포맷 시도
     for fmt in [
         "%Y-%m-%dT%H:%M:%SZ",
         "%Y-%m-%dT%H:%M:%S%z",
         "%a, %d %b %Y %H:%M:%S %z",
         "%a, %d %b %Y %H:%M:%S GMT",
+        "%a, %d %b %Y %H:%M:%S +0000",
         "%Y-%m-%d",
+        "%Y-%m-%dT%H:%M:%S",
     ]:
         try:
-            dt = datetime.strptime(published[:25], fmt)
+            dt = datetime.strptime(published.strip(), fmt)
             dt = dt.replace(tzinfo=None)
             return dt >= cutoff
         except ValueError:
             continue
-    return True  # 파싱 실패 시 포함
+
+    # 포맷 불일치 → 앞 10자리(YYYY-MM-DD)만 다시 시도
+    try:
+        dt = datetime.strptime(published[:10], "%Y-%m-%d")
+        return dt >= cutoff
+    except ValueError:
+        pass
+
+    return False  # 최종 파싱 실패 → 제외
 
 
 def run(raw_path: Path) -> Path:
@@ -116,8 +131,18 @@ def run(raw_path: Path) -> Path:
 
     logger.info(f"URL 중복 제거 후: {len(url_deduped)}건")
 
-    # 2단계: 날짜 필터 (최근 2일 이내)
-    date_filtered = [a for a in url_deduped if is_recent(a.get("published", ""), days=2)]
+    # 2단계: 날짜 필터 — data_type별 기준 차등 적용
+    #   news        : 최근 5일 이내 (발행일 기준 주간 커버리지)
+    #   intl_org    : 최근 14일 이내 (국제기구 보고서는 업데이트 주기 느림)
+    #   research    : 최근 14일 이내
+    def days_for_type(article: dict) -> int:
+        dtype = article.get("data_type", "news")
+        return 14 if dtype in ("intl_org", "research") else 5
+
+    date_filtered = [
+        a for a in url_deduped
+        if is_recent(a.get("published", ""), days=days_for_type(a))
+    ]
     logger.info(f"날짜 필터 후: {len(date_filtered)}건")
 
     # 3단계: 제목 유사도 기반 중복 제거 (공신력 높은 것 우선 유지)

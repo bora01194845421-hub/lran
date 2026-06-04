@@ -1,20 +1,22 @@
 {
   "date": "2026-06-04",
-  "total_signals": 8,
-  "structural_signals": 8,
+  "total_signals": 6,
+  "structural_signals": 6,
   "signals": [
     {
       "signal_id": "sig_001",
       "category": "정책패러다임전환",
-      "title_ko": "지정경제학 중심 국제질서 전환",
-      "description": "• IMF가 'Geoeconomics(지정경제학)' 특집 시리즈 발간, 경제정책이 지정학적 목표에 종속되는 구조적 변화 진단\n• 'The New Wave of Nationalization' 보고서, 전략자산 국유화 새 물결을 패러다임 전환으로 규정\n• 'Understanding Geoeconomics in a Volatile World', 변동성 시대 경제질서 재편을 국제기구 차원에서 공식 인정",
+      "title_ko": "지경학 중심 정책 전환",
+      "description": "• IMF가 'Geoeconomics(지경학)' 시리즈 보고서 다수 발행하며 정책 프레임 전환 시도\n• 경제정책이 순수 효율성→안보·정치적 계산 중심으로 근본 재설계\n• 산업정책·국유화 신조류 분석 강화, 위기 대응 패러다임 변화 공식화",
       "evidence_titles": [
         "Geoeconomics, Rediscovered",
-        "The New Wave of Nationalization",
+        "Understanding Geoeconomics in a Volatile World",
         "The Geoeconomic Calculus",
-        "Understanding Geoeconomics in a Volatile World"
+        "The New Wave of Nationalization",
+        "Industrial Policy Is Adapting to Crises, but Remains Hard to Implement Effectively"
       ],
       "evidence_sources": [
+        "IMF_News",
         "IMF_News",
         "IMF_News",
         "IMF_News",
@@ -22,7 +24,7 @@
       ],
       "strength": 5,
       "trend": "신규",
-      "suwon_implication": "수원시 기업 지원정책 설계 시 지정학적 리스크 평가 기준 필요. 국제 공급망 재편에 따른 중소기업 수출 전략 재검토 시급.",
+      "suwon_implication": "수원시 정책 벤치마킹 기준이 '효율성'에서 '안보·회복력' 중심으로 전환 필요. 취약계층 보호, 에너지 안정 공급 등 민생 안전망 정책 우선순위 재설계 시그널.",
       "is_structural": true,
       "detected_date": "2026-06-04",
       "first_detected": "2026-06-04"
@@ -30,8 +32,8 @@
     {
       "signal_id": "sig_002",
       "category": "에너지안보재편",
-      "title_ko": "에너지 파트너십 신뢰 기반 전환",
-      "description": "• IEA·IMF·세계은행·WTO 4개 국제기구 공동성명, 에너지 협력 기준이 가격에서 신뢰·안보로 전환 선언\n• '중동 전쟁이 에너지·무역·금융에 미치는 영향' 보고서, 단순 가격변동 아닌 구조적 관계 재편 진단\n• 'How the War in the Middle East Is Affecting Energy, Trade, and Finance', 장기 공급 안정성 우선 정책 권고",
+      "title_ko": "에너지 파트너십 기준 전환",
+      "description": "• IEA·IMF·세계은행·WTO 4개 기구 공동성명: 중동 전쟁이 에너지·무역·금융 전방위 타격\n• 에너지 확보 기준이 '가격'→'신뢰·안정성' 중심으로 구조 변화 예고\n• 다자기구 차원의 공식 경고, 단순 시장 대응 불가능 수준",
       "evidence_titles": [
         "Joint Statement by the Heads of the International Energy Agency, International Monetary Fund, World Bank Group and World Trade Organization",
         "How the War in the Middle East Is Affecting Energy, Trade, and Finance"
@@ -42,7 +44,7 @@
       ],
       "strength": 5,
       "trend": "신규",
-      "suwon_implication": "수원시 난방비·전기료 장기 전망 재수립 필요. 에너지 취약계층 지원 예산 구조적 확대 검토 시급.",
+      "suwon_implication": "수원시 에너지 비용 장기 상승 불가피. 저소득층 난방비 지원, 공공시설 에너지 효율화 투자 등 구조적 대응 전략 수립 필요.",
       "is_structural": true,
       "detected_date": "2026-06-04",
       "first_detected": "2026-06-04"
@@ -50,12 +52,12 @@
     {
       "signal_id": "sig_003",
       "category": "민생충격패턴",
-      "title_ko": "전쟁 그림자 경제 공식 진단",
-      "description": "• IMF 세계경제전망(WEO) 부제가 'Global Economy in the Shadow of War', 전쟁을 단기 변수가 아닌 구조적 그림자로 규정\n• '전쟁이 경제전망을 어둡게 하고 정책 우선순위 재편' 보고서, 민생 정책 방향 전환 명시\n• 2026년 1월 업데이트 'Steady amid Divergent Forces', 분산된 충격 속 민생 안정이 핵심 과제로 부상",
+      "title_ko": "전쟁 그림자 속 경제 운영",
+      "description": "• WEO 2026년 4월호 부제: 'Global Economy in the Shadow of War' - 전쟁을 전제로 한 경제 전망 시작\n• '전쟁 상시화' 시나리오 공식화: 일시적 충격 아닌 장기 구조 변수로 인식\n• 재정정책 압박·고채무 위험 동시 경고, 복합 위기 대응 패러다임 제시",
       "evidence_titles": [
         "World Economic Outlook, April 2026: Global Economy in the Shadow of War",
         "War Darkens Global Economic Outlook and Reshapes Policy Priorities",
-        "World Economic Outlook Update, January 2026: Global Economy: Steady amid Divergent Forces"
+        "Fiscal Policy under Pressure: High Debt, Rising Risks"
       ],
       "evidence_sources": [
         "IMF_News",
@@ -64,25 +66,29 @@
       ],
       "strength": 4,
       "trend": "신규",
-      "suwon_implication": "수원시 민생안정 예산 편성 시 전쟁 장기화 시나리오 반영 필수. 취약계층 긴급 생활안정 대책 상시 대응체계 구축 필요.",
+      "suwon_implication": "수원시 재정 운영이 '성장 투자'→'위기 완충' 중심 재편 필요. 취약계층 긴급 지원 예비비 확대, 민생 안전망 선제 강화 전략 검토.",
       "is_structural": true,
       "detected_date": "2026-06-04",
       "first_detected": "2026-06-04"
     },
     {
       "signal_id": "sig_004",
-      "category": "정책패러다임전환",
-      "title_ko": "산업정책 위기적응 체제 전환",
-      "description": "• 'Industrial Policy Is Adapting to Crises' 보고서, 산업정책이 성장에서 위기대응으로 목표 전환\n• 효과적 실행 어려움 인정하면서도 정책 방향 자체는 위기 중심 재편 불가피 진단\n• 각국 산업정책이 공급망 안보·전략자원 확보 중심으로 구조 변화 확인",
+      "category": "무역공급망재편",
+      "title_ko": "해운·항만 리스크 상시 모니터링",
+      "description": "• IMF가 'PortWatch' 시스템 통해 주요 초크포인트·항만 실시간 모니터링 공식화\n• 호르무즈·수에즈 등 해상 병목 리스크를 경제 정책 핵심 변수로 편입\n• 공급망 불안이 일시적 이슈 아닌 정책 설계 상수로 전환",
       "evidence_titles": [
-        "Industrial Policy Is Adapting to Crises, but Remains Hard to Implement Effectively"
+        "chokepoint6 - PortWatch",
+        "Port Monitor - PortWatch",
+        "eventc10000004 - PortWatch"
       ],
       "evidence_sources": [
+        "IMF_News",
+        "IMF_News",
         "IMF_News"
       ],
       "strength": 4,
       "trend": "신규",
-      "suwon_implication": "수원시 기업지원 정책 재설계 필요. 단순 성장지원에서 공급망 안정·위기대응 역량 강화 중심으로 전환 검토.",
+      "suwon_implication": "수원시 제조기업 납품 비용 불확실성 증가. 중소기업 공급망 다변화 컨설팅, 물류비 지원 등 선제 대응책 필요.",
       "is_structural": true,
       "detected_date": "2026-06-04",
       "first_detected": "2026-06-04"
@@ -90,28 +96,8 @@
     {
       "signal_id": "sig_005",
       "category": "정책패러다임전환",
-      "title_ko": "재정정책 불확실성 대응 체제",
-      "description": "• IMF-보코니대-이탈리아중앙은행 공동 컨퍼런스 'Fiscal Policy in an Era of Uncertainty', 재정정책 패러다임 전환 공식화\n• 'Fiscal Policy under Pressure: High Debt, Rising Risks' 보고서, 고부채·고위험 구조적 압박 진단\n• 불확실성 시대 재정정책 기준 자체가 안정성 확보로 재편되는 국제 컨센서스 형성",
-      "evidence_titles": [
-        "Joint IMF-Bocconi University-Bank of Italy conference on Fiscal Policy in an Era of Uncertainty",
-        "Fiscal Policy under Pressure: High Debt, Rising Risks"
-      ],
-      "evidence_sources": [
-        "IMF_News",
-        "IMF_News"
-      ],
-      "strength": 4,
-      "trend": "신규",
-      "suwon_implication": "수원시 재정계획 수립 시 위험관리 우선 기준 도입 필요. 민생예산 확보와 재정건전성 균형 전략 재검토 시급.",
-      "is_structural": true,
-      "detected_date": "2026-06-04",
-      "first_detected": "2026-06-04"
-    },
-    {
-      "signal_id": "sig_006",
-      "category": "정책패러다임전환",
-      "title_ko": "AI 경제변환 인류 중심 전환",
-      "description": "• 'Gen-AI: Artificial Intelligence and the Future of Work' 특집, 노동시장 구조적 재편 진단\n• IMF 총재 기고 'AI Will Transform the Global Economy. Let's Make Sure It Benefits Humanity', 기술변화의 인류 중심 관리 선언\n• 단순 기술혁신이 아닌 사회경제 시스템 전환으로 AI 영향 재규정",
+      "title_ko": "AI 노동시장 구조 전환",
+      "description": "• IMF가 Gen-AI의 일자리·불평등 영향 분석 보고서 발간, 정책 대응 촉구\n• 기술 충격이 전쟁과 무관하게 노동시장 구조 재편 가속화\n• 전쟁과 AI 충격 복합 시나리오: 취약계층 이중 타격 경고",
       "evidence_titles": [
         "Gen-AI: Artificial Intelligence and the Future of Work",
         "AI Will Transform the Global Economy. Let's Make Sure It Benefits Humanity."
@@ -121,66 +107,42 @@
         "IMF_News"
       ],
       "strength": 4,
-      "trend": "신규",
-      "suwon_implication": "수원시 일자리 정책에 AI 전환 대비 재교육 프로그램 필수 반영. 취약계층 디지털 격차 해소 예산 확대 검토.",
+      "trend": "강화",
+      "suwon_implication": "수원시 일자리 정책이 '일자리 창출'→'전환 지원' 중심 재편 시급. AI 재교육, 취약계층 디지털 역량 강화 프로그램 확대 필요.",
       "is_structural": true,
-      "detected_date": "2026-06-04",
-      "first_detected": "2026-06-04"
+      "detected_date": "2026-06-04"
     },
     {
-      "signal_id": "sig_007",
-      "category": "무역공급망재편",
-      "title_ko": "해상 초크포인트 감시체계화",
-      "description": "• IMF PortWatch 시스템 'chokepoint6' 및 'eventc10000004' 모니터링, 주요 해협 실시간 감시 체계화\n• Port Monitor 통해 전쟁 영향 물류 흐름 구조적 추적 시스템 가동\n• 단순 데이터 수집 아닌 해상 공급망 위험의 상시 감시·조기경보 체제 전환",
+      "signal_id": "sig_006",
+      "category": "정책패러다임전환",
+      "title_ko": "재정정책 불확실성 시대 진입",
+      "description": "• IMF·보코니대·이탈리아중앙은행 공동 컨퍼런스: 'Fiscal Policy in an Era of Uncertainty'\n• 재정정책 설계 전제 자체가 '확실성'→'불확실성' 중심 전환 공식화\n• 단기 부양→장기 회복력 확보 정책 패러다임 전환 신호",
       "evidence_titles": [
-        "chokepoint6 - PortWatch",
-        "eventc10000004 - PortWatch",
-        "Port Monitor - PortWatch"
-      ],
-      "evidence_sources": [
-        "IMF_News",
-        "IMF_News",
-        "IMF_News"
-      ],
-      "strength": 3,
-      "trend": "신규",
-      "suwon_implication": "수원시 제조기업 수출입 물류비용 변동성 확대 예상. 중소기업 공급망 다변화 지원 프로그램 신설 검토.",
-      "is_structural": true,
-      "detected_date": "2026-06-04",
-      "first_detected": "2026-06-04"
-    },
-    {
-      "signal_id": "sig_008",
-      "category": "지역질서재편",
-      "title_ko": "중동 거버넌스 구조진단 체계화",
-      "description": "• 'Lebanon: Diagnostic of Governance and Corruption' 보고서, 중동 국가 거버넌스 구조적 진단 착수\n• 단순 경제지표가 아닌 지배구조·부패 시스템 분석을 통한 장기 안정성 평가 체계 도입\n• 전쟁 영향 지역의 구조적 회복력 진단을 국제기구 정례 업무로 편입",
-      "evidence_titles": [
-        "Lebanon: Diagnostic of Governance and Corruption"
+        "Joint IMF-Bocconi University-Bank of Italy conference on Fiscal Policy in an Era of Uncertainty"
       ],
       "evidence_sources": [
         "IMF_News"
       ],
       "strength": 3,
       "trend": "신규",
-      "suwon_implication": "수원시 외국인 근로자 지원정책 설계 시 출신국 장기 안정성 평가 기준 도입 검토. 난민·이주민 관련 중장기 대응체계 준비.",
+      "suwon_implication": "수원시 중기재정계획 수립 시 '시나리오 다변화' 필수. 예비비·긴급대응 예산 비중 확대, 유연성 강화 필요.",
       "is_structural": true,
       "detected_date": "2026-06-04",
       "first_detected": "2026-06-04"
     }
   ],
   "by_category": {
-    "정책패러다임전환": 4,
+    "정책패러다임전환": 3,
     "에너지안보재편": 1,
     "민생충격패턴": 1,
-    "무역공급망재편": 1,
-    "지역질서재편": 1
+    "무역공급망재편": 1
   },
-  "summary_ko": "• IMF·IEA·세계은행 등 국제기구가 경제정책 패러다임 전환을 공식화: 경제질서가 지정학·안보 중심으로 재편\n• 에너지 협력 기준이 '가격'에서 '신뢰·안보'로 전환, 장기 공급 안정성 우선 정책 권고\n• 2026 세계경제전망 부제 'Global Economy in the Shadow of War', 전쟁을 단기변수가 아닌 구조적 그림자로 규정\n• 산업·재정정책 목표가 성장에서 위기대응으로 전환, AI 경제변화는 인류 중심 관리 선언\n• 해상 초크포인트 실시간 감시체계·중동 거버넌스 구조진단 등 위기관리 시스템 상시화",
-  "top_signal": "지정경제학 중심 국제질서 전환",
-  "suwon_action": "• 지정학 리스크 반영한 중소기업 수출전략 재검토 및 에너지 취약계층 지원예산 구조적 확대 즉시 착수\n• 민생안정예산 편성 시 전쟁 장기화 시나리오 반영, 재정계획에 위험관리 우선 기준 도입 긴급 검토",
+  "summary_ko": "• 국제기구들이 '전쟁 상시화' 전제한 새 경제 운영 패러다임 공식화 - 효율성 중심 → 안보·회복력 중심 정책 전환\n• IMF가 지경학(Geoeconomics) 시리즈 연속 발간하며 경제정책 설계 기준 근본 재편 시도\n• 에너지·무역·금융 전방위 충격 경고와 함께 '가격' 아닌 '신뢰·안정성' 중심 파트너십 재편 신호\n• AI 노동시장 충격과 전쟁 리스크 복합 시나리오 부상 - 취약계층 이중 타격 구조화 우려\n• 재정정책 전제가 '확실성' → '불확실성' 중심으로 전환, 단기 부양보다 장기 회복력 확보 패러다임 대두",
+  "top_signal": "지경학 중심 정책 전환",
+  "suwon_action": "• 에너지 비용 장기 상승 전제한 저소득층 난방비 긴급 지원체계 점검 및 예비비 확보 즉시 착수\n• 정책 기준을 '효율성·성장' → '안보·회복력·민생 안전망' 중심 재설계 태스크포스 긴급 구성",
   "weekly_trend": {
     "정책패러다임전환": {
-      "count": 10,
+      "count": 9,
       "max_strength": 5
     },
     "민생충격패턴": {
@@ -188,7 +150,7 @@
       "max_strength": 4
     },
     "무역공급망재편": {
-      "count": 2,
+      "count": 3,
       "max_strength": 4
     },
     "지역질서재편": {
@@ -200,5 +162,5 @@
       "max_strength": 5
     }
   },
-  "generated_at": "2026-06-04T02:10:51.735294"
+  "generated_at": "2026-06-04T03:59:09.837050"
 }
