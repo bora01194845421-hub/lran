@@ -66,6 +66,20 @@ FEEDS_LOCAL_KR = {
     "Incheon_Ilbo": "https://www.incheonilbo.com/rss/allArticle.xml",
 }
 
+# ── 에너지·소상공인 정책 특화 피드 (지자체 대응 사실 기반 확보)
+FEEDS_KO_ENERGY_POLICY = {
+    # 에너지데일리 — 도시가스·전기요금·에너지복지 정책 전문
+    "Energydaily":  "https://www.energydaily.co.kr/rss/allArticle.xml",
+    # 이투뉴스 — 난방비·도시가스 전환·에너지효율 정책
+    "E2news":       "https://www.e2news.com/rss/allArticle.xml",
+    # 가스신문 — 도시가스 요금·LNG 수급·지역 공급사 정책
+    "Gasnews":      "https://www.gasnews.com/rss/allArticle.xml",
+    # 머니투데이 — 정부·지자체 경제정책 폭넓은 보도
+    "MoneyToday":   "https://rss.mt.co.kr/mt_news.xml",
+    # 연합뉴스 지방 — 지역별 지자체 정책 보도
+    "Yonhap_Local": "https://www.yna.co.kr/rss/local.xml",
+}
+
 # ── 지정학·각국 대응 동향 피드 (각국 대응 방안 + 이슈 발굴용)
 FEEDS_GEOPOLITICS = {
     "WarOnRocks":       "https://warontherocks.com/feed/",         # 군사·전략 심층분석
@@ -126,7 +140,7 @@ ALL_FEEDS = {
     **FEEDS_TIER1, **FEEDS_TIER2, **FEEDS_TIER3,
     **FEEDS_KO, **FEEDS_KO_POLICY,
     **FEEDS_GEOPOLITICS, **FEEDS_SPECIALIZED,
-    **FEEDS_LOCAL_KR,
+    **FEEDS_LOCAL_KR, **FEEDS_KO_ENERGY_POLICY,
 }
 
 # ── 공신력 점수 매핑 (정확성 기준)
@@ -183,4 +197,10 @@ CREDIBILITY = {
     "Jungbu_Ilbo":  7.5,
     "Incheon_Ilbo": 7.5,
     "Yonhap_Society": 8.5,
+    # 에너지·소상공인 정책 특화
+    "Energydaily":  7.8,
+    "E2news":       7.5,
+    "Gasnews":      7.8,
+    "MoneyToday":   8.0,
+    "Yonhap_Local": 8.5,
 }

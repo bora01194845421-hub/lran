@@ -67,4 +67,14 @@ SCRAPE_SOURCES = {
         "schedule":  "daily",
         "lang":      "ko",
     },
+    # 중소벤처기업부 보도자료 — 소상공인 긴급지원·에너지비용 정책 공식 발표
+    "MSS_Press": {
+        "url":       "https://www.mss.go.kr/site/smba/ex/bbs/List.do?cbIdx=86",
+        "title_sel": "td.subject a",
+        "date_sel":  "td.date, td.regDate",
+        "base_url":  "https://www.mss.go.kr",
+        "credibility": 9.0,
+        "schedule":  "daily",
+        "lang":      "ko",
+    },
 }
