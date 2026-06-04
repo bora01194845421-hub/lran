@@ -387,30 +387,40 @@ def run(target_date: str = None) -> Path:
     result["date"] = target_date
     result["generated_at"] = datetime.utcnow().isoformat()
 
-    # ── 후처리: 빈 타지자체 필드 자동 제거 ──────────────────────────────
-    # 수집된 사례 없는 lga_responses 항목 제거
-    EMPTY_MARKERS = ["수집된 사례 없음", "수집 기사 없음", "없음", ""]
+    # ── 후처리: 빈·무관 타지자체 필드 자동 제거 ─────────────────────────
+    # 빈 값 또는 "없음" 패턴을 나타내는 마커
+    EMPTY_MARKERS = [
+        "수집된 사례 없음", "수집 기사 없음", "확인되지 않음",
+        "확인 안 됨", "없음", "해당 없음", "",
+    ]
+
+    def _is_empty_val(val: str) -> bool:
+        if not val or not val.strip():
+            return True
+        for m in EMPTY_MARKERS:
+            if val.strip().startswith(m) or val.strip() == m:
+                return True
+        return False
+
+    # lga_responses: confirmed_action 없는 지자체 제거
     if "lga_responses" in result:
         result["lga_responses"] = [
             lga for lga in result["lga_responses"]
-            if lga.get("confirmed_action", "").strip() not in EMPTY_MARKERS
-            and not lga.get("confirmed_action", "").strip().startswith("수집된 사례 없음")
+            if not _is_empty_val(lga.get("confirmed_action", ""))
         ]
 
-    # 민생경제_분석 타지자체_현황 빈 값 제거
+    # 민생경제_분석 타지자체_현황: 빈 값 or 관련없음 언급 시 제거
     for section in result.get("민생경제_분석", {}).values():
         if isinstance(section, dict):
-            for key in ["타지자체_현황"]:
-                val = section.get(key, "")
-                if not val or any(m in val for m in EMPTY_MARKERS[:3]):
-                    section.pop(key, None)
+            val = section.get("타지자체_현황", "")
+            if _is_empty_val(val):
+                section.pop("타지자체_현황", None)
 
-    # 우선_대응과제 근거 빈 필드 제거
+    # 우선_대응과제 근거: 빈 필드 제거
     for task in result.get("우선_대응과제", []):
         근거 = task.get("근거", {})
         for key in ["타지자체_벤치마킹", "전문가_의견", "보고서_근거"]:
-            val = 근거.get(key, "")
-            if not val or any(m in val for m in EMPTY_MARKERS[:3]):
+            if _is_empty_val(근거.get(key, "")):
                 근거.pop(key, None)
 
     out_path = POLICY_DIR / f"minseang_{date_str}.json"
