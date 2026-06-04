@@ -1,166 +1,138 @@
 {
   "date": "2026-06-04",
-  "total_signals": 6,
-  "structural_signals": 6,
+  "total_signals": 5,
+  "structural_signals": 5,
   "signals": [
     {
       "signal_id": "sig_001",
-      "category": "정책패러다임전환",
-      "title_ko": "지경학 중심 정책 전환",
-      "description": "• IMF가 'Geoeconomics(지경학)' 시리즈 보고서 다수 발행하며 정책 프레임 전환 시도\n• 경제정책이 순수 효율성→안보·정치적 계산 중심으로 근본 재설계\n• 산업정책·국유화 신조류 분석 강화, 위기 대응 패러다임 변화 공식화",
-      "evidence_titles": [
-        "Geoeconomics, Rediscovered",
-        "Understanding Geoeconomics in a Volatile World",
-        "The Geoeconomic Calculus",
-        "The New Wave of Nationalization",
-        "Industrial Policy Is Adapting to Crises, but Remains Hard to Implement Effectively"
-      ],
-      "evidence_sources": [
-        "IMF_News",
-        "IMF_News",
-        "IMF_News",
-        "IMF_News",
-        "IMF_News"
-      ],
-      "strength": 5,
-      "trend": "신규",
-      "suwon_implication": "수원시 정책 벤치마킹 기준이 '효율성'에서 '안보·회복력' 중심으로 전환 필요. 취약계층 보호, 에너지 안정 공급 등 민생 안전망 정책 우선순위 재설계 시그널.",
-      "is_structural": true,
-      "detected_date": "2026-06-04",
-      "first_detected": "2026-06-04"
-    },
-    {
-      "signal_id": "sig_002",
       "category": "에너지안보재편",
-      "title_ko": "에너지 파트너십 기준 전환",
-      "description": "• IEA·IMF·세계은행·WTO 4개 기구 공동성명: 중동 전쟁이 에너지·무역·금융 전방위 타격\n• 에너지 확보 기준이 '가격'→'신뢰·안정성' 중심으로 구조 변화 예고\n• 다자기구 차원의 공식 경고, 단순 시장 대응 불가능 수준",
+      "title_ko": "OPEC 2050 전망 발표",
+      "description": "• OPEC가 World Oil Outlook 2050을 발표하며 장기 에너지 전망 시계를 2045→2050으로 연장\n• 화석연료 명칭 재검토 논의 시작: 'fossil fuel' 라벨 재정의 필요성 제기\n• 석유 수요 장기 전망과 공급 구조에 대한 OPEC의 전략적 입장 재정립 신호",
       "evidence_titles": [
-        "Joint Statement by the Heads of the International Energy Agency, International Monetary Fund, World Bank Group and World Trade Organization",
-        "How the War in the Middle East Is Affecting Energy, Trade, and Finance"
+        "World Oil Outlook 2050 - OPEC: Publications",
+        "Does the 'fossil fuel' label require a rethink?",
+        "Oil Outlook: Challenges and Opportunities"
       ],
       "evidence_sources": [
-        "IMF_News",
-        "IMF_News"
+        "OPEC",
+        "OPEC",
+        "OPEC"
       ],
-      "strength": 5,
+      "strength": 4,
       "trend": "신규",
-      "suwon_implication": "수원시 에너지 비용 장기 상승 불가피. 저소득층 난방비 지원, 공공시설 에너지 효율화 투자 등 구조적 대응 전략 수립 필요.",
+      "suwon_implication": "2050년까지 연장된 석유 의존 전망은 수원시의 장기 에너지 전환 로드맵 수정 필요성을 시사. 화석연료 재정의 논의는 탄소중립 정책 방향 재검토 근거로 작용 가능.",
       "is_structural": true,
       "detected_date": "2026-06-04",
       "first_detected": "2026-06-04"
     },
     {
       "signal_id": "sig_003",
-      "category": "민생충격패턴",
-      "title_ko": "전쟁 그림자 속 경제 운영",
-      "description": "• WEO 2026년 4월호 부제: 'Global Economy in the Shadow of War' - 전쟁을 전제로 한 경제 전망 시작\n• '전쟁 상시화' 시나리오 공식화: 일시적 충격 아닌 장기 구조 변수로 인식\n• 재정정책 압박·고채무 위험 동시 경고, 복합 위기 대응 패러다임 제시",
-      "evidence_titles": [
-        "World Economic Outlook, April 2026: Global Economy in the Shadow of War",
-        "War Darkens Global Economic Outlook and Reshapes Policy Priorities",
-        "Fiscal Policy under Pressure: High Debt, Rising Risks"
-      ],
-      "evidence_sources": [
-        "IMF_News",
-        "IMF_News",
-        "IMF_News"
-      ],
-      "strength": 4,
-      "trend": "신규",
-      "suwon_implication": "수원시 재정 운영이 '성장 투자'→'위기 완충' 중심 재편 필요. 취약계층 긴급 지원 예비비 확대, 민생 안전망 선제 강화 전략 검토.",
-      "is_structural": true,
-      "detected_date": "2026-06-04",
-      "first_detected": "2026-06-04"
-    },
-    {
-      "signal_id": "sig_004",
-      "category": "무역공급망재편",
-      "title_ko": "해운·항만 리스크 상시 모니터링",
-      "description": "• IMF가 'PortWatch' 시스템 통해 주요 초크포인트·항만 실시간 모니터링 공식화\n• 호르무즈·수에즈 등 해상 병목 리스크를 경제 정책 핵심 변수로 편입\n• 공급망 불안이 일시적 이슈 아닌 정책 설계 상수로 전환",
-      "evidence_titles": [
-        "chokepoint6 - PortWatch",
-        "Port Monitor - PortWatch",
-        "eventc10000004 - PortWatch"
-      ],
-      "evidence_sources": [
-        "IMF_News",
-        "IMF_News",
-        "IMF_News"
-      ],
-      "strength": 4,
-      "trend": "신규",
-      "suwon_implication": "수원시 제조기업 납품 비용 불확실성 증가. 중소기업 공급망 다변화 컨설팅, 물류비 지원 등 선제 대응책 필요.",
-      "is_structural": true,
-      "detected_date": "2026-06-04",
-      "first_detected": "2026-06-04"
-    },
-    {
-      "signal_id": "sig_005",
       "category": "정책패러다임전환",
-      "title_ko": "AI 노동시장 구조 전환",
-      "description": "• IMF가 Gen-AI의 일자리·불평등 영향 분석 보고서 발간, 정책 대응 촉구\n• 기술 충격이 전쟁과 무관하게 노동시장 구조 재편 가속화\n• 전쟁과 AI 충격 복합 시나리오: 취약계층 이중 타격 경고",
+      "title_ko": "통화정책-석유시장 연계 강화",
+      "description": "• OPEC가 '통화정책과 석유시장 영향'을 정규 분석 항목으로 채택\n• 중앙은행 금리정책이 석유 수요와 가격에 미치는 구조적 영향 인정\n• 에너지 가격 안정이 통화정책 독립성과 상충되는 딜레마 구조 가시화",
       "evidence_titles": [
-        "Gen-AI: Artificial Intelligence and the Future of Work",
-        "AI Will Transform the Global Economy. Let's Make Sure It Benefits Humanity."
+        "Monetary policies and their impact on the oil market - OPEC: Publications"
       ],
       "evidence_sources": [
-        "IMF_News",
-        "IMF_News"
+        "OPEC"
       ],
       "strength": 4,
+      "trend": "신규",
+      "suwon_implication": "한국은행 금리정책이 국제유가를 통해 수원시 난방비·교통비에 간접 영향. 민생안정 정책 설계 시 통화정책 변수 반영 필수.",
+      "is_structural": true,
+      "detected_date": "2026-06-04",
+      "first_detected": "2026-06-04"
+    },
+    {
+      "signal_id": "sig_002",
+      "category": "무역공급망재편",
+      "title_ko": "탱커시장 구조 변화",
+      "description": "• OPEC 월간보고서에서 탱커시장(Tanker market) 섹션을 독립 분석 항목으로 지속 강조\n• 해상 운송 경로와 비용 구조가 석유 공급망의 핵심 변수로 부상\n• 이란-미국 전쟁 국면에서 호르무즈 해협 등 주요 해로 의존도 재평가 중",
+      "evidence_titles": [
+        "Tanker market - OPEC: Publications",
+        "Tanker market - OPEC: Publications"
+      ],
+      "evidence_sources": [
+        "OPEC",
+        "OPEC"
+      ],
+      "strength": 3,
       "trend": "강화",
-      "suwon_implication": "수원시 일자리 정책이 '일자리 창출'→'전환 지원' 중심 재편 시급. AI 재교육, 취약계층 디지털 역량 강화 프로그램 확대 필요.",
+      "suwon_implication": "해운비 급등 시 수원시 제조기업의 원자재 조달비용 상승 불가피. 수출 중소기업 물류비 지원 정책 확대 검토 필요.",
       "is_structural": true,
       "detected_date": "2026-06-04"
     },
     {
-      "signal_id": "sig_006",
-      "category": "정책패러다임전환",
-      "title_ko": "재정정책 불확실성 시대 진입",
-      "description": "• IMF·보코니대·이탈리아중앙은행 공동 컨퍼런스: 'Fiscal Policy in an Era of Uncertainty'\n• 재정정책 설계 전제 자체가 '확실성'→'불확실성' 중심 전환 공식화\n• 단기 부양→장기 회복력 확보 정책 패러다임 전환 신호",
+      "signal_id": "sig_004",
+      "category": "지역질서재편",
+      "title_ko": "OPEC+ 협력선언 재강화",
+      "description": "• Declaration of Cooperation 문서 지속 강조: OPEC+가 생산 조정 협력체제 공고화\n• 러시아-사우디 중심의 석유 지정학 블록이 이란 사태에도 불구하고 유지\n• 석유 생산국 간 카르텔 성격 강화, 소비국의 가격 협상력 약화 신호",
       "evidence_titles": [
-        "Joint IMF-Bocconi University-Bank of Italy conference on Fiscal Policy in an Era of Uncertainty"
+        "Declaration of Cooperation - Organization of the Petroleum Exporting Countries",
+        "Press Releases - Organization of the Petroleum Exporting Countries"
       ],
       "evidence_sources": [
-        "IMF_News"
+        "OPEC",
+        "OPEC"
+      ],
+      "strength": 3,
+      "trend": "강화",
+      "suwon_implication": "한국의 석유 수입 교섭력 약화 가능성. 수원시는 에너지 다변화(재생에너지, LNG) 정책 가속화로 대응 필요.",
+      "is_structural": true,
+      "detected_date": "2026-06-04"
+    },
+    {
+      "signal_id": "sig_005",
+      "category": "민생충격패턴",
+      "title_ko": "원유가격 변동성 정례 모니터링",
+      "description": "• OPEC 월간보고서에서 '원유가격 움직임(Crude oil price movements)' 섹션 고정화\n• 단순 가격 보고가 아닌 변동성 패턴 분석으로 전환\n• 이란 전쟁이 단기 충격이 아닌 장기 불확실성 요인임을 암시",
+      "evidence_titles": [
+        "Crude oil price movements - OPEC: Publications",
+        "Crude Oil Price Movements - OPEC: Publications"
+      ],
+      "evidence_sources": [
+        "OPEC",
+        "OPEC"
       ],
       "strength": 3,
       "trend": "신규",
-      "suwon_implication": "수원시 중기재정계획 수립 시 '시나리오 다변화' 필수. 예비비·긴급대응 예산 비중 확대, 유연성 강화 필요.",
+      "suwon_implication": "단기 유가 급등보다 장기 변동성 확대가 수원시 저소득층에 더 큰 부담. 에너지바우처 예산 탄력 편성 체계 구축 필요.",
       "is_structural": true,
       "detected_date": "2026-06-04",
       "first_detected": "2026-06-04"
     }
   ],
   "by_category": {
-    "정책패러다임전환": 3,
     "에너지안보재편": 1,
-    "민생충격패턴": 1,
-    "무역공급망재편": 1
+    "무역공급망재편": 1,
+    "정책패러다임전환": 1,
+    "지역질서재편": 1,
+    "민생충격패턴": 1
   },
-  "summary_ko": "• 국제기구들이 '전쟁 상시화' 전제한 새 경제 운영 패러다임 공식화 - 효율성 중심 → 안보·회복력 중심 정책 전환\n• IMF가 지경학(Geoeconomics) 시리즈 연속 발간하며 경제정책 설계 기준 근본 재편 시도\n• 에너지·무역·금융 전방위 충격 경고와 함께 '가격' 아닌 '신뢰·안정성' 중심 파트너십 재편 신호\n• AI 노동시장 충격과 전쟁 리스크 복합 시나리오 부상 - 취약계층 이중 타격 구조화 우려\n• 재정정책 전제가 '확실성' → '불확실성' 중심으로 전환, 단기 부양보다 장기 회복력 확보 패러다임 대두",
-  "top_signal": "지경학 중심 정책 전환",
-  "suwon_action": "• 에너지 비용 장기 상승 전제한 저소득층 난방비 긴급 지원체계 점검 및 예비비 확보 즉시 착수\n• 정책 기준을 '효율성·성장' → '안보·회복력·민생 안전망' 중심 재설계 태스크포스 긴급 구성",
+  "summary_ko": "• OPEC가 2050년까지 석유 의존 전망을 연장하며 화석연료 재정의 논의 시작, 탄소중립 패러다임 재검토 신호\n• 탱커시장·통화정책·원유가격 변동성을 독립 분석항목으로 격상, 에너지 안보가 금융·물류와 구조적 결합\n• OPEC+ 협력체제 공고화로 석유 생산국 카르텔 강화, 소비국 교섭력 약화 국면 진입\n• 이란 전쟁이 단기 충격이 아닌 장기 불확실성 요인으로 자리잡으며 해운비·원자재비 상승 구조화\n• 통화정책-에너지가격 연계 강화로 한국은행 금리정책이 수원시 민생에 미치는 간접경로 확대",
+  "top_signal": "통화정책-석유시장 연계 강화",
+  "suwon_action": "• 에너지바우처 예산을 유가 변동성 연동 탄력편성 체계로 전환 검토 착수\n• 제조 중소기업 대상 해운비·원자재비 급등 모니터링 및 긴급 유동성 지원방안 사전 설계",
   "weekly_trend": {
     "정책패러다임전환": {
-      "count": 9,
-      "max_strength": 5
+      "count": 8,
+      "max_strength": 4
     },
     "민생충격패턴": {
       "count": 3,
-      "max_strength": 4
+      "max_strength": 3
     },
     "무역공급망재편": {
       "count": 3,
       "max_strength": 4
     },
     "지역질서재편": {
-      "count": 1,
+      "count": 2,
       "max_strength": 3
     },
     "에너지안보재편": {
       "count": 1,
-      "max_strength": 5
+      "max_strength": 4
     }
   },
-  "generated_at": "2026-06-04T03:59:09.837050"
+  "generated_at": "2026-06-04T08:44:51.976362"
 }

@@ -1,0 +1,390 @@
+{
+  "date": "2026-06-04",
+  "generated_at": "2026-06-04T13:18:12.622331",
+  "stats": {
+    "articles": 15,
+    "claims": 30
+  },
+  "items": [
+    {
+      "category": "energy",
+      "items": [
+        {
+          "article": {
+            "title": "Impacts of Middle East conflict set to reshape energy investment plans as disruptions put focus on security - IEA – International Energy Agency",
+            "source": "IEA_News",
+            "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQY3liOWVXZWdLNWN5UlJpWlhLN3lPSDg1SUU0MVZLWC12OWhRaGtKZlhOY01mbW1wZE1wc0stYTZRYXhFSkV5MzJhMTBZc1ItUWN1UTFQd3FpRFlNU3VNNDRfZ0dmdTRDWDA0aGIyb1JwWWRWVXZfMGJHMzF4V0hwTjk5bm9STWhzd0NmckdpRFBxSWRaRkVoSEVpWktUZ2oyb2UtOUZJNGt4bTByamhaSnJhdGVPWHZFd09KM0NfM21uc191QmxaLVJ5ZHQ?oc=5",
+            "importance": 5,
+            "published": "Thu, 28 May 2026 04:00:00 GMT"
+          },
+          "queries": [
+            {
+              "claim": "IEA가 중동 분쟁이 에너지 투자 계획을 재편성하고 있다는 보고서를 발표했다",
+              "query": "다음 주장이 사실인지 최신 뉴스를 검색해서 확인해줘. 출처·날짜와 함께 검증됨/불일치/미확인으로 답해줘:\n「IEA가 중동 분쟁이 에너지 투자 계획을 재편성하고 있다는 보고서를 발표했다」",
+              "checked": false,
+              "result": ""
+            },
+            {
+              "claim": "호르무즈 해협 봉쇄로 인한 석유 공급 차질이 발생했다",
+              "query": "다음 주장이 사실인지 최신 뉴스를 검색해서 확인해줘. 출처·날짜와 함께 검증됨/불일치/미확인으로 답해줘:\n「호르무즈 해협 봉쇄로 인한 석유 공급 차질이 발생했다」",
+              "checked": false,
+              "result": ""
+            }
+          ]
+        },
+        {
+          "article": {
+            "title": "Trump’s Iran war drains US oil stocks to lowest level since 2004",
+            "source": "FT_World",
+            "url": "https://www.ft.com/content/d0be73c8-b8d8-4ffd-874e-e97a6ecffef7",
+            "importance": 5,
+            "published": "Wed, 03 Jun 2026 18:08:06 GMT"
+          },
+          "queries": [
+            {
+              "claim": "미국 석유 재고가 2004년 이후 최저 수준까지 하락했다",
+              "query": "다음 주장이 사실인지 최신 뉴스를 검색해서 확인해줘. 출처·날짜와 함께 검증됨/불일치/미확인으로 답해줘:\n「미국 석유 재고가 2004년 이후 최저 수준까지 하락했다」",
+              "checked": false,
+              "result": ""
+            },
+            {
+              "claim": "트럼프 행정부 시기 이란과의 군사적 충돌이 발생했다",
+              "query": "다음 주장이 사실인지 최신 뉴스를 검색해서 확인해줘. 출처·날짜와 함께 검증됨/불일치/미확인으로 답해줘:\n「트럼프 행정부 시기 이란과의 군사적 충돌이 발생했다」",
+              "checked": false,
+              "result": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "country_response",
+      "items": [
+        {
+          "article": {
+            "title": "Republican-led House deals blow to Trump over Iran war",
+            "source": "FT_World",
+            "url": "https://www.ft.com/content/6fbbc60c-155c-42a7-81b6-50e24e0bb706",
+            "importance": 5,
+            "published": "Wed, 03 Jun 2026 22:57:18 GMT"
+          },
+          "queries": [
+            {
+              "claim": "미 하원이 트럼프 대통령의 의회 승인 없는 이란 공격을 제한하는 법안을 통과시켰다",
+              "query": "다음 주장이 사실인지 최신 뉴스를 검색해서 확인해줘. 출처·날짜와 함께 검증됨/불일치/미확인으로 답해줘:\n「미 하원이 트럼프 대통령의 의회 승인 없는 이란 공격을 제한하는 법안을 통과시켰다」",
+              "checked": false,
+              "result": ""
+            },
+            {
+              "claim": "공화당이 주도하는 미 하원이 대통령의 추가 중동 공습을 제동하는 법안을 가결했다",
+              "query": "다음 주장이 사실인지 최신 뉴스를 검색해서 확인해줘. 출처·날짜와 함께 검증됨/불일치/미확인으로 답해줘:\n「공화당이 주도하는 미 하원이 대통령의 추가 중동 공습을 제동하는 법안을 가결했다」",
+              "checked": false,
+              "result": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "military",
+      "items": [
+        {
+          "article": {
+            "title": "US says it struck Iranian radar sites as Iran targets American forces in Kuwait",
+            "source": "BBC_MidEast",
+            "url": "https://www.bbc.com/news/articles/crlpy8n7pr6o?at_medium=RSS&at_campaign=rss",
+            "importance": 5,
+            "published": "Mon, 01 Jun 2026 13:12:26 GMT"
+          },
+          "queries": [
+            {
+              "claim": "미국이 이란의 레이더 기지를 공격했다",
+              "query": "다음 주장이 사실인지 최신 뉴스를 검색해서 확인해줘. 출처·날짜와 함께 검증됨/불일치/미확인으로 답해줘:\n「미국이 이란의 레이더 기지를 공격했다」",
+              "checked": false,
+              "result": ""
+            },
+            {
+              "claim": "이란이 쿠웨이트에 위치한 미군 기지를 목표로 공격했다",
+              "query": "다음 주장이 사실인지 최신 뉴스를 검색해서 확인해줘. 출처·날짜와 함께 검증됨/불일치/미확인으로 답해줘:\n「이란이 쿠웨이트에 위치한 미군 기지를 목표로 공격했다」",
+              "checked": false,
+              "result": ""
+            }
+          ]
+        },
+        {
+          "article": {
+            "title": "Iran Launches Deadly Attack on Kuwait’s Main Airport",
+            "source": "ForeignPolicy",
+            "url": "https://foreignpolicy.com/2026/06/03/iran-attack-kuwait-airport-us-war-cease-fire-talks-oecd/",
+            "importance": 5,
+            "published": "Wed, 03 Jun 2026 20:38:14 +0000"
+          },
+          "queries": [
+            {
+              "claim": "이란이 쿠웨이트의 주요 공항을 공격했다",
+              "query": "다음 주장이 사실인지 최신 뉴스를 검색해서 확인해줘. 출처·날짜와 함께 검증됨/불일치/미확인으로 답해줘:\n「이란이 쿠웨이트의 주요 공항을 공격했다」",
+              "checked": false,
+              "result": ""
+            },
+            {
+              "claim": "쿠웨이트 공항 공격으로 사망자가 발생했다",
+              "query": "다음 주장이 사실인지 최신 뉴스를 검색해서 확인해줘. 출처·날짜와 함께 검증됨/불일치/미확인으로 답해줘:\n「쿠웨이트 공항 공격으로 사망자가 발생했다」",
+              "checked": false,
+              "result": ""
+            }
+          ]
+        },
+        {
+          "article": {
+            "title": "Trump news at a glance: US and Iran exchange fresh strikes",
+            "source": "Guardian_Iran",
+            "url": "https://www.theguardian.com/us-news/2026/jun/02/trump-news-latest-updates-today",
+            "importance": 5,
+            "published": "Wed, 03 Jun 2026 01:39:42 GMT"
+          },
+          "queries": [
+            {
+              "claim": "미국이 호르무즈 해협에서 봉쇄를 시도한 유조선에 헬파이어 미사일을 발사했다",
+              "query": "다음 주장이 사실인지 최신 뉴스를 검색해서 확인해줘. 출처·날짜와 함께 검증됨/불일치/미확인으로 답해줘:\n「미국이 호르무즈 해협에서 봉쇄를 시도한 유조선에 헬파이어 미사일을 발사했다」",
+              "checked": false,
+              "result": ""
+            },
+            {
+              "claim": "트럼프 행정부가 이란과 휴전 협정 체결을 시도하고 있다",
+              "query": "다음 주장이 사실인지 최신 뉴스를 검색해서 확인해줘. 출처·날짜와 함께 검증됨/불일치/미확인으로 답해줘:\n「트럼프 행정부가 이란과 휴전 협정 체결을 시도하고 있다」",
+              "checked": false,
+              "result": ""
+            }
+          ]
+        },
+        {
+          "article": {
+            "title": "[영상] 이란, 쿠웨이트 국제공항 드론 공격…바레인에도 미사일",
+            "source": "Yonhap",
+            "url": "https://www.yna.co.kr/view/AKR20260604115700704",
+            "importance": 5,
+            "published": "Thu, 4 Jun 2026 11:50:53 +0900"
+          },
+          "queries": [
+            {
+              "claim": "이란이 쿠웨이트 국제공항에 드론 공격을 감행했다",
+              "query": "다음 주장이 사실인지 최신 뉴스를 검색해서 확인해줘. 출처·날짜와 함께 검증됨/불일치/미확인으로 답해줘:\n「이란이 쿠웨이트 국제공항에 드론 공격을 감행했다」",
+              "checked": false,
+              "result": ""
+            },
+            {
+              "claim": "이란이 바레인에 미사일 공격을 했다",
+              "query": "다음 주장이 사실인지 최신 뉴스를 검색해서 확인해줘. 출처·날짜와 함께 검증됨/불일치/미확인으로 답해줘:\n「이란이 바레인에 미사일 공격을 했다」",
+              "checked": false,
+              "result": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "diplomacy",
+      "items": [
+        {
+          "article": {
+            "title": "Trump seeking edits to US-Iran deal, US media report",
+            "source": "BBC_MidEast",
+            "url": "https://www.bbc.com/news/articles/c1w2xve315do?at_medium=RSS&at_campaign=rss",
+            "importance": 5,
+            "published": "Sun, 31 May 2026 22:54:20 GMT"
+          },
+          "queries": [
+            {
+              "claim": "트럼프 행정부가 미국-이란 핵협상에서 호르무즈 해협 관련 조항을 변경 사항으로 제시했다",
+              "query": "다음 주장이 사실인지 최신 뉴스를 검색해서 확인해줘. 출처·날짜와 함께 검증됨/불일치/미확인으로 답해줘:\n「트럼프 행정부가 미국-이란 핵협상에서 호르무즈 해협 관련 조항을 변경 사항으로 제시했다」",
+              "checked": false,
+              "result": ""
+            },
+            {
+              "claim": "미국-이란 핵협상 수정안에 고농축 우라늄 제거 조항이 포함되어 있다",
+              "query": "다음 주장이 사실인지 최신 뉴스를 검색해서 확인해줘. 출처·날짜와 함께 검증됨/불일치/미확인으로 답해줘:\n「미국-이란 핵협상 수정안에 고농축 우라늄 제거 조항이 포함되어 있다」",
+              "checked": false,
+              "result": ""
+            }
+          ]
+        },
+        {
+          "article": {
+            "title": "Israel and Lebanon Renew Cease-Fire, Calling for Evacuation of Hezbollah Operatives",
+            "source": "NYT_World",
+            "url": "https://www.nytimes.com/2026/06/03/world/middleeast/israel-lebanon-ceasefire-hezbollah.html",
+            "importance": 5,
+            "published": "Thu, 04 Jun 2026 02:42:17 +0000"
+          },
+          "queries": [
+            {
+              "claim": "이스라엘과 레바논이 휴전을 재개하며 헤즈볼라 요원 철수를 요청했다",
+              "query": "다음 주장이 사실인지 최신 뉴스를 검색해서 확인해줘. 출처·날짜와 함께 검증됨/불일치/미확인으로 답해줘:\n「이스라엘과 레바논이 휴전을 재개하며 헤즈볼라 요원 철수를 요청했다」",
+              "checked": false,
+              "result": ""
+            },
+            {
+              "claim": "헤즈볼라는 이란의 지원을 받는 조직이다",
+              "query": "다음 주장이 사실인지 최신 뉴스를 검색해서 확인해줘. 출처·날짜와 함께 검증됨/불일치/미확인으로 답해줘:\n「헤즈볼라는 이란의 지원을 받는 조직이다」",
+              "checked": false,
+              "result": ""
+            }
+          ]
+        },
+        {
+          "article": {
+            "title": "Israel and Lebanon agree to renew ceasefire as Trump seeks to overcome barriers to Iran deal",
+            "source": "Guardian_Iran",
+            "url": "https://www.theguardian.com/world/2026/jun/04/israel-lebanon-renew-ceasefire-hezbollah-trump-iran-deal-middle-east-us",
+            "importance": 5,
+            "published": "Thu, 04 Jun 2026 03:22:55 GMT"
+          },
+          "queries": [
+            {
+              "claim": "미국 행정부가 이스라엘과 레바논의 휴전 협정 갱신 합의를 발표했다",
+              "query": "다음 주장이 사실인지 최신 뉴스를 검색해서 확인해줘. 출처·날짜와 함께 검증됨/불일치/미확인으로 답해줘:\n「미국 행정부가 이스라엘과 레바논의 휴전 협정 갱신 합의를 발표했다」",
+              "checked": false,
+              "result": ""
+            },
+            {
+              "claim": "휴전 협정은 이란 정렬 무장조직 헤즈볼라의 완전한 사격 중단을 전제 조건으로 한다",
+              "query": "다음 주장이 사실인지 최신 뉴스를 검색해서 확인해줘. 출처·날짜와 함께 검증됨/불일치/미확인으로 답해줘:\n「휴전 협정은 이란 정렬 무장조직 헤즈볼라의 완전한 사격 중단을 전제 조건으로 한다」",
+              "checked": false,
+              "result": ""
+            }
+          ]
+        },
+        {
+          "article": {
+            "title": "Israel, Lebanon agree to conditional ceasefire",
+            "source": "AlMonitor",
+            "url": "https://www.al-monitor.com/originals/2026/06/israel-lebanon-agree-conditional-ceasefire",
+            "importance": 5,
+            "published": "2026-06-03T21:00:19-0400"
+          },
+          "queries": [
+            {
+              "claim": "이스라엘과 레바논이 미국 중재 하에 조건부 휴전에 합의했다",
+              "query": "다음 주장이 사실인지 최신 뉴스를 검색해서 확인해줘. 출처·날짜와 함께 검증됨/불일치/미확인으로 답해줘:\n「이스라엘과 레바논이 미국 중재 하에 조건부 휴전에 합의했다」",
+              "checked": false,
+              "result": ""
+            },
+            {
+              "claim": "레바논 남부 리타니 강 남쪽에서 헤즈볼라의 완전 철수를 휴전 조건으로 설정했다",
+              "query": "다음 주장이 사실인지 최신 뉴스를 검색해서 확인해줘. 출처·날짜와 함께 검증됨/불일치/미확인으로 답해줘:\n「레바논 남부 리타니 강 남쪽에서 헤즈볼라의 완전 철수를 휴전 조건으로 설정했다」",
+              "checked": false,
+              "result": ""
+            }
+          ]
+        },
+        {
+          "article": {
+            "title": "Israel and Lebanon agree to implement ceasefire",
+            "source": "AlMonitor",
+            "url": "https://www.al-monitor.com/originals/2026/06/israel-and-lebanon-agree-implement-ceasefire",
+            "importance": 5,
+            "published": "2026-06-03T19:36:39-0400"
+          },
+          "queries": [
+            {
+              "claim": "레바논과 이스라엘이 미국 중재로 워싱턴에서 휴전 협상을 진행했다",
+              "query": "다음 주장이 사실인지 최신 뉴스를 검색해서 확인해줘. 출처·날짜와 함께 검증됨/불일치/미확인으로 답해줘:\n「레바논과 이스라엘이 미국 중재로 워싱턴에서 휴전 협상을 진행했다」",
+              "checked": false,
+              "result": ""
+            },
+            {
+              "claim": "휴전 조건으로 헤즈볼라의 리타니강 남쪽 지역 철수가 포함되었다",
+              "query": "다음 주장이 사실인지 최신 뉴스를 검색해서 확인해줘. 출처·날짜와 함께 검증됨/불일치/미확인으로 답해줘:\n「휴전 조건으로 헤즈볼라의 리타니강 남쪽 지역 철수가 포함되었다」",
+              "checked": false,
+              "result": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "economy",
+      "items": [
+        {
+          "article": {
+            "title": "OECD predicts spate of recessions globally if Iran conflict drags into 2027",
+            "source": "Guardian_Iran",
+            "url": "https://www.theguardian.com/business/2026/jun/03/oecd-predicts-spate-of-recessions-globally-if-iran-conflict-drags-into-2027",
+            "importance": 5,
+            "published": "Wed, 03 Jun 2026 07:00:45 GMT"
+          },
+          "queries": [
+            {
+              "claim": "OECD가 글로벌 GDP 성장률이 2025년 3.4%에서 2026년 2.1%로 하락할 것으로 전망했다",
+              "query": "다음 주장이 사실인지 최신 뉴스를 검색해서 확인해줘. 출처·날짜와 함께 검증됨/불일치/미확인으로 답해줘:\n「OECD가 글로벌 GDP 성장률이 2025년 3.4%에서 2026년 2.1%로 하락할 것으로 전망했다」",
+              "checked": false,
+              "result": ""
+            },
+            {
+              "claim": "OECD가 이란 분쟁이 2027년까지 지속될 경우 전 세계 경기침체를 예측하는 보고서를 발표했다",
+              "query": "다음 주장이 사실인지 최신 뉴스를 검색해서 확인해줘. 출처·날짜와 함께 검증됨/불일치/미확인으로 답해줘:\n「OECD가 이란 분쟁이 2027년까지 지속될 경우 전 세계 경기침체를 예측하는 보고서를 발표했다」",
+              "checked": false,
+              "result": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "nuclear",
+      "items": [
+        {
+          "article": {
+            "title": "Iran's covert nuclear risk higher after war as IAEA access constrained: Report",
+            "source": "AlMonitor",
+            "url": "https://www.al-monitor.com/originals/2026/06/irans-covert-nuclear-risk-higher-after-war-iaea-access-constrained-report",
+            "importance": 5,
+            "published": "2026-06-03T13:43:42-0400"
+          },
+          "queries": [
+            {
+              "claim": "이란은 60% 농축 우라늄 440.9kg을 보유하고 있다",
+              "query": "다음 주장이 사실인지 최신 뉴스를 검색해서 확인해줘. 출처·날짜와 함께 검증됨/불일치/미확인으로 답해줘:\n「이란은 60% 농축 우라늄 440.9kg을 보유하고 있다」",
+              "checked": false,
+              "result": ""
+            },
+            {
+              "claim": "핵무기 제조에는 90% 농축도의 무기급 우라늄이 필요하다",
+              "query": "다음 주장이 사실인지 최신 뉴스를 검색해서 확인해줘. 출처·날짜와 함께 검증됨/불일치/미확인으로 답해줘:\n「핵무기 제조에는 90% 농축도의 무기급 우라늄이 필요하다」",
+              "checked": false,
+              "result": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "food_security",
+      "items": [
+        {
+          "article": {
+            "title": "The Iran War’s Forgotten Front: Global Food Insecurity and the Limits of U.S. Aid",
+            "source": "CFR_Iran",
+            "url": "https://www.cfr.org/articles/the-iran-wars-forgotten-front-global-food-insecurity-and-the-limits-of-u-s-aid",
+            "importance": 5,
+            "published": "2026-06-03T13:00:00.000Z"
+          },
+          "queries": [
+            {
+              "claim": "이란 전쟁으로 인해 중동 지역의 식량 생산과 유통이 전면 마비 상태에 있다.",
+              "query": "다음 주장이 사실인지 최신 뉴스를 검색해서 확인해줘. 출처·날짜와 함께 검증됨/불일치/미확인으로 답해줘:\n「이란 전쟁으로 인해 중동 지역의 식량 생산과 유통이 전면 마비 상태에 있다.」",
+              "checked": false,
+              "result": ""
+            },
+            {
+              "claim": "미국의 대외 원조로 인한 글로벌 식량 안보 위기 대응에 한계가 있다.",
+              "query": "다음 주장이 사실인지 최신 뉴스를 검색해서 확인해줘. 출처·날짜와 함께 검증됨/불일치/미확인으로 답해줘:\n「미국의 대외 원조로 인한 글로벌 식량 안보 위기 대응에 한계가 있다.」",
+              "checked": false,
+              "result": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
