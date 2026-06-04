@@ -101,6 +101,13 @@ def run(target_date: str = None):
     except ImportError:
         logger.info("  country_response_tracker 없음")
 
+    # ── Layer 3.5: 사실 검증 (선택적 — 실패해도 파이프라인 계속)
+    try:
+        import fact_checker
+        safe("fact_checker", fact_checker.run, target_date)
+    except ImportError:
+        logger.info("  fact_checker 없음 — 건너뜀")
+
     try:
         import minseang_analyzer
         safe("minseang_analyzer", minseang_analyzer.run, target_date)

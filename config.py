@@ -25,19 +25,23 @@ COUNTRY_RESPONSE_DIR  = DATA_DIR / "country_response"
 DB_PATH      = BASE_DIR / "iran_news.db"
 LOG_PATH     = BASE_DIR / "iran_agent.log"
 
+FACT_CHECK_DIR = DATA_DIR / "fact_check"
+
 for d in [RAW_DIR, CLEAN_DIR, ANALYZED_DIR, REPORTS_DIR,
           INTL_DIR, RESEARCH_DIR, DOMESTIC_DIR,
-          PARADIGM_DIR, POLICY_DIR, YT_DIR, COUNTRY_RESPONSE_DIR]:
+          PARADIGM_DIR, POLICY_DIR, YT_DIR, COUNTRY_RESPONSE_DIR,
+          FACT_CHECK_DIR]:
     d.mkdir(parents=True, exist_ok=True)
 
-ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY", "")
-NEWSAPI_KEY       = os.getenv("NEWSAPI_KEY", "")
-GUARDIAN_API_KEY  = os.getenv("GUARDIAN_API_KEY", "")
-NYT_API_KEY       = os.getenv("NYT_API_KEY", "")
-BRAVE_API_KEY     = os.getenv("BRAVE_API_KEY", "")
-OPINET_API_KEY    = os.getenv("OPINET_API_KEY", "")
-KOSIS_API_KEY     = os.getenv("KOSIS_API_KEY", "")   # kosis.kr/openapi 무료 발급
-YT_API_KEY        = os.getenv("YOUTUBE_API_KEY", "")
+ANTHROPIC_API_KEY  = os.getenv("ANTHROPIC_API_KEY", "")
+NEWSAPI_KEY        = os.getenv("NEWSAPI_KEY", "")
+GUARDIAN_API_KEY   = os.getenv("GUARDIAN_API_KEY", "")
+NYT_API_KEY        = os.getenv("NYT_API_KEY", "")
+BRAVE_API_KEY      = os.getenv("BRAVE_API_KEY", "")
+OPINET_API_KEY     = os.getenv("OPINET_API_KEY", "")
+KOSIS_API_KEY      = os.getenv("KOSIS_API_KEY", "")   # kosis.kr/openapi 무료 발급
+YT_API_KEY         = os.getenv("YOUTUBE_API_KEY", "")
+PERPLEXITY_API_KEY = os.getenv("PERPLEXITY_API_KEY", "")  # 사실검증 모듈용 (선택)
 
 KEYWORDS_EN = [
     # ── 이란 직접 (단독 포함)
