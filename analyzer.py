@@ -34,7 +34,7 @@ USER_PROMPT_TEMPLATE = """다음 기사 목록을 분석해서 JSON 배열로 �
 
 각 기사에 대해 다음 필드를 포함한 JSON 객체를 반환하세요:
 - id: 원본 id 그대로
-- category: 다음 중 하나 → military / diplomacy / energy / economy / humanitarian / nuclear / korea / paradigm / country_response
+- category: 다음 중 하나 → military / diplomacy / energy / economy / humanitarian / nuclear / korea / paradigm / country_response / transport / food_security / semiconductor / cyber / environment
 - summary_ko: 한국어 3줄 요약 (각 줄은 "• "로 시작, \\n으로 구분)
 - keywords: 핵심 키워드 배열 (인물명, 지명, 사건명 최대 5개)
 - importance: 중요도 1~5 (5=최고, 오늘 전황에 미치는 영향 기준)
@@ -42,8 +42,20 @@ USER_PROMPT_TEMPLATE = """다음 기사 목록을 분석해서 JSON 배열로 �
 - related_country: 이 기사와 관련된 국가·세력 배열 (예: ["중국","러시아"]) — 해당 없으면 빈 배열
 
 카테고리 선택 기준:
-- country_response: 특정 국가·세력이 이란전쟁에 대해 취하는 행동·성명·정책 변화
+- military: 전투·공습·군사작전·병력·무기 관련
+- diplomacy: 외교협상·유엔·국제기구·협정·제재 관련
+- energy: 유가·LNG·원유·에너지 수급 관련
+- economy: 금융·무역·환율·인플레이션·공급망 관련
+- humanitarian: 인도주의·난민·민간인 피해·구호 관련
+- nuclear: 핵·원전·방사성 물질 관련
+- korea: 한국 국내 정책·부처 대응·국내 영향 관련
 - paradigm: 기존 지정학·에너지·군사·경제 질서가 변화하는 신호나 분석
+- country_response: 특정 국가·세력이 이란전쟁에 대해 취하는 행동·성명·정책 변화
+- transport: 해운·항공·물류·컨테이너운임·항로변경·전쟁보험 관련
+- food_security: 식량·농업·비료(요소·암모니아)·식품가격 관련
+- semiconductor: 반도체·헬륨·브롬·특수가스·첨단산업 공급망 관련
+- cyber: 사이버공격·해킹·ICS/SCADA·드론기술·정보전 관련
+- environment: 원유유출·환경오염·재생에너지 전환·기후 관련
 
 반환 예시:
 [

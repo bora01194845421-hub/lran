@@ -69,8 +69,52 @@ FEEDS_GEOPOLITICS = {
     "RUSI":             "https://rusi.org/rss.xml",                # 영국 왕립국방안보연구소
 }
 
+# ── 전문 분야별 피드 (신규 추가 — 접속 테스트 통과 소스만 포함)
+FEEDS_SPECIALIZED = {
+
+    # 〔교통·물류·해운〕
+    # Splash247: 해운 전문 미디어 (호르무즈 항로 변경·운임 분석)
+    "Splash247":        "https://splash247.com/feed/",
+    # FreightWaves: 물류·컨테이너 운임 전문 분석
+    "FreightWaves":     "https://www.freightwaves.com/news/feed",
+    # FlightGlobal: 항공사 비상경영·전쟁보험·항공화물
+    "FlightGlobal":     "https://www.flightglobal.com/rss/",
+    # AviationWeek: 중동 항공망 재편·항공유 위기
+    "AviationWeek":     "https://aviationweek.com/rss.xml",
+
+    # 〔에너지·유가〕
+    # OilPrice: 유가·에너지 시장 분석 (호르무즈 봉쇄 직접 영향)
+    "OilPrice":         "https://oilprice.com/rss/main",
+
+    # 〔인도주의·난민〕
+    # ReliefWeb Iran: OCHA 이란 인도주의 업데이트 (이란 이재민·의료)
+    "ReliefWeb_Iran":   "https://reliefweb.int/updates/rss.xml?primary_country=irn",
+    # Refugees International: 이란 난민·인도주의 위기
+    "RefugeesIntl":     "https://www.refugeesinternational.org/feed",
+
+    # 〔사이버·안보〕
+    # Krebs on Security: ICS/SCADA 이란 사이버 해킹 심층 분석
+    "KrebsSecurity":    "https://krebsonsecurity.com/feed/",
+
+    # 〔반도체·IT·첨단산업〕
+    # EE Times: 반도체 공급망·헬륨·브롬·특수가스 이란전쟁 영향
+    "EETimes":          "https://www.eetimes.com/feed/",
+
+    # 〔환경·기후·에너지 전환〕
+    # Grist Energy: 이란전쟁 이후 재생에너지 전환 가속 분석
+    "Grist_Energy":     "https://grist.org/energy/feed/",
+
+    # 〔외교·다자관계〕
+    # International Crisis Group: 이란 외교·분쟁 실시간 분석
+    "CrisisGroup":      "https://www.crisisgroup.org/rss.xml",
+}
+
 # ── 전체 통합
-ALL_FEEDS = {**FEEDS_TIER1, **FEEDS_TIER2, **FEEDS_TIER3, **FEEDS_KO, **FEEDS_KO_POLICY, **FEEDS_GEOPOLITICS}
+ALL_FEEDS = {
+    **FEEDS_TIER1, **FEEDS_TIER2, **FEEDS_TIER3,
+    **FEEDS_KO, **FEEDS_KO_POLICY,
+    **FEEDS_GEOPOLITICS, **FEEDS_SPECIALIZED,
+}
 
 # ── 공신력 점수 매핑 (정확성 기준)
 CREDIBILITY = {
@@ -109,4 +153,16 @@ CREDIBILITY = {
     "EurasiaNet": 8.0,
     "MEI": 8.5,
     "RUSI": 8.7,
+    # 전문 분야 신규 (접속 테스트 통과)
+    "Splash247":     7.8,   # 해운
+    "FreightWaves":  8.0,   # 물류·컨테이너
+    "FlightGlobal":  8.3,   # 항공
+    "AviationWeek":  8.5,   # 항공
+    "OilPrice":      7.8,   # 에너지·유가
+    "ReliefWeb_Iran":8.5,   # 인도주의
+    "RefugeesIntl":  8.2,   # 난민
+    "KrebsSecurity": 8.5,   # 사이버
+    "EETimes":       8.0,   # 반도체·IT
+    "Grist_Energy":  7.5,   # 환경·에너지전환
+    "CrisisGroup":   9.0,   # 외교·분쟁
 }

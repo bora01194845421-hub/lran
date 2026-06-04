@@ -61,7 +61,72 @@ KEYWORDS_EN = [
     "shipping disruption", "suez canal", "supply chain",
     "tanker attack", "naval blockade", "oil tanker",
     "global inflation", "war economy",
+
+    # ══ 신규 추가 키워드 ══
+
+    # ── 교통·물류·해운
+    "cape of good hope rerouting", "war risk insurance marine",
+    "container freight surge", "freight rate Iran",
+    "shipping surcharge gulf", "hormuz shipping lane",
+    "port congestion diversion", "SCFI freight index",
+    "multimodal transport Iran", "air cargo disruption",
+
+    # ── 금융·통화·외환
+    "war risk premium", "capital outflow Iran war",
+    "CDS spread emerging market", "oil shock currency",
+    "Iran sanctions cryptocurrency", "petrodollar",
+    "sovereign wealth fund Gulf", "war bond",
+
+    # ── 식량·농업
+    "urea fertilizer Iran war", "ammonia shortage",
+    "food security hormuz", "fertilizer price spike",
+    "nitrogen fertilizer shortage", "food inflation Iran",
+    "wheat corn supply disruption", "Ras Laffan fertilizer",
+
+    # ── 반도체·첨단산업
+    "helium shortage semiconductor", "ras laffan helium",
+    "bromine photoresist supply", "specialty gas chip",
+    "neon krypton xenon chip", "semiconductor supply Iran",
+    "Korea fab helium procurement",
+
+    # ── 사이버·안보
+    "Iran cyber attack", "IRGC cyber", "CyberAv3ngers",
+    "critical infrastructure attack Iran",
+    "ICS SCADA Iran", "Iran drone technology",
+    "Iran Russia drone transfer",
+
+    # ── 의료·보건
+    "pharmaceutical supply chain Iran",
+    "API active pharmaceutical Iran",
+    "medicine price inflation Iran war",
+    "medical device shortage Iran",
+
+    # ── 환경·기후
+    "Persian Gulf oil spill", "iran war oil spill satellite",
+    "renewable energy acceleration Iran",
+    "Bushehr nuclear radiation risk",
+    "energy transition Iran war",
+
+    # ── 관광·항공
+    "Korean Air emergency jet fuel", "jet fuel shortage Iran",
+    "Middle East airspace closure",
+    "war risk insurance aviation",
+    "Dubai Doha hub disruption",
+
+    # ── 외교·다자관계
+    "China Iran support proxy", "Russia Iran drone 2026",
+    "India oil waiver Iran war", "Turkey Iran refugee NATO",
+    "THAAD redeployment Korea",
+    "India Russia oil Iran war",
+    "Qatar mediation Iran deal",
+
+    # ── 노동·산업·원자재
+    "aluminum shortage Iran war", "tungsten price Iran",
+    "manufacturing cost Iran war Korea",
+    "Iran humanitarian crisis IDP",
+    "global recession Iran war OECD",
 ]
+
 KEYWORDS_KO = [
     # ── 이란 직접 (단독 포함 — 제목에 "이란"만 있어도 수집)
     "이란",
@@ -85,6 +150,59 @@ KEYWORDS_KO = [
     "에너지 비상대책", "에너지 수급 비상", "LNG 수입 다변화",
     "에너지 긴급", "원유 비축", "전략비축유", "수입 다변화",
     "중동 사태 대응", "에너지 대응", "정부 긴급 대책",
+
+    # ══ 신규 추가 키워드 ══
+
+    # ── 교통·물류·해운
+    "희망봉 우회", "컨테이너 운임 급등", "해운 전쟁할증료",
+    "부산항 중동 물동량", "해상 전쟁보험", "항공화물 운임",
+    "이란 전쟁 해운지수", "복합운송 우회항로",
+
+    # ── 금융·통화·외환
+    "원달러 자본유출", "이란 전쟁 환율", "전쟁 리스크 프리미엄",
+    "이란 암호화폐 제재", "코스피 이란 전쟁",
+    "걸프 국부펀드 한국", "전쟁채권 신흥국",
+
+    # ── 식량·농업
+    "요소 비료 이란 전쟁", "암모니아 가격 이란",
+    "식량안보 호르무즈", "비료 가격 급등 중동",
+    "라스라판 비료 생산", "이란 전쟁 식량 위기",
+    "밀 옥수수 공급 이란", "식용유 이란 전쟁",
+
+    # ── 반도체·첨단산업
+    "헬륨 반도체 이란 전쟁", "라스라판 헬륨 공급",
+    "브롬 포토레지스트 한국", "반도체 특수가스 이란",
+    "삼성전자 헬륨 공급망", "SK하이닉스 특수가스",
+    "데이터센터 에너지 이란",
+
+    # ── 사이버·안보
+    "이란 사이버 공격", "IRGC 해킹 인프라",
+    "이란 드론 러시아 기술", "이란 사이버 한국 금융",
+    "산업제어시스템 이란 공격",
+
+    # ── 의료·보건
+    "원료의약품 이란 전쟁", "제약 공급망 중동",
+    "이란 전쟁 의약품 가격", "API 수입 차질",
+
+    # ── 환경·기후
+    "페르시아만 원유 유출", "이란 전쟁 환경오염",
+    "재생에너지 이란 전쟁 가속", "에너지 전환 중동 전쟁",
+    "부세르 핵발전소 방사능",
+
+    # ── 관광·항공
+    "대한항공 이란 전쟁 비상", "항공유 이란 전쟁",
+    "중동 항공노선 운휴", "두바이 도하 환승 중단",
+    "항공 전쟁보험료",
+
+    # ── 외교·다자관계
+    "중국 이란 군사지원", "러시아 드론 이란 공급",
+    "인도 러시아 석유 이란", "터키 이란 난민",
+    "주한미군 THAAD 중동 재배치", "카타르 이란 중재",
+
+    # ── 노동·산업·원자재
+    "알루미늄 이란 전쟁 한국", "텅스텐 가격 이란",
+    "이란 인도주의 이재민", "중소기업 원자재 이란",
+    "이란 전쟁 글로벌 경기침체",
 ]
 KEYWORDS_MINSEANG_KO = [
     "유가", "물가", "에너지", "난방비", "전기료", "도시가스",
@@ -102,9 +220,20 @@ PARADIGM_KEYWORDS = [
 ]
 
 ISSUE_CATEGORIES = [
-    "military", "diplomacy", "energy", "economy",
-    "humanitarian", "nuclear", "korea", "paradigm",
-    "country_response",   # 각국 대응 방안 (미·중·러·EU·사우디 등)
+    "military",          # 군사·전황
+    "diplomacy",         # 외교·협상
+    "energy",            # 에너지·유가
+    "economy",           # 경제·금융·무역
+    "humanitarian",      # 인도주의·난민
+    "nuclear",           # 핵·원전
+    "korea",             # 한국 국내 정책·대응
+    "paradigm",          # 패러다임 변화·구조 전환
+    "country_response",  # 각국 대응 방안
+    "transport",         # 교통·물류·해운·항공
+    "food_security",     # 식량·농업·비료
+    "semiconductor",     # 반도체·첨단산업·특수가스
+    "cyber",             # 사이버·안보
+    "environment",       # 환경·기후·원유유출
 ]
 
 # ── 각국 대응 추적 대상 국가·세력
@@ -128,6 +257,12 @@ SUWON_CONTEXT = """
 - 취약계층: 기초생활수급자·차상위·노인1인가구·외국인근로자
 - 소상공인: 음식점·배달·운수업 에너지비 민감
 - 재정자립도: 약 40% (경기도 지원사업 연계 중요)
+- 반도체 공급망: 삼성전자 반도체 라인 카타르 라스라판산 헬륨·브롬 의존
+  → 호르무즈 봉쇄 시 특수가스 수급 위기 직접 영향
+- 물류·수출: 삼성전자 수출 기업 운임 상승 + 전쟁보험료 급등 이중 부담
+- 항공: 대한항공·아시아나 중동 노선 운휴 → 수원 기업 해외출장·물류 차질
+- 식량: 요소·암모니아 비료 가격 급등 → 지역 농업 생산비 상승
+- 의료: API(원료의약품) 인도→한국 공급망 운임 상승 → 지역 약가 압박
 """
 
 YOUTUBE_CHANNELS = {
