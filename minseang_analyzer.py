@@ -78,6 +78,9 @@ PROMPT = """6월 1일(월)~6월 4일(수·오늘)간 수집된 데이터를 종�
 [유튜브·전문가 브리핑 요약]
 {yt_summary}
 
+[전문가·싱크탱크 분석 기사 — 우선과제 근거로 직접 인용할 것]
+{expert_quotes}
+
 [지난주(5/26) 분석 결과 — 중복 지양, 변화·심화·신규 이슈 중심으로 작성]
 {prev_summary}
 
@@ -120,8 +123,8 @@ PROMPT = """6월 1일(월)~6월 4일(수·오늘)간 수집된 데이터를 종�
       "priority": "즉시|단기|중기",
       "근거": {{
         "타지자체_벤치마킹": "(선택) 수집 기사에서 확인된 타지자체 실제 사례+출처+날짜. 없으면 이 필드 생략",
-        "전문가_의견": "(선택) 수집된 싱크탱크·전문매체 기사에서 이 과제 관련 핵심 분석 1~2문장. [출처 날짜] 표기. 없으면 이 필드 생략",
-        "보고서_근거": "(선택) 수집 기사에서 확인된 국제기구 보고서+날짜. 없으면 이 필드 생략"
+        "전문가_의견": "위 [전문가·싱크탱크 분석 기사] 목록에서 이 과제와 관련된 기사 1개를 선택해 핵심 내용 1~2문장을 [출처 날짜] 형식으로 그대로 인용",
+        "보고서_근거": "위 [전문가·싱크탱크 분석 기사] 또는 [국제 전황 요약]에서 IEA·IMF·WorldBank·OECD 보고서 내용 1~2문장을 [출처 날짜] 형식으로 인용"
       }}
     }},
     {{
@@ -363,6 +366,39 @@ def load_prev_summary(policy_dir: Path, current_date_str: str) -> str:
     return "이전 데이터 없음"
 
 
+def load_expert_quotes(analyzed_path: Path, max_items: int = 8) -> str:
+    """싱크탱크·전문매체 분석 기사에서 전문가 의견 인용용 콘텐츠 추출"""
+    if not analyzed_path or not analyzed_path.exists():
+        return "데이터 없음"
+    try:
+        with open(analyzed_path, encoding="utf-8") as f:
+            data = json.load(f)
+        EXPERT_SOURCES = {
+            "ForeignAffairs", "WarOnRocks", "CFR_Iran", "CSIS_Iran",
+            "AtlanticCouncil", "ForeignPolicy", "AlMonitor",
+            "Guardian_Iran", "Guardian_World", "Bloomberg",
+            "NYT_World", "FT_World", "IEA_News", "IMF_News",
+            "WorldBank_News", "OECD_News",
+        }
+        experts = sorted(
+            [a for a in data
+             if a.get("source") in EXPERT_SOURCES
+             and a.get("importance", 0) >= 4
+             and a.get("summary_ko")],
+            key=lambda x: x.get("importance", 0), reverse=True
+        )[:max_items]
+        lines = []
+        for a in experts:
+            src = a.get("source", "")
+            pub = a.get("published", "")[:10]
+            title = a.get("title", "")[:60]
+            summ = a.get("summary_ko", "").split("\n")[0][:120]
+            lines.append(f"[{src} {pub}] {title}\n  → {summ}")
+        return "\n".join(lines) if lines else "데이터 없음"
+    except Exception:
+        return "로드 실패"
+
+
 def run(target_date: str = None) -> Path:
     if target_date is None:
         target_date = date.today().strftime("%Y-%m-%d")
@@ -375,11 +411,12 @@ def run(target_date: str = None) -> Path:
     yt_path       = YT_DIR / f"yt_summary_{date_str}.json"
 
     prompt = PROMPT.format(
-        war_summary     = load_analyzed_summary(analyzed_path, max_items=15),  # 전황 상위 15건 + country_response/korea 5건
+        war_summary     = load_analyzed_summary(analyzed_path, max_items=15),
         domestic_summary= load_summary(domestic_path),
         paradigm_summary= load_summary(paradigm_path),
         yt_summary      = load_summary(yt_path),
         prev_summary    = load_prev_summary(POLICY_DIR, date_str),
+        expert_quotes   = load_expert_quotes(analyzed_path),
     )
 
     try:
@@ -397,7 +434,45 @@ def run(target_date: str = None) -> Path:
     result["date"] = target_date
     result["generated_at"] = datetime.utcnow().isoformat()
 
-    # ── 후처리: 빈·무관 타지자체 필드 자동 제거 ─────────────────────────
+    # ── 후처리 ①: 전문가 의견·보고서 근거 자동 채움 ────────────────────
+    # Claude가 근거 필드를 비울 경우 Python에서 직접 삽입
+    if analyzed_path.exists():
+        try:
+            with open(analyzed_path, encoding="utf-8") as _f:
+                _analyzed = json.load(_f)
+
+            _EXPERT_SRCS = {"ForeignAffairs","WarOnRocks","CFR_Iran","CSIS_Iran",
+                           "AtlanticCouncil","ForeignPolicy","AlMonitor",
+                           "Guardian_Iran","Guardian_World","Bloomberg","NYT_World","FT_World"}
+            _REPORT_SRCS = {"IEA_News","IMF_News","WorldBank_News","OECD_News","UNCTAD_News"}
+
+            _experts = sorted(
+                [a for a in _analyzed if a.get("source") in _EXPERT_SRCS
+                 and a.get("importance",0) >= 4 and a.get("summary_ko")],
+                key=lambda x: x.get("importance",0), reverse=True
+            )
+            _reports = sorted(
+                [a for a in _analyzed if a.get("source") in _REPORT_SRCS
+                 and a.get("importance",0) >= 4 and a.get("summary_ko")],
+                key=lambda x: x.get("importance",0), reverse=True
+            )
+
+            def _make_quote(article: dict) -> str:
+                src = article.get("source","")
+                pub = article.get("published","")[:10]
+                summ = article.get("summary_ko","").split("\n")[0][:120]
+                return f"[{src} {pub}] {summ}"
+
+            for i, task in enumerate(result.get("우선_대응과제", [])):
+                근거 = task.setdefault("근거", {})
+                if not 근거.get("전문가_의견") and i < len(_experts):
+                    근거["전문가_의견"] = _make_quote(_experts[i])
+                if not 근거.get("보고서_근거") and i < len(_reports):
+                    근거["보고서_근거"] = _make_quote(_reports[i])
+        except Exception as _e:
+            logger.warning(f"전문가 의견 자동 삽입 실패: {_e}")
+
+    # ── 후처리 ②: 빈·무관 타지자체 필드 자동 제거 ─────────────────────────
     # 빈 값 또는 "없음" 패턴을 나타내는 마커
     EMPTY_MARKERS = [
         "수집된 사례 없음", "수집 기사 없음", "확인되지 않음",
