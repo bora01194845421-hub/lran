@@ -268,6 +268,28 @@ def scrape_target(source_name: str, cfg: dict) -> list:
 # 3. 메인
 # ─────────────────────────────────────────────
 
+def _is_recent_intl(published: str, days: int = 14) -> bool:
+    """intl_org 기사 날짜 필터 — 최근 N일 이내만 통과 (기본 14일)"""
+    if not published:
+        return False
+    cutoff = datetime.utcnow() - timedelta(days=days)
+    for fmt in [
+        "%a, %d %b %Y %H:%M:%S %z",
+        "%a, %d %b %Y %H:%M:%S GMT",
+        "%Y-%m-%dT%H:%M:%SZ",
+        "%Y-%m-%dT%H:%M:%S%z",
+        "%Y-%m-%d",
+    ]:
+        try:
+            dt = datetime.strptime(published.strip(), fmt)
+            dt = dt.replace(tzinfo=None)
+            return dt >= cutoff
+        except ValueError:
+            continue
+    # 파싱 실패 → 제외 (오래된 기사 방지)
+    return False
+
+
 def run(target_date: str = None) -> Path:
     if target_date is None:
         target_date = date.today().strftime("%Y-%m-%d")
@@ -288,6 +310,13 @@ def run(target_date: str = None) -> Path:
     # 스크래핑 순차 실행 (서버 부하 방지)
     for name, cfg in INTL_SCRAPE_TARGETS.items():
         all_articles.extend(scrape_target(name, cfg))
+
+    # ── 날짜 필터: 최근 14일 이내 기사만 유지 ──────────────────────
+    before = len(all_articles)
+    all_articles = [a for a in all_articles if _is_recent_intl(a.get("published", ""), days=14)]
+    filtered_cnt = before - len(all_articles)
+    if filtered_cnt > 0:
+        logger.info(f"날짜 필터 제거: {filtered_cnt}건 (14일 초과 기사)")
 
     # 패러다임 아이템 통계
     paradigm_items = [a for a in all_articles if a["is_paradigm_item"]]
