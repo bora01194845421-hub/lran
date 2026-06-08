@@ -1,0 +1,305 @@
+{
+  "date": "2026-06-04",
+  "generated_at": "2026-06-04T08:49:06.411681",
+  "engine": "Claude 단독 (fallback)",
+  "stats": {
+    "articles_checked": 10,
+    "total_claims": 20,
+    "verified": 0,
+    "disputed": 0,
+    "unverified": 20,
+    "verified_rate": 0.0
+  },
+  "results": [
+    {
+      "article_id": "365c6456d636",
+      "title": "Impacts of Middle East conflict set to reshape energy investment plans as disruptions put focus on security - IEA – International Energy Agency",
+      "source": "IEA_News",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQY3liOWVXZWdLNWN5UlJpWlhLN3lPSDg1SUU0MVZLWC12OWhRaGtKZlhOY01mbW1wZE1wc0stYTZRYXhFSkV5MzJhMTBZc1ItUWN1UTFQd3FpRFlNU3VNNDRfZ0dmdTRDWDA0aGIyb1JwWWRWVXZfMGJHMzF4V0hwTjk5bm9STWhzd0NmckdpRFBxSWRaRkVoSEVpWktUZ2oyb2UtOUZJNGt4bTByamhaSnJhdGVPWHZFd09KM0NfM21uc191QmxaLVJ5ZHQ?oc=5",
+      "importance": 5,
+      "category": "energy",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁에 대한 학습된 정보가 없으며, 해당 사건은 현재 시점(2024년 4월 기준)에서 미래의 가상 시나리오입니다. IEA의 해당 보고서 존재 여부를 확인할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "IEA가 중동 갈등으로 인한 에너지 투자 계획의 재편을 경고했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 이와 관련된 에너지 투자 전략 변경에 대한 주장은 검증할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "중동 갈등으로 인한 공급망 교란이 글로벌 에너지 투자 전략을 변경시키고 있다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.47,
+      "checked_at": "2026-06-04T08:47:25.401643"
+    },
+    {
+      "article_id": "3fa029023446",
+      "title": "Israel and Lebanon agree to implement ceasefire if Hezbollah stops attacks",
+      "source": "BBC_World",
+      "url": "https://www.bbc.com/news/articles/c5y01pdqvkgo?at_medium=RSS&at_campaign=rss",
+      "importance": 5,
+      "category": "diplomacy",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 이와 관련된 이스라엘-레바논 휴전 합의에 대한 검증이 불가능합니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "이스라엘과 레바논이 미국 중재로 부분 휴전안을 합의했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁에 대한 학습된 정보가 없으며, 해당 사건은 미래 시점의 가상 시나리오로 보입니다. 실제 역사적 사실로 검증할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "헤즈볼라의 공격 중단을 조건으로 이스라엘의 공습 일시 중단에 합의했다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.47,
+      "checked_at": "2026-06-04T08:47:34.250716"
+    },
+    {
+      "article_id": "ac70bc065a1c",
+      "title": "One killed and dozens injured in Iranian drone strikes on Kuwait airport",
+      "source": "BBC_World",
+      "url": "https://www.bbc.com/news/articles/c5yx135yg53o?at_medium=RSS&at_campaign=rss",
+      "importance": 5,
+      "category": "military",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않았으며, 이는 가상의 시나리오입니다. 따라서 해당 드론 공격 사건에 대한 역사적 사실을 확인할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "이란이 쿠웨이트 공항에 드론 공격을 감행해 1명이 사망하고 60명 이상이 부상했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 쿠웨이트 공항 드론 공격, 미국의 유조선 공격, 이란의 공식 성명 등은 검증할 수 있는 역사적 사실이 아닙니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "이란은 미국의 유조선 및 섬 공격에 대한 보복이라고 공식 명시했다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.95,
+      "checked_at": "2026-06-04T08:47:45.306758"
+    },
+    {
+      "article_id": "b3b8c84c8a24",
+      "title": "Bowen: Trump needs this war to end but Iran is not backing down",
+      "source": "BBC_MidEast",
+      "url": "https://www.bbc.com/news/articles/cedp3lee059o?at_medium=RSS&at_campaign=rss",
+      "importance": 5,
+      "category": "diplomacy",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 해당 전쟁에 대한 역사적 기록이나 검증 가능한 정보가 존재하지 않습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "트럼프가 여론 압박과 걸프동맹의 압력을 받고 있다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 해당 BBC 기사와 백악관의 중재 시도에 대한 정보는 존재하지 않으며, 검증할 수 있는 역사적 사실이 아닙니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "백악관이 중재를 계속 시도하고 있다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.47,
+      "checked_at": "2026-06-04T08:47:54.756945"
+    },
+    {
+      "article_id": "dc262b82c4ba",
+      "title": "Clashes continue in Lebanon despite Israel and Hezbollah accepting US partial ceasefire plan",
+      "source": "BBC_MidEast",
+      "url": "https://www.bbc.com/news/articles/c202rxp1z15o?at_medium=RSS&at_campaign=rss",
+      "importance": 5,
+      "category": "military",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁에 대한 학습된 정보가 없으며, 이는 미래 사건입니다. 현재 시점(2024년 기준)에서 2026년에 발생할 사건에 대한 검증은 불가능합니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "이스라엘과 헤즈볼라가 미국의 부분 휴전 계획을 수락했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁에 대한 학습된 정보가 없으며, 해당 사건은 미래 시점의 가상 시나리오로 보입니다. 레바논 휴전과 이란 협상 간 선결조건 관계를 검증할 실제 역사적 근거가 부재합니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "레바논 휴전이 이란과의 협상을 위한 선결조건이다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.47,
+      "checked_at": "2026-06-04T08:48:06.502780"
+    },
+    {
+      "article_id": "958309acffe9",
+      "title": "US says it struck Iranian radar sites as Iran targets American forces in Kuwait",
+      "source": "BBC_MidEast",
+      "url": "https://www.bbc.com/news/articles/crlpy8n7pr6o?at_medium=RSS&at_campaign=rss",
+      "importance": 5,
+      "category": "military",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁에 대한 학습된 정보가 없습니다. 이는 미래 사건이거나 실제로 발생하지 않은 가상의 시나리오입니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "미국이 호르무즈 인근 이란 레이더 기지를 공격했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁에 대한 학습된 정보가 없습니다. 이는 실제로 발생하지 않은 미래 또는 가상의 사건으로 보입니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "이란이 쿠웨이트 미군 기지를 공격했다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.0,
+      "checked_at": "2026-06-04T08:48:16.272780"
+    },
+    {
+      "article_id": "3dbca98614ff",
+      "title": "Trump seeking edits to US-Iran deal, US media report",
+      "source": "BBC_MidEast",
+      "url": "https://www.bbc.com/news/articles/c1w2xve315do?at_medium=RSS&at_campaign=rss",
+      "importance": 5,
+      "category": "diplomacy",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 해당 사건에 대한 학습된 정보가 없으며, 이는 실제 역사적 사실이 아닙니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "트럼프 행정부가 미-이란 협상안에 호르무즈 해협 관련 수정을 요청했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 해당 전쟁에 대한 학습된 정보가 없으며, 제시된 주장을 검증할 수 있는 근거가 존재하지 않습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "트럼프 행정부가 미-이란 협상안에 우라늄 농축 관련 수정을 요청했다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.0,
+      "checked_at": "2026-06-04T08:48:33.698207"
+    },
+    {
+      "article_id": "2148ef8cbd4f",
+      "title": "How much damage have Iranian strikes caused the US?",
+      "source": "BBC_MidEast",
+      "url": "https://www.bbc.com/news/videos/c8xwzq2lq25o?at_medium=RSS&at_campaign=rss",
+      "importance": 5,
+      "category": "military",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 이란의 미국 군사 시설 공격에 대한 주장을 검증할 수 있는 실제 역사적 기록이나 신뢰할 수 있는 정보가 존재하지 않습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "이란이 전쟁 시작 이후 미국 군사 시설 20곳을 손상시켰다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 BBC의 해당 보도나 위성 이미지 분석은 존재하지 않으며, 이는 허위 정보이거나 가상 시나리오입니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "BBC가 위성 이미지 분석을 통해 이란의 공격 피해를 확인했다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.95,
+      "checked_at": "2026-06-04T08:48:44.069954"
+    },
+    {
+      "article_id": "c304c5c48857",
+      "title": "Iran’s New Grand Strategy",
+      "source": "ForeignAffairs",
+      "url": "https://www.foreignaffairs.com/iran/irans-new-grand-strategy",
+      "importance": 5,
+      "category": "paradigm",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 이와 관련된 이란의 대전략 수립 주장은 검증할 수 없으며, 해당 Foreign Affairs 기사의 실존 여부도 확인이 필요합니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "이란이 중동 지역에서 새로운 대전략을 수립했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁에 대한 정보가 학습 데이터에 존재하지 않습니다. 이는 실제 발생하지 않은 미래 또는 가상의 사건으로 보이며, Foreign Affairs의 해당 기사도 확인할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "이란이 기존 질서를 대체하는 새로운 모델을 구축하고 있다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.95,
+      "checked_at": "2026-06-04T08:48:55.982255"
+    },
+    {
+      "article_id": "ecfb61c2d11d",
+      "title": "Iran Embraces a Forever War",
+      "source": "ForeignAffairs",
+      "url": "https://www.foreignaffairs.com/iran/iran-embraces-forever-war",
+      "importance": 5,
+      "category": "paradigm",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁에 대한 정보가 학습 데이터에 존재하지 않습니다. 이는 미래 사건이거나 가상 시나리오로 보이며, 현재 시점에서 검증할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "이란이 '영구적 전쟁' 전략으로 전환했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁에 대한 학습된 정보가 없으며, 해당 사건은 미래 시점으로 현재 발생하지 않은 가상 시나리오입니다. Foreign Affairs 출처의 해당 기사도 확인할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "테헤란이 일시적 휴전이 아닌 지속적 대항 체제 구축을 의도한다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.47,
+      "checked_at": "2026-06-04T08:49:06.411665"
+    }
+  ]
+}

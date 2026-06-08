@@ -1,0 +1,370 @@
+{
+  "date": "2026-06-08",
+  "generated_at": "2026-06-08T09:39:33.564499",
+  "stats": {
+    "articles": 15,
+    "claims": 30
+  },
+  "items": [
+    {
+      "category": "energy",
+      "items": [
+        {
+          "article": {
+            "title": "Strait of Hormuz Disruptions: The burden of oil price shocks on vulnerable economies | - UN Trade and Development (UNCTAD)",
+            "source": "UNCTAD_News",
+            "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxORzNfV3NaNEc4aWNEd3l1Y1lCeFhLRHVDSEd5eFhXd3BrODVFWFEydGRZUzlkMWluUDZTTkdPZUR4NXNWM1o5OU0yN2JUOWZjNlF2clZMTlFkdFRObnFZUXdRSTFUVm90VzVOSDRjdlRRMWlQWDRVNjZmajlleHI3MVU0MUFFOEtCTXpNS2c5S0JIcWRyNFZ0VS1GWmNTSVNWdUI0?oc=5",
+            "importance": 5,
+            "published": "Tue, 02 Jun 2026 10:03:03 GMT"
+          },
+          "queries": [
+            {
+              "claim": "호르무즈 해협을 통해 전 세계 석유 운송량의 상당 부분이 통과한다",
+              "query": "다음 주장이 사실인지 최신 뉴스를 검색해서 확인해줘. 출처·날짜와 함께 검증됨/불일치/미확인으로 답해줘:\n「호르무즈 해협을 통해 전 세계 석유 운송량의 상당 부분이 통과한다」",
+              "checked": false,
+              "result": ""
+            },
+            {
+              "claim": "UNCTAD가 호르무즈 해협 차질로 인한 취약경제국의 유가 충격 부담을 경고했다",
+              "query": "다음 주장이 사실인지 최신 뉴스를 검색해서 확인해줘. 출처·날짜와 함께 검증됨/불일치/미확인으로 답해줘:\n「UNCTAD가 호르무즈 해협 차질로 인한 취약경제국의 유가 충격 부담을 경고했다」",
+              "checked": false,
+              "result": ""
+            }
+          ]
+        },
+        {
+          "article": {
+            "title": "Oil prices jump after Iran missiles threaten fragile ceasefire",
+            "source": "FT_World",
+            "url": "https://www.ft.com/content/7eced198-5045-4447-885b-7aa0dfe4490d",
+            "importance": 5,
+            "published": "Sun, 07 Jun 2026 22:17:23 GMT"
+          },
+          "queries": [
+            {
+              "claim": "이란이 미사일 공격을 실시했다",
+              "query": "다음 주장이 사실인지 최신 뉴스를 검색해서 확인해줘. 출처·날짜와 함께 검증됨/불일치/미확인으로 답해줘:\n「이란이 미사일 공격을 실시했다」",
+              "checked": false,
+              "result": ""
+            },
+            {
+              "claim": "미사일 공격 이후 국제 유가가 급등했다",
+              "query": "다음 주장이 사실인지 최신 뉴스를 검색해서 확인해줘. 출처·날짜와 함께 검증됨/불일치/미확인으로 답해줘:\n「미사일 공격 이후 국제 유가가 급등했다」",
+              "checked": false,
+              "result": ""
+            }
+          ]
+        },
+        {
+          "article": {
+            "title": "Oil Jumps as Iran’s Attacks on Israel Put Fragile Truce at Risk",
+            "source": "Bloomberg",
+            "url": "https://www.bloomberg.com/news/articles/2026-06-07/latest-oil-market-news-and-analysis-for-june-8",
+            "importance": 5,
+            "published": "Sun, 07 Jun 2026 22:04:07 GMT"
+          },
+          "queries": [
+            {
+              "claim": "이란이 이스라엘에 대해 미사일 공격을 실시했다",
+              "query": "다음 주장이 사실인지 최신 뉴스를 검색해서 확인해줘. 출처·날짜와 함께 검증됨/불일치/미확인으로 답해줘:\n「이란이 이스라엘에 대해 미사일 공격을 실시했다」",
+              "checked": false,
+              "result": ""
+            },
+            {
+              "claim": "호르무즈 해협 지역에서 휴전 체제가 존재했다",
+              "query": "다음 주장이 사실인지 최신 뉴스를 검색해서 확인해줘. 출처·날짜와 함께 검증됨/불일치/미확인으로 답해줘:\n「호르무즈 해협 지역에서 휴전 체제가 존재했다」",
+              "checked": false,
+              "result": ""
+            }
+          ]
+        },
+        {
+          "article": {
+            "title": "OPEC+ Agrees Another Symbolic Quota Increase for July",
+            "source": "Bloomberg",
+            "url": "https://www.bloomberg.com/news/articles/2026-06-07/opec-agrees-another-symbolic-quota-hike-for-july-delegates-say",
+            "importance": 5,
+            "published": "Sun, 07 Jun 2026 12:55:26 GMT"
+          },
+          "queries": [
+            {
+              "claim": "OPEC+ 회원국들이 7월 원유 생산 할당량 인상에 합의했다",
+              "query": "다음 주장이 사실인지 최신 뉴스를 검색해서 확인해줘. 출처·날짜와 함께 검증됨/불일치/미확인으로 답해줘:\n「OPEC+ 회원국들이 7월 원유 생산 할당량 인상에 합의했다」",
+              "checked": false,
+              "result": ""
+            },
+            {
+              "claim": "페르시아만 수출 차단으로 OPEC+ 회원국 대부분이 할당량을 실행할 수 없다",
+              "query": "다음 주장이 사실인지 최신 뉴스를 검색해서 확인해줘. 출처·날짜와 함께 검증됨/불일치/미확인으로 답해줘:\n「페르시아만 수출 차단으로 OPEC+ 회원국 대부분이 할당량을 실행할 수 없다」",
+              "checked": false,
+              "result": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "military",
+      "items": [
+        {
+          "article": {
+            "title": "Iran launches ballistic missiles at Israel",
+            "source": "FT_World",
+            "url": "https://www.ft.com/content/a312b725-8921-415a-a9da-c8f6836f5459",
+            "importance": 5,
+            "published": "Sun, 07 Jun 2026 22:23:57 GMT"
+          },
+          "queries": [
+            {
+              "claim": "이란이 이스라엘을 향해 탄도미사일을 발사했다",
+              "query": "다음 주장이 사실인지 최신 뉴스를 검색해서 확인해줘. 출처·날짜와 함께 검증됨/불일치/미확인으로 답해줘:\n「이란이 이스라엘을 향해 탄도미사일을 발사했다」",
+              "checked": false,
+              "result": ""
+            },
+            {
+              "claim": "이스라엘이 베이루트를 공습했다",
+              "query": "다음 주장이 사실인지 최신 뉴스를 검색해서 확인해줘. 출처·날짜와 함께 검증됨/불일치/미확인으로 답해줘:\n「이스라엘이 베이루트를 공습했다」",
+              "checked": false,
+              "result": ""
+            }
+          ]
+        },
+        {
+          "article": {
+            "title": "Israel strikes Beirut suburb days after US-brokered truce",
+            "source": "BBC_World",
+            "url": "https://www.bbc.com/news/articles/c0qyevk8139o?at_medium=RSS&at_campaign=rss",
+            "importance": 5,
+            "published": "Sun, 07 Jun 2026 20:56:09 GMT"
+          },
+          "queries": [
+            {
+              "claim": "미국이 이스라엘과 히즈볼라 간 휴전을 중재했다",
+              "query": "다음 주장이 사실인지 최신 뉴스를 검색해서 확인해줘. 출처·날짜와 함께 검증됨/불일치/미확인으로 답해줘:\n「미국이 이스라엘과 히즈볼라 간 휴전을 중재했다」",
+              "checked": false,
+              "result": ""
+            },
+            {
+              "claim": "이스라엘이 휴전 직후 베이루트 근교를 공습했다",
+              "query": "다음 주장이 사실인지 최신 뉴스를 검색해서 확인해줘. 출처·날짜와 함께 검증됨/불일치/미확인으로 답해줘:\n「이스라엘이 휴전 직후 베이루트 근교를 공습했다」",
+              "checked": false,
+              "result": ""
+            }
+          ]
+        },
+        {
+          "article": {
+            "title": "US and Iran exchange strikes in Gulf in latest test of ceasefire",
+            "source": "BBC_MidEast",
+            "url": "https://www.bbc.com/news/articles/cvgzgyjk2weo?at_medium=RSS&at_campaign=rss",
+            "importance": 5,
+            "published": "Sat, 06 Jun 2026 14:46:20 GMT"
+          },
+          "queries": [
+            {
+              "claim": "미국군이 이란의 드론 및 레이더 시설을 공격했다",
+              "query": "다음 주장이 사실인지 최신 뉴스를 검색해서 확인해줘. 출처·날짜와 함께 검증됨/불일치/미확인으로 답해줘:\n「미국군이 이란의 드론 및 레이더 시설을 공격했다」",
+              "checked": false,
+              "result": ""
+            },
+            {
+              "claim": "이란이 쿠웨이트와 바레인에 위치한 미군 기지를 공격했다고 발표했다",
+              "query": "다음 주장이 사실인지 최신 뉴스를 검색해서 확인해줘. 출처·날짜와 함께 검증됨/불일치/미확인으로 답해줘:\n「이란이 쿠웨이트와 바레인에 위치한 미군 기지를 공격했다고 발표했다」",
+              "checked": false,
+              "result": ""
+            }
+          ]
+        },
+        {
+          "article": {
+            "title": "One killed and dozens injured in Iranian drone strikes on Kuwait airport",
+            "source": "BBC_MidEast",
+            "url": "https://www.bbc.com/news/articles/c5yx135yg53o?at_medium=RSS&at_campaign=rss",
+            "importance": 5,
+            "published": "Wed, 03 Jun 2026 20:05:58 GMT"
+          },
+          "queries": [
+            {
+              "claim": "이란 드론이 쿠웨이트 공항을 공격해 1명이 사망하고 60명 이상이 부상했다",
+              "query": "다음 주장이 사실인지 최신 뉴스를 검색해서 확인해줘. 출처·날짜와 함께 검증됨/불일치/미확인으로 답해줘:\n「이란 드론이 쿠웨이트 공항을 공격해 1명이 사망하고 60명 이상이 부상했다」",
+              "checked": false,
+              "result": ""
+            },
+            {
+              "claim": "미국이 이란의 유조선과 섬을 공격했다",
+              "query": "다음 주장이 사실인지 최신 뉴스를 검색해서 확인해줘. 출처·날짜와 함께 검증됨/불일치/미확인으로 답해줘:\n「미국이 이란의 유조선과 섬을 공격했다」",
+              "checked": false,
+              "result": ""
+            }
+          ]
+        },
+        {
+          "article": {
+            "title": "Live Updates: Iran Fires Missiles at Israel for First Time Since April Cease-Fire",
+            "source": "NYT_World",
+            "url": "https://www.nytimes.com/live/2026/06/07/world/iran-israel-missiles",
+            "importance": 5,
+            "published": "Sun, 07 Jun 2026 23:51:20 +0000"
+          },
+          "queries": [
+            {
+              "claim": "이란이 2024년 4월 휴전 이후 처음으로 이스라엘에 미사일을 발사했다",
+              "query": "다음 주장이 사실인지 최신 뉴스를 검색해서 확인해줘. 출처·날짜와 함께 검증됨/불일치/미확인으로 답해줘:\n「이란이 2024년 4월 휴전 이후 처음으로 이스라엘에 미사일을 발사했다」",
+              "checked": false,
+              "result": ""
+            },
+            {
+              "claim": "이스라엘이 베이루트 외곽을 공격했다",
+              "query": "다음 주장이 사실인지 최신 뉴스를 검색해서 확인해줘. 출처·날짜와 함께 검증됨/불일치/미확인으로 답해줘:\n「이스라엘이 베이루트 외곽을 공격했다」",
+              "checked": false,
+              "result": ""
+            }
+          ]
+        },
+        {
+          "article": {
+            "title": "Israel Bombs Beirut Outskirts as Fighting With Hezbollah Escalates",
+            "source": "NYT_World",
+            "url": "https://www.nytimes.com/2026/06/07/world/middleeast/israel-beirut-attacks-hezbollah.html",
+            "importance": 5,
+            "published": "Sun, 07 Jun 2026 19:32:12 +0000"
+          },
+          "queries": [
+            {
+              "claim": "이스라엘이 레바논 베이루트 외곽 지역을 폭격했다",
+              "query": "다음 주장이 사실인지 최신 뉴스를 검색해서 확인해줘. 출처·날짜와 함께 검증됨/불일치/미확인으로 답해줘:\n「이스라엘이 레바논 베이루트 외곽 지역을 폭격했다」",
+              "checked": false,
+              "result": ""
+            },
+            {
+              "claim": "미국이 이스라엘과 헤즈볼라 간의 휴전 협상을 중재했다",
+              "query": "다음 주장이 사실인지 최신 뉴스를 검색해서 확인해줘. 출처·날짜와 함께 검증됨/불일치/미확인으로 답해줘:\n「미국이 이스라엘과 헤즈볼라 간의 휴전 협상을 중재했다」",
+              "checked": false,
+              "result": ""
+            }
+          ]
+        },
+        {
+          "article": {
+            "title": "Israeli Strike Kills 3 Lebanese Soldiers, Days After Truce Was Signed",
+            "source": "NYT_World",
+            "url": "https://www.nytimes.com/2026/06/06/world/middleeast/israel-strike-lebanese-soldiers-general.html",
+            "importance": 5,
+            "published": "Sat, 06 Jun 2026 13:49:03 +0000"
+          },
+          "queries": [
+            {
+              "claim": "이스라엘의 공격으로 레바논 군인 3명이 사망했다",
+              "query": "다음 주장이 사실인지 최신 뉴스를 검색해서 확인해줘. 출처·날짜와 함께 검증됨/불일치/미확인으로 답해줘:\n「이스라엘의 공격으로 레바논 군인 3명이 사망했다」",
+              "checked": false,
+              "result": ""
+            },
+            {
+              "claim": "이스라엘과 헤즈볼라 간 휴전 협정이 수일 전에 체결되었다",
+              "query": "다음 주장이 사실인지 최신 뉴스를 검색해서 확인해줘. 출처·날짜와 함께 검증됨/불일치/미확인으로 답해줘:\n「이스라엘과 헤즈볼라 간 휴전 협정이 수일 전에 체결되었다」",
+              "checked": false,
+              "result": ""
+            }
+          ]
+        },
+        {
+          "article": {
+            "title": "Middle East crisis live: Iran launches missiles towards Israel after Lebanon airstrikes",
+            "source": "Guardian_API",
+            "url": "https://www.theguardian.com/world/live/2026/jun/07/israel-lebanon-southern-beirut-hezbollah-idf-ceasefire-iran-latest-news-updates",
+            "importance": 5,
+            "published": "2026-06-07T23:27:21Z"
+          },
+          "queries": [
+            {
+              "claim": "이란이 2024년 4월 이후 처음으로 이스라엘을 향해 직접 미사일 공격을 실시했다",
+              "query": "다음 주장이 사실인지 최신 뉴스를 검색해서 확인해줘. 출처·날짜와 함께 검증됨/불일치/미확인으로 답해줘:\n「이란이 2024년 4월 이후 처음으로 이스라엘을 향해 직접 미사일 공격을 실시했다」",
+              "checked": false,
+              "result": ""
+            },
+            {
+              "claim": "이란이 남부 베이루트에 대한 이스라엘의 공습에 대한 보복으로 미사일을 발사했다",
+              "query": "다음 주장이 사실인지 최신 뉴스를 검색해서 확인해줘. 출처·날짜와 함께 검증됨/불일치/미확인으로 답해줘:\n「이란이 남부 베이루트에 대한 이스라엘의 공습에 대한 보복으로 미사일을 발사했다」",
+              "checked": false,
+              "result": ""
+            }
+          ]
+        },
+        {
+          "article": {
+            "title": "Iran launches missiles at Israel in response to strikes on Beirut",
+            "source": "Guardian_API",
+            "url": "https://www.theguardian.com/world/2026/jun/07/israel-escalates-war-hezbollah-airstrikes-beirut",
+            "importance": 5,
+            "published": "2026-06-07T21:49:58Z"
+          },
+          "queries": [
+            {
+              "claim": "이란이 이스라엘의 베이루트 공습에 대응하여 이스라엘을 향해 미사일을 발사했다",
+              "query": "다음 주장이 사실인지 최신 뉴스를 검색해서 확인해줘. 출처·날짜와 함께 검증됨/불일치/미확인으로 답해줘:\n「이란이 이스라엘의 베이루트 공습에 대응하여 이스라엘을 향해 미사일을 발사했다」",
+              "checked": false,
+              "result": ""
+            },
+            {
+              "claim": "이스라엘이 베이루트의 아파트 건물을 폭격했다",
+              "query": "다음 주장이 사실인지 최신 뉴스를 검색해서 확인해줘. 출처·날짜와 함께 검증됨/불일치/미확인으로 답해줘:\n「이스라엘이 베이루트의 아파트 건물을 폭격했다」",
+              "checked": false,
+              "result": ""
+            }
+          ]
+        },
+        {
+          "article": {
+            "title": "Kuwait and Bahrain targeted by Iran after exchange of fire with US",
+            "source": "Guardian_API",
+            "url": "https://www.theguardian.com/world/2026/jun/06/us-says-iran-radar-sites-struck-and-drones-intercepted-in-latest-threat-to-fragile-ceasefire",
+            "importance": 5,
+            "published": "2026-06-06T11:09:31Z"
+          },
+          "queries": [
+            {
+              "claim": "미국이 이란 드론을 격추하고 이란 레이더 시설을 타격했다",
+              "query": "다음 주장이 사실인지 최신 뉴스를 검색해서 확인해줘. 출처·날짜와 함께 검증됨/불일치/미확인으로 답해줘:\n「미국이 이란 드론을 격추하고 이란 레이더 시설을 타격했다」",
+              "checked": false,
+              "result": ""
+            },
+            {
+              "claim": "이란이 쿠웨이트와 바레인을 공격했다",
+              "query": "다음 주장이 사실인지 최신 뉴스를 검색해서 확인해줘. 출처·날짜와 함께 검증됨/불일치/미확인으로 답해줘:\n「이란이 쿠웨이트와 바레인을 공격했다」",
+              "checked": false,
+              "result": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "diplomacy",
+      "items": [
+        {
+          "article": {
+            "title": "Hopes of Lebanon Cease-Fire Falter as Israel and Hezbollah Fight On",
+            "source": "NYT_World",
+            "url": "https://www.nytimes.com/2026/06/05/world/middleeast/lebanon-cease-fire-israel-hezbollah.html",
+            "importance": 5,
+            "published": "Fri, 05 Jun 2026 14:56:03 +0000"
+          },
+          "queries": [
+            {
+              "claim": "미국이 이스라엘과 레바논 간 휴전을 중재했다",
+              "query": "다음 주장이 사실인지 최신 뉴스를 검색해서 확인해줘. 출처·날짜와 함께 검증됨/불일치/미확인으로 답해줘:\n「미국이 이스라엘과 레바논 간 휴전을 중재했다」",
+              "checked": false,
+              "result": ""
+            },
+            {
+              "claim": "헤즈볼라가 휴전 조건을 항복으로 규정하며 거부했다",
+              "query": "다음 주장이 사실인지 최신 뉴스를 검색해서 확인해줘. 출처·날짜와 함께 검증됨/불일치/미확인으로 답해줘:\n「헤즈볼라가 휴전 조건을 항복으로 규정하며 거부했다」",
+              "checked": false,
+              "result": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
