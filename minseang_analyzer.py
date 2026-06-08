@@ -474,16 +474,19 @@ def run(target_date: str = None) -> Path:
 
     # ── 후처리 ②: 빈·무관 타지자체 필드 자동 제거 ─────────────────────────
     # 빈 값 또는 "없음" 패턴을 나타내는 마커
+    # ※ ""는 제외: Python에서 any_str.startswith("") == True이므로
+    #   모든 값을 빈 값으로 오인하는 버그 방지
     EMPTY_MARKERS = [
         "수집된 사례 없음", "수집 기사 없음", "확인되지 않음",
-        "확인 안 됨", "없음", "해당 없음", "",
+        "확인 안 됨", "없음", "해당 없음",
     ]
 
     def _is_empty_val(val: str) -> bool:
         if not val or not val.strip():
             return True
+        v = val.strip()
         for m in EMPTY_MARKERS:
-            if val.strip().startswith(m) or val.strip() == m:
+            if m and (v.startswith(m) or v == m):
                 return True
         return False
 

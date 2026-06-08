@@ -1,0 +1,160 @@
+{
+  "date": "2026-06-08",
+  "total_signals": 6,
+  "structural_signals": 6,
+  "signals": [
+    {
+      "signal_id": "sig_001",
+      "category": "에너지안보재편",
+      "title_ko": "OPEC 글로벌 석유 수요 구조 전망 수정",
+      "description": "• OPEC가 2026년 연례 통계 보고서 및 2050년 세계 석유 전망(World Oil Outlook 2050)을 발표\n• 중장기 석유 수요 패턴과 공급 구조에 대한 구조적 재평가 진행 중\n• 월간 석유시장 보고서(MOMR) 연속 발행으로 시장 변동성 모니터링 체계 강화",
+      "evidence_titles": [
+        "Annual Statistical Bulletin 2026 - OPEC: Publications",
+        "World Oil Outlook 2050 - OPEC: Publications",
+        "Monthly Oil Market Report - Organization of the Petroleum Exporting Countries"
+      ],
+      "evidence_sources": [
+        "OPEC_News",
+        "OPEC_News",
+        "OPEC_News"
+      ],
+      "strength": 4,
+      "trend": "신규",
+      "suwon_implication": "수원시 중장기 에너지 비용 구조 변화 예상. 2026년 이후 석유 공급 불안정 시나리오 대비한 난방·교통비 안정화 정책 설계 필요",
+      "is_structural": true,
+      "detected_date": "2026-06-08",
+      "first_detected": "2026-06-08"
+    },
+    {
+      "signal_id": "sig_003",
+      "category": "정책패러다임전환",
+      "title_ko": "OPEC+ 협력선언 체제 공고화",
+      "description": "• 'Declaration of Cooperation' 문서 지속 발행으로 OPEC+ 공조 체제 제도화\n• 단순 생산량 조절을 넘어 장기 에너지 거버넌스 구조로 전환 신호\n• 석유 수출국 간 정책 조율이 시장 가격보다 지정학적 안정 우선으로 이동",
+      "evidence_titles": [
+        "Declaration of Cooperation - Organization of the Petroleum Exporting Countries",
+        "Press Releases - Organization of the Petroleum Exporting Countries"
+      ],
+      "evidence_sources": [
+        "OPEC_News",
+        "OPEC_News"
+      ],
+      "strength": 4,
+      "trend": "강화",
+      "suwon_implication": "국제 석유 가격이 시장 논리보다 지정학적 협상에 좌우될 가능성 증가. 수원시 에너지 정책은 가격 예측 불가능성에 대비한 완충 장치 필요",
+      "is_structural": true,
+      "detected_date": "2026-06-08"
+    },
+    {
+      "signal_id": "sig_005",
+      "category": "에너지안보재편",
+      "title_ko": "원유 가격 결정 메커니즘 변화",
+      "description": "• OPEC가 '원유 가격 움직임(Crude oil price movements)' 분석 섹션 강화\n• 전쟁 국면에서 가격 변동성이 공급량보다 지정학적 리스크에 더 민감하게 반응\n• 가격 예측 모델이 근본적으로 재구성되는 과도기 진입",
+      "evidence_titles": [
+        "Crude oil price movements - OPEC: Publications",
+        "Monthly Oil Market Report - Organization of the Petroleum Exporting Countries"
+      ],
+      "evidence_sources": [
+        "OPEC_News",
+        "OPEC_News"
+      ],
+      "strength": 4,
+      "trend": "신규",
+      "suwon_implication": "수원시 공공요금(난방비, 교통비) 연동 구조 재설계 필요. 급격한 가격 변동 시 취약계층 보호 위한 긴급 지원 체계 사전 마련 요구",
+      "is_structural": true,
+      "detected_date": "2026-06-08",
+      "first_detected": "2026-06-08"
+    },
+    {
+      "signal_id": "sig_006",
+      "category": "지역질서재편",
+      "title_ko": "세계 석유 공급 지도 재편",
+      "description": "• OPEC가 'World oil supply' 섹션에서 공급국 구조 변화 지속 추적\n• 이란-미국 전쟁으로 중동 공급망 불안정 → 대체 공급원 모색 가속화\n• 러시아, 남미, 아프리카 등 비중동 공급국 역할 구조적 확대 신호",
+      "evidence_titles": [
+        "World oil supply - OPEC: Publications",
+        "Annual Statistical Bulletin 2026 - OPEC: Publications"
+      ],
+      "evidence_sources": [
+        "OPEC_News",
+        "OPEC_News"
+      ],
+      "strength": 4,
+      "trend": "신규",
+      "suwon_implication": "한국의 중동 의존 에너지 수입 구조 변화 시 수원시 에너지 비용 구조도 연동 변화. 지역 에너지 자립도 제고 정책 검토 시점",
+      "is_structural": true,
+      "detected_date": "2026-06-08",
+      "first_detected": "2026-06-08"
+    },
+    {
+      "signal_id": "sig_002",
+      "category": "무역공급망재편",
+      "title_ko": "글로벌 유조선 시장 구조 변화",
+      "description": "• OPEC가 유조선 시장(Tanker Market) 동향을 별도 섹션으로 지속 모니터링\n• 해상 운송 비용 및 경로 변화가 석유 공급망 전체에 구조적 영향\n• 이란-미국 전쟁 국면에서 호르무즈 해협 등 핵심 항로 리스크 반영",
+      "evidence_titles": [
+        "Tanker market - OPEC: Publications",
+        "Tanker market - OPEC: Publications"
+      ],
+      "evidence_sources": [
+        "OPEC_News",
+        "OPEC_News"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "수원시 제조기업의 원자재 수입 비용 상승 가능성. 물류비 연동 제품 가격 인상이 지역 내 중소기업 경영에 부담 요인",
+      "is_structural": true,
+      "detected_date": "2026-06-08",
+      "first_detected": "2026-06-08"
+    },
+    {
+      "signal_id": "sig_004",
+      "category": "정책패러다임전환",
+      "title_ko": "'화석연료' 용어 재정의 논의 개시",
+      "description": "• OPEC가 'Does the fossil fuel label require a rethink?' 특집 기사 발행\n• 에너지 전환 담론에서 석유·가스 산업의 프레임 재구성 시도\n• 탄소중립 정책과 에너지 안보 간 우선순위 재조정 신호",
+      "evidence_titles": [
+        "Does the 'fossil fuel' label require a rethink? - Organization of the Petroleum Exporting Countries",
+        "Feature article: - Organization of the Petroleum Exporting Countries"
+      ],
+      "evidence_sources": [
+        "OPEC_News",
+        "OPEC_News"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "수원시 탄소중립 정책 벤치마킹 시 글로벌 담론 변화 고려 필요. 재생에너지 전환 속도 조절과 화석연료 병행 전략 재검토 시점",
+      "is_structural": true,
+      "detected_date": "2026-06-08",
+      "first_detected": "2026-06-08"
+    }
+  ],
+  "by_category": {
+    "에너지안보재편": 2,
+    "무역공급망재편": 1,
+    "정책패러다임전환": 2,
+    "지역질서재편": 1
+  },
+  "summary_ko": "• OPEC가 2026년 연례 보고서 및 2050년 전망 발표로 글로벌 석유 수요·공급 구조 근본 재평가 개시\n• 이란-미국 전쟁 국면에서 호르무즈 해협 등 핵심 항로 리스크 반영, 유조선 시장 및 공급 지도 재편 가속화\n• OPEC+ 협력선언 체제 공고화로 석유 가격 결정이 시장 논리보다 지정학적 협상 중심으로 전환\n• '화석연료' 프레임 재정의 논의 시작, 탄소중립과 에너지 안보 간 우선순위 재조정 신호 감지\n• 원유 가격 변동성이 공급량보다 지정학 리스크에 민감 반응, 가격 예측 모델 근본 재구성 과도기 진입",
+  "top_signal": "OPEC+ 협력선언 체제 공고화",
+  "suwon_action": "• 에너지 가격 급변동 대비 난방·교통비 취약계층 긴급 지원 체계 즉시 점검\n• 중동 의존 에너지 구조 변화 연동, 수원시 에너지 자립도 제고 중장기 로드맵 착수",
+  "weekly_trend": {
+    "정책패러다임전환": {
+      "count": 10,
+      "max_strength": 4
+    },
+    "무역공급망재편": {
+      "count": 4,
+      "max_strength": 4
+    },
+    "지역질서재편": {
+      "count": 3,
+      "max_strength": 4
+    },
+    "에너지안보재편": {
+      "count": 3,
+      "max_strength": 4
+    },
+    "민생충격패턴": {
+      "count": 3,
+      "max_strength": 3
+    }
+  },
+  "generated_at": "2026-06-08T00:12:04.205835"
+}
