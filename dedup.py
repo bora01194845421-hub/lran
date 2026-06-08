@@ -131,13 +131,11 @@ def run(raw_path: Path) -> Path:
 
     logger.info(f"URL 중복 제거 후: {len(url_deduped)}건")
 
-    # 2단계: 날짜 필터 — data_type별 기준 차등 적용
-    #   news        : 최근 5일 이내 (발행일 기준 주간 커버리지)
-    #   intl_org    : 최근 14일 이내 (국제기구 보고서는 업데이트 주기 느림)
-    #   research    : 최근 14일 이내
+    # 2단계: 날짜 필터 — 모든 타입 5일 이내 통일
+    #   news / intl_org / research 모두 최근 5일
+    #   발행물 기간 일치 원칙 ("6/8 발행 = 6/3~8 자료만")
     def days_for_type(article: dict) -> int:
-        dtype = article.get("data_type", "news")
-        return 14 if dtype in ("intl_org", "research") else 5
+        return 5
 
     date_filtered = [
         a for a in url_deduped
