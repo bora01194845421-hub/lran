@@ -25,7 +25,7 @@ import feedparser
 import requests
 from bs4 import BeautifulSoup
 
-from config import DATA_DIR, KEYWORDS_EN, USER_AGENT, REQUEST_DELAY
+from config import DATA_DIR, KEYWORDS_EN, USER_AGENT, REQUEST_DELAY, get_collection_days
 
 logger = logging.getLogger(__name__)
 HEADERS = {"User-Agent": USER_AGENT}
@@ -313,7 +313,7 @@ def run(target_date: str = None) -> Path:
 
     # ── 날짜 필터: 최근 14일 이내 기사만 유지 ──────────────────────
     before = len(all_articles)
-    all_articles = [a for a in all_articles if _is_recent_intl(a.get("published", ""), days=5)]
+    all_articles = [a for a in all_articles if _is_recent_intl(a.get("published", ""), days=get_collection_days(target_date))]
     filtered_cnt = before - len(all_articles)
     if filtered_cnt > 0:
         logger.info(f"날짜 필터 제거: {filtered_cnt}건 (5일 초과 기사)")

@@ -13,7 +13,7 @@ import re
 from datetime import date, datetime, timedelta
 from pathlib import Path
 
-from config import RAW_DIR, CLEAN_DIR, DATA_DIR
+from config import RAW_DIR, CLEAN_DIR, DATA_DIR, get_collection_days
 
 INTL_DIR     = DATA_DIR / "intl"
 RESEARCH_DIR = DATA_DIR / "research"
@@ -81,6 +81,9 @@ def run(raw_path: Path) -> Path:
 
     # 날짜 코드 추출 (raw_20260420.json → 20260420)
     date_str = raw_path.stem.replace("raw_", "")
+    target_date_str = f"{date_str[:4]}-{date_str[4:6]}-{date_str[6:]}"
+    _days = get_collection_days(target_date_str)
+    logger.info(f"수집 기간: {_days}일 (요일 기반 자동 설정)")
 
     # ── 1. 수집 소스 통합 로드 ──────────────────────────────
     articles = []
@@ -131,15 +134,12 @@ def run(raw_path: Path) -> Path:
 
     logger.info(f"URL 중복 제거 후: {len(url_deduped)}건")
 
-    # 2단계: 날짜 필터 — 모든 타입 5일 이내 통일
-    #   news / intl_org / research 모두 최근 5일
-    #   발행물 기간 일치 원칙 ("6/8 발행 = 6/3~8 자료만")
-    def days_for_type(article: dict) -> int:
-        return 5
-
+    # 2단계: 날짜 필터 — 요일 기반 동적 수집 기간
+    #   월요일 발행: 금·토·일·월 = 4일
+    #   목요일 발행: 화·수·목 = 3일
     date_filtered = [
         a for a in url_deduped
-        if is_recent(a.get("published", ""), days=days_for_type(a))
+        if is_recent(a.get("published", ""), days=_days)
     ]
     logger.info(f"날짜 필터 후: {len(date_filtered)}건")
 

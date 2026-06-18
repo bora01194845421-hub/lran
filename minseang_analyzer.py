@@ -12,7 +12,7 @@ import anthropic
 from config import (
     ANTHROPIC_API_KEY, CLAUDE_MODEL, POLICY_DIR,
     ANALYZED_DIR, DOMESTIC_DIR, PARADIGM_DIR, YT_DIR, SUWON_CONTEXT,
-    FACT_CHECK_DIR,
+    FACT_CHECK_DIR, get_collection_days,
 )
 logger = logging.getLogger(__name__)
 client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
@@ -428,9 +428,12 @@ def _fc_sort_key(article: dict, fc_map: dict) -> tuple:
 
 
 def compute_period(target_date_str: str) -> tuple:
-    """분석 기간 시작일·종료일 반환 (종료일=target_date, 시작일=6일 전)"""
+    """발행 요일 기반 분석 기간 반환
+    월요일: 금~월 (4일) | 목요일: 화~목 (3일)
+    """
     end = datetime.strptime(target_date_str, "%Y-%m-%d")
-    start = end - timedelta(days=6)
+    days = get_collection_days(target_date_str)
+    start = end - timedelta(days=days - 1)
     return f"{start.month}월 {start.day}일", f"{end.month}월 {end.day}일"
 
 

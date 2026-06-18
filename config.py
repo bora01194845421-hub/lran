@@ -4,6 +4,7 @@ config.py — 전체 설정
 수원시정연구원
 """
 import os
+from datetime import datetime
 from pathlib import Path
 from dotenv import load_dotenv
 
@@ -24,6 +25,20 @@ YT_DIR                = DATA_DIR / "youtube"
 COUNTRY_RESPONSE_DIR  = DATA_DIR / "country_response"
 DB_PATH      = BASE_DIR / "iran_news.db"
 LOG_PATH     = BASE_DIR / "iran_agent.log"
+
+
+def get_collection_days(target_date_str: str) -> int:
+    """발행 요일에 따른 수집 기간 반환
+    월요일 발행: 금·토·일·월 = 4일
+    목요일 발행: 화·수·목 = 3일
+    기타: 5일 (fallback)
+    """
+    weekday = datetime.strptime(target_date_str, "%Y-%m-%d").weekday()
+    if weekday == 0:    # 월요일
+        return 4
+    elif weekday == 3:  # 목요일
+        return 3
+    return 5
 
 FACT_CHECK_DIR = DATA_DIR / "fact_check"
 
