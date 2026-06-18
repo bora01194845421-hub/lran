@@ -6,7 +6,7 @@ Claude API로 수원시 민생 영향 분석 + 정책 제언 생성
 출력: data/policy/minseang_YYYYMMDD.json
 """
 import json, logging
-from datetime import date, datetime
+from datetime import date, datetime, timedelta
 from pathlib import Path
 import anthropic
 from config import (
@@ -51,21 +51,15 @@ SYSTEM = f"""당신은 수원시정연구원의 민생정책 전문 분석가입
 
 반드시 JSON 형식만 반환하세요."""
 
-PROMPT = """6월 9일(월)~6월 15일(일·오늘)간 수집된 데이터를 종합해서 수원시 민생경제 분석과 우선 대응과제를 JSON으로 작성하세요.
+PROMPT = """{period_start}~{period_end}(오늘)간 수집된 데이터를 종합해서 수원시 민생경제 분석과 우선 대응과제를 JSON으로 작성하세요.
 
-★ 이번 주(6/15) 반드시 반영해야 할 핵심 사실 (6/15 최종 확인된 사실):
-① 미-이란 전쟁 106일만에 사실상 종료 — 협상 타결, 6/19(목) 스위스 제네바에서 MOU 서명식 (연합뉴스·SBS·매일경제 6/15)
-② 트럼프 "서명 직후 호르무즈 통행료 없이 개방" + 對이란 해상봉쇄 즉시 해제 선언 (연합뉴스 6/15)
-③ 이란도 전쟁 중단 타결 공식 확인 — "위대한 승리" 주장, 카젬 가리바바디 외무차관 현지시간 6/15 이란 국영TV 통해 레바논 포함 여러 전선 즉각 중단 발표 (MBC·MBN·연합뉴스 6/15)
-④ 중재국 파키스탄도 협상 타결 확인 — 세바즈 샤리프 총리 합의 타결 소식 밝혀 (뉴시스 6/15)
-⑤ 美부통령 "트럼프 이란 평화협정 서명식 참석 가능성" 언급 (뉴시스 6/15)
-⑥ 호르무즈 해협 6/19 서명 직후 통행료 없이 전면 재개방 예정 → 글로벌 해운·에너지 공급 정상화 임박
-⑦ 유가: WTI $91.50, 브렌트 $94.35 (6/11) / USD/KRW 1520.21 (6/15)
-⑧ 수원시 영향: 해운 운임·전쟁보험료 정상화, 삼성전자 협력업체 공급망 회복, 유류비·도시가스 하락 압력
+★ 이번 기간 수집된 핵심 사실 (importance 상위 기사 자동 추출 — 이 사실들을 분석 근거로 활용할 것):
+{key_facts}
 
-위 ①~⑧를 분석 근거로 명시적으로 활용할 것. 특히 종전 타결이 수원시 민생경제에 미치는 긍정적 영향을 중점 분석하고, 6/19 서명 전까지의 불확실성 리스크도 병기할 것.
+위 핵심 사실을 분석 근거로 명시적으로 활용하고, 수원시 민생경제에 미치는 영향을 중점 분석할 것.
+⚠️ 위 수집 기사에 없는 날짜·수치·사건은 절대 추가하지 말 것.
 
-[국제 전황 요약 — 6/5~6/8 수집 핵심 기사]
+[국제 전황 요약 — {period_start}~{period_end} 수집 핵심 기사]
 {war_summary}
 
 [국내 물가·에너지 지표]
@@ -80,20 +74,21 @@ PROMPT = """6월 9일(월)~6월 15일(일·오늘)간 수집된 데이터를 종
 [전문가·싱크탱크 분석 기사 — 우선과제 근거로 직접 인용할 것]
 {expert_quotes}
 
-[지난주(6/4) 분석 결과 — 중복 지양, 변화·심화·신규 이슈 중심으로 작성]
+[지난주 분석 결과 — 중복 지양, 변화·심화·신규 이슈 중심으로 작성]
 {prev_summary}
 
 ⚠️ 작성 지침:
-1. 지난주(6/4)와 동일한 제목·내용 반복 금지 — 위 ①~⑨ 사실에 근거한 새로운 분석만 작성
-2. "이란 이스라엘 미사일 발사(①②)" — 4월 휴전 이후 전선 재확대가 수원시 에너지·물류에 미치는 영향
-3. "미-이란 걸프 직접 교전(③)" + "트럼프 6/10 합의 가능(④)" — 외교·군사 양면 시나리오별 수원시 대응
-4. "호르무즈 통행료 150~200만 달러(⑤)" + "IATA 순익 50% 하향(⑦)" — 항공화물·해운 비용 직접 영향
-5. 수치는 위 ①~⑨에 명시된 최신값 사용 (6/8 기준 WTI $92.74, 브렌트 $95.44, 환율 1540.93원)
-6. 지난주(6/4) 우선과제와 완전히 다른 제목·내용 사용
-7. 지난주 "다음주 주목이슈"로 예고된 사건들의 실제 결과 반영 (트럼프-하메네이 접촉·이란 미사일 발사 등)
+1. 지난주와 동일한 제목·내용 반복 금지 — 위 핵심 사실에 근거한 새로운 분석만 작성
+2. 수치는 [국내 물가·에너지 지표]의 최신값 사용 (WTI·브렌트 유가, 환율 등)
+3. 지난주 "다음주 주목이슈"로 예고된 사건들의 실제 결과 반영
 
 반환 형식:
 {{
+  "핵심사실_요약": [
+    "① [출처 날짜] 핵심 사실 1 — 수원시 민생 연결점",
+    "② [출처 날짜] 핵심 사실 2",
+    "③ [출처 날짜] 핵심 사실 3"
+  ],
   "민생경제_분석": {{
     "지역산업": {{
       "level": "높음|중간|낮음|모니터링",
@@ -398,6 +393,52 @@ def load_expert_quotes(analyzed_path: Path, max_items: int = 8) -> str:
         return "로드 실패"
 
 
+_CIRCLED = ["①", "②", "③", "④", "⑤", "⑥", "⑦", "⑧", "⑨", "⑩"]
+
+
+def compute_period(target_date_str: str) -> tuple:
+    """분석 기간 시작일·종료일 반환 (종료일=target_date, 시작일=6일 전)"""
+    end = datetime.strptime(target_date_str, "%Y-%m-%d")
+    start = end - timedelta(days=6)
+    return f"{start.month}월 {start.day}일", f"{end.month}월 {end.day}일"
+
+
+def extract_key_facts(analyzed_path: Path, max_items: int = 8) -> str:
+    """analyzed JSON에서 importance 상위 기사로 핵심 사실 자동 추출"""
+    if not analyzed_path or not analyzed_path.exists():
+        return "수집된 기사 없음"
+    try:
+        with open(analyzed_path, encoding="utf-8") as f:
+            data = json.load(f)
+
+        KEY_CATS = {"diplomacy", "military", "energy", "ceasefire", "nuclear", "economy"}
+        priority = sorted(
+            [a for a in data if a.get("category") in KEY_CATS and a.get("importance", 0) >= 4],
+            key=lambda x: x.get("importance", 0), reverse=True
+        )[:max_items]
+
+        if len(priority) < max_items:
+            seen = {a.get("url", "") for a in priority}
+            extra = sorted(
+                [a for a in data if a.get("url", "") not in seen and a.get("importance", 0) >= 3],
+                key=lambda x: x.get("importance", 0), reverse=True
+            )[:max_items - len(priority)]
+            priority += extra
+
+        lines = []
+        for i, a in enumerate(priority[:max_items]):
+            circle = _CIRCLED[i] if i < len(_CIRCLED) else f"({i+1})"
+            src = a.get("source", "")
+            pub = a.get("published", "")[:10]
+            title = a.get("title", "")
+            summ = a.get("summary_ko", "").split("\n")[0][:150] if a.get("summary_ko") else ""
+            lines.append(f"{circle} [{src} {pub}] {title} — {summ}")
+
+        return "\n".join(lines) if lines else "수집된 핵심 기사 없음"
+    except Exception:
+        return "로드 실패"
+
+
 def run(target_date: str = None) -> Path:
     if target_date is None:
         target_date = date.today().strftime("%Y-%m-%d")
@@ -409,13 +450,19 @@ def run(target_date: str = None) -> Path:
     paradigm_path = PARADIGM_DIR / f"paradigm_{date_str}.json"
     yt_path       = YT_DIR / f"yt_summary_{date_str}.json"
 
+    period_start, period_end = compute_period(target_date)
+    key_facts = extract_key_facts(analyzed_path)
+
     prompt = PROMPT.format(
-        war_summary     = load_analyzed_summary(analyzed_path, max_items=15),
-        domestic_summary= load_summary(domestic_path),
-        paradigm_summary= load_summary(paradigm_path),
-        yt_summary      = load_summary(yt_path),
-        prev_summary    = load_prev_summary(POLICY_DIR, date_str),
-        expert_quotes   = load_expert_quotes(analyzed_path),
+        period_start     = period_start,
+        period_end       = period_end,
+        key_facts        = key_facts,
+        war_summary      = load_analyzed_summary(analyzed_path, max_items=15),
+        domestic_summary = load_summary(domestic_path),
+        paradigm_summary = load_summary(paradigm_path),
+        yt_summary       = load_summary(yt_path),
+        prev_summary     = load_prev_summary(POLICY_DIR, date_str),
+        expert_quotes    = load_expert_quotes(analyzed_path),
     )
 
     try:
