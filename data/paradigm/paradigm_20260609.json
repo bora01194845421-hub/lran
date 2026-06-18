@@ -1,0 +1,147 @@
+{
+  "date": "2026-06-09",
+  "total_signals": 5,
+  "structural_signals": 5,
+  "signals": [
+    {
+      "signal_id": "sig_001",
+      "category": "정책패러다임전환",
+      "title_ko": "OECD 기후금융정렬 체계화",
+      "description": "• OECD가 기후목표 금융정렬 리뷰(2026) 발간, 금융시스템의 기후연계를 정책 표준화\n• 산업 에너지생산성 개선이 배출감축+경쟁력 동시 달성 경로로 공식화\n• 기후·생물다양성 재원접근성을 국제개발금융 핵심 의제로 설정",
+      "evidence_titles": [
+        "OECD Review on Aligning Finance with Climate Goals 2026",
+        "How improving industrial energy productivity can cut emissions and boost competitiveness",
+        "Access to Finance for Climate and Biodiversity"
+      ],
+      "evidence_sources": [
+        "OECD",
+        "OECD",
+        "OECD"
+      ],
+      "strength": 4,
+      "trend": "신규",
+      "suwon_implication": "수원시 산업단지 에너지효율 투자·기후금융 연계 정책 설계 시 OECD 표준을 벤치마킹 가능. 중소기업 녹색전환 지원금 확보 근거로 활용.",
+      "is_structural": true,
+      "detected_date": "2026-06-09",
+      "first_detected": "2026-06-09"
+    },
+    {
+      "signal_id": "sig_002",
+      "category": "정책패러다임전환",
+      "title_ko": "IMF 유럽 통합금융시장 촉구",
+      "description": "• IMF가 '더 강한 유럽(A Stronger Europe for Tougher Times)' 보고서로 위기 대응력 강화 요구\n• 깊고 통합된 금융시장이 성장·회복력 핵심이라는 정책 방향 천명\n• 에스토니아·슬로베니아 등 개별국 리뷰에서도 디지털·녹색전환+재정건전성 동시 강조",
+      "evidence_titles": [
+        "A Stronger Europe for Tougher Times",
+        "Deeper and More Integrated Financial Markets to Foster Growth and Resilience in Europe",
+        "Strengthening public finances and accelerating the digital and green transitions would support Estonia's economic resilience"
+      ],
+      "evidence_sources": [
+        "IMF",
+        "IMF",
+        "IMF"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "수원시 재정건전성 유지하면서 디지털·녹색 투자를 병행하는 전략이 국제 표준. 민생안정 예산 설계 시 중장기 회복력 고려 필요.",
+      "is_structural": true,
+      "detected_date": "2026-06-09",
+      "first_detected": "2026-06-09"
+    },
+    {
+      "signal_id": "sig_003",
+      "category": "정책패러다임전환",
+      "title_ko": "IMF 다자개발금융 주간 제도화",
+      "description": "• IMF가 'Multilateral Development Finance Week 2026' 운영, 개발금융 정책 조율 플랫폼화\n• 르완다·파푸아뉴기니·시에라리온 등 신흥국 ECF·RSF(회복력·지속가능성 지원) 확대\n• 개발금융이 일회성 지원에서 구조적 회복력 구축 체계로 전환 신호",
+      "evidence_titles": [
+        "Multilateral Development Finance Week 2026",
+        "IMF Executive Board Approves Rwanda's Request for an Extended Credit Facility Arrangement",
+        "Sierra Leone: IMF Staff Reaches Staff-Level Agreement on the Third Review Under the Extended Credit Facility (ECF) Arrangement and an Arrangement under the Resilience and Sustainability Facility (RSF)"
+      ],
+      "evidence_sources": [
+        "OECD",
+        "IMF",
+        "IMF"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "수원시 국제협력·자매결연 사업에서 회복력·지속가능성 중심 협력 모델 도입 가능. ODA·개발협력 참여 시 장기 임팩트 중심 설계 필요.",
+      "is_structural": true,
+      "detected_date": "2026-06-09",
+      "first_detected": "2026-06-09"
+    },
+    {
+      "signal_id": "sig_004",
+      "category": "민생충격패턴",
+      "description": "• 세계은행 컨테이너항만성능지수(2025) 발표로 전쟁 시 물류병목 가시화 가능성\n• 나이지리아·조지아 등 신흥국 Article IV 협의에서 물가·재정 안정 강조 증가\n• 공급망 불안 → 개도국 물가압력 → 선진국 수입물가 상승 경로 구조화",
+      "evidence_titles": [
+        "The Container Port Performance Index 2025",
+        "IMF Executive Board Concludes 2026 Article IV Consultation with Nigeria",
+        "IMF Executive Board Concludes 2026 Article IV Consultation with Georgia"
+      ],
+      "evidence_sources": [
+        "WorldBank",
+        "IMF",
+        "IMF"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "수원시 소비자물가 모니터링 시 글로벌 물류지연 반영 필요. 취약계층 생필품 비축·할인지원 정책에 해운비 변동 시나리오 추가.",
+      "is_structural": true,
+      "title_ko": "신흥국 물가안정 최우선 정책화",
+      "detected_date": "2026-06-09",
+      "first_detected": "2026-06-09"
+    },
+    {
+      "signal_id": "sig_005",
+      "category": "정책패러다임전환",
+      "title_ko": "OECD 환자보고지표 체계화",
+      "description": "• OECD PaRIS(환자보고지표조사)로 의료품질을 공급자→환자 중심 평가로 전환\n• 아동 기초역량 조기교육 강화, 공공재정·녹색전환 동시 추진이 OECD 표준 정책으로 부상\n• 연방제 규모경제(Federalism of scale) 연구로 지방정부 역할 재정의 시도",
+      "evidence_titles": [
+        "Improving quality of care through the OECD Patient Reported Indicator Surveys (PaRIS)",
+        "Supporting children's foundational skills for a strong start to school",
+        "Federalism of scale"
+      ],
+      "evidence_sources": [
+        "OECD",
+        "OECD",
+        "OECD"
+      ],
+      "strength": 2,
+      "trend": "신규",
+      "suwon_implication": "수원시 보건·교육 정책 성과평가에 주민체감도·환자경험 지표 도입 가능. 아동 조기교육 투자 확대 국제 근거 확보.",
+      "is_structural": true,
+      "detected_date": "2026-06-09",
+      "first_detected": "2026-06-09"
+    }
+  ],
+  "by_category": {
+    "정책패러다임전환": 4,
+    "민생충격패턴": 1
+  },
+  "summary_ko": "• OECD·IMF가 기후금융 정렬, 산업 에너지생산성, 통합금융시장을 정책 표준으로 체계화하며 '녹색+회복력' 동시 추구 패러다임 공식화\n• 다자개발금융이 일회성 지원에서 구조적 회복력 구축 체계로 전환, 국제협력 모델 재설계 신호\n• 전쟁 시 물류병목→신흥국 물가압력→선진국 수입물가 상승 경로가 구조화되며 지자체 민생안정 정책에 글로벌 변수 반영 필수\n• 의료·교육 정책 평가가 공급자 중심에서 환자·주민 체감도 중심으로 전환, 성과관리 패러다임 변화\n• 지방정부 역할 재정의(연방제 규모경제) 논의 시작으로 광역-기초 협력 모델 재검토 시점 도래",
+  "top_signal": "OECD 기후금융정렬 체계화",
+  "suwon_action": "• 산업단지 에너지효율 투자를 OECD 기후금융 표준에 연계, 중소기업 녹색전환 지원금 확보 전략 수립\n• 소비자물가 모니터링에 글로벌 물류지연 시나리오 추가, 취약계층 생필품 비축·할인지원 정책 선제 점검",
+  "weekly_trend": {
+    "정책패러다임전환": {
+      "count": 8,
+      "max_strength": 4
+    },
+    "지역질서재편": {
+      "count": 3,
+      "max_strength": 4
+    },
+    "에너지안보재편": {
+      "count": 3,
+      "max_strength": 4
+    },
+    "무역공급망재편": {
+      "count": 3,
+      "max_strength": 3
+    },
+    "민생충격패턴": {
+      "count": 2,
+      "max_strength": 3
+    }
+  },
+  "generated_at": "2026-06-11T00:13:14.046293"
+}
