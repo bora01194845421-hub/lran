@@ -11,7 +11,8 @@ from pathlib import Path
 import anthropic
 from config import (
     ANTHROPIC_API_KEY, CLAUDE_MODEL, POLICY_DIR,
-    ANALYZED_DIR, DOMESTIC_DIR, PARADIGM_DIR, YT_DIR, SUWON_CONTEXT
+    ANALYZED_DIR, DOMESTIC_DIR, PARADIGM_DIR, YT_DIR, SUWON_CONTEXT,
+    FACT_CHECK_DIR,
 )
 logger = logging.getLogger(__name__)
 client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
@@ -250,22 +251,26 @@ def load_summary(path: Path, max_items: int = 5) -> str:
     return ""
 
 
-def load_analyzed_summary(path: Path, max_items: int = 15) -> str:
+def load_analyzed_summary(path: Path, max_items: int = 15, fc_map: dict = None) -> str:
     """analyzed JSON 전용 로드:
-    - 상위 max_items건 (importance 내림차순, 전황·외교·군사 중심) +
-    - 한국어 지자체 대응 기사 최대 5건 별도 추가
-      (importance 낮아도 타지자체 벤치마킹에 필수: 서울시·경기도·전주·화성 등)
+    - "불일치" 팩트체크 기사 제외
+    - "검증됨" 우선 정렬 후 importance 내림차순
+    - 상위 max_items건 + 지자체 대응 기사 최대 3건 추가
     """
     if not path or not path.exists():
         return "데이터 없음"
+    fc_map = fc_map or {}
     try:
         with open(path, encoding="utf-8") as f:
             data = json.load(f)
         if not isinstance(data, list):
             return json.dumps(data, ensure_ascii=False)[:2000]
 
-        # 중요도 내림차순 정렬
-        sorted_data = sorted(data, key=lambda x: x.get("importance", 0), reverse=True)
+        # 불일치 기사 제외 후 팩트체크 우선·importance 내림차순 정렬
+        sorted_data = sorted(
+            [a for a in data if fc_map.get(a.get("url", ""), {}).get("verdict") != "불일치"],
+            key=lambda a: _fc_sort_key(a, fc_map),
+        )
 
         # 상위 N건 (주로 전황·외교·군사 기사)
         top_items = [a for a in sorted_data if a.get("importance", 0) >= 1][:max_items]
@@ -396,6 +401,32 @@ def load_expert_quotes(analyzed_path: Path, max_items: int = 8) -> str:
 _CIRCLED = ["①", "②", "③", "④", "⑤", "⑥", "⑦", "⑧", "⑨", "⑩"]
 
 
+def load_factcheck(fact_check_path: Path) -> dict:
+    """팩트체크 결과 로드 — {url: {"verdict": ..., "confidence": ...}} 반환"""
+    if not fact_check_path or not fact_check_path.exists():
+        return {}
+    try:
+        with open(fact_check_path, encoding="utf-8") as f:
+            data = json.load(f)
+        return {
+            r["url"]: {
+                "verdict":    r.get("overall_verdict", "미확인"),
+                "confidence": r.get("avg_confidence", 0.0),
+            }
+            for r in data.get("results", [])
+            if r.get("url")
+        }
+    except Exception:
+        return {}
+
+
+def _fc_sort_key(article: dict, fc_map: dict) -> tuple:
+    """팩트체크 결과를 반영한 정렬 키 — 검증됨>미체크>미확인, 같은 등급 내 importance 내림차순"""
+    verdict = fc_map.get(article.get("url", ""), {}).get("verdict", "")
+    rank = {"검증됨": 0}.get(verdict, 1) if verdict != "미확인" else 2
+    return (rank, -article.get("importance", 0))
+
+
 def compute_period(target_date_str: str) -> tuple:
     """분석 기간 시작일·종료일 반환 (종료일=target_date, 시작일=6일 전)"""
     end = datetime.strptime(target_date_str, "%Y-%m-%d")
@@ -403,25 +434,38 @@ def compute_period(target_date_str: str) -> tuple:
     return f"{start.month}월 {start.day}일", f"{end.month}월 {end.day}일"
 
 
-def extract_key_facts(analyzed_path: Path, max_items: int = 8) -> str:
-    """analyzed JSON에서 importance 상위 기사로 핵심 사실 자동 추출"""
+def extract_key_facts(analyzed_path: Path, fc_map: dict = None, max_items: int = 8) -> str:
+    """analyzed JSON + 팩트체크 결과를 결합해 핵심 사실 자동 추출.
+
+    - "불일치" 판정 기사 제외
+    - "검증됨" 우선 → 미체크 → "미확인" 순 정렬
+    - 각 항목에 [✓검증됨] / [?미확인] 태그 표시
+    """
     if not analyzed_path or not analyzed_path.exists():
         return "수집된 기사 없음"
+    fc_map = fc_map or {}
     try:
         with open(analyzed_path, encoding="utf-8") as f:
             data = json.load(f)
 
         KEY_CATS = {"diplomacy", "military", "energy", "ceasefire", "nuclear", "economy"}
+
+        # 불일치 제외
+        filtered = [
+            a for a in data
+            if fc_map.get(a.get("url", ""), {}).get("verdict") != "불일치"
+        ]
+
         priority = sorted(
-            [a for a in data if a.get("category") in KEY_CATS and a.get("importance", 0) >= 4],
-            key=lambda x: x.get("importance", 0), reverse=True
+            [a for a in filtered if a.get("category") in KEY_CATS and a.get("importance", 0) >= 4],
+            key=lambda a: _fc_sort_key(a, fc_map),
         )[:max_items]
 
         if len(priority) < max_items:
             seen = {a.get("url", "") for a in priority}
             extra = sorted(
-                [a for a in data if a.get("url", "") not in seen and a.get("importance", 0) >= 3],
-                key=lambda x: x.get("importance", 0), reverse=True
+                [a for a in filtered if a.get("url", "") not in seen and a.get("importance", 0) >= 3],
+                key=lambda a: _fc_sort_key(a, fc_map),
             )[:max_items - len(priority)]
             priority += extra
 
@@ -432,7 +476,10 @@ def extract_key_facts(analyzed_path: Path, max_items: int = 8) -> str:
             pub = a.get("published", "")[:10]
             title = a.get("title", "")
             summ = a.get("summary_ko", "").split("\n")[0][:150] if a.get("summary_ko") else ""
-            lines.append(f"{circle} [{src} {pub}] {title} — {summ}")
+            fc = fc_map.get(a.get("url", ""), {})
+            verdict = fc.get("verdict", "")
+            tag = "[✓검증됨] " if verdict == "검증됨" else ("[?미확인] " if verdict == "미확인" else "")
+            lines.append(f"{circle} {tag}[{src} {pub}] {title} — {summ}")
 
         return "\n".join(lines) if lines else "수집된 핵심 기사 없음"
     except Exception:
@@ -451,13 +498,23 @@ def run(target_date: str = None) -> Path:
     yt_path       = YT_DIR / f"yt_summary_{date_str}.json"
 
     period_start, period_end = compute_period(target_date)
-    key_facts = extract_key_facts(analyzed_path)
+
+    fact_check_path = FACT_CHECK_DIR / f"fact_check_{date_str}.json"
+    fc_map = load_factcheck(fact_check_path)
+    if fc_map:
+        fc_stats = {v: sum(1 for x in fc_map.values() if x["verdict"] == v)
+                    for v in ["검증됨", "불일치", "미확인"]}
+        logger.info(f"팩트체크 로드: 검증됨 {fc_stats['검증됨']} · 불일치 {fc_stats['불일치']} · 미확인 {fc_stats['미확인']}")
+    else:
+        logger.info("팩트체크 결과 없음 — 전체 기사 사용")
+
+    key_facts = extract_key_facts(analyzed_path, fc_map=fc_map)
 
     prompt = PROMPT.format(
         period_start     = period_start,
         period_end       = period_end,
         key_facts        = key_facts,
-        war_summary      = load_analyzed_summary(analyzed_path, max_items=15),
+        war_summary      = load_analyzed_summary(analyzed_path, max_items=15, fc_map=fc_map),
         domestic_summary = load_summary(domestic_path),
         paradigm_summary = load_summary(paradigm_path),
         yt_summary       = load_summary(yt_path),
