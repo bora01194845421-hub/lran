@@ -1,0 +1,198 @@
+{
+  "date": "2026-06-18",
+  "total_signals": 8,
+  "structural_signals": 8,
+  "signals": [
+    {
+      "signal_id": "sig_001",
+      "category": "에너지안보재편",
+      "title_ko": "호르무즈 위기와 동남아 에너지 취약성 구조화",
+      "description": "• IEA가 호르무즈 해협 위기를 계기로 동남아시아의 '주요 에너지 취약성 대응 필요성'을 구조적 과제로 규정\n• 단순 사건 대응이 아닌 2050년까지의 정책 시나리오(current policy vs pledges)를 구분해 장기 전망 제시\n• 에너지 파트너십 기준이 가격 중심에서 신뢰·안정성 중심으로 전환되는 신호",
+      "evidence_titles": [
+        "Strait of Hormuz crisis reinforces need for Southeast Asia to tackle major energy vulnerabilities",
+        "Southeast Asia's energy challenges and emerging opportunities – Southeast Asia Energy Outlook 2026",
+        "Energy outlook to 2050 based on today's policy settings"
+      ],
+      "evidence_sources": [
+        "IEA",
+        "IEA",
+        "IEA"
+      ],
+      "strength": 5,
+      "trend": "신규",
+      "suwon_implication": "수원시 LNG·전력 공급 안정성 장기 전망 재검토 필요. 에너지 비용 구조 변화(가격→신뢰 프리미엄)에 대비한 민생안정 시나리오 수립 필요",
+      "is_structural": true,
+      "detected_date": "2026-06-18",
+      "first_detected": "2026-06-18"
+    },
+    {
+      "signal_id": "sig_002",
+      "category": "정책패러다임전환",
+      "title_ko": "개도국 자본유입 비용 상승과 개발금융 압박",
+      "description": "• UNCTAD가 '개도국 외부 금융자본 유입 비용 상승'을 구조적 문제로 진단하며 개발금융이 압박받는 패러다임 제시\n• 세계은행이 '새로운 사업 방식(New Way of Doing Business)'을 선언하며 민간자본 동원 구조 전환 시도\n• 부채 비용 상승 → 개발 재원 압박 → 금융 구조 혁신이라는 연쇄 전환 신호",
+      "evidence_titles": [
+        "Financing development: External flows of financial capital to developing countries and their cost",
+        "As debt costs rise, development funding comes under pressure",
+        "Under Mission 300, A New Way of Doing Business Connects Over 50 Million People to Electricity Across Africa"
+      ],
+      "evidence_sources": [
+        "UNCTAD",
+        "UNCTAD",
+        "WorldBank"
+      ],
+      "strength": 4,
+      "trend": "신규",
+      "suwon_implication": "국제 금융비용 상승이 국내 지자체 채권 금리에 간접 파급. 수원시 민간투자 유치 조건 변화 가능성 모니터링 필요",
+      "is_structural": true,
+      "detected_date": "2026-06-18",
+      "first_detected": "2026-06-18"
+    },
+    {
+      "signal_id": "sig_003",
+      "category": "민생충격패턴",
+      "title_ko": "글로벌 경제, 전쟁충격 버텼으나 구조적 취약성 노출",
+      "description": "• IMF가 '글로벌 경제가 전쟁 충격을 견뎠다(Endures War Shock—So Far)'고 평가하면서도 '지금까지만(So Far)' 강조\n• 일회성 충격 대응이 아닌 구조적 취약성(productivity 저하, 공공지출 확대 압력 등) 누적 경고\n• 노르웨이 등 선진국에도 '생산성 제고·공공지출 제한' 권고 → 민생 지출 구조 재편 신호",
+      "evidence_titles": [
+        "Global Economy Endures War Shock—So Far",
+        "Norway should boost productivity and limit public spending to foster strong and resilient growth"
+      ],
+      "evidence_sources": [
+        "IMF",
+        "OECD"
+      ],
+      "strength": 4,
+      "trend": "신규",
+      "suwon_implication": "전쟁발 경제 충격이 단기 완충 후 중장기 민생 압박으로 전환될 가능성. 수원시 복지·고용 예산 효율화 시나리오 사전 검토 필요",
+      "is_structural": true,
+      "detected_date": "2026-06-18",
+      "first_detected": "2026-06-18"
+    },
+    {
+      "signal_id": "sig_004",
+      "category": "정책패러다임전환",
+      "title_ko": "수소·바이오메탄 등 대체에너지 정책 가속화",
+      "description": "• IEA가 '글로벌 수소 리뷰 2026' 발표하며 수소를 구조적 에너지 전환 축으로 격상\n• 우크라이나 바이오메탄 기회 분석 등 전쟁을 계기로 에너지 다변화 정책이 단순 R&D 단계를 넘어 '안보 전략'으로 전환\n• 화석연료 의존도 감축이 기후정책에서 에너지안보 정책으로 프레임 전환",
+      "evidence_titles": [
+        "Global Hydrogen Review 2026",
+        "From farms to fuel: Ukraine's biomethane opportunity for energy security and European decarbonisation"
+      ],
+      "evidence_sources": [
+        "IEA",
+        "IEA"
+      ],
+      "strength": 4,
+      "trend": "강화",
+      "suwon_implication": "수원시 수소경제 육성 정책의 국제적 정당성 강화. 단, 에너지 전환 비용이 단기 민생부담으로 전가될 가능성 대비 필요",
+      "is_structural": true,
+      "detected_date": "2026-06-18"
+    },
+    {
+      "signal_id": "sig_005",
+      "category": "무역공급망재편",
+      "title_ko": "아프리카·아시아 지역가치사슬 재편 가속",
+      "description": "• UNCTAD가 베냉, 파푸아뉴기니 등 개별국 중소기업의 '지역가치사슬 편입' 연구를 구조화\n• 단순 무역 촉진이 아닌 '지역 내 가치사슬 구축'을 개발 전략 핵심으로 전환하는 신호\n• 글로벌 공급망 분절(fragmentation) 속 지역블록 중심 재편 패턴 강화",
+      "evidence_titles": [
+        "Integrating Beninese SMEs into regional value chains: Sectoral opportunities and levers for action",
+        "Étude du programme de réduction tarifaire de la Papouasie-Nouvelle-Guinée"
+      ],
+      "evidence_sources": [
+        "UNCTAD",
+        "UNCTAD"
+      ],
+      "strength": 3,
+      "trend": "강화",
+      "suwon_implication": "수원시 수출기업의 글로벌 공급망 의존도 점검 필요. 동남아·동북아 지역 협력 네트워크 강화가 리스크 완충 전략으로 부상",
+      "is_structural": true,
+      "detected_date": "2026-06-18"
+    },
+    {
+      "signal_id": "sig_006",
+      "category": "민생충격패턴",
+      "title_ko": "나이지리아 등 개도국 인플레이션 구조화",
+      "description": "• IMF가 나이지리아 인플레이션을 '최근 발전에 대한 서술적 분석(Descriptive Analysis of Recent Developments)'으로 구조화\n• 환율 변동제 전환(shift to floating regime) 후 금리·환율 전가 경로(pass-through) 변화를 정책 과제로 분석\n• 일회성 충격이 아닌 정책체제 전환에 따른 물가 구조 변화 패턴 제시",
+      "evidence_titles": [
+        "Inflation in Nigeria: A Descriptive Analysis of Recent Developments",
+        "Nigeria's Shift to a Floating Regime: Interest Rate and Exchange Rate Pass-Through and Policy"
+      ],
+      "evidence_sources": [
+        "IMF",
+        "IMF"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "개도국 인플레이션 구조화가 수입물가 경로로 수원시 소비자물가에 간접 파급 가능. 장기 물가안정 시나리오에 외부 구조 변화 반영 필요",
+      "is_structural": true,
+      "detected_date": "2026-06-18",
+      "first_detected": "2026-06-18"
+    },
+    {
+      "signal_id": "sig_007",
+      "category": "정책패러다임전환",
+      "title_ko": "디지털 정부·재정 다변화 정책 표준화",
+      "description": "• OECD가 '디지털 정부 전망 2026(Digital Government Outlook 2026)' 발표하며 디지털 전환을 정부 운영 표준으로 격상\n• 홍콩 등 선진지역에 '세수 다변화·확대(Diversifying and Broadening Revenue)' 권고 → 재정정책 패러다임 전환 신호\n• 단순 기술 도입이 아닌 정부 운영 구조 자체의 전환 요구",
+      "evidence_titles": [
+        "Digital Government Outlook 2026",
+        "Hong Kong SAR: Diversifying and Broadening Revenue"
+      ],
+      "evidence_sources": [
+        "OECD",
+        "IMF"
+      ],
+      "strength": 3,
+      "trend": "강화",
+      "suwon_implication": "수원시 디지털 전환 정책의 국제 표준 정합성 점검 필요. 재정 다변화 압력이 지자체 세수 구조 재편 논의로 확산 가능",
+      "is_structural": true,
+      "detected_date": "2026-06-18"
+    },
+    {
+      "signal_id": "sig_008",
+      "category": "민생충격패턴",
+      "title_ko": "스테이블코인 등 대체금융 급증 신호",
+      "description": "• IMF가 나이지리아에서 스테이블코인이 '성장하는 국경 간 채널(A Growing Cross-Border Channel)'로 부상했다고 분석\n• 공식 금융 시스템 외부에서 민간이 자구책으로 대체 결제 수단 활용 증가 → 금융 구조 변화 신호\n• 전쟁·인플레이션 등 충격 시 비공식 금융 채널 확대가 민생 대응 패턴으로 구조화",
+      "evidence_titles": [
+        "Stablecoins in Nigeria: A Growing Cross-Border Channel"
+      ],
+      "evidence_sources": [
+        "IMF"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "국내에도 위기 시 암호화폐 등 대체 금융 수요 급증 가능. 수원시 금융 취약계층 모니터링 시 비공식 채널 동향 파악 필요",
+      "is_structural": true,
+      "detected_date": "2026-06-18",
+      "first_detected": "2026-06-18"
+    }
+  ],
+  "by_category": {
+    "에너지안보재편": 1,
+    "정책패러다임전환": 3,
+    "민생충격패턴": 3,
+    "무역공급망재편": 1
+  },
+  "summary_ko": "• 호르무즈 위기를 계기로 에너지 안보가 가격 중심에서 신뢰·안정성 중심으로 패러다임 전환, 2050년까지 장기 구조 재편 시작\n• 개도국 자본유입 비용 상승으로 개발금융이 압박받으며 세계은행 등이 민간자본 동원 중심 사업방식 전환 선언\n• IMF는 전쟁 충격을 '지금까지만' 견뎠다며 생산성 저하·공공지출 압력 등 구조적 취약성 누적 경고\n• 수소·바이오메탄 등 대체에너지 정책이 R&D 단계를 넘어 에너지 안보 전략으로 격상, 화석연료 의존 감축 프레임 전환\n• 글로벌 공급망 분절 속 지역가치사슬 재편 가속, 개도국 인플레이션 구조화, 스테이블코인 등 대체금융 급증 등 민생 대응 패턴 다변화",
+  "top_signal": "호르무즈 위기와 동남아 에너지 취약성 구조화",
+  "suwon_action": "• 수원시 LNG·전력 공급 안정성 장기 전망 긴급 재검토 착수, 에너지 비용 구조 변화(가격→신뢰 프리미엄)에 대비한 민생안정 시나리오 수립\n• 전쟁발 경제 충격의 중장기 민생 압박 전환 가능성 대비, 복지·고용 예산 효율화 및 국제 금융비용 상승의 지자체 채권 금리 파급 모니터링 체계 구축",
+  "weekly_trend": {
+    "정책패러다임전환": {
+      "count": 9,
+      "max_strength": 4
+    },
+    "민생충격패턴": {
+      "count": 3,
+      "max_strength": 4
+    },
+    "무역공급망재편": {
+      "count": 3,
+      "max_strength": 4
+    },
+    "에너지안보재편": {
+      "count": 2,
+      "max_strength": 5
+    },
+    "지역질서재편": {
+      "count": 1,
+      "max_strength": 3
+    }
+  },
+  "generated_at": "2026-06-18T01:20:49.146104"
+}
