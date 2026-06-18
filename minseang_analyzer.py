@@ -476,10 +476,7 @@ def extract_key_facts(analyzed_path: Path, fc_map: dict = None, max_items: int =
             pub = a.get("published", "")[:10]
             title = a.get("title", "")
             summ = a.get("summary_ko", "").split("\n")[0][:150] if a.get("summary_ko") else ""
-            fc = fc_map.get(a.get("url", ""), {})
-            verdict = fc.get("verdict", "")
-            tag = "[✓검증됨] " if verdict == "검증됨" else ("[?미확인] " if verdict == "미확인" else "")
-            lines.append(f"{circle} {tag}[{src} {pub}] {title} — {summ}")
+            lines.append(f"{circle} [{src} {pub}] {title} — {summ}")
 
         return "\n".join(lines) if lines else "수집된 핵심 기사 없음"
     except Exception:
