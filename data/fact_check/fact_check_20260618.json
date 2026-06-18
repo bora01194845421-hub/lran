@@ -1,6 +1,6 @@
 {
   "date": "2026-06-18",
-  "generated_at": "2026-06-18T01:24:46.134836",
+  "generated_at": "2026-06-18T01:57:58.536220",
   "engine": "Claude 단독 (fallback)",
   "stats": {
     "articles_checked": 10,
@@ -22,81 +22,52 @@
         {
           "verdict": "미확인",
           "confidence": 0.95,
-          "evidence": "2026년 이란-미국 전쟁에 대한 학습된 정보가 없습니다. 이는 실제로 발생하지 않은 미래 또는 가상의 사건으로 보이며, 해당 전쟁이나 협상에 대한 검증 가능한 역사적 기록이 존재하지 않습니다.",
+          "evidence": "2026년 이란-미국 전쟁에 대한 학습된 정보가 없으며, 해당 사건은 현재 시점(2024년 4월 기준)에서 미래의 가상 시나리오입니다. 트럼프의 이란 동결 자금 해제 약속에 대한 구체적인 검증 가능한 정보가 부족합니다.",
           "sources": [],
           "engine": "claude-only",
-          "claim": "미국과 이란이 전쟁 종료 협상을 완료하고 합의했다"
+          "claim": "트럼프 대통령이 이란의 동결된 자금 해제를 약속했다"
         },
         {
           "verdict": "미확인",
-          "confidence": 0.95,
-          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 해당 시기의 트럼프 행정부와 이란 간 합의에 대한 검증이 불가능합니다.",
+          "confidence": 0.85,
+          "evidence": "2026년 이란-미국 전쟁에 대한 신뢰할 수 있는 역사적 기록이 존재하지 않습니다. 이는 아직 발생하지 않은 미래의 가상 시나리오로 보이며, 해당 협상 내용을 검증할 수 있는 실제 자료가 없습니다.",
           "sources": [],
           "engine": "claude-only",
-          "claim": "트럼프가 동결된 이란 자금 해제와 제재 완화를 약속했다"
+          "claim": "이란이 탄도미사일 보유를 인정받는 조건으로 협상이 진행되었다"
         }
       ],
       "overall_verdict": "미확인",
-      "avg_confidence": 0.95,
-      "checked_at": "2026-06-18T01:23:09.667823"
+      "avg_confidence": 0.9,
+      "checked_at": "2026-06-18T01:56:07.975605"
     },
     {
-      "article_id": "d2d2cd482e7b",
-      "title": "US-Iran deal leaves core sticking points unresolved - and a $300bn question",
-      "source": "BBC_World",
-      "url": "https://www.bbc.com/news/articles/cgmd8dgklzzo?at_medium=RSS&at_campaign=rss",
+      "article_id": "b39113133a84",
+      "title": "Fed decision as it happened: US central bank drops bias for rate cuts as Kevin Warsh era begins",
+      "source": "FT_World",
+      "url": "https://www.ft.com/content/76c16d57-8546-412d-9b76-0e55e6a79348",
       "importance": 5,
-      "category": "diplomacy",
+      "category": "economy",
       "claims": [
         {
           "verdict": "미확인",
           "confidence": 0.95,
-          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 이와 관련된 BBC 기사나 3,000억 달러 규모의 협상 내용을 검증할 수 없습니다.",
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 이 전쟁이 인플레이션에 미친 영향에 대한 주장을 검증할 수 없습니다.",
           "sources": [],
           "engine": "claude-only",
-          "claim": "미-이란 협상에서 3,000억 달러 규모의 미해결 문제가 남아있다"
+          "claim": "트럼프의 이란 전쟁이 인플레이션을 연방준비제도의 목표의 거의 2배까지 상승시켰다"
         },
         {
           "verdict": "미확인",
-          "confidence": 0.0,
-          "evidence": "2026년 이란-미국 전쟁에 대한 학습된 정보가 없으며, 해당 사건은 미래 시점의 가상 시나리오로 보입니다. 실제 역사적 사실을 바탕으로 검증할 수 없습니다.",
+          "confidence": 0.85,
+          "evidence": "Kevin Warsh의 Fed 의장 임명이나 2026년 이란-미국 전쟁과의 연관성에 대한 학습된 정보가 없습니다. 제공된 출처만으로는 해당 주장의 진위를 확인할 수 없습니다.",
           "sources": [],
           "engine": "claude-only",
-          "claim": "협상 텍스트에 핵무기 금지 조항이 포함되어 있다"
+          "claim": "Kevin Warsh가 Fed 신임 체제를 시작했다"
         }
       ],
       "overall_verdict": "미확인",
-      "avg_confidence": 0.47,
-      "checked_at": "2026-06-18T01:23:19.345532"
-    },
-    {
-      "article_id": "8221ae7e4b03",
-      "title": "Bowen: Iran deal ends Trump's war that revealed limit of US dominance",
-      "source": "BBC_MidEast",
-      "url": "https://www.bbc.com/news/articles/cdr4x3vg347o?at_medium=RSS&at_campaign=rss",
-      "importance": 5,
-      "category": "paradigm",
-      "claims": [
-        {
-          "verdict": "미확인",
-          "confidence": 0.95,
-          "evidence": "2026년 이란-미국 전쟁에 대한 정보가 학습 데이터에 존재하지 않습니다. 이는 아직 발생하지 않은 미래의 가상 시나리오이거나 허구의 사건으로 판단됩니다.",
-          "sources": [],
-          "engine": "claude-only",
-          "claim": "협상으로 양측이 전쟁 직전 상태로 복귀했다"
-        },
-        {
-          "verdict": "미확인",
-          "confidence": 0.95,
-          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 미래 가상 시나리오입니다. 해당 BBC 기사와 전쟁 관련 정보는 실존하지 않으므로 사상자 수를 검증할 수 없습니다.",
-          "sources": [],
-          "engine": "claude-only",
-          "claim": "수천 명이 사망했다"
-        }
-      ],
-      "overall_verdict": "미확인",
-      "avg_confidence": 0.95,
-      "checked_at": "2026-06-18T01:23:29.768085"
+      "avg_confidence": 0.9,
+      "checked_at": "2026-06-18T01:56:17.208527"
     },
     {
       "article_id": "7bd044dfa839",
@@ -109,52 +80,23 @@
         {
           "verdict": "미확인",
           "confidence": 0.95,
-          "evidence": "2026년 이란-미국 전쟁에 대한 정보는 학습 데이터에 존재하지 않습니다. 이는 미래 사건이거나 가상의 시나리오로 보이며, 실제 발생 여부를 확인할 수 없습니다.",
+          "evidence": "2026년 이란-미국 전쟁에 대한 정보는 학습 데이터에 존재하지 않습니다. 이는 미래 사건이거나 실제로 발생하지 않은 가상의 시나리오입니다.",
           "sources": [],
           "engine": "claude-only",
-          "claim": "미국과 이란이 모든 전선에서 군사작전의 즉각적이고 영구적 중단을 선언했다"
+          "claim": "미국과 이란이 모든 전선에서 군사작전의 즉각적이고 영구적 종료에 합의했다"
         },
         {
           "verdict": "미확인",
           "confidence": 0.95,
-          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 트럼프의 호르무즈 해협 재개통 발표에 대한 검증이 불가능합니다.",
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 미래의 가상 시나리오입니다. 따라서 해당 사건과 관련된 트럼프의 호르무즈 해협 재개방 발표를 검증할 수 있는 역사적 사실이나 신뢰할 수 있는 정보가 존재하지 않습니다.",
           "sources": [],
           "engine": "claude-only",
-          "claim": "트럼프가 호르무즈 해협 재개통을 발표했다"
+          "claim": "트럼프가 호르무즈 해협 재개방을 발표했다"
         }
       ],
       "overall_verdict": "미확인",
       "avg_confidence": 0.95,
-      "checked_at": "2026-06-18T01:23:38.952729"
-    },
-    {
-      "article_id": "2cf722dbe80d",
-      "title": "Oil prices fall and shares jump after US-Iran deal announced",
-      "source": "BBC_MidEast",
-      "url": "https://www.bbc.com/news/articles/c6217106px6o?at_medium=RSS&at_campaign=rss",
-      "importance": 5,
-      "category": "diplomacy",
-      "claims": [
-        {
-          "verdict": "미확인",
-          "confidence": 0.95,
-          "evidence": "2026년 이란-미국 전쟁에 대한 정보가 학습 데이터에 존재하지 않습니다. 이는 실제로 발생하지 않은 미래 또는 가상의 사건으로 보이며, 따라서 해당 전쟁 종료 협정의 진위를 검증할 수 없습니다.",
-          "sources": [],
-          "engine": "claude-only",
-          "claim": "미국과 이란이 전쟁 종료 협정을 체결했다"
-        },
-        {
-          "verdict": "미확인",
-          "confidence": 0.95,
-          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 해당 시기의 트럼프 대통령과 이란 간 합의 발표에 대한 검증이 불가능합니다.",
-          "sources": [],
-          "engine": "claude-only",
-          "claim": "트럼프 대통령이 미국-이란 합의 내용을 공식 발표했다"
-        }
-      ],
-      "overall_verdict": "미확인",
-      "avg_confidence": 0.95,
-      "checked_at": "2026-06-18T01:23:48.305075"
+      "checked_at": "2026-06-18T01:56:37.132420"
     },
     {
       "article_id": "ad24c9f45aab",
@@ -162,28 +104,28 @@
       "source": "BBC_MidEast",
       "url": "https://www.bbc.com/news/articles/cqj1zxv1jyeo?at_medium=RSS&at_campaign=rss",
       "importance": 5,
-      "category": "diplomacy",
+      "category": "nuclear",
       "claims": [
         {
           "verdict": "미확인",
           "confidence": 0.95,
-          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 미래 사건입니다. 따라서 이에 관한 트럼프 대통령의 전쟁 종료 협정 발표를 검증할 수 있는 역사적 사실이나 신뢰할 수 있는 정보가 존재하지 않습니다.",
+          "evidence": "2026년 이란-미국 전쟁에 대한 정보는 학습 데이터에 존재하지 않습니다. 이는 미래 사건이거나 실제로 발생하지 않은 가상의 시나리오입니다.",
           "sources": [],
           "engine": "claude-only",
-          "claim": "트럼프 대통령이 이란과의 전쟁 종료 협정을 체결했다고 발표했다"
+          "claim": "트럼프 대통령이 미-이란 전쟁 종료를 선언했다"
         },
         {
           "verdict": "미확인",
-          "confidence": 0.0,
-          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 해당 전쟁이나 관련 협정에 대한 역사적 기록이 존재하지 않아 주장을 검증할 수 없습니다.",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁에 대한 정보는 학습 데이터에 존재하지 않습니다. 이는 미래 사건이거나 가상의 시나리오로 보이며, 실제 발생한 역사적 사건으로 확인할 수 없습니다.",
           "sources": [],
           "engine": "claude-only",
-          "claim": "협정에서 이란의 핵 프로그램 부분은 불명확하다"
+          "claim": "이란의 핵 프로그램이 협상에 포함되었는지 구체적으로 알려지지 않았다"
         }
       ],
       "overall_verdict": "미확인",
-      "avg_confidence": 0.47,
-      "checked_at": "2026-06-18T01:24:00.645951"
+      "avg_confidence": 0.95,
+      "checked_at": "2026-06-18T01:56:48.018002"
     },
     {
       "article_id": "2f2025866573",
@@ -196,52 +138,81 @@
         {
           "verdict": "미확인",
           "confidence": 0.95,
-          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 미래의 가상 시나리오입니다. 해당 사건에 대한 학습된 정보가 없으며, 검증 가능한 역사적 사실이 아닙니다.",
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 해당 전쟁에 대한 역사적 기록이나 신뢰할 수 있는 정보가 존재하지 않으므로, 이와 관련된 트럼프 대통령의 발언을 검증할 수 없습니다.",
           "sources": [],
           "engine": "claude-only",
-          "claim": "트럼프 대통령이 이란의 핵무기 개발 시 '지옥의 불(Hell will rain down)'이 내려올 것이라고 발언했다"
-        },
-        {
-          "verdict": "미확인",
-          "confidence": 0.0,
-          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 해당 시점은 미래이며, 이에 대한 역사적 사실이나 검증 가능한 정보가 존재하지 않습니다.",
-          "sources": [],
-          "engine": "claude-only",
-          "claim": "미국이 이란의 핵 개발 억제를 최우선 정책으로 재확인했다"
-        }
-      ],
-      "overall_verdict": "미확인",
-      "avg_confidence": 0.47,
-      "checked_at": "2026-06-18T01:24:10.789866"
-    },
-    {
-      "article_id": "f5788a67ebad",
-      "title": "Oil Drops as Trump’s Hormuz Agreement Lifts Outlook for Supply",
-      "source": "Bloomberg",
-      "url": "https://www.bloomberg.com/news/articles/2026-06-17/latest-oil-market-news-and-analysis-for-june-18",
-      "importance": 5,
-      "category": "energy",
-      "claims": [
-        {
-          "verdict": "미확인",
-          "confidence": 0.95,
-          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 트럼프 행정부의 호르무즈 해협 관련 합의도 실존하지 않는 내용이며, 해당 Bloomberg 기사 역시 존재하지 않는 것으로 판단됩니다.",
-          "sources": [],
-          "engine": "claude-only",
-          "claim": "트럼프 행정부가 이란과 호르무즈 해협 관련 합의를 체결했다"
+          "claim": "트럼프 대통령이 이란의 핵무기 개발 시 '지옥의 불(Hell will rain down)'을 내릴 것이라고 발언했다"
         },
         {
           "verdict": "미확인",
           "confidence": 0.95,
-          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 호르무즈 협정, 페르시아만 산유국의 유전 폐쇄 및 재개 등에 대한 역사적 사실이 존재하지 않아 검증이 불가능합니다.",
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 해당 출처와 주장을 검증할 수 있는 역사적 사실이나 학습된 정보가 존재하지 않습니다.",
           "sources": [],
           "engine": "claude-only",
-          "claim": "페르시아만 산유국들이 폐쇄했던 유전을 재개했다"
+          "claim": "미국이 이란의 핵무기 개발을 막겠다는 공식 입장을 표명했다"
         }
       ],
       "overall_verdict": "미확인",
       "avg_confidence": 0.95,
-      "checked_at": "2026-06-18T01:24:24.666974"
+      "checked_at": "2026-06-18T01:56:59.152716"
+    },
+    {
+      "article_id": "d2d2cd482e7b",
+      "title": "US-Iran deal leaves core sticking points unresolved - and a $300bn question",
+      "source": "BBC_World",
+      "url": "https://www.bbc.com/news/articles/cgmd8dgklzzo?at_medium=RSS&at_campaign=rss",
+      "importance": 5,
+      "category": "diplomacy",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 이와 관련된 BBC 기사나 트럼프 대통령의 주장은 검증할 수 없으며, 해당 출처 자체가 존재하지 않을 가능성이 높습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "트럼프 대통령이 미국-이란 합의에 대해 특정 주장을 했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 관련된 재건 계획이나 합의에 대한 검증 가능한 역사적 사실이 존재하지 않습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "이란 재건 계획의 규모가 3000억 달러이다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.95,
+      "checked_at": "2026-06-18T01:57:17.283073"
+    },
+    {
+      "article_id": "943693cc4827",
+      "title": "US-Iran Deal Takes Effect as Focus Turns to Hormuz",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/videos/2026-06-18/trump-says-he-s-signed-interim-deal-with-iran-video",
+      "importance": 5,
+      "category": "diplomacy",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁에 대한 정보는 학습 데이터에 존재하지 않습니다. 이는 미래 사건이거나 실제로 발생하지 않은 가상의 시나리오일 가능성이 높습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "트럼프 대통령이 이란과의 전쟁을 종료하는 임시 협정을 서명했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁에 대한 정보는 학습 데이터에 존재하지 않습니다. 이는 미래 사건이거나 가상의 시나리오로 보이며, 실제 발생한 역사적 사실로 확인할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "미국-이란 분쟁의 공식적 종료 선언이 이루어졌다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.95,
+      "checked_at": "2026-06-18T01:57:27.381492"
     },
     {
       "article_id": "899d00d50adc",
@@ -254,23 +225,23 @@
         {
           "verdict": "미확인",
           "confidence": 0.95,
-          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 관련 협정이나 재건 계획에 대한 검증이 불가능합니다.",
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 해당 협정이나 재건 계획에 대한 검증이 불가능합니다.",
           "sources": [],
           "engine": "claude-only",
-          "claim": "이란 재건을 위한 3000억 달러 규모 계획이 협정에 포함되었다"
+          "claim": "미국과 이란 간 협정에 3000억 달러 규모의 이란 재건 계획이 포함되어 있다"
         },
         {
           "verdict": "미확인",
-          "confidence": 0.95,
-          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 관련된 G7 정상회담이나 60일 협상 기간 설정에 대한 실제 역사적 기록이 존재하지 않습니다.",
+          "confidence": 0.85,
+          "evidence": "2026년 이란-미국 전쟁에 대한 정보는 학습 데이터에 존재하지 않습니다. 이는 가상의 시나리오이거나 학습 시점(2024년 4월) 이후의 사건으로 보이며, 해당 협정 및 60일 협상 일정에 대한 검증이 불가능합니다.",
           "sources": [],
           "engine": "claude-only",
-          "claim": "핵 문제에 대한 60일간의 협상 기간이 설정되었다"
+          "claim": "핵 프로그램에 관한 60일 협상 일정이 협정에 명시되어 있다"
         }
       ],
       "overall_verdict": "미확인",
-      "avg_confidence": 0.95,
-      "checked_at": "2026-06-18T01:24:36.040078"
+      "avg_confidence": 0.9,
+      "checked_at": "2026-06-18T01:57:37.757065"
     },
     {
       "article_id": "18f0b65a46c9",
@@ -278,28 +249,57 @@
       "source": "NYT_World",
       "url": "https://www.nytimes.com/2026/06/17/us/politics/trump-iran-deal-nuclear-program-strait.html",
       "importance": 5,
+      "category": "paradigm",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁에 대한 학습된 정보가 없습니다. 이는 아직 발생하지 않은 미래의 가상 사건이거나 허구의 시나리오로 보입니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "트럼프가 이란과의 협상 전 이란의 항복을 요구했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁에 대한 정보는 학습 데이터에 존재하지 않습니다. 해당 사건은 미래의 가상 시나리오이거나 허위 정보일 가능성이 높습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "이란이 전쟁 중 실질적 피해를 입었다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.95,
+      "checked_at": "2026-06-18T01:57:47.765761"
+    },
+    {
+      "article_id": "9d214f682fca",
+      "title": "Trump Defends Deal to End the War With Iran as Details Emerge",
+      "source": "NYT_World",
+      "url": "https://www.nytimes.com/2026/06/17/world/middleeast/trump-iran-deal-obama.html",
+      "importance": 5,
       "category": "diplomacy",
       "claims": [
         {
           "verdict": "미확인",
           "confidence": 0.95,
-          "evidence": "2026년 이란-미국 전쟁에 대한 학습된 정보가 없습니다. 이는 미래 사건이며, 현재(2024년 기준) 발생하지 않은 가상의 시나리오로 보입니다.",
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 관련된 트럼프의 협정 주장이나 2015년 오바마 협정과의 비교도 검증할 수 없습니다.",
           "sources": [],
           "engine": "claude-only",
-          "claim": "트럼프가 협상 전 이란의 항복을 요구했다"
+          "claim": "트럼프 대통령이 현재 협정이 2015년 오바마 협정보다 더 나은 성과를 낸다고 주장했다"
         },
         {
           "verdict": "미확인",
           "confidence": 0.95,
-          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 미래의 가상 시나리오입니다. 해당 NYT 기사 제목과 내용은 실존하지 않으며, 2026년은 아직 도래하지 않았습니다.",
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 이와 관련된 트럼프의 발언이나 협정 내용을 검증할 수 없습니다.",
           "sources": [],
           "engine": "claude-only",
-          "claim": "이란이 군사적 피해를 입었다"
+          "claim": "트럼프 대통령이 협정 위반 시 이란을 다시 폭격하겠다고 발언했다"
         }
       ],
       "overall_verdict": "미확인",
       "avg_confidence": 0.95,
-      "checked_at": "2026-06-18T01:24:46.134821"
+      "checked_at": "2026-06-18T01:57:58.536205"
     }
   ]
 }
