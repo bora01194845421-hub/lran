@@ -1,0 +1,305 @@
+{
+  "date": "2026-06-23",
+  "generated_at": "2026-06-24T00:10:09.040395",
+  "engine": "Claude 단독 (fallback)",
+  "stats": {
+    "articles_checked": 10,
+    "total_claims": 20,
+    "verified": 0,
+    "disputed": 0,
+    "unverified": 20,
+    "verified_rate": 0.0
+  },
+  "results": [
+    {
+      "article_id": "2ee415f1d607",
+      "title": "Hormuz closure strands almost 1,200 cargo ships with $125bn worth of goods",
+      "source": "FT_World",
+      "url": "https://www.ft.com/content/4d3dd2b7-cb6b-410b-8c15-203904f32294",
+      "importance": 5,
+      "category": "transport",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁에 대한 학습된 정보가 없으며, 해당 사건은 미래 시점의 가상 시나리오로 보입니다. 실제 발생한 사건이 아니므로 검증할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "호르무즈 해협 폐쇄로 약 1,200척의 화물선이 좌초되어 있다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁 및 호르무즈 해협 봉쇄에 대한 학습된 정보가 없어 해당 주장의 선박 수와 화물 가치를 검증할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "좌초된 선박에 실린 화물의 가치는 약 1,250억 달러에 달한다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.0,
+      "checked_at": "2026-06-24T00:08:39.182340"
+    },
+    {
+      "article_id": "3bfe14184ccc",
+      "title": "First round of US-Iran talks ends with encouraging progress, mediators say",
+      "source": "BBC_MidEast",
+      "url": "https://www.bbc.co.uk/news/articles/cwy0q41v1lzo?at_medium=RSS&at_campaign=rss",
+      "importance": 5,
+      "category": "diplomacy",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 관련 협상 장소에 대한 실제 역사적 정보가 존재하지 않으며, 해당 주장을 검증할 수 있는 신뢰할 수 있는 출처나 사실적 근거가 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "미-이란 협상이 스위스에서 진행되었다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 관련 협상이나 합의에 대한 정보를 검증할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "지난주 협상에서 60일 내 최종합의 도달 약속이 있었다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.95,
+      "checked_at": "2026-06-24T00:08:50.798651"
+    },
+    {
+      "article_id": "55c6c5f4460b",
+      "title": "Israel and Hezbollah agree ceasefire, US says, as more Lebanon strikes reported",
+      "source": "BBC_MidEast",
+      "url": "https://www.bbc.co.uk/news/articles/cwyk7kkygj5o?at_medium=RSS&at_campaign=rss",
+      "importance": 5,
+      "category": "diplomacy",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁에 대한 학습된 정보가 없으며, 이는 미래 시점의 가상 시나리오입니다. 이스라엘-헤즈볼라 휴전 관련 주장은 실제 발생 가능한 중동 사건이나, 제시된 미래 전쟁 맥락에서는 검증할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "이스라엘과 헤즈볼라가 휴전에 합의했다고 미국이 발표했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 이 전쟁과 관련된 휴전 합의 목적에 대한 주장은 검증할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "휴전 합의는 미-이란 전쟁 종료 협상이 무너지는 것을 방지하기 위한 목적이었다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.95,
+      "checked_at": "2026-06-24T00:09:00.935878"
+    },
+    {
+      "article_id": "ea276b087b30",
+      "title": "U.S. and Iran Offer Conflicting Accounts of Nuclear Discussions",
+      "source": "NYT_World",
+      "url": "https://www.nytimes.com/live/2026/06/23/world/iran-us-trump-lebanon",
+      "importance": 5,
+      "category": "diplomacy",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁에 대한 정보는 학습 데이터에 존재하지 않습니다. 해당 사건은 실제로 발생하지 않았거나 학습 시점(2024년 4월) 이후의 미래 사건으로 보입니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "트럼프 대통령은 이란이 '최고 수준의' 핵 검증에 동의했다고 주장했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁에 대한 정보는 학습 데이터에 존재하지 않습니다. 해당 사건은 실제로 발생하지 않았거나 학습 시점 이후의 가상 시나리오입니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "이란 관계자는 '핵 문제에 대한 상세한 협의가 없었다'고 밝혔다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.47,
+      "checked_at": "2026-06-24T00:09:09.910861"
+    },
+    {
+      "article_id": "1cfbb55ddc41",
+      "title": "Iran Makes Moves to Assert Control Over the Strait of Hormuz",
+      "source": "NYT_World",
+      "url": "https://www.nytimes.com/2026/06/23/world/middleeast/iran-control-strait-of-hormuz.html",
+      "importance": 5,
+      "category": "transport",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.85,
+          "evidence": "2026년 이란-미국 전쟁에 대한 학습된 정보가 없으며, 해당 사건은 실제 발생하지 않은 미래 시나리오입니다. 따라서 이란의 호르무즈 해협 통행료 부과 추진에 대한 주장을 검증할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "이란이 호르무즈 해협 통행 선박에 통행료 부과를 추진 중이다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "검증 오류: Unterminated string starting at: line 5 column 36 (char 235)",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "호르무즈 해협은 글로벌 해운의 생명선이다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.42,
+      "checked_at": "2026-06-24T00:09:21.315356"
+    },
+    {
+      "article_id": "42c6f0171367",
+      "title": "U.S. and Iran’s Conflicting Claims on Nuclear Inspection Show Challenge Ahead",
+      "source": "NYT_World",
+      "url": "https://www.nytimes.com/2026/06/23/world/middleeast/diverging-accounts-iran-nuclear-inspections.html",
+      "importance": 5,
+      "category": "diplomacy",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 해당 시기의 트럼프 대통령과 이란 간 핵 시설 검사 협상에 대한 주장을 검증할 수 있는 역사적 사실이 존재하지 않습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "트럼프 대통령은 최근 평화협상에서 이란이 핵 시설 전면 검사에 동의했다고 주장했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 해당 시기의 핵 검증 합의나 트럼프의 주장, 이란 정부의 부인 등에 대한 검증이 불가능합니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "이란 정부는 핵 검증 문제에 대한 새로운 합의가 없었다며 트럼프의 주장을 부인했다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.95,
+      "checked_at": "2026-06-24T00:09:30.727909"
+    },
+    {
+      "article_id": "88d395dd674c",
+      "title": "U.S. Temporarily Lifts Oil Sanctions Against Iran, Citing ‘Productive’ Talks",
+      "source": "NYT_World",
+      "url": "https://www.nytimes.com/2026/06/22/world/middleeast/us-iran-oil-sanctions.html",
+      "importance": 5,
+      "category": "diplomacy",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.85,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 이와 관련된 트럼프 대통령의 이란 석유 제재 일시 해제 주장은 검증할 수 있는 역사적 사실이 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "트럼프 대통령이 이란 석유 제재를 일시 해제했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 현재 시점(2024년 기준)에서 미래 사건에 대한 검증은 불가능하며, 해당 NYT 기사도 실존 여부를 확인할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "미국은 이란의 핵 문제 진전을 강조했으나 테헤란은 새로운 약속이 없다고 주장했다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.9,
+      "checked_at": "2026-06-24T00:09:39.683500"
+    },
+    {
+      "article_id": "866a3363b9aa",
+      "title": "U.S. Temporarily Lifts Sanctions on Iranian Oil",
+      "source": "NYT_World",
+      "url": "https://www.nytimes.com/2026/06/22/world/middleeast/us-sanctions-reprieve-iran-oil.html",
+      "importance": 5,
+      "category": "energy",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 해당 전쟁과 관련된 제재 중단 발표도 확인할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "미국 재무부가 60일간 이란 석유에 대한 제재를 일시 중단한다고 발표했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁에 대한 학습된 정보가 없습니다. 이는 실제로 발생하지 않은 가상의 시나리오로 보이며, 해당 사건과 관련된 제재 해제 조치를 검증할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "이 조치는 미-이란 전쟁 종료를 위한 초기 협상 합의의 일부이다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.95,
+      "checked_at": "2026-06-24T00:09:48.674791"
+    },
+    {
+      "article_id": "a1896da2518e",
+      "title": "First Round of U.S.-Iran Talks Ends With High Hopes and Big Challenges",
+      "source": "NYT_World",
+      "url": "https://www.nytimes.com/2026/06/22/world/europe/iran-us-peace-talks.html",
+      "importance": 5,
+      "category": "diplomacy",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁에 대한 정보는 학습 데이터에 존재하지 않습니다. 이는 아직 발생하지 않은 미래의 가상 시나리오이거나 허구의 내용으로 보입니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "중보자들은 60일 내 최종 합의 달성이 가능하다고 보고했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁에 대한 정보가 학습 데이터에 존재하지 않습니다. 2026년은 제 학습 종료 시점(2024년 4월) 이후의 미래 시점이며, 해당 전쟁이나 협상에 대한 역사적 사실을 확인할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "미국-이란 협상 1차 라운드가 종료되었다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.95,
+      "checked_at": "2026-06-24T00:09:59.273948"
+    },
+    {
+      "article_id": "94409fc2f9ea",
+      "title": "US-Iran talks laid ‘very good foundation for a successful final deal’, says Vance – as happened",
+      "source": "Guardian_API",
+      "url": "https://www.theguardian.com/world/live/2026/jun/22/middle-east-crisis-iran-us-peace-talks-switzerland-strait-of-hormuz-latest-news-updates",
+      "importance": 5,
+      "category": "nuclear",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. JD 밴스가 부통령으로서 이란과의 협상에 대해 이러한 발언을 했다는 기록이 없으며, 해당 출처는 실제 Guardian 기사가 아닙니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "밴스 부통령이 미-이란 협상이 '매우 좋은 토대를 마련했다'고 공식 발언했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.85,
+          "evidence": "2026년 이란-미국 전쟁에 대한 실제 역사적 사실이 존재하지 않습니다. 이는 가상의 시나리오이거나 미래 예측으로 보이며, 핵 프로그램 종료 합의 여부를 검증할 수 있는 신뢰할 수 있는 역사적 기록이 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "이란이 핵 프로그램 종료에 합의했다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.9,
+      "checked_at": "2026-06-24T00:10:09.040381"
+    }
+  ]
+}
