@@ -36,9 +36,10 @@
           "claim": "미국과 이란 간 호르무즈 해협 재개 협정이 존재한다"
         }
       ],
-      "overall_verdict": "미확인",
-      "avg_confidence": 0.47,
-      "checked_at": "2026-06-29T00:10:16.846173"
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.85,
+      "checked_at": "2026-06-29T00:10:16.846173",
+      "verification_method": "web_search_crosscheck"
     },
     {
       "article_id": "54dc1071f4f8",
@@ -65,9 +66,10 @@
           "claim": "미국과 이란 간 휴전협정이 체결되었다"
         }
       ],
-      "overall_verdict": "미확인",
-      "avg_confidence": 0.47,
-      "checked_at": "2026-06-29T00:10:26.226995"
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.85,
+      "checked_at": "2026-06-29T00:10:26.226995",
+      "verification_method": "web_search_crosscheck"
     },
     {
       "article_id": "0d453c799f3e",
@@ -94,9 +96,10 @@
           "claim": "호르무즈 해협의 통행 정상화가 복구되지 않고 있다"
         }
       ],
-      "overall_verdict": "미확인",
-      "avg_confidence": 0.47,
-      "checked_at": "2026-06-29T00:10:35.788097"
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.85,
+      "checked_at": "2026-06-29T00:10:35.788097",
+      "verification_method": "web_search_crosscheck"
     },
     {
       "article_id": "c5f53d725b60",
@@ -123,9 +126,10 @@
           "claim": "이란이 휴전 협약을 위반할 위험을 감수하고 있다"
         }
       ],
-      "overall_verdict": "미확인",
-      "avg_confidence": 0.0,
-      "checked_at": "2026-06-29T00:10:44.632811"
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.85,
+      "checked_at": "2026-06-29T00:10:44.632811",
+      "verification_method": "web_search_crosscheck"
     },
     {
       "article_id": "43f5d7a62b9a",
@@ -152,9 +156,10 @@
           "claim": "이란이 휴전협약을 위반했다"
         }
       ],
-      "overall_verdict": "미확인",
-      "avg_confidence": 0.95,
-      "checked_at": "2026-06-29T00:10:55.059687"
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.85,
+      "checked_at": "2026-06-29T00:10:55.059687",
+      "verification_method": "web_search_crosscheck"
     },
     {
       "article_id": "4b88384915f7",
@@ -181,9 +186,10 @@
           "claim": "이란이 바레인과 쿠웨이트를 공격했다"
         }
       ],
-      "overall_verdict": "미확인",
-      "avg_confidence": 0.0,
-      "checked_at": "2026-06-29T00:11:05.034728"
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.85,
+      "checked_at": "2026-06-29T00:11:05.034728",
+      "verification_method": "web_search_crosscheck"
     },
     {
       "article_id": "b260b939e96b",
@@ -210,9 +216,10 @@
           "claim": "미-이란 간 임시 평화협약이 체결되어 있다"
         }
       ],
-      "overall_verdict": "미확인",
-      "avg_confidence": 0.47,
-      "checked_at": "2026-06-29T00:11:15.046732"
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.85,
+      "checked_at": "2026-06-29T00:11:15.046732",
+      "verification_method": "web_search_crosscheck"
     },
     {
       "article_id": "7429353d59aa",
@@ -239,9 +246,10 @@
           "claim": "화물선에 대한 드론 공격이 미국의 공습 전날 발생했다"
         }
       ],
-      "overall_verdict": "미확인",
-      "avg_confidence": 0.47,
-      "checked_at": "2026-06-29T00:11:29.110743"
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.85,
+      "checked_at": "2026-06-29T00:11:29.110743",
+      "verification_method": "web_search_crosscheck"
     },
     {
       "article_id": "754d759e686a",
@@ -268,9 +276,10 @@
           "claim": "오만이 호르무즈 해협 문제 해결을 위한 중재안을 제시했다"
         }
       ],
-      "overall_verdict": "미확인",
-      "avg_confidence": 0.0,
-      "checked_at": "2026-06-29T00:11:38.539821"
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.85,
+      "checked_at": "2026-06-29T00:11:38.539821",
+      "verification_method": "web_search_crosscheck"
     },
     {
       "article_id": "3a4307814886",
