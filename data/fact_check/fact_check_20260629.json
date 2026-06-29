@@ -1,0 +1,305 @@
+{
+  "date": "2026-06-29",
+  "generated_at": "2026-06-29T00:11:48.620027",
+  "engine": "Claude 단독 (fallback)",
+  "stats": {
+    "articles_checked": 10,
+    "total_claims": 20,
+    "verified": 0,
+    "disputed": 1,
+    "unverified": 19,
+    "verified_rate": 0.0
+  },
+  "results": [
+    {
+      "article_id": "59db7eb21a40",
+      "title": "US and Iran exchange strikes as ceasefire falters",
+      "source": "FT_World",
+      "url": "https://www.ft.com/content/5f4cd16c-fa4a-4806-94ce-84df6f51ecc0",
+      "importance": 5,
+      "category": "military",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁에 대한 학습된 정보가 없습니다. 이는 미래 시점의 사건이거나 실제로 발생하지 않은 가상의 시나리오로 보입니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "이란이 바레인과 쿠웨이트 미군 기지를 공격했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 호르무즈 해협 재개 협정의 존재 여부를 검증할 수 있는 역사적 사실이나 신뢰할 수 있는 정보가 존재하지 않습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "미국과 이란 간 호르무즈 해협 재개 협정이 존재한다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.47,
+      "checked_at": "2026-06-29T00:10:16.846173"
+    },
+    {
+      "article_id": "54dc1071f4f8",
+      "title": "US and Iran exchange strikes and accuse each other of violating ceasefire",
+      "source": "BBC_World",
+      "url": "https://www.bbc.co.uk/news/articles/cdxdwkgqgq0o?at_medium=RSS&at_campaign=rss",
+      "importance": 5,
+      "category": "military",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁에 대한 학습된 정보가 없습니다. 이는 실제로 발생하지 않은 미래 또는 가상의 사건으로 보이며, 검증할 수 있는 역사적 사실이 존재하지 않습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "이란이 쿠웨이트와 바레인에 위치한 미군 시설을 공격했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁에 대한 정보는 학습 데이터에 존재하지 않습니다. 이는 미래 사건이거나 실제로 발생하지 않은 가상의 시나리오입니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "미국과 이란 간 휴전협정이 체결되었다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.47,
+      "checked_at": "2026-06-29T00:10:26.226995"
+    },
+    {
+      "article_id": "0d453c799f3e",
+      "title": "Here’s What to Know About the Standoff in the Strait of Hormuz",
+      "source": "NYT_World",
+      "url": "https://www.nytimes.com/2026/05/28/world/middleeast/iran-us-agreement-plan.html",
+      "importance": 5,
+      "category": "transport",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 미래 사건입니다. 현재(2024년 기준)까지 이러한 전쟁이나 호르무즈 해협에서의 상호 공격은 발생하지 않았으며, 학습된 역사적 정보에 존재하지 않습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "미국과 이란이 최근 며칠간 호르무즈 해협에서 상호 공격을 벌였다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁에 대한 정보가 학습 데이터에 존재하지 않습니다. 이는 실제로 발생하지 않은 미래 또는 가상의 사건으로 보입니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "호르무즈 해협의 통행 정상화가 복구되지 않고 있다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.47,
+      "checked_at": "2026-06-29T00:10:35.788097"
+    },
+    {
+      "article_id": "c5f53d725b60",
+      "title": "Iran Risks Peace Talks With U.S. to Maintain Leverage Over Strait",
+      "source": "NYT_World",
+      "url": "https://www.nytimes.com/2026/06/28/world/europe/iran-us-strait-of-hormuz-peace-talks.html",
+      "importance": 5,
+      "category": "diplomacy",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁에 대한 학습된 정보가 없으며, 해당 사건은 미래 시점이거나 실제로 발생하지 않은 가상의 시나리오로 판단됩니다. 따라서 관련 주장을 검증할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "이란이 호르무즈 해협 통제력을 평화협상의 핵심 지렛대로 활용하고 있다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁에 대한 정보가 학습 데이터에 존재하지 않습니다. 이는 실제로 발생하지 않은 미래 또는 가상의 사건으로 보입니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "이란이 휴전 협약을 위반할 위험을 감수하고 있다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.0,
+      "checked_at": "2026-06-29T00:10:44.632811"
+    },
+    {
+      "article_id": "43f5d7a62b9a",
+      "title": "U.S. Strikes Iran Over Attack on Hormuz Ship",
+      "source": "ForeignPolicy",
+      "url": "https://foreignpolicy.com/2026/06/26/us-strikes-iran-cease-fire-violation-hormuz-ever-lovely-mou-trump/",
+      "importance": 5,
+      "category": "military",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 미래의 가상 시나리오입니다. 현재(2024년 기준)까지 이러한 전쟁이나 호르무즈 해협 선박 공격에 따른 미국의 이란 공습은 발생하지 않았습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "미국이 호르무즈 해협에서 발생한 선박 공격에 대응하여 이란을 공습했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 호르무즈 해협 선박 공격, 휴전협약 위반 등에 대한 역사적 사실 확인이 불가능합니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "이란이 휴전협약을 위반했다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.95,
+      "checked_at": "2026-06-29T00:10:55.059687"
+    },
+    {
+      "article_id": "4b88384915f7",
+      "title": "Donald Trump threatens to annihilate Iran after crossfire over Hormuz – as it happened",
+      "source": "Guardian_API",
+      "url": "https://www.theguardian.com/world/live/2026/jun/28/iran-strait-of-hormuz-donald-trump-vance-peace-talks-bahrain-kuwait-strikes-latest-news-updates",
+      "importance": 5,
+      "category": "military",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁에 대한 학습된 정보가 없으며, 해당 사건은 미래 시점으로 실제 발생하지 않은 가상의 시나리오입니다. 따라서 트럼프의 해당 발언을 검증할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "트럼프가 이란에 대해 완전 파괴(annihilate) 위협 발언을 했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁에 대한 학습된 정보가 없으며, 해당 사건은 미래 시점으로 실제 발생하지 않은 가상의 시나리오입니다. 따라서 이란의 바레인·쿠웨이트 공격 주장을 검증할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "이란이 바레인과 쿠웨이트를 공격했다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.0,
+      "checked_at": "2026-06-29T00:11:05.034728"
+    },
+    {
+      "article_id": "b260b939e96b",
+      "title": "Escalating US-Iran strikes threaten interim peace agreement",
+      "source": "Guardian_API",
+      "url": "https://www.theguardian.com/world/2026/jun/28/escalating-us-iran-strikes-threaten-interim-peace-agreement",
+      "importance": 5,
+      "category": "military",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁에 대한 학습된 정보가 없으며, 이는 미래 사건입니다. 현재 시점(2024년 기준)에서 2026년에 발생할 사건을 검증할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "호르무즈 해협에서 미-이란 간 상호 공격이 발생했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 관련된 평화협약의 존재 여부를 검증할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "미-이란 간 임시 평화협약이 체결되어 있다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.47,
+      "checked_at": "2026-06-29T00:11:15.046732"
+    },
+    {
+      "article_id": "7429353d59aa",
+      "title": "US says it struck Iran targets after attack on cargo ship in the strait of Hormuz",
+      "source": "Guardian_API",
+      "url": "https://www.theguardian.com/world/2026/jun/26/us-says-it-struck-iran-targets-after-attack-on-cargo-ship-on-the-strait-of-hormuz",
+      "importance": 5,
+      "category": "military",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 미래의 가상 시나리오입니다. 현재 시점(2024년 기준)에서 이는 검증 불가능한 미래 사건이며, 학습된 역사적 사실에 해당하지 않습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "미국이 호르무즈 해협에서 화물선에 대한 공격 이후 이란 군사시설을 공습했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁에 대한 정보는 학습 데이터에 존재하지 않습니다. 이는 미래 사건이거나 가상 시나리오로 보이며, 실제 발생 여부 및 세부 사항을 확인할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "화물선에 대한 드론 공격이 미국의 공습 전날 발생했다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.47,
+      "checked_at": "2026-06-29T00:11:29.110743"
+    },
+    {
+      "article_id": "754d759e686a",
+      "title": "Iran rejects UN-backed plan to free ships trapped in strait of Hormuz",
+      "source": "Guardian_API",
+      "url": "https://www.theguardian.com/world/2026/jun/25/un-backed-plan-ships-trapped-strait-of-hormuz-rejected-iran",
+      "importance": 5,
+      "category": "energy",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁에 대한 학습된 정보가 없으며, 해당 사건은 실제 역사적 사실로 확인되지 않습니다. 따라서 관련 주장을 검증할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "이란이 유엔 지원 호르무즈 해협 통항 방안을 거부했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건이며, 해당 Guardian 기사 또한 존재하지 않습니다. 따라서 오만의 중재안 제시 여부를 검증할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "오만이 호르무즈 해협 문제 해결을 위한 중재안을 제시했다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.0,
+      "checked_at": "2026-06-29T00:11:38.539821"
+    },
+    {
+      "article_id": "3a4307814886",
+      "title": "US releases footage it says shows strikes on Iran – video",
+      "source": "Guardian_Iran",
+      "url": "https://www.theguardian.com/world/video/2026/jun/28/us-releases-footage-it-says-shows-strikes-on-iran-video",
+      "importance": 5,
+      "category": "military",
+      "claims": [
+        {
+          "verdict": "불일치",
+          "confidence": 0.95,
+          "evidence": "2024년 6월 27일은 이란-미국 전쟁(2026)이 발생하기 이전 시점입니다. 제목에 명시된 2026년 전쟁과 2024년 날짜는 시간적으로 모순되며, 2024년 6월에 이란에 대한 미국의 군사 공습은 역사적 기록에 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "미국 군부가 2024년 6월 27일 이란에 대한 공습 영상을 공개했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁에 대한 학습된 정보가 없습니다. 이는 실제 발생하지 않은 미래 또는 가상의 사건으로 보이며, 검증할 수 있는 역사적 사실이 존재하지 않습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "미국의 이란 공격은 호르무즈 해협의 유조선 피격 수 시간 후에 발생했다"
+        }
+      ],
+      "overall_verdict": "불일치",
+      "avg_confidence": 0.47,
+      "checked_at": "2026-06-29T00:11:48.619997"
+    }
+  ]
+}

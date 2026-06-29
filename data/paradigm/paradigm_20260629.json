@@ -1,0 +1,158 @@
+{
+  "date": "2026-06-29",
+  "total_signals": 6,
+  "structural_signals": 6,
+  "signals": [
+    {
+      "signal_id": "sig_006",
+      "category": "에너지안보재편",
+      "title_ko": "아시아 에너지 의존 구조의 긴급화",
+      "description": "• CFR 보고서 '이란 전쟁이 아시아의 취약한 에너지 의존을 긴급사태로 전환'\n• 한국 포함 아시아 국가들의 중동 에너지 의존도가 전쟁으로 구조적 취약성으로 노출\n• 전쟁 이후에도 아시아 에너지 수급 구조의 근본적 재편 압력 지속",
+      "evidence_titles": [
+        "The Iran War Turned Asia's Fragile Energy Dependence Into an Emergency",
+        "How the Iran War is Remaking the Global Economy"
+      ],
+      "evidence_sources": [
+        "CFR_Iran",
+        "CFR_Iran"
+      ],
+      "strength": 5,
+      "trend": "신규",
+      "suwon_implication": "한국 에너지 수급 불안정이 수원시 제조업체 조업률 하락 및 에너지 비용 급등으로 직결. 시 차원의 에너지 효율화 지원 프로그램 대폭 강화 및 재생에너지 전환 인센티브 확대 시급.",
+      "is_structural": true,
+      "detected_date": "2026-06-29",
+      "first_detected": "2026-06-29"
+    },
+    {
+      "signal_id": "sig_001",
+      "category": "에너지안보재편",
+      "title_ko": "호르무즈 통제권 분쟁의 구조화",
+      "description": "• 이란이 호르무즈 해협 통제권을 종전협상 레버리지로 고착화\n• 전쟁 종료 후에도 해협 통제권이 국제 에너지 안보의 상시적 불안요인으로 전환\n• UN 주도 해협 자유통행 방안도 이란 거부로 무산, 중동 에너지 운송 구조의 근본적 불안정성 심화",
+      "evidence_titles": [
+        "Iran Risks Peace Talks With U.S. to Maintain Leverage Over Strait",
+        "Iran rejects UN-backed plan to free ships trapped in strait of Hormuz",
+        "'호르무즈 통제권' 밀어붙이는 이란…'불완전 MOU'가 빌미줬나"
+      ],
+      "evidence_sources": [
+        "NYT_World",
+        "Guardian_API",
+        "Yonhap"
+      ],
+      "strength": 4,
+      "trend": "신규",
+      "suwon_implication": "호르무즈 통제권 분쟁이 구조화되면서 수원시 난방비·전기료 등 에너지 비용의 장기 상승 압력 지속. 에너지 취약계층 지원 예산 확대 및 재생에너지 전환 정책 가속화 필요.",
+      "is_structural": true,
+      "detected_date": "2026-06-29",
+      "first_detected": "2026-06-29"
+    },
+    {
+      "signal_id": "sig_004",
+      "category": "지역질서재편",
+      "title_ko": "종전협상 속 무력충돌 상시화",
+      "description": "• 미-이란 종전 MOU 체결 후에도 연이틀 무력 공방 발생\n• 정전협정에도 불구하고 군사적 긴장이 '상시적 불안정'으로 고착화되는 신(新) 중동 질서\n• 전면전 종료 ≠ 평화, '저강도 무력충돌 상시화' 패턴이 새로운 중동 안보 구조로 정착 가능성",
+      "evidence_titles": [
+        "US and Iran exchange strikes as ceasefire falters",
+        "美·이란, 연이틀 무력공방…트럼프 \"이란 존재하지 않을 수도\"",
+        "Escalating US-Iran strikes threaten interim peace agreement"
+      ],
+      "evidence_sources": [
+        "FT_World",
+        "Yonhap",
+        "Guardian_API"
+      ],
+      "strength": 4,
+      "trend": "신규",
+      "suwon_implication": "중동발 에너지·물가 변동성이 장기화되어 수원시 물가안정 정책의 예측 가능성 저하. 비축 물자 확대 및 취약계층 긴급 지원 예산의 상시 확보 체계 필요.",
+      "is_structural": true,
+      "detected_date": "2026-06-29",
+      "first_detected": "2026-06-29"
+    },
+    {
+      "signal_id": "sig_002",
+      "category": "무역공급망재편",
+      "title_ko": "글로벌 LPG 공급망 복원력 강화 체제",
+      "description": "• IEA-WLGA 포럼에서 정부·산업계가 LPG 공급 복원력(resilience) 강화 논의\n• 단순 가격 경쟁에서 공급 안정성·신뢰성 중심으로 에너지 파트너십 기준 전환 신호\n• 전쟁 이후 에너지 공급망이 '최저가 조달'에서 '복원력 있는 다변화'로 패러다임 이동",
+      "evidence_titles": [
+        "Governments and industry leaders discuss strengthening global LPG supply resilience at IEA-WLGA Leadership Forum"
+      ],
+      "evidence_sources": [
+        "IEA_News"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "수원시 제조기업의 원자재 조달 비용 상승 가능성. 시 차원의 중소기업 에너지 비용 지원 프로그램 재설계 및 공급망 다변화 컨설팅 지원 필요.",
+      "is_structural": true,
+      "detected_date": "2026-06-29",
+      "first_detected": "2026-06-29"
+    },
+    {
+      "signal_id": "sig_003",
+      "category": "정책패러다임전환",
+      "title_ko": "AI 경제조정론의 국제기구 채택",
+      "description": "• IMF가 'AI와 경제조정의 경제학' 보고서 발표\n• 전쟁 후 경제 재건 과정에서 AI 기반 경제조정 메커니즘을 정책 도구로 제시\n• 전통적 케인즈식 개입에서 AI 기반 실시간 적응형 정책으로 거시경제 관리 패러다임 전환 신호",
+      "evidence_titles": [
+        "Artificial Intelligence and the Economics of Adjustment"
+      ],
+      "evidence_sources": [
+        "IMF_News"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "수원시 경제정책 수립 시 데이터 기반 실시간 모니터링 체계 강화 필요. AI 기반 민생경제 지표 추적 시스템 도입으로 정책 반응성 제고 가능.",
+      "is_structural": true,
+      "detected_date": "2026-06-29",
+      "first_detected": "2026-06-29"
+    },
+    {
+      "signal_id": "sig_005",
+      "category": "민생충격패턴",
+      "title_ko": "방글라데시 식량안보 위기 긴급지원",
+      "description": "• 세계은행이 방글라데시에 11억 달러 긴급 식량안보 지원\n• 중동 전쟁이 남아시아 식량 공급망에 연쇄 충격을 주는 패턴 확인\n• 전쟁 직접 당사국 외 지역에서도 식량·민생 위기가 구조화되는 글로벌 취약성 노출",
+      "evidence_titles": [
+        "BANGLADESH: World Bank Provides $1.1 Billion Emergency Support to Safeguard Food Security, Livelihoods"
+      ],
+      "evidence_sources": [
+        "WorldBank_News"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "수원시 식품 물가 상승 압력 지속 및 외국인 근로자(방글라데시 등) 본국 송금 부담 증가로 생활 안정성 저하. 다문화가족·외국인 근로자 긴급 생활지원 프로그램 확대 검토 필요.",
+      "is_structural": true,
+      "detected_date": "2026-06-29",
+      "first_detected": "2026-06-29"
+    }
+  ],
+  "by_category": {
+    "에너지안보재편": 2,
+    "무역공급망재편": 1,
+    "정책패러다임전환": 1,
+    "지역질서재편": 1,
+    "민생충격패턴": 1
+  },
+  "summary_ko": "• 이란-미 전쟁 종전 MOU 후에도 호르무즈 해협 통제권 분쟁이 구조화되며, 중동 에너지 운송 불안정성이 상시화되는 신(新) 질서가 고착화되고 있습니다.\n• IEA·IMF 등 국제기구가 '공급망 복원력 강화' 'AI 기반 경제조정' 등 전쟁 이후 새로운 정책 패러다임을 제시하며, 전통적 경제관리 방식의 전환을 예고하고 있습니다.\n• 전쟁 직접 당사국뿐 아니라 방글라데시 등 남아시아까지 식량안보 위기가 확산되며, 글로벌 민생 충격의 연쇄 구조가 가시화되고 있습니다.\n• 아시아의 중동 에너지 의존도가 '긴급사태(emergency)' 수준으로 격상되며, 한국 포함 에너지 수급 구조 재편 압력이 최고조에 달했습니다.\n• 정전협정에도 연이틀 무력공방이 이어지며 '저강도 무력충돌 상시화'가 새로운 중동 안보 구조로 정착되는 패턴이 관측되고 있습니다.",
+  "top_signal": "아시아 에너지 의존 구조의 긴급화",
+  "suwon_action": "• 수원시 제조업체 에너지 비용 급등 및 조업률 하락 대응: 긴급 에너지 효율화 지원 프로그램 가동 및 재생에너지 전환 인센티브 확대 착수\n• 에너지·식품 물가 연쇄 상승에 따른 취약계층(저소득층, 외국인 근로자, 다문화가족) 긴급 생활지원 예산 확보 및 집행 체계 즉시 점검",
+  "weekly_trend": {
+    "에너지안보재편": {
+      "count": 5,
+      "max_strength": 5
+    },
+    "정책패러다임전환": {
+      "count": 4,
+      "max_strength": 5
+    },
+    "지역질서재편": {
+      "count": 3,
+      "max_strength": 5
+    },
+    "무역공급망재편": {
+      "count": 3,
+      "max_strength": 5
+    },
+    "민생충격패턴": {
+      "count": 2,
+      "max_strength": 4
+    }
+  },
+  "generated_at": "2026-06-29T00:07:51.179910"
+}
