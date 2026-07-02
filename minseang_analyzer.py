@@ -522,17 +522,29 @@ def run(target_date: str = None) -> Path:
         expert_quotes    = load_expert_quotes(analyzed_path),
     )
 
-    try:
+    def _call_claude(prompt_text):
         resp = client.messages.create(
             model=CLAUDE_MODEL, max_tokens=16384,
             system=SYSTEM,
-            messages=[{"role": "user", "content": prompt}],
+            messages=[{"role": "user", "content": prompt_text}],
         )
         raw = resp.content[0].text.strip().replace("```json","").replace("```","").strip()
-        result = json.loads(raw)
-    except Exception as e:
-        logger.warning(f"Claude 실패: {e}")
-        result = {"error": str(e), "today_headline": "분석 실패", "urgency": "모니터링"}
+        # JSON 블록 추출: 첫 { 부터 마지막 } 까지
+        start = raw.find("{")
+        end   = raw.rfind("}")
+        if start != -1 and end != -1 and end > start:
+            raw = raw[start:end+1]
+        return json.loads(raw)
+
+    result = None
+    for attempt in range(3):
+        try:
+            result = _call_claude(prompt)
+            break
+        except Exception as e:
+            logger.warning(f"Claude 실패 (시도 {attempt+1}/3): {e}")
+            if attempt == 2:
+                result = {"error": str(e), "today_headline": "분석 실패", "urgency": "모니터링"}
 
     result["date"] = target_date
     result["generated_at"] = datetime.utcnow().isoformat()

@@ -1,0 +1,221 @@
+{
+  "date": "2026-07-02",
+  "total_signals": 10,
+  "structural_signals": 10,
+  "signals": [
+    {
+      "signal_id": "sig_001",
+      "category": "에너지안보재편",
+      "title_ko": "에너지 효율을 안보 정책 핵심으로 전환",
+      "description": "• IEA 주도로 각국 정부가 호르무즈 위기 속에서 에너지 효율을 에너지 정책의 중심축으로 채택\n• 공급 다변화보다 수요 관리·효율화를 구조적 안보 수단으로 격상\n• 단순 절약이 아닌 시스템 차원의 에너지 효율 정책 전환 선언",
+      "evidence_titles": [
+        "Governments around the world commit to making energy efficiency a cornerstone of energy policy amid Strait of Hormuz crisis"
+      ],
+      "evidence_sources": [
+        "IEA"
+      ],
+      "strength": 4,
+      "trend": "신규",
+      "suwon_implication": "수원시 건물·교통 에너지 효율화 정책이 단순 환경정책이 아닌 에너지 안보 차원의 필수 정책으로 재정의 필요. 공공건물 그린리모델링, 교통수요관리 등이 장기 민생안정 핵심 수단으로 부상.",
+      "is_structural": true,
+      "detected_date": "2026-07-02",
+      "first_detected": "2026-07-02"
+    },
+    {
+      "signal_id": "sig_002",
+      "category": "무역공급망재편",
+      "title_ko": "디지털 무역이 OECD 전체 교역의 1/4로 확대",
+      "description": "• 2023년 OECD 전체 무역에서 디지털 무역이 25% 차지하며 구조적 비중 확대\n• 물리적 해운 의존도 감소 추세가 통계로 확인되는 전환점\n• 호르무즈 봉쇄 위기 속에서 디지털 무역의 전략적 중요성 재평가",
+      "evidence_titles": [
+        "Digital trade accounted for one quarter of total trade across the OECD in 2023"
+      ],
+      "evidence_sources": [
+        "OECD"
+      ],
+      "strength": 4,
+      "trend": "강화",
+      "suwon_implication": "수원시 제조기업의 물리적 수출 의존도 감소 가능성. 디지털 콘텐츠·소프트웨어·온라인 서비스 기업 육성이 공급망 리스크 완화의 새로운 수단으로 부상. 중소기업 디지털 전환 지원 정책 강화 필요.",
+      "is_structural": true,
+      "detected_date": "2026-07-02"
+    },
+    {
+      "signal_id": "sig_006",
+      "category": "지역질서재편",
+      "title_ko": "미-이란 외교가 '전면전 회피' 목적으로 제도화",
+      "description": "• 트럼프 행정부가 군사 전면전 옵션 보고받고도 협상 유지 선택\n• 도하 간접회담 정례화되며 '적대 속 대화' 메커니즘 구조화\n• 호르무즈 관할권 분쟁이 무력 충돌이 아닌 협상 의제로 전환",
+      "evidence_titles": [
+        "트럼프, '이란 전면전' 옵션 보고 받았지만 '협상 유지' 선택",
+        "U.S., Iran Prepare for Talks on Strait of Hormuz",
+        "Trump claims Iran has agreed to hold peace talks in Doha after recent clashes"
+      ],
+      "evidence_sources": [
+        "Yonhap",
+        "ForeignPolicy",
+        "Guardian"
+      ],
+      "strength": 4,
+      "trend": "신규",
+      "suwon_implication": "전면전 회피 구조 형성으로 단기 에너지 가격 급등 위험 감소. 수원시 긴급 민생안정 예산의 중장기 전환 검토 가능. 다만 협상 결렬 시 충격이 더 클 수 있어 시나리오 대응 체계 유지 필요.",
+      "is_structural": true,
+      "detected_date": "2026-07-02",
+      "first_detected": "2026-07-02"
+    },
+    {
+      "signal_id": "sig_008",
+      "category": "에너지안보재편",
+      "title_ko": "핵심광물 안보가 에너지 안보와 동등한 정책 축으로 격상",
+      "description": "• IEA가 '글로벌 핵심광물 전망 2026' 별도 발간하며 독립 정책 영역으로 확립\n• 석유·가스 안보와 별도로 리튬·코발트 등 광물 안보 체계 구축 시작\n• 에너지 전환이 '탈화석연료'에서 '광물 확보 경쟁'으로 무게중심 이동",
+      "evidence_titles": [
+        "Global Critical Minerals Outlook 2026"
+      ],
+      "evidence_sources": [
+        "IEA"
+      ],
+      "strength": 4,
+      "trend": "강화",
+      "suwon_implication": "수원시 전기차·배터리 관련 기업의 원자재 조달 리스크 증가. 시 차원의 소재·부품 기업 지원정책에서 광물 공급망 안정성을 핵심 지원 영역으로 추가 필요.",
+      "is_structural": true,
+      "detected_date": "2026-07-02"
+    },
+    {
+      "signal_id": "sig_003",
+      "category": "정책패러다임전환",
+      "title_ko": "농업정책이 소득 안정→변동성 관리로 전환",
+      "description": "• OECD 전망: 향후 10년간 농가소득 상승 예상되지만 변동성이 이익을 위협\n• 정책 초점이 소득 증대에서 '변동성 완화'로 패러다임 전환 시작\n• 기후·지정학 리스크로 인한 가격 변동성을 구조적 문제로 인식",
+      "evidence_titles": [
+        "Farm incomes set to rise over next decade – but volatility puts gains at risk",
+        "OECD‑FAO Agricultural Outlook 2026‑2035"
+      ],
+      "evidence_sources": [
+        "OECD",
+        "OECD"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "수원시 도시농업·로컬푸드 정책에서 단순 생산량 증대보다 가격 안정화·유통 완충 메커니즘 설계가 중요. 농가 소득보전 정책을 변동성 완충 중심으로 재설계 필요.",
+      "is_structural": true,
+      "detected_date": "2026-07-02",
+      "first_detected": "2026-07-02"
+    },
+    {
+      "signal_id": "sig_004",
+      "category": "민생충격패턴",
+      "title_ko": "ODA 보건예산 삭감 위기 구조화",
+      "description": "• OECD 2026년 ODA 전망: 보건 분야 지원이 추가 삭감 위험에 직면\n• 중동 전쟁으로 인한 재정 압박이 개도국 보건 시스템 붕괴로 연결\n• 단발적 예산 삭감이 아닌 '전쟁→재정압박→보건 ODA 축소' 구조 고착화",
+      "evidence_titles": [
+        "The latest 2026 ODA projections reveal aid for health is further at risk"
+      ],
+      "evidence_sources": [
+        "OECD"
+      ],
+      "strength": 3,
+      "trend": "강화",
+      "suwon_implication": "수원시 외국인 근로자 밀집 지역에서 모국 보건 시스템 붕괴로 인한 건강 취약성 증가 가능성. 외국인 주민 건강 지원 체계 점검 및 감염병 예방 시스템 강화 필요.",
+      "is_structural": true,
+      "detected_date": "2026-07-02"
+    },
+    {
+      "signal_id": "sig_005",
+      "category": "정책패러다임전환",
+      "title_ko": "기업 책임경영이 선언→실행 단계로 전환 요구",
+      "description": "• OECD: 대기업들이 책임경영 약속을 실제 행동으로 전환해야 한다고 강조\n• 전쟁·공급망 위기 속에서 ESG 레토릭이 아닌 실질적 책임 이행 압박 증가\n• 정책 모니터링이 '약속 수집'에서 '이행 검증'으로 전환",
+      "evidence_titles": [
+        "Large companies need to turn commitments to responsible business conduct into action"
+      ],
+      "evidence_sources": [
+        "OECD"
+      ],
+      "strength": 3,
+      "trend": "강화",
+      "suwon_implication": "수원시 기업 ESG 지원정책을 선언적 인증에서 실질적 이행 검증·인센티브 체계로 전환 필요. 지역 대기업의 중소협력사 ESG 확산 실효성 점검이 핵심 과제로 부상.",
+      "is_structural": true,
+      "detected_date": "2026-07-02"
+    },
+    {
+      "signal_id": "sig_007",
+      "category": "무역공급망재편",
+      "title_ko": "동남아가 글로벌 공급망 대안 거점으로 부상",
+      "description": "• IEA가 동남아 에너지 전망 별도 보고서 발간하며 전략적 중요성 공식 인정\n• 중동 불안정 속 동남아가 에너지 수요·공급 양면에서 핵심 지역으로 재평가\n• 중국 의존도 분산, 중동 우회 전략의 지리적 대안으로 구조화",
+      "evidence_titles": [
+        "Executive summary – Southeast Asia Energy Outlook 2026 – Analysis"
+      ],
+      "evidence_sources": [
+        "IEA"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "수원시 제조기업의 동남아 진출·협력 수요 증가 예상. 수원시 경제통상 정책에서 동남아 교역 지원 체계 강화 및 현지 진출 기업 네트워크 구축 필요.",
+      "is_structural": true,
+      "detected_date": "2026-07-02",
+      "first_detected": "2026-07-02"
+    },
+    {
+      "signal_id": "sig_009",
+      "category": "민생충격패턴",
+      "title_ko": "관광산업이 성장→적응 패러다임으로 전환",
+      "description": "• OECD: 관광객 수 신기록에도 불구하고 산업이 적응하지 않으면 성장 불가 경고\n• 양적 성장 한계 도달, 질적 전환·지속가능성 없이는 산업 유지 불가능한 구조적 전환점\n• 전쟁·기후위기로 인한 관광 패턴 변화를 구조적 요인으로 인식",
+      "evidence_titles": [
+        "Tourist arrivals reach new record but the sector must adapt to keep growing"
+      ],
+      "evidence_sources": [
+        "OECD"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "수원 화성 방문객 증가 전략을 양적 확대에서 질적 전환·수용력 관리로 재설계 필요. 오버투어리즘 방지 및 지역 주민 삶의 질 보전이 관광정책의 핵심 축으로 부상.",
+      "is_structural": true,
+      "detected_date": "2026-07-02",
+      "first_detected": "2026-07-02"
+    },
+    {
+      "signal_id": "sig_010",
+      "category": "정책패러다임전환",
+      "title_ko": "연구혁신 인력 확대가 경제 회복력 핵심으로 인식",
+      "description": "• OECD: 연구혁신 인력이 지속 확대되고 있으며 이를 구조적 경쟁력으로 평가\n• 전쟁·공급망 위기 속에서 기술자립·혁신 역량이 안보 차원의 정책 우선순위로 격상\n• 인력 양성을 단기 고용정책이 아닌 장기 회복력 투자로 재정의",
+      "evidence_titles": [
+        "The research and innovation workforce continues to expand across the OECD"
+      ],
+      "evidence_sources": [
+        "OECD"
+      ],
+      "strength": 3,
+      "trend": "강화",
+      "suwon_implication": "수원시 청년 일자리 정책에서 연구개발·혁신 인력 양성을 핵심 축으로 강화 필요. 삼성전자·SK 등 지역 대기업 연구인력과 중소기업·스타트업 연결 생태계 조성이 중장기 경쟁력 확보 수단.",
+      "is_structural": true,
+      "detected_date": "2026-07-02"
+    }
+  ],
+  "by_category": {
+    "에너지안보재편": 2,
+    "무역공급망재편": 2,
+    "정책패러다임전환": 3,
+    "민생충격패턴": 2,
+    "지역질서재편": 1
+  },
+  "summary_ko": "• 에너지 안보 정책이 공급 확보에서 '효율화·수요관리' 중심으로 구조적 전환, IEA 주도로 각국 정부 채택\n• 디지털 무역이 OECD 교역의 25% 차지하며 물리적 공급망 의존도 감소 추세 통계로 확인\n• 미-이란이 전면전 회피 목적의 협상 메커니즘 제도화하며 단기 에너지 급등 위험 완화\n• 농업·관광·ODA 정책이 '성장·확대'에서 '변동성 관리·적응'으로 패러다임 전환 시작\n• 핵심광물 안보가 독립 정책 영역으로 격상되고 ESG·연구인력이 안보 차원의 투자 대상으로 재정의",
+  "top_signal": "에너지 효율을 안보 정책 핵심으로 전환",
+  "suwon_action": "• 수원시 건물·교통 에너지 효율화 사업을 단순 환경정책이 아닌 민생안정·에너지 안보 핵심 수단으로 즉시 재정의 필요\n• 디지털 무역 확대에 대응해 제조기업 디지털 전환 지원 및 배터리·전기차 기업의 핵심광물 공급망 리스크 점검 착수",
+  "weekly_trend": {
+    "정책패러다임전환": {
+      "count": 4,
+      "max_strength": 3
+    },
+    "에너지안보재편": {
+      "count": 4,
+      "max_strength": 5
+    },
+    "민생충격패턴": {
+      "count": 3,
+      "max_strength": 3
+    },
+    "무역공급망재편": {
+      "count": 3,
+      "max_strength": 4
+    },
+    "지역질서재편": {
+      "count": 2,
+      "max_strength": 4
+    }
+  },
+  "generated_at": "2026-07-02T00:16:51.058950"
+}

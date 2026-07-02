@@ -1,0 +1,305 @@
+{
+  "date": "2026-07-02",
+  "generated_at": "2026-07-02T00:21:03.838234",
+  "engine": "Claude 단독 (fallback)",
+  "stats": {
+    "articles_checked": 10,
+    "total_claims": 20,
+    "verified": 0,
+    "disputed": 0,
+    "unverified": 20,
+    "verified_rate": 0.0
+  },
+  "results": [
+    {
+      "article_id": "741839b17ab5",
+      "title": "US says it has agreed to 'stand down' after exchange of strikes with Iran",
+      "source": "BBC_MidEast",
+      "url": "https://www.bbc.co.uk/news/articles/c872rjw17qpo?at_medium=RSS&at_campaign=rss",
+      "importance": 5,
+      "category": "military",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁에 대한 정보는 제 학습 데이터(2024년 4월까지)에 포함되어 있지 않습니다. 이는 미래의 사건이거나 가상의 시나리오로 보입니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "미국과 이란 간 주말에 공격 교환이 발생했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁에 대한 정보는 학습 데이터에 존재하지 않습니다. 해당 사건은 미래의 가상 시나리오이거나 허위 정보일 가능성이 높습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "미국이 전투 중단(stand down)에 합의했다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.95,
+      "checked_at": "2026-07-02T00:19:22.698738"
+    },
+    {
+      "article_id": "956825c30a2c",
+      "title": "U.S., Iran Prepare for Talks on Strait of Hormuz",
+      "source": "ForeignPolicy",
+      "url": "https://foreignpolicy.com/2026/06/29/us-iran-talks-qatar-strait-hormuz-attacks-oman/",
+      "importance": 5,
+      "category": "diplomacy",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 해당 전쟁과 관련된 호르무즈 해협 권한 주장에 대한 검증이 불가능합니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "이란이 호르무즈 해협에 대한 절대 권한을 주장하고 있다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 호르무즈 해협 운영권 협상에 관한 이 주장을 검증할 수 있는 역사적 사실이나 신뢰할 수 있는 정보가 존재하지 않습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "미국과 이란이 호르무즈 해협의 운영권에 관한 협상을 진행 중이다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.95,
+      "checked_at": "2026-07-02T00:19:31.745613"
+    },
+    {
+      "article_id": "c945dd3dce63",
+      "title": "Trump claims Iran has agreed to hold peace talks in Doha after recent clashes",
+      "source": "Guardian_API",
+      "url": "https://www.theguardian.com/world/2026/jun/29/trump-iran-peace-talks-doha",
+      "importance": 5,
+      "category": "diplomacy",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 미래 사건입니다. 따라서 트럼프의 평화협상 발표에 대한 검증이 불가능하며, 해당 주장은 존재하지 않는 사건에 기반하고 있습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "트럼프 미국 대통령이 이란의 평화협상 동의를 공식 발표했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 도하 평화회담에 대한 주장을 검증할 수 있는 역사적 사실이나 신뢰할 수 있는 정보가 존재하지 않습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "카타르 도하에서 화요일 회담을 예정했다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.95,
+      "checked_at": "2026-07-02T00:19:47.664041"
+    },
+    {
+      "article_id": "b260b939e96b",
+      "title": "Escalating US-Iran strikes threaten interim peace agreement",
+      "source": "Guardian_API",
+      "url": "https://www.theguardian.com/world/2026/jun/28/escalating-us-iran-strikes-threaten-interim-peace-agreement",
+      "importance": 5,
+      "category": "military",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁에 대한 정보가 학습 데이터에 존재하지 않습니다. 이는 미래의 사건이거나 가상의 시나리오로 보이며, 실제 발생 여부를 확인할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "이란이 바레인과 쿠웨이트에 군사 공격을 감행했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.85,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 호르무즈 해협 관련 국제적 노력에 대한 주장을 검증할 수 있는 역사적 사실이나 신뢰할 수 있는 정보가 존재하지 않습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "호르무즈 해협을 이란의 직접 감시 없이 재개하려는 국제적 노력이 진행 중이다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.42,
+      "checked_at": "2026-07-02T00:19:57.565412"
+    },
+    {
+      "article_id": "a85899d6a6c9",
+      "title": "Ali Khamenei: Key moments from his life",
+      "source": "AlMonitor",
+      "url": "https://www.al-monitor.com/originals/2026/07/ali-khamenei-key-moments-his-life",
+      "importance": 5,
+      "category": "military",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 시나리오입니다. 알리 하메네이의 사망에 대한 검증된 정보는 없으며, 해당 주장은 현실의 사건이 아닙니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "알리 하메네이가 2월 말 미국-이스라엘 공격으로 사망했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.75,
+          "evidence": "알리 하메네이는 1989년부터 이란 최고지도자로 재임 중이며, 2025년 기준 약 36년간 통치한 것은 사실입니다. 그러나 '이란-미국 전쟁(2026)'은 실제 발생하지 않은 가상의 사건이므로, 해당 맥락에서의 검증은 불가능합니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "알리 하메네이는 36년간 이란을 통치했다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.85,
+      "checked_at": "2026-07-02T00:20:12.814331"
+    },
+    {
+      "article_id": "f46f58ff5e68",
+      "title": "Trump sees progress as US, Iran hold Qatar talks",
+      "source": "AlMonitor",
+      "url": "https://www.al-monitor.com/originals/2026/07/trump-sees-progress-us-iran-hold-qatar-talks",
+      "importance": 5,
+      "category": "diplomacy",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁 또는 해당 시점의 카타르 협상에 대한 학습된 정보가 없습니다. 카짐 가리바바디의 참석 여부를 확인할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "이란의 카짐 가리바바디 외교부 차관이 협상 대표로 참석했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.85,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 미래 사건입니다. 따라서 해당 사건과 관련된 카타르 회담, 양해각서, 통신채널 구축 등의 주장을 검증할 수 있는 역사적 사실이나 신뢰할 수 있는 정보가 존재하지 않습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "양측은 목요일 초기 양해각서 위반 내용 기록·보고를 위한 통신채널을 구축하기로 합의했다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.42,
+      "checked_at": "2026-07-02T00:20:23.996693"
+    },
+    {
+      "article_id": "42250069ca0c",
+      "title": "美·이란 협상단, 도하서 간접 회담…동결자산·호르무즈 논의(종합2보)",
+      "source": "Yonhap",
+      "url": "https://www.yna.co.kr/view/AKR20260701167252079",
+      "importance": 5,
+      "category": "diplomacy",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁에 대한 정보는 학습 데이터에 존재하지 않습니다. 이는 미래 시점의 사건이거나 실제로 발생하지 않은 가상의 사건으로 보이며, 해당 회담에 대한 검증이 불가능합니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "미국과 이란 협상 대표단이 도하에서 간접 회담을 실시했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 해당 전쟁과 관련된 도하 협상, 동결자산 및 호르무즈 해협 논의에 대한 검증이 불가능합니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "동결 자산 문제와 호르무즈 해협 통제권이 협상 의제로 다뤄졌다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.95,
+      "checked_at": "2026-07-02T00:20:34.947551"
+    },
+    {
+      "article_id": "0c81e9ff8350",
+      "title": "트럼프 \"아주 좋은 회담 했다…이란 비핵화 순조롭게 진행\"",
+      "source": "Yonhap",
+      "url": "https://www.yna.co.kr/view/AKR20260701196500071",
+      "importance": 5,
+      "category": "diplomacy",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 이와 관련된 트럼프의 발표나 종전 협상에 대한 정보는 실존하지 않으며 검증이 불가능합니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "트럼프 미국 대통령이 이란과의 종전 후속협상이 순조롭게 진행 중이라고 발표했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 해당 전쟁과 관련된 트럼프의 이란 비핵화 협상 발언을 검증할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "이란의 비핵화 이슈가 주요 협상 의제로 다뤄지고 있다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.95,
+      "checked_at": "2026-07-02T00:20:44.463597"
+    },
+    {
+      "article_id": "c9047243eea1",
+      "title": "이란 외무차관 \"종전 실무 협상 재개 협의…조건 충족되면 시작\"",
+      "source": "Yonhap",
+      "url": "https://www.yna.co.kr/view/AKR20260701191700079",
+      "importance": 5,
+      "category": "diplomacy",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 이와 관련된 종전 협상이나 외무차관 발언은 검증할 수 있는 역사적 사실이 아닙니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "이란 외무차관이 미국과의 종전 실무협상 재개를 논의 중이라고 밝혔다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 이와 관련된 이란 외무차관의 종전 협상 발언을 검증할 수 있는 역사적 사실이나 신뢰할 수 있는 정보가 존재하지 않습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "이란 외무차관이 필요한 조건이 충족되면 실무회담을 시작할 준비가 되어 있다고 표명했다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.95,
+      "checked_at": "2026-07-02T00:20:54.259684"
+    },
+    {
+      "article_id": "995627cf0dc6",
+      "title": "\"美·이란 협상단, 카타르 도하서 간접 회담 예정\"",
+      "source": "Yonhap",
+      "url": "https://www.yna.co.kr/view/AKR20260701167200079",
+      "importance": 5,
+      "category": "diplomacy",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 해당 전쟁과 관련된 종전협상이나 도하 회담에 대한 검증 가능한 역사적 사실이 존재하지 않습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "미국과 이란의 종전협상 실무대표단이 카타르 도하에서 간접회담을 개최할 예정이다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 해당 전쟁과 관련된 카타르의 중재 활동에 대한 검증이 불가능합니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "카타르가 중재국으로서 양측 간접협상을 주선하고 있다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.95,
+      "checked_at": "2026-07-02T00:21:03.838219"
+    }
+  ]
+}
