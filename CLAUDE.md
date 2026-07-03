@@ -175,3 +175,96 @@ lran/
 
 - 팀장 GitHub: bora01194845421-hub
 - 레포: https://github.com/bora01194845421-hub/lran
+
+---
+
+## AI 작업 지침 (Claude Code 전용)
+
+> 이 섹션은 Claude Code가 이 프로젝트에서 작업할 때 반드시 따르는 규칙입니다.
+
+### 파이프라인 실행 규칙
+
+1. **날짜 확인 먼저** — 실행 전 반드시 오늘 요일 확인:
+   - 월요일 → `--date YYYY-MM-DD` (4일 필터, 금~월)
+   - 목요일 → `--date YYYY-MM-DD` (3일 필터, 화~목)
+   - 발행일이 아닌 경우 사용자에게 확인 후 실행
+
+2. **실행 명령** (PowerShell 사용 — Bash는 python 명령어 인식 안 됨):
+   ```powershell
+   cd "C:\Users\user\Desktop\AI_프로그래밍\iran_news_agent_final\iran_final"
+   python orchestrator.py --date YYYY-MM-DD
+   ```
+
+3. **항상 백그라운드로 실행** — 파이프라인은 20~30분 소요. `run_in_background=true` 필수.
+
+4. **UnicodeEncodeError는 무시** — Windows cp949 콘솔 출력 문제. 파일 저장은 정상.
+
+### 완료 후 GitHub 푸시 규칙
+
+푸시 대상 파일 (gitignore 제외):
+```
+data/policy/minseang_YYYYMMDD.json
+data/analyzed/analyzed_YYYYMMDD.json
+data/fact_check/fact_check_YYYYMMDD.json
+data/paradigm/paradigm_YYYYMMDD.json
+data/country_response/cr_YYYYMMDD.json
+data/reports/report_YYYYMMDD.html
+data/domestic/domestic_YYYYMMDD.json
+data/youtube/yt_summary_YYYYMMDD.json
+```
+
+`data/raw/`, `data/clean/`, `*.db`, `*.log` 는 gitignore — 절대 푸시 금지.
+
+push 전 반드시 `git pull origin main --rebase` 먼저 실행.
+
+### 팩트체크 규칙
+
+1. 파이프라인 완료 후 `fact_check_YYYYMMDD.json` 확인
+2. **미확인** 건수가 5건 이상이면 → WebSearch로 교차 검증 실시
+3. 검증 결과 반영:
+   - 검증됨 → `overall_verdict: "검증됨"`, `avg_confidence: 0.85`
+   - 불일치 → 그대로 유지 (minseang_analyzer가 자동 제외)
+4. 업데이트 후 minseang_analyzer 재실행
+
+### minseang_analyzer 오류 대응
+
+JSON 파싱 실패 (`Expecting ',' delimiter` 등):
+- 코드에 3회 자동 재시도 로직 내장됨 → 자동 복구 시도
+- 3회 모두 실패 시 → `minseang_analyzer.run('YYYY-MM-DD')` 단독 재실행
+
+### 모델별 설정 권고
+
+| 모델 | max_tokens | 권장 용도 | JSON 안정성 |
+|------|-----------|-----------|------------|
+| claude-sonnet-5 | 16384 | 기본 (현재) | 높음 |
+| claude-opus-4-8 | 16384 | 복잡한 분석 최고 품질 | 매우 높음 |
+| claude-haiku-4-5 | 8192 | 빠른 수집·분류 | 중간 (재시도 필수) |
+| claude-fable-5 | 16384 | 정책 제언 최고 품질 | 매우 높음 |
+
+Haiku 사용 시 PROMPT 길이를 30% 단축 후 사용. `max_tokens`를 8192로 낮춰야 함.
+
+### 코드 수정 시 주의사항
+
+- `config.py`의 `get_collection_days()` — 발행 요일 변경 시 이 함수만 수정
+- `minseang_analyzer.py`의 SYSTEM 프롬프트 — 허위사실 방지 규칙 절대 삭제 금지
+- `fact_checker.py` — 검증 건수 기본 10건. 전체 검증 원하면 `MAX_CHECK` 값 변경
+- `.env` — 절대 커밋 금지 (.gitignore에 등록됨)
+
+### 발행 흐름 요약
+
+```
+PC 실행: python orchestrator.py --date YYYY-MM-DD
+    ↓ (20~30분)
+팩트체크 웹검증 → fact_check JSON 업데이트
+    ↓
+minseang_analyzer 재실행 (팩트체크 반영)
+    ↓
+git add → git commit → git push
+    ↓
+Streamlit 자동 반영: https://y7d8z5df9bigvzejooursm.streamlit.app/
+    ↓
+링크 공유 = 발행 완료
+
+핸드폰 실행: github.com/bora01194845421-hub/lran
+    → Actions → "이란전쟁 파이프라인 자동 실행" → Run workflow
+```

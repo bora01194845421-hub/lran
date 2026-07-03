@@ -1,7 +1,18 @@
 name: 이란전쟁 파이프라인 자동 실행
 
 on:
+  # 수동 실행 (핸드폰/PC에서 버튼 클릭)
   workflow_dispatch:
+    inputs:
+      target_date:
+        description: '발행 날짜 (YYYY-MM-DD, 비워두면 오늘 KST)'
+        required: false
+        default: ''
+
+  # 자동 스케줄: 매주 월·목 한국시간 오전 8시
+  schedule:
+    - cron: '0 23 * * 0'   # 일요일 23:00 UTC = 월요일 08:00 KST
+    - cron: '0 23 * * 2'   # 수요일 23:00 UTC = 목요일 08:00 KST
 
 permissions:
   contents: write
@@ -40,14 +51,24 @@ jobs:
           YOUTUBE_API_KEY=${{ secrets.YOUTUBE_API_KEY }}
           EOF
 
+      - name: 발행 날짜 결정 (KST 기준)
+        shell: bash
+        run: |
+          if [ -n "${{ github.event.inputs.target_date }}" ]; then
+            echo "TARGET_DATE=${{ github.event.inputs.target_date }}" >> $GITHUB_ENV
+          else
+            echo "TARGET_DATE=$(TZ='Asia/Seoul' date '+%Y-%m-%d')" >> $GITHUB_ENV
+          fi
+
       - name: 파이프라인 실행
-        run: python orchestrator.py
+        run: python orchestrator.py --date $TARGET_DATE
 
       - name: 결과 데이터 자동 커밋 & push
         shell: bash
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git pull origin main --rebase
           git add data/
-          git diff --staged --quiet || git commit -m "auto: 파이프라인 결과 $(date '+%Y-%m-%d %H:%M KST')"
+          git diff --staged --quiet || git commit -m "auto: $TARGET_DATE 파이프라인 결과 ($(TZ='Asia/Seoul' date '+%Y-%m-%d %H:%M KST'))"
           git push origin HEAD:${{ github.ref_name }}
