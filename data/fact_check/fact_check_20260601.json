@@ -1,0 +1,308 @@
+{
+  "date": "2026-06-01",
+  "generated_at": "2026-06-04T01:46:04.017373",
+  "engine": "Claude 단독 (fallback)",
+  "stats": {
+    "articles_checked": 10,
+    "total_claims": 20,
+    "verified": 1,
+    "disputed": 1,
+    "unverified": 18,
+    "verified_rate": 5.0
+  },
+  "results": [
+    {
+      "article_id": "361a4a20f554",
+      "title": "Strait of Hormuz - IEA – International Energy Agency",
+      "source": "IEA_News",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOc0ZIWHpXRml2eF9rVVVvbm5mNnRjQTdFYzVXeG9yVkhqTVh3blBUTHZ6UUViRnhZSFlEbnJQa0JwOUgyYmsxdV9OSEJFR3lXdmVJeHRwMnQ0VllQX3d0WTRPc1lrdjRhZUVDcDF2ZXhIM3RPUE9kUTFNVjlnbllMOTJSQUs?oc=5",
+      "importance": 5,
+      "category": "energy",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.9,
+          "evidence": "호르무즈 해협은 전 세계 해상 석유 운송의 약 20-21%를 차지하는 주요 에너지 chokepoint로, IEA 등 국제기구들이 일관되게 보고해온 수치입니다. 페르시아만 산유국들의 원유 수출이 이 해협을 통과합니다.",
+          "sources": [
+            "IEA Reports",
+            "EIA International Energy Statistics"
+          ],
+          "engine": "claude-only",
+          "claim": "호르무즈 해협은 전 세계 해양 석유 운송의 20-25%가 통과한다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 이와 관련된 IEA의 정책 결정이나 우선순위 지정에 대한 정보는 확인할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "IEA는 호르무즈 해협 안정화를 에너지 안보의 최우선 과제로 지정했다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.93,
+      "checked_at": "2026-06-04T01:44:33.126172"
+    },
+    {
+      "article_id": "4c69cb7e1670",
+      "title": "World Economic Outlook, April 2026: Global Economy in the Shadow of War - International Monetary Fund | IMF",
+      "source": "IMF_News",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNck1vV210SGxtN1h5dEJwa3ZrNGRLV3RId3o1Y1BVcFl3UVhiYmRQWm9sVC00ZW80Y0lMSEpMRzV3V3dsNTl1djltOFBOelVIZFY3WW9EcERfTTFUeENacnpRTzk0Vlk5Q0dYSFpmSXgxU2RBa29Ed0dpWEJYMFZhd1RzMTU5SjBXY2swZURyU1M3aXM1cEE?oc=5",
+      "importance": 5,
+      "category": "paradigm",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년은 미래 시점이며, 이란-미국 전쟁(2026)은 실제 발생하지 않은 가상의 사건입니다. 따라서 해당 날짜의 IMF 보고서 존재 여부를 확인할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "IMF가 2026년 4월 World Economic Outlook 보고서를 발표했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년은 미래 시점이며, 이란-미국 전쟁은 학습 데이터(2024년 4월 기준)에 존재하지 않는 가상의 사건입니다. 해당 IMF 문서도 실제로 존재하지 않습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "이란-미국 전쟁이 발생했다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.95,
+      "checked_at": "2026-06-04T01:44:42.385179"
+    },
+    {
+      "article_id": "326ad5b81b70",
+      "title": "How the War in the Middle East Is Affecting Energy, Trade, and Finance - International Monetary Fund | IMF",
+      "source": "IMF_News",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNV3dneUQ0RExnWHZRQmZuZGU3bkdiOE9Xc0MyVTBVaVB0b0ZuQlYzZ3UzWTRRMGViaTczbVFObkhWZnBMZ3RSSFdNSVZETkNPSDBxZTNSOTg5cU43OGt1ejVTNVU2UkcxTlo3RnNZYW1lSWFwR0kwVnpuTDZVTEMxMGFyekNVN2lmT2hTcXRGTVNaMm4xSkJ5dFBXVW5uSk8xLU00NkdDd3ozc3RFWXlGb3VmME1EN0t3?oc=5",
+      "importance": 5,
+      "category": "economy",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 해당 전쟁에 대한 학습된 정보가 없으며, IMF 출처도 구체적인 날짜나 내용을 확인할 수 없어 검증이 불가능합니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "석유·가스 가격이 급등했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 이와 관련된 IMF의 분석 보고서나 공식 발표는 존재할 수 없으며, 해당 주장을 검증할 수 있는 실제 정보가 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "IMF가 전쟁으로 인한 금융 시장 불안정이 신흥국 자본 이탈을 가속화할 것으로 분석했다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.47,
+      "checked_at": "2026-06-04T01:44:51.746494"
+    },
+    {
+      "article_id": "3cac22ce557f",
+      "title": "Middle East War to Spark Biggest Energy Price Surge in Four Years - World Bank Group",
+      "source": "WorldBank_News",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQcXZYeGQyQUkxX2hIR2VGTEVDSngzZE1NR2ljaHJSWjFGdTZjUWxxOHhIeHJmWlF6RkdwcnR2RjJnRWxkdnNUWW5CUV9qMnJnY3dsRXFCa3B0VjlVdlhDU01XVnFhbzYtcjdTcy1jNzljT2o3OUlrOUZwVllYdmdEMTlNTzVpdXhQbWtlTWZjX3FoTTM4eGtERGZLbmRJRkZ1dWY5SnhMNGhmRnlFQXc?oc=5",
+      "importance": 5,
+      "category": "energy",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 이와 관련된 세계은행의 에너지 가격 전망 보고서도 존재하지 않습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "중동 전쟁으로 인한 에너지 가격 급등이 4년 만에 최대 규모에 도달할 것으로 세계은행이 전망했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 이와 관련된 세계은행의 분석 보고서나 호르무즈 해협 교란에 따른 에너지 가격 급등 예측은 검증할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "세계은행은 호르무즈 해협 교란이 원유 및 가스 가격을 급상승시킬 것으로 분석했다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.95,
+      "checked_at": "2026-06-04T01:45:02.406080"
+    },
+    {
+      "article_id": "3dbca98614ff",
+      "title": "Trump seeking edits to US-Iran deal, US media report",
+      "source": "BBC_World",
+      "url": "https://www.bbc.com/news/articles/c1w2xve315do?at_medium=RSS&at_campaign=rss",
+      "importance": 5,
+      "category": "diplomacy",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 관련된 트럼프 행정부의 협상 내용이나 호르무즈 해협 조항 수정 요구에 대한 검증이 불가능합니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "트럼프 행정부가 미국-이란 협상에서 호르무즈 해협 관련 조항 수정을 요구하고 있다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁에 대한 학습된 정보가 없으며, 해당 사건은 현재 시점(2024년 기준)에서 미래의 가상 시나리오입니다. 트럼프 행정부의 이란 핵 합의 관련 입장은 역사적으로 존재하지만, 2026년 전쟁과 연결된 특정 협상 내용은 확인할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "트럼프 행정부가 미국-이란 협상에서 고농축 우라늄 제거 관련 조항 수정을 요구하고 있다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.0,
+      "checked_at": "2026-06-04T01:45:12.885010"
+    },
+    {
+      "article_id": "26dd16016ef0",
+      "title": "No deal announced after Trump meeting to make 'final determination' on Iran",
+      "source": "BBC_MidEast",
+      "url": "https://www.bbc.com/news/articles/c0r2d40r91qo?at_medium=RSS&at_campaign=rss",
+      "importance": 5,
+      "category": "diplomacy",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 이와 관련된 트럼프 대통령의 회의나 BBC 보도 내용을 검증할 수 있는 실제 역사적 기록이 존재하지 않습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "트럼프 대통령이 이란 협상에 대한 '최종 결정'을 내리기 위해 보좌진과 회의를 개최했다"
+        },
+        {
+          "verdict": "불일치",
+          "confidence": 0.95,
+          "evidence": "출처 제목에 'No deal announced'라고 명시되어 있어 합의가 이루어지지 않았음을 분명히 하고 있습니다. '최종 결정'을 위한 회의는 협상 타결이 아닌 정책 방향 결정을 의미하며, 골자 합의 및 승인 대기 상태와는 정반대입니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "미국과 이란이 협상의 골자에 합의한 상태로 최고 지도부 승인을 대기 중이다"
+        }
+      ],
+      "overall_verdict": "불일치",
+      "avg_confidence": 0.95,
+      "checked_at": "2026-06-04T01:45:23.900680"
+    },
+    {
+      "article_id": "1436d96685bf",
+      "title": "Iran steps up claim to control Strait of Hormuz",
+      "source": "BBC_MidEast",
+      "url": "https://www.bbc.com/news/articles/cq5py64gvwzo?at_medium=RSS&at_campaign=rss",
+      "importance": 5,
+      "category": "paradigm",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 해당 주장을 검증할 수 있는 역사적 사실이나 신뢰할 수 있는 정보가 존재하지 않습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "이란이 호르무즈 해협 2만 2천 제곱킬로미터 이상에 대한 무장군부 통제를 주장하는 지도를 공개했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 다만 호르무즈 해협이 세계 석유 운송의 약 21%를 담당하는 전략적 요충지라는 점은 일반적으로 알려진 사실입니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "호르무즈 해협이 세계 해상 무역의 중추이다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.47,
+      "checked_at": "2026-06-04T01:45:33.629707"
+    },
+    {
+      "article_id": "e4dbd7f7fbab",
+      "title": "'This may be the last time you hear my voice': Political executions surge in Iran since start of war",
+      "source": "BBC_MidEast",
+      "url": "https://www.bbc.com/news/articles/cn8p392nl7yo?at_medium=RSS&at_campaign=rss",
+      "importance": 5,
+      "category": "humanitarian",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁에 대한 학습된 정보가 없으며, 해당 사건은 미래의 가상 시나리오로 보입니다. 실제 역사적 사실로 검증할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "2월 28일 미국·이스라엘의 이란 공격이 발생했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁에 대한 학습된 정보가 없으며, 해당 사건은 실제로 발생하지 않은 가상의 시나리오입니다. 따라서 UN의 정치 수감자 처형 확인 건수를 검증할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "UN이 최소 32명의 정치 수감자 처형을 확인했다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.0,
+      "checked_at": "2026-06-04T01:45:43.337175"
+    },
+    {
+      "article_id": "c07a40a23fa0",
+      "title": "Bowen: Strait of Hormuz standoff raises risk of sliding back into all-out war",
+      "source": "BBC_MidEast",
+      "url": "https://www.bbc.com/news/articles/cgrpnq00j5vo?at_medium=RSS&at_campaign=rss",
+      "importance": 5,
+      "category": "paradigm",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 미래 가상 시나리오입니다. 제 학습 데이터(2024년 4월 기준)에는 해당 전쟁에 대한 정보가 존재하지 않으며, 이는 허구적 설정으로 판단됩니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "호르무즈 해협에서 미국과 이란 간 군사적 대립이 발생하고 있다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 해당 전쟁과 관련된 휴전 합의에 대한 검증이 불가능합니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "걸프 지역에서 휴전 합의가 체결된 바 있다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.95,
+      "checked_at": "2026-06-04T01:45:53.322435"
+    },
+    {
+      "article_id": "2f391a60f2eb",
+      "title": "'Hopefully we can pull it off' - Rubio on Iran deal",
+      "source": "BBC_MidEast",
+      "url": "https://www.bbc.com/news/videos/clyppw9gqzwo?at_medium=RSS&at_campaign=rss",
+      "importance": 5,
+      "category": "diplomacy",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 이와 관련된 루비오 국무장관의 발언을 검증할 수 있는 역사적 사실이나 신뢰할 수 있는 정보가 존재하지 않습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "루비오 국무장관이 이란 협상 추진 의지를 표명했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁에 대한 학습된 정보가 없으며, 해당 사건은 미래 시점의 가상 시나리오로 보입니다. 실제 발생하지 않은 사건에 대한 협상안 내용을 검증할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "협상안에 60일 휴전 연장과 호르무즈 해협 재개방이 포함되어 있다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.47,
+      "checked_at": "2026-06-04T01:46:04.017201"
+    }
+  ]
+}

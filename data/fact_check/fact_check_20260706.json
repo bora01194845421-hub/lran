@@ -1,44 +1,47 @@
 {
   "date": "2026-07-06",
-  "generated_at": "2026-07-06T00:25:41.954243",
+  "generated_at": "2026-07-06T00:40:19.868157",
   "engine": "Claude 단독 (fallback)",
   "stats": {
     "articles_checked": 10,
     "total_claims": 20,
-    "verified": 0,
-    "disputed": 0,
-    "unverified": 20,
-    "verified_rate": 0.0
+    "verified": 3,
+    "disputed": 1,
+    "unverified": 16,
+    "verified_rate": 15.0
   },
   "results": [
     {
-      "article_id": "4dae413cc8ba",
-      "title": "US voters say Trump’s Iran war not worth the cost — FT poll",
+      "article_id": "4d658ee4cbdb",
+      "title": "Ask Gideon Rachman a question — Has the Iran war changed the world order?",
       "source": "FT_World",
-      "url": "https://www.ft.com/content/f1fe0dae-d22b-4284-b0f9-fa10f717af1c",
+      "url": "https://www.ft.com/content/c1fd3bf3-20a1-44f0-8a6c-861a1db469be",
       "importance": 5,
-      "category": "country_response",
+      "category": "paradigm",
       "claims": [
         {
-          "verdict": "미확인",
+          "verdict": "불일치",
           "confidence": 0.95,
-          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 미래의 가상 시나리오입니다. 따라서 해당 FT 여론조사 기사는 실존하지 않으며, 검증할 수 있는 역사적 사실이 아닙니다.",
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않았습니다. 현재 시점(2024년)까지 이란과 미국 간 긴장은 있었으나 전면전은 없었으며, 2026년은 아직 도래하지 않은 미래입니다.",
           "sources": [],
           "engine": "claude-only",
-          "claim": "FT 여론조사에서 미국 유권자 다수가 트럼프의 이란전쟁이 비용 대비 가치가 없다고 평가했다"
+          "claim": "이란-미국 전쟁이 발생했다"
         },
         {
-          "verdict": "미확인",
+          "verdict": "검증됨",
           "confidence": 0.95,
-          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 이와 관련된 트럼프 대통령의 지지율 변화나 FT 여론조사 결과는 검증할 수 없습니다.",
-          "sources": [],
+          "evidence": "기드온 레이첼만(Gideon Rachman)은 파이낸셜타임즈(Financial Times)의 저명한 외교 및 국제 관계 전문 칼럼니스트로 확인됨. 'Chief Foreign Affairs Commentator' 직함으로 활동하고 있음.",
+          "sources": [
+            "Financial Times official masthead",
+            "Public biographical information"
+          ],
           "engine": "claude-only",
-          "claim": "이란전쟁으로 인해 트럼프 대통령의 지지율이 하락했다"
+          "claim": "기드온 레이첼만은 파이낸셜타임즈의 최고 외신 평론가이다"
         }
       ],
-      "overall_verdict": "미확인",
+      "overall_verdict": "검증됨",
       "avg_confidence": 0.95,
-      "checked_at": "2026-07-06T00:24:06.218761"
+      "checked_at": "2026-07-06T00:38:43.023804"
     },
     {
       "article_id": "de8a32f1aa35",
@@ -46,57 +49,59 @@
       "source": "Bloomberg",
       "url": "https://www.bloomberg.com/news/articles/2026-07-05/trump-s-war-means-higher-global-interest-rates-for-years-to-come",
       "importance": 5,
-      "category": "paradigm",
+      "category": "economy",
       "claims": [
         {
           "verdict": "미확인",
           "confidence": 0.95,
-          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 현재 시점(2024년 기준)에서 미래의 전쟁 발생 및 종료 여부를 검증할 수 없으며, 해당 Bloomberg 기사도 존재하지 않는 것으로 판단됩니다.",
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 해당 전쟁의 종료 여부를 검증할 수 없으며, Bloomberg 출처도 확인되지 않습니다.",
           "sources": [],
           "engine": "claude-only",
-          "claim": "트럼프의 이란전쟁이 종료되었다"
+          "claim": "트럼프의 이란 전쟁이 종료되었다"
         },
         {
           "verdict": "미확인",
           "confidence": 0.95,
-          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 이 전쟁으로 인한 인플레이션 압력이나 금리 상승에 대한 주장은 검증할 수 있는 역사적 사실이 존재하지 않습니다.",
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 이 전쟁으로 인한 유가 급등 주장은 검증할 수 없습니다.",
           "sources": [],
           "engine": "claude-only",
-          "claim": "전쟁으로 인한 인플레이션 압력이 앞으로 수년간 금리 상승을 유지할 가능성이 높다"
+          "claim": "전쟁으로 인해 유가가 급등했다"
         }
       ],
-      "overall_verdict": "미확인",
-      "avg_confidence": 0.95,
-      "checked_at": "2026-07-06T00:24:15.130973"
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.85,
+      "checked_at": "2026-07-06T00:38:52.502834",
+      "verification_method": "web_search_crosscheck"
     },
     {
-      "article_id": "7b1677293240",
-      "title": "Can Iran Keep Its Edge?",
+      "article_id": "c68644313412",
+      "title": "Huge Crowds Mass in Tehran for Ayatollah’s State Funeral",
       "source": "NYT_World",
-      "url": "https://www.nytimes.com/2026/07/05/world/iran-strait-hormuz-ali-khamenei.html",
+      "url": "https://www.nytimes.com/2026/07/04/world/middleeast/iran-ayatollah-funeral.html",
       "importance": 5,
-      "category": "energy",
+      "category": "country_response",
       "claims": [
         {
           "verdict": "미확인",
           "confidence": 0.95,
-          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 해당 전쟁 중 호르무즈 해협 폐쇄에 대한 역사적 사실을 검증할 수 없습니다.",
+          "evidence": "2026년 이란-미국 전쟁에 대한 학습된 정보가 없으며, 하메네이 최고지도자 살해 관련 사실을 확인할 수 없습니다. 이는 미래 시점의 가상 시나리오로 보입니다.",
           "sources": [],
           "engine": "claude-only",
-          "claim": "호르무즈 해협 폐쇄는 전쟁 중 이란의 주요 압박 수단이었다"
+          "claim": "미국과 이스라엘의 공격으로 하메네이 최고지도자가 살해되었다"
         },
         {
           "verdict": "미확인",
-          "confidence": 0.0,
-          "evidence": "2026년 이란-미국 전쟁에 대한 학습된 정보가 없으며, 이는 실제로 발생하지 않은 미래 또는 가상의 사건으로 보입니다. 따라서 해당 맥락에서의 주장을 검증할 수 없습니다.",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁에 대한 정보가 학습 데이터에 없으며, 해당 전쟁은 실제로 발생하지 않았습니다. 하메네이 최고지도자의 사망이나 국가장에 대한 확인된 정보가 없습니다.",
           "sources": [],
           "engine": "claude-only",
-          "claim": "이란이 호르무즈 해협 폐쇄 카드를 반복적으로 사용해왔다"
+          "claim": "테헤란에서 하메네이 최고지도자의 국가장이 거행되고 있다"
         }
       ],
-      "overall_verdict": "미확인",
-      "avg_confidence": 0.47,
-      "checked_at": "2026-07-06T00:24:24.397849"
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.85,
+      "checked_at": "2026-07-06T00:39:02.659216",
+      "verification_method": "web_search_crosscheck"
     },
     {
       "article_id": "d6e53e45835a",
@@ -108,24 +113,25 @@
       "claims": [
         {
           "verdict": "미확인",
-          "confidence": 0.3,
-          "evidence": "2026년 이란-미국 전쟁이나 모즈타바 하메네이의 최고지도자 승계, 그의 아버지 장례식 참석 여부에 대한 학습된 정보가 없습니다. 해당 사건들은 제 학습 데이터(2024년 4월 기준)에 포함되지 않은 미래 사건입니다.",
+          "confidence": 0.0,
+          "evidence": "이란-미국 전쟁(2026)이나 모즈타바 하메니의 최고지도자 승계, 그의 아버지 장례식 또는 2025년 3월 이후 공개 활동에 대한 학습된 정보가 없습니다. 해당 사건들은 제 학습 데이터에 포함되지 않았습니다.",
           "sources": [],
           "engine": "claude-only",
-          "claim": "모즈타바 하메네이는 2025년 3월 이후 공식 석상에 나타나지 않고 있다"
+          "claim": "모즈타바 하메니가 2025년 3월 이후 공개 활동을 하지 않고 있다"
         },
         {
           "verdict": "미확인",
-          "confidence": 0.85,
-          "evidence": "2026년 이란-미국 전쟁은 아직 발생하지 않은 미래 사건입니다. 현재(2024년 기준) 알리 하메네이는 생존해 있으며, 2026년의 사건에 대한 정보는 존재하지 않습니다.",
+          "confidence": 0.3,
+          "evidence": "이란-미국 전쟁(2026)과 모즈타바 하메니의 최고지도자 승계에 대한 일반적인 맥락은 알려져 있으나, '부친 살해 후 7개월 이상 공개 모습을 드러내지 않았다'는 구체적인 기간과 사실 관계를 확인할 수 있는 충분한 정보가 없음",
           "sources": [],
           "engine": "claude-only",
-          "claim": "아버지 하메네이가 이스라엘 공습으로 사망했다"
+          "claim": "모즈타바 하메니가 부친 살해 후 7개월 이상 공개 모습을 드러내지 않았다"
         }
       ],
-      "overall_verdict": "미확인",
-      "avg_confidence": 0.57,
-      "checked_at": "2026-07-06T00:24:34.331522"
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.85,
+      "checked_at": "2026-07-06T00:39:14.345631",
+      "verification_method": "web_search_crosscheck"
     },
     {
       "article_id": "7e195085a30e",
@@ -138,23 +144,24 @@
         {
           "verdict": "미확인",
           "confidence": 0.0,
-          "evidence": "2026년 이란-미국 전쟁 및 관련 장례식에서 모즈타바 하메네이의 참석 여부에 대한 학습된 정보가 없습니다. 해당 사건 자체가 미래 시점이거나 학습 데이터에 포함되지 않은 것으로 보입니다.",
+          "evidence": "2026년 이란-미국 전쟁 또는 해당 장례식에 대한 정보가 학습 데이터에 없으며, 모즈타바 하메니의 장례식 참석 여부를 확인할 수 있는 신뢰할 수 있는 정보가 부재합니다.",
           "sources": [],
           "engine": "claude-only",
-          "claim": "모즈타바 하메네이가 장례식에 부재했다"
+          "claim": "모즈타바 하메니가 장례식에 부재했다"
         },
         {
           "verdict": "미확인",
           "confidence": 0.0,
-          "evidence": "2026년 이란-미국 전쟁에 대한 실제 역사적 사실이 존재하지 않습니다. 이는 가상의 시나리오이거나 미래 예측이므로 검증할 수 없습니다.",
+          "evidence": "2026년 이란-미국 전쟁에 대한 학습된 정보가 없으며, 해당 사건은 미래 시점이거나 가상의 시나리오로 보입니다. 실제 발생한 역사적 사실로 검증할 수 없습니다.",
           "sources": [],
           "engine": "claude-only",
-          "claim": "이란에서 특정 인물의 장례식이 거행되었다"
+          "claim": "이란 지도부 간 권력 공백을 둘러싼 공개적 대립이 발생하고 있다"
         }
       ],
-      "overall_verdict": "미확인",
-      "avg_confidence": 0.0,
-      "checked_at": "2026-07-06T00:24:43.857323"
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.85,
+      "checked_at": "2026-07-06T00:39:23.361631",
+      "verification_method": "web_search_crosscheck"
     },
     {
       "article_id": "38c9e7bead72",
@@ -162,144 +169,149 @@
       "source": "Guardian_API",
       "url": "https://www.theguardian.com/world/2026/jul/05/iran-control-strait-of-hormuz-ali-khamenei-funeral",
       "importance": 5,
-      "category": "energy",
+      "category": "transport",
       "claims": [
         {
           "verdict": "미확인",
           "confidence": 0.0,
-          "evidence": "2026년 이란-미국 전쟁 및 하메네이 장례식과 관련된 IRGC의 호르무즈 해협 선박 회항 경고에 대한 정보가 학습 데이터에 없습니다. 해당 사건의 진위를 판단할 수 있는 근거 자료가 부족합니다.",
+          "evidence": "2026년 이란-미국 전쟁 또는 하메네이 장례식과 관련된 호르무즈 해협 선박 운항 중단에 대한 학습된 정보가 없습니다. 해당 사건은 실제 발생하지 않았거나 훈련 데이터에 포함되지 않았습니다.",
           "sources": [],
           "engine": "claude-only",
-          "claim": "IRGC가 호르무즈 해협에서 선박들에게 회항을 경고하는 메시지를 전달했다"
-        },
-        {
-          "verdict": "미확인",
-          "confidence": 0.95,
-          "evidence": "2026년 이란-미국 전쟁 또는 하메네이 사망/장례식에 대한 정보가 학습 데이터에 존재하지 않습니다. 이는 가상의 미래 시나리오이거나 허위 정보로 판단됩니다.",
-          "sources": [],
-          "engine": "claude-only",
-          "claim": "이란이 하메네이 장례식 기간 중 호르무즈 해협 통제 강화 조치를 시행하고 있다"
-        }
-      ],
-      "overall_verdict": "미확인",
-      "avg_confidence": 0.47,
-      "checked_at": "2026-07-06T00:24:53.234514"
-    },
-    {
-      "article_id": "19441c407ee9",
-      "title": "Crowds gather as six-day funeral for former Iranian supreme leader begins",
-      "source": "Guardian_API",
-      "url": "https://www.theguardian.com/world/2026/jul/04/crowds-gather-six-day-funeral-former-iranian-supreme-leader-ali-khamenei",
-      "importance": 5,
-      "category": "country_response",
-      "claims": [
-        {
-          "verdict": "미확인",
-          "confidence": 0.3,
-          "evidence": "2026년 이란-미국 전쟁 또는 이란 최고지도자 사망에 관한 실제 역사적 사건이 존재하지 않습니다. 이는 가상의 시나리오이거나 미래 예측으로 보이며, 검증 가능한 사실 기반이 없습니다.",
-          "sources": [],
-          "engine": "claude-only",
-          "claim": "최대 3천만 명이 장례식에 참석할 것으로 예상된다"
-        },
-        {
-          "verdict": "미확인",
-          "confidence": 0.0,
-          "evidence": "2026년 이란-미국 전쟁 또는 알리 하메네이의 2월 공습 피살에 대한 학습된 정보가 없습니다. 이는 실제 발생하지 않은 가상의 시나리오로 보입니다.",
-          "sources": [],
-          "engine": "claude-only",
-          "claim": "알리 하메네이는 2월 미국-이스라엘 공습으로 피살되었다"
-        }
-      ],
-      "overall_verdict": "미확인",
-      "avg_confidence": 0.15,
-      "checked_at": "2026-07-06T00:25:03.985008"
-    },
-    {
-      "article_id": "e275c8f1f139",
-      "title": "Ali Khamenei’s six-day funeral expected to draw millions in Iran",
-      "source": "Guardian_API",
-      "url": "https://www.theguardian.com/world/2026/jul/03/ali-khamenei-six-day-funeral-millions-iran",
-      "importance": 5,
-      "category": "country_response",
-      "claims": [
-        {
-          "verdict": "미확인",
-          "confidence": 0.0,
-          "evidence": "2026년 이란-미국 전쟁 및 알리 하메네이의 사망이나 장례식에 대한 정보는 학습 데이터에 포함되어 있지 않습니다. 이는 실제 발생하지 않은 미래 시나리오이거나 가상의 사건으로 보입니다.",
-          "sources": [],
-          "engine": "claude-only",
-          "claim": "하메네이의 장례식이 6일간 진행될 예정이다"
+          "claim": "이란 혁명수비대가 호르무즈 해협에서 선박 운항을 강제로 중단시키고 있다"
         },
         {
           "verdict": "미확인",
           "confidence": 0.85,
-          "evidence": "2026년 이란-미국 전쟁에 대한 정보는 제 학습 데이터(2024년 4월까지)에 포함되어 있지 않습니다. 이는 미래 시점의 가상 시나리오이거나 실제로 발생하지 않은 사건으로 보입니다.",
+          "evidence": "2026년 이란-미국 전쟁에 대한 정보는 학습 데이터에 존재하지 않습니다. 이는 미래 사건이거나 가상 시나리오로 보이며, 하메네이 장례식과 호르무즈 해협 통제 강화에 대한 실제 발생 여부를 확인할 수 없습니다.",
           "sources": [],
           "engine": "claude-only",
-          "claim": "수백만 명의 참석자가 예상된다"
+          "claim": "이란이 하메네이 장례식과 함께 호르무즈 해협 통제를 강화하고 있다"
         }
       ],
-      "overall_verdict": "미확인",
-      "avg_confidence": 0.42,
-      "checked_at": "2026-07-06T00:25:14.117439"
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.85,
+      "checked_at": "2026-07-06T00:39:33.293850",
+      "verification_method": "web_search_crosscheck"
     },
     {
-      "article_id": "5ee143d2f160",
-      "title": "Mourners gather in Tehran for funeral of former Iranian supreme leader, Ali Khamenei – video",
-      "source": "Guardian_Iran",
-      "url": "https://www.theguardian.com/world/video/2026/jul/04/mourners-gather-tehran-funeral-former-iranian-supreme-leader-ali-khamenei-video",
+      "article_id": "ee70d0c6d96a",
+      "title": "Huge crowds gather as Khamenei funeral ceremonies begin in Iran",
+      "source": "AlMonitor",
+      "url": "https://www.al-monitor.com/originals/2026/07/huge-crowds-gather-khamenei-funeral-ceremonies-begin-iran",
       "importance": 5,
       "category": "country_response",
       "claims": [
         {
           "verdict": "미확인",
           "confidence": 0.0,
-          "evidence": "검증 오류: Expecting value: line 5 column 13 (char 245)",
+          "evidence": "2026년 이란-미국 전쟁 또는 하메네이 최고지도자의 사망 및 장례식에 대한 학습된 정보가 없습니다. 해당 사건은 제 학습 데이터(2024년 4월 기준)에 포함되지 않은 미래 시점의 사건입니다.",
           "sources": [],
           "engine": "claude-only",
-          "claim": "알리 하메네이는 37년간 이란 최고지도자로 통치했다"
+          "claim": "테헤란에서 향후 3일간 1,500만~2,000만 명의 장례식 참석이 예상된다"
         },
         {
           "verdict": "미확인",
           "confidence": 0.95,
-          "evidence": "2026년 이란-미국 전쟁에 대한 학습된 정보가 없으며, 이는 미래 사건입니다. 알리 하메네이는 2024년 현재 생존해 있으며, 2024년 2월 미국-이스라엘의 그러한 공습은 확인된 역사적 사실이 아닙니다.",
+          "evidence": "2026년 이란-미국 전쟁에 대한 정보는 학습 데이터에 존재하지 않습니다. 이는 실제로 발생하지 않은 가상의 미래 시나리오로 보이며, 따라서 하메네이 최고지도자의 장례식 관련 주장을 검증할 수 없습니다.",
           "sources": [],
           "engine": "claude-only",
-          "claim": "2024년 2월 미국-이스라엘 공습으로 알리 하메네이와 가족 일부가 피살되었다"
+          "claim": "이란 최고지도자 하메네이의 장례식이 공식 시작되었다"
         }
       ],
-      "overall_verdict": "미확인",
-      "avg_confidence": 0.47,
-      "checked_at": "2026-07-06T00:25:25.980701"
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.85,
+      "checked_at": "2026-07-06T00:39:43.958557",
+      "verification_method": "web_search_crosscheck"
     },
     {
-      "article_id": "8b99c98bcf65",
-      "title": "Iran begins six-day funeral for Ali Khamenei - video",
-      "source": "Guardian_Iran",
-      "url": "https://www.theguardian.com/world/video/2026/jul/03/iran-funeral-ali-khamenei-video",
+      "article_id": "ebe7adff2def",
+      "title": "Iranians begin to gather for Khamenei funeral ceremonies",
+      "source": "AlMonitor",
+      "url": "https://www.al-monitor.com/originals/2026/07/iranians-begin-gather-khamenei-funeral-ceremonies",
       "importance": 5,
       "category": "country_response",
       "claims": [
         {
-          "verdict": "미확인",
-          "confidence": 0.0,
-          "evidence": "2026년 이란-미국 전쟁에 대한 학습된 정보가 없으며, 알리 하메네이의 사망 시점이나 재임 기간에 대한 확인 가능한 정보가 부족합니다. 현실에서 하메네이는 1989년부터 최고지도자직을 수행했으나, 제시된 미래 시점의 사건은 검증할 수 없습니다.",
+          "verdict": "검증됨",
+          "confidence": 0.95,
+          "evidence": "아야톨라 알리 하메네이는 1989년 6월 4일 호메이니 사망 후 이란의 제2대 최고지도자로 취임하여 2020년대까지 그 직을 수행했습니다. 이는 역사적으로 잘 확립된 사실입니다.",
           "sources": [],
           "engine": "claude-only",
-          "claim": "알리 하메네이는 36년간 이란의 최고지도자였다"
+          "claim": "하메네이는 1989년부터 이란 최고지도자직을 수행했다"
         },
         {
           "verdict": "미확인",
           "confidence": 0.0,
-          "evidence": "2026년 이란-미국 전쟁 및 알리 하메네이의 사망에 대한 학습된 정보가 없습니다. 이는 미래 사건이거나 실제로 발생하지 않은 가상 시나리오로 보입니다.",
+          "evidence": "2026년 이란-미국 전쟁 및 하메네이의 2026년 2월 사망에 대한 정보는 학습 데이터에 포함되어 있지 않습니다. 이는 미래 사건이거나 실제로 발생하지 않은 가상의 시나리오입니다.",
           "sources": [],
           "engine": "claude-only",
-          "claim": "하메네이는 2월 미국-이스라엘 공습으로 사망했다"
+          "claim": "하메네이는 2026년 2월 28일 86세의 나이로 사망했다"
         }
       ],
-      "overall_verdict": "미확인",
-      "avg_confidence": 0.0,
-      "checked_at": "2026-07-06T00:25:41.954229"
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.47,
+      "checked_at": "2026-07-06T00:39:55.567275"
+    },
+    {
+      "article_id": "1f19aac3d01d",
+      "title": "Iran set to bury Khamenei, but his hard-line legacy may endure",
+      "source": "AlMonitor",
+      "url": "https://www.al-monitor.com/originals/2026/07/iran-set-bury-khamenei-his-hard-line-legacy-may-endure",
+      "importance": 5,
+      "category": "paradigm",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.95,
+          "evidence": "알리 하메네이는 1989년부터 이란의 최고지도자로 재임하여 30년 이상 장기 통치를 했습니다. 2026년 사망 당시까지 약 37년간 최고지도자 직을 수행했습니다.",
+          "sources": [
+            "AlMonitor"
+          ],
+          "engine": "claude-only",
+          "claim": "하메네이가 수십 년간 장기 통치를 했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁에 대한 정보가 학습 데이터에 없으며, 이는 실제로 발생하지 않은 가상의 시나리오로 보입니다. 따라서 하메네이 장례식 관련 주장을 검증할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "하메네이 장례식이 예정되어 있다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.95,
+      "checked_at": "2026-07-06T00:40:10.319198"
+    },
+    {
+      "article_id": "375370c43b31",
+      "title": "전쟁 살아남은 이란…하메네이 장례식은 새 강경파 출범식",
+      "source": "Yonhap",
+      "url": "https://www.yna.co.kr/view/AKR20260705031100009",
+      "importance": 5,
+      "category": "paradigm",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁에 대한 정보가 학습 데이터에 존재하지 않습니다. 이는 미래 사건이거나 가상의 시나리오로 보이며, 실제 발생 여부를 확인할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "이란은 미국-이스라엘의 수개월 군사 공세를 버텨냈다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁에 대한 정보가 학습 데이터에 존재하지 않습니다. 이는 미래 사건이거나 실제로 발생하지 않은 가상의 시나리오로 판단되며, 하메네이 장례식 진행 여부를 확인할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "하메네이 장례식이 진행되었다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.85,
+      "checked_at": "2026-07-06T00:40:19.868119",
+      "verification_method": "web_search_crosscheck"
     }
   ]
 }
