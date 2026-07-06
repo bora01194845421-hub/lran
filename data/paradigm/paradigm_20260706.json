@@ -1,0 +1,226 @@
+{
+  "date": "2026-07-06",
+  "total_signals": 10,
+  "structural_signals": 10,
+  "signals": [
+    {
+      "signal_id": "sig_005",
+      "category": "지역질서재편",
+      "title_ko": "이란 지도력 공백의 체제 전환",
+      "description": "• 복수 언론 보도: 신임 최고지도자 모즈타바 하메네이가 부친 장례식 불참 - 3월 이후 공개 석상 미출현\n• NYT/Guardian 분석: 이란 정치권 내부 '누가 실제 통치하는가' 논란 공개화, 분열 심화\n• 37년 강권 통치 종료 후 이란이 집단지도체제 vs 신강경파 독재 갈림길",
+      "evidence_titles": [
+        "Will Iran's New Supreme Leader, Mojtaba Khamenei, Attend His Father's Funeral?",
+        "Momentary Unity at a Funeral Masks Deep Divisions Among Iran's Leaders",
+        "Iran's supreme leader absent as senior officials attend ayatollah's funeral"
+      ],
+      "evidence_sources": [
+        "NYT_World",
+        "BBC_MidEast",
+        "Guardian_API"
+      ],
+      "strength": 5,
+      "trend": "신규",
+      "suwon_implication": "이란 체제 불안정 장기화 시 중동 에너지 시장 예측 불가능성 증대 - 수원시 중기 재정계획 에너지 비용 시나리오 다변화 필요",
+      "is_structural": true,
+      "detected_date": "2026-07-06",
+      "first_detected": "2026-07-06"
+    },
+    {
+      "signal_id": "sig_001",
+      "category": "정책패러다임전환",
+      "title_ko": "전쟁 비용→금리 구조 장기 연동",
+      "description": "• Bloomberg 분석: 이란 전쟁 종료되었으나 글로벌 금리 정책에 영구적 영향 지속\n• 전쟁 비용이 단기 재정 부담이 아닌 중장기 통화정책 제약 요인으로 구조화\n• 중앙은행들이 전쟁 후유증을 '새로운 정책 상수'로 인식하기 시작",
+      "evidence_titles": [
+        "Trump's War Means Higher Global Interest Rates for Years to Come"
+      ],
+      "evidence_sources": [
+        "Bloomberg"
+      ],
+      "strength": 4,
+      "trend": "신규",
+      "suwon_implication": "수원시 지방채 발행 금리 상승 장기화 예상, 대규모 인프라 투자 사업 재정 비용 재검토 필요",
+      "is_structural": true,
+      "detected_date": "2026-07-06",
+      "first_detected": "2026-07-06"
+    },
+    {
+      "signal_id": "sig_002",
+      "category": "에너지안보재편",
+      "title_ko": "호르무즈 우회 물류 상업화",
+      "description": "• Bloomberg 보도: 슈퍼탱커 업체가 호르무즈 봉쇄 우회 수송으로 수백만 달러 수익 창출\n• 전쟁 중 비상 수단이었던 '은밀한 원유 수송'이 전쟁 후 정규 사업 모델로 전환\n• 중동 에너지 공급망이 호르무즈 의존→다중 우회로 구조로 재편 신호",
+      "evidence_titles": [
+        "The Supertanker Tycoon Making Millions on Hormuz Shuttle Runs"
+      ],
+      "evidence_sources": [
+        "Bloomberg"
+      ],
+      "strength": 4,
+      "trend": "신규",
+      "suwon_implication": "수원시 수입 에너지 비용 구조 변화 - 우회 물류비 포함된 새 가격체계 정착 가능성",
+      "is_structural": true,
+      "detected_date": "2026-07-06",
+      "first_detected": "2026-07-06"
+    },
+    {
+      "signal_id": "sig_006",
+      "category": "지역질서재편",
+      "title_ko": "장례식→강경 체제 출범식 전환",
+      "description": "• 연합뉴스/AlMonitor 보도: 하메네이 장례식이 단순 추모가 아닌 '저항 메시지' 세계 송출 무대로 기획됨\n• 이란 지도부가 장례를 통해 '절대 항복 안 함' 선언 - 최대 3천만 참석 예상 대규모 동원\n• 전쟁에서 생존한 이란이 더욱 강경하고 자신감 있는 체제로 재출범 신호",
+      "evidence_titles": [
+        "전쟁 살아남은 이란…하메네이 장례식은 새 강경파 출범식",
+        "Iran set to bury Khamenei, but his hard-line legacy may endure",
+        "How Iran's new regime is very different to what came before"
+      ],
+      "evidence_sources": [
+        "Yonhap",
+        "AlMonitor",
+        "BBC_MidEast"
+      ],
+      "strength": 4,
+      "trend": "신규",
+      "suwon_implication": "중동 지정학 리스크 장기 상수화 - 수원시 해외 투자 유치 시 중동 연계 기업 리스크 프리미엄 반영 필요",
+      "is_structural": true,
+      "detected_date": "2026-07-06",
+      "first_detected": "2026-07-06"
+    },
+    {
+      "signal_id": "sig_009",
+      "category": "지역질서재편",
+      "title_ko": "NATO 중동 개입 구조화",
+      "description": "• FT 보도: 나토 정상들이 앙카라에서 '중대한 회의' 개최 - 전쟁 이후 중동 역할 논의\n• 전통적 북대서양 중심 나토가 중동 안보에 구조적으로 개입하기 시작\n• 유럽-중동 안보 연계가 임시 조치가 아닌 장기 전략 틀로 전환 신호",
+      "evidence_titles": [
+        "Nato leaders gather for crucial meeting in Ankara"
+      ],
+      "evidence_sources": [
+        "FT_World"
+      ],
+      "strength": 4,
+      "trend": "신규",
+      "suwon_implication": "글로벌 안보 구조 변화가 한국 방위비·에너지 안보 정책에 간접 영향 - 수원시 국제협력 방향 재검토",
+      "is_structural": true,
+      "detected_date": "2026-07-06",
+      "first_detected": "2026-07-06"
+    },
+    {
+      "signal_id": "sig_003",
+      "category": "무역공급망재편",
+      "title_ko": "호르무즈 지렛대 반복 사용 한계",
+      "description": "• NYT 분석: 이란의 호르무즈 봉쇄 전술이 전쟁 중 효과적이었으나 반복 사용 시 위험 증대\n• 일회성 전략 카드가 구조적 협상 도구로 전환 불가능 - 국제 대응 체계 강화됨\n• 중동 해상 교역이 '단일 병목 의존→복수 경로 분산' 체제로 이행 중",
+      "evidence_titles": [
+        "Can Iran Keep Its Edge?"
+      ],
+      "evidence_sources": [
+        "NYT_World"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "수원시 제조기업의 중동 경유 수입 원자재 공급망, 단일 경로 의존 리스크 분산 필요",
+      "is_structural": true,
+      "detected_date": "2026-07-06",
+      "first_detected": "2026-07-06"
+    },
+    {
+      "signal_id": "sig_004",
+      "category": "민생충격패턴",
+      "title_ko": "전쟁 비용→정치 지지도 연동",
+      "description": "• FT 여론조사: 미국 유권자 다수가 이란 전쟁을 '비용 대비 가치 없음'으로 평가\n• 전쟁 지속이 트럼프 대통령 지지율 하락의 주요 원인으로 작용 - 중간선거 앞두고\n• 전쟁 비용이 추상적 외교 이슈가 아닌 유권자 실생활 체감 요인으로 구조화",
+      "evidence_titles": [
+        "US voters say Trump's Iran war not worth the cost — FT poll"
+      ],
+      "evidence_sources": [
+        "FT_World"
+      ],
+      "strength": 3,
+      "trend": "강화",
+      "suwon_implication": "수원시 주요 정책 추진 시 '비용 대비 시민 체감 효과' 평가 기준 강화 필요 - 유권자 민감도 증가",
+      "is_structural": true,
+      "detected_date": "2026-07-06"
+    },
+    {
+      "signal_id": "sig_007",
+      "category": "정책패러다임전환",
+      "title_ko": "에너지 파트너십 신뢰 기준 전환",
+      "description": "• Foreign Policy 분석: 미-이란 간 '양해각서(MOU)'가 실제로는 '오해각서(memorandum of misunderstanding)'로 작동\n• 전쟁 후 협상 과정에서 가격 중심→신뢰·안정성 중심 에너지 관계 재편 조짐\n• 전통적 저가 공급자보다 '예측 가능한 파트너' 선호하는 구조적 변화",
+      "evidence_titles": [
+        "The MOU Is Paying Off Early for Iran"
+      ],
+      "evidence_sources": [
+        "ForeignPolicy"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "수원시 에너지 공급 계약 시 최저가 입찰보다 공급 안정성·신뢰도 가중치 상향 검토 필요",
+      "is_structural": true,
+      "detected_date": "2026-07-06",
+      "first_detected": "2026-07-06"
+    },
+    {
+      "signal_id": "sig_008",
+      "category": "민생충격패턴",
+      "title_ko": "항공·여행산업 구조적 위축",
+      "description": "• Bloomberg 보도: 이지젯이 50억 파운드 이상 인수 제안 수용 - 제트연료 급등과 수요 억제가 주원인\n• 전쟁으로 촉발된 에너지 비용 상승이 저비용 항공사 비즈니스 모델 자체를 위협\n• 일회성 충격이 아닌 산업 구조조정(M&A, 노선 축소) 단계 진입",
+      "evidence_titles": [
+        "EasyJet Agrees to Castlelake's Latest Bid Topping £5 Billion"
+      ],
+      "evidence_sources": [
+        "Bloomberg"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "수원시민 해외여행 비용 구조적 상승 예상 - 관광·항공권 보조 복지 프로그램 재설계 필요",
+      "is_structural": true,
+      "detected_date": "2026-07-06",
+      "first_detected": "2026-07-06"
+    },
+    {
+      "signal_id": "sig_010",
+      "category": "민생충격패턴",
+      "title_ko": "시민사회 탄압 전쟁 후 심화",
+      "description": "• NYT 보도: 이란 안보기관이 전쟁 이후 시민사회·반체제 인사 수천 명 체포 지속\n• 대외 '통합 과시' vs 대내 '강경 탄압' 이중 전략 - 전쟁이 끝나도 억압 구조 강화\n• 전쟁 비상상태가 종료되지 않고 일상 통치 수단으로 정착",
+      "evidence_titles": [
+        "Iran Projects Unity to the World While Pursuing a Crackdown at Home"
+      ],
+      "evidence_sources": [
+        "NYT_World"
+      ],
+      "strength": 3,
+      "trend": "강화",
+      "suwon_implication": "이란 체제 경직화로 인한 중동 난민·이주 압력 증가 가능성 - 수원시 외국인 주민 지원 정책 수요 변화 모니터링",
+      "is_structural": true,
+      "detected_date": "2026-07-06"
+    }
+  ],
+  "by_category": {
+    "정책패러다임전환": 2,
+    "에너지안보재편": 1,
+    "무역공급망재편": 1,
+    "민생충격패턴": 3,
+    "지역질서재편": 3
+  },
+  "summary_ko": "• 이란-미국 전쟁이 종료되었으나 글로벌 금리·에너지·안보 구조에 영구적 변화 각인 중\n• 전쟁 비용이 중장기 금리 상승 요인으로 고착화, 호르무즈 우회 물류가 정규 사업모델로 전환\n• 이란 신정권 공백과 강경화 병행 - 중동 리스크가 일회성 위기에서 장기 상수로 구조화\n• 유권자들이 전쟁 비용을 실생활 체감 요인으로 인식, 정책 평가 기준 '비용 대비 효과'로 전환\n• 저비용 항공사 M&A·NATO 중동 개입 등 전쟁 후유증이 산업·안보 질서 재편으로 확산",
+  "top_signal": "전쟁 비용→금리 구조 장기 연동",
+  "suwon_action": "대규모 인프라 사업 지방채 발행 금리 상승 장기화 대비 재정 시나리오 긴급 재검토\n중기 재정계획 에너지 비용 항목에 우회 물류비·중동 리스크 프리미엄 반영한 다중 시나리오 수립",
+  "weekly_trend": {
+    "지역질서재편": {
+      "count": 3,
+      "max_strength": 5
+    },
+    "민생충격패턴": {
+      "count": 3,
+      "max_strength": 3
+    },
+    "정책패러다임전환": {
+      "count": 2,
+      "max_strength": 4
+    },
+    "에너지안보재편": {
+      "count": 1,
+      "max_strength": 4
+    },
+    "무역공급망재편": {
+      "count": 1,
+      "max_strength": 3
+    }
+  },
+  "generated_at": "2026-07-06T00:21:52.605590"
+}
