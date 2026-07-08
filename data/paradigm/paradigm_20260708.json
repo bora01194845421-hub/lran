@@ -1,0 +1,215 @@
+{
+  "date": "2026-07-08",
+  "total_signals": 9,
+  "structural_signals": 9,
+  "signals": [
+    {
+      "signal_id": "sig_002",
+      "category": "무역공급망재편",
+      "title_ko": "호르무즈 봉쇄의 구조적 영향",
+      "description": "• UNCTAD가 '호르무즈 해협 재개방 이후에도 지속되는 영향'을 별도 보고서로 분석\n• 단순 물리적 봉쇄 해소가 아닌, 취약 경제권에 대한 장기적 구조 변화 예고\n• 에너지·무역 경로의 신뢰성 기준이 근본적으로 재편되는 신호",
+      "evidence_titles": [
+        "Strait of Hormuz Disruptions: Beyond reopening - lasting impacts on vulnerable economies"
+      ],
+      "evidence_sources": [
+        "UNCTAD"
+      ],
+      "strength": 5,
+      "trend": "신규",
+      "suwon_implication": "수원시 제조기업의 원자재 수입 비용 구조 변화. 공급망 다변화 지원 정책 필요",
+      "is_structural": true,
+      "detected_date": "2026-07-08",
+      "first_detected": "2026-07-08"
+    },
+    {
+      "signal_id": "sig_005",
+      "category": "에너지안보재편",
+      "title_ko": "미국의 이란 석유 면제 철회",
+      "description": "• 미국이 이란 석유 판매 허용 면제를 철회하고 유가 상승 유발\n• 단순 제재 강화가 아닌, 에너지 공급망의 정치적 무기화 심화 신호\n• 가격 메커니즘이 아닌 정치적 결정이 에너지 시장을 지배하는 구조 전환",
+      "evidence_titles": [
+        "US revokes waiver allowing Iranian oil sales after tanker strikes in Strait of Hormuz",
+        "US launches new wave of Iran strikes after attacks on tankers"
+      ],
+      "evidence_sources": [
+        "FT",
+        "FT"
+      ],
+      "strength": 5,
+      "trend": "신규",
+      "suwon_implication": "수원시 에너지 비용 급등 가능성. 긴급 민생안정 예산 확보 및 취약계층 에너지 바우처 확대 필요",
+      "is_structural": true,
+      "detected_date": "2026-07-08",
+      "first_detected": "2026-07-08"
+    },
+    {
+      "signal_id": "sig_006",
+      "category": "지역질서재편",
+      "title_ko": "미-이란 직접 충돌 확전",
+      "description": "• 미국이 호르무즈 유조선 공격 이후 이란에 대한 '새로운 물결의 공습' 개시\n• 이란이 '결정적 조치' 경고로 대응, 제한적 충돌에서 직접 전쟁 국면 전환 신호\n• 중동 질서가 대리전에서 직접 충돌 구조로 재편되는 패러다임 변화",
+      "evidence_titles": [
+        "US launches strikes on Iran after tankers hit in Strait of Hormuz",
+        "US launches new wave of Iran strikes after attacks on tankers"
+      ],
+      "evidence_sources": [
+        "BBC",
+        "FT"
+      ],
+      "strength": 5,
+      "trend": "신규",
+      "suwon_implication": "수원시 에너지 안보·물가 장기 불안정성 증대. 외국인 근로자(중동 출신) 지원 정책 점검 필요",
+      "is_structural": true,
+      "detected_date": "2026-07-08",
+      "first_detected": "2026-07-08"
+    },
+    {
+      "signal_id": "sig_001",
+      "category": "에너지안보재편",
+      "title_ko": "천연가스 수요 수축·고가격 구조화",
+      "description": "• IEA가 2026년 글로벌 천연가스 수요가 전년 대비 축소될 것으로 전망\n• 공급 제약으로 인한 가격 상승이 구조적 수요 감소를 유발하는 패턴\n• 단순 일시적 변동이 아닌 에너지 소비 패러다임 전환 신호",
+      "evidence_titles": [
+        "Global demand for natural gas expected to contract this year as tighter supply pushes up prices",
+        "Gas Market Report, Q3-2026"
+      ],
+      "evidence_sources": [
+        "IEA",
+        "IEA"
+      ],
+      "strength": 4,
+      "trend": "신규",
+      "suwon_implication": "수원시 가스 공급 비용 중장기 상승 압력. 취약계층 난방비 지원 정책의 구조적 재설계 필요",
+      "is_structural": true,
+      "detected_date": "2026-07-08",
+      "first_detected": "2026-07-08"
+    },
+    {
+      "signal_id": "sig_003",
+      "category": "정책패러다임전환",
+      "title_ko": "국제투자 패턴의 난기류 시대",
+      "description": "• UNCTAD의 2026 세계투자보고서 부제가 'International investment in a turbulent era'\n• 투자 증가(6%, $1.6조)에도 불구하고 '발전 성과는 불균등'이라는 구조적 문제 진단\n• 글로벌 자본 흐름이 안정성에서 전략성·선별성 중심으로 전환하는 신호",
+      "evidence_titles": [
+        "World Investment Report 2026: International investment in a turbulent era",
+        "Global investment rises 6% to $1.6 trillion, but development gains remain uneven"
+      ],
+      "evidence_sources": [
+        "UNCTAD",
+        "UNCTAD"
+      ],
+      "strength": 4,
+      "trend": "신규",
+      "suwon_implication": "수원시 외국인 투자 유치 전략 재검토 필요. 단순 인센티브보다 안정성·신뢰성 강조 방향 전환",
+      "is_structural": true,
+      "detected_date": "2026-07-08",
+      "first_detected": "2026-07-08"
+    },
+    {
+      "signal_id": "sig_004",
+      "category": "민생충격패턴",
+      "title_ko": "OECD 실질임금 지체 구조화",
+      "description": "• OECD가 '고용시장 강세에도 실질임금 정체' 패턴을 구조적 문제로 진단\n• 단순 경기순환적 지체가 아닌, 인플레이션 압력의 구조화 신호\n• 고용·물가·임금의 전통적 상관관계가 깨지는 패러다임 변화",
+      "evidence_titles": [
+        "OECD job markets remain strong, but real wages are lagging",
+        "OECD Employment Outlook 2026"
+      ],
+      "evidence_sources": [
+        "OECD",
+        "OECD"
+      ],
+      "strength": 4,
+      "trend": "강화",
+      "suwon_implication": "수원시 근로자 실질소득 감소 우려. 생계비 지원·물가 안정 정책 강화 필요",
+      "is_structural": true,
+      "detected_date": "2026-07-08"
+    },
+    {
+      "signal_id": "sig_008",
+      "category": "무역공급망재편",
+      "title_ko": "개도국 투자 지역별 격차 심화",
+      "description": "• UNCTAD가 아시아는 투자 증가, 아프리카는 '전략산업 투자를 광범위 산업발전으로 전환 실패', 중남미는 '자본 증가에도 프로젝트 감소' 진단\n• 단순 지역별 차이가 아닌, 글로벌 자본 흐름의 선별성 강화 구조 변화\n• 투자 유치 조건이 양적에서 질적 기준으로 전환되는 패러다임 신호",
+      "evidence_titles": [
+        "Developing Asia leads investment among developing regions as patterns shift within the region",
+        "Africa is attracting investment in strategic industries. The challenge is turning it into broader industrial development",
+        "More capital, fewer projects: Latin America's investment paradox"
+      ],
+      "evidence_sources": [
+        "UNCTAD",
+        "UNCTAD",
+        "UNCTAD"
+      ],
+      "strength": 4,
+      "trend": "신규",
+      "suwon_implication": "수원시 제조기업의 글로벌 공급망 파트너 재편 가능성. 기업 공급망 리스크 관리 지원 필요",
+      "is_structural": true,
+      "detected_date": "2026-07-08",
+      "first_detected": "2026-07-08"
+    },
+    {
+      "signal_id": "sig_007",
+      "category": "정책패러다임전환",
+      "title_ko": "석유경제 국가의 금융시스템 취약성",
+      "description": "• IMF가 오만 사례로 '석유가격 충격이 은행시스템에 미치는 영향' 구조 분석\n• 단순 경기변동이 아닌 석유의존 경제 모델 자체의 구조적 위험 진단\n• 자원 수출국의 경제 패러다임 전환 압력이 가시화되는 신호",
+      "evidence_titles": [
+        "Should Oil Economies Worry About Oil Shocks' Impact on the Banking System? The Case of Oman"
+      ],
+      "evidence_sources": [
+        "IMF"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "수원시 에너지 수입 파트너 국가의 경제 불안정성 증대. 에너지 공급 다변화 필요성 증가",
+      "is_structural": true,
+      "detected_date": "2026-07-08",
+      "first_detected": "2026-07-08"
+    },
+    {
+      "signal_id": "sig_009",
+      "category": "정책패러다임전환",
+      "title_ko": "디지털 연결성만으로 불충분",
+      "description": "• UNCTAD가 '연결성이 충분하지 않을 때: 디지털 격차 해소' 보고서 발표\n• 단순 인프라 확충이 아닌, 활용 역량·제도적 기반의 구조적 중요성 강조\n• 디지털 정책이 하드웨어 중심에서 소프트파워 중심으로 전환하는 신호",
+      "evidence_titles": [
+        "When connectivity isn't enough: Closing the digital divide"
+      ],
+      "evidence_sources": [
+        "UNCTAD"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "수원시 디지털 포용 정책 재설계 필요. 단순 Wi-Fi 확충이 아닌 역량 교육·제도 지원 강화",
+      "is_structural": true,
+      "detected_date": "2026-07-08",
+      "first_detected": "2026-07-08"
+    }
+  ],
+  "by_category": {
+    "에너지안보재편": 2,
+    "무역공급망재편": 2,
+    "정책패러다임전환": 3,
+    "민생충격패턴": 1,
+    "지역질서재편": 1
+  },
+  "summary_ko": "• 미-이란 직접 충돌 확전으로 호르무즈 해협 봉쇄가 물리적 해소 이후에도 구조적 영향 지속 전망(UNCTAD)\n• 천연가스 수요 수축·고가격 구조화, 미국의 이란 석유 면제 철회로 에너지 공급망의 정치적 무기화 심화\n• OECD 실질임금 정체 구조화, 고용-물가-임금 상관관계 붕괴로 민생 충격 패턴 전환\n• 글로벌 투자 흐름이 안정성에서 전략성·선별성 중심으로 재편, 개도국 투자 지역별 격차 심화\n• 디지털 정책 패러다임이 하드웨어 중심에서 활용 역량·제도적 기반 중심으로 전환 신호",
+  "top_signal": "호르무즈 봉쇄의 구조적 영향",
+  "suwon_action": "• 에너지 비용 급등 대비 긴급 민생안정 예산 확보 및 취약계층 난방비·에너지 바우처 확대\n• 제조기업 원자재 수입 비용 구조 변화 대응, 공급망 다변화 지원 정책 즉시 착수",
+  "weekly_trend": {
+    "정책패러다임전환": {
+      "count": 3,
+      "max_strength": 4
+    },
+    "에너지안보재편": {
+      "count": 2,
+      "max_strength": 5
+    },
+    "무역공급망재편": {
+      "count": 2,
+      "max_strength": 5
+    },
+    "지역질서재편": {
+      "count": 1,
+      "max_strength": 5
+    },
+    "민생충격패턴": {
+      "count": 1,
+      "max_strength": 4
+    }
+  },
+  "generated_at": "2026-07-08T00:07:09.189041"
+}
