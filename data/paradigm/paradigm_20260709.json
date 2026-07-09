@@ -1,0 +1,228 @@
+{
+  "date": "2026-07-09",
+  "total_signals": 10,
+  "structural_signals": 10,
+  "signals": [
+    {
+      "signal_id": "sig_003",
+      "category": "정책패러다임전환",
+      "title_ko": "IMF·IEA·WB·WTO 공동성명",
+      "description": "• 4대 국제기구(IMF, IEA, 세계은행, WTO) 수장들이 전쟁 상황에서 공동 성명 발표\n• 전쟁이 단순 지역 분쟁이 아닌 '글로벌 경제·에너지·무역 거버넌스 재편' 계기로 인식\n• 국제 정책 공조 체계가 전쟁 대응에서 '사후 구조 재설계'로 전환하는 신호",
+      "evidence_titles": [
+        "New Joint Statement by the Heads of the International Energy Agency, International Monetary Fund, World Bank Group, and World Trade Organization - IEA"
+      ],
+      "evidence_sources": [
+        "IEA"
+      ],
+      "strength": 5,
+      "trend": "신규",
+      "suwon_implication": "국제기구 중심의 새로운 경제안보 질서 형성. 수원시 정책 설계 시 국제 표준·가이드라인 변화 추적 및 벤치마킹 필요.",
+      "is_structural": true,
+      "detected_date": "2026-07-09",
+      "first_detected": "2026-07-09"
+    },
+    {
+      "signal_id": "sig_004",
+      "category": "정책패러다임전환",
+      "title_ko": "IMF, 전쟁·기술 교차 분석 틀 제시",
+      "description": "• IMF World Economic Outlook 제목에 '전쟁과 기술의 교차류(Crosscurrents of War and Technology)' 명시\n• 전쟁 충격을 단순 경제 변수가 아닌 '기술 패러다임 전환과 동시 진행되는 구조 변화'로 분석\n• 전쟁이 디지털 전환·AI 도입 등 기술 변화와 결합해 경제구조 자체를 재편하는 인식 정착",
+      "evidence_titles": [
+        "July 2026 World Economic Outlook Update: Global Economy in Crosscurrents of War and Technology - IMF",
+        "World Economic Outlook Update, July 2026: Global Economy in Crosscurrents of War and Technology - IMF"
+      ],
+      "evidence_sources": [
+        "IMF",
+        "IMF"
+      ],
+      "strength": 5,
+      "trend": "신규",
+      "suwon_implication": "수원시 산업정책 설계 시 전쟁 충격과 디지털 전환을 분리된 현안이 아닌 통합된 구조 변화로 접근 필요. 중소기업 디지털 전환 지원과 민생안정 정책의 통합 설계 요구.",
+      "is_structural": true,
+      "detected_date": "2026-07-09",
+      "first_detected": "2026-07-09"
+    },
+    {
+      "signal_id": "sig_001",
+      "category": "에너지안보재편",
+      "title_ko": "천연가스 수요 축소와 공급구조 재편",
+      "description": "• IEA, 2026년 전 세계 천연가스 수요가 공급 긴장과 가격 상승으로 축소될 것으로 전망\n• 전쟁으로 인한 공급 차질이 가격 기준에서 '신뢰 기반 파트너십' 구조로의 전환 압력 생성\n• 단순 가격 경쟁이 아닌 공급 안정성·신뢰성 중심의 에너지 거래 구조로 패러다임 전환 신호",
+      "evidence_titles": [
+        "Global demand for natural gas expected to contract this year as tighter supply pushes up prices - IEA",
+        "Gas Market Report, Q3-2026 – Analysis - IEA"
+      ],
+      "evidence_sources": [
+        "IEA",
+        "IEA"
+      ],
+      "strength": 4,
+      "trend": "신규",
+      "suwon_implication": "수원시 도시가스 공급 단가의 중장기 상승 압력과 공급 불안정성 증가 예상. 취약계층 난방비 지원 확대 및 에너지 효율화 정책 강화 필요.",
+      "is_structural": true,
+      "detected_date": "2026-07-09",
+      "first_detected": "2026-07-09"
+    },
+    {
+      "signal_id": "sig_002",
+      "category": "무역공급망재편",
+      "title_ko": "호르무즈 해협 차단 후유증 지속",
+      "description": "• UNCTAD, 호르무즈 해협 재개방 이후에도 취약 경제국들에 지속적 영향 발생 경고\n• 단순 물류 차단이 아닌 '구조적 무역 경로 재편'과 '취약국 경제 충격 패턴' 확립\n• 전쟁 종료 후에도 무역·물류 비용 구조가 전쟁 이전 수준으로 복귀하지 않을 가능성",
+      "evidence_titles": [
+        "Strait of Hormuz Disruptions: Beyond reopening - lasting impacts on vulnerable economies | - UN Trade and Development (UNCTAD)"
+      ],
+      "evidence_sources": [
+        "UNCTAD"
+      ],
+      "strength": 4,
+      "trend": "신규",
+      "suwon_implication": "수원시 제조기업의 원자재 수입비용 및 수출물류비 장기 상승 구조화. 중소기업 물류비 지원 정책 및 공급망 다변화 컨설팅 필요.",
+      "is_structural": true,
+      "detected_date": "2026-07-09",
+      "first_detected": "2026-07-09"
+    },
+    {
+      "signal_id": "sig_005",
+      "category": "민생충격패턴",
+      "title_ko": "OECD 실질임금 정체 지속",
+      "description": "• OECD, 고용시장은 강세 유지하나 실질임금 상승은 지체되는 구조적 불균형 지적\n• 전쟁으로 인한 에너지·물가 상승이 명목임금 상승을 초과하는 패턴 고착화\n• '고용 안정 + 실질소득 감소' 조합이 새로운 민생 불안 구조로 정착 가능성",
+      "evidence_titles": [
+        "OECD job markets remain strong, but real wages are lagging - OECD",
+        "OECD Employment Outlook 2026 - OECD"
+      ],
+      "evidence_sources": [
+        "OECD",
+        "OECD"
+      ],
+      "strength": 4,
+      "trend": "신규",
+      "suwon_implication": "수원시 시민들의 실질 구매력 하락 우려. 고용률은 안정적이나 체감 민생 악화 가능성. 물가 연동형 복지정책 및 생필품 지원 확대 필요.",
+      "is_structural": true,
+      "detected_date": "2026-07-09",
+      "first_detected": "2026-07-09"
+    },
+    {
+      "signal_id": "sig_006",
+      "category": "무역공급망재편",
+      "title_ko": "글로벌 투자 6% 증가, 불균등 심화",
+      "description": "• UNCTAD, 2026년 글로벌 FDI 6% 증가했으나 개발도상국 간 격차 확대 지적\n• 전쟁으로 인한 리스크 회피로 '안전한 거점' 중심 투자 집중, '취약국' 투자 감소 구조화\n• 단순 투자 감소가 아닌 '투자 지형 재편'과 '지역별 양극화' 패턴 고착 신호",
+      "evidence_titles": [
+        "Global investment rises 6% to $1.6 trillion, but development gains remain uneven - UN Trade and Development (UNCTAD)",
+        "World Investment Report 2026: International investment in a turbulent era | - UN Trade and Development (UNCTAD)"
+      ],
+      "evidence_sources": [
+        "UNCTAD",
+        "UNCTAD"
+      ],
+      "strength": 4,
+      "trend": "신규",
+      "suwon_implication": "수원시 기업 유치 전략 수정 필요. 글로벌 기업들이 안정성·예측가능성 중심으로 투자처 선정. 수원시 투자환경 안정성 및 리스크 관리 역량 강조 필요.",
+      "is_structural": true,
+      "detected_date": "2026-07-09",
+      "first_detected": "2026-07-09"
+    },
+    {
+      "signal_id": "sig_010",
+      "category": "정책패러다임전환",
+      "title_ko": "IEA 수요 유연성 확대 정책 출범",
+      "description": "• IEA, '수요 유연성 확대(Scaling Up Demand Flexibility)' 웨비나 개최\n• 공급 안정성 확보 불가능 상황에서 수요 측 관리 중심으로 에너지 정책 패러다임 전환\n• '공급 확대 → 수요 조절' 중심의 에너지 거버넌스 구조 재편 신호",
+      "evidence_titles": [
+        "Scaling Up Demand Flexibility: Launch Webinar - IEA"
+      ],
+      "evidence_sources": [
+        "IEA"
+      ],
+      "strength": 4,
+      "trend": "신규",
+      "suwon_implication": "수원시 에너지 정책을 공급 확보에서 수요관리·효율화 중심으로 재설계 필요. 스마트그리드, 수요반응(DR) 프로그램 확대 검토.",
+      "is_structural": true,
+      "detected_date": "2026-07-09",
+      "first_detected": "2026-07-09"
+    },
+    {
+      "signal_id": "sig_007",
+      "category": "지역질서재편",
+      "title_ko": "아시아 투자패턴 역내 재편",
+      "description": "• UNCTAD, 개발도상 아시아가 투자 유치 선도하나 역내 패턴이 급변 중 분석\n• 중동 리스크 회피로 아시아 역내 투자 재배치 가속화\n• 전쟁이 중동→아시아 투자 이동뿐 아니라 아시아 내부 구조 재편까지 촉발",
+      "evidence_titles": [
+        "Developing Asia leads investment among developing regions as patterns shift within the region - UN Trade and Development (UNCTAD)"
+      ],
+      "evidence_sources": [
+        "UNCTAD"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "한국·수원시가 아시아 역내 투자 재편의 수혜 가능성. 외국인 투자 유치 및 글로벌 기업 거점화 전략 강화 기회.",
+      "is_structural": true,
+      "detected_date": "2026-07-09",
+      "first_detected": "2026-07-09"
+    },
+    {
+      "signal_id": "sig_008",
+      "category": "무역공급망재편",
+      "title_ko": "디지털 신원인증 무역 필수화",
+      "description": "• UNCTAD, 전쟁 이후 무역·개발 촉진에 '강건한 디지털 신원인증 시스템' 필수 강조\n• 물리적 무역 차질이 디지털 무역 인프라 투자 가속화 계기로 작용\n• 무역 거래 방식 자체가 '문서→디지털 신원 기반'으로 패러다임 전환 신호",
+      "evidence_titles": [
+        "Why robust digital identity systems are essential in fostering trade and development - UN Trade and Development (UNCTAD)"
+      ],
+      "evidence_sources": [
+        "UNCTAD"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "수원시 기업들의 디지털 무역 인프라 구축 지원 필요. 전자무역 플랫폼 접근성 강화 및 중소기업 디지털 전환 컨설팅 확대.",
+      "is_structural": true,
+      "detected_date": "2026-07-09",
+      "first_detected": "2026-07-09"
+    },
+    {
+      "signal_id": "sig_009",
+      "category": "민생충격패턴",
+      "title_ko": "아프리카 청정에너지 긴급 전환",
+      "description": "• IEA, 아프리카 청정 조리(Clean Cooking) 고위급 회의 개최\n• 전쟁으로 인한 에너지 가격 급등이 취약 지역의 '화석연료→청정에너지' 전환 가속화\n• 단순 환경 정책이 아닌 '민생 생존 전략'으로서 에너지 전환 패러다임 확립",
+      "evidence_titles": [
+        "High-level Virtual Event on Clean Cooking in Africa - IEA"
+      ],
+      "evidence_sources": [
+        "IEA"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "수원시 에너지 복지 정책에서 '가격 지원'에서 '구조 전환(에너지 효율·재생에너지)' 중심으로 전환 필요. 취약계층 에너지 전환 지원 모델 개발.",
+      "is_structural": true,
+      "detected_date": "2026-07-09",
+      "first_detected": "2026-07-09"
+    }
+  ],
+  "by_category": {
+    "에너지안보재편": 1,
+    "무역공급망재편": 3,
+    "정책패러다임전환": 3,
+    "민생충격패턴": 2,
+    "지역질서재편": 1
+  },
+  "summary_ko": "• IMF·IEA·WB·WTO 4대 국제기구가 공동성명을 통해 이란-미국 전쟁을 '글로벌 경제·에너지·무역 거버넌스 재편' 계기로 공식 인식\n• 천연가스 수요 축소와 호르무즈 해협 차단 후유증으로 에너지·무역 비용 구조가 전쟁 이전 수준으로 복귀하지 않을 구조적 변화 신호 감지\n• OECD는 고용 안정에도 실질임금 정체가 지속되는 새로운 민생 불안 구조 경고, IMF는 전쟁과 기술 변화의 동시 진행을 강조\n• UNCTAD는 글로벌 투자가 안전 거점 집중·취약국 배제로 양극화되며, 아시아 역내 투자 패턴이 급변 중임을 지적\n• IEA는 에너지 정책 패러다임을 '공급 확대'에서 '수요 유연성 관리' 중심으로 전환하는 정책 기조 변화 선언",
+  "top_signal": "IMF·IEA·WB·WTO 공동성명",
+  "suwon_action": "• 국제기구 중심 새 경제안보 질서 형성 추적 및 수원시 정책 설계에 국제 표준 변화 반영 체계 즉시 구축\n• 에너지·물류비 장기 상승 구조화에 대비한 취약계층 난방비 지원 확대 및 중소기업 물류·디지털 전환 통합 지원 방안 긴급 검토",
+  "weekly_trend": {
+    "정책패러다임전환": {
+      "count": 8,
+      "max_strength": 5
+    },
+    "무역공급망재편": {
+      "count": 6,
+      "max_strength": 4
+    },
+    "민생충격패턴": {
+      "count": 5,
+      "max_strength": 5
+    },
+    "에너지안보재편": {
+      "count": 4,
+      "max_strength": 4
+    },
+    "지역질서재편": {
+      "count": 3,
+      "max_strength": 4
+    }
+  },
+  "generated_at": "2026-07-09T00:06:19.913534"
+}
