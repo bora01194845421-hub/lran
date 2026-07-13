@@ -1,131 +1,158 @@
 {
   "date": "2026-07-13",
-  "total_signals": 8,
-  "structural_signals": 8,
+  "total_signals": 10,
+  "structural_signals": 9,
   "signals": [
     {
-      "signal_id": "sig_001",
-      "category": "에너지안보재편",
-      "title_ko": "호르무즈 통제권 분쟁 상시화",
-      "description": "• 이란-미국이 호르무즈 해협 개폐 여부를 놓고 상반된 선언을 반복하며 '통제권 분쟁'이 구조화\n• 단순 봉쇄가 아니라 이란이 통행료 징수·승인 시스템 구축을 시도, 주권적 통제 의지 표명\n• 전 세계 원유 20% 통과 해협이 '개방 전제'에서 '분쟁 지역'으로 재정의되는 패러다임 전환",
+      "signal_id": "sig_002",
+      "category": "무역공급망재편",
+      "title_ko": "호르무즈 해협 사실상 폐쇄",
+      "description": "• 미국·이란이 해협 개방 여부에 상반된 선언, 실제 선박 통행량 급감\n• 석유·가스·화물선 통행 데이터에서 큰 폭 감소 확인(BBC 보도)\n• '물리적 봉쇄'가 아닌 '통행료 징수 체계' 구축 시도로 구조 변화",
       "evidence_titles": [
+        "Big fall in oil, gas and cargo ships taking US-backed Hormuz route after new strikes",
         "Trump rejects Iran's strait of Hormuz closure claim as fight for control goes on",
-        "Iran has sought to establish a permanent system for collecting fees in the strait of Hormuz",
-        "US Says It Began Launching More Strikes Against Iran at 5pm ET"
+        "Middle East crisis live: Trump claims strait of Hormuz open to commercial traffic despite Iran earlier announcing closure"
       ],
       "evidence_sources": [
+        "BBC",
         "Guardian",
-        "Guardian",
-        "Bloomberg"
+        "Guardian"
       ],
       "strength": 5,
-      "trend": "신규",
-      "suwon_implication": "수원시 난방비·전기료 장기 상승 구조화 가능성. 에너지 취약계층 지원 예산을 단기 구호가 아닌 '구조적 대응 체계'로 재설계 필요.",
+      "trend": "강화",
+      "suwon_implication": "수원시 제조기업 원자재 조달 비용 급증 예상. 중소기업 긴급 유동성 지원, 납품 계약 조정 지원 프로그램 선제 준비 필요",
       "is_structural": true,
-      "detected_date": "2026-07-13",
-      "first_detected": "2026-07-13"
+      "detected_date": "2026-07-13"
     },
     {
       "signal_id": "sig_006",
-      "category": "지역질서재편",
-      "title_ko": "휴전 합의 실효성 붕괴",
-      "description": "• 가디언: 트럼프가 이란과의 합의를 '끝났다(over)'고 선언, 6월 중간 합의가 거의 일주일 만에 무력화\n• 외교정책: 미-이란이 전면전 직전으로 복귀, 향후 평화 협상 불확실\n• 중동 질서가 '협상 기반 관리'에서 '무력 균형 경쟁'으로 회귀하는 구조적 후퇴",
+      "category": "에너지안보재편",
+      "title_ko": "석유가격 변동성 구조화",
+      "description": "• 유가가 '전쟁 이전 수준 이상'으로 급등하며 새로운 변동성 구간 진입(NYT)\n• 블룸버그, FT 모두 '일시 충격'이 아닌 '지속 변동성' 시나리오 제시\n• 이란의 호르무즈 통제 능력이 '에너지 가격 결정권' 자체를 흔드는 구조적 변수로 부상",
       "evidence_titles": [
-        "US and Iran trade escalating strikes as supreme leader is buried after days-long funeral",
-        "U.S., Iran Return to the Brink of All-Out War"
+        "Oil Prices Set for More Volatility After Latest Iranian Attack in Strait of Hormuz",
+        "Oil Jumps as Conflict Over Hormuz Escalates With Fresh Strikes",
+        "Oil prices jump as US and Iran step up tit-for-tat strikes"
       ],
       "evidence_sources": [
-        "Guardian",
-        "ForeignPolicy"
+        "NYT",
+        "Bloomberg",
+        "FT"
       ],
       "strength": 5,
-      "trend": "신규",
-      "suwon_implication": "중동 정세 장기 불안정 → 수원시 에너지 수입 안정성 지속 저하. 시 차원의 '에너지 안보 비상 대응 매뉴얼' 제도화 필요.",
+      "trend": "강화",
+      "suwon_implication": "수원시 민생안정 예산에 '에너지 가격 변동 완충 기금' 신설 검토. 취약계층 난방비 지원을 '일회성'에서 '상시 변동 대응' 체계로 전환",
       "is_structural": true,
-      "detected_date": "2026-07-13",
-      "first_detected": "2026-07-13"
+      "detected_date": "2026-07-13"
     },
     {
-      "signal_id": "sig_002",
-      "category": "에너지안보재편",
-      "title_ko": "유가 충격 전달 경로 다변화",
-      "description": "• IEA가 '호르무즈→펌프까지(From Hormuz to the pump)' 제목의 분석 발표, 유가 충격이 각국 소비자에게 다르게 전달됨을 명시\n• 과거처럼 단일 유가 상승이 아니라, 국가별 에너지 믹스·정책 역량에 따라 민생 충격 편차 발생\n• 에너지 안보가 '공급 확보'에서 '충격 흡수 능력'으로 패러다임 전환",
+      "signal_id": "sig_010",
+      "category": "민생충격패턴",
+      "title_ko": "휴전 붕괴 반복 패턴 고착",
+      "description": "• 미-이란 '공격-휴전-재공격' 패턴이 6개월째 반복, '전쟁도 평화도 아닌' 상태 구조화\n• Foreign Policy '전면전 직전' 반복 경고, 가디언 '취약한 휴전 붕괴' 일상화 보도\n• IMF 세네갈·탄자니아 지원 동시 발표 - '위기 장기화 대비' 국제기구 전략 전환",
       "evidence_titles": [
-        "From Hormuz to the pump: Why oil price shocks hit consumers differently – Analysis - IEA"
+        "U.S., Iran Return to the Brink of All-Out War",
+        "US and Iran trade escalating strikes as supreme leader is buried after days-long funeral",
+        "Live Updates: Cease-Fire Unraveling as U.S. and Iran Trade Strikes Again"
       ],
       "evidence_sources": [
+        "ForeignPolicy",
+        "Guardian",
+        "NYT"
+      ],
+      "strength": 5,
+      "trend": "강화",
+      "suwon_implication": "수원시 민생안정 대책을 '단기 충격 대응'에서 '장기 변동성 상시 관리' 체계로 전환. 에너지·물가 모니터링 주기 단축, 긴급 대응 예산 상시 확보",
+      "is_structural": true,
+      "detected_date": "2026-07-13"
+    },
+    {
+      "signal_id": "sig_001",
+      "category": "에너지안보재편",
+      "title_ko": "에너지 파트너십 기준 전환",
+      "description": "• IEA가 '가격 중심'에서 '신뢰·안정성 중심' 에너지 파트너십으로 전환 분석\n• 호르무즈 해협 통제권 분쟁이 '가격 쇼크'가 아닌 '공급망 신뢰' 문제로 재정의\n• 소비자 충격이 국가별로 다르게 나타나는 구조적 원인 분석 보고서 발표",
+      "evidence_titles": [
+        "From Hormuz to the pump: Why oil price shocks hit consumers differently – Analysis",
+        "Oil Market Report - July 2026 – Analysis"
+      ],
+      "evidence_sources": [
+        "IEA",
         "IEA"
       ],
       "strength": 4,
       "trend": "신규",
-      "suwon_implication": "수원시는 중앙정부 에너지 정책 의존에서 벗어나, 지역 차원의 '에너지 충격 완충 장치'(재생에너지, 수요관리 등) 구축 필요.",
+      "suwon_implication": "수원시 에너지 공급 다변화 전략 필요. 가격보다 '공급 신뢰성' 기준으로 난방·전력 공급업체 평가 기준 재설계 시급",
       "is_structural": true,
       "detected_date": "2026-07-13",
       "first_detected": "2026-07-13"
     },
     {
-      "signal_id": "sig_003",
-      "category": "무역공급망재편",
-      "title_ko": "해상 운송 신뢰성 붕괴 징후",
-      "description": "• BBC 보도: 미국 주도 호르무즈 경로를 이용하는 유조선·화물선이 이번 주 공격 이후 급감\n• 단순 일시 회피가 아니라, 선박 운항사들이 '안전 보장 없는 경로' 회피 패턴 형성 중\n• 글로벌 해운이 '경제성'에서 '안전성' 우선으로 의사결정 기준 전환하는 구조적 변화",
+      "signal_id": "sig_004",
+      "category": "정책패러다임전환",
+      "title_ko": "투자유치 기준 '선택적 전환'",
+      "description": "• UNCTAD '정부들이 외국인투자를 여전히 원하지만 더 선택적 조건으로' 보고서\n• '투자 유치량'에서 '전략적 투자 선별' 패러다임으로 국제 표준 전환\n• 에너지 안보 위기가 각국 산업정책의 '선택과 집중' 강화 촉발",
       "evidence_titles": [
-        "Big fall in oil, gas and cargo ships taking US-backed Hormuz route after new strikes"
+        "Governments still want foreign investment, but on more selective terms"
       ],
       "evidence_sources": [
-        "BBC"
+        "UNCTAD"
       ],
       "strength": 4,
       "trend": "신규",
-      "suwon_implication": "수원시 제조·수출기업의 납기 지연, 물류비 상승 장기화 예상. 시 차원의 중소기업 공급망 리스크 관리 지원 프로그램 필요.",
+      "suwon_implication": "수원시 외국인투자 유치 전략 전면 재검토. '양적 유치'보다 '에너지 안정성·공급망 기여도' 기준 강화한 선별 유치 체계 구축",
       "is_structural": true,
       "detected_date": "2026-07-13",
       "first_detected": "2026-07-13"
     },
     {
       "signal_id": "sig_005",
-      "category": "민생충격패턴",
-      "title_ko": "유가 변동성 일상화 국면",
-      "description": "• 뉴욕타임스: 이번 주 원유 가격이 전쟁 전 수준 넘어 급등, 이란의 호르무즈 영향력 입증\n• 블룸버그: 미국-이란 공격 반복 패턴 속에서 유가 변동성이 '일회성 충격'이 아닌 '상시 변동' 체제로 진입\n• 에너지 가격 안정을 전제로 한 민생 정책이 '고변동성 대응' 체제로 전환 필요",
+      "category": "지역질서재편",
+      "title_ko": "미-이란 외교 단절 패턴",
+      "description": "• IMF·세계은행은 경제 전망 발표, 이란은 '외교 무용론' 선언\n• 미국은 협상 계속 주장하나 동시 공격 강화, '전쟁+협상 병행' 모순 구조화\n• 푸틴의 우크라이나 전략과 트럼프의 이란 전략 비교 분석(NYT) - 둘 다 '군사력 한계' 직면",
       "evidence_titles": [
-        "Oil Prices Set for More Volatility After Latest Iranian Attack in Strait of Hormuz",
-        "Oil Jumps as US and Iran Trade Strikes, Dispute Hormuz Status"
+        "Middle East crisis live: US launches new wave of strikes on Iran; Tehran says attacks render diplomacy 'futile'",
+        "Trump Says Negotiations With Iran Will Continue as U.S. Ramps Up Strikes",
+        "Trump Sought an Iran War Exit. Putin Pushed On in Ukraine. Now Both Are Stuck."
       ],
       "evidence_sources": [
+        "Guardian",
         "NYT",
-        "Bloomberg"
+        "NYT"
       ],
       "strength": 4,
       "trend": "강화",
-      "suwon_implication": "수원시 취약계층 에너지 바우처를 고정 지원이 아닌 '유가 연동 탄력 지원' 체계로 전환 검토. 민생안정 예산의 유연성 확보 필요.",
+      "suwon_implication": "수원시 장기 에너지 수급 계획에 '중동 불안 상시화' 시나리오 반영. 이란계 외국인 근로자 지원, 혐오 예방 교육 프로그램 선제 마련",
       "is_structural": true,
       "detected_date": "2026-07-13"
     },
     {
-      "signal_id": "sig_004",
-      "category": "정책패러다임전환",
-      "title_ko": "외국인 투자 선별 강화 추세",
-      "description": "• UNCTAD: 각국 정부가 여전히 외국인 투자를 원하지만 '더 선별적 조건(more selective terms)'으로 전환 중\n• 전쟁·안보 불확실성 속에서 투자 유치가 '양적 확대'에서 '질적 선별'로 정책 기조 전환\n• 글로벌 자본 이동 질서가 '자유화'에서 '전략적 관리'로 패러다임 전환 신호",
+      "signal_id": "sig_008",
+      "category": "무역공급망재편",
+      "title_ko": "해상 보험료 급등 구조화",
+      "description": "• 호르무즈 해협 통행 선박 급감, '물리적 봉쇄' 아닌 '보험료 급등'이 실질 차단 효과\n• 세계은행의 인도 태양광 지원, IMF의 탄자니아 회복력 지원 등 '공급망 대체 경로' 투자 급증\n• '해상 운송 비용 구조 변화'가 글로벌 무역 패러다임 자체를 흔드는 신호",
       "evidence_titles": [
-        "Governments still want foreign investment, but on more selective terms - UNCTAD"
+        "Big fall in oil, gas and cargo ships taking US-backed Hormuz route after new strikes",
+        "World Bank Supports India's Solar Rooftop Program to Boost Clean Energy, Create Jobs, and Unlock Private Capital"
       ],
       "evidence_sources": [
-        "UNCTAD"
+        "BBC",
+        "WorldBank"
       ],
-      "strength": 3,
+      "strength": 4,
       "trend": "신규",
-      "suwon_implication": "수원시 외국인 투자 유치 전략을 단순 인센티브 경쟁이 아닌, '전략적 선별·관리' 모델로 재설계 필요. 첨단산업·안보 연계 투자 우선 검토.",
+      "suwon_implication": "수원시 수출기업 물류비 지원 프로그램 긴급 확대. 해상 운송 의존 기업 대상 '대체 경로 전환 컨설팅' 지원 사업 신설",
       "is_structural": true,
       "detected_date": "2026-07-13",
       "first_detected": "2026-07-13"
     },
     {
-      "signal_id": "sig_007",
-      "category": "정책패러다임전환",
-      "title_ko": "전력 수요 급증 + 냉방 수요 구조화",
-      "description": "• IEA: 엘니뇨와 전력 수요 강한 증가가 만나 '더 뜨거워진 세계를 냉각(Cooling a hotter world)'하는 과제 부각\n• 전쟁·에너지 위기 속에서도 전력 수요는 기후변화로 인해 구조적으로 증가 중\n• 에너지 정책이 '공급 확대'뿐 아니라 '수요 관리'를 핵심 축으로 전환 필요",
+      "signal_id": "sig_003",
+      "category": "민생충격패턴",
+      "title_ko": "전력수요·냉방부하 구조 변화",
+      "description": "• IEA가 엘니뇨+전력수요 급증 복합 시나리오 분석 보고서 발표\n• 중동 위기가 '냉방용 전력' 공급 불안으로 연결되는 새로운 경로 포착\n• 에너지 가격 변동성이 '일시 충격'이 아닌 '수요 패턴 구조 변화' 유발",
       "evidence_titles": [
-        "Cooling a hotter world: El Niño meets strong growth in global electricity demand – Analysis - IEA",
-        "Scaling Up Demand Flexibility: Launch Webinar - IEA"
+        "Cooling a hotter world: El Niño meets strong growth in global electricity demand – Analysis",
+        "Scaling Up Demand Flexibility: Launch Webinar"
       ],
       "evidence_sources": [
         "IEA",
@@ -133,61 +160,85 @@
       ],
       "strength": 3,
       "trend": "신규",
-      "suwon_implication": "수원시 여름철 냉방 취약계층 지원을 단순 전기료 보조가 아닌, '수요 유연성(Demand Flexibility)' 기반 스마트 관리 체계로 전환 검토.",
+      "suwon_implication": "수원시 여름철 냉방 취약계층 긴급 지원 체계 재설계. 전력 수요 관리 프로그램 확대, 에너지 바우처 탄력 조정 방안 검토 필요",
       "is_structural": true,
       "detected_date": "2026-07-13",
       "first_detected": "2026-07-13"
     },
     {
-      "signal_id": "sig_008",
+      "signal_id": "sig_007",
       "category": "정책패러다임전환",
-      "title_ko": "스테이블코인 금융 안정 위협",
-      "description": "• IMF: 스테이블코인이 고정환율제 국가의 금융 취약성(Fragility)을 증폭시킬 수 있다는 분석 발표\n• 전쟁·에너지 위기 속 금융 불안 시, 디지털 자산이 기존 통화 정책 효과를 무력화할 위험\n• 금융 안정 정책이 '전통 금융'에서 '디지털-전통 융합 리스크' 관리로 전환 필요",
+      "title_ko": "아프리카 청정조리 투자 급증",
+      "description": "• IEA 주도로 아프리카 청정조리에 9억 달러 투자 약속, 이미 7.4억 달러 집행\n• 중동 에너지 불안정성이 '대안 에너지 시장' 투자 급증으로 연결되는 구조\n• 제2차 정상회의 개최, 청정조리가 '개발협력'에서 '에너지 안보 대안'으로 재정의",
       "evidence_titles": [
-        "Stablecoins and Fragility in Fixed Exchange Rate Regimes - IMF"
+        "New commitments to clean cooking in Africa reach $900 million ahead of 2nd major Summit",
+        "$740 million from first Clean Cooking Summit already deployed to projects across Africa",
+        "Clean Cooking in Africa 2026 – Analysis"
       ],
       "evidence_sources": [
+        "IEA",
+        "IEA",
+        "IEA"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "수원시 에너지 복지 정책에 '청정조리 기술' 도입 검토. 저소득층 주거 에너지 효율화 사업에 국제 벤치마크 반영",
+      "is_structural": true,
+      "detected_date": "2026-07-13",
+      "first_detected": "2026-07-13"
+    },
+    {
+      "signal_id": "sig_009",
+      "category": "정책패러다임전환",
+      "title_ko": "암호화폐 채굴 에너지 전략화",
+      "description": "• IMF가 '암호화폐 채굴 동인' 분석 보고서 발표 - 하드웨어 수입 데이터 추적\n• 에너지 불안정 국가들이 '잉여 전력 활용' 목적으로 채굴 허용 증가 패턴\n• 스테이블코인 고정환율 제도 취약성 보고서 동시 발표 - 에너지 위기가 디지털 금융 안정성 흔들 가능성",
+      "evidence_titles": [
+        "What Drives Crypto Mining? Evidence from Hardware Imports",
+        "Stablecoins and Fragility in Fixed Exchange Rate Regimes"
+      ],
+      "evidence_sources": [
+        "IMF",
         "IMF"
       ],
       "strength": 2,
       "trend": "신규",
-      "suwon_implication": "수원시 소상공인·시민 대상 디지털 자산 리스크 교육 강화 필요. 전쟁 시기 금융 사기 예방 캠페인에 스테이블코인 위험 포함.",
-      "is_structural": true,
+      "suwon_implication": "수원시 블록체인 산업 육성 정책에 '에너지 소비 리스크' 기준 추가. 디지털 금융 취약계층 보호 방안 선제 검토",
+      "is_structural": false,
       "detected_date": "2026-07-13",
       "first_detected": "2026-07-13"
     }
   ],
   "by_category": {
     "에너지안보재편": 2,
-    "무역공급망재편": 1,
+    "무역공급망재편": 2,
+    "민생충격패턴": 2,
     "정책패러다임전환": 3,
-    "민생충격패턴": 1,
     "지역질서재편": 1
   },
-  "summary_ko": "• 호르무즈 해협이 '개방 전제'에서 '분쟁 지역'으로 재정의되며 에너지 안보 패러다임 전환 가속화\n• 미-이란 휴전 합의 붕괴로 중동 질서가 '협상 기반 관리'에서 '무력 균형 경쟁'으로 구조적 후퇴\n• 유가 충격이 국가별로 다르게 전달되며, 에너지 안보가 '공급 확보'에서 '충격 흡수 능력'으로 전환\n• 글로벌 해운이 '경제성'에서 '안전성' 우선으로 의사결정 전환, 공급망 신뢰성 붕괴 징후\n• 에너지 가격 변동성 일상화와 전력 수요 구조적 증가로 민생 정책의 '고변동성 대응 체제' 전환 불가피",
-  "top_signal": "호르무즈 통제권 분쟁 상시화",
-  "suwon_action": "• 난방비·전기료 장기 상승 구조에 대비해 에너지 취약계층 지원을 단기 구호가 아닌 '유가 연동 탄력 지원 체계'로 긴급 재설계\n• 중소기업 공급망 리스크 관리 지원과 에너지 안보 비상 대응 매뉴얼 제도화 즉시 착수",
+  "summary_ko": "• 호르무즈 해협 통제권 분쟁이 '일시 충격'에서 '공급망 신뢰 구조 재편'으로 전환 중\n• IEA·IMF·UNCTAD 등 국제기구가 동시에 '가격→안정성', '양적→선별적' 패러다임 전환 신호 발표\n• 미-이란 '공격-휴전-재공격' 패턴 6개월 반복, 에너지·물가 변동성이 상시 구조로 고착화\n• 해상보험료 급등·선박 통행 급감이 '물리적 봉쇄' 없이도 실질 공급망 차단 효과 발생\n• 에너지 위기가 냉방 수요·외국인투자·디지털금융까지 연쇄 구조 변화 촉발 중",
+  "top_signal": "호르무즈 해협 사실상 폐쇄",
+  "suwon_action": "① 중소 제조기업 긴급 유동성 지원 + 해상운송 의존 기업 대체경로 컨설팅 즉시 착수\n② 에너지 공급업체 평가를 '가격' 기준에서 '공급 신뢰성' 기준으로 전환, 여름 냉방 취약계층 긴급 지원체계 재설계",
   "weekly_trend": {
     "정책패러다임전환": {
-      "count": 3,
-      "max_strength": 3
-    },
-    "에너지안보재편": {
-      "count": 2,
+      "count": 8,
       "max_strength": 5
     },
-    "지역질서재편": {
-      "count": 1,
+    "무역공급망재편": {
+      "count": 6,
       "max_strength": 5
     },
     "민생충격패턴": {
-      "count": 1,
-      "max_strength": 4
+      "count": 5,
+      "max_strength": 5
     },
-    "무역공급망재편": {
-      "count": 1,
+    "에너지안보재편": {
+      "count": 4,
+      "max_strength": 5
+    },
+    "지역질서재편": {
+      "count": 3,
       "max_strength": 4
     }
   },
-  "generated_at": "2026-07-13T00:12:33.141117"
+  "generated_at": "2026-07-13T02:23:55.375734"
 }
