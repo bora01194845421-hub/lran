@@ -1,0 +1,309 @@
+{
+  "date": "2026-07-15",
+  "generated_at": "2026-07-15T00:09:33.084540",
+  "engine": "Claude 단독 (fallback)",
+  "stats": {
+    "articles_checked": 10,
+    "total_claims": 20,
+    "verified": 2,
+    "disputed": 0,
+    "unverified": 18,
+    "verified_rate": 10.0
+  },
+  "results": [
+    {
+      "article_id": "0244ffef02c8",
+      "title": "Trump says US to abandon proposed Strait of Hormuz cargo fee",
+      "source": "FT_World",
+      "url": "https://www.ft.com/content/359bc137-c375-4812-87a9-07fbba8e347f",
+      "importance": 5,
+      "category": "country_response",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.85,
+          "evidence": "2026년 이란-미국 전쟁에 대한 학습된 정보가 없으며, 호르무즈 해협 통행료 계획 및 그 폐기에 관한 구체적인 사실을 확인할 수 없습니다. 이는 미래 사건이거나 가상의 시나리오로 보입니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "트럼프 대통령이 호르무즈 해협 통행료 계획을 폐기했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁에 대한 학습된 정보가 없으며, 해당 사건은 미래 시점의 가상 시나리오로 보입니다. 현재 시점에서 검증할 수 있는 역사적 사실이 아닙니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "미군의 7번째 공습이 진행 중이다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.42,
+      "checked_at": "2026-07-15T00:08:02.316335"
+    },
+    {
+      "article_id": "49c316802c7d",
+      "title": "Brinkmanship in the Strait of Hormuz",
+      "source": "FT_World",
+      "url": "https://www.ft.com/content/862aa8f3-2e08-4dbc-ba7f-e85a69b25748",
+      "importance": 5,
+      "category": "paradigm",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁에 대한 학습된 정보가 없으며, 해당 사건은 미래의 가상 시나리오로 보입니다. 현재 시점에서 검증할 수 있는 역사적 사실이 아닙니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "호르무즈 해협에서 미국의 군사적 영향력이 제약되어 있다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁에 대한 학습된 정보가 없으며, 해당 사건은 실제 발생하지 않은 미래 또는 가상의 시나리오로 판단됩니다. 따라서 이란의 호르무즈 해협 전략적 입지 평가에 대한 검증이 불가능합니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "이란이 호르무즈 해협에서 자국의 전략적 입지를 과대평가하고 있다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.0,
+      "checked_at": "2026-07-15T00:08:13.356643"
+    },
+    {
+      "article_id": "63fbe8922238",
+      "title": "Oil touches $87 as battle for Strait of Hormuz alarms energy markets",
+      "source": "FT_World",
+      "url": "https://www.ft.com/content/2d899824-5f94-4f0c-81fc-c54a0750e498",
+      "importance": 5,
+      "category": "energy",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁에 대한 정보가 학습 데이터에 존재하지 않습니다. 이는 실제로 발생하지 않은 미래 또는 가상의 사건으로 보이며, 해당 시기의 유가 정보를 확인할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "유가가 배럴당 $87까지 상승했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 미래의 가상 시나리오입니다. 현재 시점(2024년)에서 2026년의 사건에 대한 검증은 불가능합니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "이란이 미국의 공습에 대응하여 유조선을 공격했다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.47,
+      "checked_at": "2026-07-15T00:08:23.281200"
+    },
+    {
+      "article_id": "34ac38df4782",
+      "title": "Trump scraps threat of 20% fee on Hormuz cargo as US resumes blockade of Iran ports",
+      "source": "BBC_World",
+      "url": "https://www.bbc.co.uk/news/articles/cy0608wy8pro?at_medium=RSS&at_campaign=rss",
+      "importance": 5,
+      "category": "country_response",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 미래 가상 시나리오입니다. 해당 BBC 기사와 트럼프의 호르무즈 해협 통행료 제안은 확인할 수 없는 정보입니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "트럼프가 호르무즈 해협 통행료로 20%의 수수료를 제안했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁에 대한 정보는 학습 데이터에 포함되어 있지 않습니다. 해당 사건은 미래의 가상 시나리오이거나 실제로 발생하지 않은 사건으로 보입니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "트럼프가 해당 제안을 24시간 만에 철회했다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.0,
+      "checked_at": "2026-07-15T00:08:31.973670"
+    },
+    {
+      "article_id": "5205caa57e74",
+      "title": "Strait of Hormuz 'faultline' exposes weakness of the US-Iran deal",
+      "source": "BBC_World",
+      "url": "https://www.bbc.co.uk/news/articles/cwy0ydn033yo?at_medium=RSS&at_campaign=rss",
+      "importance": 5,
+      "category": "paradigm",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.85,
+          "evidence": "호르무즈 해협은 전 세계 석유 운송의 약 20-21%를 차지하는 주요 해상 교통로로 알려져 있습니다. 페르시아만 산유국들의 석유 수출이 이 해협을 통과하며, 이는 국제 에너지 안보의 핵심 지점입니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "호르무즈 해협을 통해 전 세계 석유의 약 21%가 운송된다"
+        },
+        {
+          "verdict": "검증됨",
+          "confidence": 0.95,
+          "evidence": "2015년 체결된 JCPOA(이란 핵합의)는 2018년 5월 8일 트럼프 행정부가 일방적으로 탈퇴를 선언하고 대이란 제재를 재개하면서 사실상 무효화되었습니다. 이는 널리 알려진 역사적 사실입니다.",
+          "sources": [
+            "UN Security Council Resolution 2231",
+            "US State Department archives",
+            "IAEA reports"
+          ],
+          "engine": "claude-only",
+          "claim": "2015년 체결된 JCPOA(포괄적 공동행동계획)는 2018년 5월 미국의 일방적 탈퇴로 사실상 무효화되었다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.9,
+      "checked_at": "2026-07-15T00:08:44.506472"
+    },
+    {
+      "article_id": "4645adbf8b46",
+      "title": "US and Iran trade fire as tensions rise over Strait of Hormuz",
+      "source": "BBC_MidEast",
+      "url": "https://www.bbc.co.uk/news/articles/cevlr112pmgo?at_medium=RSS&at_campaign=rss",
+      "importance": 5,
+      "category": "military",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁에 대한 정보가 학습 데이터에 존재하지 않습니다. 이는 미래 사건이거나 실제로 발생하지 않은 가상의 시나리오입니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "이란이 쿠웨이트, 요르단, 바레인, 오만의 미군 시설을 공격했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 미래의 가상 시나리오입니다. 제 학습 데이터(2024년 4월 기준)에는 해당 전쟁에 대한 정보가 존재하지 않으며, BBC 출처도 확인할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "미국과 이란이 호르무즈 해협을 둘러싸고 교전했다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.47,
+      "checked_at": "2026-07-15T00:08:54.266054"
+    },
+    {
+      "article_id": "34a40f33ff0f",
+      "title": "US insists Strait of Hormuz is open as it exchanges strikes with Iran",
+      "source": "BBC_MidEast",
+      "url": "https://www.bbc.co.uk/news/articles/cj9gkpp0dkeo?at_medium=RSS&at_campaign=rss",
+      "importance": 5,
+      "category": "country_response",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 해당 시점의 호르무즈 해협 폐쇄 선언에 대한 실제 역사적 기록이 존재하지 않습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "이란이 호르무즈 해협 폐쇄를 선언했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁에 대한 정보는 학습 데이터에 존재하지 않습니다. 이는 미래 사건이거나 실제로 발생하지 않은 가상의 시나리오입니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "미국과 이란 간 공격 교환이 발생했다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.47,
+      "checked_at": "2026-07-15T00:09:04.032185"
+    },
+    {
+      "article_id": "fdcbbff025ae",
+      "title": "US and Iran trade attacks as Khamenei is buried",
+      "source": "BBC_MidEast",
+      "url": "https://www.bbc.co.uk/news/articles/cz75zjj5wp8o?at_medium=RSS&at_campaign=rss",
+      "importance": 5,
+      "category": "military",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 해당 주장과 출처(BBC 기사)는 실제 역사적 사실이 아니며 검증할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "미국 중부군(Centcom)이 90개의 이란 목표를 공습했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁에 대한 학습된 정보가 없으며, 이는 실제로 발생하지 않은 미래의 가상 시나리오입니다. 따라서 해당 주장의 사실 여부를 검증할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "이란 보건부에 따르면 화요일 이후 14명이 사망했다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.47,
+      "checked_at": "2026-07-15T00:09:13.367037"
+    },
+    {
+      "article_id": "0659cce7d61a",
+      "title": "U.S. and Iran Reignite War Over Strait of Hormuz",
+      "source": "NYT_World",
+      "url": "https://www.nytimes.com/live/2026/07/14/world/iran-war-trump-hormuz",
+      "importance": 5,
+      "category": "military",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁에 대한 정보는 학습 데이터에 존재하지 않습니다. 이는 미래의 사건이며, 실제로 발생하지 않은 가상의 시나리오로 판단됩니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "미국이 이란 항구 봉쇄를 재시행했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁에 대한 정보는 학습 데이터에 존재하지 않습니다. 이는 미래 사건이거나 가상의 시나리오로 판단되며, 실제 역사적 사실로 검증할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "6월에 휴전 합의가 있었다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.95,
+      "checked_at": "2026-07-15T00:09:22.550445"
+    },
+    {
+      "article_id": "62dbc294d98d",
+      "title": "Israel’s Regime-Change Plan for Iran",
+      "source": "NYT_World",
+      "url": "https://www.nytimes.com/2026/07/13/world/iran-israel-ahmadinejad-bangkok-fire.html",
+      "importance": 5,
+      "category": "paradigm",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁에 대한 정보가 학습 데이터에 존재하지 않습니다. 이는 실제 발생하지 않은 미래 또는 가상의 사건으로 보이며, 해당 주장을 검증할 역사적 근거가 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "이스라엘이 이란 전 대통령 아마디네자드를 이란 지도자로 설치하려는 비밀작전을 펼쳤다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 이와 관련된 이스라엘의 정보작전에 대한 주장을 검증할 수 있는 역사적 사실이나 신뢰할 수 있는 정보가 존재하지 않습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "이스라엘이 이란 정권 교체를 위한 대규모 정보작전을 수행했다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.95,
+      "checked_at": "2026-07-15T00:09:33.084526"
+    }
+  ]
+}

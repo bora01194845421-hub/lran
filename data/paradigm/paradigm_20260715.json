@@ -1,0 +1,244 @@
+{
+  "date": "2026-07-15",
+  "total_signals": 10,
+  "structural_signals": 10,
+  "signals": [
+    {
+      "signal_id": "sig_002",
+      "category": "무역공급망재편",
+      "title_ko": "호르무즈 해협 폐쇄 위협의 상시화",
+      "description": "• 이란이 호르무즈 해협 폐쇄를 선언하고 탱커 공격을 감행, 미국은 해상봉쇄로 대응하며 7차례 공습 실시\n• 전 세계 원유 수송의 20% 이상을 차지하는 해협의 통행 불안정이 구조화되는 신호\n• 해운비 급등과 공급망 우회 경로 모색이 장기 트렌드로 자리잡을 가능성",
+      "evidence_titles": [
+        "US and Iran trade fire as tensions rise over Strait of Hormuz",
+        "US insists Strait of Hormuz is open as it exchanges strikes with Iran",
+        "Oil Prices Set for More Volatility After Latest Iranian Attack in Strait of Hormuz"
+      ],
+      "evidence_sources": [
+        "BBC_MidEast",
+        "BBC_MidEast",
+        "NYT_World"
+      ],
+      "strength": 5,
+      "trend": "신규",
+      "suwon_implication": "수원시 제조기업의 원자재 조달 비용 상승 및 납기 지연 우려. 수출 중소기업 물류비 지원 정책 재검토 필요.",
+      "is_structural": true,
+      "detected_date": "2026-07-15",
+      "first_detected": "2026-07-15"
+    },
+    {
+      "signal_id": "sig_004",
+      "category": "지역질서재편",
+      "title_ko": "미국-이란 휴전 체제의 완전 붕괴",
+      "description": "• 6월 휴전 합의 이후 불과 1개월 만에 미국-이란이 다시 전면 교전 상태로 복귀\n• 미국이 이란 항구 봉쇄를 재개하고 부셰르·반다르압바스 공습, 이란은 바레인·요르단·쿠웨이트·오만 미군 기지 타격\n• 중동 안정화 메커니즘 자체가 작동불능 상태로 진입, 장기 분쟁 구조화 신호",
+      "evidence_titles": [
+        "Trump Reimposes Naval Blockade, as U.S. and Iran Escalate Strikes",
+        "US and Iran trade attacks as Khamenei is buried",
+        "Trump renews Iran blockade and again threatens to take control of strait of Hormuz"
+      ],
+      "evidence_sources": [
+        "NYT_World",
+        "BBC_MidEast",
+        "Guardian_API"
+      ],
+      "strength": 5,
+      "trend": "강화",
+      "suwon_implication": "중동 출신 외국인 근로자의 본국 송금 및 비자 연장 불안 증가. 수원시 다문화 지원 정책에 장기 분쟁 대비 항목 추가 필요.",
+      "is_structural": true,
+      "detected_date": "2026-07-15"
+    },
+    {
+      "signal_id": "sig_001",
+      "category": "에너지안보재편",
+      "title_ko": "호르무즈 해협 통행료 부과 정책 혼선",
+      "description": "• 미국 트럼프 대통령이 호르무즈 해협 통행료(20%) 부과 발표 후 24시간 만에 철회\n• 통행료 대신 걸프국 투자로 대체하겠다는 정책 급변은 에너지 안보 비용 전가 방식의 불확실성 증대\n• 유가가 87달러까지 상승하며 에너지 공급 비용 구조의 변동성이 상시화되는 신호",
+      "evidence_titles": [
+        "Trump says US to abandon proposed Strait of Hormuz cargo fee",
+        "Trump scraps threat of 20% fee on Hormuz cargo as US resumes blockade of Iran ports",
+        "Oil touches $87 as battle for Strait of Hormuz alarms energy markets"
+      ],
+      "evidence_sources": [
+        "FT_World",
+        "BBC_World",
+        "FT_World"
+      ],
+      "strength": 4,
+      "trend": "신규",
+      "suwon_implication": "수원시 난방비·전기료 장기 전망에 구조적 불확실성 증가. 에너지 취약계층 지원 예산 변동성 대비 필요.",
+      "is_structural": true,
+      "detected_date": "2026-07-15",
+      "first_detected": "2026-07-15"
+    },
+    {
+      "signal_id": "sig_005",
+      "category": "민생충격패턴",
+      "title_ko": "에너지 가격 변동성의 일상화",
+      "description": "• 호르무즈 해협 분쟁으로 브렌트유가 단기간 87달러 돌파, 전쟁 이전 수준 초과\n• 공습-봉쇄-공습 반복 패턴이 형성되며 유가 변동이 예측불가능한 '뉴노멀'로 정착\n• 에너지 비용의 높은 변동성이 가계·기업 예산 계획 수립 자체를 어렵게 만드는 구조적 위험 증가",
+      "evidence_titles": [
+        "Oil touches $87 as battle for Strait of Hormuz alarms energy markets",
+        "Oil Prices Set for More Volatility After Latest Iranian Attack in Strait of Hormuz",
+        "Brinkmanship in the Strait of Hormuz"
+      ],
+      "evidence_sources": [
+        "FT_World",
+        "NYT_World",
+        "FT_World"
+      ],
+      "strength": 4,
+      "trend": "강화",
+      "suwon_implication": "수원시 저소득층 에너지 바우처 예산을 고정액에서 '변동 대응형'으로 전환 검토. 중소 자영업자 유류비 지원 확대 필요.",
+      "is_structural": true,
+      "detected_date": "2026-07-15"
+    },
+    {
+      "signal_id": "sig_009",
+      "category": "지역질서재편",
+      "title_ko": "이스라엘의 이란 정권교체 작전 실패",
+      "description": "• NYT 보도: 이스라엘이 아마디네자드를 정보자산화해 이란 지도자로 옹립하려던 비밀작전이 전쟁 초기 실패\n• 중동 지역에서 '정권교체를 통한 안정화' 전략 자체가 작동불능 상태임을 보여주는 사례\n• 중동 질서 재편이 군사적 승리가 아닌 장기 분쟁 관리 국면으로 진입하는 신호",
+      "evidence_titles": [
+        "Israel's Regime-Change Plan for Iran - NYT",
+        "Inside Israel's Secret Operation to Install Ahmadinejad, Iran's Former President, as Leader - NYT"
+      ],
+      "evidence_sources": [
+        "NYT_World",
+        "NYT_World"
+      ],
+      "strength": 4,
+      "trend": "신규",
+      "suwon_implication": "중동 안정화 불가능 시나리오 전제로 수원시 에너지·물가 대책 수립. 장기 분쟁 대비 비축 전략 검토.",
+      "is_structural": true,
+      "detected_date": "2026-07-15",
+      "first_detected": "2026-07-15"
+    },
+    {
+      "signal_id": "sig_003",
+      "category": "정책패러다임전환",
+      "title_ko": "IEA 에너지 시장 보고서의 신뢰성 기반 전환 암시",
+      "description": "• IEA가 2026년 7월 석유시장 보고서 발표, 전통적 가격 중심 분석에서 '공급 신뢰성' 중심 분석으로 전환 징후\n• 엘니뇨와 전력수요 급증 분석 보고서는 냉방 수요의 구조적 증가와 기후변화 적응 에너지 정책 필요성 강조\n• 에너지 파트너십 기준이 '가격'에서 '안정성·신뢰성'으로 이동하는 패러다임 전환의 초기 신호",
+      "evidence_titles": [
+        "Oil Market Report - July 2026 – Analysis - IEA",
+        "Cooling a hotter world: El Niño meets strong growth in global electricity demand – Analysis - IEA"
+      ],
+      "evidence_sources": [
+        "IEA_News",
+        "IEA_News"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "수원시 에너지 정책이 '저가 조달'에서 '안정적 공급망 확보'로 목표 재설정 필요. 재생에너지 자급률 제고 정책 강화 근거.",
+      "is_structural": true,
+      "detected_date": "2026-07-15",
+      "first_detected": "2026-07-15"
+    },
+    {
+      "signal_id": "sig_006",
+      "category": "정책패러다임전환",
+      "title_ko": "IMF의 AI-노동시장 구조변화 경고",
+      "description": "• IMF가 이스라엘 사례 분석을 통해 AI가 노동시장에 미치는 충격을 구조적 이슈로 공식 제기\n• 전쟁 상황에서도 AI-사이버보안 결합(금융부문) 보고서 발간은 기술 전환이 지정학 리스크보다 우선순위임을 시사\n• 국제기구 차원에서 AI 시대 노동정책 재설계를 요구하는 패러다임 전환 신호",
+      "evidence_titles": [
+        "The Impact of Artificial Intelligence on Israel's Labor Market - IMF",
+        "Artificial Intelligence and Cybersecurity in the Financial Sector; IMF Note No. 26/05"
+      ],
+      "evidence_sources": [
+        "IMF_News",
+        "IMF_News"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "수원시 일자리 정책을 'AI 전환 적응 지원' 중심으로 재편 필요. 전통 제조업 근로자 재교육 프로그램 확대 근거.",
+      "is_structural": true,
+      "detected_date": "2026-07-15",
+      "first_detected": "2026-07-15"
+    },
+    {
+      "signal_id": "sig_007",
+      "category": "무역공급망재편",
+      "title_ko": "UNCTAD 원자재 의존국 탈피 대시보드 출시",
+      "description": "• UNCTAD가 국가별 원자재 의존도 프로파일 대시보드 공개, 공급망 다변화 촉구\n• 호르무즈 분쟁과 같은 지정학 리스크가 원자재 의존 경제의 취약성을 극명히 드러냄\n• 국제 무역 구조가 '특정 지역 의존'에서 '다중 공급망 확보'로 전환되는 정책 신호",
+      "evidence_titles": [
+        "New dashboard helps countries chart a path beyond commodity dependence - UNCTAD",
+        "The State of Commodity Dependence: Country profiles - UNCTAD"
+      ],
+      "evidence_sources": [
+        "UNCTAD_News",
+        "UNCTAD_News"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "수원시 중소기업 수출 지원 정책에 '공급망 다변화 컨설팅' 항목 추가. 특정국 의존도 높은 기업 우선 지원.",
+      "is_structural": true,
+      "detected_date": "2026-07-15",
+      "first_detected": "2026-07-15"
+    },
+    {
+      "signal_id": "sig_008",
+      "category": "정책패러다임전환",
+      "title_ko": "OECD 디지털경제 규제 스펙트럼 재정의",
+      "description": "• OECD가 디지털경제 규제 모델 스펙트럼 보고서 발간, 전통적 규제 프레임워크의 한계 공식 인정\n• 능동적 노동시장 정책(ALMP)의 비용효과성 분석은 AI 시대 고용안전망 재설계 필요성 강조\n• 국제 정책 기준이 '사후 규제'에서 '적응형 거버넌스'로 이동하는 패러다임 전환",
+      "evidence_titles": [
+        "The spectrum of regulatory models and its application to the digital economy - OECD",
+        "Cost‑effective Active Labour Market Policies - OECD"
+      ],
+      "evidence_sources": [
+        "OECD_News",
+        "OECD_News"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "수원시 규제혁신 정책을 '사전 금지'에서 '실험-학습-조정' 방식으로 전환 검토. 디지털 플랫폼 노동자 보호 정책 설계 기준.",
+      "is_structural": true,
+      "detected_date": "2026-07-15",
+      "first_detected": "2026-07-15"
+    },
+    {
+      "signal_id": "sig_010",
+      "category": "민생충격패턴",
+      "title_ko": "UN 소비자제품 안전원칙 출시의 역설",
+      "description": "• UNCTAD가 전쟁 중에도 'UN 소비자제품 안전원칙' 공식 출시, 공정경쟁 시장 재확인\n• 지정학 위기 속에서도 국제사회가 '일상 민생 보호'를 최우선 과제로 설정하는 정책 방향 전환\n• 전쟁이 장기화될수록 소비자 보호·공정거래 등 '생활 안정망'이 정책 핵심으로 부상하는 패턴",
+      "evidence_titles": [
+        "UN Principles on Consumer Product Safety officially launched as world reaffirms commitment to fair and competitive markets - UNCTAD"
+      ],
+      "evidence_sources": [
+        "UNCTAD_News"
+      ],
+      "strength": 2,
+      "trend": "신규",
+      "suwon_implication": "수원시 소비자보호 정책을 위기 대응형으로 강화. 전시 물가 급등·불량제품 유통 감시 체계 보강 필요.",
+      "is_structural": true,
+      "detected_date": "2026-07-15",
+      "first_detected": "2026-07-15"
+    }
+  ],
+  "by_category": {
+    "에너지안보재편": 1,
+    "무역공급망재편": 2,
+    "정책패러다임전환": 3,
+    "지역질서재편": 2,
+    "민생충격패턴": 2
+  },
+  "summary_ko": "• 호르무즈 해협 분쟁이 에너지 가격 '고변동성 상시화' 구조를 만들며, 전통적 가격 중심 에너지 정책이 '공급 신뢰성 중심'으로 전환되는 IEA 신호 포착\n• 미국-이란 휴전 체제가 1개월 만에 붕괴, 중동 안정화 메커니즘 자체가 작동불능 상태로 진입하며 장기 분쟁 구조화\n• IMF·OECD가 AI 노동시장 충격과 디지털경제 규제 재설계를 동시 제기, 국제기구 차원에서 기술 전환이 지정학 리스크보다 우선순위임을 공식화\n• UNCTAD 원자재 의존 탈피 대시보드와 UN 소비자안전원칙 출시는 공급망 다변화·민생 안정망이 전시 정책 핵심으로 부상하는 패러다임 전환 신호\n• 에너지·물류·노동·규제 전 영역에서 '예측 가능성 붕괴'가 뉴노멀로 정착, 정책 목표가 '최적화'에서 '적응력 확보'로 이동",
+  "top_signal": "에너지안보재편: 에너지 가격 변동성의 일상화",
+  "suwon_action": "• 에너지 바우처 예산을 고정액에서 변동 대응형으로 긴급 전환, 저소득층·중소 자영업자 유류비 지원 확대 즉시 검토\n• AI 전환 적응 지원 중심 일자리 정책 재편과 중소기업 공급망 다변화 컨설팅을 하반기 핵심 과제로 설정",
+  "weekly_trend": {
+    "정책패러다임전환": {
+      "count": 3,
+      "max_strength": 3
+    },
+    "지역질서재편": {
+      "count": 2,
+      "max_strength": 5
+    },
+    "민생충격패턴": {
+      "count": 2,
+      "max_strength": 4
+    },
+    "무역공급망재편": {
+      "count": 2,
+      "max_strength": 5
+    },
+    "에너지안보재편": {
+      "count": 1,
+      "max_strength": 4
+    }
+  },
+  "generated_at": "2026-07-15T00:05:25.656446"
+}
