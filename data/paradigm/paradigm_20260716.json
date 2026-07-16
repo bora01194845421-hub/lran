@@ -1,0 +1,189 @@
+{
+  "date": "2026-07-16",
+  "total_signals": 7,
+  "structural_signals": 7,
+  "signals": [
+    {
+      "signal_id": "sig_002",
+      "category": "무역공급망재편",
+      "title_ko": "호르무즈 해협 봉쇄와 해운 패러다임 전환",
+      "description": "• 미국의 호르무즈 해협 봉쇄 및 20% 통행료 부과는 일시적 조치가 아닌 '전략적 해운 통제' 시도\n• 4일 연속 미-이란 교전과 UAE의 이란 '대담한 공격' 비난은 중동 해운 안정성의 구조적 붕괴 신호\n• 글로벌 해운비용 구조와 무역 경로 자체가 재편되는 전환점",
+      "evidence_titles": [
+        "US hits tanker heading for Kharg Island under renewed Iran blockade",
+        "Strait of Hormuz 'faultline' exposes weakness of the US-Iran deal",
+        "UAE condemns Iran's 'brazen' attack on tankers as US launches fresh strikes"
+      ],
+      "evidence_sources": [
+        "FT",
+        "BBC",
+        "BBC"
+      ],
+      "strength": 5,
+      "trend": "신규",
+      "suwon_implication": "수원시 제조기업 원자재·부품 수입비용 상승, 납품 일정 불확실성 증가. 공급망 다변화 지원 및 중소기업 긴급 유동성 대책 필요.",
+      "is_structural": true,
+      "detected_date": "2026-07-16",
+      "first_detected": "2026-07-16"
+    },
+    {
+      "signal_id": "sig_001",
+      "category": "에너지안보재편",
+      "title_ko": "석유시장 전쟁충격 흡수 한계",
+      "description": "• IMF가 '시장이 전쟁 충격을 흡수했지만 완충능력(buffers)이 바닥나고 있다'고 구조적 경고 발표\n• OPEC 월간보고서 반복 발행은 시장 불확실성 속 정보 투명성 강화 시도를 시사\n• 단순 가격 변동이 아닌 '시장 복원력 자체의 구조적 한계' 도달 신호",
+      "evidence_titles": [
+        "The Oil Market Absorbed the War Shock, but Buffers Are Running Low",
+        "OPEC Monthly Oil Market Report"
+      ],
+      "evidence_sources": [
+        "IMF",
+        "OPEC"
+      ],
+      "strength": 4,
+      "trend": "신규",
+      "suwon_implication": "수원시 에너지 비용 중장기 상승 압력 구조화 예상. 취약계층 난방비·교통비 지원 확대 및 장기 재원 확보 전략 필요.",
+      "is_structural": true,
+      "detected_date": "2026-07-16",
+      "first_detected": "2026-07-16"
+    },
+    {
+      "signal_id": "sig_004",
+      "category": "지역질서재편",
+      "title_ko": "트럼프의 '영원한 전쟁' 함정",
+      "description": "• NYT가 '트럼프가 전쟁을 끝내겠다던 약속과 달리 이라크·아프간과 같은 영원한 전쟁 함정에 빠질 위험' 경고\n• 5일 연속 미-이란 교전과 트럼프의 '이란이 잘 행동해야 한다' 발언은 단기 충돌이 아닌 장기 대치 구조화 가능성\n• 중동 불안정성이 일시적 사건이 아닌 '새로운 상시 긴장 상태'로 정착 신호",
+      "evidence_titles": [
+        "In Iran war, Trump Risks Another American 'Forever War'",
+        "Iran War Live Updates: U.S. and Iran Exchange Strikes for 5th Straight Day",
+        "US launches fresh strikes on Iran as Trump warns Tehran it 'better behave'"
+      ],
+      "evidence_sources": [
+        "NYT",
+        "NYT",
+        "BBC"
+      ],
+      "strength": 4,
+      "trend": "신규",
+      "suwon_implication": "중동 정세 불안이 장기화되면 수원시 에너지 수급 안정성 지속 위협. 재생에너지 전환 가속화 및 에너지 자립도 제고 전략 수립 시급.",
+      "is_structural": true,
+      "detected_date": "2026-07-16",
+      "first_detected": "2026-07-16"
+    },
+    {
+      "signal_id": "sig_003",
+      "category": "정책패러다임전환",
+      "title_ko": "국제기구의 구조개혁 정책 강화",
+      "description": "• IMF의 '유럽 금융시장 개혁이 성장을 견인할 수 있다'는 주장은 위기 대응에서 구조개혁 중심으로 정책 무게중심 이동 시사\n• OECD의 생산성·노동시장·부패방지 등 구조적 주제 집중 보고서 발행은 단기 경기부양보다 장기 제도개선 강조\n• 전쟁 충격 속에서도 '구조개혁 우선' 패러다임 유지 신호",
+      "evidence_titles": [
+        "Financial Market Reforms Could Lift Europe's Growth",
+        "Non‑compete clauses and productivity",
+        "Enforcement data of the OECD Anti‑Bribery Convention 1999‑2025"
+      ],
+      "evidence_sources": [
+        "IMF",
+        "OECD",
+        "OECD"
+      ],
+      "strength": 3,
+      "trend": "강화",
+      "suwon_implication": "수원시 민생정책도 단기 현금지원보다 생산성·일자리 질 개선 등 구조적 접근 병행 필요. 국제 모범사례 벤치마킹 강화.",
+      "is_structural": true,
+      "detected_date": "2026-07-16"
+    },
+    {
+      "signal_id": "sig_005",
+      "category": "민생충격패턴",
+      "title_ko": "원자재 의존국 취약성 노출",
+      "description": "• UNCTAD의 '원자재 의존 상태(commodity dependence)' 대시보드 및 국가 프로파일 신규 공개는 전쟁 충격 속 취약국 구조적 리스크 가시화\n• 세계은행의 아프리카 물류비용 차트는 원자재·물류 의존 경제의 구조적 비효율 노출\n• 전쟁이 특정국만이 아닌 '구조적으로 취약한 경제 모델 자체'를 타격하는 패턴 확인",
+      "evidence_titles": [
+        "New dashboard helps countries chart a path beyond commodity dependence",
+        "The state of commodity dependence: Know more",
+        "Trade and Development Chart: Trucking Goods Across Africa"
+      ],
+      "evidence_sources": [
+        "UNCTAD",
+        "UNCTAD",
+        "WorldBank"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "수원시 취약계층 중 원자재·에너지 가격에 민감한 계층(교통·난방 의존도 높은 저소득층) 맞춤형 지원체계 강화 필요.",
+      "is_structural": true,
+      "detected_date": "2026-07-16",
+      "first_detected": "2026-07-16"
+    },
+    {
+      "signal_id": "sig_006",
+      "category": "정책패러다임전환",
+      "title_ko": "채무국 연대 플랫폼 제도화",
+      "description": "• UNCTAD의 '차입국 플랫폼(Borrowers' Platform)' 뉴스·승인·문서 섹션 신규 구축은 채무국 간 협력 제도화 신호\n• 전쟁 충격 속 개별 국가 대응이 아닌 '채무국 집단 협상력 강화' 패러다임 전환 시도\n• IMF·세계은행 중심 채무 구조에서 채무국 주도 협상 구조로 전환 가능성",
+      "evidence_titles": [
+        "Borrowers' Platform: News",
+        "Borrowers' Platform: Endorsements",
+        "Borrowers' Platform: Documents"
+      ],
+      "evidence_sources": [
+        "UNCTAD",
+        "UNCTAD",
+        "UNCTAD"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "지방정부 재정 압박 시 중앙정부 의존이 아닌 지자체 간 연대·공동 대응 모델 참고 가능. 경기도 내 기초지자체 협력체계 강화 검토.",
+      "is_structural": true,
+      "detected_date": "2026-07-16",
+      "first_detected": "2026-07-16"
+    },
+    {
+      "signal_id": "sig_007",
+      "category": "에너지안보재편",
+      "title_ko": "에너지 전환 광물 거버넌스 신설",
+      "description": "• UN의 '에너지 전환 핵심 광물 고위급 회의' 개최와 CSTD 데이터 거버넌스 다자협의체 8차 회의는 에너지 전환 자원 통제의 국제 제도화 신호\n• 전쟁으로 화석연료 불안정 시 재생에너지 전환 가속화되지만, 전환 광물(리튬·코발트 등) 확보 경쟁도 구조화\n• 에너지 안보 개념이 '석유 확보'에서 '전환 광물 거버넌스'로 이동",
+      "evidence_titles": [
+        "UN High-Level Meeting on Critical Energy Transition Minerals",
+        "8th meeting of the UN CSTD multi-stakeholder working group on data governance at all levels"
+      ],
+      "evidence_sources": [
+        "UNCTAD",
+        "UNCTAD"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "수원시 전기차·배터리 관련 산업 지원 시 광물 공급망 안정성 고려 필요. 재생에너지 전환 정책에 원자재 리스크 대응 포함.",
+      "is_structural": true,
+      "detected_date": "2026-07-16",
+      "first_detected": "2026-07-16"
+    }
+  ],
+  "by_category": {
+    "에너지안보재편": 2,
+    "무역공급망재편": 1,
+    "정책패러다임전환": 2,
+    "지역질서재편": 1,
+    "민생충격패턴": 1
+  },
+  "summary_ko": "• IMF·OPEC 구조적 경고: 석유시장이 전쟁 충격을 흡수했으나 완충능력 바닥, 시장 복원력 자체의 한계 도달\n• 호르무즈 해협 봉쇄·20% 통행료: 일시적 조치 아닌 전략적 해운 통제로 글로벌 무역 경로·비용 구조 재편 전환점\n• '영원한 전쟁' 함정: 트럼프 행정부가 단기 충돌이 아닌 장기 대치 구조화 위험, 중동 불안정성 새로운 상시 긴장 상태로 정착 신호\n• 정책 패러다임 전환: IMF·OECD 단기 경기부양 대신 구조개혁 중심 이동, UNCTAD 채무국 연대 플랫폼 제도화로 집단 협상력 강화 시도\n• 에너지 안보 재정의: UN 에너지 전환 핵심 광물 고위급 회의로 석유 확보에서 전환 광물 거버넌스로 안보 개념 이동",
+  "top_signal": "호르무즈 해협 봉쇄와 해운 패러다임 전환",
+  "suwon_action": "• 즉시: 제조기업 원자재 수입비용 상승·납품 지연 실태 긴급 조사, 중소기업 유동성 지원 창구 개설\n• 중기: 에너지 비용 구조적 상승 대비 취약계층 난방·교통비 지원 확대 및 재생에너지 전환 가속화 로드맵 수립",
+  "weekly_trend": {
+    "정책패러다임전환": {
+      "count": 8,
+      "max_strength": 5
+    },
+    "무역공급망재편": {
+      "count": 6,
+      "max_strength": 5
+    },
+    "에너지안보재편": {
+      "count": 5,
+      "max_strength": 5
+    },
+    "민생충격패턴": {
+      "count": 5,
+      "max_strength": 5
+    },
+    "지역질서재편": {
+      "count": 3,
+      "max_strength": 4
+    }
+  },
+  "generated_at": "2026-07-16T04:58:53.441445"
+}
