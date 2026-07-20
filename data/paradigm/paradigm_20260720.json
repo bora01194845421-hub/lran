@@ -1,0 +1,195 @@
+{
+  "date": "2026-07-20",
+  "total_signals": 8,
+  "structural_signals": 8,
+  "signals": [
+    {
+      "signal_id": "sig_001",
+      "category": "에너지안보재편",
+      "title_ko": "호르무즈 봉쇄 실전화 단계 진입",
+      "description": "• 미국이 호르무즈 해협에서 이란행 유조선을 헬파이어 미사일로 실제 공격·무력화\n• 단순 경고가 아닌 '물리적 해상 봉쇄' 실행 단계로 전환, 글로벌 에너지 공급망 구조적 위험 급증\n• 전 세계 석유 운송의 21% 경유 해협 폐쇄 가능성이 이론→현실 단계로 이동",
+      "evidence_titles": [
+        "US attacks oil tanker in strait of Hormuz as strikes reported in Tehran",
+        "US strikes oil tanker with missiles as it enforces new Iran blockade"
+      ],
+      "evidence_sources": [
+        "Guardian_API",
+        "BBC_MidEast"
+      ],
+      "strength": 5,
+      "trend": "신규",
+      "suwon_implication": "수원시 난방비·운송비 급등 대비 긴급 민생안정 시나리오 필요. 취약계층 에너지 바우처 예산 확대 검토 시급.",
+      "is_structural": true,
+      "detected_date": "2026-07-20",
+      "first_detected": "2026-07-20"
+    },
+    {
+      "signal_id": "sig_002",
+      "category": "무역공급망재편",
+      "title_ko": "희토류 공급망 집중도 위기 가시화",
+      "description": "• IEA·IMF 동시 보고: 핵심광물 공급 집중, 수출제한, 투자감소가 3중 위기 구조 형성\n• 단순 가격 변동이 아닌 '공급 자체의 구조적 불안정성' 경고 단계\n• 청정에너지 전환 필수 자원의 안보화(securitization) 완료, 가격 아닌 접근권이 경쟁 기준으로 전환",
+      "evidence_titles": [
+        "Supply concentration, export restrictions and declining investment put critical mineral security at risk",
+        "Industrial Policy and Supply Chain Bottlenecks in Commodity Markets: Evidence from Rare Earth Elements"
+      ],
+      "evidence_sources": [
+        "IEA_News",
+        "IMF_News"
+      ],
+      "strength": 4,
+      "trend": "신규",
+      "suwon_implication": "수원시 제조기업(특히 전기차·반도체 협력사) 납품 비용 증가 예상. 중소기업 원자재 조달 지원 정책 선제 설계 필요.",
+      "is_structural": true,
+      "detected_date": "2026-07-20",
+      "first_detected": "2026-07-20"
+    },
+    {
+      "signal_id": "sig_003",
+      "category": "지역질서재편",
+      "title_ko": "요르단, 미-이란 전쟁 신규 전선 부상",
+      "description": "• 5일간 4차례 이란 공격, 미군 2명 전사·1명 실종으로 요르단이 대리전 핵심 전장화\n• 중동 내 미국 동맹 재배치: 타국 기지 제약→요르단 집중, 지역 안보 구조 근본 변화\n• 전통적 중동 분쟁 지역(이라크·시리아)이 아닌 '제3전선' 개설, 확전 패턴 변화 신호",
+      "evidence_titles": [
+        "Why Jordan Is Becoming a New Focus in the U.S.-Iran War",
+        "Two US troops killed and one missing in Jordan after Iranian attacks",
+        "Increased Cooperation With U.S. Has Put Jordan in Iran's Cross Hairs"
+      ],
+      "evidence_sources": [
+        "NYT_World",
+        "Guardian_API",
+        "NYT_World"
+      ],
+      "strength": 4,
+      "trend": "신규",
+      "suwon_implication": "중동 지역 안정성 장기 불확실→수원시 외국인근로자(아랍권) 유입 변동 가능성. 다문화가족지원센터 중동 정세 모니터링 강화 필요.",
+      "is_structural": true,
+      "detected_date": "2026-07-20",
+      "first_detected": "2026-07-20"
+    },
+    {
+      "signal_id": "sig_005",
+      "category": "지역질서재편",
+      "title_ko": "이란 미사일 방어망 회피 기술 실전 검증",
+      "description": "• 이란이 기동형 재진입체(MARV) 미사일로 미국 방공망 우회 성공 (연합뉴스 보도)\n• 단순 물량 공격이 아닌 '기술적 우위' 확보 단계, 미국의 중동 군사적 억지력 구조적 약화 신호\n• 이란의 '비대칭 전력'이 실전 검증됨→미국의 군사적 해법 한계 노출, 협상 구도 변화 가능성",
+      "evidence_titles": [
+        "이란 '날개 단 미사일' 쏜듯…美방공망 '기동형 재진입' 우회",
+        "Iran proves it can still inflict damage despite waves of US attacks"
+      ],
+      "evidence_sources": [
+        "Yonhap",
+        "Guardian_API"
+      ],
+      "strength": 4,
+      "trend": "신규",
+      "suwon_implication": "미국 군사 우위 약화→중동 장기 불안정 구조화. 수원시 에너지 비용 장기 상승 압력, 민생안정 대책 중장기 버전 필요.",
+      "is_structural": true,
+      "detected_date": "2026-07-20",
+      "first_detected": "2026-07-20"
+    },
+    {
+      "signal_id": "sig_004",
+      "category": "민생충격패턴",
+      "title_ko": "민간 인프라 타격 일상화 시작",
+      "description": "• 이란이 쿠웨이트 발전소·담수화 시설 등 민간 기간시설 직접 타격 시작\n• 전쟁 피해가 군사시설→민생시설로 확대, 일반 시민 생활 직접 충격 단계 진입\n• 중동 각국의 전기·물 공급 불안→난민 발생 가능성 증가, 인도적 위기 구조화 신호",
+      "evidence_titles": [
+        "US strikes hit Iran for seventh consecutive night",
+        "Two US troops killed and one missing in Jordan after Iranian attacks"
+      ],
+      "evidence_sources": [
+        "BBC_MidEast",
+        "Guardian_API"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "중동 난민 발생 시 국내 유입 가능성 대비. 수원시 외국인 긴급지원체계 점검 및 다문화 갈등 예방 프로그램 강화 필요.",
+      "is_structural": true,
+      "detected_date": "2026-07-20",
+      "first_detected": "2026-07-20"
+    },
+    {
+      "signal_id": "sig_006",
+      "category": "정책패러다임전환",
+      "title_ko": "생산성 측정에 환경지속가능성 통합",
+      "description": "• OECD가 '환경적으로 지속가능한 생산성 성장' 측정 프레임워크 공식화\n• 단순 경제성장이 아닌 '환경 비용 반영 생산성'을 정책 기준으로 전환 신호\n• GDP·생산성 개념 자체의 패러다임 전환, 각국 정책 설계 기준 근본 변화 예고",
+      "evidence_titles": [
+        "Measurement of environmentally sustainable productivity growth - OECD"
+      ],
+      "evidence_sources": [
+        "OECD_News"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "수원시 산업 지원 정책 평가 기준 재설계 필요. 환경 비용 반영 기업지원 프로그램 개발 시 국제 벤치마크 확보.",
+      "is_structural": true,
+      "detected_date": "2026-07-20",
+      "first_detected": "2026-07-20"
+    },
+    {
+      "signal_id": "sig_007",
+      "category": "정책패러다임전환",
+      "title_ko": "정부 생성형 AI 실험 본격화",
+      "description": "• OECD가 정부 부문 생성형 AI 실험 보고서 공식 발간\n• 정부 업무에 AI 통합이 실험→표준화 단계 진입 신호\n• 행정서비스·정책 분석의 근본적 방법론 전환 시작, 지방정부 역량 격차 발생 가능성",
+      "evidence_titles": [
+        "Generative AI experimentation in government - OECD"
+      ],
+      "evidence_sources": [
+        "OECD_News"
+      ],
+      "strength": 3,
+      "trend": "강화",
+      "suwon_implication": "수원시 AI 기반 행정서비스 혁신 가속화 필요. OECD 사례 벤치마킹해 시민서비스 효율화 및 정책분석 역량 강화 전략 수립.",
+      "is_structural": true,
+      "detected_date": "2026-07-20"
+    },
+    {
+      "signal_id": "sig_008",
+      "category": "무역공급망재편",
+      "title_ko": "남아공 인프라 현대화에 60만개 일자리",
+      "description": "• 세계은행이 남아공 인프라 현대화에 대규모 지원, 59.7만개 일자리 창출 예상\n• 선진국→개도국 인프라 투자가 단순 원조→산업 재편 도구로 전환\n• 글로벌 공급망 다변화 전략의 일환, 중국 의존 탈피를 위한 '아프리카 제조 허브화' 신호",
+      "evidence_titles": [
+        "South Africa: World Bank Group Support to Boost Infrastructure Modernization and Create Nearly 600,000 Jobs"
+      ],
+      "evidence_sources": [
+        "WorldBank_News"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "글로벌 공급망 재편이 아프리카 포함→수원시 기업의 신규 수출시장 다변화 기회. 중소기업 해외진출 지원 시 아프리카 시장 정보 제공 강화.",
+      "is_structural": true,
+      "detected_date": "2026-07-20",
+      "first_detected": "2026-07-20"
+    }
+  ],
+  "by_category": {
+    "에너지안보재편": 1,
+    "무역공급망재편": 2,
+    "지역질서재편": 2,
+    "민생충격패턴": 1,
+    "정책패러다임전환": 2
+  },
+  "summary_ko": "• 호르무즈 해협 미사일 공격으로 에너지 봉쇄 이론→실전 전환, 글로벌 석유공급 21% 차단 위험 현실화\n• 이란 미사일 방어망 우회 성공으로 미국 군사우위 구조적 약화, 중동 장기 불안정 구조 고착 신호\n• 희토류 공급망 3중 위기(집중·제한·투자감소) 가시화, 가격 아닌 '접근권' 경쟁 시대 진입\n• 요르단 제3전선 개설·민간 인프라 타격 일상화로 전쟁 피해 확대, 난민 발생 가능성 증가\n• OECD 환경지속가능 생산성 측정·정부 AI 실험 본격화로 정책 패러다임 근본 전환 시작",
+  "top_signal": "호르무즈 봉쇄 실전화 단계 진입",
+  "suwon_action": "• 긴급: 난방비·운송비 급등 대비 취약계층 에너지 바우처 예산 확대 및 민생안정 시나리오 즉시 가동\n• 선제: 제조기업 원자재 조달 비용 증가 대응 중소기업 긴급 지원 체계 점검 및 다문화 갈등 예방 프로그램 강화",
+  "weekly_trend": {
+    "정책패러다임전환": {
+      "count": 7,
+      "max_strength": 4
+    },
+    "에너지안보재편": {
+      "count": 5,
+      "max_strength": 5
+    },
+    "무역공급망재편": {
+      "count": 5,
+      "max_strength": 5
+    },
+    "지역질서재편": {
+      "count": 4,
+      "max_strength": 4
+    },
+    "민생충격패턴": {
+      "count": 4,
+      "max_strength": 5
+    }
+  },
+  "generated_at": "2026-07-20T01:27:57.339841"
+}

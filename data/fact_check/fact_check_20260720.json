@@ -1,0 +1,369 @@
+{
+  "date": "2026-07-20",
+  "generated_at": "2026-07-20T01:31:58.381849",
+  "engine": "Claude + WebSearch 교차검증",
+  "stats": {
+    "articles_checked": 10,
+    "total_claims": 20,
+    "verified": 19,
+    "disputed": 1,
+    "unverified": 0,
+    "verified_rate": 95.0
+  },
+  "results": [
+    {
+      "article_id": "62605c44c4ec",
+      "title": "US launches fresh Iran strikes as death toll climbs",
+      "source": "FT_World",
+      "url": "https://www.ft.com/content/7aa5493a-a2ba-4824-b3d0-03b9309ae3ea?syn-25a6b1a6=1",
+      "importance": 5,
+      "category": "military",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.98,
+          "evidence": "【WebSearch 확인】7/18 이란의 탄도미사일·드론 공격으로 요르단 Muwaffaq Salti 공군기지에서 미군 2명 전사, 1명 실종. CENTCOM 공식 발표. NPR, Axios, NBC News, CNN, Al Jazeera 등 복수 확인.",
+          "sources": [
+            "NPR (2026-07-18): U.S. fires on Iran after deadly attack in Jordan",
+            "Axios (2026-07-18): Two US troops killed in Iranian missile attack on Jordan",
+            "Stars and Stripes: Iranian attack in Jordan kills 2 US service members, another dies in Iraq"
+          ],
+          "engine": "websearch",
+          "claim": "요르단에서 미군 병사 2명이 전사하고 1명이 실종되었다"
+        },
+        {
+          "verdict": "검증됨",
+          "confidence": 0.97,
+          "evidence": "【WebSearch 확인】7/19 이라크에서 이란 드론 잔해(불발 일방공격 드론) 처리 작업 중 미군 1명 전사. Stars and Stripes, 29news 등 확인.",
+          "sources": [
+            "Stars and Stripes: Iranian attack in Jordan kills 2 US service members, another dies in Iraq",
+            "29news (2026-07-19): US launches more airstrikes against Iran after announcing another death of a service member"
+          ],
+          "engine": "websearch",
+          "claim": "무인기 처리 중 미군 1명이 사망했다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.975,
+      "checked_at": "2026-07-20T07:00:00.000000"
+    },
+    {
+      "article_id": "8f88cc64191c",
+      "title": "US strikes Iran after American troops killed in Jordan",
+      "source": "FT_World",
+      "url": "https://www.ft.com/content/e8e8adc5-7c56-45a8-99fc-bb5acfda263e?syn-25a6b1a6=1",
+      "importance": 5,
+      "category": "military",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.99,
+          "evidence": "【WebSearch 확인】미국이 요르단 내 미군 2명 전사(7/18) 이후 보복으로 이란에 추가 공습 단행. NPR '새 파도의 이란 공습', CNN '요르단 미군 전사 후 이란-미국 교차 공습' 확인.",
+          "sources": [
+            "NPR (2026-07-18): U.S. fires on Iran after deadly attack in Jordan — 'U.S. launches new airstrikes to punish Iran for troop deaths'",
+            "NBC News: U.S. and Iran trade strikes after two U.S. service members killed in Jordan",
+            "CNN (2026-07-18): July 18 — US-Iran war news"
+          ],
+          "engine": "websearch",
+          "claim": "미국이 요르단 내 미군 전사에 대한 보복으로 이란을 공습했다"
+        },
+        {
+          "verdict": "불일치",
+          "confidence": 0.90,
+          "evidence": "【WebSearch 확인】미국이 이란에 공습한 대상은 핵시설이 아니라 교량·발전소·항구 인근 군사 목표물. 이란이 미국의 '민간 인프라 공격'이라며 반발한 맥락에서 나온 주장으로, '핵시설 공격'이라는 구체적 사실은 근거 없음. Washington Post, NBC News 등 확인된 미국 공격 대상은 교량·에너지 인프라.",
+          "sources": [
+            "Washington Post (2026-07-17): U.S. hits bridges and energy targets, Iran says",
+            "NBC News: U.S. strikes bridges around key port in Iran, expanding campaign"
+          ],
+          "engine": "websearch",
+          "claim": "이란이 미국의 핵시설 공격을 주장하며 주변국에 대한 보복 공격을 단행했다"
+        }
+      ],
+      "overall_verdict": "불일치",
+      "avg_confidence": 0.945,
+      "checked_at": "2026-07-20T07:00:00.000000"
+    },
+    {
+      "article_id": "11496eba1f42",
+      "title": "US soldier killed and one injured after Iranian attack in Iraq",
+      "source": "BBC_MidEast",
+      "url": "https://www.bbc.co.uk/news/articles/cgk417jp83po?at_medium=RSS&at_campaign=rss",
+      "importance": 5,
+      "category": "military",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.97,
+          "evidence": "【WebSearch 확인】이라크에서 이란 드론 처리 중 미군 1명 전사, 이라크 내 이란 연계 공격으로 인한 미군 부상자도 보고됨. Stars and Stripes, 29news 확인.",
+          "sources": [
+            "Stars and Stripes (2026-07-18): Iranian attack in Jordan kills 2 US service members, another dies in Iraq",
+            "29news: US service member killed Saturday in Iraq during controlled detonation of Iranian drone"
+          ],
+          "engine": "websearch",
+          "claim": "이라크에서 이란의 공격으로 미군 병사 1명이 전사하고 1명이 부상했다"
+        },
+        {
+          "verdict": "검증됨",
+          "confidence": 0.98,
+          "evidence": "【WebSearch 확인】7/18 요르단 Muwaffaq Salti 공군기지 이란 탄도미사일 공격으로 미군 2명 전사, 1명 실종. 이 사건은 2026년 7월 실제 발생한 사건으로 확인됨 (Claude 단독 검증에서 2024년 Tower 22와 혼동했으나 별개 사건).",
+          "sources": [
+            "NPR, Axios, NBC News, CNN, Al Jazeera 등 7/18 복수 언론 동시 보도"
+          ],
+          "engine": "websearch",
+          "claim": "요르단에서의 이전 공격으로 미군 2명이 전사하고 1명이 실종되었다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.975,
+      "checked_at": "2026-07-20T07:00:00.000000"
+    },
+    {
+      "article_id": "52ded86cd152",
+      "title": "US strikes oil tanker with missiles as it enforces new Iran blockade",
+      "source": "BBC_MidEast",
+      "url": "https://www.bbc.co.uk/news/articles/clyqwkegqk0o?at_medium=RSS&at_campaign=rss",
+      "importance": 5,
+      "category": "energy",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.97,
+          "evidence": "【WebSearch 확인】미국이 이란 석유 인프라(카흐르그 섬 등) 방향 유조선에 미사일 발사, 봉쇄 위반 유조선 Belma 헬파이어로 무력화. NPR, Gulf News 확인. BBC 기사는 7/15~7/16 사건 보도.",
+          "sources": [
+            "NPR (2026-07-15): U.S. fires a new wave of strikes on Iran and hits a tanker trying to skirt its blockade",
+            "Gulf News: US Navy Disables Oil Tanker as Iran Naval Blockade Resumes"
+          ],
+          "engine": "websearch",
+          "claim": "미국이 이란 석유 터미널로 향하는 유조선에 미사일을 발사했다"
+        },
+        {
+          "verdict": "검증됨",
+          "confidence": 0.98,
+          "evidence": "【WebSearch 확인】7/13 이란 항구 봉쇄 재개, CENTCOM 봉쇄 작전 지속. 이란 석유 수출 봉쇄 강행 중. CNBC, Bloomberg, Euronews 확인.",
+          "sources": [
+            "CNBC: Trump proposes 20% toll on cargo through Strait of Hormuz; restarts Iran blockade",
+            "Bloomberg: US Hits Iran With Strikes, Blockade"
+          ],
+          "engine": "websearch",
+          "claim": "미국이 호르무즈 해협을 통한 이란 석유 수출 봉쇄를 강행하고 있다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.975,
+      "checked_at": "2026-07-20T07:00:00.000000"
+    },
+    {
+      "article_id": "099ede8c36d5",
+      "title": "US launches fresh strikes on Iran as Trump warns Tehran it 'better behave'",
+      "source": "BBC_MidEast",
+      "url": "https://www.bbc.co.uk/news/articles/c9323zgq6wvo?at_medium=RSS&at_campaign=rss",
+      "importance": 5,
+      "category": "military",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.98,
+          "evidence": "【WebSearch 확인】미국이 7/15~7/20 기간 연속 이란에 신규 공습 단행. VOA, CNN, NPR 등 다수 보도.",
+          "sources": [
+            "VOA Korea (2026-07-15): 미군, 이란 상대로 새로운 공습 단행",
+            "CNN: US says new strikes on Iran aimed at protecting vessels in Strait of Hormuz"
+          ],
+          "engine": "websearch",
+          "claim": "미국이 이란에 대한 신규 공습을 단행했다"
+        },
+        {
+          "verdict": "검증됨",
+          "confidence": 0.97,
+          "evidence": "【WebSearch 확인】뉴스핌(7/16) '트럼프 이란에 마감시한 없다, 제대로 행동해야' — 'better behave' 경고 확인.",
+          "sources": [
+            "뉴스핌 (2026-07-16): 트럼프 이란에 '마감시한 없다, 제대로 행동해야'",
+            "BBC 기사 원문 제목에 'better behave' 포함"
+          ],
+          "engine": "websearch",
+          "claim": "트럼프 대통령이 이란에 'better behave'라고 경고했다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.975,
+      "checked_at": "2026-07-20T07:00:00.000000"
+    },
+    {
+      "article_id": "9fb48f594b7b",
+      "title": "US strikes hit Iran for seventh consecutive night",
+      "source": "BBC_MidEast",
+      "url": "https://www.bbc.co.uk/news/articles/cy748n8zx8ro?at_medium=RSS&at_campaign=rss",
+      "importance": 5,
+      "category": "military",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.98,
+          "evidence": "【WebSearch 확인】CNN 7/17 라이브 블로그: 'seventh consecutive night' 공습 확인. 이후 8일(7/18), 9일 이상으로 이어짐.",
+          "sources": [
+            "CNN (2026-07-17): July 17 — Iran and US widen attacks as renewed conflict shows no sign of de-escalating",
+            "local10: US strikes target key bridges, power plants in Iran (7/17 보도)"
+          ],
+          "engine": "websearch",
+          "claim": "미국이 7일 연속으로 이란에 대한 공습을 실시했다"
+        },
+        {
+          "verdict": "검증됨",
+          "confidence": 0.98,
+          "evidence": "【WebSearch 확인】이란이 쿠웨이트 발전소·담수화 시설을 7/17, 7/18 이틀 연속 공격. 화재 발생, 전력 손상. 쿠웨이트 음용수의 90%가 담수화에서 공급됨을 감안할 때 심각한 민간 피해. Bloomberg, Gulf News, IranWire 확인.",
+          "sources": [
+            "Bloomberg (2026-07-17): Iran Attacks Kuwait Desalination and Power Plants as Hostilities Worsen",
+            "Gulf News: Kuwait says Iran attacked a power and water desalination plant, causing widespread damage",
+            "IranWire: Iranian Strike Damages Kuwait Power and Desalination Plant, Triggers Fire"
+          ],
+          "engine": "websearch",
+          "claim": "이란이 쿠웨이트의 발전소와 담수 시설을 공격했다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.98,
+      "checked_at": "2026-07-20T07:00:00.000000"
+    },
+    {
+      "article_id": "190da48e7506",
+      "title": "US Launches New Wave of Strikes on Iran After Troops Killed",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-07-19/us-iran-trade-more-attacks-after-two-troops-killed-in-jordan",
+      "importance": 5,
+      "category": "military",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.96,
+          "evidence": "【WebSearch 확인】CNN 7/17 기준 7일 연속, Bloomberg 7/18 기준 8일 연속, 7/19~7/20 기준 9일 이상 연속 공습. '9일 연속'은 7/20 현재 시점 기준 정확.",
+          "sources": [
+            "Bloomberg (2026-07-18): US Launches New Wave of Strikes on Iran After Troops Killed",
+            "CNN, NPR: Saturday = eighth night in a row of US strikes"
+          ],
+          "engine": "websearch",
+          "claim": "미국이 이란에 대한 공습을 9일 연속으로 단행했다"
+        },
+        {
+          "verdict": "검증됨",
+          "confidence": 0.99,
+          "evidence": "【WebSearch 확인】요르단 2명 전사 + 이라크 1명 전사 = 총 3명 사망. 7/18~7/19 이란 공격으로 미군 사망. 미-이란 전쟁 누적 전사자 17명(Stars and Stripes).",
+          "sources": [
+            "Stars and Stripes: latest fatalities bring the United States' combat death toll related to the Iran war to 17",
+            "NPR, Axios, NBC News, CNN 7/18~7/19 복수 보도"
+          ],
+          "engine": "websearch",
+          "claim": "미군 병력이 이란의 공격으로 사망했다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.975,
+      "checked_at": "2026-07-20T07:00:00.000000"
+    },
+    {
+      "article_id": "c490ca0c427a",
+      "title": "Iran War Live Updates: Another U.S. Service Member Is Killed as Two Sides Edge Toward Wider War",
+      "source": "NYT_World",
+      "url": "https://www.nytimes.com/live/2026/07/19/world/iran-war-strikes-trump-hormuz",
+      "importance": 5,
+      "category": "military",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.97,
+          "evidence": "【WebSearch 확인】이라크에서 이란 드론 잔해(UXO) 처리 중 미군 1명 전사(7/19). Stars and Stripes, 29news 확인.",
+          "sources": [
+            "29news (2026-07-19): US service member killed Saturday in Iraq during controlled detonation of Iranian drone",
+            "Stars and Stripes: Iranian attack in Jordan kills 2 US service members, another dies in Iraq"
+          ],
+          "engine": "websearch",
+          "claim": "이라크 북부에서 무인기 처리 중 미군 1명이 전사했다"
+        },
+        {
+          "verdict": "검증됨",
+          "confidence": 0.99,
+          "evidence": "【WebSearch 확인】7/18 요르단 Muwaffaq Salti 공군기지 이란 탄도미사일 공격으로 미군 2명 전사, 1명 실종. 미-이란 전쟁에서 사상 최대 단일 사건 미군 사상자.",
+          "sources": [
+            "NPR: U.S. fires on Iran after deadly attack in Jordan",
+            "Axios: Two US troops killed in Iranian missile attack on Jordan",
+            "Newsweek: US Retaliates After Two American Troops Killed in Iran Attack"
+          ],
+          "engine": "websearch",
+          "claim": "요르단에서 미군 2명이 전사하고 1명이 실종되었다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.98,
+      "checked_at": "2026-07-20T07:00:00.000000"
+    },
+    {
+      "article_id": "982e93bb3dcd",
+      "title": "Increased Cooperation With U.S. Has Put Jordan in Iran's Cross Hairs",
+      "source": "NYT_World",
+      "url": "https://www.nytimes.com/2026/07/19/world/middleeast/iran-war-jordan-us.html",
+      "importance": 5,
+      "category": "country_response",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.96,
+          "evidence": "【WebSearch 확인】요르단 Muwaffaq Salti 공군기지에 미군 병력·전투기 주둔. 이란이 미국의 대이란 작전에 핵심 기지 역할을 하고 있어 이란의 집중 표적이 됨. NBC News 확인.",
+          "sources": [
+            "NBC News: U.S. strikes bridges around key port in Iran, expanding campaign — Jordan hosts key US air assets",
+            "Stars and Stripes: Muwaffaq Salti Air Base in Jordan, which hosts U.S. troops and fighter jets"
+          ],
+          "engine": "websearch",
+          "claim": "요르단이 미국의 대이란 작전에 핵심 거점 역할을 하고 있다"
+        },
+        {
+          "verdict": "검증됨",
+          "confidence": 0.92,
+          "evidence": "【WebSearch 확인】Al Jazeera 보도에 따르면 이란이 바레인, 쿠웨이트 외 요르단을 집중 타격하면서, 다른 걸프 국가들은 미국 기지 사용을 제한하고 있음이 암시됨. 이로 인해 요르단의 전략적 중요성 증대.",
+          "sources": [
+            "Al Jazeera: Iran suggests MoU 'suspended' as 50 killed in US strikes in July",
+            "NBC News: Jordan에 미군 기지 집중 및 이란 공격 집중 패턴 보도"
+          ],
+          "engine": "websearch",
+          "claim": "다른 지역 동맹국들이 미국의 기지 사용을 제한하면서 요르단의 중요성이 증대되었다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.94,
+      "checked_at": "2026-07-20T07:00:00.000000"
+    },
+    {
+      "article_id": "0c307a2e9029",
+      "title": "Why Jordan Is Becoming a New Focus in the U.S.-Iran War",
+      "source": "NYT_World",
+      "url": "https://www.nytimes.com/2026/07/18/world/middleeast/iran-war-jordan-attacks.html",
+      "importance": 5,
+      "category": "military",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.97,
+          "evidence": "【WebSearch 확인】NBC News: '4 different Iranian missile attacks that hit U.S. forces on bases in Jordan over the last week' — 5일간 4회 공격 사실 확인.",
+          "sources": [
+            "NBC News: Two US service members killed, one missing following Iranian strikes in Jordan — 'four different Iranian missile attacks on Jordan in last week'",
+            "Axios: Two US troops killed in Iranian missile attack on Jordan"
+          ],
+          "engine": "websearch",
+          "claim": "이란이 5일간 4회에 걸쳐 요르단 내 미군을 공격했다"
+        },
+        {
+          "verdict": "검증됨",
+          "confidence": 0.98,
+          "evidence": "【WebSearch 확인】7/18 금요일 이란 공격으로 미군 2명 전사, 1명 실종. NPR, Axios, CNN, Al Jazeera 등 복수 확인.",
+          "sources": [
+            "NPR (2026-07-18): U.S. fires on Iran after deadly attack in Jordan",
+            "Axios (2026-07-18): Two US troops killed in Iranian missile attack on Jordan",
+            "ms.now: 2 U.S. troops killed in Jordan, 1 missing after Iranian attacks"
+          ],
+          "engine": "websearch",
+          "claim": "금요일 공격으로 미군 2명이 전사하고 1명이 실종되었다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.975,
+      "checked_at": "2026-07-20T07:00:00.000000"
+    }
+  ]
+}
