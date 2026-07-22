@@ -1,0 +1,241 @@
+{
+  "date": "2026-07-22",
+  "total_signals": 10,
+  "structural_signals": 10,
+  "signals": [
+    {
+      "signal_id": "sig_001",
+      "category": "에너지안보재편",
+      "title_ko": "중동 이중 봉쇄 구조 고착화",
+      "description": "• 후티 반군이 사우디 석유 수출을 목표로 홍해 해상 봉쇄 선언, 실제 유조선 회항 발생\n• 이란의 호르무즈 해협 차단과 결합되어 중동 석유 이중 봉쇄 구조 형성\n• 골드만삭스가 호르무즈 차단 지속 시 유가 120달러 경고, 구조적 고유가 국면 진입 신호",
+      "evidence_titles": [
+        "Houthis Declare a Naval Blockade on Saudi Arabia",
+        "Houthis threaten to attack shipping tankers if they use Saudi Arabian ports on Red Sea",
+        "Trump vows to attack Iranian nuclear facility as Middle East war escalates",
+        "Middle East crisis live: tankers carrying Saudi oil turned back after Houthi threats"
+      ],
+      "evidence_sources": [
+        "ForeignPolicy",
+        "Guardian",
+        "FT",
+        "Guardian"
+      ],
+      "strength": 5,
+      "trend": "신규",
+      "suwon_implication": "수원시 난방비·전기료 장기 상승 압력 구조화. 취약계층 에너지 바우처 소요 예산 대폭 증가 예상, 중장기 에너지 복지 예산 재설계 필요.",
+      "is_structural": true,
+      "detected_date": "2026-07-22",
+      "first_detected": "2026-07-22"
+    },
+    {
+      "signal_id": "sig_003",
+      "category": "지역질서재편",
+      "title_ko": "미-이란 전면전 구조 고착",
+      "description": "• 미국 10차례 연속 공습, 이란 '전면전' 공식 선언으로 일시적 충돌 아닌 장기 대립 구조화\n• 이란이 요르단·바레인·쿠웨이트 등 미 동맹국 민간시설 공격, 지역 전역 전선 확대\n• 미 국방부가 전쟁 비용 375억 달러 공개하며 추가 880억 달러 예산 요청, 장기전 체제 전환 신호",
+      "evidence_titles": [
+        "US launches 10th round of strikes as Iran says it is in 'full-scale war'",
+        "Hegseth tells Senate war on Iran has so far cost $37.5bn at hearing to request more funds",
+        "Two US troops killed and one missing in Jordan after Iranian attacks",
+        "US hits civilian infrastructure as it expands strikes against Iran"
+      ],
+      "evidence_sources": [
+        "Guardian",
+        "Guardian",
+        "Guardian",
+        "Guardian"
+      ],
+      "strength": 5,
+      "trend": "강화",
+      "suwon_implication": "중동 지역 질서 장기 불안정화로 수원시 외국인 근로자(중동 출신) 동향 변화 및 에너지 수입 안정성 장기 저하.",
+      "is_structural": true,
+      "detected_date": "2026-07-22"
+    },
+    {
+      "signal_id": "sig_002",
+      "category": "무역공급망재편",
+      "title_ko": "홍해-호르무즈 이중 차단 공급망 충격",
+      "description": "• 홍해 봉쇄(후티)와 호르무즈 차단(이란)이 동시 발생하여 글로벌 해운 우회 비용 급증\n• 사우디 석유 수출 경로 차단으로 아시아향 에너지·원자재 공급망 재편 불가피\n• 수에즈-홍해 경유 아시아-유럽 무역로 장기 마비 가능성",
+      "evidence_titles": [
+        "Houthis threaten to attack shipping tankers if they use Saudi Arabian ports on Red Sea",
+        "Middle East crisis live: tankers carrying Saudi oil turned back after Houthi threats",
+        "Houthis Declare a Naval Blockade on Saudi Arabia"
+      ],
+      "evidence_sources": [
+        "Guardian",
+        "Guardian",
+        "ForeignPolicy"
+      ],
+      "strength": 4,
+      "trend": "신규",
+      "suwon_implication": "수원시 수출 중소기업 물류비 급증 및 납기 지연 심화. 제조업 원자재 수급 불안정으로 고용 안정성 저하 우려.",
+      "is_structural": true,
+      "detected_date": "2026-07-22",
+      "first_detected": "2026-07-22"
+    },
+    {
+      "signal_id": "sig_005",
+      "category": "민생충격패턴",
+      "title_ko": "전쟁 비용의 민생 전가 구조",
+      "description": "• 미국 국방장관이 전쟁 비용 375억 달러 공개하며 추가 880억 달러 요청, 재정 압박 가시화\n• 이란의 민간 인프라(교량·항만·에너지 시설) 타격과 미국의 보복 공습으로 양측 민생 기반 파괴\n• 장기 전쟁 비용이 각국 재정 압박으로 전환되며 복지·민생 예산 축소 압력 구조화",
+      "evidence_titles": [
+        "Hegseth tells Senate war on Iran has so far cost $37.5bn at hearing to request more funds",
+        "US hits civilian infrastructure as it expands strikes against Iran",
+        "US troops killed: has Trump lost control of Iran war? - The Latest"
+      ],
+      "evidence_sources": [
+        "Guardian",
+        "Guardian",
+        "Guardian"
+      ],
+      "strength": 4,
+      "trend": "신규",
+      "suwon_implication": "중앙정부 재정 압박 시 지방 이전 재원 축소 가능성. 수원시 자체 재원 확보 전략 및 취약계층 보호 예산 선제 확보 필요.",
+      "is_structural": true,
+      "detected_date": "2026-07-22",
+      "first_detected": "2026-07-22"
+    },
+    {
+      "signal_id": "sig_006",
+      "category": "정책패러다임전환",
+      "title_ko": "희토류 공급망 산업정책 개입",
+      "description": "• IMF가 희토류 등 핵심 광물 공급망 병목에 대한 산업정책 개입 효과 분석 보고서 발간\n• 전쟁으로 인한 에너지·원자재 공급 불안이 각국 산업정책 직접 개입 정당화 근거로 작동\n• 시장 메커니즘에서 국가 주도 공급망 확보 전략으로 글로벌 통상 질서 전환 신호",
+      "evidence_titles": [
+        "Industrial Policy and Supply Chain Bottlenecks in Commodity Markets: Evidence from Rare Earth Elements"
+      ],
+      "evidence_sources": [
+        "IMF"
+      ],
+      "strength": 4,
+      "trend": "강화",
+      "suwon_implication": "수원시 제조기업의 핵심 소재 수급 안정성 저하. 공공조달·지역 공급망 강화 정책 필요성 증대.",
+      "is_structural": true,
+      "detected_date": "2026-07-22"
+    },
+    {
+      "signal_id": "sig_009",
+      "category": "민생충격패턴",
+      "title_ko": "외교 중재 실패의 반복 구조",
+      "description": "• 미-이란 양측이 10일 휴전 협상 창구 유지하면서도 타격 지속, '협상=후퇴' 인식으로 교착\n• 트럼프 행정부와 이란 모두 협상 시도를 군사적 약세로 해석하며 외교 공간 축소\n• 전통적 중재 메커니즘이 작동하지 않는 새로운 분쟁 구조 출현 신호",
+      "evidence_titles": [
+        "A 10-day Iran-US pause may reopen talks — but neither wants to blink",
+        "Trump Administration and Iran Officials Risk a Wider War They Cannot Afford"
+      ],
+      "evidence_sources": [
+        "AlMonitor",
+        "NYT"
+      ],
+      "strength": 4,
+      "trend": "신규",
+      "suwon_implication": "국제 위기 장기화 패턴 정착 시 수원시 민생 안정 대책의 단기 대응이 아닌 중장기 구조 설계 필요.",
+      "is_structural": true,
+      "detected_date": "2026-07-22",
+      "first_detected": "2026-07-22"
+    },
+    {
+      "signal_id": "sig_010",
+      "category": "지역질서재편",
+      "title_ko": "이스라엘 직접 개입 임계점",
+      "description": "• 이스라엘이 이란의 미사일 공격 시 '전력 대응' 경고, 중동 전역 전쟁 확대 가능성\n• 미-이란 양자 전쟁이 이스라엘-이란 직접 충돌로 확대되는 구조적 전환점\n• 중동 역내 동맹 체계 재편 및 다자 분쟁 구조로의 질적 변화 신호",
+      "evidence_titles": [
+        "Israel threatens 'full force' response if Iran fires missiles towards it"
+      ],
+      "evidence_sources": [
+        "Guardian"
+      ],
+      "strength": 4,
+      "trend": "신규",
+      "suwon_implication": "중동 전역 분쟁 확대 시 글로벌 에너지 시장 변동성 극대화. 수원시 에너지 취약계층 긴급 지원 체계 상시 가동 태세 필요.",
+      "is_structural": true,
+      "detected_date": "2026-07-22",
+      "first_detected": "2026-07-22"
+    },
+    {
+      "signal_id": "sig_004",
+      "category": "정책패러다임전환",
+      "title_ko": "국부펀드 법적 명확성 요구 확대",
+      "description": "• IMF가 국부펀드(SWF) 규모·역할 확대에 따른 법적 명확성 필요성 강조\n• 에너지 수출국들의 국부펀드가 탈석유 경제 전환 수단으로 재편되는 구조적 변화\n• 전쟁 위험 증가로 자원 수출국들의 재정 안정화·다각화 전략 가속화 신호",
+      "evidence_titles": [
+        "Sovereign Wealth Funds Need Legal Clarity as Their Scale and Mandates Expand"
+      ],
+      "evidence_sources": [
+        "IMF"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "글로벌 에너지 투자 패턴 변화로 수원시 신재생에너지 전환 정책의 국제 벤치마킹 기준 재조정 필요.",
+      "is_structural": true,
+      "detected_date": "2026-07-22",
+      "first_detected": "2026-07-22"
+    },
+    {
+      "signal_id": "sig_007",
+      "category": "정책패러다임전환",
+      "title_ko": "아프리카 AI 격차 구조화 경고",
+      "description": "• IMF가 아프리카 AI 도입 즉시 행동 필요성 강조, 기술 격차 고착화 우려\n• 전쟁으로 인한 글로벌 재정 압박이 개도국 디지털 전환 투자 지연 가능성\n• 에너지 위기와 기술 격차가 결합되어 글로벌 남북 격차 구조적 확대 신호",
+      "evidence_titles": [
+        "Africa Can Grow Faster With AI—If It Moves Now"
+      ],
+      "evidence_sources": [
+        "IMF"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "글로벌 디지털 격차 확대 시 수원시 스마트시티·AI 정책의 국제 협력 기회 축소. 자체 기술 역량 확보 전략 강화 필요.",
+      "is_structural": true,
+      "detected_date": "2026-07-22",
+      "first_detected": "2026-07-22"
+    },
+    {
+      "signal_id": "sig_008",
+      "category": "에너지안보재편",
+      "title_ko": "전력 공급 구조 재편 가속",
+      "description": "• IEA가 2026년 전력 시장 중간 업데이트 발간, 전쟁으로 인한 에너지 구조 변화 추적 강화\n• 벨기에 월별 전력 수급 데이터 공개 등 각국 전력 안보 모니터링 체계 강화\n• 화석연료 공급 불안이 각국 전력 믹스 재편 및 신재생 전환 가속 압력으로 작동",
+      "evidence_titles": [
+        "Electricity Mid-Year Update 2026",
+        "Belgium's monthly electricity balance, 2020-2026"
+      ],
+      "evidence_sources": [
+        "IEA",
+        "IEA"
+      ],
+      "strength": 3,
+      "trend": "강화",
+      "suwon_implication": "중앙정부 전력 정책 변화 시 수원시 전기료 구조 및 신재생에너지 보급 목표 재조정 필요.",
+      "is_structural": true,
+      "detected_date": "2026-07-22"
+    }
+  ],
+  "by_category": {
+    "에너지안보재편": 2,
+    "무역공급망재편": 1,
+    "지역질서재편": 2,
+    "정책패러다임전환": 3,
+    "민생충격패턴": 2
+  },
+  "summary_ko": "• 후티 반군의 홍해 봉쇄와 이란의 호르무즈 차단이 결합되어 중동 석유 이중 봉쇄 구조가 고착화되며 유가 120달러 경고 발생\n• 미-이란이 '전면전' 구조로 전환, 민간 인프라 타격과 880억 달러 추가 전쟁 예산 요청으로 장기전 체제 진입 신호\n• 홍해-호르무즈 동시 차단으로 아시아-유럽 무역로 장기 마비, 글로벌 공급망 우회 비용 급증 및 원자재 수급 재편 불가피\n• 전쟁 비용의 재정 압박이 각국 복지·민생 예산 축소 압력으로 전환되며, 국가 주도 희토류 공급망 확보 등 산업정책 직접 개입 정당화\n• 외교 중재 메커니즘 실패 반복과 이스라엘 직접 개입 임계점 도달로 중동 전역 다자 분쟁 구조 전환 가능성",
+  "top_signal": "중동 이중 봉쇄 구조 고착화",
+  "suwon_action": "• 난방비·전기료 구조적 상승에 대비한 에너지 바우처 예산 긴급 재설계 및 취약계층 지원 체계 즉시 점검\n• 수출 중소기업 물류비 급증 대응 긴급 컨설팅 및 제조업 원자재 수급 모니터링 태스크포스 가동",
+  "weekly_trend": {
+    "정책패러다임전환": {
+      "count": 3,
+      "max_strength": 4
+    },
+    "지역질서재편": {
+      "count": 2,
+      "max_strength": 5
+    },
+    "에너지안보재편": {
+      "count": 2,
+      "max_strength": 5
+    },
+    "민생충격패턴": {
+      "count": 2,
+      "max_strength": 4
+    },
+    "무역공급망재편": {
+      "count": 1,
+      "max_strength": 4
+    }
+  },
+  "generated_at": "2026-07-22T00:06:09.366440"
+}

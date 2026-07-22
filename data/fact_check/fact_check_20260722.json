@@ -1,0 +1,305 @@
+{
+  "date": "2026-07-22",
+  "generated_at": "2026-07-22T00:10:17.293452",
+  "engine": "Claude 단독 (fallback)",
+  "stats": {
+    "articles_checked": 10,
+    "total_claims": 20,
+    "verified": 0,
+    "disputed": 0,
+    "unverified": 20,
+    "verified_rate": 0.0
+  },
+  "results": [
+    {
+      "article_id": "7d1aa180db4f",
+      "title": "Trump vows to attack Iranian nuclear facility as Middle East war escalates",
+      "source": "FT_World",
+      "url": "https://www.ft.com/content/90facd68-4df7-40c2-9383-e989a02fbe51?syn-25a6b1a6=1",
+      "importance": 5,
+      "category": "military",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 미래의 가상 시나리오입니다. 현재 시점(2024년 기준)에서 이러한 사건은 존재하지 않으며, Financial Times의 해당 기사도 확인할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "트럼프 대통령이 이란 핵시설 공격을 공언했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 미래 가상 시나리오입니다. 따라서 이와 관련된 골드만삭스의 유가 전망을 검증할 수 있는 실제 정보가 존재하지 않습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "골드만삭스는 호르무즈 해협 차단 시 유가가 배럴당 120달러까지 상승할 수 있다고 경고했다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.47,
+      "checked_at": "2026-07-22T00:08:49.357983"
+    },
+    {
+      "article_id": "63d3b1cc0c1e",
+      "title": "US launches fresh strikes on Iran, as Trump warns of retaliation for deaths of soldiers",
+      "source": "BBC_MidEast",
+      "url": "https://www.bbc.co.uk/news/articles/cx25wg2x26do?at_medium=RSS&at_campaign=rss",
+      "importance": 5,
+      "category": "military",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁에 대한 정보는 학습 데이터에 존재하지 않습니다. 이는 미래 사건이거나 가상의 시나리오로 보이며, 실제 발생한 역사적 사실로 검증할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "이란이 호르무즈 해협에서 2척의 선박을 공격했다고 발표했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁에 대한 학습된 정보가 없으며, 해당 사건은 미래 시점의 가상 시나리오로 보입니다. 실제 발생한 역사적 사건이 아니므로 검증이 불가능합니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "이란이 바레인과 요르단의 목표물을 공격했다고 발표했다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.47,
+      "checked_at": "2026-07-22T00:08:58.852980"
+    },
+    {
+      "article_id": "005b71a9931e",
+      "title": "Suspected Iranian strikes have targeted the U.S. military in at least 4 countries.",
+      "source": "NYT_World",
+      "url": "https://www.nytimes.com/live/2026/07/20/world/iran-war-strikes-trump-hormuz/suspected-iranian-strikes-have-targeted-us-military-in-at-least-four-countries",
+      "importance": 5,
+      "category": "military",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁에 대한 정보는 학습 데이터에 존재하지 않습니다. 이는 미래의 사건이거나 실제로 발생하지 않은 가상의 시나리오입니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "이란이 최소 4개 국가에 주둔한 미군을 대상으로 공습을 감행했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 미래 시점의 가상 사건입니다. 해당 주장을 검증할 역사적 사실이 존재하지 않습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "광범위한 지역에서 동시 다발적 공격이 발생했다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.95,
+      "checked_at": "2026-07-22T00:09:08.038089"
+    },
+    {
+      "article_id": "7f1eef5d3bfb",
+      "title": "Houthis in Yemen Declare Red Sea Blockade on Saudi Arabia",
+      "source": "NYT_World",
+      "url": "https://www.nytimes.com/2026/07/20/world/middleeast/yemen-houthis-saudi-arabia-red-sea-blockade.html",
+      "importance": 5,
+      "category": "transport",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 다만 역사적으로 이란의 예멘 후티 반군 지원은 여러 출처에서 보고된 바 있으나, 제시된 특정 기사와 2026년 전쟁 맥락에서는 검증할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "이란이 예멘 후티 무장 세력을 지원하고 있다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.85,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 이와 관련된 후티 무장세력의 홍해 봉쇄 선언에 대한 검증은 불가능합니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "후티 무장 세력이 홍해 봉쇄를 공식 선언했다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.42,
+      "checked_at": "2026-07-22T00:09:18.389120"
+    },
+    {
+      "article_id": "e31c76c8163b",
+      "title": "Trump Administration and Iran Officials Risk a Wider War They Cannot Afford",
+      "source": "NYT_World",
+      "url": "https://www.nytimes.com/2026/07/20/world/middleeast/iran-united-states-escalation.html",
+      "importance": 5,
+      "category": "paradigm",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 현재 시점(2024년 기준)에서 미래의 전쟁에 대한 검증은 불가능하며, 해당 NYT 기사의 실존 여부도 확인할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "미국과 이란 간 군사적 긴장 고조 상황이 현재 진행 중이다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 발생하지 않았으며, 미래 사건에 대한 정보는 존재하지 않습니다. 해당 NYT 기사는 실제로 존재하지 않는 것으로 판단됩니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "양국 정부 관계자들이 분쟁 확대 위험에 대해 공개적으로 언급했다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.95,
+      "checked_at": "2026-07-22T00:09:28.675457"
+    },
+    {
+      "article_id": "2179b43992c6",
+      "title": "Houthis Declare a Naval Blockade on Saudi Arabia",
+      "source": "ForeignPolicy",
+      "url": "https://foreignpolicy.com/2026/07/20/houthi-blockade-saudi-iran-war-red-sea-gulf-aden-hormuz/",
+      "importance": 5,
+      "category": "energy",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않았으며, 학습된 데이터에도 해당 사건이나 후티의 사우디 해상 봉쇄 선언에 대한 정보가 존재하지 않습니다. 가상의 미래 시나리오로 판단됩니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "후티가 사우디 석유 해상 봉쇄를 공식 선언했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.85,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 미래 시나리오입니다. 따라서 이와 관련된 후티 반군의 사우디아라비아 해상 봉쇄 주장은 검증할 수 없는 허구의 정보입니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "사우디아라비아를 대상으로 한 해상 봉쇄가 시행되고 있다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.9,
+      "checked_at": "2026-07-22T00:09:38.411797"
+    },
+    {
+      "article_id": "a42108e4abe2",
+      "title": "Middle East crisis live: tankers carrying Saudi oil turned back after Houthi threats; US launches more strikes on Iran",
+      "source": "Guardian_API",
+      "url": "https://www.theguardian.com/world/live/2026/jul/21/us-iran-war-live-updates-strait-of-hormuz-attacks-houthis-blockade-red-sea-middle-east-crisis-latest-news",
+      "importance": 5,
+      "category": "transport",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 해당 사건에 대한 학습된 정보나 역사적 기록이 존재하지 않아 주장을 검증할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "후티가 사우디 석유를 취급하는 모든 탱커에 대해 공격 위협을 선언했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁에 대한 학습된 정보가 없습니다. 이는 제 학습 데이터(2024년 4월 이전) 이후의 미래 사건이므로 검증이 불가능합니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "사우디 석유를 운반하던 탱커들이 후티 위협 이후 회항했다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.0,
+      "checked_at": "2026-07-22T00:09:47.271899"
+    },
+    {
+      "article_id": "0b74bb349083",
+      "title": "Houthis threaten to attack shipping tankers if they use Saudi Arabian ports on Red Sea",
+      "source": "Guardian_API",
+      "url": "https://www.theguardian.com/world/2026/jul/21/houthis-threaten-attack-tankers-saudi-arabian-ports-red-sea-shipping",
+      "importance": 5,
+      "category": "energy",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁에 대한 학습된 정보가 없으며, 해당 사건은 미래 시점입니다. 후티의 홍해 선박 공격 위협에 대한 구체적 정보를 확인할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "후티가 홍해의 사우디 항구를 이용하는 선박에 대해 공격을 위협했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "검증 오류: Expecting value: line 5 column 13 (char 232)",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "이란이 호르무즈 해협을 봉쇄했다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.0,
+      "checked_at": "2026-07-22T00:09:59.538568"
+    },
+    {
+      "article_id": "9bbce211eabe",
+      "title": "US launches 10th round of strikes as Iran says it is in ‘full-scale war’",
+      "source": "Guardian_API",
+      "url": "https://www.theguardian.com/world/2026/jul/20/us-strikes-iran-strait-of-hormuz-oil-prices",
+      "importance": 5,
+      "category": "military",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁에 대한 정보는 학습 데이터에 존재하지 않습니다. 이는 미래의 사건이며, 제 학습 데이터의 시간적 범위를 벗어납니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "미국이 10차례의 공습을 실행했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 현재(2024년 기준)까지 이란과 미국 간 전면전은 없었으며, 해당 주장을 검증할 역사적 사실이 존재하지 않습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "이란이 '전면전(full-scale war)' 상태라고 선언했다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.95,
+      "checked_at": "2026-07-22T00:10:08.472372"
+    },
+    {
+      "article_id": "2c9623ff3e98",
+      "title": "Israel threatens ‘full force’ response if Iran fires missiles towards it",
+      "source": "Guardian_API",
+      "url": "https://www.theguardian.com/world/2026/jul/19/israel-threatens-full-force-response-iran-fires-missiles",
+      "importance": 5,
+      "category": "country_response",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁에 대한 학습된 정보가 없습니다. 이는 실제로 발생하지 않은 미래 또는 가상의 사건으로 보이며, 해당 주장을 검증할 역사적 근거가 존재하지 않습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "이스라엘이 이란의 미사일 공격 시 '전력(full force)' 대응을 위협했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 제공된 출처는 이스라엘-이란 간 긴장 상황을 다루고 있으며, 미국과 이란 간의 실제 교전을 확인할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "미국과 이란이 교전을 벌였다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.95,
+      "checked_at": "2026-07-22T00:10:17.293438"
+    }
+  ]
+}
