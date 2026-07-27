@@ -1,0 +1,308 @@
+{
+  "date": "2026-07-27",
+  "generated_at": "2026-07-27T00:19:20.704951",
+  "engine": "Claude 단독 (fallback)",
+  "stats": {
+    "articles_checked": 10,
+    "total_claims": 20,
+    "verified": 1,
+    "disputed": 0,
+    "unverified": 19,
+    "verified_rate": 5.0
+  },
+  "results": [
+    {
+      "article_id": "719cb822d561",
+      "title": "US pauses Iran strikes as Oman pursues Hormuz transit deal",
+      "source": "FT_World",
+      "url": "https://www.ft.com/content/ffdeacf0-91b8-48fd-9ff8-d8d134ef5f11?syn-25a6b1a6=1",
+      "importance": 5,
+      "category": "diplomacy",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁에 대한 학습된 정보가 없으며, 해당 사건은 미래 시점의 가상 시나리오로 보입니다. 실제 발생 여부를 확인할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "미국이 이란 공격을 이틀 연속 중단했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 해당 전쟁과 관련된 오만의 중재 활동에 대한 정보를 검증할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "오만이 호르무즈 해협 운송 협정 중재를 추진 중이다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.0,
+      "checked_at": "2026-07-27T00:17:43.393165"
+    },
+    {
+      "article_id": "b9413a783a00",
+      "title": "'What was their crime?': BBC visits Iran school where strike killed 120 children",
+      "source": "BBC_MidEast",
+      "url": "https://www.bbc.co.uk/news/articles/cewrx0ldlkko?at_medium=RSS&at_campaign=rss",
+      "importance": 5,
+      "category": "humanitarian",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁에 대한 학습된 정보가 없으며, 해당 사건은 실제로 발생하지 않은 가상의 시나리오로 판단됩니다. 현재(2024년 기준) 미래 사건이므로 검증이 불가능합니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "미나브 학교 공습으로 어린이 120명이 사망했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 해당 BBC 기사나 학교 공습 사건에 대한 실제 정보가 존재하지 않아 검증이 불가능합니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "사건 발생으로부터 5개월이 경과했다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.47,
+      "checked_at": "2026-07-27T00:17:55.723327"
+    },
+    {
+      "article_id": "8f5c5a678704",
+      "title": "Oil prices hit $100 for the first time since May",
+      "source": "BBC_MidEast",
+      "url": "https://www.bbc.co.uk/news/articles/cx2djnzrqk2o?at_medium=RSS&at_campaign=rss",
+      "importance": 5,
+      "category": "energy",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 이와 관련된 유가 변동 정보를 검증할 수 있는 역사적 사실이나 신뢰할 수 있는 데이터가 존재하지 않습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "브렌트유 가격이 5월 이후 처음으로 배럴당 100달러를 돌파했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 해당 전쟁과 관련된 유가 급등 주장을 검증할 수 있는 역사적 정보나 신뢰할 수 있는 출처가 존재하지 않습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "목요일 브렌트유 가격이 6% 이상 급등했다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.47,
+      "checked_at": "2026-07-27T00:18:04.896184"
+    },
+    {
+      "article_id": "a4cab5a911b5",
+      "title": "Iran and the New Rules of Global Power",
+      "source": "ForeignAffairs",
+      "url": "https://www.foreignaffairs.com/united-states/iran-and-new-rules-global-power",
+      "importance": 5,
+      "category": "paradigm",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 해당 전쟁에 대한 학습된 정보가 없으며, 미래 사건을 바탕으로 현재의 주장을 검증할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "미국의 전 지구적 지배력이 약화되고 있다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁에 대한 정보는 학습 데이터에 존재하지 않습니다. 2024년 1월 기준까지 이러한 전쟁은 발생하지 않았으며, 미래 사건에 대한 예측이나 가상 시나리오로 판단됩니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "이란-미국 전쟁이 글로벌 권력 질서 재편을 촉발하고 있다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.95,
+      "checked_at": "2026-07-27T00:18:13.498969"
+    },
+    {
+      "article_id": "b01e90a22936",
+      "title": "U.S.-Iran War Pauses for 2nd Straight Day With Both Sides Holding Off on Strikes",
+      "source": "NYT_World",
+      "url": "https://www.nytimes.com/2026/07/26/world/middleeast/us-iran-war-pause.html",
+      "importance": 5,
+      "category": "military",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 해당 NYT 기사나 요격미사일 재고 부족으로 인한 공격 연기에 대한 검증 가능한 역사적 기록이 존재하지 않습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "트럼프 행정부가 요격미사일 재고 부족으로 공격 계획을 연기했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁에 대한 정보는 학습 데이터에 존재하지 않습니다. 이는 미래 사건이거나 실제로 발생하지 않은 사건으로 보입니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "이란-미국 전쟁이 이틀 연속 휴전 상태에 있다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.95,
+      "checked_at": "2026-07-27T00:18:22.949813"
+    },
+    {
+      "article_id": "7cac57a66ee0",
+      "title": "What’s Left of the Cease-Fire Agreement Between the U.S. and Iran?",
+      "source": "NYT_World",
+      "url": "https://www.nytimes.com/2026/07/25/world/middleeast/us-iran-cease-fire-deal-violations.html",
+      "importance": 5,
+      "category": "diplomacy",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁 및 관련 휴전 협정에 대한 정보는 학습 데이터에 존재하지 않습니다. 이는 미래의 사건이거나 가상의 시나리오로 보입니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "미국-이란 휴전 협정의 14개 항목 중 거의 모두가 위반되었다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 해당 휴전 협정에 대한 검증이 불가능하며, 이는 허구의 시나리오이거나 잘못된 정보입니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "미국과 이란 간 휴전 협정이 체결되었다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.95,
+      "checked_at": "2026-07-27T00:18:34.416906"
+    },
+    {
+      "article_id": "af15932a9a2e",
+      "title": "Trump Holds Off on Major War Escalation Against Iran as Advisers Raise Concerns",
+      "source": "NYT_World",
+      "url": "https://www.nytimes.com/2026/07/25/us/politics/trump-iran-military.html",
+      "importance": 5,
+      "category": "military",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 해당 시점의 미군 방어 미사일 재고 상태에 대한 실제 정보가 존재하지 않습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "공군 방어 미사일 재고가 부족한 상태이다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁에 대한 학습된 정보가 없습니다. 이는 미래 사건이며, 제 학습 데이터(2024년 4월 기준)에 포함되지 않은 내용입니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "중동 지역에서 미군 전력 공백이 발생하고 있다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.0,
+      "checked_at": "2026-07-27T00:18:46.856574"
+    },
+    {
+      "article_id": "f9ba98db6a00",
+      "title": "Iran’s New Leader Is More Open to Pursuing a Nuclear Weapon, U.S. Intelligence Says",
+      "source": "NYT_World",
+      "url": "https://www.nytimes.com/2026/07/24/us/politics/iran-nuclear-weapon.html",
+      "importance": 5,
+      "category": "nuclear",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.85,
+          "evidence": "이란의 전임 최고지도자 알리 하메네이는 공식적으로 핵무기 개발을 금지하는 파트와(종교 포고령)를 발표했으며, 핵무기는 이슬람 율법에 어긋난다는 입장을 여러 차례 표명했습니다.",
+          "sources": [
+            "Supreme Leader Khamenei's fatwa against nuclear weapons",
+            "IAEA reports on Iran's nuclear program"
+          ],
+          "engine": "claude-only",
+          "claim": "이란의 전임 최고지도자는 핵무기 개발을 포기하는 입장을 공식적으로 취했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 이와 관련된 NYT 기사나 미국 정보기관의 평가에 대한 검증이 불가능합니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "미국 정보기관이 이란의 핵무기 프로그램 재개 가능성에 대한 평가를 진행 중이다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.9,
+      "checked_at": "2026-07-27T00:18:59.803794"
+    },
+    {
+      "article_id": "cc10187a27e4",
+      "title": "Trump Meets With Top Advisers as He Weighs a Major Escalation in Iran",
+      "source": "NYT_World",
+      "url": "https://www.nytimes.com/2026/07/24/us/politics/trump-escalation-iran.html",
+      "importance": 5,
+      "category": "military",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 미래 사건입니다. 현재(2024년 기준)까지 이러한 전면전은 없었으며, 해당 주장을 검증할 역사적 사실이 존재하지 않습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "미국-이스라엘 연합군의 이란 작전이 5개월 이상 지속되고 있다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 미래 가상 시나리오입니다. 해당 NYT 기사나 트럼프의 관련 발언에 대한 검증 가능한 역사적 기록이 존재하지 않습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "트럼프는 이 전쟁이 단기 '교전'이 될 것이라고 주장했다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.95,
+      "checked_at": "2026-07-27T00:19:10.025505"
+    },
+    {
+      "article_id": "5d02e94e1042",
+      "title": "How Iran Gained the Upper Hand",
+      "source": "ForeignPolicy",
+      "url": "https://foreignpolicy.com/2026/07/23/iran-us-israel-war-hormuz-trump-options/",
+      "importance": 5,
+      "category": "paradigm",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 해당 ForeignPolicy 기사 및 전쟁 관련 정보는 존재하지 않으며, 학습된 데이터에도 이러한 전쟁에 대한 기록이 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "이란이 미국-이스라엘 연합과의 전쟁에서 상대적 우위를 확보하고 있다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 해당 전쟁에 대한 지정학적 분석이나 힘의 균형 변화에 대한 주장을 검증할 수 있는 역사적 사실이나 신뢰할 수 있는 정보가 존재하지 않습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "지정학적 힘의 균형이 초기 예측과 달리 이란 방향으로 변화하고 있다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.95,
+      "checked_at": "2026-07-27T00:19:20.704936"
+    }
+  ]
+}

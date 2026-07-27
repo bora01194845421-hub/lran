@@ -1,0 +1,260 @@
+{
+  "date": "2026-07-27",
+  "total_signals": 11,
+  "structural_signals": 11,
+  "signals": [
+    {
+      "signal_id": "sig_006",
+      "category": "에너지안보재편",
+      "title_ko": "유가 $100 돌파와 구조적 고착화",
+      "description": "• 브렌트유 $100 돌파(2025년 5월 이후 처음), 6% 이상 급등\n• 중동 전쟁 확전으로 고유가 일시 현상 아닌 구조적 가격대 진입 신호\n• 호르무즈 해협 통행 협상 진행 중이나 장기 봉쇄 리스크 지속",
+      "evidence_titles": [
+        "Oil prices hit $100 for the first time since May",
+        "US pauses Iran strikes as Oman pursues Hormuz transit deal",
+        "Donald Trump says decision on 'massive attack' against Iran is close"
+      ],
+      "evidence_sources": [
+        "BBC",
+        "FT",
+        "Guardian"
+      ],
+      "strength": 5,
+      "trend": "강화",
+      "suwon_implication": "수원시 대중교통 운영비·난방비 급등 대비 긴급 예산 편성 필요. 취약계층 에너지 바우처 확대 검토.",
+      "is_structural": true,
+      "detected_date": "2026-07-27"
+    },
+    {
+      "signal_id": "sig_007",
+      "category": "지역질서재편",
+      "title_ko": "이란 핵무장 의지 전환 감지",
+      "description": "• 미 정보기관, 이란 신임 최고지도자가 핵무기 개발 의지 강화 평가\n• 이전 지도자의 핵무기 포기 입장에서 180도 전환 신호\n• 중동 핵확산 구조적 진입 가능성, 사우디 핵협정과 연쇄 반응 우려",
+      "evidence_titles": [
+        "Iran's New Leader Is More Open to Pursuing a Nuclear Weapon, U.S. Intelligence Says",
+        "The Guardian view on a US-Saudi nuclear agreement: an offer that further erodes international safeguards"
+      ],
+      "evidence_sources": [
+        "NYT",
+        "Guardian"
+      ],
+      "strength": 5,
+      "trend": "신규",
+      "suwon_implication": "중동 정세 불안정성 장기화 전망. 수원시 에너지 수입 다변화 전략 및 비상 대응 매뉴얼 재점검 필요.",
+      "is_structural": true,
+      "detected_date": "2026-07-27",
+      "first_detected": "2026-07-27"
+    },
+    {
+      "signal_id": "sig_001",
+      "category": "에너지안보재편",
+      "title_ko": "에너지 파트너십 신뢰 중심 전환",
+      "description": "• OPEC, IEA가 걸프 산유국 신뢰성 공개 문제 제기 시작\n• 가격 중심→공급 안정성·신뢰 중심으로 에너지 파트너십 평가 기준 전환 신호\n• 호르무즈 봉쇄 장기화가 글로벌 에너지 거래 구조 재편 촉발",
+      "evidence_titles": [
+        "Why is the IEA questioning the reliability of Gulf producers?",
+        "US pauses Iran strikes as Oman pursues Hormuz transit deal"
+      ],
+      "evidence_sources": [
+        "OPEC",
+        "FT"
+      ],
+      "strength": 4,
+      "trend": "신규",
+      "suwon_implication": "수원시 에너지 공급 다변화 전략 필요. 단기 가격보다 장기 공급 안정성 중심 계약 구조 검토 시점.",
+      "is_structural": true,
+      "detected_date": "2026-07-27",
+      "first_detected": "2026-07-27"
+    },
+    {
+      "signal_id": "sig_002",
+      "category": "에너지안보재편",
+      "title_ko": "글로벌 전력수요 급증 구조화",
+      "description": "• IEA, 전력수요 증가 가속화 공식 전망 발표 (AI·전기화 동시 진행)\n• 최근 충격(전쟁·공급망)에 대응한 전력 시스템 구조적 조정 국면 진입\n• EU 전기화 목표 달성을 위한 저렴한 전력 공급 필수 요건으로 명시",
+      "evidence_titles": [
+        "Global electricity demand growth set to accelerate as power systems adjust to recent shocks",
+        "Electricity Mid-Year Update 2026",
+        "Affordable electricity is essential for the European Union's electrification goals"
+      ],
+      "evidence_sources": [
+        "IEA",
+        "IEA",
+        "IEA"
+      ],
+      "strength": 4,
+      "trend": "강화",
+      "suwon_implication": "수원시 전력 인프라 장기 투자 계획 재검토 필요. 산업단지·주거지 전력 수요 급증 대비 선제적 용량 확보 검토.",
+      "is_structural": true,
+      "detected_date": "2026-07-27"
+    },
+    {
+      "signal_id": "sig_004",
+      "category": "무역공급망재편",
+      "title_ko": "전략 부문 산업정책-무역 긴장 구조화",
+      "description": "• IMF, 전략 부문의 산업정책과 무역 긴장 관계 공식 연구 발표\n• 반도체·에너지 등 전략 산업에서 자유무역→산업정책 중심 전환 가속\n• 국가 간 무역 긴장이 일시적 현상이 아닌 구조적 패턴으로 고착화 신호",
+      "evidence_titles": [
+        "IMF Working Papers Volume 2026 Issue 155: Industrial Policy and Trade Tensions in Strategic Sectors",
+        "Promoting the Development of the Semiconductor Ecosystem in Panama"
+      ],
+      "evidence_sources": [
+        "IMF",
+        "OECD"
+      ],
+      "strength": 4,
+      "trend": "강화",
+      "suwon_implication": "수원시 전략 산업(반도체·배터리 등) 육성 시 글로벌 공급망 재편 고려한 자립도 제고 전략 필요.",
+      "is_structural": true,
+      "detected_date": "2026-07-27"
+    },
+    {
+      "signal_id": "sig_008",
+      "category": "무역공급망재편",
+      "title_ko": "미국 방공망 무기 재고 고갈 위기",
+      "description": "• 트럼프, 방공 미사일 재고 부족으로 확전 계획 연기\n• 중동 방공 무기 재고 위험 수준까지 감소, 공급망 구조적 취약성 노출\n• 군사 작전 제약이 무기 생산·공급 체계 재설계 촉발 신호",
+      "evidence_titles": [
+        "U.S.-Iran War Pauses for 2nd Straight Day With Both Sides Holding Off on Strikes",
+        "Trump Holds Off on Major War Escalation Against Iran as Advisers Raise Concerns",
+        "US pauses Iran attacks for second night after Trump advised to halt bombing"
+      ],
+      "evidence_sources": [
+        "NYT",
+        "NYT",
+        "Guardian"
+      ],
+      "strength": 4,
+      "trend": "신규",
+      "suwon_implication": "글로벌 방산 공급망 재편 가능성. 수원시 방산 협력업체 지원 정책 재검토 및 공급망 다변화 지원 검토.",
+      "is_structural": true,
+      "detected_date": "2026-07-27",
+      "first_detected": "2026-07-27"
+    },
+    {
+      "signal_id": "sig_009",
+      "category": "지역질서재편",
+      "title_ko": "중국 기술·러시아 전술 융합 확산",
+      "description": "• 이란, 중국 기술과 러시아 전술 결합해 미군 기지 공격 정확도·치명성 급증\n• 걸프 지역 미군 방어망의 구조적 취약점 노출\n• 기술 이전과 전술 융합이 지역 군사 균형을 근본적으로 변화시키는 패턴",
+      "evidence_titles": [
+        "How Chinese tech and Russian tactics are aiding Iran's bombing of US bases"
+      ],
+      "evidence_sources": [
+        "Guardian"
+      ],
+      "strength": 4,
+      "trend": "신규",
+      "suwon_implication": "동아시아 안보 환경 변화 간접 영향. 수원시 안보 관련 산업 육성 및 기술 유출 방지 체계 점검.",
+      "is_structural": true,
+      "detected_date": "2026-07-27",
+      "first_detected": "2026-07-27"
+    },
+    {
+      "signal_id": "sig_003",
+      "category": "정책패러다임전환",
+      "title_ko": "AI 금융안정 리스크 중앙은행 대응",
+      "description": "• IMF, AI 가속화에 따른 금융안정 리스크 중앙은행 대응 방안 공식 제시\n• 기술 변화가 통화·금융정책 설계 자체를 변경하는 구조적 국면 진입\n• 단순 규제가 아닌 중앙은행 정책 프레임워크 재설계 단계",
+      "evidence_titles": [
+        "How Central Banks Can Contain Financial Stability Risks as AI Accelerates Change"
+      ],
+      "evidence_sources": [
+        "IMF"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "수원시 금융·핀테크 육성 정책 수립 시 AI 리스크 관리 체계 선제 반영 필요. 지역 금융안정성 모니터링 강화.",
+      "is_structural": true,
+      "detected_date": "2026-07-27",
+      "first_detected": "2026-07-27"
+    },
+    {
+      "signal_id": "sig_005",
+      "category": "민생충격패턴",
+      "title_ko": "민간인 피해 규모의 전쟁 장기화",
+      "description": "• 이란 학교 공습으로 아동 120명 사망, 민간인 피해 구조화\n• 전쟁 5개월 경과 후에도 종료 전망 없이 장기화 국면\n• 미국 국방부 공식 사상자 600명 돌파, 전쟁 비용·인명 손실 누적 가속",
+      "evidence_titles": [
+        "'What was their crime?': BBC visits Iran school where strike killed 120 children",
+        "Pentagon reports more than 600 Iran war casualties in quiet database update",
+        "Trump Meets With Top Advisers as He Weighs a Major Escalation in Iran"
+      ],
+      "evidence_sources": [
+        "BBC",
+        "Guardian",
+        "NYT"
+      ],
+      "strength": 3,
+      "trend": "강화",
+      "suwon_implication": "수원시 외국인 주민(중동 출신) 심리 안정 프로그램 필요. 전쟁 장기화에 따른 국제 인도적 지원 참여 검토.",
+      "is_structural": true,
+      "detected_date": "2026-07-27"
+    },
+    {
+      "signal_id": "sig_010",
+      "category": "정책패러다임전환",
+      "title_ko": "정전 협상의 조건부 상호성 등장",
+      "description": "• 이란, 미국이 공격 중단하면 자국도 중단하겠다는 조건부 제안\n• 기존 14개 항목 휴전 합의 대부분 위반된 상태에서 새로운 협상 틀 모색\n• 전쟁 종료 방식이 일방적 승리→상호 조건부 동결 구조로 전환 신호",
+      "evidence_titles": [
+        "Iran says it will halt strikes as long as US bombing pause holds",
+        "What's Left of the Cease-Fire Agreement Between the U.S. and Iran?",
+        "Trump is giving Iran talks 'a little bit of room,' US ambassador to UN says"
+      ],
+      "evidence_sources": [
+        "AlMonitor",
+        "NYT",
+        "AlMonitor"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "전쟁 종료 방식의 불확실성 지속. 수원시 에너지·물가 안정 정책의 중장기 시나리오 다변화 필요.",
+      "is_structural": true,
+      "detected_date": "2026-07-27",
+      "first_detected": "2026-07-27"
+    },
+    {
+      "signal_id": "sig_011",
+      "category": "에너지안보재편",
+      "title_ko": "아프리카 역내 전력망 통합 가속",
+      "description": "• 세계은행, 잠비아-말라위 전력망 연결 프로젝트 지원 공식화\n• 역내 에너지 교역 활성화를 통한 성장·일자리 창출 모델 확산\n• 중동 에너지 불안정 속 아프리카 역내 자립형 에너지 체제 구축 가속 신호",
+      "evidence_titles": [
+        "World Bank Group Supports Zambia–Malawi Interconnector to Power Growth, Jobs, and Regional Energy Trade"
+      ],
+      "evidence_sources": [
+        "WorldBank"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "글로벌 에너지 지역화 추세 강화. 수원시 에너지 자립도 제고 및 분산형 전원 확대 정책 참고 사례.",
+      "is_structural": true,
+      "detected_date": "2026-07-27",
+      "first_detected": "2026-07-27"
+    }
+  ],
+  "by_category": {
+    "에너지안보재편": 4,
+    "정책패러다임전환": 2,
+    "무역공급망재편": 2,
+    "민생충격패턴": 1,
+    "지역질서재편": 2
+  },
+  "summary_ko": "• 에너지 패러다임 전환: 브렌트유 $100 돌파와 함께 에너지 파트너십이 '가격 중심'→'공급 안정성·신뢰 중심'으로 근본 전환 중\n• 전력수요 구조적 급증: IEA가 AI·전기화 동시 진행에 따른 글로벌 전력수요 가속화 공식 경고, 전력 인프라 재설계 국면\n• 지역 군사질서 재편: 이란 신임 최고지도자의 핵무장 의지 전환과 중국 기술-러시아 전술 융합으로 중동 안보 구조 근본 변화\n• 산업정책 우선시대 진입: IMF가 전략 부문(반도체·에너지)에서 자유무역→산업정책 중심 전환 구조화 확인\n• 전쟁 장기화 고착: 민간인 피해 구조화·미군 방공무기 재고 고갈·조건부 정전 협상 등 단기 종료 불가능 패턴 명확화",
+  "top_signal": "유가 $100 돌파와 구조적 고착화",
+  "suwon_action": "긴급: 대중교통·난방비 급등 대비 예산 편성 및 취약계층 에너지 바우처 확대 즉시 검토\n중장기: 전력 인프라 용량 확보 계획 재수립, 에너지 공급 다변화 전략 수립 착수",
+  "weekly_trend": {
+    "에너지안보재편": {
+      "count": 4,
+      "max_strength": 5
+    },
+    "지역질서재편": {
+      "count": 2,
+      "max_strength": 5
+    },
+    "정책패러다임전환": {
+      "count": 2,
+      "max_strength": 3
+    },
+    "무역공급망재편": {
+      "count": 2,
+      "max_strength": 4
+    },
+    "민생충격패턴": {
+      "count": 1,
+      "max_strength": 3
+    }
+  },
+  "generated_at": "2026-07-27T00:14:48.434358"
+}
