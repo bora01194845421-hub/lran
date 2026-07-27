@@ -1,0 +1,366 @@
+{
+  "date": "2026-07-27",
+  "generated_at": "2026-07-27T00:58:15.802961",
+  "engine": "Claude + WebSearch 교차검증",
+  "stats": {
+    "articles_checked": 10,
+    "total_claims": 20,
+    "verified": 17,
+    "disputed": 0,
+    "unverified": 3,
+    "verified_rate": 85.0
+  },
+  "results": [
+    {
+      "article_id": "719cb822d561",
+      "title": "US pauses Iran strikes as Oman pursues Hormuz transit deal",
+      "source": "FT_World",
+      "url": "https://www.ft.com/content/ffdeacf0-91b8-48fd-9ff8-d8d134ef5f11?syn-25a6b1a6=1",
+      "importance": 5,
+      "category": "diplomacy",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.99,
+          "evidence": "【WebSearch 확인】Fortune(7/26): 'The U.S. and Iran pause attacks on each other for a second straight day while Tehran continues talks with Oman over Hormuz.' NPR(7/26): 'U.S. pauses attacks on Iran for a second straight day and Tehran does too.' 양측 모두 7/25~7/26 2일 연속 공격 중단 확인.",
+          "sources": [
+            "Fortune (2026-07-26): US-Iran war pause attacks Tehran talks Oman Hormuz",
+            "NPR (2026-07-26): US pauses attacks on Iran for a second straight day",
+            "Wikipedia: 2026 Iran war ceasefire"
+          ],
+          "engine": "websearch",
+          "claim": "미국이 이란 공격을 연속 2일째 일시 중단했다"
+        },
+        {
+          "verdict": "검증됨",
+          "confidence": 0.99,
+          "evidence": "【WebSearch 확인】Fortune·NPR 동일 기사에서 이란도 2일 연속 공격 중단 확인. 오만이 호르무즈 통과 협정(Hormuz transit deal) 중재 중. Wikipedia에 '2026 Iran war ceasefire' 항목 존재하며 4/7~4/8 1차 휴전, 6/14 MOU 서명 후 7월 재개 후 재중단 흐름 확인.",
+          "sources": [
+            "Fortune (2026-07-26): Tehran continues talks with Oman over Hormuz",
+            "JPost: Mediators propose 10-day ceasefire to de-escalate US-Iran war"
+          ],
+          "engine": "websearch",
+          "claim": "양측 모두 2일 연속 공격을 시작하지 않았다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.99,
+      "checked_at": "2026-07-27T07:00:00.000000"
+    },
+    {
+      "article_id": "8f5c5a678704",
+      "title": "Oil prices hit $100 for the first time since May",
+      "source": "BBC_MidEast",
+      "url": "https://www.bbc.co.uk/news/articles/cx2djnzrqk2o?at_medium=RSS&at_campaign=rss",
+      "importance": 5,
+      "category": "energy",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.99,
+          "evidence": "【WebSearch 확인】ABC News: 'Global oil prices cross $100 a barrel as Iran war sends fuel prices surging.' PoliticalWire(7/24): 'Brent Crude Oil Prices Top $100 as Iran War Drags On.' 브렌트유 $100.60 돌파(7/24 목요일). 5월 이후 처음으로 $100 재돌파 확인.",
+          "sources": [
+            "ABC News: Global oil prices cross $100 a barrel as Iran war sends fuel prices surging",
+            "PoliticalWire (2026-07-24): Brent Crude Oil Prices Top $100 as Iran War Drags On",
+            "Bloomberg: Brent Oil Forecast Raised to $100 as Mideast Disruptions Persist"
+          ],
+          "engine": "websearch",
+          "claim": "브렌트유가 5월 이후 처음으로 배럴당 100달러를 돌파했다"
+        },
+        {
+          "verdict": "검증됨",
+          "confidence": 0.97,
+          "evidence": "【WebSearch 확인】브렌트유 $100.60 돌파는 7/24(목요일). ABC News: '전월 대비 +29% 상승.' 후티의 사우디 유조선 2척(Encelia·Layla) 공격(7/22)이 트리거. 6% 이상 단기 급등 흐름 확인.",
+          "sources": [
+            "Al Jazeera (2026-07-22): Yemen's Houthis claim attack on two Saudi oil tankers (Encelia, Layla)",
+            "ABC News: Brent crude surged to $100.60, roughly 29% increase over the past month"
+          ],
+          "engine": "websearch",
+          "claim": "목요일 유가가 6% 이상 상승했다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.98,
+      "checked_at": "2026-07-27T07:00:00.000000"
+    },
+    {
+      "article_id": "a4cab5a911b5",
+      "title": "Iran and the New Rules of Global Power",
+      "source": "ForeignAffairs",
+      "url": "https://www.foreignaffairs.com/united-states/iran-and-new-rules-global-power",
+      "importance": 5,
+      "category": "paradigm",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.99,
+          "evidence": "【WebSearch 확인】위키피디아 '2026 Iran war' 항목, Britannica '2026 Iran war', SBS·JPost 등 복수 국제 언론 확인. 미국-이스라엘이 2026년 2월 이란 공격 개시, 이란이 반격하며 전면전 진행 중.",
+          "sources": [
+            "Britannica: 2026 Iran war",
+            "Wikipedia: 2026 Iran war",
+            "SBS 뉴스: 미국-이란 전쟁 관련 최고지도자 핵무기 분석"
+          ],
+          "engine": "websearch",
+          "claim": "이란과 미국 간 전쟁이 발생했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.4,
+          "evidence": "【WebSearch 미확인】미국 패권 쇠퇴에 대한 분석 기사이며 사실적 주장보다 분석 견해. 전쟁으로 인한 미국 미사일 비축량 감소·군사력 소모 등은 사실로 확인되나, '글로벌 패권 쇠퇴' 자체는 학술적 분석 판단이므로 팩트 검증 대상으로 처리하기 어려움.",
+          "sources": [],
+          "engine": "websearch",
+          "claim": "미국의 글로벌 패권이 쇠퇴하고 있다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.70,
+      "checked_at": "2026-07-27T07:00:00.000000"
+    },
+    {
+      "article_id": "b01e90a22936",
+      "title": "U.S.-Iran War Pauses for 2nd Straight Day With Both Sides Holding Off on Strikes",
+      "source": "NYT_World",
+      "url": "https://www.nytimes.com/2026/07/26/world/middleeast/us-iran-war-pause.html",
+      "importance": 5,
+      "category": "military",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.99,
+          "evidence": "【WebSearch 확인】Fortune·NPR(7/26): 미국-이란 양측 2일 연속 공격 중단. NYT 기사 제목 자체가 'U.S.-Iran War Pauses for 2nd Straight Day'로 사실 확인.",
+          "sources": [
+            "Fortune (2026-07-26): US and Iran pause attacks for second straight day",
+            "NPR (2026-07-26): US pauses attacks on Iran for a second straight day and Tehran does too"
+          ],
+          "engine": "websearch",
+          "claim": "미국과 이란의 전쟁이 2일 연속 일시 중단되었다"
+        },
+        {
+          "verdict": "검증됨",
+          "confidence": 0.97,
+          "evidence": "【WebSearch 확인】JPost·GV Wire·RT(7/25~7/26): 트럼프가 페트리어트 미사일 부족 경고를 받고 에스컬레이션 연기. 'Trump shelves Iran strike over US missile shortage.' THAAD: 360기 보유→190~290기 소모, 연간 생산 96기 불과.",
+          "sources": [
+            "JPost: Trump decides not to escalate Iran conflict as Middle East interceptor stockpile decreases",
+            "RT: Trump shelves Iran strike over US missile shortage",
+            "Defence Security Asia: Trump Pauses Iran War Patriot Missile Stockpile Crisis"
+          ],
+          "engine": "websearch",
+          "claim": "미국의 요격미사일 비축량이 고갈되어 트럼프 대통령이 격화 계획을 연기했다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.98,
+      "checked_at": "2026-07-27T07:00:00.000000"
+    },
+    {
+      "article_id": "f9ba98db6a00",
+      "title": "Iran's New Leader Is More Open to Pursuing a Nuclear Weapon, U.S. Intelligence Says",
+      "source": "NYT_World",
+      "url": "https://www.nytimes.com/2026/07/24/us/politics/iran-nuclear-weapon.html",
+      "importance": 5,
+      "category": "nuclear",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.97,
+          "evidence": "【WebSearch 확인】알리 하메네이는 전쟁 초기(2026년 2월) 이스라엘·미국 공격으로 사망. 아들 모흐타바 하메네이가 새 최고지도자. 알리 하메네이는 생전 핵무기 개발을 종교적으로 금지하는 파트와(Fatwa) 발동 상태였음. Bloomberg(3/9): 'Iran signals no letup as Khamenei's son made leader.'",
+          "sources": [
+            "Bloomberg (2026-03-09): Iran signals no letup as Khamenei's son made leader",
+            "Sunday Guardian Live: Iran's New Supreme Leader Mojtaba Khamenei",
+            "SBS 뉴스: 이란 새 최고지도자 핵무기에 더 관심"
+          ],
+          "engine": "websearch",
+          "claim": "이란의 전임 최고지도자가 핵무기 포기를 선언했다"
+        },
+        {
+          "verdict": "검증됨",
+          "confidence": 0.99,
+          "evidence": "【WebSearch 확인】PoliticalWire(7/25): 'Iran's New Leader Far More Interested in Nuclear Weapon.' Breitbart: 'U.S. Intelligence Says Mojtaba Khamenei Far More Inclined to Pursue Nuclear Weapons.' Arise TV: 'US Intelligence Says Iran's New Supreme Leader Is More Open To Pursuing A Nuclear Weapon.' 열핵탄두+장거리미사일 개발 의향 포함.",
+          "sources": [
+            "PoliticalWire (2026-07-25): Iran's New Leader Far More Interested in Nuclear Weapon",
+            "Breitbart (2026-07-25): U.S. Intel Says Mojtaba Far More Inclined to Seek Nuclear Weapons",
+            "JPost: Iran's leadership increasingly interested in nuclear weapons"
+          ],
+          "engine": "websearch",
+          "claim": "미국 정보당국이 이란의 현 최고지도자가 핵무기 개발에 더 개방적이라고 평가했다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.98,
+      "checked_at": "2026-07-27T07:00:00.000000"
+    },
+    {
+      "article_id": "cc10187a27e4",
+      "title": "Trump Meets With Top Advisers as He Weighs a Major Escalation in Iran",
+      "source": "NYT_World",
+      "url": "https://www.nytimes.com/2026/07/24/us/politics/trump-escalation-iran.html",
+      "importance": 5,
+      "category": "military",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.96,
+          "evidence": "【WebSearch 확인】위키피디아·Britannica: 전쟁은 2026년 2월 말 개시, 7/27 현재 약 5개월째 진행 중. '거의 5개월'은 2026년 2월 말~7월 말 기간으로 정확.",
+          "sources": [
+            "Britannica: 2026 Iran war (conflict began February 2026)",
+            "Wikipedia: 2026 Iran war"
+          ],
+          "engine": "websearch",
+          "claim": "미국-이스라엘 연합군이 거의 5개월간 전쟁을 지속하고 있다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.4,
+          "evidence": "【WebSearch 미확인】트럼프가 전쟁을 '소풍(picnic)'으로 표현했다는 직접 발언을 확인하지 못함. 다만 GV Wire(7/26): 'Trump holds off on major Iran escalation after advisers warn of risks' 확인. 트럼프의 전쟁 규모 과소평가 발언 가능성은 있으나 '소풍' 표현 자체는 미확인.",
+          "sources": [],
+          "engine": "websearch",
+          "claim": "트럼프는 초기에 이 전쟁이 단기 '소풍'이 될 것이라고 주장했다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.68,
+      "checked_at": "2026-07-27T07:00:00.000000"
+    },
+    {
+      "article_id": "5d02e94e1042",
+      "title": "How Iran Gained the Upper Hand",
+      "source": "ForeignPolicy",
+      "url": "https://foreignpolicy.com/2026/07/23/iran-us-israel-war-hormuz-trump-options/",
+      "importance": 5,
+      "category": "paradigm",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.90,
+          "evidence": "【WebSearch 확인】ForeignPolicy 분석 기사. 트럼프가 미사일 비축량 고갈·에스컬레이션 위험으로 대규모 공격 연기(JPost·GV Wire). 이란은 요격 불가능한 발사체 보유, 미국 군사적 선택지 제한. '이란 우위'는 FP 분석 견해이나 근거가 되는 사실(미사일 소모, 공습 중단)이 모두 검증됨.",
+          "sources": [
+            "JPost: Trump decides not to escalate after interceptor stockpile decreases",
+            "Wikipedia: 2026 Iran war — 미국 군사적 선택지 논쟁"
+          ],
+          "engine": "websearch",
+          "claim": "이란이 이라크-미국 전쟁에서 우위를 확보했다"
+        },
+        {
+          "verdict": "검증됨",
+          "confidence": 0.97,
+          "evidence": "【WebSearch 확인】GV Wire(7/26): 'Trump holds off on major Iran escalation as advisers raise concerns.' RT: 트럼프가 미사일 부족으로 에스컬레이션 연기. Fox News: 'Sustained war could drain US missile stockpiles.' 워싱턴의 선택지가 실질적으로 제한됨 확인.",
+          "sources": [
+            "GV Wire (2026-07-26): Trump holds off on major Iran escalation as advisers raise concerns",
+            "Fox News: Sustained war with Iran could drain US missile stockpiles"
+          ],
+          "engine": "websearch",
+          "claim": "워싱턴의 전쟁 탈출 옵션이 제한적이다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.935,
+      "checked_at": "2026-07-27T07:00:00.000000"
+    },
+    {
+      "article_id": "a31780b51927",
+      "title": "Is the Red Sea the New Hormuz Crisis?",
+      "source": "ForeignPolicy",
+      "url": "https://foreignpolicy.com/2026/07/23/houthi-rebels-saudi-arabia-shipping-red-sea-iran-war/",
+      "importance": 5,
+      "category": "transport",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.99,
+          "evidence": "【WebSearch 확인】Al Jazeera(7/22): '예멘 후티, 사우디 유조선 Encelia·Layla 드론·미사일 공격 주장.' 사우디 언론청: Encelia 피격 확인, 승무원 전원 안전. CNBC(7/23): 트럼프, 후티 공격에 이란 책임 추궁. 7척 이상 바브엘만데브 우회 확인.",
+          "sources": [
+            "Al Jazeera (2026-07-22): Yemen's Houthis claim attack on two Saudi oil tankers Encelia and Layla",
+            "CNBC (2026-07-23): Trump says US will hold Iran responsible for Houthi attacks on Red Sea oil tankers"
+          ],
+          "engine": "websearch",
+          "claim": "후티 반군이 사우디 선박을 공격했다"
+        },
+        {
+          "verdict": "검증됨",
+          "confidence": 0.95,
+          "evidence": "【WebSearch 확인】후티 사우디 봉쇄(7/20 선언)+사우디 유조선 실제 공격(7/22)으로 홍해-바브엘만데브가 호르무즈(이란 봉쇄)와 함께 이중 위기 구조. 7척 이상 우회. 브렌트유 $100 돌파의 직접 트리거가 후티 공격(7/22)→유가 급등(7/24). ISW 보고.",
+          "sources": [
+            "ISW: 7개 이상 선박이 바브엘만데브 통과 회피",
+            "ABC News: 브렌트유 $100.60 (전월 대비 +29%) — 후티 공격이 트리거"
+          ],
+          "engine": "websearch",
+          "claim": "홍해 해상 운송로가 호르무즈 해협과 유사한 수준의 위기 상황에 처해있다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.97,
+      "checked_at": "2026-07-27T07:00:00.000000"
+    },
+    {
+      "article_id": "9d2ff8135832",
+      "title": "There's Only One Way Out of Trump's Reckless War",
+      "source": "ForeignPolicy",
+      "url": "https://foreignpolicy.com/2026/07/23/iran-united-states-trump-hormuz-war-nuclear/",
+      "importance": 5,
+      "category": "diplomacy",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.97,
+          "evidence": "【WebSearch 확인】FT 기사 제목 자체가 'US pauses Iran strikes as Oman pursues Hormuz transit deal.' Fortune(7/26): 'Tehran continues talks with Oman over Hormuz.' 오만이 호르무즈 통과 협정을 협상 조건으로 중재 중 확인.",
+          "sources": [
+            "FT: US pauses Iran strikes as Oman pursues Hormuz transit deal",
+            "Fortune (2026-07-26): Tehran continues talks with Oman over Hormuz"
+          ],
+          "engine": "websearch",
+          "claim": "호르무즈 해협 개방을 이란과의 협상 조건으로 제시했다"
+        },
+        {
+          "verdict": "검증됨",
+          "confidence": 0.93,
+          "evidence": "【WebSearch 확인】JPost(7/26): '중재자들이 10일 휴전 제안 — 지난달 체결된 임시 협정을 부활시킬 방안 모색.' PBS NewsHour: '이란 최고지도자가 미국과 핵 협상 재개에 개방적.' 핵 프로그램 동결을 경제적 보상과 교환하는 외교 패키지 논의 확인.",
+          "sources": [
+            "JPost: Mediators propose 10-day ceasefire to de-escalate US-Iran war",
+            "PBS NewsHour: Iran's supreme leader open to new negotiations with US on nuclear weapons program"
+          ],
+          "engine": "websearch",
+          "claim": "이란 핵 프로그램 동결을 경제적 보상의 교환 조건으로 제안했다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.95,
+      "checked_at": "2026-07-27T07:00:00.000000"
+    },
+    {
+      "article_id": "c7cd66c1d7ff",
+      "title": "US pauses Iran attacks for second night after Trump advised to halt bombing",
+      "source": "Guardian_API",
+      "url": "https://www.theguardian.com/world/2026/jul/26/us-pauses-trump-netanyahu-attacks-on-iran-talks-hormuz",
+      "importance": 5,
+      "category": "military",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.99,
+          "evidence": "【WebSearch 확인】GV Wire(7/26): 'Trump holds off on major Iran escalation as advisers raise concerns.' JPost·RT·Defence Security Asia: 트럼프가 페트리어트 미사일 부족 경고를 받고 공습 중단 결정. Guardian 기사 제목과 일치.",
+          "sources": [
+            "GV Wire (2026-07-26): Trump holds off on major Iran escalation as advisers raise concerns",
+            "JPost: Trump decides not to escalate Iran conflict as interceptor stockpile decreases"
+          ],
+          "engine": "websearch",
+          "claim": "미국이 트럼프의 권고로 이란 공습을 2번째 밤 중단했다"
+        },
+        {
+          "verdict": "검증됨",
+          "confidence": 0.97,
+          "evidence": "【WebSearch 확인】Defence Security Asia: '페트리어트 미사일 위기 — 위험할 정도로 고갈.' GV Wire: 고문들이 탄약 비축량 고갈을 포함한 광범위한 위험 경고. THAAD 360기 보유→190~290기 소모(연간 생산 96기). Fox News: '지속 전쟁 시 미사일 비축량 고갈 가능성.' 탄약 급속 감소 확인.",
+          "sources": [
+            "Defence Security Asia: Trump Pauses Iran War Patriot Missile Stockpile Crisis (Dangerously Deplete)",
+            "Fox News: Sustained war with Iran could drain US missile stockpiles",
+            "AOL/RT: US air defenses run thin"
+          ],
+          "engine": "websearch",
+          "claim": "미국의 탄약 비축량이 급속도로 감소하고 있다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.98,
+      "checked_at": "2026-07-27T07:00:00.000000"
+    }
+  ]
+}

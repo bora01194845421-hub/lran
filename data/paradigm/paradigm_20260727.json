@@ -1,0 +1,242 @@
+{
+  "date": "2026-07-27",
+  "total_signals": 10,
+  "structural_signals": 9,
+  "signals": [
+    {
+      "signal_id": "sig_005",
+      "category": "지역질서재편",
+      "title_ko": "중동 핵확산 도미노 위험 현실화",
+      "description": "• 이란 신지도자, 핵무기 개발 의지 강화 (美정보기관 평가)\n• 美-사우디 핵협정, 농축 허용으로 중동 핵확산 방지체제 약화 우려\n• 이중잣대 핵협정이 역내 핵무장 경쟁 촉발 구조적 위험",
+      "evidence_titles": [
+        "Iran's New Leader Is More Open to Pursuing a Nuclear Weapon, U.S. Intelligence Says",
+        "What is the US-Saudi Arabia nuclear deal and why is it causing concern?",
+        "The Guardian view on a US-Saudi nuclear agreement: an offer that further erodes international safeguards"
+      ],
+      "evidence_sources": [
+        "NYT",
+        "Guardian",
+        "Guardian"
+      ],
+      "strength": 5,
+      "trend": "신규",
+      "suwon_implication": "중동 지역 장기 불안정성 심화로 에너지 수입 리스크 상존. 수원시 위기 대응 시나리오에 핵 리스크 반영.",
+      "is_structural": true,
+      "detected_date": "2026-07-27",
+      "first_detected": "2026-07-27"
+    },
+    {
+      "signal_id": "sig_001",
+      "category": "에너지안보재편",
+      "title_ko": "에너지 파트너십 신뢰 기준 전환",
+      "description": "• IEA가 걸프 산유국 신뢰성 공개 의문 제기 (OPEC 보도)\n• 가격 중심에서 공급 안정성·정치적 신뢰 중심으로 에너지 파트너십 기준 재편 시사\n• 호르무즈 봉쇄 장기화로 '저렴한 석유'보다 '안정적 공급처' 선호 구조화",
+      "evidence_titles": [
+        "Why is the IEA questioning the reliability of Gulf producers?",
+        "US pauses Iran strikes as Oman pursues Hormuz transit deal",
+        "Global electricity demand growth set to accelerate as power systems adjust to recent shocks"
+      ],
+      "evidence_sources": [
+        "OPEC",
+        "FT",
+        "IEA"
+      ],
+      "strength": 4,
+      "trend": "신규",
+      "suwon_implication": "수원시 장기 에너지 구매 계약 시 가격보다 공급 안정성 우선 고려 필요. 에너지 다변화 전략 재검토 시점.",
+      "is_structural": true,
+      "detected_date": "2026-07-27",
+      "first_detected": "2026-07-27"
+    },
+    {
+      "signal_id": "sig_002",
+      "category": "무역공급망재편",
+      "title_ko": "전략산업 보호무역 정책 확산",
+      "description": "• IMF 워킹페이퍼, 전략 부문 산업정책과 무역긴장 구조적 연계 분석 (2026)\n• 반도체·에너지 등 전략산업에서 자유무역 원칙 후퇴, 안보 논리 우선 정책 확산\n• 파나마 반도체 생태계 육성 사례(OECD) 등 각국 전략산업 자립화 가속",
+      "evidence_titles": [
+        "IMF Working Papers Volume 2026 Issue 155: Industrial Policy and Trade Tensions in Strategic Sectors",
+        "Promoting the Development of the Semiconductor Ecosystem in Panama",
+        "Competition in the age of AI"
+      ],
+      "evidence_sources": [
+        "IMF",
+        "OECD",
+        "OECD"
+      ],
+      "strength": 4,
+      "trend": "강화",
+      "suwon_implication": "수원시 제조기업의 글로벌 공급망 재편 대응 지원 필요. 전략물자 의존도 높은 기업 리스크 관리 강화.",
+      "is_structural": true,
+      "detected_date": "2026-07-27"
+    },
+    {
+      "signal_id": "sig_004",
+      "category": "에너지안보재편",
+      "title_ko": "전력수요 급증과 충격 적응 구조",
+      "description": "• IEA, 글로벌 전력수요 증가 가속화 및 최근 충격(전쟁)에 전력시스템 적응 분석\n• 화석연료 의존 전력에서 탈피 압력과 동시에 에너지 안보 강화 이중 과제\n• EU, 전기화 목표 달성 위해 저렴한 전력 공급 필수 요건으로 인식",
+      "evidence_titles": [
+        "Global electricity demand growth set to accelerate as power systems adjust to recent shocks",
+        "Electricity Mid-Year Update 2026",
+        "Affordable electricity is essential for the European Union's electrification goals"
+      ],
+      "evidence_sources": [
+        "IEA",
+        "IEA",
+        "IEA"
+      ],
+      "strength": 4,
+      "trend": "강화",
+      "suwon_implication": "수원시 전력 공급 안정성과 요금 구조 장기 전망 필요. 재생에너지 전환과 에너지 비용 절감 동시 추구 전략.",
+      "is_structural": true,
+      "detected_date": "2026-07-27"
+    },
+    {
+      "signal_id": "sig_006",
+      "category": "민생충격패턴",
+      "title_ko": "전쟁 장기화의 민생 구조적 압박",
+      "description": "• 유가 100달러 재돌파, 전쟁 5개월 지속에도 종료 전망 불투명\n• 美 요격미사일 재고 고갈로 전쟁 지속 능력 한계 노출\n• 아시아 에너지 의존 취약성이 긴급 상황으로 전환",
+      "evidence_titles": [
+        "Oil prices hit $100 for the first time since May",
+        "Trump Meets With Top Advisers as He Weighs a Major Escalation in Iran",
+        "The Iran War Turned Asia's Fragile Energy Dependence Into an Emergency"
+      ],
+      "evidence_sources": [
+        "BBC",
+        "NYT",
+        "CFR"
+      ],
+      "strength": 4,
+      "trend": "강화",
+      "suwon_implication": "수원시 교통·난방비 등 에너지 관련 생계비 부담 지속 증가. 취약계층 에너지 바우처 확대 등 긴급 대책 필요.",
+      "is_structural": true,
+      "detected_date": "2026-07-27"
+    },
+    {
+      "signal_id": "sig_007",
+      "category": "무역공급망재편",
+      "title_ko": "해운·물류 경로 다변화 불가피",
+      "description": "• 호르무즈 봉쇄와 홍해 후티 공격으로 중동 양대 해운로 동시 위험\n• 오만 중재 호르무즈 통행 협상, 전쟁 중단 없이는 근본 해결 불가\n• 아시아-유럽 물류 경로 재편 및 운송비 구조적 상승 압력",
+      "evidence_titles": [
+        "US pauses Iran strikes as Oman pursues Hormuz transit deal",
+        "Is the Red Sea the New Hormuz Crisis?",
+        "Donald Trump says decision on 'massive attack' against Iran is close"
+      ],
+      "evidence_sources": [
+        "FT",
+        "ForeignPolicy",
+        "Guardian"
+      ],
+      "strength": 4,
+      "trend": "강화",
+      "suwon_implication": "수원시 수출기업 물류비 급등 대응 지원. 해외 원자재 의존 기업 비용 부담 증가 모니터링.",
+      "is_structural": true,
+      "detected_date": "2026-07-27"
+    },
+    {
+      "signal_id": "sig_003",
+      "category": "정책패러다임전환",
+      "title_ko": "AI 금융안정 리스크 중앙은행 대응",
+      "description": "• IMF, 중앙은행의 AI 가속화에 따른 금융안정 리스크 관리 필요성 제기\n• 전통적 통화정책 도구로는 AI 시대 금융 충격 대응 한계 인식\n• 에너지 가격 급등과 AI 금융불안 동시 발생 시나리오 대비 필요",
+      "evidence_titles": [
+        "How Central Banks Can Contain Financial Stability Risks as AI Accelerates Change",
+        "Competition in the age of AI"
+      ],
+      "evidence_sources": [
+        "IMF",
+        "OECD"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "수원시 금융 취약계층 보호 정책 설계 시 AI 금융불안 시나리오 반영. 디지털 금융 리터러시 교육 강화.",
+      "is_structural": true,
+      "detected_date": "2026-07-27",
+      "first_detected": "2026-07-27"
+    },
+    {
+      "signal_id": "sig_008",
+      "category": "정책패러다임전환",
+      "title_ko": "기후-거시경제 리스크 통합 정책",
+      "description": "• IMF, 솔로몬제도 사례로 기후변화와 거시경제 리스크 통합 대응 필요성 제시\n• 기후 충격이 재정·금융 안정성에 직접 영향 주는 구조 인식\n• 전쟁 에너지 위기와 기후 대응 동시 추진 정책 프레임 등장",
+      "evidence_titles": [
+        "Climate Change, Macroeconomic Risks, and Adaptation in the Solomon Islands"
+      ],
+      "evidence_sources": [
+        "IMF"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "수원시 기후 적응 정책 수립 시 에너지 안보·재정 리스크 통합 고려. 탄소중립과 에너지 안정 동시 추구 전략.",
+      "is_structural": true,
+      "detected_date": "2026-07-27",
+      "first_detected": "2026-07-27"
+    },
+    {
+      "signal_id": "sig_009",
+      "category": "에너지안보재편",
+      "title_ko": "중국 기술·러시아 전술의 융합",
+      "description": "• 중국 기술과 러시아 전술이 결합된 이란의 미군 기지 공격 정확도·치명성 증가\n• 걸프 지역 미군 방어 체계 취약성 노출, 역내 안보 구조 변화\n• 기술 이전을 통한 비대칭 전력 강화 패턴 확산 가능성",
+      "evidence_titles": [
+        "How Chinese tech and Russian tactics are aiding Iran's bombing of US bases"
+      ],
+      "evidence_sources": [
+        "Guardian"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "글로벌 안보 불안정성 증가로 에너지 공급 리스크 상존. 수원시 위기 관리 시나리오 다양화 필요.",
+      "is_structural": true,
+      "detected_date": "2026-07-27",
+      "first_detected": "2026-07-27"
+    },
+    {
+      "signal_id": "sig_010",
+      "category": "민생충격패턴",
+      "title_ko": "전쟁 사상자 정보 투명성 위기",
+      "description": "• 美 국방부, 이란 전쟁 사상자 데이터베이스 조용히 수정 (600명 이상)\n• 전쟁 피해 규모 축소·은폐 논란으로 정부 신뢰 하락\n• 민주사회 전쟁 감시 기능 약화 우려",
+      "evidence_titles": [
+        "Pentagon reports more than 600 Iran war casualties in quiet database update"
+      ],
+      "evidence_sources": [
+        "Guardian"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "국제 분쟁 정보의 불확실성 증가. 수원시 정책 수립 시 공식 통계 외 다층 정보원 활용 필요.",
+      "is_structural": false,
+      "detected_date": "2026-07-27",
+      "first_detected": "2026-07-27"
+    }
+  ],
+  "by_category": {
+    "에너지안보재편": 3,
+    "무역공급망재편": 2,
+    "정책패러다임전환": 2,
+    "지역질서재편": 1,
+    "민생충격패턴": 2
+  },
+  "summary_ko": "• 에너지 안보 기준이 '가격'에서 '공급 안정성·정치적 신뢰'로 전환, 호르무즈 봉쇄 장기화로 구조화\n• 중동 핵확산 도미노 현실화: 이란 핵무기 개발 의지 강화, 美-사우디 핵협정이 역내 핵무장 경쟁 촉발 구조적 위험\n• 전략산업 보호무역 정책 확산, 반도체·에너지 등에서 자유무역 원칙 후퇴하고 안보 논리 우선 정책 가속\n• 유가 100달러 재돌파, 전쟁 5개월 지속에도 종료 불투명, 아시아 에너지 의존 취약성이 긴급 상황으로 전환\n• AI 시대 금융안정 리스크, 기후-거시경제 통합 대응 등 정책 패러다임 근본 전환 신호 동시 출현",
+  "top_signal": "중동 핵확산 도미노 위험 현실화",
+  "suwon_action": "• 에너지 구매 계약 재검토: 가격보다 공급 안정성 우선 기준으로 장기 계약 전환 검토 착수\n• 취약계층 긴급 대책: 유가 100달러 시대 교통·난방비 부담 급증 대비 에너지 바우처 확대 및 생계비 지원 강화",
+  "weekly_trend": {
+    "에너지안보재편": {
+      "count": 7,
+      "max_strength": 5
+    },
+    "정책패러다임전환": {
+      "count": 6,
+      "max_strength": 3
+    },
+    "지역질서재편": {
+      "count": 5,
+      "max_strength": 5
+    },
+    "민생충격패턴": {
+      "count": 5,
+      "max_strength": 4
+    },
+    "무역공급망재편": {
+      "count": 5,
+      "max_strength": 4
+    }
+  },
+  "generated_at": "2026-07-27T00:53:45.596415"
+}
