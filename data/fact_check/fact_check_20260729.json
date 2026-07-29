@@ -1,0 +1,305 @@
+{
+  "date": "2026-07-29",
+  "generated_at": "2026-07-29T00:11:25.975005",
+  "engine": "Claude 단독 (fallback)",
+  "stats": {
+    "articles_checked": 10,
+    "total_claims": 20,
+    "verified": 0,
+    "disputed": 0,
+    "unverified": 20,
+    "verified_rate": 0.0
+  },
+  "results": [
+    {
+      "article_id": "27a1a6f4c9d5",
+      "title": "Trump says Iran war talks taking place during lull in strikes",
+      "source": "BBC_MidEast",
+      "url": "https://www.bbc.co.uk/news/articles/c62xn4vzmnpo?at_medium=RSS&at_campaign=rss",
+      "importance": 5,
+      "category": "diplomacy",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 현재 시점(2024년)에서 미래의 사건에 대한 검증은 불가능하며, 해당 BBC 기사도 존재하지 않는 것으로 판단됩니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "트럼프 미국 대통령이 이란과의 전쟁 중단 중 협상이 진행 중이라고 발표했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁에 대한 정보는 학습 데이터에 포함되어 있지 않습니다. 해당 사건은 제 학습 시점(2024년 4월) 이후의 미래 사건이므로 검증이 불가능합니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "이란은 직접 협상이 진행 중이라는 주장을 부인했다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.47,
+      "checked_at": "2026-07-29T00:09:59.317850"
+    },
+    {
+      "article_id": "de2200bc1af1",
+      "title": "Oil price dives as US and Iran pause attacks",
+      "source": "BBC_MidEast",
+      "url": "https://www.bbc.co.uk/news/articles/clyj834jn5lo?at_medium=RSS&at_campaign=rss",
+      "importance": 5,
+      "category": "energy",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 해당 주장에 대한 역사적 사실이나 신뢰할 수 있는 정보가 존재하지 않습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "미국과 이란이 공격을 중단했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 해당 시기의 유가 변동이나 BBC 보도 내용을 검증할 수 있는 역사적 사실이 존재하지 않습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "유가가 급락했다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.95,
+      "checked_at": "2026-07-29T00:10:07.953508"
+    },
+    {
+      "article_id": "6cb527d320ee",
+      "title": "US and Iran pause strikes for third night to make space for talks, US ambassador says",
+      "source": "BBC_MidEast",
+      "url": "https://www.bbc.co.uk/news/articles/c5y45kdkynpo?at_medium=RSS&at_campaign=rss",
+      "importance": 5,
+      "category": "diplomacy",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁에 대한 정보는 학습 데이터에 존재하지 않습니다. 이는 미래 사건이거나 가상의 시나리오로 보이며, 실제 발생 여부를 확인할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "미국과 이란이 3박째 공격 중단 상태를 유지하고 있다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁에 대한 학습된 정보가 없습니다. 이는 제 학습 데이터 마감일(2024년 4월) 이후의 미래 사건이므로 검증할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "약 2주간의 보복 공격이 있었다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.47,
+      "checked_at": "2026-07-29T00:10:18.990521"
+    },
+    {
+      "article_id": "8a9682bf3542",
+      "title": "Oil Jumps After Iran Attack, US Stock Futures Dip: Markets Wrap",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-07-28/stock-market-today-dow-s-p-live-updates",
+      "importance": 5,
+      "category": "economy",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 해당 기사는 존재하지 않거나 다른 시점의 이란 관련 사건을 다루고 있을 가능성이 있으며, 학습 데이터에 이 특정 사건에 대한 정보가 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "중동 전투 재개로 원유가 급등했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁에 대한 학습된 정보가 없으며, 해당 사건은 미래 시점의 가상 시나리오로 보입니다. 실제 발생하지 않은 사건에 대해 검증할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "미국 주가지수 선물은 하락했다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.47,
+      "checked_at": "2026-07-29T00:10:28.704275"
+    },
+    {
+      "article_id": "22787c036a7a",
+      "title": "As U.S. Pauses Strikes, Iran Is No Rush to Resume Cease-Fire Talks",
+      "source": "NYT_World",
+      "url": "https://www.nytimes.com/2026/07/28/world/middleeast/iran-war-us-trump.html",
+      "importance": 5,
+      "category": "diplomacy",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁에 대한 정보는 학습 데이터에 존재하지 않습니다. 이는 미래 사건이거나 실제로 발생하지 않은 가상의 사건으로 판단됩니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "미국이 공습을 일시 중단했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 해당 전쟁과 관련된 호르무즈 해협의 통제 상황에 대한 주장을 검증할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "호르무즈 해협을 이란이 통제하고 있다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.95,
+      "checked_at": "2026-07-29T00:10:36.937104"
+    },
+    {
+      "article_id": "0508d4d29c1b",
+      "title": "Houthis Claim Strike on Another Saudi Oil Tanker",
+      "source": "NYT_World",
+      "url": "https://www.nytimes.com/2026/07/28/world/middleeast/houthis-strike-saudi-tanker.html",
+      "importance": 5,
+      "category": "energy",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁에 대한 학습된 정보가 없으며, 해당 사건은 제 지식 기준일(2024년 4월) 이후의 미래 사건입니다. 후티의 사우디 유조선 공격은 과거 예멘 내전 중 실제로 발생했으나, 2026년 맥락의 특정 사건은 확인할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "후티 세력이 사우디 석유 유조선을 공격했다고 주장했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.3,
+          "evidence": "2026년 이란-미국 전쟁에 대한 확인된 역사적 정보가 없습니다. 후티의 사우디 유조선 공격은 실제 발생한 사건이나, 2026년 전쟁 맥락에서의 이란-후티 연대 봉쇄 확대는 검증할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "이란과 후티가 연대하여 호르무즈와 홍해에서 봉쇄를 확대하고 있다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.15,
+      "checked_at": "2026-07-29T00:10:48.296340"
+    },
+    {
+      "article_id": "b01e90a22936",
+      "title": "U.S.-Iran War Pauses for 2nd Straight Day With Both Sides Holding Off on Strikes",
+      "source": "NYT_World",
+      "url": "https://www.nytimes.com/2026/07/26/world/middleeast/us-iran-war-pause.html",
+      "importance": 5,
+      "category": "military",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁에 대한 정보는 학습 데이터에 존재하지 않습니다. 해당 사건은 제 학습 시점(2024년 4월) 이후의 미래 사건이거나 실제로 발생하지 않은 가상의 시나리오입니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "미국이 격추용 미사일 재고 부족으로 공습 계획을 연기했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁에 대한 정보는 학습 데이터에 존재하지 않습니다. 이는 미래 사건이거나 실제로 발생하지 않은 가상의 시나리오입니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "미국과 이란 양측이 2일 연속 공격을 자제했다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.95,
+      "checked_at": "2026-07-29T00:10:58.198730"
+    },
+    {
+      "article_id": "84698bad2870",
+      "title": "Trump pausing Iran attacks shows US military power is not enough on its own",
+      "source": "Guardian_API",
+      "url": "https://www.theguardian.com/world/2026/jul/29/trump-iran-attacks-us-military-power",
+      "importance": 5,
+      "category": "paradigm",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁에 대한 정보가 학습 데이터에 없으며, 해당 사건은 미래의 가상 시나리오로 보입니다. 실제 발생한 역사적 사실로 확인할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "트럼프가 이란에 대한 공격을 일시 중지했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁에 대한 정보가 학습 데이터에 존재하지 않습니다. 이는 미래 사건이거나 실제로 발생하지 않은 가상의 시나리오로 보입니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "미국이 지상전 없이는 이란 정부를 제압할 수 없다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.0,
+      "checked_at": "2026-07-29T00:11:07.569210"
+    },
+    {
+      "article_id": "f72e901ef939",
+      "title": "Trump warns of return to ‘strong military action’ if Iran diplomacy fails",
+      "source": "Guardian_API",
+      "url": "https://www.theguardian.com/world/2026/jul/27/trump-warns-return-strong-military-action-iran-diplomacy-fails",
+      "importance": 5,
+      "category": "country_response",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 해당 주장은 미래 시점의 발언을 언급하고 있어 현재 시점에서 검증할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "트럼프가 이란 외교 실패 시 강력한 군사행동으로 돌아갈 것이라고 경고했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁에 대한 학습된 정보가 없습니다. 이는 미래 사건이며, 제 학습 데이터(2024년 4월 기준)에는 포함되어 있지 않습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "워싱턴과 테헤란이 협상 상태에 대해 상충된 메시지를 발표하고 있다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.0,
+      "checked_at": "2026-07-29T00:11:16.765445"
+    },
+    {
+      "article_id": "c7cd66c1d7ff",
+      "title": "US pauses Iran attacks after Trump advised to halt bombing",
+      "source": "Guardian_API",
+      "url": "https://www.theguardian.com/world/2026/jul/26/us-pauses-trump-netanyahu-attacks-on-iran-talks-hormuz",
+      "importance": 5,
+      "category": "military",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁에 대한 학습된 정보가 없습니다. 이는 미래 사건이며, 현재(2024년 기준) 발생하지 않은 가상의 시나리오입니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "트럼프가 이란에 대한 폭격을 중단하라고 지시했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 이와 관련된 탄약 비축량 급감, 공격 중단 등의 주장은 검증할 수 있는 역사적 사실이 존재하지 않습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "미국의 탄약 비축량이 급감하고 있다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.95,
+      "checked_at": "2026-07-29T00:11:25.974990"
+    }
+  ]
+}

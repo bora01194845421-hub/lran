@@ -1,0 +1,163 @@
+{
+  "date": "2026-07-29",
+  "total_signals": 6,
+  "structural_signals": 6,
+  "signals": [
+    {
+      "signal_id": "sig_001",
+      "category": "에너지안보재편",
+      "title_ko": "걸프 산유국 신뢰성 의문 제기",
+      "description": "• IEA가 걸프 산유국의 공급 신뢰성(reliability)을 공식적으로 의문시\n• 에너지 파트너십 기준이 가격에서 신뢰도로 전환될 가능성 시사\n• OPEC이 이에 대해 공식 뉴스로 보도할 정도로 구조적 갈등 표면화",
+      "evidence_titles": [
+        "Why is the IEA questioning the reliability of Gulf producers?",
+        "Heat Pump Monitor 2026",
+        "Global EV Outlook 2026"
+      ],
+      "evidence_sources": [
+        "OPEC",
+        "IEA",
+        "IEA"
+      ],
+      "strength": 4,
+      "trend": "신규",
+      "suwon_implication": "수원시 에너지 안보 전략 재검토 필요. 중동 의존 에너지 공급망의 장기 불확실성 증가로 난방비·전기료 변동성 확대 예상.",
+      "is_structural": true,
+      "detected_date": "2026-07-29",
+      "first_detected": "2026-07-29"
+    },
+    {
+      "signal_id": "sig_002",
+      "category": "정책패러다임전환",
+      "title_ko": "전략산업 보호무역 강화 시대",
+      "description": "• IMF가 전략산업 분야 산업정책과 무역긴장 이슈를 공식 워킹페이퍼로 발간\n• 자유무역 원칙보다 전략산업 보호가 정책 우선순위로 전환 신호\n• 글로벌 공급망이 효율성에서 안보·전략성 기준으로 재편 중",
+      "evidence_titles": [
+        "Industrial Policy and Trade Tensions in Strategic Sectors",
+        "Global EV Outlook 2026",
+        "Promoting the Development of the Semiconductor Ecosystem in Panama"
+      ],
+      "evidence_sources": [
+        "IMF",
+        "IEA",
+        "OECD"
+      ],
+      "strength": 4,
+      "trend": "신규",
+      "suwon_implication": "수원시 제조기업의 수출 환경 악화 가능성. 전략산업(반도체 등) 공급망 재편으로 중소 납품업체 불확실성 증가.",
+      "is_structural": true,
+      "detected_date": "2026-07-29",
+      "first_detected": "2026-07-29"
+    },
+    {
+      "signal_id": "sig_003",
+      "category": "정책패러다임전환",
+      "title_ko": "에너지 효율 역설 재조명",
+      "description": "• IMF가 제본스 역설(효율 향상이 오히려 총 소비 증가)을 에너지 미래 맥락에서 재분석\n• 에너지 전환 정책이 효율만으로는 불충분하며 구조적 수요 관리 필요 시사\n• 열펌프·전기차 보급 확대에도 불구하고 총 에너지 수요는 증가할 수 있음을 경고",
+      "evidence_titles": [
+        "The Generalized Jevons Paradox and the Future of Energy",
+        "Heat Pump Monitor 2026",
+        "Global EV Outlook 2026"
+      ],
+      "evidence_sources": [
+        "IMF",
+        "IEA",
+        "IEA"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "수원시 에너지 전환 정책 설계 시 효율 개선만이 아닌 수요 관리 정책 병행 필요. 전기차 보급이 오히려 전력 수요 급증으로 이어질 수 있음.",
+      "is_structural": true,
+      "detected_date": "2026-07-29",
+      "first_detected": "2026-07-29"
+    },
+    {
+      "signal_id": "sig_004",
+      "category": "민생충격패턴",
+      "title_ko": "주거비 부담 패러독스 심화",
+      "description": "• IMF가 그리스의 주거비 부담 역설(affordability paradoxes)을 집중 분석\n• 경제 지표 개선에도 불구하고 주거비 부담은 증가하는 구조적 모순 확인\n• 전쟁·에너지 위기가 주거비 문제를 더욱 복잡하게 만드는 패턴",
+      "evidence_titles": [
+        "Inside Greece's Housing Affordability Paradoxes",
+        "IMF Executive Board Concludes 2026 Article IV Consultation with Bosnia and Herzegovina",
+        "IMF Executive Board Concludes 2026 Article IV Consultation with Italy"
+      ],
+      "evidence_sources": [
+        "IMF",
+        "IMF",
+        "IMF"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "수원시 주거 취약계층 지원 정책 강화 필요. 에너지 비용 상승이 주거비 부담으로 전이되는 구조적 패턴 주목.",
+      "is_structural": true,
+      "detected_date": "2026-07-29",
+      "first_detected": "2026-07-29"
+    },
+    {
+      "signal_id": "sig_006",
+      "category": "무역공급망재편",
+      "title_ko": "비전통 지역 반도체 생태계 육성",
+      "description": "• OECD가 파나마의 반도체 생태계 개발을 직접 지원 프로젝트로 추진\n• 전략산업이 전통 생산지역 외 안보·지정학적 거점으로 분산되는 신호\n• 공급망 재편이 기술·경제 논리를 넘어 지정학적 안보 논리로 작동",
+      "evidence_titles": [
+        "Promoting the Development of the Semiconductor Ecosystem in Panama",
+        "Industrial Policy and Trade Tensions in Strategic Sectors"
+      ],
+      "evidence_sources": [
+        "OECD",
+        "IMF"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "수원시 제조업체의 글로벌 공급망 다변화 압력 증가. 비전통 지역의 부상으로 기존 협력 네트워크 재조정 필요.",
+      "is_structural": true,
+      "detected_date": "2026-07-29",
+      "first_detected": "2026-07-29"
+    },
+    {
+      "signal_id": "sig_005",
+      "category": "정책패러다임전환",
+      "title_ko": "평생학습 측정 프레임워크 전환",
+      "description": "• OECD가 평생학습 측정을 위한 개념적 프레임워크를 재정립\n• 전통적 교육 지표가 아닌 생애 전반 학습 역량 측정으로 패러다임 전환\n• 급격한 산업 구조 변화에 대응한 인적자본 정책 방향 재설정",
+      "evidence_titles": [
+        "A Conceptual Foundation for the Development of a Lifelong Learning Measurement Framework",
+        "Malaysia can sustain high growth through reforms that strengthen fiscal management, boost productivity, and improve education"
+      ],
+      "evidence_sources": [
+        "OECD",
+        "OECD"
+      ],
+      "strength": 2,
+      "trend": "신규",
+      "suwon_implication": "수원시 인적자원개발 정책의 장기 방향성 재검토 필요. 단기 직업훈련을 넘어 생애 학습 지원 체계 구축 고려.",
+      "is_structural": true,
+      "detected_date": "2026-07-29",
+      "first_detected": "2026-07-29"
+    }
+  ],
+  "by_category": {
+    "에너지안보재편": 1,
+    "정책패러다임전환": 3,
+    "민생충격패턴": 1,
+    "무역공급망재편": 1
+  },
+  "summary_ko": "• 전쟁 여파로 글로벌 경제 질서가 '효율성'에서 '안보·신뢰성' 중심으로 재편되고 있습니다.\n• IEA가 걸프 산유국 신뢰성을 공식 의문시하며 에너지 공급망 기준이 근본적으로 전환 중입니다.\n• IMF는 전략산업 보호무역 강화를 구조적 추세로 분석, 자유무역 원칙이 후퇴하고 있습니다.\n• 에너지 효율 개선이 총 소비 감소로 이어지지 않는 '제본스 역설'이 전기차·열펌프 시대에도 반복될 수 있습니다.\n• 주거비 부담 패러독스, 평생학습 측정 프레임워크 전환, 비전통 지역 반도체 생태계 등 다층적 구조 변화가 동시 진행 중입니다.",
+  "top_signal": "걸프 산유국 신뢰성 의문 제기",
+  "suwon_action": "① 에너지 공급망 불확실성 증가에 따른 공공요금 변동성 확대 대비 - 취약계층 긴급 지원체계 점검 필요\n② 전략산업 보호무역 강화로 수원 제조기업(특히 반도체 협력사) 수출환경 악화 가능성 - 기업 영향 진단 착수 권고",
+  "weekly_trend": {
+    "정책패러다임전환": {
+      "count": 3,
+      "max_strength": 4
+    },
+    "에너지안보재편": {
+      "count": 1,
+      "max_strength": 4
+    },
+    "민생충격패턴": {
+      "count": 1,
+      "max_strength": 3
+    },
+    "무역공급망재편": {
+      "count": 1,
+      "max_strength": 3
+    }
+  },
+  "generated_at": "2026-07-29T00:07:26.611678"
+}
