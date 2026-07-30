@@ -1,0 +1,218 @@
+{
+  "date": "2026-07-30",
+  "total_signals": 10,
+  "structural_signals": 10,
+  "signals": [
+    {
+      "signal_id": "sig_002",
+      "category": "에너지안보재편",
+      "title_ko": "히트펌프 보급 국가 에너지 전략화",
+      "description": "• IEA가 글로벌 히트펌프 모니터 2026 발간, 국가별 보급 현황 추적\n• 난방 시스템이 에너지 안보·탈탄소 정책의 핵심 지표로 부상\n• 개별 가구 난방 선택이 국가 에너지 전략 차원으로 격상",
+      "evidence_titles": [
+        "Heat Pump Monitor 2026 – Analysis - IEA",
+        "Key findings – Heat Pump Monitor 2026 – Analysis - IEA"
+      ],
+      "evidence_sources": [
+        "IEA",
+        "IEA"
+      ],
+      "strength": 4,
+      "trend": "강화",
+      "suwon_implication": "수원시 공공주택·복지시설 난방 시스템 전환 가속화 필요. 저소득 가구 난방비 부담 경감 정책을 에너지 전환 정책과 통합 설계해야 함.",
+      "is_structural": true,
+      "detected_date": "2026-07-30"
+    },
+    {
+      "signal_id": "sig_005",
+      "category": "민생충격패턴",
+      "title_ko": "유가 안정에도 지속되는 가계 에너지 부담",
+      "description": "• UNCTAD가 카리브 지역의 '유가 하락 후에도 지속되는 가계 압박' 현상 분석\n• 에너지 가격 상승의 민생 충격이 단기 반등이 아닌 구조적 고착 패턴으로 전환\n• 국제 유가와 가계 에너지 비용의 연결 고리가 약화되는 새로운 구조 감지",
+      "evidence_titles": [
+        "Why Caribbean households remain under pressure after oil prices ease - UNCTAD"
+      ],
+      "evidence_sources": [
+        "UNCTAD"
+      ],
+      "strength": 4,
+      "trend": "신규",
+      "suwon_implication": "수원시 에너지 복지 정책을 국제 유가 변동이 아닌 '가계 에너지 지출 구조' 기준으로 재설계 필요. 유가 안정 시에도 에너지 취약계층 지원 지속 논리 확보.",
+      "is_structural": true,
+      "detected_date": "2026-07-30",
+      "first_detected": "2026-07-30"
+    },
+    {
+      "signal_id": "sig_006",
+      "category": "정책패러다임전환",
+      "title_ko": "IMF 정책 조건의 '회복력·지속가능성' 통합",
+      "description": "• IMF가 라이베리아에 ECF(확대신용기구) + RSF(회복력지속가능성기구) 동시 심사 실시\n• 국제 금융 지원이 '재정 건전성'에서 '기후·충격 대응력' 기준으로 확장\n• 개도국 경제 정책 평가 기준 자체가 구조적으로 전환되는 신호",
+      "evidence_titles": [
+        "Liberia: IMF Staff Reaches Staff-Level Agreement on the Fourth Review of the Extended Credit Facility (ECF) Arrangement and the First Review of the Resilience and Sustainability Facility (RSF) Arrangement - IMF"
+      ],
+      "evidence_sources": [
+        "IMF"
+      ],
+      "strength": 4,
+      "trend": "강화",
+      "suwon_implication": "수원시 재정 건전성 평가를 기후 회복력·사회 지속가능성 지표와 통합 평가하는 새 기준 필요. 국제 표준 변화에 선제 대응하는 정책 프레임 구축.",
+      "is_structural": true,
+      "detected_date": "2026-07-30"
+    },
+    {
+      "signal_id": "sig_009",
+      "category": "정책패러다임전환",
+      "title_ko": "OECD 교육 성과 분석의 AI 도구화",
+      "description": "• OECD가 태국 수학 성과를 'AI 강화 세분화 분석'으로 평가\n• 교육 정책 평가가 '국가 평균 점수'에서 'AI 기반 개별 요인 분석'으로 전환\n• 정책 평가 방법론 자체가 AI 도구 기반으로 재편되는 구조적 변화",
+      "evidence_titles": [
+        "An AI‑enhanced granular analysis of Thailand's mathematics performance - OECD"
+      ],
+      "evidence_sources": [
+        "OECD"
+      ],
+      "strength": 4,
+      "trend": "신규",
+      "suwon_implication": "수원시 교육 정책 효과 평가를 AI 기반 세분화 분석 도구로 전환 필요. 학생 개별 요인 분석 기반 맞춤형 교육 지원 체계 구축 가능.",
+      "is_structural": true,
+      "detected_date": "2026-07-30",
+      "first_detected": "2026-07-30"
+    },
+    {
+      "signal_id": "sig_010",
+      "category": "정책패러다임전환",
+      "title_ko": "말레이시아 성장 전략 - 생산성·교육 동시 개혁",
+      "description": "• OECD가 말레이시아에 '재정관리+생산성+교육' 3축 동시 개혁 권고\n• 경제 성장 정책이 '재정 투입'에서 '구조 개혁 패키지'로 패러다임 전환\n• 개도국 성장 전략의 국제 표준이 '투자 확대'에서 '시스템 개혁'으로 이동",
+      "evidence_titles": [
+        "Malaysia can sustain high growth through reforms that strengthen fiscal management, boost productivity, and improve education - OECD"
+      ],
+      "evidence_sources": [
+        "OECD"
+      ],
+      "strength": 4,
+      "trend": "강화",
+      "suwon_implication": "수원시 경제 정책을 재정 투입 중심에서 '생산성+교육+거버넌스' 통합 개혁 프레임으로 재설계 필요. 예산 증액보다 시스템 개선 우선 정책 강화.",
+      "is_structural": true,
+      "detected_date": "2026-07-30"
+    },
+    {
+      "signal_id": "sig_001",
+      "category": "에너지안보재편",
+      "title_ko": "에너지 공급망 사이버안보 중심축 이동",
+      "description": "• IEA가 인버터 공급망 사이버보안을 별도 분석 보고서로 발간\n• 에너지 안보 개념이 '물리적 공급'에서 '디지털 안전성'으로 확장\n• 재생에너지 인프라의 사이버 취약성이 국가 에너지 안보 위협으로 인식",
+      "evidence_titles": [
+        "Inverter supply chains and cybersecurity – Analysis - IEA"
+      ],
+      "evidence_sources": [
+        "IEA"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "수원시 스마트시티·신재생에너지 시설의 사이버보안 투자 필요성 증대. 에너지 자립형 건물·시설 도입 시 사이버 리스크 평가 기준 마련 필요.",
+      "is_structural": true,
+      "detected_date": "2026-07-30",
+      "first_detected": "2026-07-30"
+    },
+    {
+      "signal_id": "sig_003",
+      "category": "무역공급망재편",
+      "title_ko": "아프리카 농산업 글로벌 가치사슬 재편 신호",
+      "description": "• 세계은행이 아프리카 농산업을 '일자리 창출+식량공급' 이중 전략으로 재정의\n• 글로벌 식량 공급망이 기존 수출국 중심에서 지역 다변화 구조로 전환 가능성\n• 지정학적 불안정 속에서 식량 안보가 무역 정책 최우선 순위로 격상",
+      "evidence_titles": [
+        "Grow food. Create jobs. Africa's agribusiness moment is now. - World Bank Blogs"
+      ],
+      "evidence_sources": [
+        "WorldBank"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "수원시 급식·복지 식자재 조달 구조의 장기 안정성 점검 필요. 식품 가격 변동성 확대 시 취약계층 식생활 지원 예산 탄력 운용 체계 구축.",
+      "is_structural": true,
+      "detected_date": "2026-07-30",
+      "first_detected": "2026-07-30"
+    },
+    {
+      "signal_id": "sig_004",
+      "category": "정책패러다임전환",
+      "title_ko": "중소기업 글로벌 네트워크 접근권 정책화",
+      "description": "• UNCTAD가 중소기업-글로벌 네트워크 연결 파트너십 정책을 별도 발표\n• 무역 정책이 '국가 간 거래'에서 '기업 단위 네트워크 접근 지원'으로 전환\n• 중소기업 국제화가 개별 기업 역량이 아닌 국제기구 정책 대상으로 격상",
+      "evidence_titles": [
+        "New partnership to connect entrepreneurs with global networks and opportunities - UNCTAD"
+      ],
+      "evidence_sources": [
+        "UNCTAD"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "수원시 중소기업 지원 정책을 글로벌 네트워크 접근 지원으로 확장 필요. 수출 기업이 아니어도 글로벌 공급망 연결 기회 제공 프로그램 설계 가능.",
+      "is_structural": true,
+      "detected_date": "2026-07-30",
+      "first_detected": "2026-07-30"
+    },
+    {
+      "signal_id": "sig_007",
+      "category": "지역질서재편",
+      "title_ko": "IMF 사우디 협의 - 탈석유 구조 전환 본격화",
+      "description": "• IMF가 사우디아라비아 2026 Article IV 협의 완료, 경제 구조 전환 평가\n• 중동 산유국의 경제 정책이 '석유 수출 극대화'에서 '탈석유 경제 구축'으로 전환\n• 중동 에너지 공급 구조 자체가 중장기적으로 재편될 가능성 시사",
+      "evidence_titles": [
+        "IMF Executive Board Concludes 2026 Article IV Consultation with Saudi Arabia - IMF"
+      ],
+      "evidence_sources": [
+        "IMF"
+      ],
+      "strength": 3,
+      "trend": "강화",
+      "suwon_implication": "수원시 에너지 수입 의존 구조의 장기 전망 재검토 필요. 중동 공급 불안정 시나리오뿐 아니라 중동 수출 의지 약화 시나리오도 에너지 정책에 반영.",
+      "is_structural": true,
+      "detected_date": "2026-07-30"
+    },
+    {
+      "signal_id": "sig_008",
+      "category": "정책패러다임전환",
+      "title_ko": "자원부국의 '지속 성장' 과제 국제 표준화",
+      "description": "• IMF가 페루의 '원자재 붐 활용 지속 성장 전략' 별도 분석 발표\n• 자원 가격 상승이 '단기 수익 극대화'가 아닌 '장기 성장 기반 구축' 기준으로 평가\n• 자원 수출국 정책 평가 기준이 '수입 증대'에서 '구조 개혁'으로 전환",
+      "evidence_titles": [
+        "How Peru Can Use a New Commodity Boom to Durably Lift Growth - IMF"
+      ],
+      "evidence_sources": [
+        "IMF"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "수원시가 국비·도비 증대 시 단기 사업 확대가 아닌 '지속 성장 기반 투자' 기준 적용 필요. 재정 여유 시기의 예산 편성 원칙 재정립.",
+      "is_structural": true,
+      "detected_date": "2026-07-30",
+      "first_detected": "2026-07-30"
+    }
+  ],
+  "by_category": {
+    "에너지안보재편": 2,
+    "무역공급망재편": 1,
+    "정책패러다임전환": 5,
+    "민생충격패턴": 1,
+    "지역질서재편": 1
+  },
+  "summary_ko": "• 에너지 안보가 '물리적 공급'에서 '디지털 안전성+난방 시스템 전환'으로 확장, IEA가 사이버보안·히트펌프를 국가 전략 지표화\n• 국제금융·무역 정책이 '재정 건전성·수출 확대'에서 '기후 회복력·중소기업 글로벌 네트워크 접근권'으로 평가 기준 전환\n• 중동 산유국(사우디) 탈석유 구조 개혁 본격화, 글로벌 식량 공급망은 아프리카 중심 다변화 신호 감지\n• 교육·경제 정책 평가 방법론이 AI 도구 기반 세분화 분석으로 재편, '평균 성과'에서 '개별 요인 분석'으로 전환\n• 유가 안정에도 가계 에너지 부담 지속되는 구조적 고착 패턴 출현, 에너지 복지 정책 설계 기준 근본 재검토 필요",
+  "top_signal": "민생충격패턴: 유가 안정에도 지속되는 가계 에너지 부담",
+  "suwon_action": "• 에너지 복지 정책을 국제 유가가 아닌 '가계 에너지 지출 구조' 기준으로 긴급 재설계, 유가 안정기에도 취약계층 지원 지속 논리 확보\n• 스마트시티·신재생에너지 시설 사이버보안 투자 즉시 점검, 공공주택 히트펌프 전환 로드맵과 저소득층 난방비 지원 통합 설계 착수",
+  "weekly_trend": {
+    "정책패러다임전환": {
+      "count": 9,
+      "max_strength": 4
+    },
+    "에너지안보재편": {
+      "count": 8,
+      "max_strength": 5
+    },
+    "민생충격패턴": {
+      "count": 5,
+      "max_strength": 4
+    },
+    "지역질서재편": {
+      "count": 4,
+      "max_strength": 5
+    },
+    "무역공급망재편": {
+      "count": 4,
+      "max_strength": 4
+    }
+  },
+  "generated_at": "2026-07-30T00:06:34.222288"
+}
