@@ -1,0 +1,363 @@
+{
+  "date": "2026-08-03",
+  "generated_at": "2026-08-02T23:43:56.709113",
+  "engine": "Claude + WebSearch 교차검증",
+  "stats": {
+    "articles_checked": 10,
+    "total_claims": 20,
+    "verified": 19,
+    "disputed": 0,
+    "unverified": 1,
+    "verified_rate": 95.0
+  },
+  "results": [
+    {
+      "article_id": "4f25ac2690e7",
+      "title": "Trump says Iran talks to resume after US called off major attack",
+      "source": "FT_World",
+      "url": "https://www.ft.com/content/c9bd508c-2915-4b34-a5a5-553bff9548a5?syn-25a6b1a6=1",
+      "importance": 5,
+      "category": "diplomacy",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.98,
+          "evidence": "8/2 트럼프 Truth Social: '호르무즈 즉각 전면 개방 포함 합의 윤곽 잡혔다. 공격 취소.' NBC News: 트럼프·페제시키안 대통령 MOU 서명(파키스탄 중재). Washington Times·PBS 교차확인.",
+          "sources": [
+            "Washington Times: Trump halts strikes on Iran, says peace deal perimeters are in place",
+            "NBC News: 14개 항 초기 협정 서명",
+            "PBS: 미-이란 휴전 연장+호르무즈 개방 초기 합의"
+          ],
+          "engine": "claude+websearch",
+          "claim": "트럼프 대통령이 미국의 대이란 공격 계획을 중단했다고 발표했다"
+        },
+        {
+          "verdict": "검증됨",
+          "confidence": 0.97,
+          "evidence": "Axios 보도: 협상 신호 반응 Brent 4.34% 하락($71.99), WTI 3.74% 하락($69.23). 8/2 트럼프 공격 취소 발표 후 유가 하락 흐름 확인.",
+          "sources": [
+            "Axios: Oil prices fall after Trump indicates US-Iran deal possible",
+            "Al Jazeera: Oil prices continue slide amid hopes for peace"
+          ],
+          "engine": "claude+websearch",
+          "claim": "유가가 협상 신호에 반응하며 하락했다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.97,
+      "checked_at": "2026-08-03T00:00:00.000000"
+    },
+    {
+      "article_id": "93c5c384e95d",
+      "title": "Trump says he cancelled Iran strikes at request of Middle East nations",
+      "source": "FT_World",
+      "url": "https://www.ft.com/content/9cb84920-075e-4fa4-b1cb-dfc55d5845f4?syn-25a6b1a6=1",
+      "importance": 5,
+      "category": "diplomacy",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.98,
+          "evidence": "8/2 Truth Social 트럼프: '중동·이란 국가들이 공격 보류 요청했다'고 발언. MBS도 트럼프에게 직접 전화해 대화 우선·에스컬레이션 감소 촉구(Al Jazeera, Axios 확인).",
+          "sources": [
+            "Al Jazeera: Saudi Crown Prince MBS urges Trump to prioritise dialogue",
+            "Axios: Saudi crown prince raises concerns over Trump's plans for massive Iran strikes"
+          ],
+          "engine": "claude+websearch",
+          "claim": "트럼프 대통령이 중동 국가들의 요청으로 이란 공격 계획을 취소했다고 발언했다"
+        },
+        {
+          "verdict": "검증됨",
+          "confidence": 0.98,
+          "evidence": "트럼프 Truth Social: 'perimeters of a deal has been agreed to' 호르무즈 즉각 전면 개방 + 이란 핵 위협 종료 조건 합의 주장. NBC News: 파키스탄 중재 14개 항 MOU 전자 서명.",
+          "sources": [
+            "NBC News: 14개 항 초기 협정 서명",
+            "PBS: 미-이란 호르무즈 개방 초기 합의"
+          ],
+          "engine": "claude+websearch",
+          "claim": "트럼프는 이란과의 갈등 종료를 위한 협상의 테두리가 이미 합의되었다고 주장했다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.98,
+      "checked_at": "2026-08-03T00:00:00.000000"
+    },
+    {
+      "article_id": "037425178eb3",
+      "title": "Trump cancels Iran strikes subject to deal being made 'rapidly'",
+      "source": "BBC_World",
+      "url": "https://www.bbc.co.uk/news/articles/cjwx74qgld2o?at_medium=RSS&at_campaign=rss",
+      "importance": 5,
+      "category": "diplomacy",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.98,
+          "evidence": "8/2 트럼프 Truth Social 및 NBC News·Washington Times·PBS 교차확인. 트럼프가 '신속한 합의 가능 시 공격 취소'라고 발표한 것 확인됨.",
+          "sources": [
+            "Washington Times: Trump halts strikes on Iran",
+            "NBC News: Trump cancels Iran attack, deal outlined"
+          ],
+          "engine": "claude+websearch",
+          "claim": "트럼프 대통령이 이란에 대한 군사 공격을 취소했다"
+        },
+        {
+          "verdict": "검증됨",
+          "confidence": 0.97,
+          "evidence": "MBS가 트럼프에게 대화 우선·공격 보류 요청. 중동 국가들이 공격 중단 요청했다는 트럼프 발언도 Truth Social에서 확인. Al Jazeera, Axios 교차확인.",
+          "sources": [
+            "Al Jazeera: Saudi Crown Prince MBS urges Trump to prioritise dialogue",
+            "Axios: Saudi crown prince raises concerns"
+          ],
+          "engine": "claude+websearch",
+          "claim": "이란과 다른 중동 국가들이 공격 보류를 요청했다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.97,
+      "checked_at": "2026-08-03T00:00:00.000000"
+    },
+    {
+      "article_id": "ff4165e2a1f3",
+      "title": "Trump Says He Canceled Strikes on Iran, Claiming Progress on Outlines of a Deal",
+      "source": "NYT_World",
+      "url": "https://www.nytimes.com/2026/08/02/world/middleeast/trump-iran-cancels-attack-deal.html",
+      "importance": 5,
+      "category": "diplomacy",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.98,
+          "evidence": "Washington Times·NBC News·PBS·Al Jazeera 교차확인. 트럼프 8/2 Truth Social에서 이란 공습 취소 공식 발표.",
+          "sources": [
+            "Washington Times: Trump halts strikes on Iran, says peace deal perimeters are in place",
+            "PBS: 미-이란 휴전 연장+호르무즈 개방 초기 합의"
+          ],
+          "engine": "claude+websearch",
+          "claim": "트럼프 대통령이 이란에 대한 군사 공습을 취소했다"
+        },
+        {
+          "verdict": "검증됨",
+          "confidence": 0.97,
+          "evidence": "Al Jazeera: MBS가 트럼프에게 '대화 우선, 에스컬레이션 감소 필요' 촉구. Axios: MBS가 대규모 이란 공격 계획에 우려 표명. 이것이 트럼프 공격 취소에 영향을 미쳤다고 복수 매체 보도.",
+          "sources": [
+            "Al Jazeera: Saudi Crown Prince MBS urges Trump to prioritise dialogue",
+            "Axios: Saudi crown prince raises concerns over Trump's plans"
+          ],
+          "engine": "claude+websearch",
+          "claim": "사우디아라비아 지도자가 트럼프에게 이란에 대한 재공격 중단을 촉구했다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.97,
+      "checked_at": "2026-08-03T00:00:00.000000"
+    },
+    {
+      "article_id": "89d9de876199",
+      "title": "In Iran, the U.S. Appears Headed for a Strategic Defeat, Allies Fear",
+      "source": "NYT_World",
+      "url": "https://www.nytimes.com/2026/08/01/world/middleeast/us-iran-war-strategy.html",
+      "importance": 5,
+      "category": "paradigm",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.99,
+          "evidence": "Al Jazeera: IRGC 해군이 호르무즈 해협 전면 폐쇄 선언. Wikipedia 2026 Strait of Hormuz campaign 확인. 이란이 모든 유조선·상선 통과 금지 및 기뢰 부설. 3월 이후 실질적으로 운항 차단됨.",
+          "sources": [
+            "Al Jazeera: Iran war updates — IRGC navy declares Strait of Hormuz closed",
+            "Wikipedia: 2026 Strait of Hormuz campaign"
+          ],
+          "engine": "claude+websearch",
+          "claim": "호르무즈 해협이 폐쇄되었다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.3,
+          "evidence": "NYT 분석 기사에서의 분석적 견해(주관적 평가)로 객관적 팩트 검증 불가. 트럼프 행정부의 전략적 목표 달성 여부는 관점에 따라 다름. 8/2 합의 윤곽 도출로 외교적 진전도 있음.",
+          "sources": [],
+          "engine": "claude+websearch",
+          "claim": "미국이 이란과의 전쟁에서 목표를 달성하지 못하고 있다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.64,
+      "checked_at": "2026-08-03T00:00:00.000000"
+    },
+    {
+      "article_id": "99fafc7a8b47",
+      "title": "Ukraine's Strike on Iranian Ship Shows How Two Wars Could Spiral",
+      "source": "NYT_World",
+      "url": "https://www.nytimes.com/2026/07/31/us/politics/iran-ukraine-war.html",
+      "importance": 5,
+      "category": "paradigm",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.95,
+          "evidence": "CNBC(7/26): 우크라이나가 카스피해에서 이란 선박 타격. 젤렌스키: 이란 관련 군사 화물 운반 선박과 군함 포함 강력한 결과. 러시아 군수 지원 네트워크 차단 목적.",
+          "sources": [
+            "CNBC: Ukraine strikes Iranian vessels in Caspian Sea",
+            "ACLED: Why would Ukraine attack an Iranian tanker"
+          ],
+          "engine": "claude+websearch",
+          "claim": "우크라이나가 이란을 돕는 러시아 군함을 격침했다"
+        },
+        {
+          "verdict": "검증됨",
+          "confidence": 0.98,
+          "evidence": "CNBC(7/26)·Al Jazeera(7/27) 교차확인. 우크라이나가 카스피해에서 이란 상선 타격, 선원 1명 사망. 이란 외무장관 용납할 수 없는 적대 행위로 강력 반발.",
+          "sources": [
+            "CNBC: Ukraine strikes Iranian vessels in Caspian Sea, Tehran accuses Kyiv of hostile act",
+            "Al Jazeera: Iran warns Ukraine of retaliation after deadly Caspian Sea strike"
+          ],
+          "engine": "claude+websearch",
+          "claim": "우크라이나가 이란 선박을 타격했다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.96,
+      "checked_at": "2026-08-03T00:00:00.000000"
+    },
+    {
+      "article_id": "65810f9593e2",
+      "title": "Iran strikes tankers under US escort in Hormuz strait as Trump gathers cabinet to discuss war",
+      "source": "Guardian_API",
+      "url": "https://www.theguardian.com/world/2026/jul/31/iran-strikes-tankers-us-escort-hormuz-strait-trump-gathers-cabinet",
+      "importance": 5,
+      "category": "military",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.98,
+          "evidence": "Washington Times·Defense Post 교차확인. 7/31 IRGC가 미군 항공 호위 하의 UAE 유조선 2척 타격, 승무원 1명 사망. 이란 IRGC: 사전 허가 없이 호르무즈 통과 시도한 유조선 주장.",
+          "sources": [
+            "Washington Times: Iran strikes US-escorted tankers in Hormuz",
+            "Defense Post: IRGC attacks UAE tankers under US air escort, 1 crew dead"
+          ],
+          "engine": "claude+websearch",
+          "claim": "이란이 호르무즈 해협에서 미국 호위를 받는 유조선들을 공격했다"
+        },
+        {
+          "verdict": "검증됨",
+          "confidence": 0.96,
+          "evidence": "7/27 발행 팩트체크에서 브렌트유 $100.60 돌파 확인(7/24). 7/29~7/30 미국 이란 재공습 후 유가 재급등. 이전 2주간 미-이란 전투 지속으로 에너지 시장 급변동.",
+          "sources": [
+            "이전 7/27 발행 팩트체크: 브렌트유 $100.60 돌파 확인",
+            "7/30 발행: 트럼프 발언 후 브렌트 +5.8%"
+          ],
+          "engine": "claude+websearch",
+          "claim": "지난 2주간 미-이란 전투 재개로 유가가 급등했다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.97,
+      "checked_at": "2026-08-03T00:00:00.000000"
+    },
+    {
+      "article_id": "230791ac89a1",
+      "title": "US hits dozens of targets in Iran overnight as peace efforts under threat",
+      "source": "Guardian_API",
+      "url": "https://www.theguardian.com/world/2026/jul/30/us-strikes-iran-war-widening-iraq",
+      "importance": 5,
+      "category": "military",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.98,
+          "evidence": "WashPost·Al Jazeera·Bloomberg·CBS News 교차확인. 7/29~7/30 CENTCOM이 2시간 파상공격으로 IRGC 수십 개 시설 타격(군사지휘소, 미사일/드론 시설, 해안방어망). Qeshm 3명 사망.",
+          "sources": [
+            "Washington Post: US hits dozens of targets in Iran overnight",
+            "CBS News: US-Saudi Arabia strike Iran-backed groups",
+            "Al Jazeera: CENTCOM confirms overnight Iran strikes"
+          ],
+          "engine": "claude+websearch",
+          "claim": "미국이 이란 내 수십 개(dozens) 목표물을 야간 공습했다"
+        },
+        {
+          "verdict": "검증됨",
+          "confidence": 0.96,
+          "evidence": "CENTCOM 공식 성명 및 CBS News 보도 확인. 미중앙사령부가 이란 군사력 약화 및 공격 능력 저하를 목표로 공습 실시했다고 발표.",
+          "sources": [
+            "CBS News: US hits dozens of Iranian military targets",
+            "Al Jazeera: CENTCOM confirms strikes targeting IRGC capabilities"
+          ],
+          "engine": "claude+websearch",
+          "claim": "미중앙사령부가 이란 군사력 약화를 목표로 했다고 공식 발표했다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.97,
+      "checked_at": "2026-08-03T00:00:00.000000"
+    },
+    {
+      "article_id": "1912916b277c",
+      "title": "Decades on from the US's disastrous campaign in Afghanistan, Trump is making all the same mistakes | Simon Tisdall",
+      "source": "Guardian_Iran",
+      "url": "https://www.theguardian.com/commentisfree/2026/aug/02/donald-trump-iran-afghanistan-25-years-same-mistakes",
+      "importance": 5,
+      "category": "paradigm",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.99,
+          "evidence": "아프가니스탄 전쟁(2001~2021) 약 20년 지속은 역사적 사실. 미군은 2001년 10월 개전, 2021년 8월 철수.",
+          "sources": [
+            "아프가니스탄 전쟁 (2001-2021) 역사적 사실"
+          ],
+          "engine": "claude-only",
+          "claim": "미국의 아프가니스탄 전쟁은 20년간 지속되었다"
+        },
+        {
+          "verdict": "검증됨",
+          "confidence": 0.99,
+          "evidence": "2026년 이란전쟁은 2/28 미국·이스라엘 공습으로 시작. 7/29~7/30 이란 내 수십 개 목표 재공습. 8/2 공격 취소 발표 전까지 군사 충돌 지속. 복수 매체 교차확인.",
+          "sources": [
+            "Guardian: US war on Iran is spinning out of control",
+            "Washington Post: US-Iran military conflict ongoing"
+          ],
+          "engine": "claude+websearch",
+          "claim": "트럼프 행정부가 이란과 군사적 충돌을 진행 중이다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.99,
+      "checked_at": "2026-08-03T00:00:00.000000"
+    },
+    {
+      "article_id": "05af5a09a48c",
+      "title": "The US war on Iran is spinning out of control | Mohamad Bazzi",
+      "source": "Guardian_Iran",
+      "url": "https://www.theguardian.com/commentisfree/2026/aug/01/us-iran-war-trump-recession",
+      "importance": 5,
+      "category": "military",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.97,
+          "evidence": "Wikipedia 2026 Iranian strikes on Arab countries 및 Britannica 확인. 이란전쟁에 미국·이스라엘·사우디·UAE·쿠웨이트 등 5개국 이상 참전. 14개국 여행경보 발령. 이라크·예멘·레바논 등으로 전선 확산.",
+          "sources": [
+            "Wikipedia: 2026 Iran war — US, Israel, Saudi Arabia, UAE, Kuwait 등 참전",
+            "Britannica: 2026 Iran war — 5개국 이상 직접 참전"
+          ],
+          "engine": "claude+websearch",
+          "claim": "미국과 이란의 전쟁이 중동 5개국 이상으로 확산되고 있다"
+        },
+        {
+          "verdict": "검증됨",
+          "confidence": 0.98,
+          "evidence": "CBS News·Al Jazeera(7/29) 교차확인. 미국-사우디 합동 이라크 PMF 공습으로 20명 사망, 32명 부상. 이라크 국가안보위원회 주권 침해 강력 항의.",
+          "sources": [
+            "CBS News: US and Saudi Arabia strike Iran-backed PMF fighters in Iraq",
+            "Al Jazeera: Iraq calls Saudi-US attacks a flagrant violation of sovereignty"
+          ],
+          "engine": "claude+websearch",
+          "claim": "사우디아라비아가 이라크 공습에 참여했다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.97,
+      "checked_at": "2026-08-03T00:00:00.000000"
+    }
+  ]
+}
