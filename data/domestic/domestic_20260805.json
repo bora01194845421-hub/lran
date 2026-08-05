@@ -1,0 +1,32 @@
+{
+  "date": "2026-08-05",
+  "collected_at": "2026-08-04T23:59:58.179829",
+  "oil_price": {
+    "source": "오피넷",
+    "collected_at": "2026-08-04T23:59:58.179841",
+    "gasoline_national": 1872.39,
+    "gasoline_source": "GlobalPetrolPrices",
+    "wti_usd": 75.23,
+    "brent_usd": 78.78,
+    "dubai_usd": 78.21,
+    "dubai_source": "오피넷",
+    "rbob_usd_gal": 2.8377
+  },
+  "exchange_rate": {
+    "source": "frankfurter.app",
+    "collected_at": "2026-08-05T00:00:06.553922",
+    "error": "HTTPSConnectionPool(host='api.frankfurter.dev', port=443): Read timed out. (read timeout=10)"
+  },
+  "cpi": {
+    "source": "통계청(fallback)",
+    "collected_at": "2026-08-05T00:00:16.676589",
+    "cpi_yoy_pct": 2.1,
+    "note": "전년동월비 +2.1% (통계청 2026.04 공표, 자동수집 실패 시 적용)",
+    "period_current": "202607"
+  },
+  "gas_price": {
+    "source": "한국가스공사",
+    "collected_at": "2026-08-05T00:00:18.480541"
+  },
+  "gyeonggi_policy": []
+}

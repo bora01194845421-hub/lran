@@ -1,0 +1,196 @@
+{
+  "date": "2026-08-05",
+  "total_signals": 8,
+  "structural_signals": 8,
+  "signals": [
+    {
+      "signal_id": "sig_001",
+      "category": "에너지안보재편",
+      "title_ko": "호르무즈 해협 협상 타결 임박",
+      "description": "• 미국 재무장관·국무장관이 '내일까지', '매우 곧' 호르무즈 재개 합의 가능 공식 언급\n• 트럼프 대통령이 이란 공습 취소하며 '합의 윤곽 도달' 선언, 사우디·카타르 중재 역할 확대\n• 시장은 즉각 반응: S&P500 사상 최고치, 유가 3일 연속 하락, 공급망 재개 기대 급등",
+      "evidence_titles": [
+        "Strait of Hormuz Deal With Iran Possible Soon, Bessent Says",
+        "Trump Says He Canceled Strikes on Iran, Claiming Progress on Outlines of a Deal",
+        "S&P 500 Rises to All-Time High on Hormuz Deal Push: Markets Wrap",
+        "US and Qatar report progress on Iran ceasefire and reopening Hormuz strait",
+        "Oil prices fall on hopes Strait of Hormuz could reopen"
+      ],
+      "evidence_sources": [
+        "NYT_World",
+        "Bloomberg",
+        "Guardian_API",
+        "BBC_World",
+        "FT_World"
+      ],
+      "strength": 5,
+      "trend": "반전",
+      "suwon_implication": "수원시 에너지 비용(난방·전기) 안정화 가능성 급등. 유가 하락 시 취약계층 지원 예산 재조정 기회 확보. 단, 합의 결렬 시 역충격 대비 필요.",
+      "is_structural": true,
+      "detected_date": "2026-08-05"
+    },
+    {
+      "signal_id": "sig_002",
+      "category": "정책패러다임전환",
+      "title_ko": "트럼프 군사 압박→협상 패턴 확정",
+      "description": "• 트럼프 행정부가 '공습 예고→취소' 패턴을 반복하며 이란에 협상 압박 전략 구조화\n• NYT 분석: 이란이 전선 확대로 '전쟁 위험 경고' 보내자 미국이 즉각 후퇴, 실질 협상 진입\n• 사우디·카타르 등 중동 중재국들이 미국 압박 중단 요청, 외교 채널이 군사 옵션보다 우선순위 확보",
+      "evidence_titles": [
+        "Trump cancels Iran strikes subject to deal being made 'rapidly'",
+        "For Iran, Trump's Reversal on Escalation Shows Who Has the Upper Hand",
+        "Trump Says He Canceled Strikes on Iran, Claiming Progress on Outlines of a Deal"
+      ],
+      "evidence_sources": [
+        "BBC_MidEast",
+        "NYT_World"
+      ],
+      "strength": 4,
+      "trend": "강화",
+      "suwon_implication": "중동 갈등의 단기 급등→급락 패턴 반복 가능성. 수원시 위기대응 시스템은 '순간 폭등' 시나리오보다 '변동성 상시화' 대비 모드로 전환 필요.",
+      "is_structural": true,
+      "detected_date": "2026-08-05"
+    },
+    {
+      "signal_id": "sig_003",
+      "category": "지역질서재편",
+      "title_ko": "가자 하마스 무장해제 계획 수용",
+      "description": "• 하마스가 가자지구 무장해제 계획 수용, 이스라엘군 철수 조건 합의 가능성\n• BBC 분석: '가자 전쟁 종식의 첫 신뢰할 만한 단계', 트럼프 주도 평화 이니셔티브의 최대 장애물 제거\n• 중동 전역 긴장 완화의 연쇄효과 가능: 이란-이스라엘 갈등, 호르무즈 봉쇄, 예멘 후티 공격 모두 완화 경로 진입",
+      "evidence_titles": [
+        "If Hamas disarmament plan holds, it could mark first credible step to ending Gaza war",
+        "What's in the Gaza peace deal roadmap?"
+      ],
+      "evidence_sources": [
+        "BBC_MidEast"
+      ],
+      "strength": 4,
+      "trend": "신규",
+      "suwon_implication": "중동 안정화 시 장기 에너지 가격 하향 안정, 수원시 제조업·물류업 비용 부담 완화. 단, 합의 이행 여부 불확실하여 3개월 모니터링 필요.",
+      "is_structural": true,
+      "detected_date": "2026-08-05",
+      "first_detected": "2026-08-05"
+    },
+    {
+      "signal_id": "sig_008",
+      "category": "민생충격패턴",
+      "title_ko": "에너지효율이 중소기업 가격충격 완충재",
+      "description": "• IEA 분석: '에너지 효율 개선이 중소기업의 가격 충격 대응 회복력 구축 지원'\n• 이란 전쟁 유가 급등 속에서 에너지 효율 투자가 '민생 안정 핵심 수단'으로 국제기구 권고 확산\n• 단순 보조금 지급보다 '구조적 에너지 소비 절감'이 장기 대안으로 정책 우선순위 전환 신호",
+      "evidence_titles": [
+        "Unlocking energy efficiency can help small firms build resilience against price shocks – Analysis"
+      ],
+      "evidence_sources": [
+        "IEA_News"
+      ],
+      "strength": 4,
+      "trend": "신규",
+      "suwon_implication": "수원시 중소상공인 에너지 효율 개선 지원사업(LED 교체, 단열 개선 등) 확대 근거 확보. 긴급 난방비 지원보다 장기 효율 투자가 실효성 높음.",
+      "is_structural": true,
+      "detected_date": "2026-08-05",
+      "first_detected": "2026-08-05"
+    },
+    {
+      "signal_id": "sig_004",
+      "category": "정책패러다임전환",
+      "title_ko": "AI 생산성이 개도국 성장 대안으로 부상",
+      "description": "• 세계은행 보고서: AI가 '약한 성장 시대'의 개도국에 생명선 제공 가능성 제시\n• IMF 다수 보고서에서 AI 생산성(영국 사례) 및 구조적 생산성 측정 방법론 강화\n• 에너지 전쟁이 촉발한 경제 불확실성 속에서 AI가 '성장 엔진 교체' 전략으로 국제기구 정책 전면 등장",
+      "evidence_titles": [
+        "AI Offers Lifeline to Developing Economies in an Era of Weak Growth",
+        "Unlocking AI-Led Productivity Growth in the United Kingdom"
+      ],
+      "evidence_sources": [
+        "WorldBank_News",
+        "IMF_News"
+      ],
+      "strength": 3,
+      "trend": "강화",
+      "suwon_implication": "수원시 산업정책 방향 재점검 필요: 전통 제조업 지원 외에 AI 기반 생산성 향상 인프라(교육·컨설팅) 투자 확대 검토.",
+      "is_structural": true,
+      "detected_date": "2026-08-05"
+    },
+    {
+      "signal_id": "sig_005",
+      "category": "무역공급망재편",
+      "title_ko": "에너지기술 제조업 무역구조 재편",
+      "description": "• IEA 보고서: '에너지 기술 제조업이 무역·산업정책 동적 시대에 재균형 중'\n• 이란 전쟁으로 화석연료 공급망 불안 심화 → 재생에너지·배터리 등 에너지 전환 기술 무역 규칙 재편 가속\n• 중국·미국·EU 간 에너지 기술 공급망 블록화 경쟁이 '전쟁 리스크 헤지' 명분으로 정당화",
+      "evidence_titles": [
+        "Energy technology manufacturing is rebalancing in a dynamic era for trade and industrial policy – Analysis"
+      ],
+      "evidence_sources": [
+        "IEA_News"
+      ],
+      "strength": 3,
+      "trend": "강화",
+      "suwon_implication": "수원시 소재 전기차·배터리 부품 중소기업은 수출 경로 다변화 지원 필요. 무역블록 간 규제 차이 대응 컨설팅 수요 증가 예상.",
+      "is_structural": true,
+      "detected_date": "2026-08-05"
+    },
+    {
+      "signal_id": "sig_007",
+      "category": "정책패러다임전환",
+      "title_ko": "IMF, 중동·아프리카 재정안정 집중",
+      "description": "• IMF가 이집트(7차 리뷰 완료), 가나(36개월 정책조정), 앙골라·모리타니(부채분석), 시리아(직원방문) 등 중동·아프리카 재정 지원 집중\n• 이란 전쟁 여파로 에너지 수입국 재정 압박 심화, IMF의 '에너지 위기 대응 재정 프로그램' 대규모 가동\n• 단순 구제금융 아닌 'VAT 개혁, 산업지수 개선' 등 구조개혁 조건 강화 경향",
+      "evidence_titles": [
+        "IMF Executive Board Completes the Seventh Review Under the Extended Arrangement Under the Extended Fund Facility and Second Review Under the Resilience and Sustainability Facility Arrangement for Egypt",
+        "Ghana: 2026 Article IV Consultation, Sixth Review under the Arrangement under the Extended Credit Facility...",
+        "Angola: VAT credits and refunds",
+        "IMF Staff Concludes Staff Visit to Syria"
+      ],
+      "evidence_sources": [
+        "IMF_News"
+      ],
+      "strength": 3,
+      "trend": "강화",
+      "suwon_implication": "국제 재정 긴축 확산 시 글로벌 수요 위축, 수원시 수출기업 매출 감소 우려. 내수 중심 민생안정 정책 비중 확대 검토 필요.",
+      "is_structural": true,
+      "detected_date": "2026-08-05"
+    },
+    {
+      "signal_id": "sig_006",
+      "category": "에너지안보재편",
+      "title_ko": "항만 에너지 전환 가속화 논의",
+      "description": "• UNCTAD 보고서: '항만에서 에너지 전환 가속화' 이슈 부상\n• 호르무즈 봉쇄 경험 후 주요 항만들이 화석연료 의존 리스크 감소 위해 전기화·재생에너지 전환 압력 증가\n• 글로벌 해운 공급망의 '에너지 안보 자립' 요구가 구조적 투자 트렌드로 전환 중",
+      "evidence_titles": [
+        "Accelerating the energy transition in ports"
+      ],
+      "evidence_sources": [
+        "UNCTAD_News"
+      ],
+      "strength": 2,
+      "trend": "신규",
+      "suwon_implication": "수원시는 내륙 도시이나, 인천항·평택항 의존 물류기업 다수. 항만 에너지 전환 비용이 물류비로 전가될 경우 지역 제조업 영향 분석 필요.",
+      "is_structural": true,
+      "detected_date": "2026-08-05",
+      "first_detected": "2026-08-05"
+    }
+  ],
+  "by_category": {
+    "에너지안보재편": 2,
+    "정책패러다임전환": 3,
+    "지역질서재편": 1,
+    "무역공급망재편": 1,
+    "민생충격패턴": 1
+  },
+  "summary_ko": "• 호르무즈 해협 협상 타결 임박, 미 재무·국무장관 '내일까지' 합의 공식 시사—유가 3일 연속 하락, S&P500 사상 최고치 기록\n• 트럼프 '군사 압박→협상' 패턴 확정, 이란 공습 취소하며 사우디·카타르 중재 역할 강화—중동 갈등 변동성 상시화 국면 진입\n• 가자 하마스 무장해제 계획 수용, BBC '전쟁 종식 첫 신뢰할 단계'—중동 안정화 연쇄효과로 장기 에너지 가격 하향 안정 가능성\n• 세계은행·IMF·IEA가 일제히 'AI 생산성, 에너지 효율, 에너지기술 무역 재편'을 성장 전략으로 제시—전쟁 촉발 경제 불확실성 속 구조 전환 가속\n• IMF의 중동·아프리카 재정 지원 집중, 에너지 수입국 긴축 확산—글로벌 수요 위축 우려 속 내수 중심 민생 안정 정책 필요성 급등",
+  "top_signal": "호르무즈 해협 협상 타결 임박",
+  "suwon_action": "• 유가 하락 시 난방비·전기료 안정화 예상, 취약계층 지원 예산 재조정 및 중소상공인 에너지 효율 개선 투자 확대 즉시 검토\n• 중동 합의 결렬 시 역충격 대비, 변동성 상시화 전제한 위기대응 매뉴얼 업데이트 필요—3개월 모니터링 체제 가동",
+  "weekly_trend": {
+    "정책패러다임전환": {
+      "count": 3,
+      "max_strength": 4
+    },
+    "에너지안보재편": {
+      "count": 2,
+      "max_strength": 5
+    },
+    "지역질서재편": {
+      "count": 1,
+      "max_strength": 4
+    },
+    "민생충격패턴": {
+      "count": 1,
+      "max_strength": 4
+    },
+    "무역공급망재편": {
+      "count": 1,
+      "max_strength": 3
+    }
+  },
+  "generated_at": "2026-08-05T00:09:43.965036"
+}
