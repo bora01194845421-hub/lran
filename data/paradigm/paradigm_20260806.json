@@ -1,0 +1,174 @@
+{
+  "date": "2026-08-06",
+  "total_signals": 7,
+  "structural_signals": 7,
+  "signals": [
+    {
+      "signal_id": "sig_001",
+      "category": "에너지안보재편",
+      "title_ko": "호르무즈 통항권 국제공유→이란 주권화",
+      "description": "• 이란-오만이 호르무즈 항로 좌표 합의, 상당부분 이란 영해 통과 승인\n• 글로벌 공공재였던 해협 통항권이 이란의 사실상 통제권으로 재편\n• 에너지 안보 기준이 '자유통항 원칙'에서 '당사국 협상' 체제로 전환",
+      "evidence_titles": [
+        "Iran and Oman reach understanding on coordinates of route through Hormuz",
+        "Iran says it has reached agreement with Oman on Hormuz shipping route",
+        "이란 \"호르무즈 새 항로 합의…상당부분 이란 영해 통과\""
+      ],
+      "evidence_sources": [
+        "AlMonitor",
+        "FT_World",
+        "Yonhap"
+      ],
+      "strength": 5,
+      "trend": "신규",
+      "suwon_implication": "중동 원유 수입 의존도 높은 한국의 에너지 수입비용 장기 상승 구조화. 수원시 난방비·전기료 인상 압력 지속 예상",
+      "is_structural": true,
+      "detected_date": "2026-08-06",
+      "first_detected": "2026-08-06"
+    },
+    {
+      "signal_id": "sig_002",
+      "category": "무역공급망재편",
+      "title_ko": "해운 초크포인트 복수화·대체불가",
+      "description": "• 호르무즈 봉쇄 후 대안 항로(홍해) 역시 후티 공격으로 위협 증대\n• 단일 우회로 전략 무력화, 해운업계 '최악의 복합 위기' 진단\n• 글로벌 물류가 특정 경로 회피 불가능한 구조적 취약성 노출",
+      "evidence_titles": [
+        "Threat to oil tankers in Middle East worst since start of Iran war",
+        "Iran-Oman deal spurs Hormuz hopes as Red Sea threats evolve"
+      ],
+      "evidence_sources": [
+        "BBC_MidEast",
+        "AlMonitor"
+      ],
+      "strength": 4,
+      "trend": "강화",
+      "suwon_implication": "수원시 제조기업의 원자재 수입비용 상승, 납품 지연 장기화. 중소 수출기업 물류 불확실성 대응 컨설팅 필요",
+      "is_structural": true,
+      "detected_date": "2026-08-06"
+    },
+    {
+      "signal_id": "sig_003",
+      "category": "정책패러다임전환",
+      "title_ko": "IEA, 에너지 제조업 재편 분석",
+      "description": "• IEA가 무역·산업정책 변동기의 에너지 기술 제조업 리밸런싱 분석 발표\n• 에너지 안보가 단순 가격 경쟁에서 공급망 자립·신뢰 기반으로 전환\n• 국제기구가 '가격 효율성'에서 '전략적 자립' 우선 정책으로 방향 전환",
+      "evidence_titles": [
+        "Energy technology manufacturing is rebalancing in a dynamic era for trade and industrial policy"
+      ],
+      "evidence_sources": [
+        "IEA_News"
+      ],
+      "strength": 4,
+      "trend": "신규",
+      "suwon_implication": "수원시 에너지 정책의 국제 벤치마킹 기준 변화. 저가 에너지원 확보보다 안정적 공급망 구축이 우선 과제로 부상",
+      "is_structural": true,
+      "detected_date": "2026-08-06",
+      "first_detected": "2026-08-06"
+    },
+    {
+      "signal_id": "sig_004",
+      "category": "지역질서재편",
+      "title_ko": "이란 '저항의 축' 회복 평가",
+      "description": "• Foreign Affairs, 이란 주도 저항의 축 네트워크가 전쟁 중에도 복원력 과시\n• 미국의 군사 압박에도 불구, 이란의 지역 영향력은 오히려 확대 평가\n• 중동 질서가 미국 주도 안정에서 이란 포함 다극 구조로 재편 신호",
+      "evidence_titles": [
+        "How the Axis of Resistance Recovered",
+        "For Iran, Trump's Reversal on Escalation Shows Who Has the Upper Hand"
+      ],
+      "evidence_sources": [
+        "ForeignAffairs",
+        "NYT_World"
+      ],
+      "strength": 4,
+      "trend": "강화",
+      "suwon_implication": "중동 불안정 장기화로 한국의 에너지 수입 다변화 압력 증대. 수원시 외국인 근로자(중동 출신) 동향 변화 가능성",
+      "is_structural": true,
+      "detected_date": "2026-08-06"
+    },
+    {
+      "signal_id": "sig_007",
+      "category": "무역공급망재편",
+      "title_ko": "해양 초크포인트 개념 재정의",
+      "description": "• War on the Rocks, 호르무즈 이후 해양 초크포인트의 미래 구조 분석\n• 이란의 통행료 징수 시도, 후티의 사우디 선박 공격 등 새로운 패턴\n• 자유항행 원칙이 '통과세 협상' 모델로 전환되는 구조적 변화",
+      "evidence_titles": [
+        "Beyond Hormuz: The Future of Maritime Chokepoints"
+      ],
+      "evidence_sources": [
+        "WarOnRocks"
+      ],
+      "strength": 4,
+      "trend": "신규",
+      "suwon_implication": "한국의 모든 수출입 물류비용 장기 상승 구조 진입. 수원시 기업 경쟁력 약화 대응 지원책 필요",
+      "is_structural": true,
+      "detected_date": "2026-08-06",
+      "first_detected": "2026-08-06"
+    },
+    {
+      "signal_id": "sig_005",
+      "category": "민생충격패턴",
+      "title_ko": "세계은행, AI를 성장돌파구 제시",
+      "description": "• 세계은행, 개도국 저성장 시대에 AI가 유일한 생명줄이라 진단\n• 전쟁·에너지 위기로 전통 성장 동력 약화, 기술 혁신만이 대안\n• 국제기구가 민생 안정을 전통 재정정책에서 기술 채택으로 전환 권고",
+      "evidence_titles": [
+        "AI Offers Lifeline to Developing Economies in an Era of Weak Growth",
+        "Supporting cost-effective AI adoption in education"
+      ],
+      "evidence_sources": [
+        "WorldBank_News",
+        "WorldBank_News"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "수원시 민생안정 정책에 AI 기반 서비스 효율화 도입 검토 필요. 취약계층 디지털 격차 해소가 새로운 복지 과제로 부상",
+      "is_structural": true,
+      "detected_date": "2026-08-06",
+      "first_detected": "2026-08-06"
+    },
+    {
+      "signal_id": "sig_006",
+      "category": "지역질서재편",
+      "title_ko": "이란 최고지도자 소통두절 보고",
+      "description": "• 이란 대통령, 부상당한 최고지도자와 소통이 매우 어렵다고 공개 발언\n• 이란 내부 권력 구조 불안정 신호, 향후 협상·정책 예측 불가능성 증대\n• 중동 질서의 핵심 행위자 내부 거버넌스 위기 표출",
+      "evidence_titles": [
+        "이란 대통령 \"현재 최고지도자와 소통 매우 어려워\""
+      ],
+      "evidence_sources": [
+        "Yonhap"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "중동 정세 예측 불가능성 증대로 에너지 가격 변동성 확대. 수원시 긴급 민생 대책 수립 시 시나리오 다변화 필요",
+      "is_structural": true,
+      "detected_date": "2026-08-06",
+      "first_detected": "2026-08-06"
+    }
+  ],
+  "by_category": {
+    "에너지안보재편": 1,
+    "무역공급망재편": 2,
+    "정책패러다임전환": 1,
+    "지역질서재편": 2,
+    "민생충격패턴": 1
+  },
+  "summary_ko": "• 호르무즈 해협 통항권이 이란 주권 체제로 전환되며, 글로벌 에너지 안보 기준이 '자유통항'에서 '당사국 협상'으로 재편\n• 호르무즈·홍해 동시 위협으로 해운 우회로 전략 무력화, 글로벌 물류의 구조적 취약성 노출\n• IEA·세계은행 등 국제기구가 '가격 효율성' 중심에서 '공급망 자립·AI 혁신' 우선 정책으로 방향 전환\n• 이란 최고지도자 소통두절로 중동 핵심 행위자 거버넌스 위기, 정세 예측 불가능성 급증\n• 에너지·물류 비용 장기 상승 구조화로 지방정부 민생안정 정책의 패러다임 전환 압력 가중",
+  "top_signal": "호르무즈 통항권 국제공유→이란 주권화",
+  "suwon_action": "중동 원유 의존 수원시 난방비·전기료 인상 압력 대응 시나리오 즉시 가동 필요. 제조·수출 중소기업 물류비 급등 긴급 컨설팅 및 AI 기반 행정 효율화로 재정 여력 확보 검토 착수",
+  "weekly_trend": {
+    "정책패러다임전환": {
+      "count": 10,
+      "max_strength": 4
+    },
+    "민생충격패턴": {
+      "count": 5,
+      "max_strength": 4
+    },
+    "지역질서재편": {
+      "count": 4,
+      "max_strength": 4
+    },
+    "에너지안보재편": {
+      "count": 4,
+      "max_strength": 5
+    },
+    "무역공급망재편": {
+      "count": 4,
+      "max_strength": 4
+    }
+  },
+  "generated_at": "2026-08-06T00:13:39.204888"
+}

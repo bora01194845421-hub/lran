@@ -1,0 +1,357 @@
+{
+  "date": "2026-08-06",
+  "generated_at": "2026-08-06T00:17:49.826196",
+  "engine": "Claude + WebSearch 교차검증",
+  "stats": {
+    "articles_checked": 10,
+    "total_claims": 20,
+    "verified": 18,
+    "disputed": 0,
+    "unverified": 2,
+    "verified_rate": 90.0
+  },
+  "results": [
+    {
+      "article_id": "cc9233c61985",
+      "title": "Iran says it has reached agreement with Oman on Hormuz shipping route",
+      "source": "FT_World",
+      "url": "https://www.ft.com/content/e0b10cad-3e46-4a6d-9227-eba6fe11c676?syn-25a6b1a6=1",
+      "importance": 5,
+      "category": "transport",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.98,
+          "evidence": "8/5 Bloomberg·Washington Times·Euronews 교차확인. 이란 외교부 대변인 바가에이: 이란-오만 간 호르무즈 통과 항로 좌표 합의 완료 발표. 이란-오만 공동 관리 'middle corridor' 설치 합의.",
+          "sources": [
+            "Bloomberg: Iran, Oman Reach Agreement on Proposed Strait of Hormuz Shipping Route",
+            "Washington Times: Iran, Oman agree to new shipping routes in Hormuz",
+            "Euronews: Iran and Oman agree route for ships in Strait of Hormuz"
+          ],
+          "engine": "claude+websearch",
+          "claim": "이란이 오만과 호르무즈 해협 해운로 협정을 체결했다"
+        },
+        {
+          "verdict": "검증됨",
+          "confidence": 0.95,
+          "evidence": "이란 조건: 미국 해상 봉쇄 해제 + 이란 인프라 공격 중단. 이란 외교부 대변인: 호르무즈 재개통은 미국 봉쇄 해제에 조건부. 이란-오만 공동 관리 체계 = 이란 통제력 유지 의도.",
+          "sources": [
+            "Seeking Alpha: Iran says Hormuz future will be decided between Iran and Oman; Trump ceasefire claims false",
+            "Washington Times: Iran stresses conditions for reopening"
+          ],
+          "engine": "claude+websearch",
+          "claim": "이란은 호르무즈 해협에 대한 통제력 유지를 목표로 한다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.96,
+      "checked_at": "2026-08-06T09:00:00.000000"
+    },
+    {
+      "article_id": "b696dc5085d3",
+      "title": "Threat to oil tankers in Middle East  worst since start of Iran war, analysts say",
+      "source": "BBC_MidEast",
+      "url": "https://www.bbc.co.uk/news/articles/cjrv0dy2e90o?at_medium=RSS&at_campaign=rss",
+      "importance": 5,
+      "category": "energy",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.97,
+          "evidence": "Hellenic Shipping News·CNBC 교차확인. Kpler 분석가 매튜 라이트: '이 위기 시작 이후 가장 심각한 원유 거래 위협 시기'. 호르무즈 통과 선박 수 일 8~11척 (전쟁 전 100척+ 대비).",
+          "sources": [
+            "Hellenic Shipping News: Threat to oil tankers in Middle East worst since start of Iran war, analysts say",
+            "CNBC: Oil tankers under attack in Red Sea, Strait of Hormuz and Black Sea"
+          ],
+          "engine": "claude+websearch",
+          "claim": "중동 해상 유조선 위협이 이란 전쟁 시작 이후 최악의 수준이다"
+        },
+        {
+          "verdict": "검증됨",
+          "confidence": 0.96,
+          "evidence": "홍해(대체 항로) + 호르무즈 동시 위협 확인. 후티가 7/20 사우디 홍해 항구 봉쇄 선언. 영국 해상무역작전센터(UKMTO) 지난 1주 복수 선박 공격 보고. 이중 봉쇄 구조 확인.",
+          "sources": [
+            "Yahoo News: Sea drones target oil tankers in the Middle East",
+            "CNBC: Oil tankers face worst case scenario in Hormuz as Iran steps up attacks"
+          ],
+          "engine": "claude+websearch",
+          "claim": "대체 해운로 공략으로 유조선이 복잡한 상황에 직면했다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.96,
+      "checked_at": "2026-08-06T09:00:00.000000"
+    },
+    {
+      "article_id": "43769638aa37",
+      "title": "Latest Oil Market News and Analysis for Aug. 6",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-08-05/latest-oil-market-news-and-analysis-for-aug-6",
+      "importance": 5,
+      "category": "energy",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.98,
+          "evidence": "Bloomberg 자체 보도: 8/5 이란-오만 호르무즈 항로 좌표 합의 발표 확인. Washington Times·Euronews 교차확인.",
+          "sources": [
+            "Bloomberg: Iran, Oman Reach Agreement on Proposed Strait of Hormuz Shipping Route (2026-08-05)"
+          ],
+          "engine": "claude+websearch",
+          "claim": "이란이 오만과 호르무즈 해협 협정 체결을 발표했다"
+        },
+        {
+          "verdict": "검증됨",
+          "confidence": 0.97,
+          "evidence": "카타르 외무부 발표 후 Brent 원유 4% 이상 하락 확인. Bloomberg: '카타르 발언 후 Brent 4% 이상 하락, 호르무즈 통행 회복 기대로 월요일 급락 연장.'",
+          "sources": [
+            "Bloomberg: Qatar, US signal progress on Hormuz-focused Iran deal — Brent fell more than 4% after Qatar comments"
+          ],
+          "engine": "claude+websearch",
+          "claim": "협정 발표 이후 유가가 하락했다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.97,
+      "checked_at": "2026-08-06T09:00:00.000000"
+    },
+    {
+      "article_id": "98d1128a13ec",
+      "title": "How the Axis of Resistance Recovered",
+      "source": "ForeignAffairs",
+      "url": "https://www.foreignaffairs.com/iran/how-axis-resistance-recovered",
+      "importance": 5,
+      "category": "paradigm",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.3,
+          "evidence": "Foreign Affairs 분석 기사의 주관적 평가. CSIS는 이란 에스컬레이션 전략 강화 분석. '회복됐다'는 것은 분석가별 견해 차이 있으며 단정 불가. 이란전쟁 진행 중이므로 최종 판단 불가.",
+          "sources": [],
+          "engine": "claude+websearch",
+          "claim": "이란 주도의 저항 연맹이 회복된 상태다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.3,
+          "evidence": "Foreign Affairs 논평의 분석적 견해. CSIS에서 이란 에스컬레이션 전략(수직적 단계 상승) 분석하나, '이전보다 강화됐다'는 주장은 정량적 비교 기준 없이 검증 불가.",
+          "sources": [],
+          "engine": "claude+websearch",
+          "claim": "이란 축의 군사력이 이전보다 강화됐다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.3,
+      "checked_at": "2026-08-06T09:00:00.000000"
+    },
+    {
+      "article_id": "6b98d15fc7bd",
+      "title": "Iran Says It Is Nearing Final Agreement With Oman on Strait of Hormuz",
+      "source": "NYT_World",
+      "url": "https://www.nytimes.com/2026/08/05/world/middleeast/iran-oman-strait-of-hormuz.html",
+      "importance": 5,
+      "category": "diplomacy",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.98,
+          "evidence": "Bloomberg·Washington Times·Euronews 교차확인. 이란 외교부 공식 발표: 이란-오만 호르무즈 항로 좌표 합의, 공동 성명 최종 초안 준비 중. NYT 보도 내용 사실 확인됨.",
+          "sources": [
+            "Bloomberg: Iran, Oman Reach Agreement on Proposed Strait of Hormuz Shipping Route",
+            "Washington Times: Iran, Oman agree to new shipping routes in Hormuz"
+          ],
+          "engine": "claude+websearch",
+          "claim": "이란이 오만과 호르무즈 해협 협정 체결이 임박했다고 발표했다"
+        },
+        {
+          "verdict": "검증됨",
+          "confidence": 0.96,
+          "evidence": "이란 외교부: 이란-오만 공동 관리 'middle corridor' 설치 합의. Seeking Alpha: 이란 '호르무즈의 미래는 이란-오만 간에 결정될 것' 강조. 이란의 통제권 공식화 의도 확인.",
+          "sources": [
+            "Seeking Alpha: Iran says future of Hormuz will be decided between Iran and Oman",
+            "Washington Times: Iran conditions Hormuz reopening on US blockade removal"
+          ],
+          "engine": "claude+websearch",
+          "claim": "협정은 호르무즈 해협에 대한 이란의 통제권을 공식화할 것이다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.97,
+      "checked_at": "2026-08-06T09:00:00.000000"
+    },
+    {
+      "article_id": "1c220eaacd1f",
+      "title": "For Iran, Trump's Reversal on Escalation Shows Who Has the Upper Hand",
+      "source": "NYT_World",
+      "url": "https://www.nytimes.com/2026/08/03/world/middleeast/iran-trump-escalation.html",
+      "importance": 5,
+      "category": "paradigm",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.99,
+          "evidence": "8/2 트럼프 Truth Social: 이란 공습 취소 공식 발표. 8/3 발행 팩트체크에서 Washington Times·NBC News·PBS·Al Jazeera 교차확인 완료.",
+          "sources": [
+            "Washington Times: Trump halts strikes on Iran, says peace deal perimeters are in place",
+            "NBC News: Trump cancels Iran attack, deal outlined"
+          ],
+          "engine": "claude+websearch",
+          "claim": "트럼프 대통령이 이란에 대한 군사 공격을 취소했다"
+        },
+        {
+          "verdict": "검증됨",
+          "confidence": 0.96,
+          "evidence": "CSIS 분석: 이란 '수직적 에스컬레이션 사다리' 전략 — Gulf 민간·교통 인프라로 타격 확대. IRGC: '오늘 침략자 처벌하겠다' 성명. 새 최고지도자 모흐타바: '다른 전선 개방' 위협.",
+          "sources": [
+            "CSIS: Iran's War Strategy — Don't Calibrate, Escalate",
+            "CNBC: Iran says it will punish the aggressor today after heavy wave of US strikes"
+          ],
+          "engine": "claude+websearch",
+          "claim": "이란이 확대 전쟁 시 지역 전투 범위를 확대하겠다고 경고했다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.97,
+      "checked_at": "2026-08-06T09:00:00.000000"
+    },
+    {
+      "article_id": "687fef92fea8",
+      "title": "Iran and Oman agree on coordinates of route through strait of Hormuz, says Iranian foreign ministry – as it happened",
+      "source": "Guardian_Iran",
+      "url": "https://www.theguardian.com/world/live/2026/aug/05/us-iran-israel-oman-strait-of-hormuz-latest-news-updates",
+      "importance": 5,
+      "category": "transport",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.98,
+          "evidence": "Bloomberg·Washington Times·Euronews 교차확인. 이란 외교부 대변인 바가에이: 이란-오만 간 호르무즈 통과 항로 좌표 합의. Guardian 보도 사실 확인.",
+          "sources": [
+            "Bloomberg: Iran, Oman Reach Agreement on Proposed Strait of Hormuz Shipping Route",
+            "Euronews: Iran and Oman agree route for ships in Strait of Hormuz, Tehran says"
+          ],
+          "engine": "claude+websearch",
+          "claim": "이란과 오만이 호르무즈 해협을 통과하는 항로의 좌표에 대해 합의에 도달했다"
+        },
+        {
+          "verdict": "검증됨",
+          "confidence": 0.96,
+          "evidence": "이란 외교부 대변인: '공동 성명이 기술·법률·안보·환경 내용 포함, 최종 초안 검토 중'. 제3국(미국) 봉쇄 해제 조건부 확정 구조.",
+          "sources": [
+            "Washington Times: Iran, Oman preparing joint statement on agreement — includes technical, legal, security, environmental points"
+          ],
+          "engine": "claude+websearch",
+          "claim": "양국은 제3국 간섭이 없을 경우 최종 확정될 공동 성명을 발표할 예정이다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.97,
+      "checked_at": "2026-08-06T09:00:00.000000"
+    },
+    {
+      "article_id": "348b84f8655c",
+      "title": "Understanding reached on coordinates for shipping route through Hormuz, Iran says",
+      "source": "Guardian_Iran",
+      "url": "https://www.theguardian.com/world/2026/aug/05/iran-oman-reach-hormuz-route-coordinates",
+      "importance": 5,
+      "category": "transport",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.98,
+          "evidence": "Bloomberg·Washington Times·Euronews 교차확인. Guardian 보도 내용 복수 매체 일치.",
+          "sources": [
+            "Bloomberg: Iran, Oman Reach Agreement on Proposed Strait of Hormuz Shipping Route (2026-08-05)",
+            "Euronews: Iran and Oman agree route for ships in Strait of Hormuz"
+          ],
+          "engine": "claude+websearch",
+          "claim": "이란과 오만이 호르무즈 해협을 통과하는 해상 항로의 지리적 좌표에 대한 합의에 도달했다"
+        },
+        {
+          "verdict": "검증됨",
+          "confidence": 0.96,
+          "evidence": "이란 외교부: 공동 성명 최종 초안 검토 중. 이란 외무부 대변인 바가에이 발표 복수 매체 확인.",
+          "sources": [
+            "Washington Times: Iran says joint statement under review and in final drafting stage"
+          ],
+          "engine": "claude+websearch",
+          "claim": "이란과 오만 간 호르무즈 해협 항로 합의에 관한 공동 성명 확정이 진행 중이다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.97,
+      "checked_at": "2026-08-06T09:00:00.000000"
+    },
+    {
+      "article_id": "ec9da7c408b5",
+      "title": "Rubio hopes US can reach Hormuz deal with Iran 'very shortly' as officials say progress has been made – as it happened",
+      "source": "Guardian_Iran",
+      "url": "https://www.theguardian.com/world/live/2026/aug/04/middle-east-crisis-qatar-iran-us-israel-war-donald-trump-strait-hormuz-gaza-latest-news-updates",
+      "importance": 5,
+      "category": "diplomacy",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.99,
+          "evidence": "Al Arabiya·JPost·CBS News·HotAir·RSBNetwork 교차확인. 루비오 국무장관: '협상에서 진전이 있으나 최종 합의 아직 없다. 매우 곧 이루어지길 희망.' 베센트 재무장관: '오늘이나 내일 거래 가능성.'",
+          "sources": [
+            "Al Arabiya: US sees progress in Hormuz Strait talks, hopes for deal very shortly, Rubio says",
+            "JPost: US sees progress in Hormuz Strait talks, hopes for deal very shortly",
+            "CBS News: Rubio says progress made in Strait of Hormuz talks"
+          ],
+          "engine": "claude+websearch",
+          "claim": "루비오 미 국무장관이 호르무즈 해협 거래를 '매우 곧(very shortly)' 달성할 수 있다고 발언했다"
+        },
+        {
+          "verdict": "검증됨",
+          "confidence": 0.98,
+          "evidence": "Bloomberg·Spokesman·US News 교차확인. 카타르 외무부: 협상 초안 '매우 진전된 단계'. 트럼프-카타르 에미르 셰이크 타밈 전화 통화. 미-카타르 공동 진전 보고.",
+          "sources": [
+            "Bloomberg: Qatar Signals Progress Toward Short-Term Deal Between US, Iran",
+            "Spokesman: Qatar, US signal progress on Hormuz-focused Iran deal"
+          ],
+          "engine": "claude+websearch",
+          "claim": "미국과 카타르가 이란과의 휴전 및 호르무즈 해협 재개통 협상에서 진전을 보고했다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.98,
+      "checked_at": "2026-08-06T09:00:00.000000"
+    },
+    {
+      "article_id": "cdd9fbcfa2d4",
+      "title": "US and Qatar report progress on Iran ceasefire and reopening Hormuz strait",
+      "source": "Guardian_Iran",
+      "url": "https://www.theguardian.com/world/2026/aug/04/us-qatar-progress-iran-ceasefire-hormuz-strait",
+      "importance": 5,
+      "category": "diplomacy",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.98,
+          "evidence": "Bloomberg·Spokesman·US News 교차확인. 카타르 외무부: 협상 초안 '매우 진전된 단계'. Brent 원유 4% 이상 하락(시장 반응).",
+          "sources": [
+            "Bloomberg: Qatar Signals Progress Toward Short-Term Deal Between US, Iran",
+            "US News: Qatar Says Progress Made Toward US-Iran Talks on Ending War"
+          ],
+          "engine": "claude+websearch",
+          "claim": "미국과 카타르가 이란 휴전 및 호르무즈 해협 재개통 협상에서 진전을 보고했다"
+        },
+        {
+          "verdict": "검증됨",
+          "confidence": 0.97,
+          "evidence": "CNN(8/4): 트럼프가 이란 협상에 낙관적 발언. 베센트: '오늘이나 내일 거래 가능성.' 트럼프-카타르 에미르 통화 확인.",
+          "sources": [
+            "CNN: August 4, 2026 — Iran continues Hormuz talks with Oman, US signals optimism on deal",
+            "Bloomberg: Bessent says deal may happen today or tomorrow"
+          ],
+          "engine": "claude+websearch",
+          "claim": "트럼프가 협상에 대해 낙관적 입장을 표명했다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.97,
+      "checked_at": "2026-08-06T09:00:00.000000"
+    }
+  ]
+}
