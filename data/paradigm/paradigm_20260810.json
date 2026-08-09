@@ -1,0 +1,175 @@
+{
+  "date": "2026-08-10",
+  "total_signals": 7,
+  "structural_signals": 6,
+  "signals": [
+    {
+      "signal_id": "sig_002",
+      "category": "지역질서재편",
+      "title_ko": "중동 NATO형 집단방위체제 출현",
+      "description": "• 사우디-파키스탄-터키가 메카에서 'NATO식 상호방위조약' 체결, '1국 공격=전체 공격' 원칙 명시\n• 이란·이스라엘 공격 격화 속에서 중동 3대 중견국이 독자적 집단안보 구축 시도\n• 기존 美 주도 중동 안보질서에서 지역 주도 다자동맹 질서로 전환 신호, 향후 에너지·무역 협력 구조 재편 가능성",
+      "evidence_titles": [
+        "Saudi Arabia, Pakistan and Turkey sign Nato-style defence pact amid deadly Houthi strikes in Yemen",
+        "The Middle East Tries Its Hand at a NATO-Style Pact"
+      ],
+      "evidence_sources": [
+        "Guardian_Iran",
+        "ForeignPolicy"
+      ],
+      "strength": 5,
+      "trend": "신규",
+      "suwon_implication": "중동 지역질서 재편은 한국의 중동 에너지 수입 파트너 다각화 필요성을 증폭. 수원시 차원에서는 에너지 수급 불안 시나리오 대비 및 취약계층 에너지 바우처 예산 확대 검토 필요",
+      "is_structural": true,
+      "detected_date": "2026-08-10",
+      "first_detected": "2026-08-10"
+    },
+    {
+      "signal_id": "sig_001",
+      "category": "무역공급망재편",
+      "title_ko": "호르무즈 협상 난항, 글로벌 해운 불확실성 구조화",
+      "description": "• 이란-오만 간 호르무즈 해협 재개방 협상 진행 중이나 이란이 美 배상금·병력철수 등 추가 조건 제시\n• 테헤란, '협상 타결≠즉시 개방' 명확화하며 해협 통제권을 장기 협상카드로 활용\n• 주요 언론·외교매체 모두 '협상 합의 후에도 개방 지연' 시나리오 반복 보도, 구조적 불확실성 지속 전망",
+      "evidence_titles": [
+        "Iran says deal on Strait of Hormuz is close but not enough to open the waterway",
+        "Iran issues demands for reopening of Hormuz",
+        "Iran Talks Offer Little Relief for Hormuz Shipping",
+        "이란, 美에 병력철수·배상금 요구…\"충족시까지 호르무즈 폐쇄\"(종합)"
+      ],
+      "evidence_sources": [
+        "AlMonitor",
+        "Bloomberg",
+        "Yonhap"
+      ],
+      "strength": 4,
+      "trend": "강화",
+      "suwon_implication": "호르무즈 장기 불안정성은 수원시 제조·수출기업의 원자재 수입비 상승과 납품 일정 불확실성을 구조화. 중소기업 유동성 지원 및 공급망 다변화 컨설팅 필요성 증가",
+      "is_structural": true,
+      "detected_date": "2026-08-10"
+    },
+    {
+      "signal_id": "sig_003",
+      "category": "에너지안보재편",
+      "title_ko": "후티 반군, 사우디 정유시설 타격 지속",
+      "description": "• 후티 반군이 사우디 아람코 지잔 정유시설을 드론으로 타격, 공격 지속성 확인\n• 중동 에너지 인프라가 '전시 공격 대상'에서 '일상적 위협 대상'으로 전환되는 패턴\n• 글로벌 정유·LNG 공급망의 '물리적 안정성' 전제가 무너지며 에너지 가격에 '지정학 프리미엄' 상시 반영 가능성",
+      "evidence_titles": [
+        "후티 반군 \"사우디 아람코 정유시설 드론으로 타격\"(종합)",
+        "Saudi Arabia, Pakistan and Turkey sign Nato-style defence pact amid deadly Houthi strikes in Yemen"
+      ],
+      "evidence_sources": [
+        "Yonhap",
+        "Guardian_Iran"
+      ],
+      "strength": 4,
+      "trend": "강화",
+      "suwon_implication": "정유시설 공격 일상화는 수원시 난방비·전기료·대중교통 유류비 등 공공요금 상승 압력으로 직결. 에너지 취약계층 지원 예산 확대 및 공공건물 에너지 효율화 투자 가속 필요",
+      "is_structural": true,
+      "detected_date": "2026-08-10"
+    },
+    {
+      "signal_id": "sig_004",
+      "category": "지역질서재편",
+      "title_ko": "美-이스라엘 동맹 균열, 트럼프 중재 거부",
+      "description": "• 네타냐후, 트럼프 행정부의 '15개항 가자 평화안' 공개 거부 및 하마스 무장해제 전 철군 불가 선언\n• 美-이스라엘 간 '전쟁 종결 조건'에 대한 근본적 이견 노출, 전후 중동 질서 합의 불가 상태\n• 미국의 중동 중재자 역할 약화 및 지역 행위자들의 독자행동 증가 패턴",
+      "evidence_titles": [
+        "Netanyahu rejects US-led 15-point Gaza peace plan in rare public break with Trump",
+        "Israel Rejects Trump's 15-Point Plan to Disarm Hamas",
+        "Netanyahu rejects Trump's Gaza plan and vows no withdrawal until Hamas disarms – as it happened"
+      ],
+      "evidence_sources": [
+        "Guardian_World",
+        "NYT_World"
+      ],
+      "strength": 4,
+      "trend": "신규",
+      "suwon_implication": "美 중동 영향력 약화는 호르무즈 재개방 협상 지연 및 에너지 가격 변동성 증폭으로 연결. 수원시 민생안정 정책 수립 시 '중동 불안 장기화' 시나리오 반영 필요",
+      "is_structural": true,
+      "detected_date": "2026-08-10",
+      "first_detected": "2026-08-10"
+    },
+    {
+      "signal_id": "sig_005",
+      "category": "정책패러다임전환",
+      "title_ko": "IMF, 신흥국 스테이블코인 정책선택 가이드 발표",
+      "description": "• IMF가 신흥시장국 대상 스테이블코인 정책 리스크·선택지 분석 보고서 발표\n• 전쟁발 금융불안 속 민간 디지털화폐의 '대안 결제수단'화 가능성에 국제기구 차원 대응\n• 중앙은행 통화정책 독립성·자본통제 효과성 약화 우려 속 새로운 규제 프레임워크 모색",
+      "evidence_titles": [
+        "Stablecoins: Promise, Risks, and Policy Choices for Emerging Markets"
+      ],
+      "evidence_sources": [
+        "IMF_News"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "글로벌 디지털 결제수단 전환은 수원시 소상공인 결제 인프라 및 금융포용 정책에 중장기 영향. 디지털 금융교육 및 취약계층 디지털 접근성 지원 정책 선제 검토 필요",
+      "is_structural": true,
+      "detected_date": "2026-08-10",
+      "first_detected": "2026-08-10"
+    },
+    {
+      "signal_id": "sig_006",
+      "category": "민생충격패턴",
+      "title_ko": "美 무기재고 고갈, 다지역 안보 리스크 증폭",
+      "description": "• 미 국방부, 이란전 무기 소진으로 방산업체에 생산 가속화 요청 중이나 타 지역 대응능력 저하 우려\n• 전쟁 장기화가 글로벌 군사균형 및 지역분쟁 억지력에 구조적 영향\n• 동북아·인도태평양 안보 불확실성 증가 가능성, 한국 국방비 증액 압력으로 연결 가능",
+      "evidence_titles": [
+        "US Weapons Crunch Raises Risks Beyond Iran"
+      ],
+      "evidence_sources": [
+        "Bloomberg"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "동북아 안보 불안 증가는 국가 국방예산 확대 → 복지·지역개발 예산 제약으로 연결 가능. 수원시 국비 매칭사업 및 재정분권 논의 시 불확실성 요인",
+      "is_structural": true,
+      "detected_date": "2026-08-10",
+      "first_detected": "2026-08-10"
+    },
+    {
+      "signal_id": "sig_007",
+      "category": "정책패러다임전환",
+      "title_ko": "IEA, 2026년 9월 석유시장 보고서 발표",
+      "description": "• IEA가 전쟁 중 정기 석유시장 보고서 발표, 글로벌 에너지 수급 전망 지속 제공\n• 호르무즈 폐쇄 속에서도 IEA의 '에너지 시장 투명성·예측 가능성 제공' 역할 유지\n• 국제 에너지 거버넌스가 '위기 관리'에서 '위기 속 정상화' 모드로 전환 시도",
+      "evidence_titles": [
+        "Oil Market Report – September 2026"
+      ],
+      "evidence_sources": [
+        "IEA_News"
+      ],
+      "strength": 2,
+      "trend": "강화",
+      "suwon_implication": "IEA 보고서는 수원시 에너지 정책 수립의 국제 벤치마킹 자료. 전시에도 에너지 데이터 기반 정책 수립 가능성 확인, 수원시 에너지 전환 로드맵 신뢰성 제고",
+      "is_structural": false,
+      "detected_date": "2026-08-10"
+    }
+  ],
+  "by_category": {
+    "무역공급망재편": 1,
+    "지역질서재편": 2,
+    "에너지안보재편": 1,
+    "정책패러다임전환": 2,
+    "민생충격패턴": 1
+  },
+  "summary_ko": "• 이란이 호르무즈 협상에서 추가 조건을 제시하며 해운 불확실성을 구조화, 글로벌 공급망 재편 가속화\n• 사우디-파키스탄-터키가 NATO식 집단방위조약 체결, 미국 주도 중동질서에서 지역 주도 다자동맹 질서로 전환 신호\n• 후티 반군의 사우디 정유시설 공격 지속, 에너지 인프라가 일상적 위협 대상으로 전환되며 지정학 프리미엄 상시화\n• 네타냐후의 트럼프 중재안 거부로 미-이스라엘 동맹 균열, 미국의 중동 중재자 역할 약화 및 지역 행위자 독자행동 증가\n• IMF 스테이블코인 정책 가이드 발표 등 전쟁발 금융불안 속 국제기구 차원의 새로운 규제 프레임워크 모색 본격화",
+  "top_signal": "중동 NATO형 집단방위체제 출현",
+  "suwon_action": "• 중동발 에너지 공급망 불안 장기화에 대비, 에너지 취약계층 지원 예산 확대 및 공공건물 에너지 효율화 투자 가속 즉시 검토\n• 제조·수출 중소기업 대상 공급망 다변화 컨설팅 및 유동성 지원 프로그램 긴급 설계 착수",
+  "weekly_trend": {
+    "지역질서재편": {
+      "count": 2,
+      "max_strength": 5
+    },
+    "정책패러다임전환": {
+      "count": 2,
+      "max_strength": 3
+    },
+    "에너지안보재편": {
+      "count": 1,
+      "max_strength": 4
+    },
+    "민생충격패턴": {
+      "count": 1,
+      "max_strength": 3
+    },
+    "무역공급망재편": {
+      "count": 1,
+      "max_strength": 4
+    }
+  },
+  "generated_at": "2026-08-09T23:43:37.187598"
+}
