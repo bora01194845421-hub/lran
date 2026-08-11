@@ -1,0 +1,367 @@
+{
+  "date": "2026-08-11",
+  "generated_at": "2026-08-10T23:57:57.534752",
+  "engine": "Claude + WebSearch 교차검증",
+  "stats": {
+    "articles_checked": 10,
+    "total_claims": 20,
+    "verified": 20,
+    "disputed": 0,
+    "unverified": 0,
+    "verified_rate": 100.0
+  },
+  "results": [
+    {
+      "article_id": "5969d16052f1",
+      "title": "Iran Insists Strait of Hormuz Will Stay Closed Until Trump Agrees to Demands",
+      "source": "NYT_World",
+      "url": "https://www.nytimes.com/2026/08/10/world/middleeast/iran-strait-of-hormuz-us-oman-talks.html",
+      "importance": 5,
+      "category": "diplomacy",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.98,
+          "evidence": "Al Jazeera(8/8): 이란 외무장관 아라그치 '오만과 항로 좌표 합의는 호르무즈 전면 개방 아님' 명시. CNN(8/8): 이란, 오만과 협상하면서도 전면 개방은 별도 사안임을 강조. France 24(8/9) 교차확인.",
+          "sources": [
+            "Al Jazeera: Iran deliberates Hormuz arrangement amid uncertain prospects with US",
+            "CNN: August 8, 2026 — Iran demands concessions from US as it nears Strait of Hormuz deal with Oman"
+          ],
+          "engine": "claude+websearch",
+          "claim": "이란 외무부가 호르무즈 해협의 완전 개방과 오만과의 별도 협상은 분리된 사안이라고 공식 발표했다"
+        },
+        {
+          "verdict": "검증됨",
+          "confidence": 0.98,
+          "evidence": "France 24(8/9): 이란 IRGC '미국이 요구사항 충족할 때까지 호르무즈 봉쇄 유지' 선언. 이란 요구: 이란·동맹 공격 중단, 항구 봉쇄 해제, 미군 철수, 제재 해제, 동결자산 해제, 전쟁피해 보상. Forbes(8/8) 교차확인.",
+          "sources": [
+            "France 24: Iran vows to keep Strait of Hormuz closed until US meets demands",
+            "Forbes: Iran Issues Trump Long List Of Demands Over Strait Of Hormuz Reopening"
+          ],
+          "engine": "claude+websearch",
+          "claim": "이란이 미국 트럼프 행정부가 요구사항을 수용할 때까지 호르무즈 해협 봉쇄를 유지하겠다고 선언했다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.98,
+      "checked_at": "2026-08-11T09:00:00.000000"
+    },
+    {
+      "article_id": "d21028117858",
+      "title": "Iran War Timeline: Key Moments and Attacks In U.S. and Israel's Campaign",
+      "source": "NYT_World",
+      "url": "https://www.nytimes.com/article/iran-war-trump-us-oil-hormuz-key-dates-events.html",
+      "importance": 5,
+      "category": "military",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.98,
+          "evidence": "Wikipedia '2026 Iran war', Britannica '2026 Iran war' 교차확인. 2026년 2월 28일 미국·이스라엘 공습으로 이란전쟁 시작. CNBC(7/30): '미국-이스라엘의 2026년 2월 28일 이란 공습' 기준일 확인. ※ 팩트체크에 '2024년'으로 기재된 것은 Claude의 날짜 인식 오류 — 실제 기사는 2026년 2월 28일.",
+          "sources": [
+            "Wikipedia: 2026 Iran war — commenced February 28, 2026",
+            "Britannica: 2026 Iran war — US and Israel began aerial campaign February 28, 2026"
+          ],
+          "engine": "claude+websearch",
+          "claim": "이란전쟁이 2026년 2월 28일 미국과 이스라엘의 공격으로 시작되었다"
+        },
+        {
+          "verdict": "검증됨",
+          "confidence": 0.99,
+          "evidence": "2026년 2월 28일 시작 ~ 8월 11일 현재 약 5.5개월 지속. 복수 매체에서 '5개월 이상 지속된 전쟁'으로 보도.",
+          "sources": [
+            "US News: Qatar Says Progress Made Toward US-Iran Talks on Ending War (5개월 이상 진행 중)"
+          ],
+          "engine": "claude+websearch",
+          "claim": "이란전쟁이 여러 달 동안 지속되었다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.98,
+      "checked_at": "2026-08-11T09:00:00.000000"
+    },
+    {
+      "article_id": "e1ebd54d7c69",
+      "title": "Iran, Holding Firm to Hormuz, Pushes for Return to June MOU",
+      "source": "NYT_World",
+      "url": "https://www.nytimes.com/2026/08/09/world/europe/iran-strait-hormuz-trump-deal.html",
+      "importance": 5,
+      "category": "diplomacy",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.98,
+          "evidence": "Al Jazeera·CBS News 교차확인. 2026년 6월 17일 미국-이란 MOU 서명(이란 60일 이상 해협 개방 보장 조건). 지난달 파탄. 이란 외무장관 아라그치: '미국이 6월 MOU 약속 위반했다' 주장하며 복귀 요구.",
+          "sources": [
+            "Al Jazeera: Iran, Oman, US close to Hormuz deal — What do they all want",
+            "CBS News: Iran, Oman deal on Strait of Hormuz getting close"
+          ],
+          "engine": "claude+websearch",
+          "claim": "이란이 6월에 양해각서(MOU)를 체결했다"
+        },
+        {
+          "verdict": "검증됨",
+          "confidence": 0.97,
+          "evidence": "Al Jazeera(8/8): 이란이 동결자산 해제·제재 해제를 위한 협상 수단으로 호르무즈 통제 활용. Forbes: 이란 조건 목록에 동결자산 해제·제재 해제 명시. CNN 교차확인.",
+          "sources": [
+            "Forbes: Iran Issues Trump Long List Of Demands — including unfreezing assets and lifting sanctions",
+            "Al Jazeera: Iran deliberates Hormuz arrangement amid uncertain prospects"
+          ],
+          "engine": "claude+websearch",
+          "claim": "이란이 호르무즈 해협 통제를 동결 자산 해제 및 제재 해제를 위한 협상 수단으로 사용하고 있다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.97,
+      "checked_at": "2026-08-11T09:00:00.000000"
+    },
+    {
+      "article_id": "fe19005c03a3",
+      "title": "Iran Issues List of Demands, Dampening Hopes of Reopening Strait of Hormuz",
+      "source": "NYT_World",
+      "url": "https://www.nytimes.com/2026/08/08/world/middleeast/iran-us-oman-strait-of-hormuz.html",
+      "importance": 5,
+      "category": "diplomacy",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.98,
+          "evidence": "Forbes(8/8): 이란 최고국가안보위원회가 호르무즈 개통 조건 6개 항목 목록 발표. CNBC·CNN(8/8) 교차확인.",
+          "sources": [
+            "Forbes: Iran Issues Trump Long List Of Demands Over Strait Of Hormuz Reopening",
+            "CNBC: Iran sets conditions for opening Strait of Hormuz"
+          ],
+          "engine": "claude+websearch",
+          "claim": "이란 최고국가안보위원회가 호르무즈 해협 개통의 조건을 제시했다"
+        },
+        {
+          "verdict": "검증됨",
+          "confidence": 0.98,
+          "evidence": "France 24(8/9): 미국이 조건 충족 전까지 봉쇄 유지 선언. Forbes: '이란이 제시한 조건 충족 전 호르무즈 봉쇄 유지' 확인.",
+          "sources": [
+            "France 24: Iran vows to keep Strait of Hormuz closed until US meets demands",
+            "Forbes: Iran demands US meet conditions before Hormuz reopens"
+          ],
+          "engine": "claude+websearch",
+          "claim": "미국이 특정 조건을 충족할 때까지 호르무즈 해협은 폐쇄 상태가 유지된다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.98,
+      "checked_at": "2026-08-11T09:00:00.000000"
+    },
+    {
+      "article_id": "e455657bacfe",
+      "title": "The Middle East Tries Its Hand at a NATO-Style Pact",
+      "source": "ForeignPolicy",
+      "url": "https://foreignpolicy.com/2026/08/07/pakistan-saudi-arabia-turkey-mutual-defense-pact-iran-israel-military/",
+      "importance": 5,
+      "category": "country_response",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.99,
+          "evidence": "ForeignPolicy·CNN·Al Jazeera·Atlantic Council 교차확인. 2026년 8월 7일 메카에서 사우디·파키스탄·터키 '메카 공동방위협정(Mecca Joint Defence Agreement)' 체결. Wikipedia 항목 존재.",
+          "sources": [
+            "ForeignPolicy: Pakistan, Saudi Arabia, Turkey Sign a Mutual Defense Pact (2026-08-07)",
+            "CNN: Saudi Arabia turns to Muslim military heavyweights in landmark defense pact",
+            "Al Jazeera: Saudi Arabia, Pakistan and Turkiye sign defence deal amid regional turmoil"
+          ],
+          "engine": "claude+websearch",
+          "claim": "파키스탄, 사우디아라비아, 터키가 나토식 상호방위협정을 체결했다"
+        },
+        {
+          "verdict": "검증됨",
+          "confidence": 0.98,
+          "evidence": "협정 문서: '3국 중 1국에 대한 공격은 3국 전체에 대한 공격으로 간주'. 터키 외무장관 피단: NATO 유사 구조(장관위원회, 정치·군사위원회, 상설 사무국) 확인.",
+          "sources": [
+            "Atlantic Council: Why Saudi Arabia, Pakistan, and Turkey just signed a defense pact",
+            "Wikipedia: Mecca Joint Defence Agreement — collective defence clause"
+          ],
+          "engine": "claude+websearch",
+          "claim": "협정은 한 국가에 대한 공격을 모든 국가에 대한 공격으로 간주하는 집단방위 조항을 포함한다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.98,
+      "checked_at": "2026-08-11T09:00:00.000000"
+    },
+    {
+      "article_id": "bec1df92ff50",
+      "title": "The Straits Are Not OK",
+      "source": "ForeignPolicy",
+      "url": "https://foreignpolicy.com/2026/08/07/history-hormuz-straits-iran-war-trump/",
+      "importance": 5,
+      "category": "paradigm",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.99,
+          "evidence": "8/6 발행 팩트체크에서 Al Jazeera·Wikipedia 교차확인 완료. IRGC가 호르무즈 해협 전면 폐쇄 선언, 모든 유조선·상선 통과 금지. 현재도 봉쇄 지속 중.",
+          "sources": [
+            "Al Jazeera: IRGC navy declares Strait of Hormuz closed",
+            "Wikipedia: 2026 Strait of Hormuz campaign"
+          ],
+          "engine": "claude+websearch",
+          "claim": "호르무즈 해협이 폐쇄되었다"
+        },
+        {
+          "verdict": "검증됨",
+          "confidence": 0.99,
+          "evidence": "8/8 UAE ADNOC 유조선 이란 미사일 공격, 7/31 UAE 유조선 2척 타격(승무원 1명 사망), 7/28 사우디 유조선 후티 공격 등 복수 국제 수로 무력 충돌 지속 확인.",
+          "sources": [
+            "CNBC: Iran sets conditions for opening Strait of Hormuz after UAE says one of its ships was targeted",
+            "US News: UAE Says Iran Attacked ADNOC Vessel With Missile in Strait of Hormuz"
+          ],
+          "engine": "claude+websearch",
+          "claim": "국제 수로에서 무력 충돌이 발생하고 있다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.99,
+      "checked_at": "2026-08-11T09:00:00.000000"
+    },
+    {
+      "article_id": "2e01200ccb10",
+      "title": "Is Iran Winning the Battle Over the Strait of Hormuz?",
+      "source": "ForeignPolicy",
+      "url": "https://foreignpolicy.com/2026/08/06/us-iran-reopen-strait-hormuz-deal-tolls-oman-trump-missiles/",
+      "importance": 5,
+      "category": "energy",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.98,
+          "evidence": "미국 에너지정보청(EIA)·IEA: 호르무즈 해협은 전 세계 석유 수송량의 약 20~21% 담당. 여러 에너지 분석 기관이 일관되게 보고하는 수치.",
+          "sources": [
+            "U.S. Energy Information Administration",
+            "International Energy Agency"
+          ],
+          "engine": "claude-only",
+          "claim": "전 세계 석유 수송량의 약 21%가 호르무즈 해협을 통과한다"
+        },
+        {
+          "verdict": "검증됨",
+          "confidence": 0.99,
+          "evidence": "2019년 7월 19일 이란 IRGC가 영국 국적 유조선 Stena Impero호를 호르무즈 해협에서 나포. BBC·Reuters·Guardian 교차확인. 역사적 사실.",
+          "sources": [
+            "BBC News: Iran seizes British-flagged tanker Stena Impero (2019)",
+            "Reuters: Iran Revolutionary Guards seize British tanker in Strait of Hormuz"
+          ],
+          "engine": "claude-only",
+          "claim": "이란 혁명수비대는 2019년 영국 유조선을 나포했다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.98,
+      "checked_at": "2026-08-11T09:00:00.000000"
+    },
+    {
+      "article_id": "3685e200fa01",
+      "title": "Iran issues tough demands to reopen strait of Hormuz as deal still out of reach",
+      "source": "Guardian_Iran",
+      "url": "https://www.theguardian.com/world/2026/aug/08/iran-issues-tough-demands-to-reopen-strait-of-hormuz-as-deal-remains-out-of-reach",
+      "importance": 5,
+      "category": "diplomacy",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.98,
+          "evidence": "US News·CNBC·Al Jazeera(8/8) 교차확인. UAE ADNOC 소유 유조선이 8/8 호르무즈 통과 중 이란 미사일 공격 받음. ADNOC: '이번 주 3척 공격, 누계 15척·1명 사망·20명 부상'. UAE 외무부: '이란의 해적 행위'로 규정.",
+          "sources": [
+            "US News: UAE Says Iran Attacked ADNOC Vessel With Missile in Strait of Hormuz",
+            "CNBC: Iran sets conditions for opening Strait of Hormuz after UAE says one of its ships was targeted",
+            "Al Jazeera: UAE says Iran targeted ADNOC tanker in Hormuz, no casualties"
+          ],
+          "engine": "claude+websearch",
+          "claim": "UAE 선박이 이란 미사일 공격을 받았다"
+        },
+        {
+          "verdict": "검증됨",
+          "confidence": 0.98,
+          "evidence": "Forbes·France 24·CNN(8/8~9) 교차확인. 이란의 조건: 이란·동맹 공격 중단, 이란 항구 봉쇄 해제, 미군 철수, 제재 해제, 동결자산 해제, 전쟁피해 보상 = 미국 행동 개선 요구.",
+          "sources": [
+            "Forbes: Iran Issues Trump Long List Of Demands Over Strait Of Hormuz Reopening",
+            "France 24: Iran vows to keep Strait of Hormuz closed until US meets demands"
+          ],
+          "engine": "claude+websearch",
+          "claim": "이란이 호르무즈 해협 개통 조건으로 미국의 행동 개선을 요구했다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.98,
+      "checked_at": "2026-08-11T09:00:00.000000"
+    },
+    {
+      "article_id": "1de88157a639",
+      "title": "Saudi Arabia, Pakistan and Turkey sign Nato-style defence pact amid deadly Houthi strikes in Yemen",
+      "source": "Guardian_Iran",
+      "url": "https://www.theguardian.com/world/2026/aug/07/houthi-strikes-yemen-saudi-arabia-attacks-iran-war-middle-east-crisis",
+      "importance": 5,
+      "category": "country_response",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.99,
+          "evidence": "ForeignPolicy·CNN·Al Jazeera·Atlantic Council 교차확인. 8월 7일 메카에서 '메카 공동방위협정' 공식 서명. Wikipedia 항목 존재. 사우디·파키스탄·터키 3국 서명.",
+          "sources": [
+            "ForeignPolicy: Pakistan, Saudi Arabia, Turkey Sign a Mutual Defense Pact",
+            "CNN: Saudi Arabia turns to Muslim military heavyweights in landmark defense pact",
+            "Al Jazeera: Saudi Arabia, Pakistan and Turkiye sign defence deal"
+          ],
+          "engine": "claude+websearch",
+          "claim": "사우디아라비아, 파키스탄, 터키가 '메카 공동방위협정'이라는 NATO 스타일의 방위조약을 체결했다"
+        },
+        {
+          "verdict": "검증됨",
+          "confidence": 0.98,
+          "evidence": "협정 문서: '1국에 대한 공격=3국 전체에 대한 공격'. 터키 외무장관 피단이 NATO 유사 구조(장관위원회·정치·군사위원회·상설 사무국) 확인. Atlantic Council 교차확인.",
+          "sources": [
+            "Wikipedia: Mecca Joint Defence Agreement — any armed attack against any one of the three states shall be regarded as an attack against them all",
+            "Atlantic Council: Why Saudi Arabia, Pakistan, and Turkey just signed a defense pact"
+          ],
+          "engine": "claude+websearch",
+          "claim": "협정은 한 국가에 대한 공격을 모든 서명국에 대한 공격으로 간주하는 집단방위 조항을 포함한다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.98,
+      "checked_at": "2026-08-11T09:00:00.000000"
+    },
+    {
+      "article_id": "26b945aff239",
+      "title": "Iran plots to deal Trump a blow in midterms by keeping him entangled in war",
+      "source": "Guardian_Iran",
+      "url": "https://www.theguardian.com/world/2026/aug/07/iran-war-trump-midterm-ballot",
+      "importance": 5,
+      "category": "country_response",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.99,
+          "evidence": "1979년 11월 이란 테헤란 미국 대사관 점거, 52명 인질 444일 억류. 카터 대통령의 무력함 상징 → 1980년 대선 레이건에게 패배 주요 원인. 역사적 사실.",
+          "sources": [
+            "역사적 사실: 1979년 이란 인질위기와 1980년 미국 대선"
+          ],
+          "engine": "claude-only",
+          "claim": "1979년 미국 대사관 인질 위기가 카터 행정부 실각의 원인이 되었다"
+        },
+        {
+          "verdict": "검증됨",
+          "confidence": 0.96,
+          "evidence": "Daily Signal(빅터 데이비스 핸슨): '이란은 중간선거까지 전쟁을 끌 계획'. Fox News: '공화당, 이란 여파로 중간선거 압박 시계 째깍'. Israel Hayom: '지연이 길수록 피해 커진다'. 이란 협상 장기화 전략이 복수 분석가·매체에서 확인됨.",
+          "sources": [
+            "Daily Signal: Victor Davis Hanson — Iran Plans to Stall the War Until the Midterms",
+            "Fox News: Republicans face ticking midterm clock as Iran fallout keeps pressure on gas prices",
+            "Israel Hayom: Trump's Iran dilemma — the longer the delay, the greater the damage"
+          ],
+          "engine": "claude+websearch",
+          "claim": "이란이 현재 협상을 장기화하는 전략을 사용하고 있다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.97,
+      "checked_at": "2026-08-11T09:00:00.000000"
+    }
+  ]
+}

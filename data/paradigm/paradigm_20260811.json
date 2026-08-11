@@ -1,0 +1,199 @@
+{
+  "date": "2026-08-11",
+  "total_signals": 8,
+  "structural_signals": 8,
+  "signals": [
+    {
+      "signal_id": "sig_002",
+      "category": "지역질서재편",
+      "title_ko": "중동 NATO식 동맹체제 출현",
+      "description": "• 사우디·파키스탄·튀르키예, '메카 공동방위협정' 체결로 NATO식 집단방위 조항 도입\n• 이란·이스라엘 공격에 대한 수니파 3국 군사동맹 결성, 중동 냉전 구조 고착화 신호\n• 이란 외무부 '美 인식변화 신호'로 해석하며 중동 지정학 블록화 가속 인정",
+      "evidence_titles": [
+        "The Middle East Tries Its Hand at a NATO-Style Pact",
+        "Saudi Arabia, Pakistan and Turkey sign Nato-style defence pact amid deadly Houthi strikes in Yemen",
+        "이란 \"수니파 3개국 공동방위협정, 美에 대한 인식변화 신호\""
+      ],
+      "evidence_sources": [
+        "ForeignPolicy",
+        "Guardian_Iran",
+        "Yonhap"
+      ],
+      "strength": 5,
+      "trend": "신규",
+      "suwon_implication": "중동 지역 안정성 장기 악화로 수원시 외국인 근로자(중동 출신) 유입 패턴 변화 및 에너지 수입선 다변화 국가 전략 필요.",
+      "is_structural": true,
+      "detected_date": "2026-08-11",
+      "first_detected": "2026-08-11"
+    },
+    {
+      "signal_id": "sig_001",
+      "category": "에너지안보재편",
+      "title_ko": "호르무즈 폐쇄 장기화 패러다임",
+      "description": "• 이란, 호르무즈 해협 재개방 조건으로 미국의 '행동 시정' 요구하며 담판 장기화 선언\n• 협상 교착에 WTI 유가 5% 급등, 80달러대 복귀하며 에너지 가격 구조적 상승 신호\n• 이란-오만 별도 항로 협상 진행 중이나 전면 개방과 분리 운영, 글로벌 에너지 공급망 이원화 가능성",
+      "evidence_titles": [
+        "Iran Insists Strait of Hormuz Will Stay Closed Until Trump Agrees to Demands",
+        "국제유가, 호르무즈 협상 교착에 5%↑…WTI 다시 80달러대",
+        "Iran says deal with Oman on Strait of Hormuz is in final stages"
+      ],
+      "evidence_sources": [
+        "NYT_World",
+        "Yonhap",
+        "BBC_MidEast"
+      ],
+      "strength": 4,
+      "trend": "강화",
+      "suwon_implication": "수원시 난방비·전기료 장기 인상 압력 구조화. 취약계층 에너지 복지 예산 중장기 확대 필요성 증대.",
+      "is_structural": true,
+      "detected_date": "2026-08-11"
+    },
+    {
+      "signal_id": "sig_003",
+      "category": "무역공급망재편",
+      "title_ko": "글로벌 해협 안보 경쟁 시대",
+      "description": "• Foreign Policy 분석: 호르무즈 이후 글로벌 주요 해협들이 '피의 경쟁 장소'로 회귀 전망\n• 말라카·수에즈·보스포루스 등 주요 항로 무력 통제 가능성 증대, 해운 비용 구조적 상승 예고\n• 국제 무역질서가 '자유로운 항행'에서 '통제 가능 해협' 중심으로 재편 신호",
+      "evidence_titles": [
+        "The Straits Are Not OK",
+        "Is Iran Winning the Battle Over the Strait of Hormuz?"
+      ],
+      "evidence_sources": [
+        "ForeignPolicy",
+        "ForeignPolicy"
+      ],
+      "strength": 4,
+      "trend": "신규",
+      "suwon_implication": "수원시 제조기업 수출입 운송비 중장기 인상 불가피. 공급망 리스크 관리 지원 프로그램 필요.",
+      "is_structural": true,
+      "detected_date": "2026-08-11",
+      "first_detected": "2026-08-11"
+    },
+    {
+      "signal_id": "sig_004",
+      "category": "정책패러다임전환",
+      "title_ko": "미국 중동 개입 종결 논의",
+      "description": "• Foreign Affairs, '미국은 중동을 놓아야 한다' 패러다임 전환 주장 게재\n• 이란 전쟁 실패를 계기로 중동 장기 철수 정책 필요성 주류 담론화\n• 트럼프, 이란 강경 요구에도 군사옵션 자제하며 '전쟁 탈출' 우선 신호",
+      "evidence_titles": [
+        "America Must Let Go of the Middle East",
+        "이란 강경 요구에도 담담한 트럼프…핵합의 없이 전쟁서 발빼나"
+      ],
+      "evidence_sources": [
+        "ForeignAffairs",
+        "Yonhap"
+      ],
+      "strength": 4,
+      "trend": "신규",
+      "suwon_implication": "미국 중동 철수 가속 시 에너지 안보 공백 우려. 수원시 차원 에너지 자립도 제고 정책(신재생 확대) 중장기 타당성 증대.",
+      "is_structural": true,
+      "detected_date": "2026-08-11",
+      "first_detected": "2026-08-11"
+    },
+    {
+      "signal_id": "sig_005",
+      "category": "민생충격패턴",
+      "title_ko": "중동전 이란 내부 강경화",
+      "description": "• FT 보도: 이란 최고지도자, 전쟁 중 주요 군부·정권 요직 인사 단행하며 통제 강화\n• 미국과 협상 경직화 방침 내부 인사로 재확인, 장기 대치 체제 구축 신호\n• 이란 정권 강경화는 호르무즈 재개방 불확실성 지속 의미, 민생 에너지 비용 장기 불안 요인",
+      "evidence_titles": [
+        "Iran's supreme leader tightens grip with top appointments"
+      ],
+      "evidence_sources": [
+        "FT_World"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "에너지 비용 장기 불안정성 지속. 수원시 저소득층 난방비 지원 예산 중장기 확보 전략 필요.",
+      "is_structural": true,
+      "detected_date": "2026-08-11",
+      "first_detected": "2026-08-11"
+    },
+    {
+      "signal_id": "sig_006",
+      "category": "지역질서재편",
+      "title_ko": "예멘 내전 재점화 위기",
+      "description": "• 예멘 정부-후티 반군 긴장 고조, 2022년 휴전 붕괴 임박 경고\n• 후티, 예멘 군 캠프 공격 주장하며 이란 대리전 확대 신호\n• NYT: '중동 안정성이 호르무즈 협상에 달려있는 상황'에서 예멘 불안정은 지역 전체 도미노 위험",
+      "evidence_titles": [
+        "Yemen Teeters on Civil War as Regional Stability Hangs in the Balance",
+        "Houthis Claim Attack on Yemeni Military Camp",
+        "Saudi Arabia, Pakistan and Turkey sign Nato-style defence pact amid deadly Houthi strikes in Yemen"
+      ],
+      "evidence_sources": [
+        "NYT_World",
+        "NYT_World",
+        "Guardian_Iran"
+      ],
+      "strength": 3,
+      "trend": "강화",
+      "suwon_implication": "중동 전역 불안정 심화 시 에너지 수급 충격 가능성. 수원시 비상 에너지 비축 및 배급 체계 점검 필요.",
+      "is_structural": true,
+      "detected_date": "2026-08-11"
+    },
+    {
+      "signal_id": "sig_007",
+      "category": "정책패러다임전환",
+      "title_ko": "IMF 스테이블코인 신흥국 전략",
+      "description": "• IMF, 신흥국 대상 스테이블코인 정책 선택지 제시 보고서 발표\n• 전쟁 중 달러 접근성 제약 국가들의 대안 결제수단 모색 맥락 반영\n• 중동 위기가 글로벌 금융 인프라 다변화 촉진 신호, 달러 중심 질서 미세 균열",
+      "evidence_titles": [
+        "Stablecoins: Promise, Risks, and Policy Choices for Emerging Markets"
+      ],
+      "evidence_sources": [
+        "IMF_News"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "중장기 국제 금융질서 변화 가능성. 수원시 중소기업 수출입 결제 다변화 지원 정책 검토 필요.",
+      "is_structural": true,
+      "detected_date": "2026-08-11",
+      "first_detected": "2026-08-11"
+    },
+    {
+      "signal_id": "sig_008",
+      "category": "민생충격패턴",
+      "title_ko": "가자 무장해제 난항 지속",
+      "description": "• 트럼프 중재 하마스 무장해제 15개 항 계획 제시했으나 이스라엘 거부\n• 중동 평화 구조적 난관 지속, 지역 불안정 장기화 신호\n• Foreign Policy: 정치 불확실성이 평화협정 실행 불가능하게 만드는 구조적 문제 지적",
+      "evidence_titles": [
+        "Israel Rejects Trump's 15-Point Plan to Disarm Hamas",
+        "Hamas Agreed to Disarm. Why Did Israel Reject the Deal?"
+      ],
+      "evidence_sources": [
+        "NYT_World",
+        "ForeignPolicy"
+      ],
+      "strength": 3,
+      "trend": "강화",
+      "suwon_implication": "중동 평화 구조적 난관은 에너지 비용 장기 불안 의미. 수원시 에너지 취약계층 지원 정책 지속 필요.",
+      "is_structural": true,
+      "detected_date": "2026-08-11"
+    }
+  ],
+  "by_category": {
+    "에너지안보재편": 1,
+    "지역질서재편": 2,
+    "무역공급망재편": 1,
+    "정책패러다임전환": 2,
+    "민생충격패턴": 2
+  },
+  "summary_ko": "• 이란 호르무즈 협상 장기 교착 선언으로 에너지 가격 구조적 상승 국면 진입, WTI 80달러 복귀\n• 사우디·파키스탄·튀르키예 NATO식 공동방위협정 체결로 중동 냉전 블록화 고착 신호\n• Foreign Policy/Affairs, 미국 중동 철수 담론 주류화 및 글로벌 해협 안보 경쟁 시대 경고\n• 예멘 내전 재점화·가자 무장해제 난항으로 중동 전역 평화 구조적 난관 지속\n• IMF 스테이블코인 정책 제시 등 전쟁 촉발 글로벌 금융·무역 인프라 다변화 가속",
+  "top_signal": "호르무즈 폐쇄 장기화 패러다임",
+  "suwon_action": "• 난방비·전기료 장기 인상 불가피, 취약계층 에너지 복지 예산 중장기 확대 편성 즉시 착수\n• 제조기업 수출입 운송비 급등 대비 공급망 리스크 관리 긴급 지원 프로그램 기획 필요",
+  "weekly_trend": {
+    "정책패러다임전환": {
+      "count": 7,
+      "max_strength": 4
+    },
+    "민생충격패턴": {
+      "count": 6,
+      "max_strength": 4
+    },
+    "지역질서재편": {
+      "count": 5,
+      "max_strength": 5
+    },
+    "무역공급망재편": {
+      "count": 4,
+      "max_strength": 4
+    },
+    "에너지안보재편": {
+      "count": 3,
+      "max_strength": 5
+    }
+  },
+  "generated_at": "2026-08-10T23:53:34.418519"
+}
