@@ -1,0 +1,234 @@
+{
+  "date": "2026-08-13",
+  "total_signals": 10,
+  "structural_signals": 10,
+  "signals": [
+    {
+      "signal_id": "sig_001",
+      "category": "에너지안보재편",
+      "title_ko": "IEA 석유공급 감소폭 확대",
+      "description": "• IEA가 호르무즈 봉쇄 여파로 2026년 글로벌 석유공급 감소폭 확대 전망\n• 해상 운송 차질이 구조적으로 지속되며 공급망 예측 불가능성 증가\n• 단순 일시적 차질이 아닌 중장기 공급 구조 변화 신호",
+      "evidence_titles": [
+        "IEA, 올해 석유공급 감소폭 확대 전망…호르무즈 봉쇄 여파",
+        "Oil Market Report - August 2026 – Analysis - IEA"
+      ],
+      "evidence_sources": [
+        "Yonhap",
+        "IEA_News"
+      ],
+      "strength": 4,
+      "trend": "강화",
+      "suwon_implication": "수원시 난방비·전기료 중장기 상승 압력 구조화, 에너지 취약계층 지원 예산 확대 필요성 증대",
+      "is_structural": true,
+      "detected_date": "2026-08-13"
+    },
+    {
+      "signal_id": "sig_002",
+      "category": "지역질서재편",
+      "title_ko": "메카협정 3국 동상이몽",
+      "description": "• '포스트 아메리카' 중동 안보 지형 재편 예고하는 메카 협정 체결\n• 사우디·이집트·UAE 등 중동 주요국이 미국 의존도 감소 추구\n• 이란 전쟁 이후 중동 지역질서의 구조적 재편 신호",
+      "evidence_titles": [
+        "[특파원시선] '포스트 아메리카' 중동의 새 방패?…메카 협정 3국의 동상이몽",
+        "The Regional Order Iran Wanted Is Taking Shape Without It"
+      ],
+      "evidence_sources": [
+        "Yonhap",
+        "ForeignPolicy"
+      ],
+      "strength": 4,
+      "trend": "신규",
+      "suwon_implication": "한국의 중동 에너지 수입 파트너 다변화 필요, 수원시 장기 에너지 안정성 전략 재검토 시점",
+      "is_structural": true,
+      "detected_date": "2026-08-13",
+      "first_detected": "2026-08-13"
+    },
+    {
+      "signal_id": "sig_004",
+      "category": "민생충격패턴",
+      "title_ko": "美 인플레이션 재상승 압력",
+      "description": "• 미국 7월 인플레이션 3.4%로 이란 전쟁 여파가 경제 전반에 지속 반향\n• 증권사 전망: 유가 현 수준 유지시 8월 CPI 3.6~3.7% 반등 우려\n• 전쟁 종료 후에도 물가 구조적 상승 압력 지속 패턴 확인",
+      "evidence_titles": [
+        "US inflation falls to 3.4% in July",
+        "한투증권 \"문제는 美 8월 CPI…유가 현수준이면 3.7%까지 반등\""
+      ],
+      "evidence_sources": [
+        "FT_World",
+        "Yonhap_Economy"
+      ],
+      "strength": 4,
+      "trend": "강화",
+      "suwon_implication": "글로벌 물가 상승이 수원시 수입 물가에 전이, 서민 생활물가 안정 대책 장기화 필요",
+      "is_structural": true,
+      "detected_date": "2026-08-13"
+    },
+    {
+      "signal_id": "sig_003",
+      "category": "무역공급망재편",
+      "title_ko": "호르무즈 통제권 공방",
+      "description": "• 트럼프 '완전 장악' 주장과 이란 당국 부인, WSJ 현실 검증으로 통제권 불확실성 노출\n• 해운업계 실질적 운항 재개 여부가 정치 레토릭과 분리되어 진행\n• 호르무즈 해협의 장기적 신뢰성 약화로 공급망 우회 경로 모색 시작",
+      "evidence_titles": [
+        "트럼프, '호르무즈 완전 장악' 주장 되풀이…\"이란은 말만 많다\"",
+        "Iran's Hormuz authority denies Trump claims of control over strait",
+        "트럼프 \"호르무즈 완전 장악\" 거듭 주장…WSJ \"현실은 달라\""
+      ],
+      "evidence_sources": [
+        "Yonhap",
+        "AlMonitor",
+        "Yonhap"
+      ],
+      "strength": 3,
+      "trend": "강화",
+      "suwon_implication": "수원시 제조기업의 원자재 수입 비용 증가, 납품 일정 불확실성으로 중소기업 운영 부담 가중",
+      "is_structural": true,
+      "detected_date": "2026-08-13"
+    },
+    {
+      "signal_id": "sig_005",
+      "category": "정책패러다임전환",
+      "title_ko": "분쟁 금 제재 실패 구조",
+      "description": "• War on Rocks 보고서: UAE 자금세탁 네트워크 차단에도 분쟁 금 제재 실효성 한계\n• 전쟁 자금 조달 경로의 구조적 복잡성으로 기존 제재 패러다임 효과 미미\n• 국제사회 경제 제재 방식 자체의 재설계 필요성 제기",
+      "evidence_titles": [
+        "Why Conflict Gold Sanctions Fail",
+        "Ghana: Financial Sector Resilience to a Severe Gold Price Shock"
+      ],
+      "evidence_sources": [
+        "WarOnRocks",
+        "IMF_News"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "국제 제재 우회 경로 증가로 글로벌 금융 불안정성 확대, 수원시 외국인 투자 환경 간접 영향",
+      "is_structural": true,
+      "detected_date": "2026-08-13",
+      "first_detected": "2026-08-13"
+    },
+    {
+      "signal_id": "sig_006",
+      "category": "지역질서재편",
+      "title_ko": "후티 재공격 재개",
+      "description": "• 이란 전쟁 시작 이후 첫 치명적 후티 공격으로 홍해 선박 6명 사망\n• Foreign Policy 분석: 후티가 사우디와 전면전 위험 감수하며 이란 지원 지속\n• 휴전 연장 합의에도 불구하고 대리전 구조 재활성화 조짐",
+      "evidence_titles": [
+        "Houthis reportedly kill six in first deadly attack since start of Iran war",
+        "Six Killed in Houthi Strike on Red Sea Ship",
+        "The Houthis Are Risking Everything for Iran"
+      ],
+      "evidence_sources": [
+        "BBC_MidEast",
+        "NYT_World",
+        "ForeignPolicy"
+      ],
+      "strength": 3,
+      "trend": "반전",
+      "suwon_implication": "홍해 우회 해운 비용 재상승 가능성, 수원시 기업 물류비 부담 증가 및 납품 지연 우려",
+      "is_structural": true,
+      "detected_date": "2026-08-13"
+    },
+    {
+      "signal_id": "sig_007",
+      "category": "무역공급망재편",
+      "title_ko": "미사일 재고 고갈 위기",
+      "description": "• 이란 전쟁으로 미군 요격 미사일 재고 급격 감소\n• 전문가 경고: 중국과 분쟁 발생시 전략적 패배 가능성\n• 군수 공급망의 구조적 취약성 노출, 방산 생산능력 재평가 필요",
+      "evidence_titles": [
+        "\"'요격 미사일 부족' 미군, 中과 분쟁시 전략적 패배 가능\""
+      ],
+      "evidence_sources": [
+        "Yonhap"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "글로벌 안보 불안정성 증대로 한국 방산 수출 기회 확대, 수원시 방산 관련 중소기업 수혜 가능",
+      "is_structural": true,
+      "detected_date": "2026-08-13",
+      "first_detected": "2026-08-13"
+    },
+    {
+      "signal_id": "sig_008",
+      "category": "정책패러다임전환",
+      "title_ko": "일본 호르무즈 통행료 반대",
+      "description": "• 다카이치 총리가 이란 대통령에게 호르무즈 통행료 부과 반대 직접 표명\n• 에너지 수송로의 '공공재→유료화' 전환 시도에 대한 소비국 연대 대응 시작\n• 해상 교통로 비용 구조 변화 가능성에 대한 국가 차원 선제 대응",
+      "evidence_titles": [
+        "다카이치, 이란 대통령에 \"호르무즈 통항료 반대…후티 자제를\""
+      ],
+      "evidence_sources": [
+        "Yonhap"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "에너지 수입 비용 구조 변화 가능성, 수원시 중장기 에너지 가격 안정성 전망에 영향",
+      "is_structural": true,
+      "detected_date": "2026-08-13",
+      "first_detected": "2026-08-13"
+    },
+    {
+      "signal_id": "sig_009",
+      "category": "지역질서재편",
+      "title_ko": "트럼프 암살 위협 구조화",
+      "description": "• 이란의 트럼프 암살 위협이 나토 정상회의 호텔 층까지 파악하는 수준으로 정교화\n• 대통령 전용기 갈아타기 등 전례없는 보안 조치 상시화\n• 미-이란 적대 관계의 장기화·구조화 신호",
+      "evidence_titles": [
+        "Trump's secret flight switch indicates severity of assassination threat by Iran",
+        "\"이란, 나토회의 참석한 트럼프 호텔 층까지 파악\"",
+        "Watch: Why was Trump smuggled out of Air Force One in a catering truck?"
+      ],
+      "evidence_sources": [
+        "Guardian_Iran",
+        "Yonhap",
+        "BBC_World"
+      ],
+      "strength": 3,
+      "trend": "강화",
+      "suwon_implication": "미-이란 관계 정상화 지연으로 에너지 시장 불안 장기화, 수원시 에너지 정책 중장기 관점 필요",
+      "is_structural": true,
+      "detected_date": "2026-08-13"
+    },
+    {
+      "signal_id": "sig_010",
+      "category": "에너지안보재편",
+      "title_ko": "유가 6일 연속 상승",
+      "description": "• 블룸버그: 유가 6일 연속 상승 후 호르무즈 재개방 진전 대기 국면\n• 단순 단기 변동이 아닌 공급 구조 불확실성의 장기 반영\n• 시장이 정치 협상 결과를 신뢰하지 못하는 구조적 불신 형성",
+      "evidence_titles": [
+        "Latest Oil Market News and Analysis for Aug. 13"
+      ],
+      "evidence_sources": [
+        "Bloomberg"
+      ],
+      "strength": 3,
+      "trend": "강화",
+      "suwon_implication": "유가 안정성 저하로 수원시 교통·난방 에너지 비용 예측 불가능성 증가",
+      "is_structural": true,
+      "detected_date": "2026-08-13"
+    }
+  ],
+  "by_category": {
+    "에너지안보재편": 2,
+    "지역질서재편": 3,
+    "무역공급망재편": 2,
+    "민생충격패턴": 1,
+    "정책패러다임전환": 2
+  },
+  "summary_ko": "• 이란 전쟁 종료 후에도 에너지 공급망·물가 구조가 전쟁 이전으로 복귀하지 않는 '비가역적 재편' 진행 중\n• 호르무즈 해협 통제권 불확실성과 후티 재공격으로 중동 해상 수송로의 장기 신뢰성 붕괴 신호 감지\n• 미국 인플레이션 재상승(3.4%→3.7% 전망)과 IEA 석유공급 감소폭 확대로 글로벌 물가 상승 압력 구조화\n• 메카협정·일본 통행료 반대 등 '포스트 아메리카' 중동 질서 재편과 에너지 비용 구조 변화 가능성 부상\n• 분쟁 금 제재 실패·미사일 재고 고갈 등 기존 국제 안보·경제 제재 패러다임의 한계 노출",
+  "top_signal": "IEA 석유공급 감소폭 확대",
+  "suwon_action": "• 에너지 취약계층 지원 예산 중장기 확대 편성 검토 착수 (난방비·전기료 상승 압력 구조화 대비)\n• 제조·물류 중소기업 원자재·해운비 증가 대응 긴급 간담회 개최 (공급망 불확실성 실태 파악)",
+  "weekly_trend": {
+    "지역질서재편": {
+      "count": 7,
+      "max_strength": 5
+    },
+    "정책패러다임전환": {
+      "count": 5,
+      "max_strength": 4
+    },
+    "무역공급망재편": {
+      "count": 5,
+      "max_strength": 4
+    },
+    "에너지안보재편": {
+      "count": 4,
+      "max_strength": 5
+    },
+    "민생충격패턴": {
+      "count": 4,
+      "max_strength": 4
+    }
+  },
+  "generated_at": "2026-08-13T00:37:52.735364"
+}

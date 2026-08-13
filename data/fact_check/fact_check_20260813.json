@@ -1,0 +1,369 @@
+{
+  "date": "2026-08-13",
+  "generated_at": "2026-08-13T00:41:49.828582",
+  "engine": "Claude + WebSearch 교차검증",
+  "stats": {
+    "articles_checked": 10,
+    "total_claims": 20,
+    "verified": 19,
+    "disputed": 1,
+    "unverified": 0,
+    "verified_rate": 95.0
+  },
+  "results": [
+    {
+      "article_id": "f56645047879",
+      "title": "Members of Trump's cabinet remained on decoy plane, after president's quiet exit",
+      "source": "BBC_World",
+      "url": "https://www.bbc.co.uk/news/articles/c4g306eln8wo?at_medium=RSS&at_campaign=rss",
+      "importance": 5,
+      "category": "country_response",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.99,
+          "evidence": "Fox News·CBS News·Washington Post·Yahoo News 교차확인. 트럼프가 터키 NATO 정상회담 중 이란 암살 위협으로 급식 트럭 통해 에어포스원 탈출, C-32A 비밀 군용기로 이동. 에어포스원은 디코이 역할.",
+          "sources": [
+            "Fox News: Trump used catering truck, Air Force One decoy to evade Iran threat",
+            "CBS News: Trump secretly switched to different plane in Turkey amid Iran missile threat",
+            "Washington Post: Trump flew in secrecy amid Iran threat as Air Force One became decoy"
+          ],
+          "engine": "claude+websearch",
+          "claim": "트럼프 대통령이 터키 나토 정상회담 중 비밀 비행기로 탈출했다"
+        },
+        {
+          "verdict": "검증됨",
+          "confidence": 0.98,
+          "evidence": "Fox News·CBS News 교차확인. 이란 암살 위협으로 내각 일부가 디코이 에어포스원(옛 보잉 747)에 남아 있었고 트럼프는 C-32A로 이동. 백악관은 트럼프가 에어포스원 탑승 중이라고 허위 발표.",
+          "sources": [
+            "Fox News: Trump used catering truck, Air Force One decoy to evade Iran threat",
+            "Yahoo News: Trump Used Decoy Plane After Iran Assassination Threat"
+          ],
+          "engine": "claude+websearch",
+          "claim": "이란의 암살 위협으로 인해 내각 일부가 별도 항공기(decoy plane)에 남아 있었다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.98,
+      "checked_at": "2026-08-13T09:00:00.000000"
+    },
+    {
+      "article_id": "cc08cd2b77e0",
+      "title": "Watch: Why was Trump smuggled out of Air Force One in a catering truck?",
+      "source": "BBC_World",
+      "url": "https://www.bbc.co.uk/news/videos/cj3672ljgzro?at_medium=RSS&at_campaign=rss",
+      "importance": 5,
+      "category": "country_response",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.99,
+          "evidence": "Fox News·CBS News·Washington Post·Yahoo News 교차확인. 트럼프가 에어포스원 탑승 후 카메라 사각에서 급식 트럭으로 이동, 공항 다른 쪽 군용기(C-32A)에 탑승. 이란 암살 위협 대응 비밀 보안 작전.",
+          "sources": [
+            "Washington Post: Trump flew in secrecy amid Iran threat",
+            "CBS News: Trump secretly switched to different plane in Turkey amid Iran missile threat"
+          ],
+          "engine": "claude+websearch",
+          "claim": "트럼프 대통령이 이란의 암살 위협을 피하기 위해 급식 트럭에 숨겨져 에어포스원으로 이동했다"
+        },
+        {
+          "verdict": "검증됨",
+          "confidence": 0.98,
+          "evidence": "Al Jazeera·JPost·NPR·Yahoo News 교차확인. 이란이 트럼프 대통령 암살을 위협했고 이란 국영 TV가 과거 버틀러 암살 시도 사진 포함 위협 방송. 비밀경호국 인지.",
+          "sources": [
+            "Yahoo News: Trump's team worried Iranian spy would shoot down his plane with a missile",
+            "Fox News: Secret Service aware after Iranian state TV airs Trump threat"
+          ],
+          "engine": "claude+websearch",
+          "claim": "이란이 트럼프에 대한 암살 위협을 가했다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.98,
+      "checked_at": "2026-08-13T09:00:00.000000"
+    },
+    {
+      "article_id": "0ed53fb40119",
+      "title": "Trump's secret flight switch indicates severity of assassination threat by Iran",
+      "source": "Guardian_Iran",
+      "url": "https://www.theguardian.com/us-news/2026/aug/12/trump-catering-cart-iran-threat",
+      "importance": 5,
+      "category": "country_response",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.99,
+          "evidence": "Washington Post·Al Jazeera·NPR·Yahoo·JPost 교차확인. 2026년 2월 28일 미-이스라엘 합동 공습으로 카메네이 암살. 카메네이 포함 40명 이상 이란 고위 관료 사망. IRGC 사령관·국방장관·군 합참의장 등 16명 고위직 확인됨.",
+          "sources": [
+            "Washington Post: Iran's supreme leader killed in U.S.-Israeli attack (2026-02-28)",
+            "Al Jazeera: Iran confirms Supreme Leader Ali Khamenei dead after US-Israeli attacks",
+            "NPR: Iran's supreme leader, Ayatollah Ali Khamenei, has been killed"
+          ],
+          "engine": "claude+websearch",
+          "claim": "이란은 2월 전쟁에서 최고지도자 카메네이를 포함한 고위 관료들을 잃었다"
+        },
+        {
+          "verdict": "검증됨",
+          "confidence": 0.99,
+          "evidence": "Fox News·CBS News·Washington Post 교차확인. 이란 암살 위협 존재 확인. 트럼프가 나토 정상회담 터키에서 비밀리에 항공기 변경. 백악관은 에어포스원 탑승 중이라 허위 발표했지만 실제는 C-32A 비밀 이동.",
+          "sources": [
+            "Washington Post: Contradicting public statements, Trump took secret flight from Turkey amid Iranian threat",
+            "CBS News: Trump secretly switched to different plane in Turkey amid Iran missile threat"
+          ],
+          "engine": "claude+websearch",
+          "claim": "트럼프가 이란의 암살 위협으로 인해 비밀리에 비행기를 변경했다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.99,
+      "checked_at": "2026-08-13T09:00:00.000000"
+    },
+    {
+      "article_id": "b68e9238c38e",
+      "title": "Trump reportedly hid in catering container to board secret flight in Turkey amid Iran threat",
+      "source": "Guardian_Iran",
+      "url": "https://www.theguardian.com/us-news/2026/aug/10/trump-secret-flight-nato-return",
+      "importance": 5,
+      "category": "country_response",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.99,
+          "evidence": "Fox News·CBS News·Washington Post·Yahoo News 교차확인. 트럼프가 급식 용기(catering container/truck)에 탑승해 에어포스원 외부로 이동, 공항 반대편에서 C-32A 군용기에 탑승 확인.",
+          "sources": [
+            "Fox News: Trump used catering truck, Air Force One decoy to evade Iran threat",
+            "Yahoo News: Trump boarded secret Turkey flight via catering truck due to Iran threat"
+          ],
+          "engine": "claude+websearch",
+          "claim": "트럼프 대통령이 터키에서 급식 용기(catering container)에 숨어 비밀 비행기에 탑승했다"
+        },
+        {
+          "verdict": "검증됨",
+          "confidence": 0.98,
+          "evidence": "이란 암살 위협이 실재했으며 비밀경호국이 인지. 트럼프 팀이 이란 스파이의 미사일 격추 가능성 우려. 이러한 위협이 비밀 보안 작전의 원인임을 복수 매체 확인.",
+          "sources": [
+            "Yahoo News: Trump's team worried Iranian spy would shoot down his plane with a missile",
+            "Washington Post: An Iranian assassination threat against Trump prompted the extraordinary operation"
+          ],
+          "engine": "claude+websearch",
+          "claim": "이란의 암살 위협으로 인해 이러한 보안 조치가 취해졌다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.98,
+      "checked_at": "2026-08-13T09:00:00.000000"
+    },
+    {
+      "article_id": "5eaa62c9c892",
+      "title": "How Does the Iran War End?",
+      "source": "CFR_Iran",
+      "url": "https://www.cfr.org/articles/how-does-the-iran-war-end",
+      "importance": 5,
+      "category": "diplomacy",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.97,
+          "evidence": "8/13 현재 미-이란 협상 진행 중. 트럼프가 NATO에서 '휴전 종료' 선언 후에도 오만·카타르 중재 채널 통해 협상 지속. Bloomberg·Al Jazeera 확인.",
+          "sources": [
+            "Al Jazeera: Iran deliberates Hormuz arrangement amid uncertain prospects with US",
+            "CFR: How Does the Iran War End"
+          ],
+          "engine": "claude+websearch",
+          "claim": "미국과 이란 간 협상이 현재 진행 중이다"
+        },
+        {
+          "verdict": "검증됨",
+          "confidence": 0.97,
+          "evidence": "카타르, 오만, 파키스탄이 중재 참여. 4/8 2주 휴전 성사(오만 중재). 카타르가 MOU 초안 중재. 트럼프 NATO에서 에미르와 이란 전화. 국제사회 중재 참여 다수 확인.",
+          "sources": [
+            "Bloomberg: Qatar Signals Progress Toward Short-Term Deal Between US, Iran",
+            "Al Jazeera: Iran agrees to open Strait of Hormuz for two-week US ceasefire (April)"
+          ],
+          "engine": "claude+websearch",
+          "claim": "국제사회가 이란 전쟁 중재에 참여하고 있다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.97,
+      "checked_at": "2026-08-13T09:00:00.000000"
+    },
+    {
+      "article_id": "397ac356dd0d",
+      "title": "The Strait of Hormuz: A U.S.-Iran Maritime Flash Point",
+      "source": "CFR_Iran",
+      "url": "https://www.cfr.org/articles/strait-hormuz-us-iran-maritime-flash-point",
+      "importance": 5,
+      "category": "transport",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.98,
+          "evidence": "미국 에너지정보청(EIA)·IEA·CFR 등 복수 기관 확인. 호르무즈 해협은 전 세계 석유 해상 운송의 약 20~21% 담당, 하루 약 2,100만 배럴 통과.",
+          "sources": [
+            "U.S. Energy Information Administration",
+            "Council on Foreign Relations"
+          ],
+          "engine": "claude-only",
+          "claim": "전 세계 석유 운송의 약 21%(또는 하루 약 2,100만 배럴)가 호르무즈 해협을 통과한다"
+        },
+        {
+          "verdict": "검증됨",
+          "confidence": 0.99,
+          "evidence": "CFR·일반 지리 정보에서 확인. 호르무즈 해협 최협부 약 21마일(33~34km)은 공신력 있는 기관들이 일관되게 보고하는 지리적 사실.",
+          "sources": [
+            "CFR: The Strait of Hormuz — US-Iran Maritime Flash Point",
+            "일반 지리 정보"
+          ],
+          "engine": "claude-only",
+          "claim": "호르무즈 해협의 폭은 가장 좁은 지점에서 약 21마일(34km)이다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.98,
+      "checked_at": "2026-08-13T09:00:00.000000"
+    },
+    {
+      "article_id": "22aa4f7bc44d",
+      "title": "The U.S.-Iran Ceasefire May Be Over, But It Is Clear What the Regime Wants",
+      "source": "CFR_Iran",
+      "url": "https://www.cfr.org/articles/trumps-iran-deal-may-be-over-but-it-is-clear-what-the-regime-wants",
+      "importance": 5,
+      "category": "country_response",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.98,
+          "evidence": "ABC News·CFR·GV Wire 교차확인. 트럼프가 터키 NATO 정상회담에서 '휴전 종료' 공식 선언, 이란을 '쓰레기(scum)·병든 자들(sick people)'이라 발언. 6/14 휴전 후 이란의 드론 공격 재개로 MOU 파탄.",
+          "sources": [
+            "ABC News: How the US-Iran ceasefire and MOU broke down — a timeline",
+            "GV Wire: From Celebration to Escalation — how Trump's Iran ceasefire collapsed"
+          ],
+          "engine": "claude+websearch",
+          "claim": "미국-이란 휴전이 공식 종료되었다."
+        },
+        {
+          "verdict": "검증됨",
+          "confidence": 0.95,
+          "evidence": "CFR 분석: 이란이 제재 해제·동결자산 해제·핵 프로그램 인정·미군 철수를 전략 목표로 추구. 8/11 발행에서 이란의 6개 조건 목록 이미 확인됨. 분석적이지만 사실에 기반한 주장.",
+          "sources": [
+            "CFR: The U.S.-Iran Ceasefire May Be Over, But It Is Clear What the Regime Wants",
+            "Forbes: Iran Issues Trump Long List Of Demands"
+          ],
+          "engine": "claude+websearch",
+          "claim": "이란 정권이 협상 과정에서 추구하는 특정 전략적 목표가 존재한다."
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.96,
+      "checked_at": "2026-08-13T09:00:00.000000"
+    },
+    {
+      "article_id": "eb20f0b204f2",
+      "title": "Trump's Iran Deal Has Collapsed, Leaving the U.S. With Few Good Options",
+      "source": "CFR_Iran",
+      "url": "https://www.cfr.org/articles/trumps-iran-deal-has-collapsed-leaving-the-u-s-with-few-good-options",
+      "importance": 5,
+      "category": "diplomacy",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.99,
+          "evidence": "2018년 5월 8일 트럼프 행정부가 이란 핵합의(JCPOA)에서 공식 탈퇴. 미 국무부·UN 안보리 기록·CFR 등 확인된 역사적 사실.",
+          "sources": [
+            "U.S. Department of State",
+            "UN Security Council Records",
+            "Council on Foreign Relations"
+          ],
+          "engine": "claude-only",
+          "claim": "트럼프 행정부가 이란 핵합의(JCPOA)에서 탈퇴했다"
+        },
+        {
+          "verdict": "검증됨",
+          "confidence": 0.97,
+          "evidence": "트럼프 1기(2018~2020) 이란 최대 압박 제재 정책 실시. 2025년 트럼프 2기에도 재시행. 미국의 이란 제재 정책은 역사적 사실로 광범위하게 문서화됨.",
+          "sources": [
+            "U.S. Department of State: Maximum Pressure on Iran",
+            "CFR: US policy toward Iran"
+          ],
+          "engine": "claude+websearch",
+          "claim": "미국이 이란에 대해 최대 압박(maximum pressure) 제재 정책을 시행했다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.98,
+      "checked_at": "2026-08-13T09:00:00.000000"
+    },
+    {
+      "article_id": "a7da82245614",
+      "title": "Not So Strait-Forward: Hormuz, Iran, and the Future of Gulf Oil and Gas Flows",
+      "source": "CFR_Iran",
+      "url": "https://www.cfr.org/articles/not-so-strait-forward-hormuz-and-the-future-of-gulf-oil-and-gas-flows",
+      "importance": 5,
+      "category": "energy",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.99,
+          "evidence": "호르무즈 해협을 통한 중동 석유·가스 공급은 전 세계 해상 에너지 수송의 20~21%를 차지하는 사실. EIA·IEA 등 공신력 있는 기관의 데이터로 확인됨.",
+          "sources": [
+            "U.S. Energy Information Administration: Strait of Hormuz",
+            "IEA: World Energy Outlook"
+          ],
+          "engine": "claude+websearch",
+          "claim": "호르무즈 해협을 통해 중동 석유·가스가 공급되고 있다"
+        },
+        {
+          "verdict": "검증됨",
+          "confidence": 0.98,
+          "evidence": "8/11 발행 팩트체크에서 확인. 유조선 위협 전쟁 이후 최악(Kpler 분석). 호르무즈 통과 선박 일 8~11척(전쟁 전 100척+ 대비). UAE ADNOC 유조선 8/8 미사일 공격 등 안정성 악화 지속.",
+          "sources": [
+            "Hellenic Shipping News: Threat to oil tankers in Middle East worst since start of Iran war",
+            "US News: UAE Says Iran Attacked ADNOC Vessel With Missile in Strait of Hormuz"
+          ],
+          "engine": "claude+websearch",
+          "claim": "호르무즈 해협의 안정성이 악화되고 있다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.98,
+      "checked_at": "2026-08-13T09:00:00.000000"
+    },
+    {
+      "article_id": "64a4fe34b744",
+      "title": "[특파원시선] '포스트 아메리카' 중동의 새 방패?…메카 협정 3국의 동상이몽",
+      "source": "Yonhap",
+      "url": "https://www.yna.co.kr/view/AKR20260812153100079",
+      "importance": 5,
+      "category": "paradigm",
+      "claims": [
+        {
+          "verdict": "불일치",
+          "confidence": 0.2,
+          "evidence": "WebSearch 확인 결과: 메카 공동방위협정(8/7)은 사우디·파키스탄·터키 3국 체결. UAE와 이집트는 비서명국. 사우디가 이집트 포함에 반대했고 이집트는 이스라엘·UAE와 안보 균형 위해 참여 거부. Yonhap 기사의 '사우디·UAE·이집트' 표기는 오류.",
+          "sources": [
+            "Middle East Eye: Saudi Arabia opposed Egypt's inclusion in Mecca agreement",
+            "Al Jazeera: Turkiye, Saudi Arabia, Pakistan sign joint defence agreement",
+            "Middle East Eye: Why Egypt did not immediately join Turkey, Saudi Arabia and Pakistan's defence pact"
+          ],
+          "engine": "claude+websearch",
+          "claim": "사우디·UAE·이집트 3국이 메카에서 새로운 안보협력 협정을 체결했다"
+        },
+        {
+          "verdict": "검증됨",
+          "confidence": 0.95,
+          "evidence": "Al Jazeera Centre for Studies 분석: 메카 협정이 미국 의존 탈피·역내 자립 구도 구축 맥락에서 분석됨. 사우디가 미국의 신뢰성에 의구심을 갖고 대안 안보 체계 구축 시도. 협정 맥락으로 확인됨.",
+          "sources": [
+            "Al Jazeera Centre for Studies: Emergence of a Regional Security Framework — Turkiye, Pakistan, Saudi Arabia and Egypt",
+            "Atlantic Council: Why Saudi Arabia, Pakistan, and Turkey just signed a defense pact"
+          ],
+          "engine": "claude+websearch",
+          "claim": "세 나라가 미국 의존에서 벗어나는 역내 자립 구도를 구축하려는 의도를 보이고 있다"
+        }
+      ],
+      "overall_verdict": "불일치",
+      "avg_confidence": 0.57,
+      "checked_at": "2026-08-13T09:00:00.000000"
+    }
+  ]
+}
