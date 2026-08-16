@@ -1,0 +1,242 @@
+{
+  "date": "2026-08-17",
+  "total_signals": 10,
+  "structural_signals": 10,
+  "signals": [
+    {
+      "signal_id": "sig_002",
+      "category": "에너지안보재편",
+      "title_ko": "호르무즈 지리학→신뢰 기반 공급망",
+      "description": "• Foreign Affairs '호르무즈와 에너지 권력의 새로운 지리학' 분석\n• 물리적 해협 통제에서 '신뢰 기반 에너지 파트너십'으로 전환 신호\n• 가격 경쟁력보다 공급 안정성이 국가별 에너지 수입 기준으로 부상",
+      "evidence_titles": [
+        "The Long Shadow of the Iran Shock",
+        "미국산 원유도입 비중 상반기 첫 20%대…사우디산은 30% 턱걸이"
+      ],
+      "evidence_sources": [
+        "ForeignAffairs",
+        "Yonhap_Economy"
+      ],
+      "strength": 5,
+      "trend": "신규",
+      "suwon_implication": "한국의 미국산 원유 도입 비중 급증(20%대)은 '가격→신뢰' 전환의 실증 사례. 수원시 에너지 비용 상승 압력이 구조화될 가능성",
+      "is_structural": true,
+      "detected_date": "2026-08-17",
+      "first_detected": "2026-08-17"
+    },
+    {
+      "signal_id": "sig_005",
+      "category": "민생충격패턴",
+      "title_ko": "인프라 타격 중심 전쟁 양상",
+      "description": "• 이란의 수자원·에너지 인프라 타격이 주요 억지 수단으로 부상 (War on Rocks)\n• 드론·사이버 공격으로 물·전력망 타격, 민생 직격탄 패턴 확산\n• '군사 vs 군사' 아닌 '민생 인프라' 중심 전쟁의 새 시대",
+      "evidence_titles": [
+        "Cheap Drones, Dry Taps: The Iran War Opens a New Era of Water Infrastructure Risk",
+        "Why Hackers Keep Going After U.S. Water Supplies"
+      ],
+      "evidence_sources": [
+        "WarOnRocks",
+        "ForeignPolicy"
+      ],
+      "strength": 5,
+      "trend": "신규",
+      "suwon_implication": "미래 분쟁 시 수원시 상하수도·전력망 등 필수 인프라 보호가 핵심 과제로 부상. 도시 회복력 정책의 새로운 기준 마련 필요",
+      "is_structural": true,
+      "detected_date": "2026-08-17",
+      "first_detected": "2026-08-17"
+    },
+    {
+      "signal_id": "sig_001",
+      "category": "정책패러다임전환",
+      "title_ko": "미국 전쟁목표 축소: 비핵화→유가안정",
+      "description": "• 트럼프 행정부가 이란전 목표를 '비핵화'에서 '유가 안정'으로 축소 (연합뉴스)\n• 전략적 목표 후퇴는 미국의 중동 개입 방식 근본 변화 신호\n• 에너지 가격 관리가 안보 목표보다 우선순위로 부상",
+      "evidence_titles": [
+        "미, 이란전 목표 점점 후퇴…'비핵화'→'유가 안정' 축소",
+        "Trump tells Americans to accept high gasoline prices",
+        "Iran Pressure Campaign Lacks Clear Off Ramp"
+      ],
+      "evidence_sources": [
+        "Yonhap",
+        "AlMonitor",
+        "Bloomberg"
+      ],
+      "strength": 4,
+      "trend": "신규",
+      "suwon_implication": "미국의 에너지 가격 중심 정책 전환은 국제유가 장기 변동성 확대를 예고하며, 수원시 에너지 비용 관리 정책의 장기 대응 체계 필요성 증대",
+      "is_structural": true,
+      "detected_date": "2026-08-17",
+      "first_detected": "2026-08-17"
+    },
+    {
+      "signal_id": "sig_003",
+      "category": "지역질서재편",
+      "title_ko": "미국 아시아 공백과 중국 팽창",
+      "description": "• 미국의 이란전 집중으로 아시아 동맹국 안보 공백 발생 (연합뉴스)\n• 중국의 아시아 세력 확장 가속화, 미국 동맹 체제 약화 신호\n• 트럼프, 이란전 불참 한국에 대해 한미 군사훈련 축소 결정",
+      "evidence_titles": [
+        "이란에 발묶인 트럼프…아시아 '중국은 누가 말리냐' 불안",
+        "Trump says US to scale back military drills with South Korea after it stayed out of Iran war"
+      ],
+      "evidence_sources": [
+        "Yonhap",
+        "BBC_World"
+      ],
+      "strength": 4,
+      "trend": "신규",
+      "suwon_implication": "동아시아 안보 불안정성 증대는 수원시 외국인 투자 환경, 제조기업의 수출 불확실성 증가 요인. 간접적 경제 영향 주시 필요",
+      "is_structural": true,
+      "detected_date": "2026-08-17",
+      "first_detected": "2026-08-17"
+    },
+    {
+      "signal_id": "sig_006",
+      "category": "정책패러다임전환",
+      "title_ko": "경제 치킨게임: 군사→경제전 전환",
+      "description": "• 60일 협상 시한 성과 없이 만료, 무력충돌→경제전쟁 단계 진입 (연합뉴스)\n• 미국 '경제 옥죄기' vs 이란 '고유가 부채질' 구도 본격화\n• 전쟁의 '탈군사화·경제화' 패턴 확산",
+      "evidence_titles": [
+        "미·이란 '60일 협상시한' 종료…'압박 對 버티기' 경제전 전환",
+        "치킨게임 본격화…미국 '경제 옥죄기' vs 이란 '고유가 부채질'",
+        "As Iran War Turns Into Economic Battle, a New U.S. Strategy Recalls Old Ones"
+      ],
+      "evidence_sources": [
+        "Yonhap",
+        "Yonhap",
+        "NYT_World"
+      ],
+      "strength": 4,
+      "trend": "신규",
+      "suwon_implication": "경제 제재 중심 전쟁은 유가·환율 변동성 장기화를 의미. 수원시 민생안정 예산 편성 시 에너지·물가 변수 비중 확대 필요",
+      "is_structural": true,
+      "detected_date": "2026-08-17",
+      "first_detected": "2026-08-17"
+    },
+    {
+      "signal_id": "sig_009",
+      "category": "정책패러다임전환",
+      "title_ko": "미국 약점 노출과 억지력 약화",
+      "description": "• Foreign Policy: 이란전이 미국의 군사적 약점을 적국들에게 명확히 노출\n• 미 항모 보급선 취약성, 장기 작전 지속 능력 한계 드러남\n• 미국 패권 신뢰도 약화 신호, 동맹국 자체 방어력 강화 압력",
+      "evidence_titles": [
+        "The Iran War Has Left the U.S. Dangerously Exposed",
+        "중동 美항모 위기…전쟁 초 이란의 보급선 타격 노림수 먹혔나"
+      ],
+      "evidence_sources": [
+        "ForeignPolicy",
+        "Yonhap"
+      ],
+      "strength": 4,
+      "trend": "신규",
+      "suwon_implication": "미국 안보 우산 약화는 한국 자체 방위비 증가 압력으로 이어질 가능성. 수원시 국방 관련 산업 수요 변화 주시 필요",
+      "is_structural": true,
+      "detected_date": "2026-08-17",
+      "first_detected": "2026-08-17"
+    },
+    {
+      "signal_id": "sig_004",
+      "category": "무역공급망재편",
+      "title_ko": "수송로 다변화: 호르무즈→바브엘만데브",
+      "description": "• 후티 반군의 예멘 모카항 폐쇄, 바브엘만데브 해협 위협 증가\n• 사우디의 홍해 방어 집중, 미국은 여전히 호르무즈 집중 (AlMonitor)\n• 중동 에너지 수송로 2대 병목지점 동시 불안정화",
+      "evidence_titles": [
+        "Yemen's Mocha port halts operations after Houthi attacks",
+        "As Saudi Arabia rallies against Yemen's Houthis, US stays focused on Iran"
+      ],
+      "evidence_sources": [
+        "AlMonitor",
+        "AlMonitor"
+      ],
+      "strength": 3,
+      "trend": "강화",
+      "suwon_implication": "수원시 제조기업의 원자재 수입 비용 증가 및 납기 불확실성 증대. 공급망 리스크 관리 지원 정책 필요",
+      "is_structural": true,
+      "detected_date": "2026-08-17"
+    },
+    {
+      "signal_id": "sig_007",
+      "category": "지역질서재편",
+      "title_ko": "트럼프 호르무즈 영토 선언 시도",
+      "description": "• 트럼프 '호르무즈 해협 미국 영토 선언' 위협, 정책 진지성 불명확 (Guardian)\n• 이란 '허황된 망상' 반발, 국제법 질서 도전 신호\n• 전통적 국제 수역 개념의 일방적 재해석 시도",
+      "evidence_titles": [
+        "Trump threatens to declare strait of Hormuz 'territory of the United States'",
+        "이란, 트럼프 '호르무즈 美 영토' 주장에 \"허황된 망상\"(종합)"
+      ],
+      "evidence_sources": [
+        "Guardian_World",
+        "Yonhap"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "국제 해운 질서 불확실성 증대. 수원시 수출기업의 해상 운송비 변동성 및 보험료 상승 압력 예상",
+      "is_structural": true,
+      "detected_date": "2026-08-17",
+      "first_detected": "2026-08-17"
+    },
+    {
+      "signal_id": "sig_008",
+      "category": "무역공급망재편",
+      "title_ko": "UAE 선박 공격과 중립국 표적화",
+      "description": "• 이란, 호르무즈 해협에서 UAE ADNOC 선박 공격 (AlMonitor)\n• 전쟁 비참여 중립국 에너지 기업도 표적화되는 새 패턴\n• '교전국 vs 교전국' 경계 붕괴, 글로벌 기업 위험 확대",
+      "evidence_titles": [
+        "UAE says Iran attacked ADNOC vessel in Hormuz, urges waterway's reopening"
+      ],
+      "evidence_sources": [
+        "AlMonitor"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "수원시 소재 글로벌 공급망 참여 기업의 해외 자산 리스크 증가. 보험·리스크 관리 비용 상승 예상",
+      "is_structural": true,
+      "detected_date": "2026-08-17",
+      "first_detected": "2026-08-17"
+    },
+    {
+      "signal_id": "sig_010",
+      "category": "민생충격패턴",
+      "title_ko": "레바논 휴전 무력화와 대리전 확산",
+      "description": "• 6월 휴전 후 최대 규모 인명 피해(11명) 발생, 레바논 전선 재격화 (BBC, NYT)\n• 미-이란 양해각서 무력화 후폭풍, 대리전 확산 패턴\n• 중동 전역 '부분 휴전→재발' 반복 구조화 신호",
+      "evidence_titles": [
+        "다시 요란해진 레바논 전선…美·이란 양해각서 무력화 후폭풍?",
+        "Israeli Strikes in Lebanon Kill 11, Health Officials Say",
+        "Eleven killed in Israeli strikes on southern Lebanon"
+      ],
+      "evidence_sources": [
+        "Yonhap",
+        "NYT_World",
+        "BBC_World"
+      ],
+      "strength": 3,
+      "trend": "강화",
+      "suwon_implication": "중동 불안정 장기화는 수원시 외국인 근로자(중동 출신 포함) 유입 패턴 변화, 다문화 정책 조정 필요성 증대",
+      "is_structural": true,
+      "detected_date": "2026-08-17"
+    }
+  ],
+  "by_category": {
+    "정책패러다임전환": 3,
+    "에너지안보재편": 1,
+    "지역질서재편": 2,
+    "무역공급망재편": 2,
+    "민생충격패턴": 2
+  },
+  "summary_ko": "• 미국이 이란전 목표를 '비핵화'에서 '유가 안정'으로 축소하며 중동 개입 패러다임 전환 신호\n• 에너지 안보가 '호르무즈 지리학'에서 '신뢰 기반 공급망'으로 재편, 한국의 미국산 원유 의존도 급증\n• 미국의 아시아 공백 확대로 중국 팽창 가속화, 한미 군사훈련 축소 등 동아시아 안보 구조 약화\n• 전쟁 양상이 군사 충돌에서 '인프라 타격 중심 경제전'으로 전환, 물·전력망 등 민생 인프라가 주요 표적화\n• 호르무즈·바브엘만데브 2대 해협 동시 불안정화와 중립국 표적화로 글로벌 공급망 리스크 구조화",
+  "top_signal": "인프라 타격 중심 전쟁 양상",
+  "suwon_action": "• 상하수도·전력망 등 필수 인프라 보호 체계 긴급 점검 및 도시 회복력 강화 계획 수립\n• 에너지 가격 장기 변동성 대비 민생안정 예산 조정, 제조기업 공급망 리스크 관리 지원 방안 마련",
+  "weekly_trend": {
+    "정책패러다임전환": {
+      "count": 3,
+      "max_strength": 4
+    },
+    "지역질서재편": {
+      "count": 2,
+      "max_strength": 4
+    },
+    "민생충격패턴": {
+      "count": 2,
+      "max_strength": 5
+    },
+    "무역공급망재편": {
+      "count": 2,
+      "max_strength": 3
+    },
+    "에너지안보재편": {
+      "count": 1,
+      "max_strength": 5
+    }
+  },
+  "generated_at": "2026-08-16T23:30:18.536885"
+}

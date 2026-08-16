@@ -1,0 +1,305 @@
+{
+  "date": "2026-08-17",
+  "generated_at": "2026-08-16T23:34:36.740896",
+  "engine": "Claude 단독 (fallback)",
+  "stats": {
+    "articles_checked": 10,
+    "total_claims": 20,
+    "verified": 0,
+    "disputed": 0,
+    "unverified": 20,
+    "verified_rate": 0.0
+  },
+  "results": [
+    {
+      "article_id": "8321994f37ef",
+      "title": "Latest Oil Market News and Analysis for June 17",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-08-16/latest-oil-market-news-and-analysis-for-june-17",
+      "importance": 5,
+      "category": "energy",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁에 대한 학습된 정보가 없으며, 이는 미래 사건입니다. 현재 시점에서 2026년에 발생할 사건을 검증할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "레바논에서 신규 전투가 발생했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 이와 관련된 호르무즈 해협 선박 공격 주장을 검증할 수 있는 역사적 사실이 존재하지 않습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "호르무즈 해협에서 선박 공격이 발생했다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.47,
+      "checked_at": "2026-08-16T23:33:13.587764"
+    },
+    {
+      "article_id": "617990df32e4",
+      "title": "The Long Shadow of the Iran Shock",
+      "source": "ForeignAffairs",
+      "url": "https://www.foreignaffairs.com/iran/long-shadow-iran-shock",
+      "importance": 5,
+      "category": "paradigm",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 미래 가상 시나리오입니다. 현재(2024년 기준) 이러한 전쟁은 일어나지 않았으며, 해당 Foreign Affairs 기사도 확인할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "이란전쟁이 호르무즈 해협을 중심으로 발생했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁에 대한 학습된 정보가 없으며, 해당 사건은 미래의 가상 시나리오로 보입니다. 호르무즈 해협의 에너지 지정학적 중요성은 일반적으로 알려진 사실이나, 제시된 특정 출처와 맥락은 확인할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "호르무즈 해협이 에너지 지정학의 핵심 지역이다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.47,
+      "checked_at": "2026-08-16T23:33:22.739290"
+    },
+    {
+      "article_id": "9991a7105d3e",
+      "title": "The Iran War Has Left the U.S. Dangerously Exposed",
+      "source": "ForeignPolicy",
+      "url": "https://foreignpolicy.com/2026/08/13/iran-war-us-stockpile-depleted-gulf/",
+      "importance": 5,
+      "category": "country_response",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 시나리오입니다. 해당 사건에 대한 역사적 기록이나 검증 가능한 자료가 존재하지 않으므로 주장을 평가할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "미국의 군사적 약점이 이란·중국·러시아에 노출되고 있다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 해당 Foreign Policy 기사와 주장은 실존하지 않는 미래 사건을 전제로 하고 있어 검증이 불가능합니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "미국의 전쟁 수행 능력에 대한 국제적 신뢰도가 하락하고 있다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.95,
+      "checked_at": "2026-08-16T23:33:31.373296"
+    },
+    {
+      "article_id": "2f3523974033",
+      "title": "Trump threatens to declare strait of Hormuz ‘territory of the United States’",
+      "source": "Guardian_World",
+      "url": "https://www.theguardian.com/us-news/2026/aug/14/trump-threat-strait-hormuz-us-territory",
+      "importance": 5,
+      "category": "paradigm",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 이와 관련된 트럼프의 호르무즈 해협 영토 선포 발언도 실제 역사적 사실이 아니며, 검증할 수 있는 신뢰할 만한 정보가 존재하지 않습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "트럼프 대통령이 호르무즈 해협을 미국 영토로 선포하겠다고 발언했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 종료 협상이나 교착 상태에 대한 검증이 불가능합니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "이란전쟁 종료 협상이 교착 상태에 빠졌다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.95,
+      "checked_at": "2026-08-16T23:33:40.384801"
+    },
+    {
+      "article_id": "8cae93b229ac",
+      "title": "Iran fires back at Trump's threat to declare Hormuz a US territory",
+      "source": "AlMonitor",
+      "url": "https://www.al-monitor.com/originals/2026/08/iran-fires-back-trumps-threat-declare-hormuz-us-territory",
+      "importance": 5,
+      "category": "country_response",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.85,
+          "evidence": "2026년 이란-미국 전쟁은 미래 시점의 가상 시나리오이며, 트럼프의 호르무즈 해협 영토 선언 위협에 대한 신뢰할 수 있는 역사적 기록이나 검증된 정보가 존재하지 않습니다. 해당 출처와 사건 모두 확인 불가능합니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "트럼프가 호르무즈 해협을 미국 영토로 선언하겠다고 위협했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 트럼프의 호르무즈 해협 미국 영토 선언 위협이나 이에 대한 이란의 대응은 확인된 역사적 사실이 아닙니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "이란이 호르무즈 해협을 봉쇄 통제할 의지를 재확인했다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.9,
+      "checked_at": "2026-08-16T23:33:49.898887"
+    },
+    {
+      "article_id": "b80aa7263e73",
+      "title": "Iran defiant on strait as Trump tells Americans to accept high gasoline prices",
+      "source": "AlMonitor",
+      "url": "https://www.al-monitor.com/originals/2026/08/iran-defiant-strait-trump-tells-americans-accept-high-gasoline-prices",
+      "importance": 5,
+      "category": "paradigm",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.85,
+          "evidence": "2026년 이란-미국 전쟁에 대한 학습된 정보가 없으며, 이는 미래 사건입니다. 현재 시점(2024년 기준)에서 2026년에 발생할 전쟁이나 이란의 항복 제안 및 호르무즈 해협 폐쇄에 대한 검증은 불가능합니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "이란이 미국에 항복 제안과 함께 호르무즈 해협 폐쇄 지속을 선언했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁에 대한 학습된 정보가 없으며, 해당 사건은 현재 시점(2024년 기준)에서 미래의 가상 시나리오입니다. 따라서 트럼프의 발언 내용을 검증할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "트럼프가 이란을 '매우 사악(very evil)'하다고 비판하며 미국인에게 고유가 장기화를 수용할 것을 요구했다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.42,
+      "checked_at": "2026-08-16T23:34:00.369449"
+    },
+    {
+      "article_id": "2dea4ace8b04",
+      "title": "미·이란 '60일 협상시한' 종료…'압박 對 버티기' 경제전 전환",
+      "source": "Yonhap",
+      "url": "https://www.yna.co.kr/view/AKR20260817004200071",
+      "importance": 5,
+      "category": "diplomacy",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 60일 협상 시한 종료에 대한 역사적 사실을 확인할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "미국과 이란 간 60일 협상 시한이 종료되었다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 60일 협상시한이나 양해각서(MOU) 기반 협상에 대한 검증이 불가능합니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "미국과 이란이 양해각서(MOU)를 기반으로 협상을 진행했다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.95,
+      "checked_at": "2026-08-16T23:34:09.583439"
+    },
+    {
+      "article_id": "d31b1fa07274",
+      "title": "미, 이란전 목표 점점 후퇴…'비핵화'→'유가 안정' 축소",
+      "source": "Yonhap",
+      "url": "https://www.yna.co.kr/view/AKR20260816030200009",
+      "importance": 5,
+      "category": "paradigm",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 해당 전쟁의 목표나 경과에 대한 검증이 불가능합니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "미국의 이란전쟁 목표가 당초 '비핵화'였다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁에 대한 정보는 학습 데이터에 존재하지 않습니다. 이는 미래의 가상 시나리오이거나 허구의 사건으로 보입니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "미국의 이란전쟁 목표가 '유가 안정'으로 변경되었다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.47,
+      "checked_at": "2026-08-16T23:34:18.723186"
+    },
+    {
+      "article_id": "15b6e71a0fbf",
+      "title": "이란에 발묶인 트럼프…아시아 '중국은 누가 말리냐' 불안",
+      "source": "Yonhap",
+      "url": "https://www.yna.co.kr/view/AKR20260816013500009",
+      "importance": 5,
+      "category": "paradigm",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁에 대한 정보가 학습 데이터에 존재하지 않습니다. 2024년 1월 기준으로 해당 사건은 발생하지 않았으며, 미래 예측이나 가상 시나리오로 판단됩니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "미국이 이란전쟁에 집중하고 있다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 이와 관련된 중국의 아시아 세력 확장에 대한 주장을 검증할 수 있는 역사적 사실이 존재하지 않습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "중국이 아시아에서 세력 확장에 속도를 내고 있다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.0,
+      "checked_at": "2026-08-16T23:34:26.840404"
+    },
+    {
+      "article_id": "329baf191a31",
+      "title": "치킨게임 본격화…미국 '경제 옥죄기' vs 이란 '고유가 부채질'",
+      "source": "Yonhap",
+      "url": "https://www.yna.co.kr/view/AKR20260815044300009",
+      "importance": 5,
+      "category": "economy",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁에 대한 정보가 학습 데이터에 존재하지 않습니다. 이는 실제 발생하지 않은 미래 가상 시나리오이거나 학습 시점 이후의 사건으로 판단됩니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "미국이 이란에 대한 경제 제재를 시행하고 있다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 미래의 가상 시나리오입니다. 해당 사건에 대한 역사적 기록이나 신뢰할 수 있는 정보가 존재하지 않아 주장을 검증할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "이란이 원유 공급 또는 호르무즈 해협 봉쇄 등으로 유가 상승을 유도하고 있다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.0,
+      "checked_at": "2026-08-16T23:34:36.740885"
+    }
+  ]
+}
