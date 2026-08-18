@@ -1,0 +1,235 @@
+{
+  "date": "2026-08-18",
+  "total_signals": 10,
+  "structural_signals": 10,
+  "signals": [
+    {
+      "signal_id": "sig_001",
+      "category": "에너지안보재편",
+      "title_ko": "호르무즈 통행량 제로, 에너지 공급 구조적 마비",
+      "description": "• 호르무즈 해협 선박 통행이 16일 '0'으로 사실상 완전 정지 (연합뉴스)\n• 일시적 봉쇄가 아닌 구조적 고사 상태로 전환, 글로벌 에너지 공급망 재편 불가피\n• 미국 8월 휘발유 가격 역대 최고치 기록, 에너지 가격 구조의 장기 고착화 신호",
+      "evidence_titles": [
+        "이란 잇단 공격에 호르무즈 '고사 상태'…16일엔 통행량 '0'",
+        "US gas prices reach highest ever recorded for August amid stalled talks with Iran",
+        "Japanese second-quarter growth weaker than expected"
+      ],
+      "evidence_sources": [
+        "Yonhap",
+        "Guardian",
+        "FT"
+      ],
+      "strength": 5,
+      "trend": "신규",
+      "suwon_implication": "수원시 난방비·전기료 장기 상승 불가피. 취약계층 에너지 바우처 확대 및 신재생에너지 전환 가속화 필요.",
+      "is_structural": true,
+      "detected_date": "2026-08-18",
+      "first_detected": "2026-08-18"
+    },
+    {
+      "signal_id": "sig_007",
+      "category": "에너지안보재편",
+      "title_ko": "트럼프, 호르무즈 미국 영토 선언 시사",
+      "description": "• 트럼프가 호르무즈 해협을 '미국 영토'로 선언하는 방안에 긍정적 반응 표명\n• 국제법 체계와 충돌하는 일방적 영토 주장으로 에너지 안보의 군사화·강제화 신호\n• 에너지 공급선 확보가 외교·협상이 아닌 군사적 점령 논리로 전환되는 극단적 패러다임 변화 가능성",
+      "evidence_titles": [
+        "트럼프 \"오만 방해시 폭격…호르무즈 美영토 선언 마음에 든다\"(종합)",
+        "Trump threatens to declare strait of Hormuz 'territory of the United States'"
+      ],
+      "evidence_sources": [
+        "Yonhap",
+        "Guardian"
+      ],
+      "strength": 5,
+      "trend": "신규",
+      "suwon_implication": "글로벌 에너지 공급 체계의 예측 불가능성 극대화. 수원시 에너지 자립도 제고 및 비상 대응 체계 전면 재검토 필요.",
+      "is_structural": true,
+      "detected_date": "2026-08-18",
+      "first_detected": "2026-08-18"
+    },
+    {
+      "signal_id": "sig_002",
+      "category": "지역질서재편",
+      "title_ko": "중동 동맹 구조 재편, 미국·이스라엘 예측 벗어남",
+      "description": "• FT 분석: 이란 전쟁이 미국·이스라엘이 예견하지 못한 방식으로 중동 동맹 재편 촉발\n• 오만, 이란과 독자적 호르무즈 관리 협상 → 트럼프의 오만 폭격 위협으로 이어짐\n• 전통적 미국 중심 중동 질서가 다극화·파편화되는 구조적 전환점",
+      "evidence_titles": [
+        "The realignment of the Middle East",
+        "Trump threatens to bomb Oman if it 'gets in the way' of US-Iran negotiations",
+        "Donald Trump threatens to bomb Oman if it 'gets in the way' of ending Iran war"
+      ],
+      "evidence_sources": [
+        "FT",
+        "FT",
+        "Guardian"
+      ],
+      "strength": 4,
+      "trend": "신규",
+      "suwon_implication": "장기 에너지 수입선 다변화 필요성 증대. 수원시 외국인 근로자(중동 출신) 안정성 모니터링 강화.",
+      "is_structural": true,
+      "detected_date": "2026-08-18",
+      "first_detected": "2026-08-18"
+    },
+    {
+      "signal_id": "sig_003",
+      "category": "정책패러다임전환",
+      "title_ko": "IMF, 비은행금융 시스템 리스크 통합 테스트 개시",
+      "description": "• IMF가 비은행금융중개기관(NBFI) 리스크를 시스템 차원에서 통합 스트레스 테스트하는 새로운 프레임워크 도입\n• 에너지 충격이 그림자 금융 시스템으로 전이되는 경로를 선제 감지하려는 정책 전환\n• 전통적 은행 중심 금융안정 정책에서 비은행 부문 포함한 시스템 전체 관리로 패러다임 이동",
+      "evidence_titles": [
+        "Systemwide Stress Test at the IMF: Integrating Nonbank Financial Intermediary Risks"
+      ],
+      "evidence_sources": [
+        "IMF"
+      ],
+      "strength": 4,
+      "trend": "신규",
+      "suwon_implication": "수원시 금융소외계층 지원 정책 설계 시 비은행 금융(대부업, 핀테크 등) 리스크 모니터링 필요.",
+      "is_structural": true,
+      "detected_date": "2026-08-18",
+      "first_detected": "2026-08-18"
+    },
+    {
+      "signal_id": "sig_004",
+      "category": "무역공급망재편",
+      "title_ko": "아시아 동맹 신뢰 균열, 미국 인도-태평양 공백",
+      "description": "• NYT: 중국의 아시아 확장 시도 vs 트럼프의 이란 집중으로 아시아 동맹국들이 미국의 방위 의지 의문 제기\n• 한미 군사훈련 대폭 축소로 한반도 안보 구조 변화, 공급망 안정성 불확실성 증가\n• 글로벌 공급망의 아시아 허브 기능이 지정학적 불안으로 약화될 구조적 위험",
+      "evidence_titles": [
+        "As China Pushes to Expand in Asia, Trump Focuses on Iran",
+        "Trump Orders Pentagon to Curtail Military Exercises With Ally South Korea",
+        "'이란전 수렁' 트럼프, 한미훈련 대폭 축소로 北에 대화 손짓"
+      ],
+      "evidence_sources": [
+        "NYT",
+        "NYT",
+        "Yonhap"
+      ],
+      "strength": 4,
+      "trend": "신규",
+      "suwon_implication": "수원시 제조기업(삼성전자 등)의 아시아 공급망 불안정 증가. 지역 경제 리스크 모니터링 및 기업 지원 체계 점검 필요.",
+      "is_structural": true,
+      "detected_date": "2026-08-18",
+      "first_detected": "2026-08-18"
+    },
+    {
+      "signal_id": "sig_009",
+      "category": "정책패러다임전환",
+      "title_ko": "한국, 이란 사태 '실질적·군사적 기여' 논의 착수",
+      "description": "• 한국 청와대가 이란·호르무즈 관련 '실질적·군사적 기여'를 미국과 논의 중이라고 공식 발표\n• 한국의 중동 정책이 경제 협력 중심에서 군사·안보 기여로 전환되는 신호\n• 에너지 수입국의 안보 역할 확대라는 새로운 글로벌 질서 형성 가능성",
+      "evidence_titles": [
+        "[속보] 靑 \"이란·호르무즈 관련 실질적·군사적 기여 美와 논의 중\""
+      ],
+      "evidence_sources": [
+        "Yonhap"
+      ],
+      "strength": 4,
+      "trend": "신규",
+      "suwon_implication": "수원시 예비군·민방위 훈련 강도 조정 가능성. 시민 안보 의식 제고 및 비상 대비 체계 점검 필요.",
+      "is_structural": true,
+      "detected_date": "2026-08-18",
+      "first_detected": "2026-08-18"
+    },
+    {
+      "signal_id": "sig_010",
+      "category": "에너지안보재편",
+      "title_ko": "이란 강경파, 종전 MOU 불신하고 확전 준비",
+      "description": "• 연합뉴스: 이란 강경파 지도부가 6월 종전 양해각서를 신뢰하지 않고 미국과의 무력 충돌 확대 준비 중\n• 외교적 해결 가능성 소멸, 에너지 공급 불안이 중장기 구조로 고착화되는 신호\n• 호르무즈 봉쇄가 전술적 수단이 아닌 전략적 목표로 전환될 위험",
+      "evidence_titles": [
+        "\"이란 강경파 지도부, 종전 MOU 불신하고 미국과의 확전 준비\"",
+        "US-Iran Prospects Dim as Trump Seems in No Hurry to Reach Deal"
+      ],
+      "evidence_sources": [
+        "Yonhap",
+        "Bloomberg"
+      ],
+      "strength": 4,
+      "trend": "강화",
+      "suwon_implication": "장기 에너지 비용 상승 대비 필수. 수원시 공공시설 에너지 효율화 및 신재생 전환 투자 가속화 필요.",
+      "is_structural": true,
+      "detected_date": "2026-08-18"
+    },
+    {
+      "signal_id": "sig_005",
+      "category": "민생충격패턴",
+      "title_ko": "일본 2분기 성장률 급락, 에너지 충격의 실물경제 전이",
+      "description": "• 일본 2분기 GDP 성장률이 예상보다 약세, 이란 에너지 쇼크 최악기에 가계·기업 지출 동반 위축\n• 에너지 가격 급등이 단순 비용 상승을 넘어 소비·투자 패턴을 구조적으로 변화시키는 증거\n• 선진국 경제에서 에너지 충격 → 민생 위축 → 성장 둔화의 악순환 고리 형성",
+      "evidence_titles": [
+        "Japanese second-quarter growth weaker than expected"
+      ],
+      "evidence_sources": [
+        "FT"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "수원시 소상공인·자영업자 매출 감소 우려. 에너지 비용 부담 완화 및 소비 진작 정책 동시 추진 필요.",
+      "is_structural": true,
+      "detected_date": "2026-08-18",
+      "first_detected": "2026-08-18"
+    },
+    {
+      "signal_id": "sig_006",
+      "category": "정책패러다임전환",
+      "title_ko": "IMF, 공공부채·부의 불평등·조세 부담 연계 분석 착수",
+      "description": "• IMF가 공공부채와 부의 불평등, 조세 부담을 통합 분석하는 새로운 연구 프레임워크 제시\n• 전쟁 비용이 누구에게 전가되는가를 체계적으로 추적하려는 정책 전환 신호\n• 재정정책이 단순 부채 규모가 아닌 분배 효과 중심으로 재설계되는 패러다임 이동",
+      "evidence_titles": [
+        "Public Debt, Wealth Inequality, and the Burden of Taxation"
+      ],
+      "evidence_sources": [
+        "IMF"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "수원시 재정 운용 시 취약계층 부담 최소화 원칙 강화. 에너지 바우처·긴급 생계비 등 분배 정책 우선순위 상향.",
+      "is_structural": true,
+      "detected_date": "2026-08-18",
+      "first_detected": "2026-08-18"
+    },
+    {
+      "signal_id": "sig_008",
+      "category": "민생충격패턴",
+      "title_ko": "그리스 청년층 재정적 독립 불가능 구조화",
+      "description": "• OECD 보고서: 그리스 청년층이 재정적 독립에 도달하는 것이 구조적으로 불가능해지는 패턴 확인\n• 에너지 비용 급등과 고용 불안이 청년층 생애 경로 자체를 변형시키는 세대적 충격\n• 전쟁 경제 비용이 특정 세대에 집중되어 사회 구조를 장기 변화시키는 신호",
+      "evidence_titles": [
+        "Challenges for Young People in Greece to Reach Financial Independence"
+      ],
+      "evidence_sources": [
+        "OECD"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "수원시 청년 정책 재설계 필요. 주거·에너지 비용 통합 지원 및 청년 일자리 안정성 강화 시급.",
+      "is_structural": true,
+      "detected_date": "2026-08-18",
+      "first_detected": "2026-08-18"
+    }
+  ],
+  "by_category": {
+    "에너지안보재편": 3,
+    "지역질서재편": 1,
+    "정책패러다임전환": 3,
+    "무역공급망재편": 1,
+    "민생충격패턴": 2
+  },
+  "summary_ko": "• 호르무즈 해협 통행량 '0' 기록, 에너지 공급 구조적 마비 → 일시적 봉쇄 아닌 장기 고착화 국면 진입\n• 트럼프의 호르무즈 '미국 영토 선언' 검토, 에너지 안보의 군사화·강제화 극단 신호\n• 중동 동맹 구조 재편·미국 인도-태평양 공백으로 한국 공급망·안보 불확실성 동시 증폭\n• 일본 성장률 급락·그리스 청년 독립 불가능 등 에너지 충격이 민생·세대 구조 변형 단계 진입\n• IMF, 비은행금융·부의 불평등 통합 분석 착수 → 전쟁 비용 분배 추적하는 정책 패러다임 전환 시작",
+  "top_signal": "호르무즈 통행량 제로, 에너지 공급 구조적 마비",
+  "suwon_action": "• 난방비·전기료 장기 상승 불가피, 취약계층 에너지 바우처 긴급 확대 및 공공시설 신재생 전환 투자 즉시 착수\n• 삼성전자 등 주요 기업 아시아 공급망 리스크 모니터링 강화, 지역 경제 비상 대응 체계 가동 점검",
+  "weekly_trend": {
+    "정책패러다임전환": {
+      "count": 7,
+      "max_strength": 4
+    },
+    "지역질서재편": {
+      "count": 6,
+      "max_strength": 5
+    },
+    "에너지안보재편": {
+      "count": 6,
+      "max_strength": 5
+    },
+    "민생충격패턴": {
+      "count": 5,
+      "max_strength": 4
+    },
+    "무역공급망재편": {
+      "count": 4,
+      "max_strength": 4
+    }
+  },
+  "generated_at": "2026-08-18T00:26:21.410383"
+}

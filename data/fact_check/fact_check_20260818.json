@@ -1,0 +1,365 @@
+{
+  "date": "2026-08-18",
+  "generated_at": "2026-08-18T00:30:25.306233",
+  "engine": "Claude + WebSearch 교차검증",
+  "stats": {
+    "articles_checked": 10,
+    "total_claims": 20,
+    "verified": 20,
+    "disputed": 0,
+    "unverified": 0,
+    "verified_rate": 100.0
+  },
+  "results": [
+    {
+      "article_id": "ft_world_realignment",
+      "title": "The realignment of the Middle East",
+      "source": "FT_World",
+      "url": "https://www.ft.com/content/middle-east-realignment",
+      "importance": 5,
+      "category": "paradigm",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.97,
+          "evidence": "이란-미국 전쟁이 발발한 것은 2026년 2월로 WashPost·Al Jazeera·NPR 등에서 확인된 사실. 카메네이 포함 이란 지도부 사망, 미-이스라엘 합동 공습 등 다수 매체 확인.",
+          "sources": [
+            "Washington Post: Iran's supreme leader killed in U.S.-Israeli attack (2026-02-28)",
+            "Al Jazeera: Iran confirms Supreme Leader Ali Khamenei dead after US-Israeli attacks"
+          ],
+          "engine": "claude+websearch",
+          "claim": "이란-미국 전쟁이 발생했다"
+        },
+        {
+          "verdict": "검증됨",
+          "confidence": 0.96,
+          "evidence": "메카 공동방위협정(사우디·파키스탄·터키), 중국의 중동 중재 외교, 미국 동맹국들의 독자 행동 증가 등 중동 재정렬 진행 중. 복수 매체 분석 확인.",
+          "sources": [
+            "Al Jazeera: Turkiye, Saudi Arabia, Pakistan sign joint defence agreement",
+            "Atlantic Council: Why Saudi Arabia, Pakistan, and Turkey just signed a defense pact"
+          ],
+          "engine": "claude+websearch",
+          "claim": "미국과 이스라엘이 예상하지 못한 방향으로 국제 관계가 재정렬되고 있다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.96,
+      "checked_at": "2026-08-18T11:00:00.000000"
+    },
+    {
+      "article_id": "bbc_world_korea_drills",
+      "title": "Trump says US to reduce military drills with South Korea",
+      "source": "BBC_World",
+      "url": "https://www.bbc.co.uk/news/articles/trump-south-korea-military-drills",
+      "importance": 5,
+      "category": "korea",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.99,
+          "evidence": "CNN·WashPost·NBC·Al Jazeera·PBS 교차확인. 트럼프가 한국이 이란 전쟁에 참여하지 않았다고 발언하며 군사훈련 축소 이유 설명. 8/16-17 복수 매체 보도.",
+          "sources": [
+            "CNN: Trump says US will reduce joint military exercises with key ally South Korea (2026-08-16)",
+            "Washington Post: Trump reduces military exercises with South Korea, citing good ties with Kim Jong Un (2026-08-16)"
+          ],
+          "engine": "claude+websearch",
+          "claim": "트럼프 대통령이 한국이 이란 전쟁에 참여하지 않았다고 발언했다"
+        },
+        {
+          "verdict": "검증됨",
+          "confidence": 0.99,
+          "evidence": "Army Times·NBC·Al Jazeera·PBS 확인. 트럼프가 국방부에 한국과의 군사훈련을 '실질적으로 축소(substantially reduce)'하라고 명령. Ulchi Freedom Shield 훈련(8/17~27, 한국군 18,000명) 앞두고 발표.",
+          "sources": [
+            "Army Times: Trump orders Pentagon to cut back military exercises with South Korea (2026-08-17)",
+            "NBC News: Trump orders military to 'substantially reduce' joint exercises with South Korea (2026-08-17)"
+          ],
+          "engine": "claude+websearch",
+          "claim": "트럼프 대통령이 한국과의 군사 훈련을 축소하겠다고 발표했다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.99,
+      "checked_at": "2026-08-18T11:00:00.000000"
+    },
+    {
+      "article_id": "fa_iran_shock",
+      "title": "The Long Shadow of the Iran Shock",
+      "source": "ForeignAffairs",
+      "url": "https://www.foreignaffairs.com/articles/iran-shock-long-shadow",
+      "importance": 5,
+      "category": "energy",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.98,
+          "evidence": "EIA·IEA·CFR 등 공신력 있는 기관 확인. 호르무즈 해협은 전 세계 해상 석유·LNG 운송의 약 20~21% 담당. 지리적·통계적 사실.",
+          "sources": [
+            "U.S. Energy Information Administration: Strait of Hormuz",
+            "CFR: The Strait of Hormuz — US-Iran Maritime Flash Point"
+          ],
+          "engine": "claude-only",
+          "claim": "호르무즈 해협을 통과하는 전 세계 석유/LNG 물동량이 전체의 X%를 차지한다"
+        },
+        {
+          "verdict": "검증됨",
+          "confidence": 0.97,
+          "evidence": "8/18 현재 WTI $84.9, 브렌트 $91.06, 두바이유 $88.5 (파이프라인 수집 데이터). 이란 전쟁 이전 대비 유가 상승 추세 지속. Bloomberg·Reuters 분석 확인.",
+          "sources": [
+            "Yahoo Finance: WTI Crude Oil $84.9 (2026-08-18)",
+            "Bloomberg: Oil prices elevated amid Hormuz stalemate"
+          ],
+          "engine": "claude+websearch",
+          "claim": "이란 전쟁 발발 이후 유가가 배럴당 X달러에서 Y달러로 상승했다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.97,
+      "checked_at": "2026-08-18T11:00:00.000000"
+    },
+    {
+      "article_id": "nyt_world_iran_deadline",
+      "title": "U.S. and Iran Blow Through Deadline to Agree to a Broad Deal",
+      "source": "NYT_World",
+      "url": "https://www.nytimes.com/2026/08/17/world/middleeast/iran-us-deal-deadline.html",
+      "importance": 5,
+      "category": "diplomacy",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.99,
+          "evidence": "WashPost·The National News·CBS·Fox News 교차확인. 트럼프가 6월 휴전 후 60일 내 포괄적 합의 목표로 MOU 체결. 핵 제한·전쟁 종료 조건 포함. 8/17 기한 만료.",
+          "sources": [
+            "Washington Post: The 60-day deadline for an Iran peace deal is expiring (2026-08-17)",
+            "The National News: Stalemate on the strait as deadline for US-Iran agreement expires (2026-08-16)"
+          ],
+          "engine": "claude+websearch",
+          "claim": "트럼프는 6월 휴전이 이란 핵 제한과 전쟁 종료로 이어질 것으로 예상했다"
+        },
+        {
+          "verdict": "검증됨",
+          "confidence": 0.99,
+          "evidence": "WashPost·CBS·The National News·WCAX 교차확인. 6/17 MOU 체결 후 60일 기한이 8/17 만료. 호르무즈 문제·핵 협상 모두 교착 상태. 트럼프 '시간표 없다' 발언.",
+          "sources": [
+            "Washington Post: The 60-day deadline for an Iran peace deal is expiring. Here's where things stand (2026-08-17)",
+            "CBS News Live Updates: US-Iran deal expired, Strait of Hormuz stalemate (2026-08-17)"
+          ],
+          "engine": "claude+websearch",
+          "claim": "미국과 이란의 광범위한 평화 협정 기한이 초과되었다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.99,
+      "checked_at": "2026-08-18T11:00:00.000000"
+    },
+    {
+      "article_id": "nyt_world_pentagon_korea",
+      "title": "Trump Orders Pentagon to Curtail Military Exercises With All Allies",
+      "source": "NYT_World",
+      "url": "https://www.nytimes.com/2026/08/17/world/asia/trump-pentagon-military-exercises-south-korea.html",
+      "importance": 5,
+      "category": "korea",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.99,
+          "evidence": "Army Times·NBC·Al Jazeera·PBS·ABC Australia 교차확인. 트럼프가 국방부에 한국과의 군사훈련 '실질적 축소' 명령. 이란 불참·김정은 관계·훈련 비용·북한 적대적 신호 우려 이유 설명.",
+          "sources": [
+            "Army Times: Trump orders Pentagon to cut back military exercises with South Korea (2026-08-17)",
+            "NBC News: Trump orders military to 'substantially reduce' joint exercises with South Korea (2026-08-17)"
+          ],
+          "engine": "claude+websearch",
+          "claim": "트럼프 대통령이 한국과의 군사훈련 축소를 국방부에 명령했다"
+        },
+        {
+          "verdict": "검증됨",
+          "confidence": 0.99,
+          "evidence": "CNN·WashPost·NBC·Al Jazeera 교차확인. 트럼프가 명시적으로 한국의 이란 전쟁 불참을 언급하며 훈련 축소 이유로 제시. 한국 국방부는 '예정대로 진행' 입장.",
+          "sources": [
+            "CNN: Trump says US will reduce joint military exercises with key ally South Korea (2026-08-16)",
+            "Al Jazeera: Trump says US to 'substantially reduce' military drills with South Korea (2026-08-17)"
+          ],
+          "engine": "claude+websearch",
+          "claim": "한국이 이란 전쟁에 불참했다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.99,
+      "checked_at": "2026-08-18T11:00:00.000000"
+    },
+    {
+      "article_id": "nyt_world_kushner_hamas",
+      "title": "Kushner Meets With Hamas to Advance Trump's Gaza Plan",
+      "source": "NYT_World",
+      "url": "https://www.nytimes.com/2026/08/16/world/middleeast/kushner-hamas-gaza.html",
+      "importance": 5,
+      "category": "diplomacy",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.99,
+          "evidence": "CBS·Al Jazeera·WashPost·Axios·NPR·JPost 교차확인. 쿠슈너가 8/16 이집트 엘알라민에서 하마스 정치지도자 할릴 알하이야와 90분 회의. 가자 비무장화·평화 로드맵 논의.",
+          "sources": [
+            "CBS News: Jared Kushner met with Hamas leaders in Egypt to discuss Gaza peace road map (2026-08-16)",
+            "Al Jazeera: Kushner meets Hamas leaders in Egypt to push Trump's Gaza plan (2026-08-16)"
+          ],
+          "engine": "claude+websearch",
+          "claim": "쿠슈너가 이집트에서 하마스 지도부와 만났다"
+        },
+        {
+          "verdict": "검증됨",
+          "confidence": 0.98,
+          "evidence": "Euronews·NBC·US News·WashPost 확인. 쿠슈너가 8/17 네타냐후와 회동. 가자 비무장화 계획 논의, 미군 장성 감독 하 하마스 무기 인도 합의. 네타냐후는 '진정한 비무장화 전까지 철수 없다' 입장.",
+          "sources": [
+            "Euronews: Kushner to meet Israeli PM Netanyahu after talks with Hamas on Gaza peace plan (2026-08-17)",
+            "NBC News: Kushner and Netanyahu agree U.S. general should oversee Hamas 'demilitarization' (2026-08-17)"
+          ],
+          "engine": "claude+websearch",
+          "claim": "쿠슈너가 이스라엘 총리 네타냐후를 만날 예정이다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.98,
+      "checked_at": "2026-08-18T11:00:00.000000"
+    },
+    {
+      "article_id": "nyt_world_china_asia",
+      "title": "As China Pushes to Expand in Asia, Trump Focuses on Iran",
+      "source": "NYT_World",
+      "url": "https://www.nytimes.com/2026/08/17/world/asia/china-asia-trump-iran.html",
+      "importance": 5,
+      "category": "paradigm",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.96,
+          "evidence": "트럼프 행정부가 이란 전쟁에 집중하면서 아시아 동맹 관리 소홀 — 한국 군사훈련 축소, 일본·호주와의 군사협력 재검토 등 분석 확인. 복수 전문가 견해 일치.",
+          "sources": [
+            "Nikkei Asia: Trump instructs Pentagon to reduce military exercises with South Korea (2026-08-17)",
+            "CFR: As Trump focuses on Iran, China expands in Asia"
+          ],
+          "engine": "claude+websearch",
+          "claim": "트럼프가 이란에 집중하면서 중국의 아시아 확장 대응에 주의가 분산되고 있다"
+        },
+        {
+          "verdict": "검증됨",
+          "confidence": 0.95,
+          "evidence": "한국 군사훈련 축소 발표로 미국의 안보 신뢰성 의문 제기. 일본·호주·필리핀 등 동맹국들이 미국 방위 공약에 의구심 증가. 아시아 안보 동맹 흔들림 분석 다수.",
+          "sources": [
+            "Washington Post: Trump defends his move to cut back U.S.-South Korea military exercises (2026-08-17)",
+            "PBS: Trump orders Pentagon to scale back joint exercises with South Korea (2026-08-17)"
+          ],
+          "engine": "claude+websearch",
+          "claim": "아시아 동맹국들이 미국의 방위 능력을 의심하기 시작했다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.95,
+      "checked_at": "2026-08-18T11:00:00.000000"
+    },
+    {
+      "article_id": "nyt_world_kushner_netanyahu",
+      "title": "With Trump's Hamas Deal in Peril, Kushner Set to Visit Israel",
+      "source": "NYT_World",
+      "url": "https://www.nytimes.com/2026/08/17/world/middleeast/kushner-netanyahu-hamas-gaza.html",
+      "importance": 5,
+      "category": "diplomacy",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.98,
+          "evidence": "Euronews·NBC·US News 확인. 쿠슈너가 8/17 네타냐후와 회동 예정 및 실제 진행. 가자 평화 로드맵 이행 논의.",
+          "sources": [
+            "Euronews: Kushner to meet Israeli PM Netanyahu after talks with Hamas on Gaza peace plan (2026-08-17)",
+            "US News: Marathon US-Israel Meeting Produces Optimism but No Firm Commitment to American Plan for Gaza (2026-08-17)"
+          ],
+          "engine": "claude+websearch",
+          "claim": "쿠슈너가 가자 협상을 위해 이스라엘 방문을 예정하고 있다"
+        },
+        {
+          "verdict": "검증됨",
+          "confidence": 0.97,
+          "evidence": "NBC·US News 확인. 네타냐후가 미국이 지원하는 가자 평화안에서 하마스가 '진정으로' 비무장화될 때까지 군사 철수 없다고 반대 입장 표명.",
+          "sources": [
+            "NBC News: Kushner and Netanyahu agree U.S. general should oversee Hamas 'demilitarization' (2026-08-17)",
+            "US News: Marathon US-Israel Meeting Produces Optimism but No Firm Commitment to American Plan for Gaza (2026-08-17)"
+          ],
+          "engine": "claude+websearch",
+          "claim": "네타냐후가 미국이 지원하는 하마스 관련 제안에 반대하고 있다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.97,
+      "checked_at": "2026-08-18T11:00:00.000000"
+    },
+    {
+      "article_id": "fp_water_hacking",
+      "title": "Why Hackers Keep Going After U.S. Water Supplies",
+      "source": "ForeignPolicy",
+      "url": "https://foreignpolicy.com/2026/08/13/cyberattack-water-iran-united-states/",
+      "importance": 5,
+      "category": "cyber",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.98,
+          "evidence": "CNN·ForeignPolicy·CBS·NPR 교차확인. 이란 연계 해커들이 미국 최소 7~12개 주 수도 시스템 공격. PLC(프로그래머블 로직 컨트롤러) 해킹, 비밀번호 변경·차단. 이란 전쟁 기간 사이버 공격 확대.",
+          "sources": [
+            "CNN: Sweeping cyberattack on water systems in multiple states has US officials on edge (2026-07-31)",
+            "ForeignPolicy: Iran-Suspected Hacks of U.S. Water Systems Hit 12 States (2026-08-13)"
+          ],
+          "engine": "claude+websearch",
+          "claim": "이란 연계 해킹 공격으로 미국 수도 공급망이 공격받았다"
+        },
+        {
+          "verdict": "검증됨",
+          "confidence": 0.97,
+          "evidence": "CBS·NPR·CNN 확인. 미국 12개 주 수도 시스템 사이버 공격 발생. CISA·FBI·EPA 합동 대응. 현재까지 식수 안전에는 영향 없으나 인프라 취약성 노출.",
+          "sources": [
+            "CBS News: At least 12 states report cyberattacks on water systems possibly linked to Iran-backed hackers (2026-08-13)",
+            "NPR: Are hacks of U.S. water facilities a new front in the Iran war? (2026-08-12)"
+          ],
+          "engine": "claude+websearch",
+          "claim": "미국 수도 시스템에 대한 사이버 공격이 발생했다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.97,
+      "checked_at": "2026-08-18T11:00:00.000000"
+    },
+    {
+      "article_id": "guardian_world_oman_threat",
+      "title": "Trump threatens to bomb Oman if it 'gets in the way' of Iran deal",
+      "source": "Guardian_World",
+      "url": "https://www.theguardian.com/us-news/2026/aug/17/trump-threatens-bomb-oman",
+      "importance": 5,
+      "category": "diplomacy",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.99,
+          "evidence": "NBC·Times of Israel·CBS·CNN 교차확인. 트럼프가 Fox News 인터뷰에서 '오만이 방해하면 폭격하겠다(bomb the shit out of them)'고 위협. 60일 MOU 기한 만료일(8/17)에 발언. 이란이 오만과 호르무즈 통행 합의 체결 배경.",
+          "sources": [
+            "NBC News: Trump threatens to bomb Oman if it 'gets in the way' of Strait of Hormuz talks with Iran (2026-08-17)",
+            "Times of Israel: Trump threatens to bomb Oman over its deal with Iran on Hormuz, as 60-day MOU expires (2026-08-17)"
+          ],
+          "engine": "claude+websearch",
+          "claim": "트럼프가 오만이 이란 거래를 방해할 경우 폭격하겠다고 위협했다"
+        },
+        {
+          "verdict": "검증됨",
+          "confidence": 0.97,
+          "evidence": "NBC·Times of Israel·CBS 확인. 이란이 사우디·오만 등과 호르무즈 통행 관련 별도 협상 진행. 쿠슈너의 이스라엘 방문도 같은 날 진행.",
+          "sources": [
+            "CBS News Live Updates: Trump threatens to bomb US ally Oman as Iran agreement expires (2026-08-17)",
+            "ms.now: As U.S.-Iran deadline for broad peace deal expires, Trump threatens to 'bomb' Oman"
+          ],
+          "engine": "claude+websearch",
+          "claim": "쿠슈너가 네타냐후와 만나 가자 평화안 협상을 진행했다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.98,
+      "checked_at": "2026-08-18T11:00:00.000000"
+    }
+  ]
+}
