@@ -1,0 +1,220 @@
+{
+  "date": "2026-08-20",
+  "total_signals": 8,
+  "structural_signals": 7,
+  "signals": [
+    {
+      "signal_id": "sig_001",
+      "category": "에너지안보재편",
+      "title_ko": "에너지 공급기준 가격→신뢰 전환",
+      "description": "• UAE의 對이란 전면 무역 중단은 중동 에너지 허브의 '경제적 실리'보다 '동맹 신뢰'를 우선하는 구조적 전환 신호\n• 호르무즈 해협 봉쇄 장기화로 미국 8월 휘발유 가격이 역대 최고치 기록, 에너지 안보가 가격 메커니즘을 압도\n• 트럼프 행정부가 이란 전쟁 목표를 '미국 소비자 에너지 가격 인하'로 재정의(Vance 발언), 전통적 지정학 목표에서 민생 직결 목표로 전환",
+      "evidence_titles": [
+        "U.A.E. Announces Halt to Trade With Iran Amid Trump's Push To Isolate Tehran",
+        "US gas prices reach highest ever recorded for August amid stalled talks with Iran",
+        "Vance Pitches a New Objective for the Iran War",
+        "UAE Joins Global Efforts to Isolate Iran"
+      ],
+      "evidence_sources": [
+        "NYT_World",
+        "Guardian_Iran",
+        "ForeignPolicy"
+      ],
+      "strength": 4,
+      "trend": "신규",
+      "suwon_implication": "수원시 난방비·전기료 구조가 중장기적으로 '저가 공급 확보'에서 '안정적 공급선 확보'로 정책 우선순위 전환 필요. 취약계층 에너지 바우처 예산 장기 증액 대비 요구됨.",
+      "is_structural": true,
+      "detected_date": "2026-08-20",
+      "first_detected": "2026-08-20"
+    },
+    {
+      "signal_id": "sig_002",
+      "category": "무역공급망재편",
+      "title_ko": "호르무즈 우회 공급망 고착화",
+      "description": "• 호르무즈 해협 봉쇄가 6개월 이상 지속되며 '일시적 병목'에서 '구조적 우회로 고착' 단계로 전환\n• FT 보도에 따르면 미국 군수품 위기가 이란 전쟁 이전부터 시작되었으며, 방산 생산 목표 상향만으로는 해결 불가능한 구조적 문제로 진단\n• 후티 반군의 바브엘만데브 해협 연안 장악 시도(예멘 정부 경고)로 홍해-수에즈 우회로마저 불안정, 이중 우회 경로 필요성 대두",
+      "evidence_titles": [
+        "The Strait of Hormuz: A U.S.-Iran Maritime Flash Point",
+        "Not So Strait-Forward: Hormuz, Iran, and the Future of Gulf Oil and Gas Flows",
+        "The US munitions crisis goes back further than Iran",
+        "예멘 정부 \"후티 반군, 바브엘만데브 연안 장악 노려\" 경고",
+        "Houthis Claim Strike on Saudi Vessel as Red Sea Violence Escalates"
+      ],
+      "evidence_sources": [
+        "CFR_Iran",
+        "FT_World",
+        "Yonhap",
+        "NYT_World"
+      ],
+      "strength": 4,
+      "trend": "강화",
+      "suwon_implication": "수원시 제조기업의 원자재 조달 비용 상승 장기화 예상. 시 차원의 중소기업 물류비 지원 프로그램을 한시적→상시 체제로 전환 검토 필요.",
+      "is_structural": true,
+      "detected_date": "2026-08-20"
+    },
+    {
+      "signal_id": "sig_004",
+      "category": "지역질서재편",
+      "title_ko": "중동 동맹 체계의 거래적 재편",
+      "description": "• 트럼프의 오만 폭격 위협('길을 막으면 폭격')은 중동 동맹이 가치 기반→거래 기반으로 전환됨을 상징\n• UAE의 對이란 무역 중단이 '자발적 선택'이 아닌 '미국 압박에 의한 선택'으로 분석되며, 걸프 국가들의 자율성 축소\n• Foreign Affairs 분석: '미국 주도 중동 질서의 종언' 진단, 이란 전쟁을 '실패한 질서의 마지막 발작'으로 규정",
+      "evidence_titles": [
+        "Trump threatens to bomb Oman if it 'gets in the way' of Iran deal as Kushner meets Netanyahu",
+        "Donald Trump threatens to bomb Oman if it 'gets in the way' of ending Iran war",
+        "The End of the American Middle East",
+        "UAE Joins Global Efforts to Isolate Iran"
+      ],
+      "evidence_sources": [
+        "Guardian_World",
+        "Guardian_Iran",
+        "ForeignAffairs",
+        "ForeignPolicy"
+      ],
+      "strength": 4,
+      "trend": "신규",
+      "suwon_implication": "중동발 에너지 수급의 장기 불확실성 증대. 수원시는 신재생에너지 전환 로드맵을 가속화하고, 에너지 자립도 목표를 상향 조정할 필요.",
+      "is_structural": true,
+      "detected_date": "2026-08-20",
+      "first_detected": "2026-08-20"
+    },
+    {
+      "signal_id": "sig_005",
+      "category": "민생충격패턴",
+      "title_ko": "전쟁 목표의 민생 직결화",
+      "description": "• Vance 부통령의 '이란 전쟁 목표 1순위는 미국 소비자 에너지 가격 인하'라는 발언은 전쟁 목표가 지정학→민생 경제로 전환되는 신호\n• 미국 8월 휘발유 가격 사상 최고치 기록은 전쟁이 일반 시민 생활비에 직접 타격을 주는 구조로 전환됨을 의미\n• War on the Rocks 분석: 이란 전쟁이 우크라이나 전쟁처럼 '관리된 불안정(Managed Instability)' 상태로 장기화 가능성",
+      "evidence_titles": [
+        "Vance Pitches a New Objective for the Iran War",
+        "US gas prices reach highest ever recorded for August amid stalled talks with Iran",
+        "Managed Instability: Why the Wars Against Iran and Ukraine Can Go On and On and On…",
+        "Will Iran Turn Into a Forever War?"
+      ],
+      "evidence_sources": [
+        "ForeignPolicy",
+        "Guardian_Iran",
+        "WarOnRocks",
+        "CFR_Iran"
+      ],
+      "strength": 4,
+      "trend": "신규",
+      "suwon_implication": "수원시 취약계층 생활비 상승 압박이 중장기화될 것으로 예상. 긴급 민생안정 예산을 한시 지원에서 구조적 지원 체계로 전환하는 정책 설계 필요.",
+      "is_structural": true,
+      "detected_date": "2026-08-20",
+      "first_detected": "2026-08-20"
+    },
+    {
+      "signal_id": "sig_003",
+      "category": "정책패러다임전환",
+      "title_ko": "제재 효과 회의론의 정책화",
+      "description": "• NYT 분석: '이란은 수십년 제재를 생존했으며, 추가 제재 시 항복보다 확전 가능성이 높다'는 전문가 진단이 주류화\n• 트럼프의 對이란 경제 압박 재시도가 '제한된 옵션(Limited Options)' 프레임으로 보도되며, 제재 만능주의 종언 신호\n• IMF의 과테말라 사례 연구: 미국 통화정책 파급효과 분석 시 국제준비금 역할 강조, 제재 회피 수단으로서 외환보유고 중요성 부각",
+      "evidence_titles": [
+        "Trump, With Limited Options in Iran, Tries Economic Pressure — Again",
+        "Trump's Iran Deal Has Collapsed, Leaving the U.S. With Few Good Options",
+        "U.S. Monetary Policy Spillovers on Guatemala and the Role of International Reserves"
+      ],
+      "evidence_sources": [
+        "NYT_World",
+        "CFR_Iran",
+        "IMF_News"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "국제 경제 제재의 실효성 저하는 수원시의 국제교류·통상 정책에서 '제도적 연결성'보다 '실질적 민간 네트워크' 강화 전략이 유효함을 시사.",
+      "is_structural": true,
+      "detected_date": "2026-08-20",
+      "first_detected": "2026-08-20"
+    },
+    {
+      "signal_id": "sig_006",
+      "category": "정책패러다임전환",
+      "title_ko": "분쟁 장기화의 '관리' 프레임 등장",
+      "description": "• War on the Rocks: 이란·우크라이나 전쟁 모두 '관리된 불안정' 상태로 장기 지속 가능하다는 분석 등장\n• 트럼프-이란 핵협상 6월 데드라인 붕괴 이후에도 전면전 없이 갈등 지속, '전쟁도 평화도 아닌 상태'의 정상화\n• Netanyahu의 가자 무장해제 고집과 트럼프 행정부의 '진전 과시' 압박 사이 교착, 쿠슈너의 중재 방문도 돌파구 없이 종료",
+      "evidence_titles": [
+        "Managed Instability: Why the Wars Against Iran and Ukraine Can Go On and On and On…",
+        "U.S. and Iran Blow Through Deadline to Agree to a Broad Deal to End War",
+        "How Does the Iran War End?",
+        "Kushner Meets Netanyahu in Israel in Effort to Break Logjam Over Gaza",
+        "Deadly Israeli Strike on Gaza Raises Doubts About Trump Peace Plan"
+      ],
+      "evidence_sources": [
+        "WarOnRocks",
+        "NYT_World",
+        "CFR_Iran"
+      ],
+      "strength": 3,
+      "trend": "강화",
+      "suwon_implication": "국제 분쟁이 단기 해결되지 않고 '관리 대상'으로 장기화되는 패턴은 수원시 중장기 재정계획에서 에너지·물가 불확실성을 상수로 반영해야 함을 의미.",
+      "is_structural": true,
+      "detected_date": "2026-08-20"
+    },
+    {
+      "signal_id": "sig_007",
+      "category": "지역질서재편",
+      "title_ko": "이란 강경노선 제도화",
+      "description": "• 이란 최고지도자가 강경 충성파를 주요 직책에 임명하며 '전시 체제 유지' 및 '국내 반대파 진압' 노선 제도화\n• 이란이 전쟁 확대 시 유럽 내 미군 자산 타격도 고려한다는 보도, 분쟁 지리적 범위 확대 가능성\n• 미 법무부의 이란인 17명 사이버 공격 기소는 이란의 비대칭 전력 활용이 구조화됨을 시사",
+      "evidence_titles": [
+        "Iran's Supreme Leader Signals Intention to Keep Country on a War Footing",
+        "\"이란, 미국 전쟁 확대 시 유럽 내 미군 자산 타격도 고려\"",
+        "US charges 17 Iranians over 'massive' cyber theft campaign"
+      ],
+      "evidence_sources": [
+        "NYT_World",
+        "Yonhap",
+        "BBC_World"
+      ],
+      "strength": 3,
+      "trend": "강화",
+      "suwon_implication": "중동 분쟁의 장기화·확대 가능성은 수원시 에너지 수급 안정성에 지속적 리스크 요인. 시 차원의 에너지 비축 확대 및 다변화 전략 필요.",
+      "is_structural": true,
+      "detected_date": "2026-08-20"
+    },
+    {
+      "signal_id": "sig_008",
+      "category": "민생충격패턴",
+      "title_ko": "전쟁 리더십의 민생 실패 가시화",
+      "description": "• Guardian 칼럼: 트럼프가 이란 전쟁 중 케이터링 트럭에 숨어 대피한 사건을 '강인함 이미지 붕괴'로 분석\n• 전쟁 목표 달성 실패와 에너지 가격 상승이 결합되며, 유권자들에게 '전쟁 비용은 시민 부담, 성과는 미미' 인식 확산\n• 이는 향후 군사 개입에 대한 대중적 회의론 증가 신호로 해석 가능",
+      "evidence_titles": [
+        "Trump's tough-guy image has been undone by his own actions | Mohamad Bazzi",
+        "US gas prices reach highest ever recorded for August amid stalled talks with Iran"
+      ],
+      "evidence_sources": [
+        "Guardian_Iran"
+      ],
+      "strength": 2,
+      "trend": "신규",
+      "suwon_implication": "국제 분쟁에 대한 시민 피로도 증가는 수원시 정책 커뮤니케이션에서 '국제 정세→시민 생활 영향 경로'를 명확히 설명하는 투명성 강화 필요.",
+      "is_structural": false,
+      "detected_date": "2026-08-20",
+      "first_detected": "2026-08-20"
+    }
+  ],
+  "by_category": {
+    "에너지안보재편": 1,
+    "무역공급망재편": 1,
+    "정책패러다임전환": 2,
+    "지역질서재편": 2,
+    "민생충격패턴": 2
+  },
+  "summary_ko": "• 에너지 안보 기준이 '가격'에서 '공급 신뢰성'으로 구조 전환, UAE의 對이란 무역 중단과 미국 휘발유 사상 최고가는 이를 실증\n• 호르무즈 해협 봉쇄 6개월 지속으로 우회 경로가 일시 대응에서 고착 구조로 전환, 이중 우회로 필요성 대두\n• 트럼프 행정부가 이란 전쟁 목표를 '민생 에너지 가격 안정'으로 재정의, 전쟁 목표의 지정학→민생 경제 전환 신호\n• 중동 동맹 체계가 가치 기반에서 거래 기반으로 재편, 트럼프의 오만 폭격 위협은 걸프 국가 자율성 축소를 상징\n• 국제 분쟁이 '해결'이 아닌 '관리된 불안정' 상태로 장기화되는 새로운 정상(New Normal) 패턴 정착",
+  "top_signal": "에너지 공급기준 가격→신뢰 전환",
+  "suwon_action": "취약계층 에너지 바우처 예산을 한시 지원→구조적 상시 지원 체제로 전환 검토 즉시 착수\n중소 제조기업 물류비 지원 프로그램을 장기 상시 체제로 재설계하고, 신재생에너지 전환 로드맵 가속화 방안 수립",
+  "weekly_trend": {
+    "정책패러다임전환": {
+      "count": 7,
+      "max_strength": 4
+    },
+    "지역질서재편": {
+      "count": 6,
+      "max_strength": 4
+    },
+    "에너지안보재편": {
+      "count": 6,
+      "max_strength": 5
+    },
+    "민생충격패턴": {
+      "count": 5,
+      "max_strength": 4
+    },
+    "무역공급망재편": {
+      "count": 4,
+      "max_strength": 4
+    }
+  },
+  "generated_at": "2026-08-19T23:44:50.356200"
+}

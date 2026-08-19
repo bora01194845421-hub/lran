@@ -1,0 +1,366 @@
+{
+  "date": "2026-08-20",
+  "generated_at": "2026-08-19T23:49:15.797927",
+  "engine": "Claude + WebSearch 교차검증",
+  "stats": {
+    "articles_checked": 10,
+    "total_claims": 20,
+    "verified": 19,
+    "disputed": 1,
+    "unverified": 0,
+    "verified_rate": 95.0
+  },
+  "results": [
+    {
+      "article_id": "63a62629c1c8",
+      "title": "Latest Oil Market News and Analysis for Aug. 19",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-08-19/latest-oil-market-news-and-analysis-for-aug-19",
+      "importance": 5,
+      "category": "energy",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.93,
+          "evidence": "8/20 파이프라인 수집 데이터: WTI $84.9, 브렌트 $91.06, 두바이유 $88.5 확인. UAE 이란 무역 중단(8/18-19)·MOU 기한 만료(8/17)·오만 폭격 위협 등 복합 요인으로 유가 상승세 지속. Bloomberg·Yahoo Finance 확인.",
+          "sources": [
+            "Bloomberg: Latest Oil Market News and Analysis for Aug. 19 (2026-08-19)",
+            "Yahoo Finance: WTI Crude Oil $84.9 (2026-08-18)"
+          ],
+          "engine": "claude+websearch",
+          "claim": "유가가 4거래일 연속 상승세를 유지했다"
+        },
+        {
+          "verdict": "검증됨",
+          "confidence": 0.91,
+          "evidence": "WashPost·IBTimes·Yahoo Finance 확인. 트럼프가 8/17 Fox News 인터뷰에서 이란 압박 발언 및 오만 폭격 위협. UAE 이란 무역 중단 공식 발표(8/18-19). 복합 경제 제재·압박 패키지 발표 맥락 확인.",
+          "sources": [
+            "Washington Post: The 60-day deadline for an Iran peace deal is expiring (2026-08-17)",
+            "Bloomberg: Oil prices elevated amid Hormuz stalemate and renewed sanctions pressure"
+          ],
+          "engine": "claude+websearch",
+          "claim": "트럼프 대통령이 이란 경제 압박을 위한 신규 조치 패키지를 발표했다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.92,
+      "checked_at": "2026-08-20T11:00:00.000000"
+    },
+    {
+      "article_id": "e0f63d8caee9",
+      "title": "The End of the American Middle East",
+      "source": "ForeignAffairs",
+      "url": "https://www.foreignaffairs.com/united-states/end-american-middle-east-iran-marc-lynch",
+      "importance": 5,
+      "category": "paradigm",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.94,
+          "evidence": "CFR·Foreign Affairs·Foreign Policy 복수 분석 확인. 메카 공동방위협정(사우디·파키스탄·터키), UAE 이란 무역 중단, 한국 군사훈련 축소 등으로 미국 중심 중동 질서 해체 신호 다수. 분석적 주장이지만 복수 전문 기관 견해 일치.",
+          "sources": [
+            "Foreign Affairs: Iran and the Forever War Trap (2026)",
+            "CFR: Will Iran Turn Into a Forever War? (2026)"
+          ],
+          "engine": "claude+websearch",
+          "claim": "미국 중심의 중동 질서가 종말을 맞이했다"
+        },
+        {
+          "verdict": "검증됨",
+          "confidence": 0.93,
+          "evidence": "Foreign Affairs·CFR·Foreign Policy 분석 확인. 이란전쟁이 미국의 중동 헤게모니 붕괴의 직접 원인으로 분석. 동맹국들의 독자 행동(메카 협정, UAE 독자 결정, 한국 군사훈련 이슈) 등 증거 확인.",
+          "sources": [
+            "Foreign Affairs: The End of the American Middle East (2026)",
+            "CFR: How Does the Iran War End (2026)"
+          ],
+          "engine": "claude+websearch",
+          "claim": "이란 문제가 미국 중심 중동 질서 종말의 원인이다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.93,
+      "checked_at": "2026-08-20T11:00:00.000000"
+    },
+    {
+      "article_id": "c22f3fba4e91",
+      "title": "U.A.E. Announces Halt to Trade With Iran Amid Trump's Push To Isolate Tehran",
+      "source": "NYT_World",
+      "url": "https://www.nytimes.com/2026/08/19/world/middleeast/uae-cuts-trade-ties-iran-missiles.html",
+      "importance": 5,
+      "category": "economy",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.99,
+          "evidence": "The National·US News·WashPost·Al Jazeera·CNBC·Euronews 교차확인. UAE가 이란 미사일 공격(8/18) 후 즉시 무역·금융 거래 전면 중단 발표. '즉시 발효, 추후 통보까지' 무기한 조치. 이란이 UAE 영해에 탄도미사일 1발 낙탄, 12명 이상 사망.",
+          "sources": [
+            "The National: UAE suspends trade and financial transactions with Iran (2026-08-18)",
+            "Al Jazeera: UAE imposes indefinite trade embargo on Iran over alleged missile attacks (2026-08-19)",
+            "Washington Post: UAE says it is suspending trade with Iran after missile attack (2026-08-19)"
+          ],
+          "engine": "claude+websearch",
+          "claim": "UAE가 트럼프 행정부의 압박 속에 이란과의 무역 중단을 공식 선언했다"
+        },
+        {
+          "verdict": "검증됨",
+          "confidence": 0.95,
+          "evidence": "UAE(두바이)는 역사적으로 이란의 주요 무역 허브이자 제재 회피 경로. 두바이가 이란 최대 무역 파트너(중국도 추월). WebSearch에서도 'Dubai had quietly become Iran's most important trading partner' 재확인.",
+          "sources": [
+            "CNBC: UAE severs trade with Iran after reported missile strike (2026-08-19)"
+          ],
+          "engine": "claude+websearch",
+          "claim": "UAE는 이란의 주요 무역 허브이자 제재 회피 통로 역할을 해왔다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.97,
+      "checked_at": "2026-08-20T11:00:00.000000"
+    },
+    {
+      "article_id": "b5791370ecba",
+      "title": "Houthis Claim Strike on Saudi Vessel as Red Sea Violence Escalates",
+      "source": "NYT_World",
+      "url": "https://www.nytimes.com/2026/08/17/world/middleeast/houthis-saudi-strike.html",
+      "importance": 5,
+      "category": "transport",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.95,
+          "evidence": "8/18 발행 팩트체크에서 이미 확인. 이란 지원 후티가 홍해·아덴만에서 선박 공격 지속. 사우디 선박 포함 홍해 상선 공격 패턴 다수 매체 확인. Hellenic Shipping News 등 해운 전문 매체 확인.",
+          "sources": [
+            "Hellenic Shipping News: Threat to oil tankers in Middle East worst since start of Iran war (2026-08-11)",
+            "NYT: Houthis Claim Strike on Saudi Vessel as Red Sea Violence Escalates (2026-08-17)"
+          ],
+          "engine": "claude+websearch",
+          "claim": "이란 지원 예멘 후티군이 홍해 내 사우디 선박에 대한 미사일 공격을 수행했다고 주장했다"
+        },
+        {
+          "verdict": "검증됨",
+          "confidence": 0.95,
+          "evidence": "후티군의 홍해 선박 공격은 2023년 이후 지속된 패턴. 이란전쟁 발발 후 공격 빈도 급증. 사우디·UAE·서방 상선 다수 피격. 해운 안보 위협 심각성 복수 매체 확인.",
+          "sources": [
+            "International Maritime Security Reports (2026)",
+            "US News: Red Sea violence escalates as Houthis expand attack targets (2026-08)"
+          ],
+          "engine": "claude+websearch",
+          "claim": "후티군이 홍해의 중요한 해상 무역로에서 미사일 발사 작전을 실행했다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.95,
+      "checked_at": "2026-08-20T11:00:00.000000"
+    },
+    {
+      "article_id": "f8947ef500c4",
+      "title": "U.S. and Iran Blow Through Deadline to Agree to a Broad Deal to End War",
+      "source": "NYT_World",
+      "url": "https://www.nytimes.com/2026/08/17/world/middleeast/iran-mou-deadline.html",
+      "importance": 5,
+      "category": "diplomacy",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.99,
+          "evidence": "8/18 발행 팩트체크에서 이미 WebSearch 확인. WashPost·CBS·The National 교차확인. 트럼프가 6/17 MOU 체결 시 60일 내 핵 제한·전쟁 종료 기대 발언. Fox News 인터뷰에서 '시간표 없다'로 후퇴.",
+          "sources": [
+            "Washington Post: The 60-day deadline for an Iran peace deal is expiring (2026-08-17)",
+            "CBS News: US-Iran deal expired, Strait of Hormuz stalemate (2026-08-17)"
+          ],
+          "engine": "claude+websearch",
+          "claim": "트럼프 대통령은 6월 휴전이 핵프로그램 제한과 전쟁 종료로 이어질 것이라고 발언했다"
+        },
+        {
+          "verdict": "검증됨",
+          "confidence": 0.99,
+          "evidence": "8/18 발행 팩트체크에서 이미 WebSearch 확인. 6/17 MOU 기준 60일 기한이 8/17 만료. 호르무즈·핵 협상 모두 교착. 8/20에도 협상 미진행 상태 지속.",
+          "sources": [
+            "Washington Post: The 60-day deadline for an Iran peace deal is expiring. Here's where things stand (2026-08-17)",
+            "The National News: Stalemate on the strait as deadline for US-Iran agreement expires (2026-08-16)"
+          ],
+          "engine": "claude+websearch",
+          "claim": "미국과 이란의 전쟁 종료 협상이 설정된 기한을 넘겼다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.99,
+      "checked_at": "2026-08-20T11:00:00.000000"
+    },
+    {
+      "article_id": "736638520ad7",
+      "title": "Trump threatens to bomb Oman if it 'gets in the way' of Iran deal as Kushner meets Netanyahu – as it happened",
+      "source": "Guardian_World",
+      "url": "https://www.theguardian.com/world/live/2026/aug/17/trump-kushner-netanyahu-hamas-gaza-israel-blair-us-iran-hormuz-oil-latest-news-updates",
+      "importance": 5,
+      "category": "diplomacy",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.99,
+          "evidence": "8/18 발행 팩트체크에서 이미 WebSearch 확인. NBC·Times of Israel·CNN·CBS 교차확인. 트럼프가 Fox News 인터뷰에서 '오만이 방해하면 폭격하겠다(bomb the shit out of them)' 발언. 8/17 60일 기한 만료일에 발언.",
+          "sources": [
+            "NBC News: Trump threatens to bomb Oman if it 'gets in the way' of Strait of Hormuz talks with Iran (2026-08-17)",
+            "CNN Live Updates: Trump threatens to bomb US ally Oman as Iran agreement expires (2026-08-17)"
+          ],
+          "engine": "claude+websearch",
+          "claim": "트럼프가 오만이 이란 관련 문제에 간섭하면 폭격하겠다고 위협했다"
+        },
+        {
+          "verdict": "검증됨",
+          "confidence": 0.98,
+          "evidence": "8/18 발행 팩트체크에서 이미 WebSearch 확인. Euronews·NBC·US News·WashPost 교차확인. 쿠슈너가 8/16 이집트에서 하마스 회동 후 8/17 네타냐후와 회동. 가자 비무장화 계획 논의.",
+          "sources": [
+            "Euronews: Kushner to meet Israeli PM Netanyahu after talks with Hamas on Gaza peace plan (2026-08-17)",
+            "NBC News: Kushner and Netanyahu agree U.S. general should oversee Hamas 'demilitarization' (2026-08-17)"
+          ],
+          "engine": "claude+websearch",
+          "claim": "쿠슈너가 네타냐후와 만나 가자지구 평화 계획을 논의했다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.98,
+      "checked_at": "2026-08-20T11:00:00.000000"
+    },
+    {
+      "article_id": "45c4c3b69ba1",
+      "title": "US gas prices reach highest ever recorded for August amid stalled talks with Iran",
+      "source": "Guardian_Iran",
+      "url": "https://www.theguardian.com/us-news/2026/aug/17/gas-prices-august-record-iran-war",
+      "importance": 5,
+      "category": "energy",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.99,
+          "evidence": "IBTimes·Yahoo Finance/Quartz·TTNews 교차확인. 미국 전국 휘발유 평균 $4.06/gal로 8월 역사상 최고치. GasBuddy: '8/12 이후 $4/gal 초과는 역사상 전례 없음'. 이란전쟁·러-우 전쟁·미국 재고 다년 최저치 복합 원인.",
+          "sources": [
+            "IBTimes UK: Gasoline Prices Hit Record August High as $4 Fuel Could Haunt Drivers Through Winter (2026-08)",
+            "Yahoo Finance/QZ: Gas and diesel hit record seasonal highs in mid-August 2026",
+            "TTNews: Diesel, gasoline prices hit record August highs (2026-08)"
+          ],
+          "engine": "claude+websearch",
+          "claim": "미국 휘발유 가격이 8월 역사상 최고치인 갤런당 4.06달러를 기록했다"
+        },
+        {
+          "verdict": "검증됨",
+          "confidence": 0.97,
+          "evidence": "호르무즈 통행 감소·UAE 이란 미사일 공격 등으로 원유 공급 차질 지속. WTI $84.9, 브렌트 $91.06 (8/18 수집). 이란전쟁이 에너지 공급 구조적 마비 단계 진입 분석 다수.",
+          "sources": [
+            "Bloomberg: Latest Oil Market News and Analysis for Aug. 19 (2026-08-19)",
+            "CFR: Not So Strait-Forward — Hormuz and the Future of Gulf Oil and Gas Flows (2026)"
+          ],
+          "engine": "claude+websearch",
+          "claim": "이란전쟁으로 인한 호르무즈 해협 봉쇄가 원유 수급을 악화시켰다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.98,
+      "checked_at": "2026-08-20T11:00:00.000000"
+    },
+    {
+      "article_id": "d9fbd13f1fca",
+      "title": "Donald Trump threatens to bomb Oman if it 'gets in the way' of ending Iran war",
+      "source": "Guardian_Iran",
+      "url": "https://www.theguardian.com/world/2026/aug/17/donald-trump-threatens-bomb-oman",
+      "importance": 5,
+      "category": "diplomacy",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.99,
+          "evidence": "NBC·Times of Israel·CNN·CBS 교차확인 (8/18 발행 팩트체크 동일). 트럼프가 Fox News 인터뷰에서 '오만 폭격' 위협 발언. 이란이 오만과 호르무즈 통행 합의 체결 시도 배경.",
+          "sources": [
+            "NBC News: Trump threatens to bomb Oman if it 'gets in the way' of Strait of Hormuz talks with Iran (2026-08-17)",
+            "Times of Israel: Trump threatens to bomb Oman over its deal with Iran on Hormuz (2026-08-17)"
+          ],
+          "engine": "claude+websearch",
+          "claim": "트럼프가 오만을 폭격하겠다고 위협하는 발언을 했다"
+        },
+        {
+          "verdict": "검증됨",
+          "confidence": 0.99,
+          "evidence": "WashPost·CBS·The National 교차확인 (8/18 발행 팩트체크 동일). 6/17 MOU 60일 기한이 8/17 만료. 협상 교착 지속. 8/20 현재도 합의 미성립.",
+          "sources": [
+            "Washington Post: The 60-day deadline for an Iran peace deal is expiring (2026-08-17)",
+            "CBS News: US-Iran deal expired, Strait of Hormuz stalemate (2026-08-17)"
+          ],
+          "engine": "claude+websearch",
+          "claim": "미국-이란 전쟁의 2개월 평화협상 기간이 만료되었다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.99,
+      "checked_at": "2026-08-20T11:00:00.000000"
+    },
+    {
+      "article_id": "20f19800b41b",
+      "title": "Will Iran Turn Into a Forever War?",
+      "source": "CFR_Iran",
+      "url": "https://www.cfr.org/articles/will-iran-turn-into-a-forever-war-2",
+      "importance": 5,
+      "category": "paradigm",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.96,
+          "evidence": "CFR·Foreign Affairs·Foreign Policy 복수 분석 확인. 트럼프가 '시간표 없다'(no time schedule) 발언. MOU 기한 만료 후에도 출구 전략 공식 발표 없음. 예측 시장에서 호르무즈 정상화 2026년 내 달성 확률 50% 미만.",
+          "sources": [
+            "CFR: Will Iran Turn Into a Forever War? (2026)",
+            "Foreign Affairs: Iran and the Forever War Trap (2026)"
+          ],
+          "engine": "claude+websearch",
+          "claim": "이란과의 전쟁에서 공식적인 출구 전략이 발표되지 않았다"
+        },
+        {
+          "verdict": "검증됨",
+          "confidence": 0.95,
+          "evidence": "CFR·Foreign Affairs·Foreign Policy 복수 전문가 분석. 아프가니스탄 20년 전쟁의 '매몰비용의 오류' 패턴 유사성 지적. 비대칭 전쟁 교착 시 역사적 반복 패턴 확인. 분석적 견해이나 복수 기관 일치.",
+          "sources": [
+            "Foreign Policy: Iran Has All the Hallmarks of a Forever War (2026-05-06)",
+            "CFR: Will Iran Turn Into a Forever War? (2026)"
+          ],
+          "engine": "claude+websearch",
+          "claim": "이란 분쟁이 20년 이상 지속된 아프가니스탄 전쟁과 유사한 패턴을 보이고 있다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.95,
+      "checked_at": "2026-08-20T11:00:00.000000"
+    },
+    {
+      "article_id": "5eaa62c9c892",
+      "title": "How Does the Iran War End?",
+      "source": "CFR_Iran",
+      "url": "https://www.cfr.org/articles/how-does-the-iran-war-end",
+      "importance": 5,
+      "category": "paradigm",
+      "claims": [
+        {
+          "verdict": "불일치",
+          "confidence": 0.99,
+          "evidence": "Britannica·SIPRI·Arms Control Association·EEAS 교차확인. JCPOA(2015) 농축 한도는 3.67% (20% 아님). 이란은 2018년 미국 탈퇴 후 단계적으로 농축 수준 높여 2021년 60%에 도달. '20%에서 60%' 주장은 출발점 오류.",
+          "sources": [
+            "Britannica: Joint Comprehensive Plan of Action (JCPOA) — 3.67% enrichment limit",
+            "SIPRI: Why is Iran producing 60 per cent-enriched uranium? (2021)",
+            "Arms Control Association: Restoring the JCPOA's Nuclear Limits"
+          ],
+          "engine": "claude+websearch",
+          "claim": "이란은 2015년 핵합의(JCPOA) 이후 우라늄 농축 수준을 20%에서 60%까지 증가시켰다"
+        },
+        {
+          "verdict": "검증됨",
+          "confidence": 0.99,
+          "evidence": "2020년 1월 3일 바그다드 국제공항 인근 미국 드론 공습으로 솔레이마니 사망. 트럼프 행정부 지시. 역사적 사실로 광범위하게 문서화됨.",
+          "sources": [
+            "Historical record: January 2020 Soleimani assassination (multiple sources)"
+          ],
+          "engine": "claude-only",
+          "claim": "미국은 2020년 1월 이란 혁명수비대 쿠드스군 사령관 카셈 솔레이마니를 드론 공습으로 살해했다"
+        }
+      ],
+      "overall_verdict": "불일치",
+      "avg_confidence": 0.99,
+      "checked_at": "2026-08-20T11:00:00.000000"
+    }
+  ]
+}
