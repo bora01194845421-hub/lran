@@ -1,0 +1,308 @@
+{
+  "date": "2026-08-24",
+  "generated_at": "2026-08-23T23:36:56.525967",
+  "engine": "Claude 단독 (fallback)",
+  "stats": {
+    "articles_checked": 10,
+    "total_claims": 20,
+    "verified": 1,
+    "disputed": 1,
+    "unverified": 18,
+    "verified_rate": 5.0
+  },
+  "results": [
+    {
+      "article_id": "0390fcac8e36",
+      "title": "An economic D-Day is coming for Iran",
+      "source": "FT_World",
+      "url": "https://www.ft.com/content/cb865200-1a06-40be-86a3-10ee2bb05804",
+      "importance": 5,
+      "category": "economy",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁에 대한 학습된 정보가 없습니다. 이는 실제로 발생하지 않은 미래 또는 가상의 시나리오로 보이며, 해당 사건과 관련된 경제 제재에 대해 검증할 수 있는 정보가 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "이란이 국제사회의 경제 제재를 받고 있다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 미래 가상 시나리오입니다. 현재(2024년 기준)까지 이러한 전쟁은 일어나지 않았으며, 해당 출처와 주장을 검증할 수 있는 역사적 사실이 존재하지 않습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "이란에 대한 유화 정책이 시행되고 있다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.47,
+      "checked_at": "2026-08-23T23:35:24.500135"
+    },
+    {
+      "article_id": "eefc38bf9d24",
+      "title": "US says sanctions will 'squash' Iran's economy and 'collapse' its regime",
+      "source": "BBC_MidEast",
+      "url": "https://www.bbc.co.uk/news/articles/c87n90eg0p2o?at_medium=RSS&at_campaign=rss",
+      "importance": 5,
+      "category": "country_response",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 해당 BBC 기사 및 미 재무부 장관의 발언에 대한 검증 가능한 역사적 기록이 존재하지 않습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "미 재무부 장관이 동맹국에 '우리 편 또는 적' 결정을 촉구하는 발언을 했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 해당 BBC 기사와 인용된 미국의 발표는 확인할 수 없으며, 학습된 데이터에 존재하지 않습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "미국이 이란 경제를 '완전히 파괴(squash)'하고 정권을 '붕괴(collapse)'시킬 제재를 준비 중이라고 발표했다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.47,
+      "checked_at": "2026-08-23T23:35:33.548284"
+    },
+    {
+      "article_id": "5dcac3ccf055",
+      "title": "Persuasion, denial and bluster: Trump ‘stuck’ on Iran war ahead of elections",
+      "source": "Guardian_Iran",
+      "url": "https://www.theguardian.com/us-news/ng-interactive/2026/aug/22/trump-iran-war-midterm-elections",
+      "importance": 5,
+      "category": "paradigm",
+      "claims": [
+        {
+          "verdict": "검증됨",
+          "confidence": 0.95,
+          "evidence": "1979년 11월 이란 혁명 후 테헤란 주재 미국 대사관에서 52명의 미국인이 444일간 인질로 잡혔고, 구출 작전 실패와 장기화된 인질 위기로 카터 대통령은 1980년 대선에서 레이건에게 패배했습니다.",
+          "sources": [
+            "역사적 사실 - 이란 인질 위기 (1979-1981)",
+            "1980년 미국 대통령 선거 결과"
+          ],
+          "engine": "claude-only",
+          "claim": "카터 전 대통령은 1980년 이란 인질사건으로 인해 정치적 곤경에 처했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 이와 관련된 트럼프의 중간선거 패배 위험에 대한 주장은 검증할 수 있는 역사적 사실이 존재하지 않습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "트럼프 대통령이 이란전쟁 문제로 중간선거에서 패배 위험에 처해 있다"
+        }
+      ],
+      "overall_verdict": "검증됨",
+      "avg_confidence": 0.95,
+      "checked_at": "2026-08-23T23:35:43.772078"
+    },
+    {
+      "article_id": "57406864054e",
+      "title": "Trump says he views strait of Hormuz as ‘American territory’",
+      "source": "Guardian_Iran",
+      "url": "https://www.theguardian.com/us-news/2026/aug/21/trump-strait-of-hormuz-american-territory",
+      "importance": 5,
+      "category": "transport",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.85,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 해당 시기의 트럼프 발언에 대한 검증이 불가능하며, 호르무즈 해협을 미국 영토로 주장한 공식 발언 기록도 존재하지 않습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "트럼프 대통령이 호르무즈 해협을 '미국 영토(American territory)'로 간주한다고 발언했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁에 대한 학습된 정보가 없으며, 제시된 출처도 검증할 수 없습니다. 이는 실제 발생하지 않은 미래 가상 시나리오로 판단됩니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "미국이 이란의 해운과 항구에 대한 군사적 봉쇄를 시행하고 있다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.42,
+      "checked_at": "2026-08-23T23:35:58.425479"
+    },
+    {
+      "article_id": "36b11ce5b0e5",
+      "title": "Trump threatens Iran’s trade partners, as military strikes make way for economic pressure",
+      "source": "Guardian_Iran",
+      "url": "https://www.theguardian.com/world/2026/aug/20/trump-threatens-crush-iran-economy-war-hormuz",
+      "importance": 5,
+      "category": "economy",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁에 대한 학습된 정보가 없으며, 해당 사건은 미래의 가상 시나리오로 보입니다. 실제 발생하지 않은 사건에 대해 검증할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "트럼프가 이란과 거래하는 국가들에 대해 '엄청난 경제적 결과(enormous economic consequences)'를 경고하는 위협을 발표했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 해당 시기의 트럼프 행정부 대이란 정책 전환에 대한 주장을 검증할 수 있는 역사적 사실이나 신뢰할 수 있는 정보가 존재하지 않습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "트럼프 행정부가 군사적 공격에서 경제 압박 전략으로 대이란 정책을 전환했다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.47,
+      "checked_at": "2026-08-23T23:36:09.361576"
+    },
+    {
+      "article_id": "ac95c9829b0c",
+      "title": "Analysis-Trump heads into midterms short on foreign policy wins",
+      "source": "AlMonitor",
+      "url": "https://www.al-monitor.com/originals/2026/08/analysis-trump-heads-midterms-short-foreign-policy-wins",
+      "importance": 5,
+      "category": "paradigm",
+      "claims": [
+        {
+          "verdict": "불일치",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 2024년 현재까지 이란과 미국 간 전면전은 없었으며, 트럼프 행정부 시기(2017-2021)에도 긴장은 있었으나 전쟁 상태는 아니었습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "트럼프 대통령이 이란과 전쟁 교착상태에 있다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 이와 관련된 트럼프의 공약이나 정책에 대한 검증은 불가능합니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "트럼프 대통령이 '평화 중재자' 공약을 제시했다"
+        }
+      ],
+      "overall_verdict": "불일치",
+      "avg_confidence": 0.95,
+      "checked_at": "2026-08-23T23:36:19.394159"
+    },
+    {
+      "article_id": "33050cdee9d2",
+      "title": "Can Trump's economic war ultimately force Iran to compromise?",
+      "source": "AlMonitor",
+      "url": "https://www.al-monitor.com/originals/2026/08/can-trumps-economic-war-ultimately-force-iran-compromise",
+      "importance": 5,
+      "category": "economy",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁에 대한 학습된 정보가 없으며, 해당 사건은 실제로 발생하지 않았습니다. 트럼프 행정부의 이란 제재는 역사적 사실이나, 2026년 전쟁과 연결된 맥락은 확인할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "트럼프 행정부가 이란에 대한 경제 제재를 시행하고 있다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 현재 2024년 기준으로 미래의 사건에 대한 검증은 불가능하며, 해당 전쟁에 대한 역사적 기록이나 신뢰할 수 있는 정보가 존재하지 않습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "이란이 유가 제한과 경제 흡수력 감소를 겪고 있다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.47,
+      "checked_at": "2026-08-23T23:36:29.080272"
+    },
+    {
+      "article_id": "3b1bcf04db06",
+      "title": "Iran gambles it can outlast Trump’s 'Economic D-Day'",
+      "source": "AlMonitor",
+      "url": "https://www.al-monitor.com/originals/2026/08/iran-gambles-it-can-outlast-trumps-economic-d-day",
+      "importance": 5,
+      "category": "paradigm",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.3,
+          "evidence": "2026년 이란-미국 전쟁에 대한 구체적인 학습 정보가 없으며, 트럼프 행정부가 이란 제재를 '경제적 D-Day'로 공식 명명했다는 사실을 확인할 수 없습니다. 실제 역사에서 트럼프는 이란에 강력한 경제 제재를 가했으나 해당 표현의 사용 여부는 불확실합니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "트럼프 행정부가 이란에 대한 제재를 '경제적 D-Day'로 명명했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 해당 사건에 대한 학습된 정보나 신뢰할 수 있는 역사적 기록이 존재하지 않아 주장을 검증할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "이란과 미국 간 외교 협상이 현재 교착 상태에 있다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.62,
+      "checked_at": "2026-08-23T23:36:38.847661"
+    },
+    {
+      "article_id": "2b7187c439f3",
+      "title": "Pressure Points: Economic Strain, Allied Discord, and War Fatigue",
+      "source": "WarOnRocks",
+      "url": "https://warontherocks.com/pressure-points-economic-strain-allied-discord-and-war-fatigue/",
+      "importance": 5,
+      "category": "paradigm",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 시나리오입니다. 해당 출처와 주장은 실존하는 역사적 사실이 아니므로 검증할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "미국의 이란 공습이 8월 중 감소했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 해당 출처와 전략에 대한 역사적 사실이 존재하지 않아 검증이 불가능합니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "미국이 군사적 소모전에서 금융·경제 압박으로 집중력을 전환하는 '일대 이중타격' 전략을 구사하고 있다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.47,
+      "checked_at": "2026-08-23T23:36:48.094131"
+    },
+    {
+      "article_id": "cda7d698cb0b",
+      "title": "Why Trump’s economic pain could spark more Iranian attacks on Gulf nations",
+      "source": "SCMP_World",
+      "url": "https://www.scmp.com/news/world/middle-east/article/3364963/why-trumps-economic-pain-could-spark-more-iranian-attacks-gulf-nations?utm_source=rss_feed",
+      "importance": 5,
+      "category": "paradigm",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.85,
+          "evidence": "2026년 이란-미국 전쟁에 대한 구체적인 역사적 기록이 없으며, 해당 사건은 아직 발생하지 않은 미래 시점입니다. 따라서 트럼프의 이란 해상봉쇄 실행 여부를 검증할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "트럼프가 이란에 대한 해상봉쇄를 실행 중이다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁에 대한 학습된 정보가 없으며, 이는 미래 시점의 가상 시나리오입니다. 현재 시점에서 검증할 수 없는 주장입니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "이란 혁명수비대가 호르무즈 해협을 장악하고 있다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.42,
+      "checked_at": "2026-08-23T23:36:56.525955"
+    }
+  ]
+}

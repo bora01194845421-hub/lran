@@ -1,0 +1,34 @@
+{
+  "date": "2026-08-24",
+  "collected_at": "2026-08-23T23:26:27.222984",
+  "oil_price": {
+    "source": "오피넷",
+    "collected_at": "2026-08-23T23:26:27.222992",
+    "gasoline_national": 1864.14,
+    "gasoline_source": "GlobalPetrolPrices",
+    "wti_usd": 86.13,
+    "brent_usd": 93.44,
+    "dubai_usd": 95.6,
+    "dubai_source": "오피넷",
+    "rbob_usd_gal": 3.0123
+  },
+  "exchange_rate": {
+    "source": "frankfurter.app",
+    "collected_at": "2026-08-23T23:26:34.053961",
+    "USD_KRW": 1384.23,
+    "EUR_KRW": 1619.42,
+    "date": "2026-08-21"
+  },
+  "cpi": {
+    "source": "통계청(fallback)",
+    "collected_at": "2026-08-23T23:26:34.455539",
+    "cpi_yoy_pct": 2.1,
+    "note": "전년동월비 +2.1% (통계청 2026.04 공표, 자동수집 실패 시 적용)",
+    "period_current": "202607"
+  },
+  "gas_price": {
+    "source": "한국가스공사",
+    "collected_at": "2026-08-23T23:26:36.246911"
+  },
+  "gyeonggi_policy": []
+}

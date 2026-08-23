@@ -1,0 +1,257 @@
+{
+  "date": "2026-08-24",
+  "total_signals": 11,
+  "structural_signals": 11,
+  "signals": [
+    {
+      "signal_id": "sig_001",
+      "category": "에너지안보재편",
+      "title_ko": "경제제재가 군사전략 대체",
+      "description": "• 트럼프 행정부가 군사공격에서 '경제 D-Day'로 전략 전환 선언\n• 이란 원유 교역국에 대한 2차 제재로 글로벌 에너지 거래 기준 변화\n• 가격·공급 중심에서 '정치적 동맹' 기준 에너지 파트너십으로 재편",
+      "evidence_titles": [
+        "An economic D-Day is coming for Iran",
+        "US says sanctions will 'squash' Iran's economy and 'collapse' its regime",
+        "Trump threatens Iran's trade partners, as military strikes make way for economic pressure",
+        "Can Trump's economic war ultimately force Iran to compromise?"
+      ],
+      "evidence_sources": [
+        "FT_World",
+        "BBC_MidEast",
+        "Guardian_Iran",
+        "AlMonitor"
+      ],
+      "strength": 5,
+      "trend": "신규",
+      "suwon_implication": "수원시 에너지 비용 구조가 단순 시장가격이 아닌 한미동맹 등 정치적 변수에 장기 종속될 가능성. 에너지 취약계층 지원 정책의 예측 가능성 저하.",
+      "is_structural": true,
+      "detected_date": "2026-08-24",
+      "first_detected": "2026-08-24"
+    },
+    {
+      "signal_id": "sig_003",
+      "category": "지역질서재편",
+      "title_ko": "호르무즈 '미국 영토화' 선언",
+      "description": "• 트럼프가 호르무즈 해협을 '미국 영토'로 규정하며 기존 국제법 질서 파기\n• 이란은 '한 방울의 원유도 통과 못하게 막겠다'며 물리적 봉쇄 경고\n• 중동 에너지 운송로가 군사적 대치 공간으로 구조적 전환",
+      "evidence_titles": [
+        "Trump says he views strait of Hormuz as 'American territory'",
+        "Iran Warns Gulf States Not to Join Trump's Economic War",
+        "Are America's vast Gulf bases worth rebuilding?"
+      ],
+      "evidence_sources": [
+        "Guardian_Iran",
+        "NYT_World",
+        "FT_World"
+      ],
+      "strength": 5,
+      "trend": "신규",
+      "suwon_implication": "수원시 난방비·전기료의 장기 변동성 확대. 에너지 안보 위기를 전제로 한 민생안정 시나리오 플랜 수립 필요.",
+      "is_structural": true,
+      "detected_date": "2026-08-24",
+      "first_detected": "2026-08-24"
+    },
+    {
+      "signal_id": "sig_002",
+      "category": "무역공급망재편",
+      "title_ko": "중국의 對이란 경제저항",
+      "description": "• 중국이 미국의 이란 제재 압력에 대해 희토류 등 전략물자 보복 카드 준비\n• 이란 원유 수입 중단 대신 자국 비축유 활용으로 미국 요구 우회\n• 글로벌 공급망이 '미중 진영' 기준으로 이원화되는 구조적 신호",
+      "evidence_titles": [
+        "Why China Thinks It Can Resist Trump's Economic Threats on Iran",
+        "Trump Needs China's Help to Effectively Sanction Iran"
+      ],
+      "evidence_sources": [
+        "NYT_World",
+        "ForeignPolicy"
+      ],
+      "strength": 4,
+      "trend": "강화",
+      "suwon_implication": "수원시 제조기업의 원자재 공급망이 미중 갈등에 따라 이중 비용 구조 직면 가능. 중소기업 납품 안정성 지원 정책 재설계 필요.",
+      "is_structural": true,
+      "detected_date": "2026-08-24"
+    },
+    {
+      "signal_id": "sig_004",
+      "category": "에너지안보재편",
+      "title_ko": "인도의 러시아 의존 심화",
+      "description": "• 중동 분쟁으로 인도의 러시아산 원유 의존도가 역대 최고 수준 도달\n• 전통적 중동 에너지 공급망이 지정학적 리스크로 기능 상실\n• 글로벌 에너지 수급 구조가 '안보 동맹' 기준으로 재편되는 신호",
+      "evidence_titles": [
+        "India's reliance on Russian oil hits all-time high"
+      ],
+      "evidence_sources": [
+        "FT_World"
+      ],
+      "strength": 4,
+      "trend": "강화",
+      "suwon_implication": "한국도 인도처럼 에너지 수입선 다변화 압박 직면 가능. 수원시 에너지 비용의 중장기 불확실성 증가.",
+      "is_structural": true,
+      "detected_date": "2026-08-24"
+    },
+    {
+      "signal_id": "sig_006",
+      "category": "민생충격패턴",
+      "title_ko": "전쟁이 만드는 사이버 민생타격",
+      "description": "• 이란 연계 해커가 영국 발전소를 4일간 중단시켜 전력 공급 마비\n• 군사 충돌이 사이버 공격으로 확산되어 일반 시민 생활 직접 타격\n• 전통적 전쟁 피해(폭격)가 아닌 디지털 인프라 마비형 민생 충격 패턴 등장",
+      "evidence_titles": [
+        "Iran-linked hackers blamed for cyber-attack that shut down UK power plant"
+      ],
+      "evidence_sources": [
+        "Guardian_Iran"
+      ],
+      "strength": 4,
+      "trend": "신규",
+      "suwon_implication": "수원시 전력·수도·교통 등 디지털 인프라의 사이버 안보 취약성 점검 필요. 민생 긴급 대응 매뉴얼에 사이버 공격 시나리오 추가.",
+      "is_structural": true,
+      "detected_date": "2026-08-24",
+      "first_detected": "2026-08-24"
+    },
+    {
+      "signal_id": "sig_009",
+      "category": "민생충격패턴",
+      "title_ko": "국제유가 6일 연속 상승",
+      "description": "• 브렌트유가 94달러 돌파하며 6거래일 연속 상승\n• 이란 교역국 제재 가능성이 단기 뉴스가 아닌 구조적 가격 상승 요인으로 작동\n• 에너지 가격 변동이 '일시 충격'이 아닌 '장기 고비용 체제'로 전환 신호",
+      "evidence_titles": [
+        "국제유가, 중동 불안 지속에 6일 연속 상승…브렌트유 94달러대"
+      ],
+      "evidence_sources": [
+        "Yonhap_Economy"
+      ],
+      "strength": 4,
+      "trend": "강화",
+      "suwon_implication": "수원시 난방비·교통비 등 민생 비용의 장기 상승 압박. 취약계층 에너지 바우처 예산 확대 및 중장기 민생안정 대책 수립 필요.",
+      "is_structural": true,
+      "detected_date": "2026-08-24"
+    },
+    {
+      "signal_id": "sig_011",
+      "category": "지역질서재편",
+      "title_ko": "핵항모의 아시아 공백",
+      "description": "• 일본 배치 미 핵항모 조지 워싱턴함이 이란 전쟁에 재배치\n• 동아시아 안보 공백 발생으로 중국·북한 견제 체제 약화\n• 글로벌 군사 자원이 '역내 배치'에서 '중동 집중'으로 구조적 재배치",
+      "evidence_titles": [
+        "[영상] 핵항모 너마저…아시아 덮친 이란전 충격파"
+      ],
+      "evidence_sources": [
+        "Yonhap_Politics"
+      ],
+      "strength": 4,
+      "trend": "신규",
+      "suwon_implication": "한반도 안보 환경 변화로 수원시 안보 불안 심리 확산 가능. 외국인 근로자·유학생 동향 모니터링 필요.",
+      "is_structural": true,
+      "detected_date": "2026-08-24",
+      "first_detected": "2026-08-24"
+    },
+    {
+      "signal_id": "sig_005",
+      "category": "정책패러다임전환",
+      "title_ko": "IMF·OECD AI 채택 보고서",
+      "description": "• IMF가 고령화 경제의 AI 도입 패턴을 기업 데이터로 실증 분석\n• OECD가 교육·직업능력 평가 시스템 연계 강화로 AI 시대 대비 전환\n• 국제기구들이 AI를 '선택 기술'이 아닌 '구조 대응 필수'로 정책 재편",
+      "evidence_titles": [
+        "Aging Economies and AI Adoption: Firm-Level Evidence from the World Bank Enterprise Surveys",
+        "Towards a stronger link between PISA and PIAAC",
+        "Ensuring AI benefits everyone is key to development in the global South"
+      ],
+      "evidence_sources": [
+        "IMF_News",
+        "OECD_News",
+        "UNCTAD_News"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "수원시 인력 양성·일자리 정책이 전통 산업 중심에서 AI 대응 체제로 구조 전환 필요. 국제 정책 벤치마킹 기준 변화.",
+      "is_structural": true,
+      "detected_date": "2026-08-24",
+      "first_detected": "2026-08-24"
+    },
+    {
+      "signal_id": "sig_007",
+      "category": "지역질서재편",
+      "title_ko": "파키스탄의 중재국 부상",
+      "description": "• 파키스탄 군 총사령관이 미국-이란 협상의 핵심 중재자로 반복 역할\n• 전통적 중동 질서(사우디·UAE 중심)가 아닌 남아시아 행위자의 영향력 확대\n• 중동 지정학 구조가 '역내 국가 중심'에서 '역외 중재국 의존'으로 변화",
+      "evidence_titles": [
+        "파키스탄군 총사령관 내일 이란 방문…협상 돌파구 열릴까",
+        "Iran says Pakistan's army chief to visit Tehran on Monday"
+      ],
+      "evidence_sources": [
+        "Yonhap",
+        "AlMonitor"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "중동 질서 예측 패턴 변화로 수원시 에너지 안보 시나리오 기획의 전통적 지정학 모델 수정 필요.",
+      "is_structural": true,
+      "detected_date": "2026-08-24",
+      "first_detected": "2026-08-24"
+    },
+    {
+      "signal_id": "sig_008",
+      "category": "무역공급망재편",
+      "title_ko": "해양경제 신흥 섹터 부상",
+      "description": "• UNCTAD가 '신흥 해양 경제 섹터' 특별 세션 개최\n• 디지털 투자 프론티어로 '미래 산업 유치' 전략 발표\n• 전통적 육상·제조 중심 무역에서 해양·디지털 융합 경제로 구조 전환 신호",
+      "evidence_titles": [
+        "Emerging Ocean Economic Sectors",
+        "Global Investment Promotion Conference : Digital Investment Frontiers"
+      ],
+      "evidence_sources": [
+        "UNCTAD_News",
+        "UNCTAD_News"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "수원시 기업 유치·투자 전략이 전통 제조업 중심에서 디지털·해양 융합 산업으로 확장 필요. 국제 투자 유치 벤치마킹 기준 변화.",
+      "is_structural": true,
+      "detected_date": "2026-08-24",
+      "first_detected": "2026-08-24"
+    },
+    {
+      "signal_id": "sig_010",
+      "category": "정책패러다임전환",
+      "title_ko": "이란 협상파의 공개 대립",
+      "description": "• 이란 내부에서 협상파 최고위 정치인들이 '전쟁 종식·경제 회복' 공개 주장\n• 강경파와의 공개 대립으로 이란 정책 방향의 구조적 균열 노출\n• 전쟁 지속 여부가 '외부 압박'이 아닌 '내부 정치 역학'에 종속되는 패턴",
+      "evidence_titles": [
+        "이란 협상파 \"전쟁 끝내고 경제 회복할 때\"…강경파에 대립각",
+        "Iran's foreign minister calls threat of new US economic sanctions 'desperate'"
+      ],
+      "evidence_sources": [
+        "Yonhap",
+        "Guardian_Iran"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "이란 정세 예측의 불확실성 증가로 수원시 에너지 비용 시나리오 설계에 '정권 교체' 변수 추가 필요.",
+      "is_structural": true,
+      "detected_date": "2026-08-24",
+      "first_detected": "2026-08-24"
+    }
+  ],
+  "by_category": {
+    "에너지안보재편": 2,
+    "무역공급망재편": 2,
+    "지역질서재편": 3,
+    "정책패러다임전환": 2,
+    "민생충격패턴": 2
+  },
+  "summary_ko": "• 이란-미국 갈등이 '군사 충돌'에서 '경제 전쟁'으로 구조 전환되며, 에너지 가격·공급망이 '시장 논리'가 아닌 '정치 동맹' 기준으로 재편되고 있습니다.\n• 중국이 미국의 대이란 제재 압력에 전략물자 보복 카드를 준비하며, 글로벌 공급망이 미중 진영 기준으로 이원화되는 신호가 뚜렷합니다.\n• 호르무즈 해협의 '미국 영토화' 선언과 이란의 봉쇄 경고로 중동 에너지 운송로가 군사 대치 공간으로 구조적 전환, 국제유가는 6일 연속 상승 중입니다.\n• IMF·OECD 등 국제기구가 AI를 '선택 기술'이 아닌 '구조 대응 필수'로 정책 재편하며, 이란 해커의 영국 발전소 마비 사례처럼 사이버 공격이 새로운 민생 타격 패턴으로 등장했습니다.\n• 미 핵항모의 중동 재배치로 동아시아 안보 공백이 발생하고, 파키스탄 등 비중동 행위자의 중재국 부상으로 지역 질서 예측 모델이 근본적으로 변화하고 있습니다.",
+  "top_signal": "경제제재가 군사전략 대체",
+  "suwon_action": "① 에너지 취약계층 지원 예산을 '일시 충격 대응'이 아닌 '장기 고비용 체제' 전제로 재설계하고, ② 수원시 전력·수도·교통 등 디지털 인프라의 사이버 안보 취약성 긴급 점검 및 민생 대응 매뉴얼에 사이버 공격 시나리오를 즉시 추가해야 합니다.",
+  "weekly_trend": {
+    "지역질서재편": {
+      "count": 3,
+      "max_strength": 5
+    },
+    "정책패러다임전환": {
+      "count": 2,
+      "max_strength": 3
+    },
+    "에너지안보재편": {
+      "count": 2,
+      "max_strength": 5
+    },
+    "민생충격패턴": {
+      "count": 2,
+      "max_strength": 4
+    },
+    "무역공급망재편": {
+      "count": 2,
+      "max_strength": 4
+    }
+  },
+  "generated_at": "2026-08-23T23:32:30.453215"
+}
