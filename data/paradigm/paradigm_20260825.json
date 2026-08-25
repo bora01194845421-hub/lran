@@ -1,0 +1,206 @@
+{
+  "date": "2026-08-25",
+  "total_signals": 8,
+  "structural_signals": 8,
+  "signals": [
+    {
+      "signal_id": "sig_002",
+      "category": "정책패러다임전환",
+      "title_ko": "제재 무기화의 달러 시스템 전환점",
+      "description": "• 미국이 이란 거래국에 달러 시스템 접근 차단 명시적 경고\n• '경제적 D-Day' 선언으로 2차 제재를 일상적 외교 수단화\n• 달러 헤게모니가 거래·신뢰 기반→정치적 충성 기반으로 재정의",
+      "evidence_titles": [
+        "美재무 \"이란 위해 자금세탁하면 美달러 시스템서 제외될 것\"",
+        "U.S. Unveils 'Economic D-Day' Against Iran",
+        "US threatens Iran's economic partners"
+      ],
+      "evidence_sources": [
+        "Yonhap",
+        "ForeignPolicy",
+        "FT_World"
+      ],
+      "strength": 5,
+      "trend": "신규",
+      "suwon_implication": "수원시 기업의 글로벌 결제·금융 접근성이 지정학 리스크에 종속. 중소기업 수출 금융 지원시 달러 대안 결제 경로 검토 필요",
+      "is_structural": true,
+      "detected_date": "2026-08-25",
+      "first_detected": "2026-08-25"
+    },
+    {
+      "signal_id": "sig_007",
+      "category": "정책패러다임전환",
+      "title_ko": "동맹 충성도 공개 선택 강요",
+      "description": "• 미 재무장관이 '우리 편 vs 적' 선택을 공개 요구\n• 중립 외교 공간이 소멸하고 공개 진영 선택 강요 일상화\n• 국제 정책 결정 기준이 국익 계산→진영 충성 표시로 전환",
+      "evidence_titles": [
+        "US says sanctions will 'squash' Iran's economy and 'collapse' its regime",
+        "美 '이란 왕따' 작전에 관건은 中…트럼프-시진핑 회담 변수될까"
+      ],
+      "evidence_sources": [
+        "BBC_MidEast",
+        "Yonhap"
+      ],
+      "strength": 5,
+      "trend": "신규",
+      "suwon_implication": "수원시 국제교류·투자 유치가 상대국 정치 성향에 따라 제약받을 가능성. 지방외교 다변화 전략 필수",
+      "is_structural": true,
+      "detected_date": "2026-08-25",
+      "first_detected": "2026-08-25"
+    },
+    {
+      "signal_id": "sig_001",
+      "category": "에너지안보재편",
+      "title_ko": "호르무즈 우회 글로벌 적응",
+      "description": "• 호르무즈 해협 차단에도 불구 시장이 예상보다 탄력적 대응\n• 일 2천만 배럴 차단 상황에서 우회 공급망 구축 완료\n• 에너지 안보 기준이 단일 경로 의존→다원화 복원력으로 전환",
+      "evidence_titles": [
+        "How the World Adapted to the Strait of Hormuz Crisis",
+        "Six months into Iran war, Hormuz traffic way down, sailors stranded",
+        "Latest Oil Market News and Analysis for Aug. 25"
+      ],
+      "evidence_sources": [
+        "Bloomberg",
+        "AlMonitor",
+        "Bloomberg"
+      ],
+      "strength": 4,
+      "trend": "신규",
+      "suwon_implication": "수원시 에너지 비용은 단기 급등 후 안정화 가능성. 장기적으론 다원화된 공급망 기반 에너지 정책 설계 필요",
+      "is_structural": true,
+      "detected_date": "2026-08-25",
+      "first_detected": "2026-08-25"
+    },
+    {
+      "signal_id": "sig_003",
+      "category": "무역공급망재편",
+      "title_ko": "미중 경제전쟁 2.0 개시",
+      "description": "• 중국이 이란 제재 불응 의사 명확화, 미국은 중국 압박 강화\n• 희토류·핵심광물 맞제재 가능성으로 공급망 무기화 심화\n• 글로벌 공급망이 효율성 중심→진영 중심 재편 가속화",
+      "evidence_titles": [
+        "China in the Crossfire of Bessent's Latest Iran Sanctions",
+        "Why China Thinks It Can Resist Trump's Economic Threats on Iran",
+        "Iran Isolation Plan Puts US and China on Collision Course"
+      ],
+      "evidence_sources": [
+        "Bloomberg",
+        "NYT_World",
+        "Bloomberg"
+      ],
+      "strength": 4,
+      "trend": "강화",
+      "suwon_implication": "수원시 제조기업 납품 비용 상승 및 공급 불안정 장기화. 중국 의존 산업의 대체 공급망 구축 지원 정책 시급",
+      "is_structural": true,
+      "detected_date": "2026-08-25"
+    },
+    {
+      "signal_id": "sig_005",
+      "category": "지역질서재편",
+      "title_ko": "트럼프 호르무즈 영토 선언",
+      "description": "• 트럼프가 호르무즈 해협을 '미국 영토'로 규정\n• 국제 공해의 주권적 재해석으로 해양 질서 근간 흔들림\n• 중동 에너지 통로가 협상 대상→일방적 통제 대상으로 전환",
+      "evidence_titles": [
+        "Trump says he views strait of Hormuz as 'American territory'",
+        "The Strait of Hormuz: A U.S.-Iran Maritime Flash Point"
+      ],
+      "evidence_sources": [
+        "Guardian_Iran",
+        "CFR_Iran"
+      ],
+      "strength": 4,
+      "trend": "신규",
+      "suwon_implication": "수원시 에너지 안보가 국제법 질서→특정국 일방 결정에 종속. 장기 에너지 수급 계획 수립시 지정학 시나리오 필수 반영",
+      "is_structural": true,
+      "detected_date": "2026-08-25",
+      "first_detected": "2026-08-25"
+    },
+    {
+      "signal_id": "sig_006",
+      "category": "에너지안보재편",
+      "title_ko": "분쟁지역 산유 집중도 심화",
+      "description": "• 2026년 글로벌 석유의 약 50%가 분쟁 지역 출처\n• 중동 전쟁으로 안정 산유국 개념 자체가 해체\n• 에너지 안보 개념이 가격 안정→지속 공급 가능성으로 재정의",
+      "evidence_titles": [
+        "Six months into Iran war, almost half of global oil flows from war zones",
+        "Not So Strait-Forward: Hormuz, Iran, and the Future of Gulf Oil and Gas Flows"
+      ],
+      "evidence_sources": [
+        "AlMonitor",
+        "CFR_Iran"
+      ],
+      "strength": 4,
+      "trend": "강화",
+      "suwon_implication": "수원시 난방비·교통비 장기 변동성 확대. 에너지 취약가구 지원을 일회성→상시 제도로 전환 검토 필요",
+      "is_structural": true,
+      "detected_date": "2026-08-25"
+    },
+    {
+      "signal_id": "sig_004",
+      "category": "민생충격패턴",
+      "title_ko": "전쟁 비용의 농민 전가 구조",
+      "description": "• 미국 곡물 농가가 전쟁 유발 비용 상승으로 직격탄\n• 이란 국내 휘발유 대기 행렬로 일상생활 마비 시작\n• 전쟁 비용이 양국 중산층·서민층에 집중 전가되는 패턴 가시화",
+      "evidence_titles": [
+        "US grain farmers pummelled as Iran war triggers surge in costs",
+        "Iranians queue for petrol as US blockade bites",
+        "FirstFT: Iran war punishes US farmers"
+      ],
+      "evidence_sources": [
+        "FT_World",
+        "FT_World",
+        "FT_World"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "수원시 식료품 가격 상승 및 취약계층 생활비 부담 증가 예상. 긴급 민생안정 바우처·식품 지원 확대 필요",
+      "is_structural": true,
+      "detected_date": "2026-08-25",
+      "first_detected": "2026-08-25"
+    },
+    {
+      "signal_id": "sig_008",
+      "category": "지역질서재편",
+      "title_ko": "이란의 만성 전쟁 가능성",
+      "description": "• 6개월 교전 후에도 명확한 승패 없이 교착 상태\n• 중동이 '영구 전쟁 지역'으로 고착화 신호\n• 지역 안정 회복 기대→장기 불안정 관리 모드로 국제사회 전환",
+      "evidence_titles": [
+        "Will Iran Turn Into a Forever War?",
+        "Netanyahu got his Iran war, but maybe not his desired result"
+      ],
+      "evidence_sources": [
+        "CFR_Iran",
+        "AlMonitor"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "수원시 중동 출신 외국인 근로자 유입 패턴 변화 및 난민 이슈 장기화 대비 필요. 다문화 통합 정책 강화 시점",
+      "is_structural": true,
+      "detected_date": "2026-08-25",
+      "first_detected": "2026-08-25"
+    }
+  ],
+  "by_category": {
+    "에너지안보재편": 2,
+    "정책패러다임전환": 2,
+    "무역공급망재편": 1,
+    "민생충격패턴": 1,
+    "지역질서재편": 2
+  },
+  "summary_ko": "• 호르무즈 위기에도 글로벌 공급망이 우회 적응 완료, 에너지 안보 개념이 '단일 경로 의존'에서 '복원력 다원화'로 전환\n• 미국이 달러 시스템 접근 차단을 명시적 외교 무기화, 국제 금융질서가 '거래 신뢰'에서 '정치 충성' 기반으로 재편\n• 중국의 제재 불응과 미국의 압박 강화로 글로벌 공급망이 효율성 중심에서 진영 중심 재편 가속화\n• 전쟁 비용이 양국 중산층·서민에 집중 전가되며, 트럼프의 호르무즈 '미국 영토' 선언으로 해양 국제질서 근간 흔들림\n• 6개월 교착으로 중동 '영구 전쟁 지역' 고착 신호, 동맹국에 공개 진영 선택 강요가 외교 표준으로 정착",
+  "top_signal": "제재 무기화의 달러 시스템 전환점",
+  "suwon_action": "• 수원시 중소기업 수출 금융 지원시 달러 대안 결제 경로(위안화·디지털 화폐 등) 긴급 검토 착수\n• 중국 의존 제조업 공급망 대체 지원과 에너지 취약가구 상시 지원 제도 전환 즉시 준비",
+  "weekly_trend": {
+    "정책패러다임전환": {
+      "count": 7,
+      "max_strength": 5
+    },
+    "에너지안보재편": {
+      "count": 6,
+      "max_strength": 5
+    },
+    "지역질서재편": {
+      "count": 5,
+      "max_strength": 4
+    },
+    "민생충격패턴": {
+      "count": 5,
+      "max_strength": 4
+    },
+    "무역공급망재편": {
+      "count": 3,
+      "max_strength": 4
+    }
+  },
+  "generated_at": "2026-08-25T08:01:49.359382"
+}
