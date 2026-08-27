@@ -1,0 +1,215 @@
+{
+  "date": "2026-08-27",
+  "total_signals": 8,
+  "structural_signals": 8,
+  "signals": [
+    {
+      "signal_id": "sig_001",
+      "category": "에너지안보재편",
+      "title_ko": "에너지 파트너십 가격→신뢰 전환",
+      "description": "• 미국의 '경제적 D-Day' 전략으로 이란 제재 확대, 거래국까지 2차 제재 위협\n• 중국·인도 등 이란 원유 수입국들이 '경제적 보복' vs '미국 제재' 사이 선택 압박\n• 에너지 파트너십 기준이 '가격 경쟁력'에서 '지정학적 신뢰도'로 구조 전환 신호",
+      "evidence_titles": [
+        "U.S. Unveils 'Economic D-Day' Against Iran",
+        "China hits out at 'illegal' new US sanctions on Iran and trading partners",
+        "US threatens severe sanctions against countries with economic ties to Iran",
+        "Iran May Have Little to Lose as U.S. Tries to Squeeze Its Economy"
+      ],
+      "evidence_sources": [
+        "ForeignPolicy",
+        "BBC_MidEast",
+        "Guardian_World",
+        "NYT_World"
+      ],
+      "strength": 5,
+      "trend": "신규",
+      "suwon_implication": "수원시 에너지 비용 구조의 장기 불확실성 증가. 저가 원유 수입 경로 차단 시 난방비·전기료 상승 압력 예상",
+      "is_structural": true,
+      "detected_date": "2026-08-27",
+      "first_detected": "2026-08-27"
+    },
+    {
+      "signal_id": "sig_002",
+      "category": "무역공급망재편",
+      "title_ko": "호르무즈 해협 영구 불안정화",
+      "description": "• 이란-오만 간 임시 통항 협정에도 군함 통과 제외, 기뢰 제거 진행 중이나 완전 개방 불투명\n• 6개월간 폐쇄로 글로벌 해운업계가 '호르무즈 우회 경로'를 상시 체제로 편입\n• 단순 일시적 봉쇄가 아닌 '구조적 리스크 지역'으로 인식 전환, 보험료·운임 영구 인상",
+      "evidence_titles": [
+        "Iran, Oman Agree to Temporary Strait of Hormuz Deal",
+        "Oil Prices Dip on News of Progress in Hormuz Talks",
+        "Trump says all mines cleared from Strait of Hormuz",
+        "The Strait of Hormuz: A U.S.-Iran Maritime Flash Point"
+      ],
+      "evidence_sources": [
+        "ForeignPolicy",
+        "NYT_World",
+        "BBC_World",
+        "CFR_Iran"
+      ],
+      "strength": 4,
+      "trend": "강화",
+      "suwon_implication": "수원시 제조기업의 원자재 운송비 구조적 상승. 수출기업 납기 지연 리스크 증가로 경쟁력 약화 우려",
+      "is_structural": true,
+      "detected_date": "2026-08-27"
+    },
+    {
+      "signal_id": "sig_003",
+      "category": "정책패러다임전환",
+      "title_ko": "중앙은행 소통 전략 재설계",
+      "description": "• IMF '불확실한 세계에서 중앙은행 소통 재고' 보고서 발간\n• 에너지·공급망 충격으로 인플레이션 예측 불가능, 기존 '포워드 가이던스' 전략 한계 노출\n• 중앙은행들이 '명확한 경로 제시'에서 '시나리오 기반 조건부 대응'으로 정책 소통 방식 전환",
+      "evidence_titles": [
+        "Rethinking Central Bank Communication in an Uncertain World",
+        "Current Issues in Forward Guidance",
+        "Well-Designed Regulatory and Institutional Reforms Can Boost Economic Growth"
+      ],
+      "evidence_sources": [
+        "IMF_News",
+        "IMF_News",
+        "IMF_News"
+      ],
+      "strength": 4,
+      "trend": "신규",
+      "suwon_implication": "한국은행 통화정책 불확실성 증가 시 수원시 중소기업 금융 계획 수립 어려움. 민생 안정 정책의 예측 가능성 저하",
+      "is_structural": true,
+      "detected_date": "2026-08-27",
+      "first_detected": "2026-08-27"
+    },
+    {
+      "signal_id": "sig_004",
+      "category": "지역질서재편",
+      "title_ko": "중동 에너지 지배력 약화 시작",
+      "description": "• 호르무즈 봉쇄 6개월간 글로벌 시장이 '중동 우회' 공급망 구축 완료\n• 아제르바이잔·카자흐스탄 등 카스피해 경유 에너지 루트 부상 (WarOnRocks 보고)\n• 중동 에너지 독점 지위 약화, '공급 다변화 = 새로운 표준'으로 정착 신호",
+      "evidence_titles": [
+        "From Hormuz to the Caucasus: The New Geography of Energy Security",
+        "Maximum Pressure on Iran Will Fail",
+        "Six Months Into the Iran War, the United States Has No Good Options"
+      ],
+      "evidence_sources": [
+        "WarOnRocks",
+        "ForeignAffairs",
+        "CFR_Iran"
+      ],
+      "strength": 4,
+      "trend": "신규",
+      "suwon_implication": "한국의 중동 의존도 감소 시 에너지 수입선 다변화. 수원시 장기 에너지 안정성 개선 가능성 vs 초기 전환 비용 발생",
+      "is_structural": true,
+      "detected_date": "2026-08-27",
+      "first_detected": "2026-08-27"
+    },
+    {
+      "signal_id": "sig_008",
+      "category": "에너지안보재편",
+      "title_ko": "유가 변동성의 뉴노멀화",
+      "description": "• 호르무즈 협상 진전 뉴스에도 유가 4일 연속 하락, 동시에 러-우크라 긴장으로 생산량 감소\n• 에너지 시장이 '단일 리스크'가 아닌 '다중 리스크 동시 작동' 체제로 진입\n• 유가 안정성 자체가 사라지고 '상시 급변동'이 새로운 정상 상태로 정착 신호",
+      "evidence_titles": [
+        "Latest Oil Market News and Analysis for Aug. 27",
+        "Oil Prices Dip on News of Progress in Hormuz Talks",
+        "How Does the Iran War End?"
+      ],
+      "evidence_sources": [
+        "Bloomberg",
+        "NYT_World",
+        "CFR_Iran"
+      ],
+      "strength": 4,
+      "trend": "강화",
+      "suwon_implication": "수원시 에너지 예산 편성의 안전마진 대폭 확대 필요. 취약계층 에너지 바우처 예산 탄력 운영 체계 구축 시급",
+      "is_structural": true,
+      "detected_date": "2026-08-27"
+    },
+    {
+      "signal_id": "sig_005",
+      "category": "민생충격패턴",
+      "title_ko": "제재의 민생 전가 구조화",
+      "description": "• 미국의 對이란 2차 제재로 중국·인도 등 주요 교역국들이 보복 관세·무역 제한 검토\n• 국가 간 제재 전쟁이 각국 소비자 물가로 직접 전이되는 패턴 명확화\n• '전쟁→제재→물가 상승'의 3단계 민생 충격 경로가 글로벌 표준 패턴으로 정착",
+      "evidence_titles": [
+        "China denounces US threat of sanctions over trade with Iran",
+        "Iran vows to retaliate against countries that cooperate with fresh US sanctions",
+        "Who does Iran trade with and what could Trump's 'economic D-Day' mean?"
+      ],
+      "evidence_sources": [
+        "Guardian_Iran",
+        "Guardian_World",
+        "BBC_MidEast"
+      ],
+      "strength": 3,
+      "trend": "강화",
+      "suwon_implication": "수원시 취약계층 물가 부담 가중 예상. 에너지·식료품 가격 연동 민생 안정 패키지 사전 설계 필요",
+      "is_structural": true,
+      "detected_date": "2026-08-27"
+    },
+    {
+      "signal_id": "sig_006",
+      "category": "정책패러다임전환",
+      "title_ko": "거시경제 예측 역량 재구축",
+      "description": "• IMF가 베트남·에티오피아 대상 '거시경제 예측 프레임워크' 역량 강화 프로그램 긴급 추진\n• 전쟁·공급망 충격으로 기존 예측 모델 무력화, 각국 정부의 정책 설계 능력 마비 우려\n• 국제기구들이 '예측 불가능 시대'에 대비한 새로운 분석 방법론 보급 시작",
+      "evidence_titles": [
+        "Vietnam: Building Capacity in Macroeconomic Analysis and Forecasting",
+        "Ethiopia: Enhancing Macroeconomic Forecasting Framework Capacity",
+        "Vietnam: Technical Assistance Report-Building Capacity in Macroeconomic Analysis and Forecasting"
+      ],
+      "evidence_sources": [
+        "IMF_News",
+        "IMF_News",
+        "IMF_News"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "수원시정연구원의 정책 분석·예측 방법론 전면 재검토 필요. 시나리오 기반 정책 설계 역량 강화 시급",
+      "is_structural": true,
+      "detected_date": "2026-08-27",
+      "first_detected": "2026-08-27"
+    },
+    {
+      "signal_id": "sig_007",
+      "category": "무역공급망재편",
+      "title_ko": "AI 기반 무역 촉진 체계 전환",
+      "description": "• UNCTAD가 'AI 기반 스마트 무역 촉진' 워크숍 개최, 공급망 혼란 대응 새로운 표준 제시\n• 전통적 무역 절차가 실시간 위험 예측·우회 경로 자동 계산 시스템으로 대체 시작\n• 무역 촉진의 패러다임이 '규제 완화'에서 'AI 기반 적응형 시스템'으로 전환",
+      "evidence_titles": [
+        "Harnessing AI for Smarter Trade Facilitation",
+        "Workshop on exploring the role of Voluntary Sustainability Standards (VSS) in APEC connectivity activities"
+      ],
+      "evidence_sources": [
+        "UNCTAD_News",
+        "UNCTAD_News"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "수원시 수출 지원 정책의 디지털 전환 가속 필요. 중소기업 대상 AI 기반 공급망 관리 교육·지원 체계 구축 검토",
+      "is_structural": true,
+      "detected_date": "2026-08-27",
+      "first_detected": "2026-08-27"
+    }
+  ],
+  "by_category": {
+    "에너지안보재편": 2,
+    "무역공급망재편": 2,
+    "정책패러다임전환": 2,
+    "지역질서재편": 1,
+    "민생충격패턴": 1
+  },
+  "summary_ko": "• 이란-미국 전쟁이 촉발한 8개 구조적 변화 신호 포착 (2026.08.27 기준)\n• 에너지·무역 파트너 선택 기준이 '가격'에서 '지정학적 신뢰'로 전환 중\n• 호르무즈 해협 봉쇄 6개월이 '일시적 사건'이 아닌 '영구 리스크 지역화' 확정\n• 중앙은행·국제기구들이 '예측 불가능 시대' 대응 정책 프레임워크 전면 재설계 착수\n• 전쟁→제재→물가 상승 경로가 글로벌 민생 충격의 표준 패턴으로 구조화",
+  "top_signal": "에너지 파트너십 가격→신뢰 전환",
+  "suwon_action": "• 수원시 에너지 예산 안전마진 긴급 재검토 (유가 변동성 뉴노멀 반영)\n• 수원시정연구원 정책 분석 방법론 전면 점검 (시나리오 기반 예측 체계 구축)",
+  "weekly_trend": {
+    "정책패러다임전환": {
+      "count": 6,
+      "max_strength": 5
+    },
+    "지역질서재편": {
+      "count": 5,
+      "max_strength": 4
+    },
+    "에너지안보재편": {
+      "count": 5,
+      "max_strength": 5
+    },
+    "민생충격패턴": {
+      "count": 4,
+      "max_strength": 4
+    },
+    "무역공급망재편": {
+      "count": 4,
+      "max_strength": 4
+    }
+  },
+  "generated_at": "2026-08-27T04:38:59.959769"
+}
