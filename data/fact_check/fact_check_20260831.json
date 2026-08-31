@@ -1,0 +1,305 @@
+{
+  "date": "2026-08-31",
+  "generated_at": "2026-08-31T01:30:09.365059",
+  "engine": "Claude 단독 (fallback)",
+  "stats": {
+    "articles_checked": 10,
+    "total_claims": 20,
+    "verified": 0,
+    "disputed": 1,
+    "unverified": 19,
+    "verified_rate": 0.0
+  },
+  "results": [
+    {
+      "article_id": "d92159a2f572",
+      "title": "US and Iran exchange fire for the first time in more than a month",
+      "source": "FT_World",
+      "url": "https://www.ft.com/content/f270814f-e836-44e8-80c2-ec1034f80519?syn-25a6b1a6=1",
+      "importance": 5,
+      "category": "military",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁에 대한 정보는 학습 데이터에 포함되어 있지 않습니다. 이는 미래 사건이거나 실제로 발생하지 않은 사건입니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "미국과 이란이 1개월 이상만에 처음으로 교전을 재개했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁에 대한 정보가 학습 데이터에 없으며, 라락섬 공습 관련 사실을 확인할 수 없습니다. 해당 사건은 미래 시점의 가상 시나리오로 보입니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "미군이 호르무즈 해협의 라락섬을 공습했다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.0,
+      "checked_at": "2026-08-31T01:28:49.782528"
+    },
+    {
+      "article_id": "6c241bee5fcc",
+      "title": "US strikes Iranian launchers on Larak Island in first known attack in weeks",
+      "source": "BBC_World",
+      "url": "https://www.bbc.co.uk/news/articles/cx2z72x5z1po?at_medium=RSS&at_campaign=rss",
+      "importance": 5,
+      "category": "military",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁에 대한 학습된 정보가 없으며, 해당 사건은 미래 시점의 가상 시나리오로 보입니다. 실제 발생 여부를 확인할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "미군이 라락섬의 이란 미사일 발사대를 공습했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁에 대한 정보가 학습 데이터에 존재하지 않습니다. 이는 미래 사건이거나 가상의 시나리오로 판단됩니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "이번 공습은 7월 말 이후 처음으로 알려진 미국의 대이란 직접 공격이다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.0,
+      "checked_at": "2026-08-31T01:28:57.801106"
+    },
+    {
+      "article_id": "aa384ebf03ee",
+      "title": "Trump’s Iran War Sets Test for Xi and Putin’s Security Club",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-08-30/trump-s-iran-war-sets-test-for-xi-and-putin-s-security-club",
+      "importance": 5,
+      "category": "paradigm",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁에 대한 학습된 정보가 없으며, 해당 사건은 미래 시점이므로 현재 시점에서 검증이 불가능합니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "트럼프가 이란에 대한 경제전을 진행하고 있다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 시나리오입니다. 따라서 이와 관련된 Bloomberg 기사나 시진핑-푸틴의 보안 동맹 확대 주장을 검증할 수 있는 실제 역사적 사실이 존재하지 않습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "시진핑과 푸틴이 보안 동맹 체계를 확대해왔다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.47,
+      "checked_at": "2026-08-31T01:29:06.648324"
+    },
+    {
+      "article_id": "417dac964a1e",
+      "title": "Rep. Krishnamoorthi Warns Iran War Weakens US in Asia",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/videos/2026-08-30/rep-krishnamoorthi-warns-iran-war-weakens-us-in-asia-video",
+      "importance": 5,
+      "category": "country_response",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 미래 시나리오입니다. 따라서 해당 발언의 진위를 검증할 수 있는 역사적 사실이나 신뢰할 수 있는 정보가 존재하지 않습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "미 하원의원 크리슈나무르티가 이란 전쟁이 미국의 아시아 억지력을 약화시킨다고 발언했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 미래의 가상 시나리오입니다. 해당 사건에 대한 역사적 기록이나 신뢰할 수 있는 정보가 존재하지 않아 주장을 검증할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "대이란 전쟁이 인도태평양 지역의 미군 자산과 탄약을 소모하고 있다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.47,
+      "checked_at": "2026-08-31T01:29:15.871166"
+    },
+    {
+      "article_id": "4d49b6dc334d",
+      "title": "Six Months In, Iran Appears Stronger and U.S. Goals Unclear",
+      "source": "NYT_World",
+      "url": "https://www.nytimes.com/2026/08/28/world/europe/iran-regime-war-us.html",
+      "importance": 5,
+      "category": "paradigm",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁에 대한 정보는 학습 데이터에 존재하지 않습니다. 이는 미래의 사건이거나 가상의 시나리오로 보이며, 실제 발생한 역사적 사실로 확인할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "6개월 전쟁이 진행되었다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 실제로 발생하지 않은 가상의 사건입니다. 따라서 해당 전쟁에서 트럼프의 전략 전환에 대한 주장을 검증할 수 있는 역사적 사실이나 신뢰할 수 있는 정보가 존재하지 않습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "트럼프가 군사전에서 경제전으로 전환했다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.95,
+      "checked_at": "2026-08-31T01:29:24.814076"
+    },
+    {
+      "article_id": "28a4875fa92c",
+      "title": "US strikes Iranian launchers in strait of Hormuz, sparking reprisal attack on airbases in Jordan",
+      "source": "Guardian_World",
+      "url": "https://www.theguardian.com/world/2026/aug/30/us-strikes-iranian-launchers-on-larak-island-amid-strait-of-hormuz-tensions",
+      "importance": 5,
+      "category": "military",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁에 대한 정보가 학습 데이터에 없습니다. 이는 미래 사건이거나 가상의 시나리오로 보이며, 실제 발생 여부 및 세부 내용을 확인할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "미국이 라락 섬의 이란 로켓 발사기 2기를 공습했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁에 대한 정보가 학습 데이터에 없습니다. 이는 미래의 사건이거나 가상의 시나리오로 보입니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "이란 혁명수비대가 요르단 미군 기지를 보복 공격했다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.0,
+      "checked_at": "2026-08-31T01:29:33.880303"
+    },
+    {
+      "article_id": "f9379eeeb50c",
+      "title": "How the Iran war unfolded: every attack and oil price change – visualised",
+      "source": "Guardian_Iran",
+      "url": "https://www.theguardian.com/world/ng-interactive/2026/aug/28/how-the-iran-war-unfolded-every-attack-and-oil-price-change-visualised",
+      "importance": 5,
+      "category": "paradigm",
+      "claims": [
+        {
+          "verdict": "불일치",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁에 대한 학습된 정보가 없으며, 2024년 2월 28일 현재까지 미국과 이스라엘이 이란에 대규모 공습을 개시한 사실이 확인되지 않습니다. 해당 날짜는 과거이며, 실제로 그런 사건은 발생하지 않았습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "2024년 2월 28일 미국과 이스라엘이 이란에 대한 대규모 공습을 개시했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁에 대한 정보가 학습 데이터에 존재하지 않습니다. 이는 미래 사건이거나 가상의 시나리오일 가능성이 있습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "이란 최고지도자 하메네이가 공습 첫날 사망했다"
+        }
+      ],
+      "overall_verdict": "불일치",
+      "avg_confidence": 0.47,
+      "checked_at": "2026-08-31T01:29:43.008114"
+    },
+    {
+      "article_id": "cf16bcc68ff1",
+      "title": "US strikes Iran for first time in a month, Tehran retaliates",
+      "source": "AlMonitor",
+      "url": "https://www.al-monitor.com/originals/2026/08/us-strikes-iran-first-time-month-tehran-retaliates",
+      "importance": 5,
+      "category": "military",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁에 대한 정보가 학습 데이터에 존재하지 않습니다. 해당 사건은 제 학습 시점(2024년 4월) 이후의 미래 사건이거나 실제로 발생하지 않은 사건입니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "미국이 한 달만에 호르무즈 해협 라락 섬의 이란 로켓 발사기를 공습했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁에 대한 학습된 정보가 없습니다. 이는 미래 사건이며, 제 학습 데이터(2024년 4월 기준)에는 존재하지 않는 사건입니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "이란 혁명수비대가 요르단 미군 기지에 보복 공격을 감행했다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.0,
+      "checked_at": "2026-08-31T01:29:52.255034"
+    },
+    {
+      "article_id": "8da46e2655cb",
+      "title": "US forces strike two Iranian launchers on Iran's Larak island, US official says",
+      "source": "AlMonitor",
+      "url": "https://www.al-monitor.com/originals/2026/08/us-forces-strike-two-iranian-launchers-irans-larak-island-us-official-says",
+      "importance": 5,
+      "category": "military",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁은 아직 발생하지 않은 미래 시점의 가상 시나리오입니다. 현재 시점(2024년)에서 2026년의 군사 작전에 대한 검증은 불가능합니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "미국이 이란의 라락 섬에 있는 발사기 2기를 공습했다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁에 대한 정보가 학습 데이터에 없습니다. 이는 미래 사건이거나 실제로 발생하지 않은 사건으로 보입니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "7월 말 이후 처음으로 미국이 이란을 직접 타격했다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.47,
+      "checked_at": "2026-08-31T01:30:00.354567"
+    },
+    {
+      "article_id": "da0ea2918809",
+      "title": "The Iran War at Six Months: A Region—and Its Relationship With the U.S.—Transformed",
+      "source": "CFR_Iran",
+      "url": "https://www.cfr.org/articles/the-iran-war-at-six-months-a-region-and-its-relationship-with-the-u-s-transformed",
+      "importance": 5,
+      "category": "paradigm",
+      "claims": [
+        {
+          "verdict": "미확인",
+          "confidence": 0.95,
+          "evidence": "2026년 이란-미국 전쟁에 대한 정보는 학습 데이터에 포함되어 있지 않습니다. 이는 실제로 발생하지 않은 미래 또는 가상의 시나리오로 보입니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "이란 전쟁이 6개월간 지속되었다"
+        },
+        {
+          "verdict": "미확인",
+          "confidence": 0.0,
+          "evidence": "2026년 이란-미국 전쟁에 대한 학습된 정보가 없으며, 해당 사건은 미래의 가상 시나리오로 보입니다. 실제 발생하지 않은 사건에 대한 CFR 출처 문서를 검증할 수 없습니다.",
+          "sources": [],
+          "engine": "claude-only",
+          "claim": "미국과 지역국가들 간의 관계 구조가 재편되고 있다"
+        }
+      ],
+      "overall_verdict": "미확인",
+      "avg_confidence": 0.47,
+      "checked_at": "2026-08-31T01:30:09.365045"
+    }
+  ]
+}

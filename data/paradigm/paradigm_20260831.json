@@ -1,0 +1,264 @@
+{
+  "date": "2026-08-31",
+  "total_signals": 12,
+  "structural_signals": 12,
+  "signals": [
+    {
+      "signal_id": "sig_002",
+      "category": "정책패러다임전환",
+      "title_ko": "IMF 개발정책 재사고 선언",
+      "description": "• IMF 'Rethinking Development' 보고서로 개발정책 패러다임 전환 신호\n• 전쟁·에너지위기 시대 새로운 경제발전 모델 모색\n• 전통적 성장 중심에서 회복탄력성 중심으로 전환",
+      "evidence_titles": [
+        "Rethinking Development - International Monetary Fund",
+        "Navigating a Financially More Fluid World - International Monetary Fund"
+      ],
+      "evidence_sources": [
+        "IMF",
+        "IMF"
+      ],
+      "strength": 4,
+      "trend": "신규",
+      "suwon_implication": "수원시 중장기 경제정책 수립 시 회복탄력성·안정성 지표 강화 필요. 단순 성장률 목표 재검토",
+      "is_structural": true,
+      "detected_date": "2026-08-31",
+      "first_detected": "2026-08-31"
+    },
+    {
+      "signal_id": "sig_003",
+      "category": "에너지안보재편",
+      "title_ko": "채권시장 통한 전쟁비용 전이",
+      "description": "• G7 국가 차입비용 6개월간 160억달러(22조원) 증가\n• 전쟁이 국채금리 상승→재정여력 축소로 연결되는 구조 확인\n• 미국이 전체 증가분 3분의 2 부담, 동맹국도 간접 부담",
+      "evidence_titles": [
+        "Rising bond yields add tens of billions to G7 countries' debt costs",
+        "\"이란전쟁 후 G7 차입비용 22조 늘었다…미국이 3분의 2\""
+      ],
+      "evidence_sources": [
+        "FT",
+        "Yonhap"
+      ],
+      "strength": 4,
+      "trend": "강화",
+      "suwon_implication": "한국 국채금리 상승 시 수원시 지방채 발행비용 증가. 대규모 SOC 사업 재원조달 계획 재검토 필요",
+      "is_structural": true,
+      "detected_date": "2026-08-31"
+    },
+    {
+      "signal_id": "sig_005",
+      "category": "지역질서재편",
+      "title_ko": "중국·러시아 안보협력체 시험대",
+      "description": "• 트럼프의 이란 경제전쟁이 시진핑·푸틴 안보협력체 한계 시험\n• 미국 패권 견제 목표로 구축한 연대가 실전 대응력 부족 노출\n• 중동 질서 재편이 글로벌 진영 재편으로 확산 가능성",
+      "evidence_titles": [
+        "Trump's Iran War Sets Test for Xi and Putin's Security Club",
+        "The Iran War at Six Months: A Region—and Its Relationship With the U.S.—Transformed"
+      ],
+      "evidence_sources": [
+        "Bloomberg",
+        "CFR"
+      ],
+      "strength": 4,
+      "trend": "신규",
+      "suwon_implication": "수원시 외국인 근로자(중국·중앙아시아 출신) 동향 모니터링. 장기 지정학 불안정성 대비 필요",
+      "is_structural": true,
+      "detected_date": "2026-08-31",
+      "first_detected": "2026-08-31"
+    },
+    {
+      "signal_id": "sig_007",
+      "category": "에너지안보재편",
+      "title_ko": "미 무기고갈→유럽작전 축소",
+      "description": "• 이란전 미사일 소진으로 미국 유럽 작전계획 변경 불가피\n• 구형 토마호크 개조 사용할 정도로 무기 재고 심각\n• 글로벌 안보 우선순위 재조정→동아시아 억지력 약화 우려",
+      "evidence_titles": [
+        "Rep. Krishnamoorthi Warns Iran War Weakens US in Asia",
+        "美, 무기 고갈에 유럽 작전 변경…구형 토마호크 개조하기도"
+      ],
+      "evidence_sources": [
+        "Bloomberg",
+        "Yonhap"
+      ],
+      "strength": 4,
+      "trend": "강화",
+      "suwon_implication": "한반도 안보 불확실성 증가 간접 영향. 수원시 민방위·재난대응 체계 점검 필요",
+      "is_structural": true,
+      "detected_date": "2026-08-31"
+    },
+    {
+      "signal_id": "sig_001",
+      "category": "무역공급망재편",
+      "title_ko": "국제무역 구조변동 가시화",
+      "description": "• OECD 2026년 2분기 무역통계에서 구조적 변화 트렌드 포착\n• 전쟁 6개월 후 글로벌 무역 패턴 재편 시작 신호\n• 전통적 무역로 대체 경로 모색 필요성 증가",
+      "evidence_titles": [
+        "International trade statistics: trends in second quarter 2026 - OECD",
+        "How the Iran war unfolded: every attack and oil price change – visualised"
+      ],
+      "evidence_sources": [
+        "OECD",
+        "Guardian"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "수원시 제조기업의 원자재 조달비용 증가 예상. 수출 중소기업 물류비 부담 대책 필요",
+      "is_structural": true,
+      "detected_date": "2026-08-31",
+      "first_detected": "2026-08-31"
+    },
+    {
+      "signal_id": "sig_004",
+      "category": "민생충격패턴",
+      "description": "• 이란 주유소 장시간 대기 행렬, 전쟁·봉쇄로 연료 부족 심화\n• 산유국이 자국민 연료 공급 곤란→가격 인상 불안→사회불안 우려\n• 에너지 수출국도 내수 민생 타격받는 역설적 구조",
+      "evidence_titles": [
+        "Long Lines for Gas in Iran Show War and U.S. Blockade Squeezing Supply",
+        "Why Many Iranians Are Losing Hope After Six Months of War"
+      ],
+      "evidence_sources": [
+        "NYT",
+        "NYT"
+      ],
+      "strength": 3,
+      "trend": "강화",
+      "suwon_implication": "수원시 취약계층 교통비·난방비 지원 장기화 대비. 에너지 가격 급등 시나리오별 긴급 지원체계 구축",
+      "is_structural": true,
+      "detected_date": "2026-08-31"
+    },
+    {
+      "signal_id": "sig_006",
+      "category": "무역공급망재편",
+      "title_ko": "소말리아 해적 급증의 구조적 의미",
+      "description": "• 미-이란 전쟁 여파로 소말리아 해적 공격 급증(1월 이후 최소 13건)\n• 중동 분쟁이 아프리카 해상 안보 악화로 파급되는 연쇄 효과\n• 대체 해운로 모색 시 새로운 위험 지역 부상",
+      "evidence_titles": [
+        "Somali piracy surges as the impact of the US-Iran war ripples outwards"
+      ],
+      "evidence_sources": [
+        "BBC"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "수원시 수출기업 해상보험료 인상 예상. 물류비 증가분 중소기업 지원 방안 검토",
+      "is_structural": true,
+      "detected_date": "2026-08-31",
+      "first_detected": "2026-08-31"
+    },
+    {
+      "signal_id": "sig_008",
+      "category": "정책패러다임전환",
+      "title_ko": "주택구매력 위기의 유럽 확산",
+      "description": "• IMF 보고서, 유럽 전역 주택구매력 급락(Locked Out) 경고\n• 전쟁 후 금리상승·에너지비용 증가가 주거비 위기 심화\n• 사회안정성 위협 수준의 구조적 문제로 격상",
+      "evidence_titles": [
+        "Locked Out: Drivers and Economic Implications of Declining Housing Affordability in Europe"
+      ],
+      "evidence_sources": [
+        "IMF"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "수원시 청년·신혼부부 주거안정 정책 장기 강화 필요. 에너지비용 연동 주거복지 모델 검토",
+      "is_structural": true,
+      "detected_date": "2026-08-31",
+      "first_detected": "2026-08-31"
+    },
+    {
+      "signal_id": "sig_009",
+      "category": "지역질서재편",
+      "title_ko": "호르무즈 해협 전장화 지속",
+      "description": "• 미국 한달만에 이란 라라크섬 공격, 이란 즉각 반격\n• 호르무즈 해협이 산발적 교전 지역으로 고착화\n• 유전·정유시설 직접 타격 아닌 '기뢰 발사대' 타격으로 전술 변화",
+      "evidence_titles": [
+        "US strikes Iranian launchers on Larak Island in first known attack in weeks",
+        "The Strait of Hormuz: A U.S.-Iran Maritime Flash Point"
+      ],
+      "evidence_sources": [
+        "BBC",
+        "CFR"
+      ],
+      "strength": 3,
+      "trend": "강화",
+      "suwon_implication": "유가 변동성 상시화. 수원시 대중교통 운영비·쓰레기 수거 유류비 예비비 확대 필요",
+      "is_structural": true,
+      "detected_date": "2026-08-31"
+    },
+    {
+      "signal_id": "sig_010",
+      "category": "민생충격패턴",
+      "title_ko": "이란 국민 희망 상실 가속화",
+      "description": "• 전쟁 6개월 후 이란 국민 경제위기 대응 능력 소진\n• 트럼프의 전쟁 의도에 대한 회의감 확산\n• 정부 신뢰 하락→사회 불안정성 증가 악순환 구조",
+      "evidence_titles": [
+        "Why Many Iranians Are Losing Hope After Six Months of War"
+      ],
+      "evidence_sources": [
+        "NYT"
+      ],
+      "strength": 3,
+      "trend": "강화",
+      "suwon_implication": "장기 분쟁 시 수원시 이란계 외국인 주민 지원 확대. 중동 출신 외국인 커뮤니티 안정화 정책 필요",
+      "is_structural": true,
+      "detected_date": "2026-08-31"
+    },
+    {
+      "signal_id": "sig_011",
+      "category": "정책패러다임전환",
+      "title_ko": "재무장관 신뢰 위기의 구조화",
+      "description": "• 스콧 베센트 미 재무장관, 트럼프 혼란 수습 능력 의문\n• 관세·이란제재·국가부채 3중 위기 통제력 상실 징후\n• 정책 예측가능성 붕괴가 글로벌 경제 불확실성 증폭",
+      "evidence_titles": [
+        "'Inept, incompetent, craven': Scott Bessent struggles to clean up the president's mess"
+      ],
+      "evidence_sources": [
+        "Guardian"
+      ],
+      "strength": 3,
+      "trend": "신규",
+      "suwon_implication": "환율 급변동 대비. 수원시 해외 자매도시 교류사업 예산 환리스크 관리 강화",
+      "is_structural": true,
+      "detected_date": "2026-08-31",
+      "first_detected": "2026-08-31"
+    },
+    {
+      "signal_id": "sig_012",
+      "category": "무역공급망재편",
+      "title_ko": "교육격차 역전의 경제적 의미",
+      "description": "• 세계은행 HCI+ 분석, 학교에서 여학생 우위→취업 후 역전 구조 지적\n• 전쟁·경제위기 시 젠더 격차 심화 패턴 확인\n• 인적자본 손실이 장기 경제회복력 저해 요인",
+      "evidence_titles": [
+        "Girls outperform boys in school. Then the gap reverses. The HCI+ explains why"
+      ],
+      "evidence_sources": [
+        "WorldBank"
+      ],
+      "strength": 2,
+      "trend": "신규",
+      "suwon_implication": "수원시 여성 경력단절 방지 정책 중요성 증가. 위기 시 젠더 평등 정책 후퇴 방지 필요",
+      "is_structural": true,
+      "detected_date": "2026-08-31",
+      "first_detected": "2026-08-31"
+    }
+  ],
+  "by_category": {
+    "무역공급망재편": 3,
+    "정책패러다임전환": 3,
+    "에너지안보재편": 2,
+    "민생충격패턴": 2,
+    "지역질서재편": 2
+  },
+  "summary_ko": "• IMF·OECD·세계은행이 동시에 개발정책 패러다임 전환 신호 발표, 성장 중심→회복탄력성 중심으로 전환\n• 전쟁 6개월 후 G7 차입비용 22조원 증가, 채권시장 통한 전쟁비용 전이 구조 확인\n• 중동 분쟁이 소말리아 해적 급증·호르무즈 교전 고착화로 확산, 글로벌 공급망 대체경로도 위험 증가\n• 미국 무기 고갈로 유럽작전 축소, 글로벌 안보 우선순위 재조정→동아시아 억지력 약화 우려\n• 이란 국민 희망 상실·유럽 주거위기 심화 등 민생 구조적 충격이 사회안정성 위협 수준 도달",
+  "top_signal": "IMF 개발정책 재사고 선언",
+  "suwon_action": "• 중장기 경제정책 수립 시 단순 성장률 목표 대신 회복탄력성·안정성 지표 우선 반영\n• 대규모 SOC 사업 재원조달 계획 재검토(금리 상승), 취약계층 에너지 긴급지원 장기화 대비",
+  "weekly_trend": {
+    "정책패러다임전환": {
+      "count": 3,
+      "max_strength": 4
+    },
+    "무역공급망재편": {
+      "count": 3,
+      "max_strength": 3
+    },
+    "지역질서재편": {
+      "count": 2,
+      "max_strength": 4
+    },
+    "에너지안보재편": {
+      "count": 2,
+      "max_strength": 4
+    },
+    "민생충격패턴": {
+      "count": 2,
+      "max_strength": 3
+    }
+  },
+  "generated_at": "2026-08-31T01:26:16.282237"
+}
