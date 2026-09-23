@@ -1,0 +1,14 @@
+{
+  "date": "2026-09-23",
+  "generated_at": "2026-09-23T01:16:26.323560",
+  "engine": "Claude 단독 (fallback)",
+  "stats": {
+    "articles_checked": 0,
+    "total_claims": 0,
+    "verified": 0,
+    "disputed": 0,
+    "unverified": 0,
+    "verified_rate": 0.0
+  },
+  "results": []
+}
