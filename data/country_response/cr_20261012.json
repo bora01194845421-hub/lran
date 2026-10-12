@@ -1,0 +1,6 @@
+{
+  "date": "2026-10-12",
+  "error": "Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CfwXwRZChCiEjDsEMiNBi'}",
+  "generated_at": "2026-10-12T02:13:13.423802",
+  "articles_analyzed": 60
+}
