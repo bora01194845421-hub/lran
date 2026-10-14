@@ -1,0 +1,7 @@
+{
+  "error": "Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cg1GnyqReQudBf1o7yiQK'}",
+  "today_headline": "분석 실패",
+  "urgency": "모니터링",
+  "date": "2026-10-14",
+  "generated_at": "2026-10-14T01:36:59.157292"
+}
